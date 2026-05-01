@@ -1,0 +1,878 @@
+[
+  {
+    "id": 1777022647045,
+    "word": "querer",
+    "translation": "want",
+    "category": "Verb",
+    "notes": "",
+    "examples": [
+      {
+        "pronoun": "eu",
+        "pt": "Eu quero um café.",
+        "en": "I want a coffee."
+      },
+      {
+        "pronoun": "tu",
+        "pt": "Tu queres um bolo.",
+        "en": "You want a cake."
+      },
+      {
+        "pronoun": "ele/ela",
+        "pt": "Ela quer estudar.",
+        "en": "She wants to study."
+      },
+      {
+        "pronoun": "nós",
+        "pt": "Nós queremos viajar.",
+        "en": "We want to travel."
+      },
+      {
+        "pronoun": "vocês",
+        "pt": "Vocês querem ajudar.",
+        "en": "You want to help."
+      },
+      {
+        "pronoun": "eles/elas",
+        "pt": "Eles querem aprender.",
+        "en": "They want to learn."
+      }
+    ],
+    "addedAt": "24/04/2026",
+    "generatingExample": false,
+    "_activeTense": "past",
+    "tenses": {
+      "present": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu queria um bolo",
+          "en": "I wanted a cake"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu querias um carro",
+          "en": "You wanted a car"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela queria um emprego",
+          "en": "She wanted a job"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós queríamos uma casa",
+          "en": "We wanted a house"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês queriam um apartamento",
+          "en": "You wanted an apartment"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles queriam um avião",
+          "en": "They wanted a plane"
+        }
+      ],
+      "future": []
+    },
+    "_generatingTense": null,
+    "assessingFreq": false,
+    "freq": "essential"
+  },
+  {
+    "id": 1777050771067,
+    "word": "Desejar",
+    "translation": "Want",
+    "category": "Verb",
+    "notes": "",
+    "examples": [
+      {
+        "pronoun": "eu",
+        "pt": "Eu desejo um café.",
+        "en": "I want a coffee."
+      },
+      {
+        "pronoun": "tu",
+        "pt": "Tu desejas um chá.",
+        "en": "You want a tea."
+      },
+      {
+        "pronoun": "ele/ela",
+        "pt": "Ela deseja um bolo.",
+        "en": "She wants a cake."
+      },
+      {
+        "pronoun": "nós",
+        "pt": "Nós desejamos um descanso.",
+        "en": "We want a rest."
+      },
+      {
+        "pronoun": "vocês",
+        "pt": "Vocês desejam um sucesso.",
+        "en": "You want a success."
+      },
+      {
+        "pronoun": "eles/elas",
+        "pt": "Eles desejam um futuro melhor.",
+        "en": "They want a better future."
+      }
+    ],
+    "addedAt": "24/04/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common"
+  },
+  {
+    "id": 1777366537228,
+    "word": "ouvir",
+    "translation": "listen",
+    "category": "Verb",
+    "notes": "",
+    "examples": [
+      {
+        "pronoun": "eu",
+        "pt": "Eu ouço música todos os dias",
+        "en": "I listen to music every day"
+      },
+      {
+        "pronoun": "tu",
+        "pt": "Tu ouves música muito alto",
+        "en": "You listen to music very loud"
+      },
+      {
+        "pronoun": "ele/ela",
+        "pt": "Ela ouve rádio de manhã",
+        "en": "She listens to the radio in the morning"
+      },
+      {
+        "pronoun": "nós",
+        "pt": "Nós ouvimos notícias todos os dias",
+        "en": "We listen to news every day"
+      },
+      {
+        "pronoun": "vocês",
+        "pt": "Vocês ouvem música portuguesa",
+        "en": "You listen to Portuguese music"
+      },
+      {
+        "pronoun": "eles/elas",
+        "pt": "Eles ouvem música em silêncio",
+        "en": "They listen to music in silence"
+      }
+    ],
+    "addedAt": "28/04/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "essential"
+  },
+  {
+    "id": 1777373855359,
+    "word": "semente",
+    "translation": "seed",
+    "category": "Noun",
+    "notes": "",
+    "examples": [
+      {
+        "pt": "Ela plantou a semente no jardim",
+        "en": "She planted the seed in the garden"
+      }
+    ],
+    "addedAt": "28/04/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common"
+  },
+  {
+    "id": 1777373855431,
+    "word": "encerrar",
+    "translation": "to enclose",
+    "category": "Verb",
+    "notes": "",
+    "examples": [
+      {
+        "pronoun": "eu",
+        "pt": "Eu encerro o jardim",
+        "en": "I enclose the garden"
+      },
+      {
+        "pronoun": "tu",
+        "pt": "Tu encerras o jardim",
+        "en": "You enclose the garden"
+      },
+      {
+        "pronoun": "ele/ela",
+        "pt": "Ela encerra o jardim",
+        "en": "She encloses the garden"
+      },
+      {
+        "pronoun": "nós",
+        "pt": "Nós encerramos o jardim",
+        "en": "We enclose the garden"
+      },
+      {
+        "pronoun": "vocês",
+        "pt": "Vocês encerram o jardim",
+        "en": "You enclose the garden"
+      },
+      {
+        "pronoun": "eles/elas",
+        "pt": "Eles encerram o jardim",
+        "en": "They enclose the garden"
+      }
+    ],
+    "addedAt": "28/04/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common"
+  },
+  {
+    "id": 1777373855432,
+    "word": "esperança",
+    "translation": "hope",
+    "category": "Noun",
+    "notes": "",
+    "examples": [
+      {
+        "pt": "Ela dá-me esperança para o futuro",
+        "en": "She gives me hope for the future"
+      }
+    ],
+    "addedAt": "28/04/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common"
+  },
+  {
+    "id": 1777373855433,
+    "word": "escasso",
+    "translation": "scarce",
+    "category": "Adjective",
+    "notes": "",
+    "examples": [
+      {
+        "pt": "A água é escassa no deserto",
+        "en": "Water is scarce in the desert"
+      }
+    ],
+    "addedAt": "28/04/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common"
+  },
+  {
+    "id": 1777373855434,
+    "word": "irradia",
+    "translation": "to radiate",
+    "category": "Verb",
+    "notes": "",
+    "examples": [
+      {
+        "pronoun": "eu",
+        "pt": "Eu irradia alegria",
+        "en": "I radiate joy"
+      },
+      {
+        "pronoun": "tu",
+        "pt": "Tu irradias calor",
+        "en": "You radiate warmth"
+      },
+      {
+        "pronoun": "ele/ela",
+        "pt": "Ela irradia confiança",
+        "en": "She radiates confidence"
+      },
+      {
+        "pronoun": "nós",
+        "pt": "Nós irradiamos amor",
+        "en": "We radiate love"
+      },
+      {
+        "pronoun": "vocês",
+        "pt": "Vocês irradiam energia",
+        "en": "You radiate energy"
+      },
+      {
+        "pronoun": "eles/elas",
+        "pt": "Eles irradiam luz",
+        "en": "They radiate light"
+      }
+    ],
+    "addedAt": "28/04/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "advanced"
+  },
+  {
+    "id": 1777373855435,
+    "word": "seduz",
+    "translation": "to seduce",
+    "category": "Verb",
+    "notes": "",
+    "examples": [
+      {
+        "pronoun": "eu",
+        "pt": "Eu seduzo as pessoas com facilidade.",
+        "en": "I seduce people with ease."
+      },
+      {
+        "pronoun": "tu",
+        "pt": "Tu seduzes com um simples sorriso.",
+        "en": "You seduce with a simple smile."
+      },
+      {
+        "pronoun": "ele/ela",
+        "pt": "Ela seduz com a sua voz.",
+        "en": "She seduces with her voice."
+      },
+      {
+        "pronoun": "nós",
+        "pt": "Nós seduzimos os nossos clientes.",
+        "en": "We seduce our clients."
+      },
+      {
+        "pronoun": "vocês",
+        "pt": "Vocês seduzem com a vossa simpatia.",
+        "en": "You seduce with your sympathy."
+      },
+      {
+        "pronoun": "eles/elas",
+        "pt": "Eles seduzem as mulheres facilmente.",
+        "en": "They seduce women easily."
+      }
+    ],
+    "addedAt": "28/04/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common"
+  },
+  {
+    "id": 1777373855436,
+    "word": "tormenta",
+    "translation": "storm",
+    "category": "Noun",
+    "notes": "",
+    "examples": [
+      {
+        "pt": "A tormenta está a aproximar-se da costa portuguesa",
+        "en": "The storm is approaching the Portuguese coast"
+      }
+    ],
+    "addedAt": "28/04/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common"
+  },
+  {
+    "id": 1777373855437,
+    "word": "iluminar",
+    "translation": "to illuminate",
+    "category": "Verb",
+    "notes": "",
+    "examples": [
+      {
+        "pronoun": "eu",
+        "pt": "Eu ilumino o quarto.",
+        "en": "I illuminate the room."
+      },
+      {
+        "pronoun": "tu",
+        "pt": "Tu iluminas o corredor.",
+        "en": "You illuminate the hallway."
+      },
+      {
+        "pronoun": "ele/ela",
+        "pt": "Ela ilumina a casa.",
+        "en": "She illuminates the house."
+      },
+      {
+        "pronoun": "nós",
+        "pt": "Nós iluminamos o jardim.",
+        "en": "We illuminate the garden."
+      },
+      {
+        "pronoun": "vocês",
+        "pt": "Vocês iluminam o estádio.",
+        "en": "You illuminate the stadium."
+      },
+      {
+        "pronoun": "eles/elas",
+        "pt": "Eles iluminam a cidade.",
+        "en": "They illuminate the city."
+      }
+    ],
+    "addedAt": "28/04/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common"
+  },
+  {
+    "id": 1777373855438,
+    "word": "algema",
+    "translation": "shackle",
+    "category": "Noun",
+    "notes": "",
+    "examples": [
+      {
+        "pt": "A algema prendia o seu pulso",
+        "en": "The shackle held his wrist"
+      }
+    ],
+    "addedAt": "28/04/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "advanced"
+  },
+  {
+    "id": 1777373855439,
+    "word": "lamento",
+    "translation": "lament",
+    "category": "Noun",
+    "notes": "",
+    "examples": [
+      {
+        "pt": "Sinto muito lamento pelo que aconteceu",
+        "en": "I'm deeply sorry for what happened"
+      }
+    ],
+    "addedAt": "28/04/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common"
+  },
+  {
+    "id": 1777373855440,
+    "word": "renascer",
+    "translation": "to be reborn",
+    "category": "Verb",
+    "notes": "",
+    "examples": [
+      {
+        "pronoun": "eu",
+        "pt": "Eu renasco todos os dias.",
+        "en": "I am reborn every day."
+      },
+      {
+        "pronoun": "tu",
+        "pt": "Tu renasces com cada desafio.",
+        "en": "You are reborn with each challenge."
+      },
+      {
+        "pronoun": "ele/ela",
+        "pt": "Ela renasce após cada queda.",
+        "en": "She is reborn after each fall."
+      },
+      {
+        "pronoun": "nós",
+        "pt": "Nós renascemos juntos sempre.",
+        "en": "We are reborn together always."
+      },
+      {
+        "pronoun": "vocês",
+        "pt": "Vocês renascem com a primavera.",
+        "en": "You are reborn with spring."
+      },
+      {
+        "pronoun": "eles/elas",
+        "pt": "Eles renascem com a esperança.",
+        "en": "They are reborn with hope."
+      }
+    ],
+    "addedAt": "28/04/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "advanced"
+  },
+  {
+    "id": 1777373855441,
+    "word": "destino",
+    "translation": "destiny",
+    "category": "Noun",
+    "notes": "",
+    "examples": [
+      {
+        "pt": "O meu destino é viajar pelo mundo.",
+        "en": "My destiny is to travel the world."
+      }
+    ],
+    "addedAt": "28/04/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common"
+  },
+  {
+    "id": 1777373855442,
+    "word": "errara",
+    "translation": "to make a mistake",
+    "category": "Verb",
+    "notes": "",
+    "examples": [
+      {
+        "pronoun": "eu",
+        "pt": "Eu erra frequentemente.",
+        "en": "I make mistakes frequently."
+      },
+      {
+        "pronoun": "tu",
+        "pt": "Tu erras muito.",
+        "en": "You make many mistakes."
+      },
+      {
+        "pronoun": "ele/ela",
+        "pt": "Ela erra raramente.",
+        "en": "She makes mistakes rarely."
+      },
+      {
+        "pronoun": "nós",
+        "pt": "Nós erramos sempre.",
+        "en": "We always make mistakes."
+      },
+      {
+        "pronoun": "vocês",
+        "pt": "Vocês erram muito.",
+        "en": "You make many mistakes."
+      },
+      {
+        "pronoun": "eles/elas",
+        "pt": "Eles erram frequentemente.",
+        "en": "They make mistakes frequently."
+      }
+    ],
+    "addedAt": "28/04/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common"
+  },
+  {
+    "id": 1777373855443,
+    "word": "tornar",
+    "translation": "to become",
+    "category": "Verb",
+    "notes": "",
+    "examples": [
+      {
+        "pronoun": "eu",
+        "pt": "Eu tornar-me-ei uma pessoa feliz",
+        "en": "I will become a happy person"
+      },
+      {
+        "pronoun": "tu",
+        "pt": "Tu tornas-te uma pessoa feliz",
+        "en": "You become a happy person"
+      },
+      {
+        "pronoun": "ele/ela",
+        "pt": "Ela torna-se uma pessoa feliz",
+        "en": "She becomes a happy person"
+      },
+      {
+        "pronoun": "nós",
+        "pt": "Nós tornamo-nos pessoas felizes",
+        "en": "We become happy people"
+      },
+      {
+        "pronoun": "vocês",
+        "pt": "Vocês tornam-se pessoas felizes",
+        "en": "You become happy people"
+      },
+      {
+        "pronoun": "eles/elas",
+        "pt": "Eles tornam-se pessoas felizes",
+        "en": "They become happy people"
+      }
+    ],
+    "addedAt": "28/04/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common"
+  },
+  {
+    "id": 1777374156770,
+    "word": "seduzir",
+    "translation": "to seduce",
+    "category": "Verb",
+    "notes": "",
+    "examples": [
+      {
+        "pronoun": "eu",
+        "pt": "Eu seduzo com um sorriso",
+        "en": "I seduce with a smile"
+      },
+      {
+        "pronoun": "tu",
+        "pt": "Tu seduzes com um olhar",
+        "en": "You seduce with a glance"
+      },
+      {
+        "pronoun": "ele/ela",
+        "pt": "Ela seduz com facilidade",
+        "en": "She seduces with ease"
+      },
+      {
+        "pronoun": "nós",
+        "pt": "Nós seduzimos com palavras",
+        "en": "We seduce with words"
+      },
+      {
+        "pronoun": "vocês",
+        "pt": "Vocês seduzem com estilo",
+        "en": "You seduce with style"
+      },
+      {
+        "pronoun": "eles/elas",
+        "pt": "Eles seduzem com dinheiro",
+        "en": "They seduce with money"
+      }
+    ],
+    "addedAt": "28/04/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common"
+  },
+  {
+    "id": 1777374156771,
+    "word": "irradiar",
+    "translation": "to radiate",
+    "category": "Verb",
+    "notes": "",
+    "examples": [
+      {
+        "pronoun": "eu",
+        "pt": "Eu irradiar luz",
+        "en": "I radiate light"
+      },
+      {
+        "pronoun": "tu",
+        "pt": "Tu irradias calor",
+        "en": "You radiate heat"
+      },
+      {
+        "pronoun": "ele/ela",
+        "pt": "Ela irradia amor",
+        "en": "She radiates love"
+      },
+      {
+        "pronoun": "nós",
+        "pt": "Nós irradiamos energia",
+        "en": "We radiate energy"
+      },
+      {
+        "pronoun": "vocês",
+        "pt": "Vocês irradiam alegria",
+        "en": "You radiate joy"
+      },
+      {
+        "pronoun": "eles/elas",
+        "pt": "Eles irradiam confiança",
+        "en": "They radiate confidence"
+      }
+    ],
+    "addedAt": "28/04/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "advanced"
+  },
+  {
+    "id": 1777374156772,
+    "word": "creio",
+    "translation": "I believe",
+    "category": "Verb",
+    "notes": "",
+    "examples": [
+      {
+        "pronoun": "eu",
+        "pt": "Eu creio que vai chover",
+        "en": "I believe it will rain"
+      },
+      {
+        "pronoun": "tu",
+        "pt": "Tu cres que é verdade",
+        "en": "You believe it's true"
+      },
+      {
+        "pronoun": "ele/ela",
+        "pt": "Ela crê que está certa",
+        "en": "She believes she's right"
+      },
+      {
+        "pronoun": "nós",
+        "pt": "Nós cremos na igualdade",
+        "en": "We believe in equality"
+      },
+      {
+        "pronoun": "vocês",
+        "pt": "Vocês creem que é fácil",
+        "en": "You believe it's easy"
+      },
+      {
+        "pronoun": "eles/elas",
+        "pt": "Eles creem na justiça",
+        "en": "They believe in justice"
+      }
+    ],
+    "addedAt": "28/04/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common"
+  },
+  {
+    "id": 1777374156773,
+    "word": "errar",
+    "translation": "to make mistakes",
+    "category": "Verb",
+    "notes": "",
+    "examples": [
+      {
+        "pronoun": "eu",
+        "pt": "Eu erro frequentemente.",
+        "en": "I make mistakes frequently."
+      },
+      {
+        "pronoun": "tu",
+        "pt": "Tu erras muito.",
+        "en": "You make many mistakes."
+      },
+      {
+        "pronoun": "ele/ela",
+        "pt": "Ela erra às vezes.",
+        "en": "She makes mistakes sometimes."
+      },
+      {
+        "pronoun": "nós",
+        "pt": "Nós erramos juntos.",
+        "en": "We make mistakes together."
+      },
+      {
+        "pronoun": "vocês",
+        "pt": "Vocês erram sempre.",
+        "en": "You make mistakes always."
+      },
+      {
+        "pronoun": "eles/elas",
+        "pt": "Eles erram facilmente.",
+        "en": "They make mistakes easily."
+      }
+    ],
+    "addedAt": "28/04/2026",
+    "generatingExample": false,
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu erro muito no futebol",
+          "en": "I make many mistakes in football"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu erras sempre a porta",
+          "en": "You always get the door wrong"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela erra na conta",
+          "en": "She makes a mistake in the bill"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós erramos juntos",
+          "en": "We make mistakes together"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês erram menos do que eu",
+          "en": "You make fewer mistakes than I"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles erram sempre",
+          "en": "They always make mistakes"
+        }
+      ],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu erri no teste.",
+          "en": "I made mistakes on the test."
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu erraste na resposta.",
+          "en": "You made a mistake in the answer."
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela errou a volta.",
+          "en": "She took a wrong turn."
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós errámos no cálculo.",
+          "en": "We made a mistake in the calculation."
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês erraram a saída.",
+          "en": "You missed the exit."
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles erraram o alvo.",
+          "en": "They missed the target."
+        }
+      ],
+      "future": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou errar",
+          "en": "I will make mistakes"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais errar",
+          "en": "You will make mistakes"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele/Ela vai errar",
+          "en": "He/She will make mistakes"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos errar",
+          "en": "We will make mistakes"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão errar",
+          "en": "You will make mistakes"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles/Elas vão errar",
+          "en": "They will make mistakes"
+        }
+      ]
+    },
+    "_generatingTense": null,
+    "_activeTense": "future",
+    "assessingFreq": false,
+    "freq": "common"
+  },
+  {
+    "id": 1777374156774,
+    "word": "busca",
+    "translation": "search",
+    "category": "Noun",
+    "notes": "",
+    "examples": [
+      {
+        "pt": "A busca no Google deu resultados interessantes",
+        "en": "The Google search gave interesting results"
+      }
+    ],
+    "addedAt": "28/04/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common"
+  }
+]
