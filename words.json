@@ -983,5 +983,16 @@
     "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential"
+  },
+  {
+    "id": 1777725942236,
+    "word": "conjugacao",
+    "translation": "conjugation",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "02/05/2026",
+    "generatingExample": true,
+    "assessingFreq": true
   }
 ]
