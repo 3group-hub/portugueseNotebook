@@ -986,36 +986,67 @@
     "emoji": "🏠",
     "sentences": [
       {
-        "pt": "Quero ir para casa",
-        "en": "I want to go home"
+        "pt": "Eu quero ir para casa.",
+        "en": "I want to go home.",
+        "uses": [
+          "quero",
+          "ir"
+        ]
       },
       {
-        "pt": "É casada",
-        "en": "Is she married"
+        "pt": "O que desejas fazer hoje?",
+        "en": "What do you want to do today?",
+        "uses": [
+          "desejas",
+          "fazer"
+        ]
       },
       {
-        "pt": "Onde fica o dentista",
-        "en": "Where is the dentist"
+        "pt": "Eu ouvir música todos os dias.",
+        "en": "I listen to music every day.",
+        "uses": [
+          "ouvir"
+        ]
       },
       {
-        "pt": "Quer ouvir música",
-        "en": "Do you want to listen to music"
+        "pt": "Queres dar uma semente ao meu jardim?",
+        "en": "Do you want to give a seed to my garden?",
+        "uses": [
+          "queres",
+          "dar",
+          "semente"
+        ]
       },
       {
-        "pt": "Eu ter trabalho",
-        "en": "I have work"
+        "pt": "A minha casa é alta.",
+        "en": "My house is tall.",
+        "uses": [
+          "alta"
+        ]
       },
       {
-        "pt": "Desejo fazer exercício",
-        "en": "I want to exercise"
+        "pt": "Eu faço trabalho todos os dias.",
+        "en": "I work every day.",
+        "uses": [
+          "fazer",
+          "trabalho"
+        ]
       },
       {
-        "pt": "Posso dar alta",
-        "en": "Can I give height"
+        "pt": "Eu ir à dentista amanhã.",
+        "en": "I'm going to the dentist tomorrow.",
+        "uses": [
+          "ir",
+          "dentista"
+        ]
       },
       {
-        "pt": "É gorda ou alta",
-        "en": "Is she fat or tall"
+        "pt": "Eu ter uma casa bonita, não é?",
+        "en": "I have a beautiful house, don't I?",
+        "uses": [
+          "ter",
+          "é"
+        ]
       }
     ],
     "level": "essential",
