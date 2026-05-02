@@ -1269,10 +1269,41 @@
           "en": "They go to the stadium"
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu fui ao parque",
+          "en": "I went to the park"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu foste ao cinema",
+          "en": "You went to the movies"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela foi à escola",
+          "en": "She went to school"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós fomos à praia",
+          "en": "We went to the beach"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês foram ao teatro",
+          "en": "You went to the theater"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles foram ao estádio",
+          "en": "They went to the stadium"
+        }
+      ],
       "future": []
     },
-    "_activeTense": "past",
-    "_generatingTense": "past"
+    "_activeTense": "future",
+    "_generatingTense": "future"
   }
 ]
