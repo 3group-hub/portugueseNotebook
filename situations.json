@@ -182,5 +182,46 @@
     "level": "essential",
     "cefrShort": "A1/A2",
     "updatedAt": "02/05/2026"
+  },
+  "Transport": {
+    "label": "Transport",
+    "emoji": "🚌",
+    "sentences": [
+      {
+        "pt": "Quero ir de metro",
+        "en": "I want to go by metro"
+      },
+      {
+        "pt": "Onde é a paragem?",
+        "en": "Where is the stop?"
+      },
+      {
+        "pt": "Quer ir de autocarro?",
+        "en": "Do you want to go by bus?"
+      },
+      {
+        "pt": "Eu vou de metro",
+        "en": "I'm going by metro"
+      },
+      {
+        "pt": "Deseja ir de metro?",
+        "en": "Do you want to go by metro?"
+      },
+      {
+        "pt": "Onde fica a estação?",
+        "en": "Where is the station?"
+      },
+      {
+        "pt": "Posso ir de autocarro?",
+        "en": "Can I go by bus?"
+      },
+      {
+        "pt": "Quero ir, por favor",
+        "en": "I want to go, please"
+      }
+    ],
+    "level": "essential",
+    "cefrShort": "A1/A2",
+    "updatedAt": "02/05/2026"
   }
 }
