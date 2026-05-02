@@ -210,36 +210,62 @@
     "emoji": "🗺️",
     "sentences": [
       {
-        "pt": "Quero ouvir música",
-        "en": "I want to listen to music"
+        "pt": "Quero tocar música agora.",
+        "en": "I want to play music now.",
+        "uses": [
+          "querer"
+        ]
       },
       {
-        "pt": "É alta a música?",
-        "en": "Is the music loud?"
+        "pt": "Ouve a música comigo?",
+        "en": "Do you listen to music with me?",
+        "uses": [
+          "ouvir"
+        ]
       },
       {
-        "pt": "Fazer música é bom",
-        "en": "Making music is good"
+        "pt": "Desejo fazer um concerto.",
+        "en": "I want to do a concert.",
+        "uses": [
+          "desejar"
+        ]
       },
       {
-        "pt": "Quer ouvir música comigo?",
-        "en": "Do you want to listen to music with me?"
+        "pt": "Queres ir tocar música comigo?",
+        "en": "Do you want to go play music with me?",
+        "uses": [
+          "querer",
+          "ir"
+        ]
       },
       {
-        "pt": "Ir tocar música agora",
-        "en": "I'm going to play music now"
+        "pt": "É preciso saber tocar um instrumento.",
+        "en": "It's necessary to know how to play an instrument.",
+        "uses": [
+          "saber"
+        ]
       },
       {
-        "pt": "Dizer que gosto de música",
-        "en": "Say that I like music"
+        "pt": "Vou fazer um trabalho de música.",
+        "en": "I'm going to do a music work.",
+        "uses": [
+          "fazer",
+          "trabalho"
+        ]
       },
       {
-        "pt": "Dar música alta",
-        "en": "Give loud music"
+        "pt": "Posso dar uma aula de música?",
+        "en": "Can I give a music lesson?",
+        "uses": [
+          "dar"
+        ]
       },
       {
-        "pt": "Saber tocar música?",
-        "en": "Do you know how to play music?"
+        "pt": "Fala sobre a música que gostas.",
+        "en": "Speak about the music you like.",
+        "uses": [
+          "falar"
+        ]
       }
     ],
     "level": "essential",
