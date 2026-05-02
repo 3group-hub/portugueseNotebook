@@ -438,52 +438,32 @@
         "en": "I want a medicine."
       },
       {
-        "pt": "Onde fica a farmácia?",
+        "pt": "Onde é a farmácia?",
         "en": "Where is the pharmacy?"
       },
       {
-        "pt": "Quer ouvir o preço?",
-        "en": "Do you want to hear the price?"
+        "pt": "Eu ter alta febre.",
+        "en": "I have a high fever."
+      },
+      {
+        "pt": "Quer ouvir o meu problema?",
+        "en": "Do you want to hear my problem?"
       },
       {
         "pt": "Desejo um remédio para dor.",
         "en": "I want a medicine for pain."
       },
       {
-        "pt": "É alta a esperança de cura?",
-        "en": "Is the hope of cure high?"
-      },
-      {
         "pt": "Posso dar o meu dinheiro?",
-        "en": "Can I give my money?"
+        "en": "Can I give you my money?"
       },
       {
-        "pt": "Saber o preço, por favor?",
-        "en": "To know the price, please?"
+        "pt": "Eu saber o preço?",
+        "en": "Do I know the price?"
       },
       {
-        "pt": "Ir à farmácia comigo?",
-        "en": "Go to the pharmacy with me?"
-      },
-      {
-        "pt": "Quero ir à farmácia",
-        "en": "I want to go to the pharmacy"
-      },
-      {
-        "pt": "É um trabalho aqui",
-        "en": "It's a job here"
-      },
-      {
-        "pt": "Desejo saber o preço",
-        "en": "I want to know the price"
-      },
-      {
-        "pt": "Fazer um lamento aqui",
-        "en": "To lament here"
-      },
-      {
-        "pt": "Creio que é escasso",
-        "en": "I believe it's scarce"
+        "pt": "Faça um desconto, por favor.",
+        "en": "Give me a discount, please."
       }
     ],
     "level": "essential",
