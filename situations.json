@@ -4,36 +4,36 @@
     "emoji": "🏥",
     "sentences": [
       {
-        "pt": "Quero ir ao dentista",
-        "en": "I want to go to the dentist"
+        "pt": "Quero ir ao dentista hoje.",
+        "en": "I want to go to the dentist today."
       },
       {
-        "pt": "O que é a sua altura?",
-        "en": "What is your height?"
+        "pt": "Onde é que eu posso encontrar o médico?",
+        "en": "Where can I find the doctor?"
       },
       {
-        "pt": "Desejo saber o que está errado comigo",
-        "en": "I want to know what's wrong with me"
+        "pt": "Eu ter uma consulta com o médico às 10h.",
+        "en": "I have an appointment with the doctor at 10am."
       },
       {
         "pt": "Posso fazer uma pergunta ao médico?",
         "en": "Can I ask the doctor a question?"
       },
       {
-        "pt": "Eu creio que estou doente",
-        "en": "I believe I'm sick"
+        "pt": "Eu quero saber se estou casada tem algum efeito na minha saúde.",
+        "en": "I want to know if being married has any effect on my health."
       },
       {
-        "pt": "Quero ouvir o que o médico tem a dizer",
-        "en": "I want to hear what the doctor has to say"
+        "pt": "O médico pode me dar um conselho sobre a minha altura?",
+        "en": "Can the doctor give me some advice about my height?"
       },
       {
-        "pt": "O médico pode me dar esperança de melhorar?",
-        "en": "Can the doctor give me hope of getting better?"
+        "pt": "Eu não sei o que fazer, posso ouvir um conselho do médico?",
+        "en": "I don't know what to do, can I listen to the doctor's advice?"
       },
       {
-        "pt": "Posso ir ao trabalho depois de ir ao hospital?",
-        "en": "Can I go to work after going to the hospital?"
+        "pt": "Eu creio que o médico pode me ajudar, por favor.",
+        "en": "I believe the doctor can help me, please."
       }
     ],
     "updatedAt": "02/05/2026"
