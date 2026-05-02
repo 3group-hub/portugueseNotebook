@@ -990,34 +990,31 @@
     "emoji": "🏠",
     "sentences": [
       {
-        "pt": "Eu quero ir para casa.",
+        "pt": "Quero ir para casa.",
         "en": "I want to go home.",
         "uses": [
-          "quero",
-          "ir"
+          "querer"
         ]
       },
       {
         "pt": "O que desejas fazer hoje?",
         "en": "What do you want to do today?",
         "uses": [
-          "desejas",
-          "fazer"
+          "desejar"
         ]
       },
       {
-        "pt": "Eu ouvir música todos os dias.",
-        "en": "I listen to music every day.",
+        "pt": "Ouço música em casa.",
+        "en": "I listen to music at home.",
         "uses": [
           "ouvir"
         ]
       },
       {
-        "pt": "Queres dar uma semente ao meu jardim?",
-        "en": "Do you want to give a seed to my garden?",
+        "pt": "Quero ter uma semente para plantar.",
+        "en": "I want to have a seed to plant.",
         "uses": [
-          "queres",
-          "dar",
+          "querer",
           "semente"
         ]
       },
@@ -1029,27 +1026,27 @@
         ]
       },
       {
-        "pt": "Eu faço trabalho todos os dias.",
-        "en": "I work every day.",
+        "pt": "A minha mãe é casada.",
+        "en": "My mother is married.",
         "uses": [
-          "fazer",
-          "trabalho"
+          "casada"
         ]
       },
       {
-        "pt": "Eu ir à dentista amanhã.",
-        "en": "I'm going to the dentist tomorrow.",
+        "pt": "O que fazes quando ouves uma tormenta?",
+        "en": "What do you do when you hear a storm?",
         "uses": [
-          "ir",
-          "dentista"
+          "ouvir",
+          "tormenta"
         ]
       },
       {
-        "pt": "Eu ter uma casa bonita, não é?",
-        "en": "I have a beautiful house, don't I?",
+        "pt": "Quero falar com o dentista hoje.",
+        "en": "I want to speak with the dentist today.",
         "uses": [
-          "ter",
-          "é"
+          "querer",
+          "dentista",
+          "falar"
         ]
       }
     ],
