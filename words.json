@@ -961,9 +961,15 @@
     "translation": "stays",
     "category": "Noun",
     "notes": "",
-    "examples": [],
+    "examples": [
+      {
+        "pt": "O meu amigo fica em Lisboa",
+        "en": "My friend stays in Lisbon"
+      }
+    ],
     "addedAt": "02/05/2026",
     "generatingExample": true,
-    "assessingFreq": true
+    "assessingFreq": false,
+    "freq": "essential"
   }
 ]
