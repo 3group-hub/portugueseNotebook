@@ -1157,10 +1157,41 @@
           "en": "They have a computer."
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu tive um gato",
+          "en": "I had a cat"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu tiveste um gato",
+          "en": "You had a cat"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela teve um gato",
+          "en": "She had a cat"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós tivemos um gato",
+          "en": "We had a cat"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês tiveram um gato",
+          "en": "You had a cat"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles tiveram um gato",
+          "en": "They had a cat"
+        }
+      ],
       "future": []
     },
-    "_activeTense": "past",
-    "_generatingTense": "past"
+    "_activeTense": "future",
+    "_generatingTense": "future"
   }
 ]
