@@ -1,0 +1,41 @@
+{
+  "Restaurant": {
+    "label": "Restaurant",
+    "emoji": "🍽️",
+    "sentences": [
+      {
+        "pt": "Quero um café, por favor.",
+        "en": "I want a coffee, please."
+      },
+      {
+        "pt": "O que é que você deseja comer?",
+        "en": "What do you want to eat?"
+      },
+      {
+        "pt": "Posso ouvir a música ao vivo?",
+        "en": "Can I listen to live music?"
+      },
+      {
+        "pt": "Quero saber se o prato tem sementes.",
+        "en": "I want to know if the dish has seeds."
+      },
+      {
+        "pt": "Espero que o serviço seja rápido.",
+        "en": "I hope the service is quick."
+      },
+      {
+        "pt": "Posso ter a conta, por favor?",
+        "en": "Can I have the bill, please?"
+      },
+      {
+        "pt": "Quero ir ao restaurante que fica perto da minha casa.",
+        "en": "I want to go to the restaurant that is near my house."
+      },
+      {
+        "pt": "É que não quero errar a escolha do prato.",
+        "en": "It's just that I don't want to make a mistake in choosing the dish."
+      }
+    ],
+    "updatedAt": "02/05/2026"
+  }
+}
