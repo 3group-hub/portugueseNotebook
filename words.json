@@ -1003,13 +1003,14 @@
   },
   {
     "id": 1777725991795,
-    "word": "ser",
-    "translation": "to be",
-    "category": "Noun",
+    "word": "é",
+    "translation": "is",
+    "category": "Verb",
     "notes": "",
     "examples": [],
     "addedAt": "02/05/2026",
     "generatingExample": true,
-    "assessingFreq": true
+    "assessingFreq": false,
+    "freq": "essential"
   }
 ]
