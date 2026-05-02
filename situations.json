@@ -264,5 +264,46 @@
     "level": "essential",
     "cefrShort": "A1/A2",
     "updatedAt": "02/05/2026"
+  },
+  "Café": {
+    "label": "Café",
+    "emoji": "☕",
+    "sentences": [
+      {
+        "pt": "Quero um café, por favor.",
+        "en": "I want a coffee, please."
+      },
+      {
+        "pt": "É alta a torre?",
+        "en": "Is the tower high?"
+      },
+      {
+        "pt": "Desejo um pastel.",
+        "en": "I want a pastry."
+      },
+      {
+        "pt": "Onde fica o café?",
+        "en": "Where is the coffee?"
+      },
+      {
+        "pt": "Quero ir ao café.",
+        "en": "I want to go to the café."
+      },
+      {
+        "pt": "Bom dia, quero um chá.",
+        "en": "Good morning, I want a tea."
+      },
+      {
+        "pt": "Fazer um café, por favor.",
+        "en": "Make a coffee, please."
+      },
+      {
+        "pt": "Dar-me um pastel, por favor.",
+        "en": "Give me a pastry, please."
+      }
+    ],
+    "level": "essential",
+    "cefrShort": "A1/A2",
+    "updatedAt": "02/05/2026"
   }
 }
