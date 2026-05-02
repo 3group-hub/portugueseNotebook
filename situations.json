@@ -637,10 +637,11 @@
     "emoji": "🏥",
     "sentences": [
       {
-        "pt": "Quero ir ao dentista.",
-        "en": "I want to go to the dentist.",
+        "pt": "Quero falar com o dentista.",
+        "en": "I want to speak with the dentist.",
         "uses": [
           "querer",
+          "falar",
           "dentista"
         ]
       },
@@ -653,50 +654,52 @@
         ]
       },
       {
-        "pt": "Desejo uma alta qualidade de tratamento.",
-        "en": "I want a high quality treatment.",
+        "pt": "Quero ir ao trabalho.",
+        "en": "I want to go to work.",
+        "uses": [
+          "querer",
+          "ir",
+          "trabalho"
+        ]
+      },
+      {
+        "pt": "Desejo uma boa alta.",
+        "en": "I want a good height.",
         "uses": [
           "desejar",
           "alta"
         ]
       },
       {
-        "pt": "O que você quer fazer?",
-        "en": "What do you want to do?",
+        "pt": "O que diz o médico?",
+        "en": "What does the doctor say?",
         "uses": [
-          "querer",
-          "fazer"
+          "dizer",
+          "médico"
         ]
       },
       {
-        "pt": "Eu ouvir o médico.",
-        "en": "I will listen to the doctor.",
+        "pt": "Quero ouvir o diagnóstico.",
+        "en": "I want to hear the diagnosis.",
         "uses": [
+          "querer",
           "ouvir"
         ]
       },
       {
-        "pt": "Quero falar com o médico, por favor.",
-        "en": "I want to speak with the doctor, please.",
+        "pt": "Posso dar um lamento?",
+        "en": "Can I give a lament?",
         "uses": [
-          "querer",
-          "falar"
+          "dar",
+          "lamento"
         ]
       },
       {
-        "pt": "Você sabe onde fica a sala de espera?",
-        "en": "Do you know where the waiting room is?",
-        "uses": [
-          "saber",
-          "fica"
-        ]
-      },
-      {
-        "pt": "Eu creio que o médico vai dar um bom diagnóstico.",
-        "en": "I believe the doctor will give a good diagnosis.",
+        "pt": "Creio que o médico me ajuda.",
+        "en": "I believe the doctor helps me.",
         "uses": [
           "creio",
-          "dar"
+          "médico"
         ]
       }
     ],
