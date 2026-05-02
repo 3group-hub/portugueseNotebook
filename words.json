@@ -1346,6 +1346,45 @@
     "examples": [],
     "addedAt": "02/05/2026",
     "generatingExample": true,
-    "assessingFreq": true
+    "assessingFreq": false,
+    "freq": "essential",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu faço o jantar",
+          "en": "I do dinner"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu fazes o trabalho",
+          "en": "You do the work"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela faz o bolo",
+          "en": "She does the cake"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós fazemos exercício",
+          "en": "We do exercise"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês fazem o que querem",
+          "en": "You do what you want"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles fazem futebol",
+          "en": "They do football"
+        }
+      ],
+      "past": [],
+      "future": []
+    },
+    "_activeTense": "past",
+    "_generatingTense": "past"
   }
 ]
