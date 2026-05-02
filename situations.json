@@ -4,58 +4,40 @@
     "emoji": "🏥",
     "sentences": [
       {
-        "pt": "Quero ir ao dentista hoje.",
-        "en": "I want to go to the dentist today."
+        "pt": "Quero ir ao dentista",
+        "en": "I want to go to the dentist"
       },
       {
-        "pt": "Onde é que eu posso encontrar o médico?",
-        "en": "Where can I find the doctor?"
+        "pt": "É casada?",
+        "en": "Are you married?"
       },
       {
-        "pt": "Eu ter uma consulta com o médico às 10h.",
-        "en": "I have an appointment with the doctor at 10am."
+        "pt": "Quero alta",
+        "en": "I want to be tall"
       },
       {
-        "pt": "Posso fazer uma pergunta ao médico?",
-        "en": "Can I ask the doctor a question?"
+        "pt": "Onde fica o hospital?",
+        "en": "Where is the hospital?"
       },
       {
-        "pt": "Eu quero saber se estou casada tem algum efeito na minha saúde.",
-        "en": "I want to know if being married has any effect on my health."
-      },
-      {
-        "pt": "O médico pode me dar um conselho sobre a minha altura?",
-        "en": "Can the doctor give me some advice about my height?"
-      },
-      {
-        "pt": "Eu não sei o que fazer, posso ouvir um conselho do médico?",
-        "en": "I don't know what to do, can I listen to the doctor's advice?"
-      },
-      {
-        "pt": "Eu creio que o médico pode me ajudar, por favor.",
-        "en": "I believe the doctor can help me, please."
-      },
-      {
-        "pt": "Eu vou ao hospital agora",
-        "en": "I'm going to the hospital now"
-      },
-      {
-        "pt": "O médico é muito alto",
-        "en": "The doctor is very tall"
-      },
-      {
-        "pt": "Eu quero falar com o médico",
+        "pt": "Quero falar com o médico",
         "en": "I want to speak with the doctor"
       },
       {
-        "pt": "O dentista pode me ajudar",
-        "en": "The dentist can help me"
+        "pt": "Desejo boa saúde",
+        "en": "I want good health"
       },
       {
-        "pt": "Eu ter uma consulta hoje",
-        "en": "I have an appointment today"
+        "pt": "Posso dar o meu nome?",
+        "en": "Can I give my name?"
+      },
+      {
+        "pt": "Quero saber o que é",
+        "en": "I want to know what it is"
       }
     ],
+    "level": "essential",
+    "cefrShort": "A1/A2",
     "updatedAt": "02/05/2026"
   },
   "Restaurant": {
