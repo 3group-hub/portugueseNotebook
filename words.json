@@ -1222,7 +1222,7 @@
         }
       ]
     },
-    "_activeTense": "future",
+    "_activeTense": "present",
     "_generatingTense": null
   },
   {
@@ -1446,7 +1446,7 @@
         }
       ]
     },
-    "_activeTense": "future",
+    "_activeTense": "present",
     "_generatingTense": null
   },
   {
@@ -1558,7 +1558,7 @@
         }
       ]
     },
-    "_activeTense": "future",
+    "_activeTense": "present",
     "_generatingTense": null
   },
   {
@@ -1681,7 +1681,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "02/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -1749,9 +1749,51 @@
           "en": "They knew"
         }
       ],
-      "future": []
+      "future": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou saber",
+          "en": "I will know"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais saber",
+          "en": "You will know"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele/Ela vai saber",
+          "en": "He/She will know"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos saber",
+          "en": "We will know"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão saber",
+          "en": "You will know"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles/Elas vão saber",
+          "en": "They will know"
+        }
+      ]
     },
-    "_activeTense": "future",
-    "_generatingTense": "future"
+    "_activeTense": "present",
+    "_generatingTense": null
+  },
+  {
+    "id": 1777728713428,
+    "word": "falar",
+    "translation": "to speak",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "02/05/2026",
+    "generatingExample": true,
+    "assessingFreq": true
   }
 ]
