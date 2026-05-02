@@ -11,52 +11,55 @@
         ]
       },
       {
-        "pt": "Onde é o trabalho do dentista?",
-        "en": "Where is the dentist's work?",
-        "uses": [
-          "trabalho",
-          "dentista"
-        ]
-      },
-      {
-        "pt": "Eu ir à casa de banho.",
-        "en": "I'm going to the bathroom.",
-        "uses": [
-          "ir"
-        ]
-      },
-      {
-        "pt": "Desejo uma mesa, por favor.",
-        "en": "I would like a table, please.",
+        "pt": "O que é que você deseja?",
+        "en": "What do you want?",
         "uses": [
           "desejar"
         ]
       },
       {
-        "pt": "Quem é a mulher casada?",
-        "en": "Who is the married woman?",
+        "pt": "Posso ouvir a música?",
+        "en": "Can I listen to the music?",
         "uses": [
-          "casada"
+          "ouvir"
         ]
       },
       {
-        "pt": "Eu saber o que é isto?",
-        "en": "Do I know what this is?",
+        "pt": "Quero fazer um trabalho aqui.",
+        "en": "I want to do some work here.",
         "uses": [
-          "saber"
+          "fazer",
+          "trabalho"
         ]
       },
       {
-        "pt": "O que é que você quer fazer?",
-        "en": "What do you want to do?",
+        "pt": "Eu creio que é um bom dia.",
+        "en": "I believe it's a good day.",
+        "uses": [
+          "creio",
+          "dia"
+        ]
+      },
+      {
+        "pt": "O dentista vai ter um trabalho.",
+        "en": "The dentist is going to have some work.",
+        "uses": [
+          "dentista",
+          "trabalho",
+          "ter"
+        ]
+      },
+      {
+        "pt": "Quero ir ao restaurante com você.",
+        "en": "I want to go to the restaurant with you.",
         "uses": [
           "querer",
-          "fazer"
+          "ir"
         ]
       },
       {
-        "pt": "Eu dar um lamento se não tiver comida.",
-        "en": "I will lament if I don't have food.",
+        "pt": "Posso dar um lamento se não tiver comida?",
+        "en": "Can I complain if there's no food?",
         "uses": [
           "dar",
           "lamento"
