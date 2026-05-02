@@ -2104,6 +2104,13 @@ function deleteSituation(label){
   showToast('Removed.');
 }
 
+let openSitPack = null; // accordion — only one open at a time
+
+function toggleSitPack(label){
+  openSitPack = openSitPack === label ? null : label;
+  renderSavedPacks();
+}
+
 function renderSavedPacks(){
   const el = document.getElementById('sitPacksList'); if(!el) return;
   const packs = Object.values(savedSituations);
@@ -2111,30 +2118,57 @@ function renderSavedPacks(){
     el.innerHTML = `<div style="text-align:center;padding:32px;color:#bbb;font-size:13px;">No situation packs saved yet.<br>Click a situation above to generate and save one.</div>`;
     return;
   }
-  el.innerHTML = packs.map(pack=>`
-    <div style="background:#fff;border-radius:10px;margin-bottom:10px;box-shadow:0 1px 6px rgba(0,0,0,0.07);overflow:hidden;border-left:3px solid #8a3a5c;">
-      <div style="padding:12px 14px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
-        <span style="font-size:20px;">${pack.emoji}</span>
+
+  // Big icon grid
+  const gridHTML = `
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:10px;margin-bottom:16px;">
+      ${packs.map(pack=>{
+        const lvl = SIT_LEVELS[pack.level] || SIT_LEVELS.essential;
+        const isOpen = openSitPack === pack.label;
+        return `<button onclick="toggleSitPack('${escQ(pack.label)}')"
+          style="padding:14px 8px;border-radius:12px;border:2px solid ${isOpen?'#8a3a5c':'#f0ebe4'};
+            background:${isOpen?'#fdf5f8':'#fff'};cursor:pointer;font-family:inherit;text-align:center;
+            transition:all 0.18s;box-shadow:${isOpen?'0 4px 14px rgba(138,58,92,0.15)':'0 1px 4px rgba(0,0,0,0.06)'};">
+          <div style="font-size:36px;margin-bottom:6px;line-height:1;">${pack.emoji}</div>
+          <div style="font-size:12px;color:${isOpen?'#8a3a5c':'#1a3a5c'};font-weight:700;line-height:1.2;">${pack.label}</div>
+          ${pack.cefrShort?`<div style="font-size:10px;color:${lvl.color};margin-top:4px;font-weight:600;">${pack.cefrShort}</div>`:''}
+          <div style="font-size:10px;color:#bbb;margin-top:2px;">${pack.sentences.length} phrases</div>
+        </button>`;
+      }).join('')}
+    </div>`;
+
+  // Expanded pack panel
+  const openPack = packs.find(p => p.label === openSitPack);
+  const panelHTML = openPack ? `
+    <div style="background:#fff;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.08);overflow:hidden;border-left:4px solid #8a3a5c;animation:fadeIn 0.2s ease;">
+      <!-- Panel header -->
+      <div style="padding:14px 16px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;background:#fdf5f8;">
+        <span style="font-size:32px;">${openPack.emoji}</span>
         <div style="flex:1;">
-          <span style="font-size:14px;font-weight:700;color:#1a3a5c;">${pack.label}</span>
-          ${pack.cefrShort ? `<span style="font-size:10px;padding:1px 6px;border-radius:5px;background:${(SIT_LEVELS[pack.level]||SIT_LEVELS.essential).bg};color:${(SIT_LEVELS[pack.level]||SIT_LEVELS.essential).color};font-weight:700;margin-left:6px;border:1px solid ${(SIT_LEVELS[pack.level]||SIT_LEVELS.essential).color}33;">${pack.cefrShort}</span>` : ''}
-          <span style="font-size:11px;color:#aaa;margin-left:6px;">${pack.sentences.length} sentences · ${pack.updatedAt||''}</span>
+          <div style="font-size:16px;font-weight:700;color:#1a3a5c;">${openPack.label}</div>
+          <div style="display:flex;align-items:center;gap:8px;margin-top:3px;flex-wrap:wrap;">
+            ${openPack.cefrShort?`<span style="font-size:11px;padding:1px 7px;border-radius:5px;background:${(SIT_LEVELS[openPack.level]||SIT_LEVELS.essential).bg};color:${(SIT_LEVELS[openPack.level]||SIT_LEVELS.essential).color};font-weight:700;border:1px solid ${(SIT_LEVELS[openPack.level]||SIT_LEVELS.essential).color}33;">${openPack.cefrShort}</span>`:''}
+            <span style="font-size:11px;color:#aaa;">${openPack.sentences.length} phrases · ${openPack.updatedAt||''}</span>
+          </div>
         </div>
-        <div style="display:flex;gap:6px;flex-wrap:wrap;">
-          <button onclick="addMoreSituationSentences('${pack.label}')" id="moreBtn_${pack.label.replace(/\s/g,'_')}"
-            style="padding:4px 12px;border-radius:6px;border:1px solid #8a3a5c55;background:#fdf5f8;color:#8a3a5c;cursor:pointer;font-size:12px;font-family:inherit;">
+        <div style="display:flex;gap:6px;">
+          <button onclick="addMoreSituationSentences('${escQ(openPack.label)}')" id="moreBtn_${openPack.label.replace(/\s/g,'_')}"
+            style="padding:5px 12px;border-radius:7px;border:1px solid #8a3a5c55;background:#fff;color:#8a3a5c;cursor:pointer;font-size:12px;font-family:inherit;font-weight:600;">
             + More
           </button>
-          <button onclick="generateAndSaveSituation('${SITUATION_LIST.find(s=>s.label===pack.label)?.en||pack.label}','${pack.label}','${pack.emoji}')"
-            style="padding:4px 10px;border-radius:6px;border:1px solid #ddd;background:#fafafa;font-size:12px;cursor:pointer;color:#666;font-family:inherit;">↺ Refresh</button>
-          <button onclick="deleteSituation('${pack.label}')"
-            style="padding:4px 8px;border-radius:6px;border:none;background:transparent;font-size:13px;cursor:pointer;color:#ddd;">🗑️</button>
+          <button onclick="generateAndSaveSituation('${escQ(SITUATION_LIST.find(s=>s.label===openPack.label)?.en||openPack.label)}','${escQ(openPack.label)}','${openPack.emoji}')"
+            style="padding:5px 10px;border-radius:7px;border:1px solid #ddd;background:#fff;font-size:12px;cursor:pointer;color:#666;font-family:inherit;">↺</button>
+          <button onclick="deleteSituation('${escQ(openPack.label)}')"
+            style="padding:5px 8px;border-radius:7px;border:none;background:transparent;font-size:14px;cursor:pointer;color:#ddd;">🗑️</button>
         </div>
       </div>
-      <div style="border-top:1px solid #f5efe6;background:#fdfaf7;" id="sitRows_${pack.label.replace(/\s/g,'_')}">
-        ${renderSentenceRows(pack.sentences, pack.label)}
+      <!-- Sentences -->
+      <div id="sitRows_${openPack.label.replace(/\s/g,'_')}" style="background:#fdfaf7;">
+        ${renderSentenceRows(openPack.sentences, openPack.label)}
       </div>
-    </div>`).join('');
+    </div>` : '';
+
+  el.innerHTML = gridHTML + panelHTML;
 }
 
 function renderSentenceRows(sentences, label){
