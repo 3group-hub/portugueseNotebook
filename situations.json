@@ -565,36 +565,64 @@
     "emoji": "🛍️",
     "sentences": [
       {
-        "pt": "Quero uma camisa.",
-        "en": "I want a shirt."
+        "pt": "Quero comprar uma camisa.",
+        "en": "I want to buy a shirt.",
+        "uses": [
+          "querer"
+        ]
       },
       {
-        "pt": "Onde fica a loja?",
-        "en": "Where is the store?"
+        "pt": "Onde fica a loja de roupa?",
+        "en": "Where is the clothing store?",
+        "uses": [
+          "fica"
+        ]
       },
       {
-        "pt": "Eu ter altura alta.",
-        "en": "I am tall."
+        "pt": "Desejo um par de sapatos.",
+        "en": "I want a pair of shoes.",
+        "uses": [
+          "desejar"
+        ]
       },
       {
-        "pt": "Quero falar com o vendedor.",
-        "en": "I want to speak with the seller."
+        "pt": "Posso ir à loja com você?",
+        "en": "Can I go to the store with you?",
+        "uses": [
+          "ir"
+        ]
       },
       {
-        "pt": "Desejo um casaco gordo.",
-        "en": "I want a thick coat."
+        "pt": "É alta a prateleira?",
+        "en": "Is the shelf high?",
+        "uses": [
+          "alta",
+          "é"
+        ]
       },
       {
-        "pt": "Posso ir ao trabalho agora?",
-        "en": "Can I go to work now?"
+        "pt": "Quero dar um presente à minha casada.",
+        "en": "I want to give a gift to my married friend.",
+        "uses": [
+          "querer",
+          "casada",
+          "dar"
+        ]
       },
       {
-        "pt": "É uma camisa bonita?",
-        "en": "Is it a nice shirt?"
+        "pt": "Saber o preço, por favor.",
+        "en": "Know the price, please.",
+        "uses": [
+          "saber"
+        ]
       },
       {
-        "pt": "Dar-me um preço, por favor.",
-        "en": "Give me a price, please."
+        "pt": "Posso falar com o vendedor, por favor?",
+        "en": "Can I speak with the seller, please?",
+        "uses": [
+          "falar",
+          "por"
+        ]
       }
     ],
     "level": "essential",
