@@ -223,5 +223,46 @@
     "level": "essential",
     "cefrShort": "A1/A2",
     "updatedAt": "02/05/2026"
+  },
+  "Hotel": {
+    "label": "Hotel",
+    "emoji": "🏨",
+    "sentences": [
+      {
+        "pt": "Quero o quarto, por favor",
+        "en": "I want the room, please"
+      },
+      {
+        "pt": "É alta a cama?",
+        "en": "Is the bed high?"
+      },
+      {
+        "pt": "Onde fica o trabalho?",
+        "en": "Where is the work?"
+      },
+      {
+        "pt": "Quero ir ao quarto",
+        "en": "I want to go to the room"
+      },
+      {
+        "pt": "Deseja ajuda?",
+        "en": "Do you want help?"
+      },
+      {
+        "pt": "Eu ter quarto?",
+        "en": "Do I have a room?"
+      },
+      {
+        "pt": "O que é o preço?",
+        "en": "What is the price?"
+      },
+      {
+        "pt": "Posso dar o dinheiro?",
+        "en": "Can I give the money?"
+      }
+    ],
+    "level": "essential",
+    "cefrShort": "A1/A2",
+    "updatedAt": "02/05/2026"
   }
 }
