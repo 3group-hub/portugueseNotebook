@@ -116,6 +116,26 @@
       {
         "pt": "É alto o preço?",
         "en": "Is the price high?"
+      },
+      {
+        "pt": "Quero comprar algo",
+        "en": "I want to buy something"
+      },
+      {
+        "pt": "O que desejas fazer",
+        "en": "What do you want to do"
+      },
+      {
+        "pt": "Tenho escasso dinheiro",
+        "en": "I have little money"
+      },
+      {
+        "pt": "Ir à alta prateleira",
+        "en": "Go to the high shelf"
+      },
+      {
+        "pt": "É gorda a embalagem",
+        "en": "The packaging is fat"
       }
     ],
     "level": "essential",
