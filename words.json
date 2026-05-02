@@ -990,6 +990,23 @@
     "translation": "conjugation",
     "category": "Noun",
     "notes": "",
+    "examples": [
+      {
+        "pt": "A conjugacao influencia a sintaxe",
+        "en": "Conjugation influences syntax"
+      }
+    ],
+    "addedAt": "02/05/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "advanced"
+  },
+  {
+    "id": 1777725991795,
+    "word": "ser",
+    "translation": "to be",
+    "category": "Noun",
+    "notes": "",
     "examples": [],
     "addedAt": "02/05/2026",
     "generatingExample": true,
