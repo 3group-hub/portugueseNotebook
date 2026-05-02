@@ -1381,10 +1381,41 @@
           "en": "They do football"
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu fiz",
+          "en": "I did"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu fizeste",
+          "en": "You did"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele fez",
+          "en": "He/She did"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós fizemos",
+          "en": "We did"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês fizeram",
+          "en": "You did"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles fizeram",
+          "en": "They did"
+        }
+      ],
       "future": []
     },
-    "_activeTense": "past",
-    "_generatingTense": "past"
+    "_activeTense": "future",
+    "_generatingTense": "future"
   }
 ]
