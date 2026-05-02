@@ -8,8 +8,8 @@
         "en": "I want a coffee, please."
       },
       {
-        "pt": "O que é que você quer fazer aqui?",
-        "en": "What do you want to do here?"
+        "pt": "O que é que você quer fazer?",
+        "en": "What do you want to do?"
       },
       {
         "pt": "Eu ouvir dizer que o restaurante é bom.",
@@ -20,20 +20,20 @@
         "en": "Can I have the bill, please?"
       },
       {
-        "pt": "Eu querer ir ao restaurante todos os dias.",
-        "en": "I want to go to the restaurant every day."
+        "pt": "Eu quero ir ao restaurante com você.",
+        "en": "I want to go to the restaurant with you."
       },
       {
-        "pt": "Você sabe onde fica o restaurante?",
-        "en": "Do you know where the restaurant is?"
+        "pt": "O que é que você deseja comer?",
+        "en": "What do you want to eat?"
       },
       {
-        "pt": "Eu dar um pedido, por favor.",
-        "en": "I'll place an order, please."
+        "pt": "Eu não saber o que escolher.",
+        "en": "I don't know what to choose."
       },
       {
-        "pt": "Quero fazer um trabalho aqui no restaurante.",
-        "en": "I want to do some work here at the restaurant."
+        "pt": "Posso fazer um pedido, por favor?",
+        "en": "Can I make an order, please?"
       }
     ],
     "updatedAt": "02/05/2026"
