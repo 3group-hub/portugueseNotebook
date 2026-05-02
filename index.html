@@ -2056,30 +2056,51 @@ async function generateAndSaveSituation(situation, label, emoji){
   if(!situation?.trim()){ showToast('Please enter a situation'); return; }
   label = label || situation;
   emoji = emoji || '🗺️';
-  const wordList = words.map(w=>`"${w.word}" (${w.translation}) [${w.category}]${w.freq?` [${FREQ_TIERS[w.freq]?.cefrShort||''}]`:''}`).join('\n');
-  if(!wordList){ showToast('Add some words first'); return; }
+
+  // Filter words relevant to this situation level
+  const relevantWords = words.filter(w =>
+    !currentSitLevel || w.freq === currentSitLevel || !w.freq
+  );
+  const allWordsList = words.map(w=>`"${w.word}" (${w.translation}) [${w.category}]${w.freq?` [${FREQ_TIERS[w.freq]?.cefrShort||''}]`:''}`).join('\n');
+  if(!allWordsList){ showToast('Add some words first'); return; }
   const level = SIT_LEVELS[currentSitLevel];
 
   document.getElementById('sitGenLoading').classList.remove('hidden');
   try{
     const raw = await claudeCall(
-      `You are a European Portuguese tutor. A student is going to be: ${situation}.
-Their vocabulary:\n${wordList}\n
-Generate 8 practical, natural sentences they would actually use in this situation.
-- ONLY European Portuguese (Portugal, not Brazilian).
-- Use words from their vocabulary wherever possible and natural.
-- ${level.prompt}
-- Mix statements, questions, and requests.
-- Include the English translation in parentheses after each sentence.
-- Number them 1–8, one per line.`, 1200);
+      `You are a European Portuguese tutor creating situational practice sentences.
+
+SITUATION: A student is going to be ${situation}.
+
+STUDENT'S VOCABULARY:
+${allWordsList}
+
+TASK: Generate 8 practical sentences for this situation.
+
+STRICT RULES:
+1. ONLY European Portuguese (Portugal, not Brazilian Portuguese).
+2. MANDATORY: Every sentence MUST include at least one word from the student's vocabulary list above. Do not write a sentence that uses none of their words.
+3. Prefer words the student already knows — this helps reinforce their learning in context.
+4. ${level.prompt}
+5. Mix statements, questions and requests — make them realistic for this situation.
+6. After each Portuguese sentence, add the English translation in parentheses.
+7. At the very end of each sentence, add [uses: word1, word2] listing which vocabulary words appear in that sentence.
+8. Number them 1–8, one per line.
+
+Example format:
+1. Quero um café, por favor. (I would like a coffee, please.) [uses: querer, café]`, 1400);
 
     const sentences = raw.split('\n').filter(l=>l.trim()).map(line=>{
       const match = line.match(/^(\d+[\.\)]?\s*)(.+)/);
       const text = match ? match[2] : line;
-      const pt = text.split('(')[0].trim();
-      const enMatch = text.match(/\(([^)]+)\)/);
+      // Extract [uses: ...] tag
+      const usesMatch = text.match(/\[uses:\s*([^\]]+)\]/i);
+      const uses = usesMatch ? usesMatch[1].split(',').map(s=>s.trim()) : [];
+      const withoutUses = text.replace(/\[uses:[^\]]*\]/i,'').trim();
+      const pt = withoutUses.split('(')[0].trim();
+      const enMatch = withoutUses.match(/\(([^)]+)\)/);
       const en = enMatch ? enMatch[1] : '';
-      return pt ? {pt, en} : null;
+      return pt ? {pt, en, uses} : null;
     }).filter(Boolean);
 
     savedSituations[label] = {
@@ -2173,7 +2194,7 @@ function renderSavedPacks(){
 
 function renderSentenceRows(sentences, label){
   return sentences.map((s,i)=>`
-    <div style="padding:8px 14px;${i<sentences.length-1?'border-bottom:1px solid #f0ebe4;':''}display:flex;align-items:flex-start;gap:8px;">
+    <div style="padding:10px 14px;${i<sentences.length-1?'border-bottom:1px solid #f0ebe4;':''}display:flex;align-items:flex-start;gap:8px;">
       <div style="flex:1;">
         <div style="display:flex;align-items:center;gap:5px;flex-wrap:wrap;">
           <span style="font-size:11px;color:#ccc;">${i+1}.</span>
@@ -2184,8 +2205,11 @@ function renderSentenceRows(sentences, label){
           <span style="font-size:12px;color:#999;font-style:italic;">${s.en}</span>
           <button class="speak-btn" onclick="speakText('${escQ(s.en)}','en-GB',this)" style="font-size:11px;">🔊</button>
         </div>
+        ${s.uses&&s.uses.length?`<div style="margin-top:4px;display:flex;gap:4px;flex-wrap:wrap;">
+          ${s.uses.map(u=>`<span style="font-size:10px;padding:1px 6px;border-radius:8px;background:#1a3a5c12;color:#1a3a5c;border:1px solid #1a3a5c22;">📖 ${u}</span>`).join('')}
+        </div>`:''}
       </div>
-      <button onclick="deleteSentenceFromPack('${label}',${i})"
+      <button onclick="deleteSentenceFromPack('${escQ(label)}',${i})"
         style="padding:2px 5px;background:transparent;border:none;cursor:pointer;font-size:11px;color:#ddd;flex-shrink:0;">✕</button>
     </div>`).join('');
 }
@@ -2195,28 +2219,41 @@ async function addMoreSituationSentences(label){
   const btn = document.getElementById('moreBtn_'+label.replace(/\s/g,'_'));
   if(btn){ btn.textContent='⏳ Generating…'; btn.disabled=true; }
   const situation = SITUATION_LIST.find(s=>s.label===label)?.en || label;
-  const wordList = words.map(w=>`"${w.word}" (${w.translation}) [${w.category}]`).join('\n');
+  const allWordsList = words.map(w=>`"${w.word}" (${w.translation}) [${w.category}]`).join('\n');
   const existing = pack.sentences.map(s=>`"${s.pt}"`).join(', ');
   const packLevel = SIT_LEVELS[pack.level] || SIT_LEVELS[currentSitLevel];
   try{
     const raw = await claudeCall(
-      `You are a European Portuguese tutor. A student is going to be: ${situation}.
-Their vocabulary:\n${wordList}\n
-Generate 5 MORE natural sentences for this situation.
-- ONLY European Portuguese (Portugal, not Brazilian).
-- Use words from their vocabulary wherever possible.
-- ${packLevel.prompt}
-- Do NOT repeat or closely resemble these existing sentences: ${existing}
-- Include the English translation in parentheses after each sentence.
-- Number them 1–5, one per line.`, 800);
+      `You are a European Portuguese tutor creating situational practice sentences.
+
+SITUATION: A student is going to be ${situation}.
+
+STUDENT'S VOCABULARY:
+${allWordsList}
+
+TASK: Generate 5 MORE sentences for this situation.
+
+STRICT RULES:
+1. ONLY European Portuguese (Portugal, not Brazilian).
+2. MANDATORY: Every sentence MUST include at least one word from the vocabulary list above.
+3. ${packLevel.prompt}
+4. Do NOT repeat or closely resemble these existing sentences: ${existing}
+5. After each Portuguese sentence, add the English translation in parentheses.
+6. At the end of each sentence add [uses: word1, word2] listing which vocabulary words appear.
+7. Number them 1–5, one per line.`, 900);
+
     const newSentences = raw.split('\n').filter(l=>l.trim()).map(line=>{
       const match = line.match(/^(\d+[\.\)]?\s*)(.+)/);
       const text = match ? match[2] : line;
-      const pt = text.split('(')[0].trim();
-      const enMatch = text.match(/\(([^)]+)\)/);
+      const usesMatch = text.match(/\[uses:\s*([^\]]+)\]/i);
+      const uses = usesMatch ? usesMatch[1].split(',').map(s=>s.trim()) : [];
+      const withoutUses = text.replace(/\[uses:[^\]]*\]/i,'').trim();
+      const pt = withoutUses.split('(')[0].trim();
+      const enMatch = withoutUses.match(/\(([^)]+)\)/);
       const en = enMatch ? enMatch[1] : '';
-      return pt ? {pt, en} : null;
+      return pt ? {pt, en, uses} : null;
     }).filter(Boolean);
+
     pack.sentences = [...pack.sentences, ...newSentences];
     pack.updatedAt = new Date().toLocaleDateString('pt-PT');
     await saveSituationsToGH();
