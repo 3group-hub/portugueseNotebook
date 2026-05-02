@@ -80,5 +80,46 @@
     "level": "essential",
     "cefrShort": "A1/A2",
     "updatedAt": "02/05/2026"
+  },
+  "Grocery store": {
+    "label": "Grocery store",
+    "emoji": "🛒",
+    "sentences": [
+      {
+        "pt": "Quero ir ao supermercado",
+        "en": "I want to go to the supermarket"
+      },
+      {
+        "pt": "O que é isto?",
+        "en": "What is this?"
+      },
+      {
+        "pt": "Desejo comprar sementes",
+        "en": "I want to buy seeds"
+      },
+      {
+        "pt": "Onde fica o trabalho?",
+        "en": "Where is the work?"
+      },
+      {
+        "pt": "Quero ouvir o preço",
+        "en": "I want to hear the price"
+      },
+      {
+        "pt": "Tenho esperança de encontrar",
+        "en": "I hope to find"
+      },
+      {
+        "pt": "Quero dar dinheiro",
+        "en": "I want to give money"
+      },
+      {
+        "pt": "É alto o preço?",
+        "en": "Is the price high?"
+      }
+    ],
+    "level": "essential",
+    "cefrShort": "A1/A2",
+    "updatedAt": "02/05/2026"
   }
 }
