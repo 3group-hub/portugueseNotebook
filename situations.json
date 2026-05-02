@@ -4,61 +4,62 @@
     "emoji": "🍽️",
     "sentences": [
       {
-        "pt": "Quero um bolo, por favor.",
-        "en": "I would like a cake, please.",
+        "pt": "Quero um café, por favor.",
+        "en": "I would like a coffee, please.",
         "uses": [
           "querer"
         ]
       },
       {
-        "pt": "O que é isto?",
-        "en": "What is this?",
+        "pt": "Onde é o trabalho do dentista?",
+        "en": "Where is the dentist's work?",
         "uses": [
-          "é"
+          "trabalho",
+          "dentista"
         ]
       },
       {
-        "pt": "Desejo um chá.",
-        "en": "I want a tea.",
+        "pt": "Eu ir à casa de banho.",
+        "en": "I'm going to the bathroom.",
+        "uses": [
+          "ir"
+        ]
+      },
+      {
+        "pt": "Desejo uma mesa, por favor.",
+        "en": "I would like a table, please.",
         "uses": [
           "desejar"
         ]
       },
       {
-        "pt": "Onde fica a casa de banho?",
-        "en": "Where is the bathroom?",
+        "pt": "Quem é a mulher casada?",
+        "en": "Who is the married woman?",
         "uses": [
-          "fica"
+          "casada"
         ]
       },
       {
-        "pt": "Quero ir ao restaurante.",
-        "en": "I want to go to the restaurant.",
-        "uses": [
-          "querer",
-          "ir"
-        ]
-      },
-      {
-        "pt": "Posso dar um pedido, por favor?",
-        "en": "Can I give an order, please?",
-        "uses": [
-          "dar",
-          "por favor"
-        ]
-      },
-      {
-        "pt": "O que sabes sobre o menu?",
-        "en": "What do you know about the menu?",
+        "pt": "Eu saber o que é isto?",
+        "en": "Do I know what this is?",
         "uses": [
           "saber"
         ]
       },
       {
-        "pt": "Eu creio que o prato é bom.",
-        "en": "I believe the dish is good.",
+        "pt": "O que é que você quer fazer?",
+        "en": "What do you want to do?",
         "uses": [
-          "creio"
+          "querer",
+          "fazer"
+        ]
+      },
+      {
+        "pt": "Eu dar um lamento se não tiver comida.",
+        "en": "I will lament if I don't have food.",
+        "uses": [
+          "dar",
+          "lamento"
         ]
       }
     ],
