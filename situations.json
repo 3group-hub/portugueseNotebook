@@ -464,6 +464,26 @@
       {
         "pt": "Quero falar com o farmacêutico.",
         "en": "I want to speak with the pharmacist."
+      },
+      {
+        "pt": "Eu quero um remédio",
+        "en": "I want a medicine"
+      },
+      {
+        "pt": "O farmacêutico é casada",
+        "en": "The pharmacist is married"
+      },
+      {
+        "pt": "Ter uma alta febre",
+        "en": "To have a high fever"
+      },
+      {
+        "pt": "Eu ir à farmácia",
+        "en": "I go to the pharmacy"
+      },
+      {
+        "pt": "Desejo saber o preço",
+        "en": "I want to know the price"
       }
     ],
     "level": "essential",
