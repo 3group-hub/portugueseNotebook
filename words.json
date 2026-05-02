@@ -1121,7 +1121,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "02/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -1189,9 +1189,51 @@
           "en": "They had a cat"
         }
       ],
-      "future": []
+      "future": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou ter",
+          "en": "I will have"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais ter",
+          "en": "You will have"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele/Ela vai ter",
+          "en": "He/She will have"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos ter",
+          "en": "We will have"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão ter",
+          "en": "You will have"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles/Elas vão ter",
+          "en": "They will have"
+        }
+      ]
     },
     "_activeTense": "future",
-    "_generatingTense": "future"
+    "_generatingTense": null
+  },
+  {
+    "id": 1777726638281,
+    "word": "ir",
+    "translation": "go",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "02/05/2026",
+    "generatingExample": true,
+    "assessingFreq": true
   }
 ]
