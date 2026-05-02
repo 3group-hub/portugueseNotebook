@@ -1458,6 +1458,45 @@
     "examples": [],
     "addedAt": "02/05/2026",
     "generatingExample": true,
-    "assessingFreq": true
+    "assessingFreq": false,
+    "freq": "essential",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu digo sim.",
+          "en": "I say yes."
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu dizes não.",
+          "en": "You say no."
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela diz isso.",
+          "en": "She says that."
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós dizemos pouco.",
+          "en": "We say little."
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês dizem tudo.",
+          "en": "You say everything."
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles dizem nada.",
+          "en": "They say nothing."
+        }
+      ],
+      "past": [],
+      "future": []
+    },
+    "_activeTense": "past",
+    "_generatingTense": "past"
   }
 ]
