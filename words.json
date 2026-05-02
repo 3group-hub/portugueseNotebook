@@ -944,6 +944,23 @@
     "translation": "fat",
     "category": "Noun",
     "notes": "",
+    "examples": [
+      {
+        "pt": "A minha gorda cadela come muito",
+        "en": "My fat dog eats a lot"
+      }
+    ],
+    "addedAt": "02/05/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common"
+  },
+  {
+    "id": 1777725619672,
+    "word": "fica",
+    "translation": "stays",
+    "category": "Noun",
+    "notes": "",
     "examples": [],
     "addedAt": "02/05/2026",
     "generatingExample": true,
