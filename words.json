@@ -854,24 +854,19 @@
       ]
     },
     "_generatingTense": null,
-    "_activeTense": "future",
+    "_activeTense": "past",
     "assessingFreq": false,
     "freq": "common"
   },
   {
     "id": 1777374156774,
-    "word": "busca",
-    "translation": "search",
-    "category": "Noun",
+    "word": "Bom dia",
+    "translation": "Good morning",
+    "category": "Phrase",
     "notes": "",
-    "examples": [
-      {
-        "pt": "A busca no Google deu resultados interessantes",
-        "en": "The Google search gave interesting results"
-      }
-    ],
+    "examples": [],
     "addedAt": "28/04/2026",
-    "generatingExample": false,
+    "generatingExample": true,
     "assessingFreq": false,
     "freq": "common"
   }
