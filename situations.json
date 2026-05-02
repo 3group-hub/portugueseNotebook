@@ -773,43 +773,64 @@
     "sentences": [
       {
         "pt": "Quero sacar dinheiro.",
-        "en": "I want to withdraw money."
+        "en": "I want to withdraw money.",
+        "uses": [
+          "querer"
+        ]
       },
       {
-        "pt": "Onde é o ATM?",
-        "en": "Where is the ATM?"
+        "pt": "Onde fica o banco?",
+        "en": "Where is the bank?",
+        "uses": [
+          "fica"
+        ]
       },
       {
-        "pt": "Quer ajudar-me?",
-        "en": "Do you want to help me?"
+        "pt": "É um trabalho no banco.",
+        "en": "It's a job at the bank.",
+        "uses": [
+          "é",
+          "trabalho"
+        ]
       },
       {
-        "pt": "Eu ir ao banco.",
-        "en": "I'm going to the bank."
+        "pt": "Quer ir ao banco?",
+        "en": "Do you want to go to the bank?",
+        "uses": [
+          "querer",
+          "ir"
+        ]
       },
       {
-        "pt": "Posso fazer um saque?",
-        "en": "Can I make a withdrawal?"
+        "pt": "Desejo falar com o gerente.",
+        "en": "I want to speak with the manager.",
+        "uses": [
+          "desejar",
+          "falar"
+        ]
       },
       {
-        "pt": "O que é o destino do meu dinheiro?",
-        "en": "What is the destination of my money?"
+        "pt": "O que é que você quer fazer?",
+        "en": "What do you want to do?",
+        "uses": [
+          "é",
+          "querer",
+          "fazer"
+        ]
       },
       {
-        "pt": "-> Revised: 6. Quero saber o saldo.",
-        "en": "I want to know the balance."
+        "pt": "Posso dar o meu cartão?",
+        "en": "Can I give my card?",
+        "uses": [
+          "dar"
+        ]
       },
       {
-        "pt": "Deseja ajudar-me?",
-        "en": "Do you want to help me?"
-      },
-      {
-        "pt": "-> Revised: 7. Quero falar com alguém.",
-        "en": "I want to speak with someone."
-      },
-      {
-        "pt": "Posso ter dinheiro?",
-        "en": "Can I have money?"
+        "pt": "Saber o saldo é importante.",
+        "en": "Knowing the balance is important.",
+        "uses": [
+          "saber"
+        ]
       }
     ],
     "level": "essential",
