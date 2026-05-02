@@ -1141,59 +1141,62 @@
         ]
       },
       {
-        "pt": "Onde posso ouvir música?",
-        "en": "Where can I listen to music?",
+        "pt": "O meu trabalho é ir ao ginásio.",
+        "en": "My job is to go to the gym.",
         "uses": [
+          "trabalho",
+          "ir"
+        ]
+      },
+      {
+        "pt": "Desejas ouvir música enquanto fazes exercício?",
+        "en": "Do you want to listen to music while exercising?",
+        "uses": [
+          "desejar",
           "ouvir"
         ]
       },
       {
-        "pt": "Desejo ter esperança.",
-        "en": "I want to have hope.",
+        "pt": "É alto e gorda, mas quer fazer desporto.",
+        "en": "He is tall and fat, but wants to do sports.",
         "uses": [
-          "desejar",
-          "esperança"
-        ]
-      },
-      {
-        "pt": "A semente é escassa.",
-        "en": "The seed is scarce.",
-        "uses": [
-          "semente",
-          "escasso"
-        ]
-      },
-      {
-        "pt": "Quero ir ao trabalho.",
-        "en": "I want to go to work.",
-        "uses": [
+          "é",
           "querer",
-          "ir",
+          "alta",
+          "gorda"
+        ]
+      },
+      {
+        "pt": "Posso dar um conselho sobre o meu trabalho?",
+        "en": "Can I give advice on my job?",
+        "uses": [
+          "dar",
           "trabalho"
         ]
       },
       {
-        "pt": "Posso fazer conjugação?",
-        "en": "Can I do conjugation?",
-        "uses": [
-          "fazer",
-          "conjugacao"
-        ]
-      },
-      {
-        "pt": "É importante saber falar.",
-        "en": "It's important to know how to speak.",
-        "uses": [
-          "saber",
-          "falar"
-        ]
-      },
-      {
-        "pt": "Quero dar um presente, por favor.",
-        "en": "I want to give a gift, please.",
+        "pt": "Quero saber se posso ir ao parque.",
+        "en": "I want to know if I can go to the park.",
         "uses": [
           "querer",
-          "dar"
+          "saber",
+          "ir"
+        ]
+      },
+      {
+        "pt": "Fazes exercício para ter uma boa saúde?",
+        "en": "Do you exercise to have good health?",
+        "uses": [
+          "fazer",
+          "ter"
+        ]
+      },
+      {
+        "pt": "Dizes que o desporto é importante, é verdade?",
+        "en": "Do you say that sports are important, is that true?",
+        "uses": [
+          "dizer",
+          "fazer"
         ]
       }
     ],
