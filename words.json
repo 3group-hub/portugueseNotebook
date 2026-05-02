@@ -1793,7 +1793,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "02/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -1829,7 +1829,38 @@
           "en": "They speak German"
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu falei",
+          "en": "I spoke"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu falaste",
+          "en": "You spoke"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela falou",
+          "en": "She spoke"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós falámos",
+          "en": "We spoke"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês falaram",
+          "en": "You spoke"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles falaram",
+          "en": "They spoke"
+        }
+      ],
       "future": [
         {
           "pronoun": "eu",
@@ -1863,7 +1894,18 @@
         }
       ]
     },
-    "_activeTense": "past",
-    "_generatingTense": "past"
+    "_activeTense": "present",
+    "_generatingTense": null
+  },
+  {
+    "id": 1777729005902,
+    "word": "trabalho",
+    "translation": "work",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "02/05/2026",
+    "generatingExample": true,
+    "assessingFreq": true
   }
 ]
