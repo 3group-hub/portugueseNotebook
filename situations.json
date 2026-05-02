@@ -1,43 +1,4 @@
 {
-  "Restaurant": {
-    "label": "Restaurant",
-    "emoji": "🍽️",
-    "sentences": [
-      {
-        "pt": "Quero um café, por favor.",
-        "en": "I want a coffee, please."
-      },
-      {
-        "pt": "O que é que você quer fazer?",
-        "en": "What do you want to do?"
-      },
-      {
-        "pt": "Eu ouvir dizer que o restaurante é bom.",
-        "en": "I heard that the restaurant is good."
-      },
-      {
-        "pt": "Posso ter a conta, por favor?",
-        "en": "Can I have the bill, please?"
-      },
-      {
-        "pt": "Eu quero ir ao restaurante com você.",
-        "en": "I want to go to the restaurant with you."
-      },
-      {
-        "pt": "O que é que você deseja comer?",
-        "en": "What do you want to eat?"
-      },
-      {
-        "pt": "Eu não saber o que escolher.",
-        "en": "I don't know what to choose."
-      },
-      {
-        "pt": "Posso fazer um pedido, por favor?",
-        "en": "Can I make an order, please?"
-      }
-    ],
-    "updatedAt": "02/05/2026"
-  },
   "Hospital": {
     "label": "Hospital",
     "emoji": "🏥",
