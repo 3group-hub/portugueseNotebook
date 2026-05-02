@@ -1045,10 +1045,41 @@
           "en": "They are happy"
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu fui",
+          "en": "I was"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu foste",
+          "en": "You were"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela foi",
+          "en": "She was"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós fomos",
+          "en": "We were"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês foram",
+          "en": "You were"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles foram",
+          "en": "They were"
+        }
+      ],
       "future": []
     },
-    "_activeTense": "past",
-    "_generatingTense": "past"
+    "_activeTense": "future",
+    "_generatingTense": "future"
   }
 ]
