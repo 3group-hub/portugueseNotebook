@@ -120,6 +120,7 @@
     </div>
     <div class="tabs">
       <button class="tab-btn active" data-tab="vocab">📚 Vocabulary</button>
+      <button class="tab-btn" data-tab="situations">🗺️ Situations</button>
       <button class="tab-btn" data-tab="alphabet">🔤 Alphabet</button>
       <button class="tab-btn" data-tab="numbers">🔢 Numbers</button>
     </div>
@@ -174,9 +175,20 @@
     <div class="num-grid" id="numGrid"></div>
   </div>
 
-</div>
+  <!-- ═══ SITUATIONS TAB ═══ -->
+  <div id="tab-situations" class="hidden">
+    <div class="card" style="border-left:4px solid #8a3a5c;margin-top:16px;">
+      <h2 style="margin:0 0 4px;">🗺️ Situations</h2>
+      <p style="font-size:12px;color:#aaa;">Practical phrases for real-life situations in Portugal · curated by your teacher</p>
+    </div>
+    <div id="sitLoadingMsg" style="text-align:center;padding:40px;color:#aaa;font-size:13px;">
+      <span class="spin">⏳</span> Loading situations…
+    </div>
+    <div id="sitPacksView" style="margin-top:14px;"></div>
+    <div id="sitEmptyMsg" class="hidden" style="text-align:center;padding:40px;color:#bbb;font-size:13px;">No situation packs yet.<br>The teacher adds these from the main app.</div>
+  </div>
 
-<div class="toast" id="toast"></div>
+</div><!-- /main -->
 
 <script>
 // ═══ CONFIG — change these to point to your repo ═════════════════════════
@@ -285,16 +297,7 @@ async function loadFromGitHub(){
   }
 }
 
-// ═══ TABS ════════════════════════════════════════════════════════════════
-document.querySelectorAll('.tab-btn').forEach(btn=>{
-  btn.addEventListener('click',()=>{
-    document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
-    btn.classList.add('active');
-    activeTab = btn.dataset.tab;
-    ['vocab','alphabet','numbers'].forEach(t=>document.getElementById('tab-'+t).classList.add('hidden'));
-    document.getElementById('tab-'+activeTab).classList.remove('hidden');
-  });
-});
+// ═══ TABS (handled in INIT below) ════════════════════════════════════════
 
 // ═══ SPEECH ══════════════════════════════════════════════════════════════
 let selectedVoice = null;
@@ -629,12 +632,77 @@ function showToast(msg){
   setTimeout(()=>t.classList.remove('show'),2400);
 }
 
+// ═══ SITUATIONS (viewer — load from GitHub, no API key needed) ═══════════
+async function loadSituations(){
+  try{
+    const url = `https://raw.githubusercontent.com/${GH_USER}/${GH_REPO}/main/situations.json?t=${Date.now()}`;
+    const res = await fetch(url);
+    if(!res.ok) throw new Error('not found');
+    const data = await res.json();
+    const packs = Object.values(data);
+    document.getElementById('sitLoadingMsg').style.display='none';
+    if(!packs.length){
+      document.getElementById('sitEmptyMsg').classList.remove('hidden');
+      return;
+    }
+    document.getElementById('sitPacksView').innerHTML = packs.map(pack=>`
+      <div style="background:#fff;border-radius:10px;margin-bottom:10px;box-shadow:0 1px 6px rgba(0,0,0,0.07);overflow:hidden;border-left:3px solid #8a3a5c;">
+        <div style="padding:12px 14px;display:flex;align-items:center;gap:10px;">
+          <span style="font-size:22px;">${pack.emoji}</span>
+          <div>
+            <span style="font-size:14px;font-weight:700;color:var(--navy);">${pack.label}</span>
+            <span style="font-size:11px;color:#aaa;margin-left:8px;">${pack.sentences.length} phrases</span>
+          </div>
+        </div>
+        <div style="border-top:1px solid #f5efe6;background:#fdfaf7;">
+          ${pack.sentences.map((s,i)=>`
+            <div style="padding:9px 14px;${i<pack.sentences.length-1?'border-bottom:1px solid #f0ebe4;':''}">
+              <div style="display:flex;align-items:center;gap:5px;flex-wrap:wrap;">
+                <span style="font-size:11px;color:#ccc;flex-shrink:0;">${i+1}.</span>
+                <span style="font-size:14px;color:var(--navy);">${s.pt}</span>
+                <button class="speak-btn" onclick="speakText('${escQ(s.pt)}','pt-PT',this)">🔊</button>
+              </div>
+              <div style="display:flex;align-items:center;gap:5px;margin-top:2px;">
+                <span style="font-size:12px;color:#999;font-style:italic;">${s.en}</span>
+                <button class="speak-btn" onclick="speakText('${escQ(s.en)}','en-GB',this)" style="font-size:11px;">🔊</button>
+              </div>
+            </div>`).join('')}
+        </div>
+      </div>`).join('');
+  }catch(e){
+    document.getElementById('sitLoadingMsg').innerHTML='<span style="color:#bbb;font-size:13px;">No situations saved yet.</span>';
+  }
+}
+
 // ═══ INIT ═════════════════════════════════════════════════════════════════
+// Update tabs to include situations
+document.querySelectorAll('.tab-btn').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    activeTab = btn.dataset.tab;
+    ['vocab','situations','alphabet','numbers'].forEach(t=>document.getElementById('tab-'+t).classList.add('hidden'));
+    document.getElementById('tab-'+activeTab).classList.remove('hidden');
+    if(activeTab==='situations') renderSituationGrid();
+  });
+});
+
 speechSynthesis.getVoices();
 speechSynthesis.addEventListener('voiceschanged',()=>{ selectedVoice=null; });
 // Init slider
 const _slider=document.getElementById('speechRate');
 if(_slider){ _slider.value=speechRate; document.getElementById('speechRateLabel').textContent=speechRate.toFixed(2)+'×'; }
+// Tabs
+document.querySelectorAll('.tab-btn').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    activeTab = btn.dataset.tab;
+    ['vocab','situations','alphabet','numbers'].forEach(t=>document.getElementById('tab-'+t).classList.add('hidden'));
+    document.getElementById('tab-'+activeTab).classList.remove('hidden');
+    if(activeTab==='situations') loadSituations();
+  });
+});
 loadFromGitHub();
 renderNumGroups();
 renderNumGrid();
