@@ -842,36 +842,63 @@
     "emoji": "🎉",
     "sentences": [
       {
-        "pt": "Bom dia, como é?",
-        "en": "Good morning, how are you?"
+        "pt": "Bom dia, como é que se chama?",
+        "en": "Good morning, what's your name?",
+        "uses": [
+          "Bom dia"
+        ]
       },
       {
-        "pt": "Quero ouvir você.",
-        "en": "I want to listen to you."
+        "pt": "Quero falar contigo, por favor.",
+        "en": "I want to talk to you, please.",
+        "uses": [
+          "querer",
+          "falar"
+        ]
       },
       {
-        "pt": "É casada?",
-        "en": "Are you married?"
+        "pt": "Onde é que você trabalha?",
+        "en": "Where do you work?",
+        "uses": [
+          "trabalhar"
+        ]
       },
       {
-        "pt": "Quer ir?",
-        "en": "Do you want to go?"
+        "pt": "Eu ouvir música todos os dias.",
+        "en": "I listen to music every day.",
+        "uses": [
+          "ouvir"
+        ]
       },
       {
-        "pt": "Fica aqui.",
-        "en": "Stay here."
+        "pt": "Quem é a dentista?",
+        "en": "Who is the dentist?",
+        "uses": [
+          "dentista"
+        ]
       },
       {
-        "pt": "Saber o seu nome?",
-        "en": "Do you know your name? / What's your name?"
+        "pt": "Eu ir ao trabalho agora.",
+        "en": "I'm going to work now.",
+        "uses": [
+          "ir",
+          "trabalho"
+        ]
       },
       {
-        "pt": "Desejo um dentista.",
-        "en": "I want a dentist."
+        "pt": "Eu saber o seu nome?",
+        "en": "Do I know your name?",
+        "uses": [
+          "saber"
+        ]
       },
       {
-        "pt": "É alta?",
-        "en": "Are you tall?"
+        "pt": "Eu querer dar um abraço.",
+        "en": "I want to give a hug.",
+        "uses": [
+          "querer",
+          "dar"
+        ]
       }
     ],
     "level": "essential",
