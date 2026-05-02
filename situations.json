@@ -387,5 +387,46 @@
     "level": "essential",
     "cefrShort": "A1/A2",
     "updatedAt": "02/05/2026"
+  },
+  "Hospital": {
+    "label": "Hospital",
+    "emoji": "🏥",
+    "sentences": [
+      {
+        "pt": "Quero ir ao dentista",
+        "en": "I want to go to the dentist"
+      },
+      {
+        "pt": "É casada?",
+        "en": "Are you married?"
+      },
+      {
+        "pt": "Quero alta",
+        "en": "I want height"
+      },
+      {
+        "pt": "Onde fica o hospital?",
+        "en": "Where is the hospital?"
+      },
+      {
+        "pt": "Quero falar com o médico",
+        "en": "I want to speak with the doctor"
+      },
+      {
+        "pt": "Deseja alguma coisa?",
+        "en": "Do you want something?"
+      },
+      {
+        "pt": "Eu ir ao trabalho",
+        "en": "I go to work"
+      },
+      {
+        "pt": "Posso dar altura?",
+        "en": "Can I give height?"
+      }
+    ],
+    "level": "essential",
+    "cefrShort": "A1/A2",
+    "updatedAt": "02/05/2026"
   }
 }
