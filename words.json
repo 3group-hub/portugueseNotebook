@@ -1233,7 +1233,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "02/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -1301,9 +1301,51 @@
           "en": "They went to the stadium"
         }
       ],
-      "future": []
+      "future": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou ir ao parque",
+          "en": "I will go to the park"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais ir ao cinema",
+          "en": "You will go to the movies"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai ir à escola",
+          "en": "She will go to school"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos ir à praia",
+          "en": "We will go to the beach"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão ir ao restaurante",
+          "en": "You will go to the restaurant"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão ir ao estádio",
+          "en": "They will go to the stadium"
+        }
+      ]
     },
     "_activeTense": "future",
-    "_generatingTense": "future"
+    "_generatingTense": null
+  },
+  {
+    "id": 1777726848084,
+    "word": "fazer",
+    "translation": "do",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "02/05/2026",
+    "generatingExample": true,
+    "assessingFreq": true
   }
 ]
