@@ -34,6 +34,47 @@
       {
         "pt": "Eu saber o preço?",
         "en": "Do I know the price?"
+      },
+      {
+        "pt": "Eu quero comida boa",
+        "en": "I want good food",
+        "uses": [
+          "quero",
+          "comida"
+        ]
+      },
+      {
+        "pt": "O restaurante é alto",
+        "en": "The restaurant is tall",
+        "uses": [
+          "é",
+          "alto"
+        ]
+      },
+      {
+        "pt": "Eu creio que é bom",
+        "en": "I believe it's good",
+        "uses": [
+          "creio",
+          "é",
+          "bom"
+        ]
+      },
+      {
+        "pt": "Eu ir ao dentista depois",
+        "en": "I'll go to the dentist later",
+        "uses": [
+          "ir",
+          "dentista"
+        ]
+      },
+      {
+        "pt": "Eu fazer um pedido",
+        "en": "I'll make an order",
+        "uses": [
+          "fazer",
+          "pedido"
+        ]
       }
     ],
     "level": "essential",
