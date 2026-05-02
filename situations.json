@@ -188,36 +188,36 @@
     "emoji": "🗺️",
     "sentences": [
       {
-        "pt": "Quero ir ao médico",
-        "en": "I want to go to the doctor"
+        "pt": "Quero ir ao dentista",
+        "en": "I want to go to the dentist"
       },
       {
-        "pt": "Onde é o consultório?",
+        "pt": "É casada?",
+        "en": "Are you married?"
+      },
+      {
+        "pt": "Quero fazer um trabalho",
+        "en": "I want to do a job"
+      },
+      {
+        "pt": "Onde fica a clínica?",
         "en": "Where is the clinic?"
       },
       {
-        "pt": "Quero fazer um exame",
-        "en": "I want to do an exam"
+        "pt": "Eu ter alta",
+        "en": "I have height"
       },
       {
-        "pt": "Desejo saber o resultado",
-        "en": "I want to know the result"
+        "pt": "Quero saber o destino",
+        "en": "I want to know the destiny"
       },
       {
-        "pt": "O médico é bom?",
-        "en": "Is the doctor good?"
+        "pt": "Deseja ouvir?",
+        "en": "Do you want to listen?"
       },
       {
-        "pt": "Quero falar com o médico",
-        "en": "I want to speak with the doctor"
-      },
-      {
-        "pt": "Posso ir ao médico agora?",
-        "en": "Can I go to the doctor now?"
-      },
-      {
-        "pt": "Quero saber o que é",
-        "en": "I want to know what it is"
+        "pt": "Eu ir à clínica",
+        "en": "I'm going to the clinic"
       }
     ],
     "level": "essential",
