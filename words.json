@@ -1234,6 +1234,45 @@
     "examples": [],
     "addedAt": "02/05/2026",
     "generatingExample": true,
-    "assessingFreq": true
+    "assessingFreq": false,
+    "freq": "essential",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou ao parque",
+          "en": "I go to the park"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais à escola",
+          "en": "You go to school"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai ao cinema",
+          "en": "She goes to the movies"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos à praia",
+          "en": "We go to the beach"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão ao shopping",
+          "en": "You go to the mall"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão ao estádio",
+          "en": "They go to the stadium"
+        }
+      ],
+      "past": [],
+      "future": []
+    },
+    "_activeTense": "past",
+    "_generatingTense": "past"
   }
 ]
