@@ -464,6 +464,26 @@
       {
         "pt": "Ir à farmácia comigo?",
         "en": "Go to the pharmacy with me?"
+      },
+      {
+        "pt": "Quero ir à farmácia",
+        "en": "I want to go to the pharmacy"
+      },
+      {
+        "pt": "É um trabalho aqui",
+        "en": "It's a job here"
+      },
+      {
+        "pt": "Desejo saber o preço",
+        "en": "I want to know the price"
+      },
+      {
+        "pt": "Fazer um lamento aqui",
+        "en": "To lament here"
+      },
+      {
+        "pt": "Creio que é escasso",
+        "en": "I believe it's scarce"
       }
     ],
     "level": "essential",
