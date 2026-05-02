@@ -1112,16 +1112,5 @@
     },
     "_activeTense": "present",
     "_generatingTense": null
-  },
-  {
-    "id": 1777726192852,
-    "word": "Estamos",
-    "translation": "We are",
-    "category": "Noun",
-    "notes": "",
-    "examples": [],
-    "addedAt": "02/05/2026",
-    "generatingExample": true,
-    "assessingFreq": true
   }
 ]
