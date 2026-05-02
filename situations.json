@@ -72,56 +72,63 @@
     "emoji": "🛒",
     "sentences": [
       {
-        "pt": "Quero ir ao supermercado",
-        "en": "I want to go to the supermarket"
+        "pt": "Quero leite, por favor.",
+        "en": "I would like milk, please.",
+        "uses": [
+          "querer"
+        ]
       },
       {
-        "pt": "O que é isto?",
-        "en": "What is this?"
+        "pt": "Onde está o dentista?",
+        "en": "Where is the dentist?",
+        "uses": [
+          "dentista"
+        ]
       },
       {
-        "pt": "Desejo comprar sementes",
-        "en": "I want to buy seeds"
+        "pt": "É alta a prateleira?",
+        "en": "Is the shelf high?",
+        "uses": [
+          "alta",
+          "é"
+        ]
       },
       {
-        "pt": "Onde fica o trabalho?",
-        "en": "Where is the work?"
+        "pt": "Quero ouvir os preços.",
+        "en": "I want to hear the prices.",
+        "uses": [
+          "ouvir",
+          "querer"
+        ]
       },
       {
-        "pt": "Quero ouvir o preço",
-        "en": "I want to hear the price"
+        "pt": "Desejo um torrão de açúcar, por favor.",
+        "en": "I want a sugar cube, please.",
+        "uses": [
+          "desejar"
+        ]
       },
       {
-        "pt": "Tenho esperança de encontrar",
-        "en": "I hope to find"
+        "pt": "Fica o queijo na secção de laticínios?",
+        "en": "Is the cheese in the dairy section?",
+        "uses": [
+          "fica"
+        ]
       },
       {
-        "pt": "Quero dar dinheiro",
-        "en": "I want to give money"
+        "pt": "Ter água é importante.",
+        "en": "Having water is important.",
+        "uses": [
+          "ter"
+        ]
       },
       {
-        "pt": "É alto o preço?",
-        "en": "Is the price high?"
-      },
-      {
-        "pt": "Quero comprar algo",
-        "en": "I want to buy something"
-      },
-      {
-        "pt": "O que desejas fazer",
-        "en": "What do you want to do"
-      },
-      {
-        "pt": "Tenho escasso dinheiro",
-        "en": "I have little money"
-      },
-      {
-        "pt": "Ir à alta prateleira",
-        "en": "Go to the high shelf"
-      },
-      {
-        "pt": "É gorda a embalagem",
-        "en": "The packaging is fat"
+        "pt": "Ir à seção de sementes, por favor.",
+        "en": "Go to the seed section, please.",
+        "uses": [
+          "ir",
+          "semente"
+        ]
       }
     ],
     "level": "essential",
