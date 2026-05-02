@@ -864,7 +864,12 @@
     "translation": "Good morning",
     "category": "Phrase",
     "notes": "",
-    "examples": [],
+    "examples": [
+      {
+        "pt": "Bom dia, como está hoje?",
+        "en": "Good morning, how are you today?"
+      }
+    ],
     "addedAt": "28/04/2026",
     "generatingExample": true,
     "assessingFreq": false,
