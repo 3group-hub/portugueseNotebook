@@ -37,5 +37,44 @@
       }
     ],
     "updatedAt": "02/05/2026"
+  },
+  "Hospital": {
+    "label": "Hospital",
+    "emoji": "🏥",
+    "sentences": [
+      {
+        "pt": "Quero ir ao dentista porque tenho dor de dente.",
+        "en": "I want to go to the dentist because I have a toothache."
+      },
+      {
+        "pt": "O médico é casada?",
+        "en": "Is the doctor married?"
+      },
+      {
+        "pt": "Quer ouvir o que estou a dizer?",
+        "en": "Do you want to hear what I'm saying?"
+      },
+      {
+        "pt": "Eu creio que o hospital é alto.",
+        "en": "I believe the hospital is tall."
+      },
+      {
+        "pt": "Posso fazer uma pergunta ao médico?",
+        "en": "Can I ask the doctor a question?"
+      },
+      {
+        "pt": "Desejo saber o que está a fazer o médico.",
+        "en": "I want to know what the doctor is doing."
+      },
+      {
+        "pt": "O médico pode me dar esperança de melhorar?",
+        "en": "Can the doctor give me hope of getting better?"
+      },
+      {
+        "pt": "Eu querer ir para casa, por favor.",
+        "en": "I want to go home, please."
+      }
+    ],
+    "updatedAt": "02/05/2026"
   }
 }
