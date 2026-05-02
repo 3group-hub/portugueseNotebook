@@ -1493,10 +1493,41 @@
           "en": "They say nothing."
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu disse",
+          "en": "I said"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu disseste",
+          "en": "You said"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele disse",
+          "en": "He/She said"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós dissemos",
+          "en": "We said"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês disseram",
+          "en": "You said"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles disseram",
+          "en": "They said"
+        }
+      ],
       "future": []
     },
-    "_activeTense": "past",
-    "_generatingTense": "past"
+    "_activeTense": "future",
+    "_generatingTense": "future"
   }
 ]
