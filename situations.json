@@ -277,36 +277,71 @@
     "emoji": "🚌",
     "sentences": [
       {
-        "pt": "Quero ir de metro",
-        "en": "I want to go by metro"
+        "pt": "Quero ir de metro.",
+        "en": "I want to go by metro.",
+        "uses": [
+          "querer",
+          "ir",
+          "metro"
+        ]
       },
       {
-        "pt": "Onde é a paragem?",
-        "en": "Where is the stop?"
+        "pt": "Onde fica a paragem do autocarro?",
+        "en": "Where is the bus stop?",
+        "uses": [
+          "fica"
+        ]
       },
       {
-        "pt": "Quer ir de autocarro?",
-        "en": "Do you want to go by bus?"
+        "pt": "É alta a altura do autocarro?",
+        "en": "Is the bus height high?",
+        "uses": [
+          "é",
+          "alta"
+        ]
       },
       {
-        "pt": "Eu vou de metro",
-        "en": "I'm going by metro"
+        "pt": "Quero saber onde ir.",
+        "en": "I want to know where to go.",
+        "uses": [
+          "querer",
+          "saber",
+          "ir"
+        ]
       },
       {
-        "pt": "Deseja ir de metro?",
-        "en": "Do you want to go by metro?"
+        "pt": "Desejo ir de metro, por favor.",
+        "en": "I want to go by metro, please.",
+        "uses": [
+          "desejar",
+          "ir",
+          "metro"
+        ]
       },
       {
-        "pt": "Onde fica a estação?",
-        "en": "Where is the station?"
+        "pt": "O autocarro está a dar volta?",
+        "en": "Is the bus giving a ride?",
+        "uses": [
+          "dar"
+        ]
       },
       {
-        "pt": "Posso ir de autocarro?",
-        "en": "Can I go by bus?"
+        "pt": "Posso ir ao trabalho de autocarro?",
+        "en": "Can I go to work by bus?",
+        "uses": [
+          "ir",
+          "trabalhar",
+          "autocarro"
+        ]
       },
       {
-        "pt": "Quero ir, por favor",
-        "en": "I want to go, please"
+        "pt": "Quero ouvir as instruções para ir ao aeroporto.",
+        "en": "I want to hear the instructions to go to the airport.",
+        "uses": [
+          "querer",
+          "ouvir",
+          "ir"
+        ]
       }
     ],
     "level": "essential",
