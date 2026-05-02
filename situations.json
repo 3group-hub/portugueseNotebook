@@ -282,12 +282,11 @@
     "emoji": "🚌",
     "sentences": [
       {
-        "pt": "Quero ir de metro.",
-        "en": "I want to go by metro.",
+        "pt": "Quero ir ao trabalho de metro.",
+        "en": "I want to go to work by metro.",
         "uses": [
           "querer",
-          "ir",
-          "metro"
+          "ir"
         ]
       },
       {
@@ -298,11 +297,11 @@
         ]
       },
       {
-        "pt": "É alta a altura do autocarro?",
-        "en": "Is the bus height high?",
+        "pt": "É alta a espera para o metro?",
+        "en": "Is the wait for the metro long?",
         "uses": [
-          "é",
-          "alta"
+          "alta",
+          "é"
         ]
       },
       {
@@ -315,36 +314,33 @@
         ]
       },
       {
-        "pt": "Desejo ir de metro, por favor.",
-        "en": "I want to go by metro, please.",
+        "pt": "Desejo ir ao dentista de autocarro.",
+        "en": "I want to go to the dentist by bus.",
         "uses": [
           "desejar",
           "ir",
-          "metro"
+          "dentista"
         ]
       },
       {
-        "pt": "O autocarro está a dar volta?",
-        "en": "Is the bus giving a ride?",
+        "pt": "Posso dar o bilhete ao motorista?",
+        "en": "Can I give the ticket to the driver?",
         "uses": [
           "dar"
         ]
       },
       {
-        "pt": "Posso ir ao trabalho de autocarro?",
-        "en": "Can I go to work by bus?",
+        "pt": "O autocarro é gorda demais.",
+        "en": "The bus is too crowded.",
         "uses": [
-          "ir",
-          "trabalhar",
-          "autocarro"
+          "gorda"
         ]
       },
       {
-        "pt": "Quero ouvir as instruções para ir ao aeroporto.",
-        "en": "I want to hear the instructions to go to the airport.",
+        "pt": "Creio que o metro é mais rápido.",
+        "en": "I believe the metro is faster.",
         "uses": [
-          "querer",
-          "ouvir",
+          "creio",
           "ir"
         ]
       }
