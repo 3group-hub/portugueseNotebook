@@ -1011,6 +1011,44 @@
     "addedAt": "02/05/2026",
     "generatingExample": true,
     "assessingFreq": false,
-    "freq": "essential"
+    "freq": "essential",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu sou feliz",
+          "en": "I am happy"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu és feliz",
+          "en": "You are happy"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele é feliz",
+          "en": "He/She is happy"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós somos felizes",
+          "en": "We are happy"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês são felizes",
+          "en": "You are happy"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles são felizes",
+          "en": "They are happy"
+        }
+      ],
+      "past": [],
+      "future": []
+    },
+    "_activeTense": "past",
+    "_generatingTense": "past"
   }
 ]
