@@ -4,76 +4,61 @@
     "emoji": "🍽️",
     "sentences": [
       {
-        "pt": "Quero um café",
-        "en": "I want a coffee"
+        "pt": "Quero um bolo, por favor.",
+        "en": "I would like a cake, please.",
+        "uses": [
+          "querer"
+        ]
       },
       {
         "pt": "O que é isto?",
-        "en": "What is this?"
-      },
-      {
-        "pt": "Quer ir ao restaurante?",
-        "en": "Do you want to go to the restaurant?"
-      },
-      {
-        "pt": "Eu ter comida",
-        "en": "I have food"
-      },
-      {
-        "pt": "Onde fica o restaurante?",
-        "en": "Where is the restaurant?"
-      },
-      {
-        "pt": "Eu querer água",
-        "en": "I want water"
-      },
-      {
-        "pt": "Posso dar um pedido?",
-        "en": "Can I place an order?"
-      },
-      {
-        "pt": "Eu saber o preço?",
-        "en": "Do I know the price?"
-      },
-      {
-        "pt": "Eu quero comida boa",
-        "en": "I want good food",
+        "en": "What is this?",
         "uses": [
-          "quero",
-          "comida"
+          "é"
         ]
       },
       {
-        "pt": "O restaurante é alto",
-        "en": "The restaurant is tall",
+        "pt": "Desejo um chá.",
+        "en": "I want a tea.",
         "uses": [
-          "é",
-          "alto"
+          "desejar"
         ]
       },
       {
-        "pt": "Eu creio que é bom",
-        "en": "I believe it's good",
+        "pt": "Onde fica a casa de banho?",
+        "en": "Where is the bathroom?",
         "uses": [
-          "creio",
-          "é",
-          "bom"
+          "fica"
         ]
       },
       {
-        "pt": "Eu ir ao dentista depois",
-        "en": "I'll go to the dentist later",
+        "pt": "Quero ir ao restaurante.",
+        "en": "I want to go to the restaurant.",
         "uses": [
-          "ir",
-          "dentista"
+          "querer",
+          "ir"
         ]
       },
       {
-        "pt": "Eu fazer um pedido",
-        "en": "I'll make an order",
+        "pt": "Posso dar um pedido, por favor?",
+        "en": "Can I give an order, please?",
         "uses": [
-          "fazer",
-          "pedido"
+          "dar",
+          "por favor"
+        ]
+      },
+      {
+        "pt": "O que sabes sobre o menu?",
+        "en": "What do you know about the menu?",
+        "uses": [
+          "saber"
+        ]
+      },
+      {
+        "pt": "Eu creio que o prato é bom.",
+        "en": "I believe the dish is good.",
+        "uses": [
+          "creio"
         ]
       }
     ],
