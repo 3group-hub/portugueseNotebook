@@ -1129,36 +1129,68 @@
     "emoji": "⚽",
     "sentences": [
       {
-        "pt": "Quero fazer desporto",
-        "en": "I want to do sports"
+        "pt": "Quero fazer desporto.",
+        "en": "I want to do sports.",
+        "uses": [
+          "querer",
+          "fazer"
+        ]
       },
       {
-        "pt": "Onde fica o trabalho?",
-        "en": "Where is the work?"
+        "pt": "Onde posso ouvir música?",
+        "en": "Where can I listen to music?",
+        "uses": [
+          "ouvir"
+        ]
       },
       {
-        "pt": "É alta a esperança",
-        "en": "Is hope high"
+        "pt": "Desejo ter esperança.",
+        "en": "I want to have hope.",
+        "uses": [
+          "desejar",
+          "esperança"
+        ]
       },
       {
-        "pt": "Quero ouvir música",
-        "en": "I want to listen to music"
+        "pt": "A semente é escassa.",
+        "en": "The seed is scarce.",
+        "uses": [
+          "semente",
+          "escasso"
+        ]
       },
       {
-        "pt": "Desejo ir ao parque",
-        "en": "I want to go to the park"
+        "pt": "Quero ir ao trabalho.",
+        "en": "I want to go to work.",
+        "uses": [
+          "querer",
+          "ir",
+          "trabalho"
+        ]
       },
       {
-        "pt": "Ter trabalho é bom",
-        "en": "Having work is good"
+        "pt": "Posso fazer conjugação?",
+        "en": "Can I do conjugation?",
+        "uses": [
+          "fazer",
+          "conjugacao"
+        ]
       },
       {
-        "pt": "Posso fazer conjugacao?",
-        "en": "Can I do conjugation?"
+        "pt": "É importante saber falar.",
+        "en": "It's important to know how to speak.",
+        "uses": [
+          "saber",
+          "falar"
+        ]
       },
       {
-        "pt": "Quero ir com você",
-        "en": "I want to go with you"
+        "pt": "Quero dar um presente, por favor.",
+        "en": "I want to give a gift, please.",
+        "uses": [
+          "querer",
+          "dar"
+        ]
       }
     ],
     "level": "essential",
