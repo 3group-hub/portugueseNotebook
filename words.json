@@ -1122,6 +1122,45 @@
     "examples": [],
     "addedAt": "02/05/2026",
     "generatingExample": true,
-    "assessingFreq": true
+    "assessingFreq": false,
+    "freq": "essential",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu tenho um livro.",
+          "en": "I have a book."
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu tens um carro.",
+          "en": "You have a car."
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela tem um gato.",
+          "en": "She has a cat."
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós temos fome.",
+          "en": "We are hungry."
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês têm um telefone.",
+          "en": "You have a phone."
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles têm um computador.",
+          "en": "They have a computer."
+        }
+      ],
+      "past": [],
+      "future": []
+    },
+    "_activeTense": "past",
+    "_generatingTense": "past"
   }
 ]
