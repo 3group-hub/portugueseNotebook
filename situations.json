@@ -346,5 +346,46 @@
     "level": "essential",
     "cefrShort": "A1/A2",
     "updatedAt": "02/05/2026"
+  },
+  "Shopping": {
+    "label": "Shopping",
+    "emoji": "🛍️",
+    "sentences": [
+      {
+        "pt": "Quero uma camisa.",
+        "en": "I want a shirt."
+      },
+      {
+        "pt": "Onde fica a loja?",
+        "en": "Where is the store?"
+      },
+      {
+        "pt": "Eu ter altura alta.",
+        "en": "I am tall."
+      },
+      {
+        "pt": "Quero falar com o vendedor.",
+        "en": "I want to speak with the seller."
+      },
+      {
+        "pt": "Desejo um casaco gordo.",
+        "en": "I want a thick coat."
+      },
+      {
+        "pt": "Posso ir ao trabalho agora?",
+        "en": "Can I go to work now?"
+      },
+      {
+        "pt": "É uma camisa bonita?",
+        "en": "Is it a nice shirt?"
+      },
+      {
+        "pt": "Dar-me um preço, por favor.",
+        "en": "Give me a price, please."
+      }
+    ],
+    "level": "essential",
+    "cefrShort": "A1/A2",
+    "updatedAt": "02/05/2026"
   }
 }
