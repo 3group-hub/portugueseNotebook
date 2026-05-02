@@ -1058,36 +1058,66 @@
     "emoji": "🌊",
     "sentences": [
       {
-        "pt": "Quero fazer surf",
-        "en": "I want to surf"
+        "pt": "Quero aprender surf.",
+        "en": "I want to learn surfing.",
+        "uses": [
+          "querer"
+        ]
       },
       {
-        "pt": "Onde fica a escola de surf?",
-        "en": "Where is the surf school?"
+        "pt": "O meu trabalho é dar aulas de surf.",
+        "en": "My job is to give surfing lessons.",
+        "uses": [
+          "trabalho",
+          "dar"
+        ]
       },
       {
-        "pt": "É alta a onda?",
-        "en": "Is the wave high?"
+        "pt": "É alta a onda hoje?",
+        "en": "Is the wave high today?",
+        "uses": [
+          "alta",
+          "é"
+        ]
       },
       {
-        "pt": "Quer ir comigo?",
-        "en": "Do you want to go with me?"
+        "pt": "Quero ir à escola de surf.",
+        "en": "I want to go to the surf school.",
+        "uses": [
+          "querer",
+          "ir"
+        ]
       },
       {
-        "pt": "Sabes onde é?",
-        "en": "Do you know where it is?"
+        "pt": "O que devo fazer para não errar?",
+        "en": "What should I do to not make mistakes?",
+        "uses": [
+          "errar",
+          "fazer"
+        ]
       },
       {
-        "pt": "Desejo aprender a surfar",
-        "en": "I want to learn how to surf"
+        "pt": "Desejo ter um dia sem tormenta.",
+        "en": "I wish to have a day without a storm.",
+        "uses": [
+          "desejar",
+          "tormenta"
+        ]
       },
       {
-        "pt": "Posso ir à escola de surf?",
-        "en": "Can I go to the surf school?"
+        "pt": "Posso ouvir as instruções novamente?",
+        "en": "Can I listen to the instructions again?",
+        "uses": [
+          "ouvir"
+        ]
       },
       {
-        "pt": "Quero ouvir as instruções",
-        "en": "I want to listen to the instructions"
+        "pt": "É necessário ter esperança para aprender surf.",
+        "en": "It's necessary to have hope to learn surfing.",
+        "uses": [
+          "ter",
+          "esperança"
+        ]
       }
     ],
     "level": "essential",
