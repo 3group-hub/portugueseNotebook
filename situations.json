@@ -188,56 +188,36 @@
     "emoji": "🗺️",
     "sentences": [
       {
-        "pt": "Quero ir ao dentista",
-        "en": "I want to go to the dentist"
+        "pt": "Quero ir ao médico",
+        "en": "I want to go to the doctor"
       },
       {
-        "pt": "É casada?",
-        "en": "Are you married?"
-      },
-      {
-        "pt": "Quero fazer um trabalho",
-        "en": "I want to do a job"
-      },
-      {
-        "pt": "Onde fica a clínica?",
+        "pt": "Onde é o consultório?",
         "en": "Where is the clinic?"
       },
       {
-        "pt": "Quero saber o meu destino",
-        "en": "I want to know my destiny"
+        "pt": "Quero fazer um exame",
+        "en": "I want to do an exam"
       },
       {
-        "pt": "Deseja alta?",
-        "en": "Do you want height?"
+        "pt": "Desejo saber o resultado",
+        "en": "I want to know the result"
       },
       {
-        "pt": "Posso ouvir?",
-        "en": "Can I listen?"
+        "pt": "O médico é bom?",
+        "en": "Is the doctor good?"
       },
       {
-        "pt": "Quero dizer bom dia",
-        "en": "I want to say good morning"
-      },
-      {
-        "pt": "Eu querer ir clinic",
-        "en": "I want to go to the clinic"
-      },
-      {
-        "pt": "O dentista é bom",
-        "en": "The dentist is good"
-      },
-      {
-        "pt": "Eu ter alta",
-        "en": "I have height"
-      },
-      {
-        "pt": "Quero falar com médico",
+        "pt": "Quero falar com o médico",
         "en": "I want to speak with the doctor"
       },
       {
-        "pt": "Eu saber onde fica",
-        "en": "I know where it is"
+        "pt": "Posso ir ao médico agora?",
+        "en": "Can I go to the doctor now?"
+      },
+      {
+        "pt": "Quero saber o que é",
+        "en": "I want to know what it is"
       }
     ],
     "level": "essential",
