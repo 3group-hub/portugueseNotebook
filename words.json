@@ -1682,6 +1682,45 @@
     "examples": [],
     "addedAt": "02/05/2026",
     "generatingExample": true,
-    "assessingFreq": true
+    "assessingFreq": false,
+    "freq": "essential",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu sei isso",
+          "en": "I know that"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu sabes isso",
+          "en": "You know that"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela sabe isso",
+          "en": "She knows that"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós sabemos isso",
+          "en": "We know that"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês sabem isso",
+          "en": "You know that"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles sabem isso",
+          "en": "They know that"
+        }
+      ],
+      "past": [],
+      "future": []
+    },
+    "_activeTense": "past",
+    "_generatingTense": "past"
   }
 ]
