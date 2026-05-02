@@ -182,5 +182,46 @@
     "level": "essential",
     "cefrShort": "A1/A2",
     "updatedAt": "02/05/2026"
+  },
+  "playing music ": {
+    "label": "playing music ",
+    "emoji": "🗺️",
+    "sentences": [
+      {
+        "pt": "Quero ouvir música",
+        "en": "I want to listen to music"
+      },
+      {
+        "pt": "É alta a música?",
+        "en": "Is the music loud?"
+      },
+      {
+        "pt": "Fazer música é bom",
+        "en": "Making music is good"
+      },
+      {
+        "pt": "Quer ouvir música comigo?",
+        "en": "Do you want to listen to music with me?"
+      },
+      {
+        "pt": "Ir tocar música agora",
+        "en": "I'm going to play music now"
+      },
+      {
+        "pt": "Dizer que gosto de música",
+        "en": "Say that I like music"
+      },
+      {
+        "pt": "Dar música alta",
+        "en": "Give loud music"
+      },
+      {
+        "pt": "Saber tocar música?",
+        "en": "Do you know how to play music?"
+      }
+    ],
+    "level": "essential",
+    "cefrShort": "A1/A2",
+    "updatedAt": "02/05/2026"
   }
 }
