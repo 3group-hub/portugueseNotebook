@@ -600,5 +600,46 @@
     "level": "essential",
     "cefrShort": "A1/A2",
     "updatedAt": "02/05/2026"
+  },
+  "Home": {
+    "label": "Home",
+    "emoji": "🏠",
+    "sentences": [
+      {
+        "pt": "Quero ir para casa",
+        "en": "I want to go home"
+      },
+      {
+        "pt": "É casada",
+        "en": "Is she married"
+      },
+      {
+        "pt": "Onde fica o dentista",
+        "en": "Where is the dentist"
+      },
+      {
+        "pt": "Quer ouvir música",
+        "en": "Do you want to listen to music"
+      },
+      {
+        "pt": "Eu ter trabalho",
+        "en": "I have work"
+      },
+      {
+        "pt": "Desejo fazer exercício",
+        "en": "I want to exercise"
+      },
+      {
+        "pt": "Posso dar alta",
+        "en": "Can I give height"
+      },
+      {
+        "pt": "É gorda ou alta",
+        "en": "Is she fat or tall"
+      }
+    ],
+    "level": "essential",
+    "cefrShort": "A1/A2",
+    "updatedAt": "02/05/2026"
   }
 }
