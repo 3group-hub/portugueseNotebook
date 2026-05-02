@@ -1830,9 +1830,40 @@
         }
       ],
       "past": [],
-      "future": []
+      "future": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou falar.",
+          "en": "I will speak."
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais falar.",
+          "en": "You will speak."
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai falar.",
+          "en": "She will speak."
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos falar.",
+          "en": "We will speak."
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão falar.",
+          "en": "You will speak."
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão falar.",
+          "en": "They will speak."
+        }
+      ]
     },
-    "_activeTense": "future",
-    "_generatingTense": "future"
+    "_activeTense": "past",
+    "_generatingTense": "past"
   }
 ]
