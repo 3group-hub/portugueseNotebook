@@ -1009,7 +1009,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "02/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -1077,9 +1077,51 @@
           "en": "They were"
         }
       ],
-      "future": []
+      "future": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou ser",
+          "en": "I will be"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais ser",
+          "en": "You will be"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai ser",
+          "en": "She will be"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos ser",
+          "en": "We will be"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão ser",
+          "en": "You will be"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão ser",
+          "en": "They will be"
+        }
+      ]
     },
-    "_activeTense": "future",
-    "_generatingTense": "future"
+    "_activeTense": "present",
+    "_generatingTense": null
+  },
+  {
+    "id": 1777726192852,
+    "word": "Estamos",
+    "translation": "We are",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "02/05/2026",
+    "generatingExample": true,
+    "assessingFreq": true
   }
 ]
