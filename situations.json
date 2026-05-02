@@ -218,6 +218,26 @@
       {
         "pt": "Quero dizer bom dia",
         "en": "I want to say good morning"
+      },
+      {
+        "pt": "Eu querer ir clinic",
+        "en": "I want to go to the clinic"
+      },
+      {
+        "pt": "O dentista é bom",
+        "en": "The dentist is good"
+      },
+      {
+        "pt": "Eu ter alta",
+        "en": "I have height"
+      },
+      {
+        "pt": "Quero falar com médico",
+        "en": "I want to speak with the doctor"
+      },
+      {
+        "pt": "Eu saber onde fica",
+        "en": "I know where it is"
       }
     ],
     "level": "essential",
