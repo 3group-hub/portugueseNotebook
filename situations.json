@@ -34,6 +34,26 @@
       {
         "pt": "Eu creio que o médico pode me ajudar, por favor.",
         "en": "I believe the doctor can help me, please."
+      },
+      {
+        "pt": "Eu vou ao hospital agora",
+        "en": "I'm going to the hospital now"
+      },
+      {
+        "pt": "O médico é muito alto",
+        "en": "The doctor is very tall"
+      },
+      {
+        "pt": "Eu quero falar com o médico",
+        "en": "I want to speak with the doctor"
+      },
+      {
+        "pt": "O dentista pode me ajudar",
+        "en": "The dentist can help me"
+      },
+      {
+        "pt": "Eu ter uma consulta hoje",
+        "en": "I have an appointment today"
       }
     ],
     "updatedAt": "02/05/2026"
