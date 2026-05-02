@@ -1905,7 +1905,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "02/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -1973,9 +1973,40 @@
           "en": "They worked yesterday"
         }
       ],
-      "future": []
+      "future": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou trabalhar",
+          "en": "I will work"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais trabalhar",
+          "en": "You will work"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele vai trabalhar",
+          "en": "He/She will work"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos trabalhar",
+          "en": "We will work"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão trabalhar",
+          "en": "You will work"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão trabalhar",
+          "en": "They will work"
+        }
+      ]
     },
-    "_activeTense": "future",
-    "_generatingTense": "future"
+    "_activeTense": "present",
+    "_generatingTense": null
   }
 ]
