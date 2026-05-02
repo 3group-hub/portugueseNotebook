@@ -706,56 +706,61 @@
     "emoji": "💊",
     "sentences": [
       {
-        "pt": "Quero um medicamento.",
-        "en": "I want a medicine."
+        "pt": "Quero um medicamento, por favor.",
+        "en": "I would like a medicine, please.",
+        "uses": [
+          "querer"
+        ]
       },
       {
-        "pt": "Onde é a farmácia?",
-        "en": "Where is the pharmacy?"
+        "pt": "O que é isto?",
+        "en": "What is this?",
+        "uses": [
+          "é"
+        ]
       },
       {
-        "pt": "Quer ir à farmácia?",
-        "en": "Do you want to go to the pharmacy?"
+        "pt": "Eu ir à farmácia todos os dias.",
+        "en": "I go to the pharmacy every day.",
+        "uses": [
+          "ir"
+        ]
       },
       {
-        "pt": "Eu ter altura alta.",
-        "en": "I am tall."
+        "pt": "O dentista está aqui?",
+        "en": "Is the dentist here?",
+        "uses": [
+          "dentista"
+        ]
       },
       {
-        "pt": "O dentista é aqui?",
-        "en": "Is the dentist here?"
-      },
-      {
-        "pt": "Desejo um remédio.",
-        "en": "I want a remedy."
-      },
-      {
-        "pt": "Fica na farmácia?",
-        "en": "Does it stay at the pharmacy?"
+        "pt": "Eu saber o preço, por favor.",
+        "en": "I know the price, please.",
+        "uses": [
+          "saber"
+        ]
       },
       {
         "pt": "Quero falar com o farmacêutico.",
-        "en": "I want to speak with the pharmacist."
+        "en": "I want to speak with the pharmacist.",
+        "uses": [
+          "querer",
+          "falar"
+        ]
       },
       {
-        "pt": "Eu quero um remédio",
-        "en": "I want a medicine"
+        "pt": "Eu ter uma dúvida.",
+        "en": "I have a doubt.",
+        "uses": [
+          "ter"
+        ]
       },
       {
-        "pt": "O farmacêutico é casada",
-        "en": "The pharmacist is married"
-      },
-      {
-        "pt": "Ter uma alta febre",
-        "en": "To have a high fever"
-      },
-      {
-        "pt": "Eu ir à farmácia",
-        "en": "I go to the pharmacy"
-      },
-      {
-        "pt": "Desejo saber o preço",
-        "en": "I want to know the price"
+        "pt": "Eu dar o meu dinheiro, por favor.",
+        "en": "I give my money, please.",
+        "uses": [
+          "dar"
+        ]
       }
     ],
     "level": "essential",
