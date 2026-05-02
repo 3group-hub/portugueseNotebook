@@ -691,6 +691,9 @@ function renderViewerPacks(){
               <span style="font-size:12px;color:#999;font-style:italic;">${s.en}</span>
               <button class="speak-btn" onclick="speakText('${escQ(s.en)}','en-GB',this)" style="font-size:11px;">🔊</button>
             </div>
+            ${s.uses&&s.uses.length?`<div style="margin-top:4px;display:flex;gap:4px;flex-wrap:wrap;">
+              ${s.uses.map(u=>`<span style="font-size:10px;padding:1px 6px;border-radius:8px;background:rgba(26,58,92,0.07);color:var(--navy);border:1px solid rgba(26,58,92,0.12);">📖 ${u}</span>`).join('')}
+            </div>`:''}
           </div>`).join('')}
       </div>
     </div>` : '';
@@ -699,20 +702,51 @@ function renderViewerPacks(){
 }
 
 async function loadSituations(){
+  const loadEl = document.getElementById('sitLoadingMsg');
+  const emptyEl = document.getElementById('sitEmptyMsg');
+  const viewEl  = document.getElementById('sitPacksView');
+  loadEl.style.display = 'block';
+  loadEl.innerHTML = '<span class="spin">⏳</span> Loading situations from GitHub…';
+  emptyEl.classList.add('hidden');
+  viewEl.innerHTML = '';
+
   try{
     const url = `https://raw.githubusercontent.com/${GH_USER}/${GH_REPO}/main/situations.json?t=${Date.now()}`;
     const res = await fetch(url);
-    if(!res.ok) throw new Error('not found');
-    const data = await res.json();
+    if(res.status === 404){
+      loadEl.innerHTML = `<div style="color:#aaa;font-size:13px;line-height:1.8;">
+        No situations file found yet.<br>
+        <strong style="color:#555;">To create one:</strong><br>
+        1. Open the main app<br>
+        2. Go to 🗺️ Situations tab<br>
+        3. Click any situation tile → Generate &amp; Save<br>
+        4. Come back here and refresh the tab
+      </div>`;
+      return;
+    }
+    if(!res.ok) throw new Error(`HTTP ${res.status}`);
+
+    const text = await res.text();
+    let data;
+    try{ data = JSON.parse(text); }
+    catch(e){ throw new Error('Invalid JSON in situations.json'); }
+
     allSitPacks = Object.values(data);
-    document.getElementById('sitLoadingMsg').style.display='none';
+    loadEl.style.display = 'none';
+
     if(!allSitPacks.length){
-      document.getElementById('sitEmptyMsg').classList.remove('hidden');
+      emptyEl.classList.remove('hidden');
       return;
     }
     renderViewerPacks();
+
   }catch(e){
-    document.getElementById('sitLoadingMsg').innerHTML='<span style="color:#bbb;font-size:13px;">No situations saved yet.</span>';
+    loadEl.innerHTML = `<div style="color:#c1440e;font-size:13px;">
+      ❌ Could not load situations: <strong>${e.message}</strong><br>
+      <span style="color:#aaa;font-size:11px;">
+        Checking: <code>https://raw.githubusercontent.com/${GH_USER}/${GH_REPO}/main/situations.json</code>
+      </span>
+    </div>`;
   }
 }
 
@@ -742,7 +776,7 @@ document.querySelectorAll('.tab-btn').forEach(btn=>{
     activeTab = btn.dataset.tab;
     ['vocab','situations','alphabet','numbers'].forEach(t=>document.getElementById('tab-'+t).classList.add('hidden'));
     document.getElementById('tab-'+activeTab).classList.remove('hidden');
-    if(activeTab==='situations') loadSituations();
+    if(activeTab==='situations'){ allSitPacks=[]; openSitPack=null; loadSituations(); }
   });
 });
 loadFromGitHub();
