@@ -493,36 +493,67 @@
     "emoji": "🧭",
     "sentences": [
       {
-        "pt": "Quero ir ao dentista",
-        "en": "I want to go to the dentist"
+        "pt": "Quero ir ao dentista.",
+        "en": "I want to go to the dentist.",
+        "uses": [
+          "querer",
+          "dentista"
+        ]
       },
       {
-        "pt": "Onde fica a altura?",
-        "en": "Where is the height?"
+        "pt": "Onde fica a alta torre?",
+        "en": "Where is the high tower?",
+        "uses": [
+          "fica",
+          "alta"
+        ]
       },
       {
-        "pt": "É casada?",
-        "en": "Is she married?"
+        "pt": "Desejo saber o caminho.",
+        "en": "I want to know the way.",
+        "uses": [
+          "desejar",
+          "saber"
+        ]
       },
       {
-        "pt": "Quer ir comigo?",
-        "en": "Do you want to go with me?"
+        "pt": "É escasso o tempo para errar.",
+        "en": "There is little time to make mistakes.",
+        "uses": [
+          "é",
+          "escasso",
+          "errar"
+        ]
       },
       {
-        "pt": "Desejo saber o caminho",
-        "en": "I want to know the way"
+        "pt": "Quero ouvir as direções.",
+        "en": "I want to listen to the directions.",
+        "uses": [
+          "querer",
+          "ouvir"
+        ]
       },
       {
-        "pt": "Posso dar uma direção?",
-        "en": "Can I give a direction?"
+        "pt": "Ir à esquerda, por favor.",
+        "en": "Go to the left, please.",
+        "uses": [
+          "ir"
+        ]
       },
       {
-        "pt": "Onde é o trabalho?",
-        "en": "Where is the work?"
+        "pt": "Onde é que eu posso fazer isso?",
+        "en": "Where can I do this?",
+        "uses": [
+          "fazer"
+        ]
       },
       {
-        "pt": "Quero ir, por favor",
-        "en": "I want to go, please"
+        "pt": "Desejo dar as direções certas.",
+        "en": "I want to give the right directions.",
+        "uses": [
+          "desejar",
+          "dar"
+        ]
       }
     ],
     "level": "essential",
