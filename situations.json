@@ -641,5 +641,46 @@
     "level": "essential",
     "cefrShort": "A1/A2",
     "updatedAt": "02/05/2026"
+  },
+  "Surf school": {
+    "label": "Surf school",
+    "emoji": "🌊",
+    "sentences": [
+      {
+        "pt": "Quero fazer surf",
+        "en": "I want to surf"
+      },
+      {
+        "pt": "Onde fica a escola de surf?",
+        "en": "Where is the surf school?"
+      },
+      {
+        "pt": "É alta a onda?",
+        "en": "Is the wave high?"
+      },
+      {
+        "pt": "Quer ir comigo?",
+        "en": "Do you want to go with me?"
+      },
+      {
+        "pt": "Sabes onde é?",
+        "en": "Do you know where it is?"
+      },
+      {
+        "pt": "Desejo aprender a surfar",
+        "en": "I want to learn how to surf"
+      },
+      {
+        "pt": "Posso ir à escola de surf?",
+        "en": "Can I go to the surf school?"
+      },
+      {
+        "pt": "Quero ouvir as instruções",
+        "en": "I want to listen to the instructions"
+      }
+    ],
+    "level": "essential",
+    "cefrShort": "A1/A2",
+    "updatedAt": "02/05/2026"
   }
 }
