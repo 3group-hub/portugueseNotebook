@@ -1794,6 +1794,45 @@
     "examples": [],
     "addedAt": "02/05/2026",
     "generatingExample": true,
-    "assessingFreq": true
+    "assessingFreq": false,
+    "freq": "essential",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu falo português",
+          "en": "I speak Portuguese"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu falas inglês",
+          "en": "You speak English"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela fala francês",
+          "en": "She speaks French"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós falamos espanhol",
+          "en": "We speak Spanish"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês falam italiano",
+          "en": "You speak Italian"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles falam alemão",
+          "en": "They speak German"
+        }
+      ],
+      "past": [],
+      "future": []
+    },
+    "_activeTense": "future",
+    "_generatingTense": "future"
   }
 ]
