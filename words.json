@@ -965,10 +965,22 @@
       {
         "pt": "O meu amigo fica em Lisboa",
         "en": "My friend stays in Lisbon"
+      },
+      {
+        "pt": "Ele fica em casa",
+        "en": "He stays home"
+      },
+      {
+        "pt": "A minha irmã fica aqui",
+        "en": "My sister stays here"
+      },
+      {
+        "pt": "O gato fica dormindo",
+        "en": "The cat stays sleeping"
       }
     ],
     "addedAt": "02/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential"
   }
