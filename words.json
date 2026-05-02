@@ -893,6 +893,23 @@
     "translation": "dentist",
     "category": "Noun",
     "notes": "",
+    "examples": [
+      {
+        "pt": "Vou ao dentista na sexta-feira",
+        "en": "I'm going to the dentist on Friday"
+      }
+    ],
+    "addedAt": "02/05/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common"
+  },
+  {
+    "id": 1777725315179,
+    "word": "casada",
+    "translation": "married",
+    "category": "Noun",
+    "notes": "",
     "examples": [],
     "addedAt": "02/05/2026",
     "generatingExample": true,
