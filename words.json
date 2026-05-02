@@ -1784,5 +1784,16 @@
     },
     "_activeTense": "present",
     "_generatingTense": null
+  },
+  {
+    "id": 1777728741889,
+    "word": "falar",
+    "translation": "speak",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "02/05/2026",
+    "generatingExample": true,
+    "assessingFreq": true
   }
 ]
