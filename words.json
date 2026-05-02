@@ -1569,7 +1569,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "02/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -1637,9 +1637,51 @@
           "en": "They gave gifts"
         }
       ],
-      "future": []
+      "future": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou dar",
+          "en": "I will give"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais dar",
+          "en": "You will give"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele/ela vai dar",
+          "en": "He/She will give"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos dar",
+          "en": "We will give"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão dar",
+          "en": "You will give"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles/elas vão dar",
+          "en": "They will give"
+        }
+      ]
     },
-    "_activeTense": "future",
-    "_generatingTense": "future"
+    "_activeTense": "present",
+    "_generatingTense": null
+  },
+  {
+    "id": 1777728046210,
+    "word": "saber",
+    "translation": "know",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "02/05/2026",
+    "generatingExample": true,
+    "assessingFreq": true
   }
 ]
