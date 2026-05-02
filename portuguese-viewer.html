@@ -633,43 +633,84 @@ function showToast(msg){
 }
 
 // ═══ SITUATIONS (viewer — load from GitHub, no API key needed) ═══════════
+let openSitPack = null;
+let allSitPacks = [];
+
+function toggleSitPack(label){
+  openSitPack = openSitPack === label ? null : label;
+  renderViewerPacks();
+}
+
+function renderViewerPacks(){
+  const el = document.getElementById('sitPacksView'); if(!el) return;
+  if(!allSitPacks.length){
+    document.getElementById('sitEmptyMsg').classList.remove('hidden');
+    return;
+  }
+
+  // Big icon grid
+  const gridHTML = `
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:10px;margin-bottom:16px;">
+      ${allSitPacks.map(pack=>{
+        const isOpen = openSitPack === pack.label;
+        return `<button onclick="toggleSitPack('${pack.label.replace(/'/g,"\\'")}') "
+          style="padding:14px 8px;border-radius:12px;border:2px solid ${isOpen?'#8a3a5c':'#f0ebe4'};
+            background:${isOpen?'#fdf5f8':'#fff'};cursor:pointer;font-family:inherit;text-align:center;
+            transition:all 0.18s;box-shadow:${isOpen?'0 4px 14px rgba(138,58,92,0.15)':'0 1px 4px rgba(0,0,0,0.06)'};">
+          <div style="font-size:36px;margin-bottom:6px;line-height:1;">${pack.emoji}</div>
+          <div style="font-size:12px;color:${isOpen?'#8a3a5c':'var(--navy)'};font-weight:700;line-height:1.2;">${pack.label}</div>
+          ${pack.cefrShort?`<div style="font-size:10px;color:#888;margin-top:4px;font-weight:600;">${pack.cefrShort}</div>`:''}
+          <div style="font-size:10px;color:#bbb;margin-top:2px;">${pack.sentences.length} phrases</div>
+        </button>`;
+      }).join('')}
+    </div>`;
+
+  // Expanded panel
+  const openPack = allSitPacks.find(p=>p.label===openSitPack);
+  const panelHTML = openPack ? `
+    <div style="background:#fff;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.08);overflow:hidden;border-left:4px solid #8a3a5c;animation:fadeIn 0.2s ease;">
+      <div style="padding:14px 16px;display:flex;align-items:center;gap:12px;background:#fdf5f8;flex-wrap:wrap;">
+        <span style="font-size:32px;">${openPack.emoji}</span>
+        <div>
+          <div style="font-size:16px;font-weight:700;color:var(--navy);">${openPack.label}</div>
+          <div style="display:flex;align-items:center;gap:8px;margin-top:3px;flex-wrap:wrap;">
+            ${openPack.cefrShort?`<span style="font-size:11px;padding:1px 7px;border-radius:5px;background:#f5f5f5;color:#888;font-weight:700;border:1px solid #ddd;">${openPack.cefrShort}</span>`:''}
+            <span style="font-size:11px;color:#aaa;">${openPack.sentences.length} phrases</span>
+          </div>
+        </div>
+      </div>
+      <div style="background:#fdfaf7;">
+        ${openPack.sentences.map((s,i)=>`
+          <div style="padding:10px 16px;${i<openPack.sentences.length-1?'border-bottom:1px solid #f0ebe4;':''}">
+            <div style="display:flex;align-items:center;gap:5px;flex-wrap:wrap;">
+              <span style="font-size:11px;color:#ccc;flex-shrink:0;">${i+1}.</span>
+              <span style="font-size:14px;color:var(--navy);">${s.pt}</span>
+              <button class="speak-btn" onclick="speakText('${escQ(s.pt)}','pt-PT',this)">🔊</button>
+            </div>
+            <div style="display:flex;align-items:center;gap:5px;margin-top:3px;">
+              <span style="font-size:12px;color:#999;font-style:italic;">${s.en}</span>
+              <button class="speak-btn" onclick="speakText('${escQ(s.en)}','en-GB',this)" style="font-size:11px;">🔊</button>
+            </div>
+          </div>`).join('')}
+      </div>
+    </div>` : '';
+
+  el.innerHTML = gridHTML + panelHTML;
+}
+
 async function loadSituations(){
   try{
     const url = `https://raw.githubusercontent.com/${GH_USER}/${GH_REPO}/main/situations.json?t=${Date.now()}`;
     const res = await fetch(url);
     if(!res.ok) throw new Error('not found');
     const data = await res.json();
-    const packs = Object.values(data);
+    allSitPacks = Object.values(data);
     document.getElementById('sitLoadingMsg').style.display='none';
-    if(!packs.length){
+    if(!allSitPacks.length){
       document.getElementById('sitEmptyMsg').classList.remove('hidden');
       return;
     }
-    document.getElementById('sitPacksView').innerHTML = packs.map(pack=>`
-      <div style="background:#fff;border-radius:10px;margin-bottom:10px;box-shadow:0 1px 6px rgba(0,0,0,0.07);overflow:hidden;border-left:3px solid #8a3a5c;">
-        <div style="padding:12px 14px;display:flex;align-items:center;gap:10px;">
-          <span style="font-size:22px;">${pack.emoji}</span>
-          <div>
-            <span style="font-size:14px;font-weight:700;color:var(--navy);">${pack.label}</span>
-            ${pack.cefrShort ? `<span style="font-size:10px;padding:1px 6px;border-radius:5px;font-weight:700;margin-left:6px;border:1px solid #ccc;color:#888;">${pack.cefrShort}</span>` : ''}
-            <span style="font-size:11px;color:#aaa;margin-left:6px;">${pack.sentences.length} phrases</span>
-          </div>
-        </div>
-        <div style="border-top:1px solid #f5efe6;background:#fdfaf7;">
-          ${pack.sentences.map((s,i)=>`
-            <div style="padding:9px 14px;${i<pack.sentences.length-1?'border-bottom:1px solid #f0ebe4;':''}">
-              <div style="display:flex;align-items:center;gap:5px;flex-wrap:wrap;">
-                <span style="font-size:11px;color:#ccc;flex-shrink:0;">${i+1}.</span>
-                <span style="font-size:14px;color:var(--navy);">${s.pt}</span>
-                <button class="speak-btn" onclick="speakText('${escQ(s.pt)}','pt-PT',this)">🔊</button>
-              </div>
-              <div style="display:flex;align-items:center;gap:5px;margin-top:2px;">
-                <span style="font-size:12px;color:#999;font-style:italic;">${s.en}</span>
-                <button class="speak-btn" onclick="speakText('${escQ(s.en)}','en-GB',this)" style="font-size:11px;">🔊</button>
-              </div>
-            </div>`).join('')}
-        </div>
-      </div>`).join('');
+    renderViewerPacks();
   }catch(e){
     document.getElementById('sitLoadingMsg').innerHTML='<span style="color:#bbb;font-size:13px;">No situations saved yet.</span>';
   }
