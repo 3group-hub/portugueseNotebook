@@ -140,36 +140,65 @@
     "emoji": "🏖️",
     "sentences": [
       {
-        "pt": "Quero ir à praia",
-        "en": "I want to go to the beach"
+        "pt": "Quero ir à praia.",
+        "en": "I want to go to the beach.",
+        "uses": [
+          "querer",
+          "ir"
+        ]
       },
       {
-        "pt": "É alta a praia?",
-        "en": "Is the beach high?"
+        "pt": "O que desejas fazer na praia?",
+        "en": "What do you want to do at the beach?",
+        "uses": [
+          "desejar"
+        ]
       },
       {
-        "pt": "Fica aqui",
-        "en": "Stay here"
+        "pt": "Ouço o mar.",
+        "en": "I hear the sea.",
+        "uses": [
+          "ouvir"
+        ]
       },
       {
-        "pt": "Quer ir?",
-        "en": "Do you want to go?"
+        "pt": "É escasso o tempo para nadar.",
+        "en": "There is little time to swim.",
+        "uses": [
+          "escasso"
+        ]
       },
       {
-        "pt": "Dizer onde fica a praia",
-        "en": "Say where the beach is"
+        "pt": "Quero ter esperança de não chover.",
+        "en": "I want to hope it doesn't rain.",
+        "uses": [
+          "querer",
+          "ter",
+          "esperança"
+        ]
       },
       {
-        "pt": "Ter praia é bom",
-        "en": "Having a beach is good"
+        "pt": "Posso dar um livro para ler na praia?",
+        "en": "Can I give a book to read at the beach?",
+        "uses": [
+          "dar",
+          "querer"
+        ]
       },
       {
-        "pt": "Ir à praia é divertido",
-        "en": "Going to the beach is fun"
+        "pt": "Não erras se escolheres a praia certa.",
+        "en": "You won't make a mistake if you choose the right beach.",
+        "uses": [
+          "errar"
+        ]
       },
       {
-        "pt": "Quero ouvir o mar",
-        "en": "I want to listen to the sea"
+        "pt": "Creio que a praia é um bom destino.",
+        "en": "I believe the beach is a good destination.",
+        "uses": [
+          "creio",
+          "destino"
+        ]
       }
     ],
     "level": "essential",
