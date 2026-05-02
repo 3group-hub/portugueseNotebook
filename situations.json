@@ -152,56 +152,57 @@
         ]
       },
       {
-        "pt": "O que desejas fazer na praia?",
-        "en": "What do you want to do at the beach?",
-        "uses": [
-          "desejar"
-        ]
-      },
-      {
-        "pt": "Ouço o mar.",
-        "en": "I hear the sea.",
+        "pt": "O que é isso que ouvir?",
+        "en": "What is that I hear?",
         "uses": [
           "ouvir"
         ]
       },
       {
-        "pt": "É escasso o tempo para nadar.",
-        "en": "There is little time to swim.",
+        "pt": "Desejo um chapéu para a praia.",
+        "en": "I want a hat for the beach.",
         "uses": [
-          "escasso"
+          "desejar"
         ]
       },
       {
-        "pt": "Quero ter esperança de não chover.",
-        "en": "I want to hope it doesn't rain.",
+        "pt": "Ter seduz para nadar.",
+        "en": "To have the temptation to swim.",
+        "uses": [
+          "seduz",
+          "ter"
+        ]
+      },
+      {
+        "pt": "É alta a onda?",
+        "en": "Is the wave high?",
+        "uses": [
+          "é",
+          "alta"
+        ]
+      },
+      {
+        "pt": "Quero fazer um castelo de areia.",
+        "en": "I want to build a sandcastle.",
         "uses": [
           "querer",
-          "ter",
-          "esperança"
+          "fazer"
         ]
       },
       {
-        "pt": "Posso dar um livro para ler na praia?",
-        "en": "Can I give a book to read at the beach?",
+        "pt": "Ir à praia é o meu destino.",
+        "en": "Going to the beach is my destiny.",
+        "uses": [
+          "ir",
+          "destino"
+        ]
+      },
+      {
+        "pt": "Posso dar um conselho para não errar?",
+        "en": "Can I give advice so you don't make a mistake?",
         "uses": [
           "dar",
-          "querer"
-        ]
-      },
-      {
-        "pt": "Não erras se escolheres a praia certa.",
-        "en": "You won't make a mistake if you choose the right beach.",
-        "uses": [
           "errar"
-        ]
-      },
-      {
-        "pt": "Creio que a praia é um bom destino.",
-        "en": "I believe the beach is a good destination.",
-        "uses": [
-          "creio",
-          "destino"
         ]
       }
     ],
