@@ -57,5 +57,46 @@
       }
     ],
     "updatedAt": "02/05/2026"
+  },
+  "Restaurant": {
+    "label": "Restaurant",
+    "emoji": "🍽️",
+    "sentences": [
+      {
+        "pt": "Quero um café",
+        "en": "I want a coffee"
+      },
+      {
+        "pt": "O que é isto?",
+        "en": "What is this?"
+      },
+      {
+        "pt": "Fazer o que?",
+        "en": "Do what?"
+      },
+      {
+        "pt": "Quero ir ao restaurante",
+        "en": "I want to go to the restaurant"
+      },
+      {
+        "pt": "Deseja comer aqui?",
+        "en": "Do you want to eat here?"
+      },
+      {
+        "pt": "Onde fica a casa de banho?",
+        "en": "Where is the restroom?"
+      },
+      {
+        "pt": "Dar-me a conta, por favor",
+        "en": "Give me the bill, please"
+      },
+      {
+        "pt": "É alta a comida aqui?",
+        "en": "Is the food expensive here?"
+      }
+    ],
+    "level": "essential",
+    "cefrShort": "A1/A2",
+    "updatedAt": "02/05/2026"
   }
 }
