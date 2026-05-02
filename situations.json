@@ -682,5 +682,46 @@
     "level": "essential",
     "cefrShort": "A1/A2",
     "updatedAt": "02/05/2026"
+  },
+  "Sports": {
+    "label": "Sports",
+    "emoji": "⚽",
+    "sentences": [
+      {
+        "pt": "Quero ir ao trabalho",
+        "en": "I want to go to work"
+      },
+      {
+        "pt": "Desejas ouvir música?",
+        "en": "Do you want to listen to music?"
+      },
+      {
+        "pt": "Eu ter alta",
+        "en": "I am tall"
+      },
+      {
+        "pt": "Queres fazer exercício?",
+        "en": "Do you want to exercise?"
+      },
+      {
+        "pt": "Eu vou ao dentista",
+        "en": "I'm going to the dentist"
+      },
+      {
+        "pt": "É casada?",
+        "en": "Are you married?"
+      },
+      {
+        "pt": "Quero saber sobre esportes",
+        "en": "I want to know about sports"
+      },
+      {
+        "pt": "Posso ir ao parque?",
+        "en": "Can I go to the park?"
+      }
+    ],
+    "level": "essential",
+    "cefrShort": "A1/A2",
+    "updatedAt": "02/05/2026"
   }
 }
