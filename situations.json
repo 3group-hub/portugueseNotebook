@@ -182,5 +182,46 @@
     "level": "essential",
     "cefrShort": "A1/A2",
     "updatedAt": "02/05/2026"
+  },
+  "Doctor clinic ": {
+    "label": "Doctor clinic ",
+    "emoji": "🗺️",
+    "sentences": [
+      {
+        "pt": "Quero ir ao dentista",
+        "en": "I want to go to the dentist"
+      },
+      {
+        "pt": "É casada?",
+        "en": "Are you married?"
+      },
+      {
+        "pt": "Quero fazer um trabalho",
+        "en": "I want to do a job"
+      },
+      {
+        "pt": "Onde fica a clínica?",
+        "en": "Where is the clinic?"
+      },
+      {
+        "pt": "Quero saber o meu destino",
+        "en": "I want to know my destiny"
+      },
+      {
+        "pt": "Deseja alta?",
+        "en": "Do you want height?"
+      },
+      {
+        "pt": "Posso ouvir?",
+        "en": "Can I listen?"
+      },
+      {
+        "pt": "Quero dizer bom dia",
+        "en": "I want to say good morning"
+      }
+    ],
+    "level": "essential",
+    "cefrShort": "A1/A2",
+    "updatedAt": "02/05/2026"
   }
 }
