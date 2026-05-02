@@ -927,6 +927,23 @@
     "translation": "height",
     "category": "Noun",
     "notes": "",
+    "examples": [
+      {
+        "pt": "A alta do edifício impressiona",
+        "en": "The height of the building impresses"
+      }
+    ],
+    "addedAt": "02/05/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common"
+  },
+  {
+    "id": 1777725344728,
+    "word": "gorda",
+    "translation": "fat",
+    "category": "Noun",
+    "notes": "",
     "examples": [],
     "addedAt": "02/05/2026",
     "generatingExample": true,
