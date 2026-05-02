@@ -196,6 +196,7 @@
       <button class="tab-btn" data-tab="textimport">📄 Text Import</button>
       <button class="tab-btn" data-tab="alphabet">🔤 Alphabet</button>
       <button class="tab-btn" data-tab="numbers">🔢 Numbers</button>
+      <button class="tab-btn" data-tab="situations">🗺️ Situations</button>
       <button class="tab-btn" data-tab="sentences">✍️ Sentences</button>
     </div>
   </div>
@@ -399,6 +400,30 @@
     <div id="numQuizFooter" class="hidden" style="text-align:center;margin-top:16px;">
       <button class="btn-small" style="color:var(--blue);border-color:rgba(44,95,138,0.3);" onclick="hideAllNums()">Hide all again ↺</button>
     </div>
+  </div>
+
+  <!-- ═══ SITUATIONS TAB ═══ -->
+  <div id="tab-situations" class="hidden">
+    <div class="card" style="margin-top:16px;border-left:4px solid #8a3a5c;">
+      <h2 style="margin:0 0 6px;">🗺️ Situations</h2>
+      <p style="font-size:13px;color:#888;margin-bottom:14px;">Generate phrases for real-life situations. Saved packs are shared automatically with the viewer — your classmates see them without needing an API key.</p>
+
+      <!-- Situation grid -->
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:8px;margin-bottom:14px;" id="sitBtnGrid"></div>
+
+      <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;">
+        <input id="sitCustomInp" class="inp" placeholder="Or type your own situation…" style="flex:1;min-width:180px;" onkeydown="if(event.key==='Enter')generateAndSaveSituation(document.getElementById('sitCustomInp').value)" />
+        <button class="btn-primary" style="background:#8a3a5c;" onclick="generateAndSaveSituation(document.getElementById('sitCustomInp').value)">Generate &amp; Save →</button>
+      </div>
+    </div>
+
+    <div id="sitGenLoading" class="hidden" style="text-align:center;padding:32px;">
+      <span class="spin" style="font-size:28px;">⏳</span>
+      <p style="margin-top:8px;font-size:13px;color:#888;">Generating and saving…</p>
+    </div>
+
+    <!-- Saved situation packs -->
+    <div id="sitPacksList" style="margin-top:16px;"></div>
   </div>
 
   <!-- ═══ SENTENCES TAB ═══ -->
@@ -835,9 +860,10 @@ document.querySelectorAll('.tab-btn').forEach(btn=>{
     document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
     btn.classList.add('active');
     activeTab=btn.dataset.tab;
-    ['vocab','textimport','alphabet','numbers','sentences'].forEach(t=>document.getElementById('tab-'+t).classList.add('hidden'));
+    ['vocab','textimport','alphabet','numbers','situations','sentences'].forEach(t=>document.getElementById('tab-'+t).classList.add('hidden'));
     document.getElementById('tab-'+activeTab).classList.remove('hidden');
     if(activeTab==='sentences') updateSentWordCount();
+    if(activeTab==='situations') initSituationsTab();
   });
 });
 
@@ -1899,6 +1925,150 @@ function toggleAlphaQuiz(){
   document.getElementById('alphaQuizFooter').classList[alphaQuizMode?'remove':'add']('hidden');
   document.getElementById('alphaDetail').classList.add('hidden');
   renderAlphaGrid();
+}
+
+// ═══ SITUATIONS (main app — generate & save) ═══════════════════════════
+const GH_SIT_FILE = 'situations.json';
+const SITUATION_LIST = [
+  {emoji:'🍽️',label:'Restaurant',     en:'at a restaurant in Portugal'},
+  {emoji:'🏥',label:'Hospital',        en:'at a hospital or doctor'},
+  {emoji:'🛒',label:'Grocery store',   en:'at a grocery store or supermarket'},
+  {emoji:'🏖️',label:'Beach',           en:'at the beach'},
+  {emoji:'🚌',label:'Transport',       en:'using public transport, bus or metro'},
+  {emoji:'🏨',label:'Hotel',           en:'checking in or out of a hotel'},
+  {emoji:'☕',label:'Café',            en:'at a café ordering coffee and pastries'},
+  {emoji:'🧭',label:'Directions',      en:'asking for or giving directions'},
+  {emoji:'🛍️',label:'Shopping',        en:'shopping for clothes or items'},
+  {emoji:'💊',label:'Pharmacy',        en:'at a pharmacy'},
+  {emoji:'🏦',label:'Bank',            en:'at a bank or ATM'},
+  {emoji:'🎉',label:'Greetings',       en:'meeting people and social greetings'},
+  {emoji:'📞',label:'Phone call',      en:'making a phone call in Portuguese'},
+  {emoji:'🏠',label:'Home',            en:'talking about home and daily routine'},
+  {emoji:'🌊',label:'Surf school',     en:'at a surf school or water sports'},
+  {emoji:'⚽',label:'Sports',          en:'talking about sports and activities'},
+];
+
+let savedSituations = {}; // { label: { label, emoji, sentences: [{pt,en}] } }
+
+function initSituationsTab(){
+  renderSitBtnGrid();
+  loadSituationsFromGH();
+}
+
+function renderSitBtnGrid(){
+  const el = document.getElementById('sitBtnGrid'); if(!el) return;
+  el.innerHTML = SITUATION_LIST.map(s=>`
+    <button onclick="generateAndSaveSituation('${s.en}','${s.label}','${s.emoji}')"
+      style="padding:10px 6px;border-radius:10px;border:1px solid ${savedSituations[s.label]?'#8a3a5c44':'#f0ebe4'};background:${savedSituations[s.label]?'#fdf5f8':'#fff'};cursor:pointer;font-family:inherit;text-align:center;transition:all 0.15s;">
+      <div style="font-size:22px;margin-bottom:3px;">${s.emoji}</div>
+      <div style="font-size:11px;color:#1a3a5c;font-weight:600;">${s.label}</div>
+      ${savedSituations[s.label]?`<div style="font-size:9px;color:#8a3a5c;margin-top:2px;">✓ saved</div>`:''}
+    </button>`).join('');
+}
+
+async function loadSituationsFromGH(silent=true){
+  const creds = ghCredentials(); if(!creds) return;
+  try{
+    const file = await ghApiCall(GH_SIT_FILE);
+    const json = decodeURIComponent(escape(atob(file.content.replace(/\n/g,''))));
+    savedSituations = JSON.parse(json);
+    renderSitBtnGrid();
+    renderSavedPacks();
+  }catch(e){ /* file may not exist yet */ }
+}
+
+async function saveSituationsToGH(){
+  const creds = ghCredentials(); if(!creds){ showToast('Connect GitHub first to save situations'); return; }
+  const content = btoa(unescape(encodeURIComponent(JSON.stringify(savedSituations, null, 2))));
+  try{
+    let sha;
+    try{ const f = await ghApiCall(GH_SIT_FILE); sha = f.sha; }catch(e){}
+    await ghApiCall(GH_SIT_FILE, 'PUT', {
+      message:`Update situations (${Object.keys(savedSituations).length} packs)`,
+      content, ...(sha?{sha}:{})
+    });
+  }catch(e){ showToast('Save failed: '+e.message); }
+}
+
+async function generateAndSaveSituation(situation, label, emoji){
+  if(!situation?.trim()){ showToast('Please enter a situation'); return; }
+  label = label || situation;
+  emoji = emoji || '🗺️';
+  const wordList = words.map(w=>`"${w.word}" (${w.translation}) [${w.category}]${w.freq?` [${FREQ_TIERS[w.freq]?.cefrShort||''}]`:''}`).join('\n');
+  if(!wordList){ showToast('Add some words first'); return; }
+
+  document.getElementById('sitGenLoading').classList.remove('hidden');
+  try{
+    const raw = await claudeCall(
+      `You are a European Portuguese tutor. A student is going to be: ${situation}.
+Their vocabulary:\n${wordList}\n
+Generate 8 practical, natural sentences they would actually use in this situation.
+- ONLY European Portuguese (Portugal, not Brazilian).
+- Use words from their vocabulary wherever possible and natural.
+- Keep sentences appropriate for A1–A2 level — short, clear, practical.
+- Mix statements, questions, and requests.
+- Include the English translation in parentheses after each sentence.
+- Number them 1–8, one per line.`, 1200);
+
+    const sentences = raw.split('\n').filter(l=>l.trim()).map(line=>{
+      const match = line.match(/^(\d+[\.\)]?\s*)(.+)/);
+      const text = match ? match[2] : line;
+      const pt = text.split('(')[0].trim();
+      const enMatch = text.match(/\(([^)]+)\)/);
+      const en = enMatch ? enMatch[1] : '';
+      return pt ? {pt, en} : null;
+    }).filter(Boolean);
+
+    savedSituations[label] = { label, emoji, sentences, updatedAt: new Date().toLocaleDateString('pt-PT') };
+    await saveSituationsToGH();
+    renderSitBtnGrid();
+    renderSavedPacks();
+    showToast(`✅ "${label}" saved and shared!`);
+  }catch(e){ showToast('Generation failed: '+e.message); }
+  document.getElementById('sitGenLoading').classList.add('hidden');
+}
+
+function deleteSituation(label){
+  delete savedSituations[label];
+  saveSituationsToGH();
+  renderSitBtnGrid();
+  renderSavedPacks();
+  showToast('Removed.');
+}
+
+function renderSavedPacks(){
+  const el = document.getElementById('sitPacksList'); if(!el) return;
+  const packs = Object.values(savedSituations);
+  if(!packs.length){
+    el.innerHTML = `<div style="text-align:center;padding:32px;color:#bbb;font-size:13px;">No situation packs saved yet.<br>Click a situation above to generate and save one.</div>`;
+    return;
+  }
+  el.innerHTML = packs.map(pack=>`
+    <div style="background:#fff;border-radius:10px;margin-bottom:10px;box-shadow:0 1px 6px rgba(0,0,0,0.07);overflow:hidden;border-left:3px solid #8a3a5c;">
+      <div style="padding:12px 14px;display:flex;align-items:center;gap:10px;">
+        <span style="font-size:20px;">${pack.emoji}</span>
+        <div style="flex:1;">
+          <span style="font-size:14px;font-weight:700;color:#1a3a5c;">${pack.label}</span>
+          <span style="font-size:11px;color:#aaa;margin-left:8px;">${pack.sentences.length} sentences · ${pack.updatedAt||''}</span>
+        </div>
+        <button onclick="generateAndSaveSituation('${SITUATION_LIST.find(s=>s.label===pack.label)?.en||pack.label}','${pack.label}','${pack.emoji}')" style="padding:3px 9px;border-radius:6px;border:1px solid #ddd;background:#fafafa;font-size:11px;cursor:pointer;color:#666;">↺ Refresh</button>
+        <button onclick="deleteSituation('${pack.label}')" style="padding:3px 8px;border-radius:6px;border:none;background:transparent;font-size:13px;cursor:pointer;color:#ddd;">🗑️</button>
+      </div>
+      <div style="border-top:1px solid #f5efe6;background:#fdfaf7;">
+        ${pack.sentences.map((s,i)=>`
+          <div style="padding:8px 14px;${i<pack.sentences.length-1?'border-bottom:1px solid #f0ebe4;':''}">
+            <div style="display:flex;align-items:center;gap:5px;flex-wrap:wrap;">
+              <span style="font-size:11px;color:#ccc;">${i+1}.</span>
+              <span style="font-size:13px;color:#1a3a5c;">${s.pt}</span>
+              <button class="speak-btn" onclick="speakText('${escQ(s.pt)}','pt-PT',this)">🔊</button>
+            </div>
+            <div style="display:flex;align-items:center;gap:5px;margin-top:2px;">
+              <span style="font-size:12px;color:#999;font-style:italic;">${s.en}</span>
+              <button class="speak-btn" onclick="speakText('${escQ(s.en)}','en-GB',this)" style="font-size:11px;">🔊</button>
+            </div>
+          </div>`).join('')}
+      </div>
+    </div>`).join('');
 }
 
 // ═══ TEXT IMPORT ══════════════════════════════════════════════════════════
