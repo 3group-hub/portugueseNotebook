@@ -442,48 +442,28 @@
         "en": "Where is the pharmacy?"
       },
       {
-        "pt": "Eu ter alta febre.",
-        "en": "I have a high fever."
+        "pt": "Quer ir à farmácia?",
+        "en": "Do you want to go to the pharmacy?"
       },
       {
-        "pt": "Quer ouvir o meu problema?",
-        "en": "Do you want to hear my problem?"
+        "pt": "Eu ter altura alta.",
+        "en": "I am tall."
       },
       {
-        "pt": "Desejo um remédio para dor.",
-        "en": "I want a medicine for pain."
+        "pt": "O dentista é aqui?",
+        "en": "Is the dentist here?"
       },
       {
-        "pt": "Posso dar o meu dinheiro?",
-        "en": "Can I give you my money?"
+        "pt": "Desejo um remédio.",
+        "en": "I want a remedy."
       },
       {
-        "pt": "Eu saber o preço?",
-        "en": "Do I know the price?"
+        "pt": "Fica na farmácia?",
+        "en": "Does it stay at the pharmacy?"
       },
       {
-        "pt": "Faça um desconto, por favor.",
-        "en": "Give me a discount, please."
-      },
-      {
-        "pt": "Eu ter uma dor",
-        "en": "I have a pain"
-      },
-      {
-        "pt": "Quero falar com um farmacêutico",
-        "en": "I want to speak with a pharmacist"
-      },
-      {
-        "pt": "Desejo um remédio para a tormenta",
-        "en": "I want a remedy for the storm"
-      },
-      {
-        "pt": "Eu saber o que é isso",
-        "en": "I know what this is"
-      },
-      {
-        "pt": "É um medicamento escasso",
-        "en": "It is a scarce medication"
+        "pt": "Quero falar com o farmacêutico.",
+        "en": "I want to speak with the pharmacist."
       }
     ],
     "level": "essential",
