@@ -1558,7 +1558,7 @@
         }
       ]
     },
-    "_activeTense": "past",
+    "_activeTense": "future",
     "_generatingTense": null
   },
   {
@@ -1605,10 +1605,41 @@
           "en": "They give a hand."
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu dei um livro",
+          "en": "I gave a book"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu deste um brinquedo",
+          "en": "You gave a toy"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela deu um abraço",
+          "en": "She gave a hug"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós demos comida",
+          "en": "We gave food"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês deram ajuda",
+          "en": "You gave help"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles deram presentes",
+          "en": "They gave gifts"
+        }
+      ],
       "future": []
     },
-    "_activeTense": "past",
-    "_generatingTense": "past"
+    "_activeTense": "future",
+    "_generatingTense": "future"
   }
 ]
