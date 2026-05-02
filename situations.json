@@ -469,5 +469,54 @@
     "level": "essential",
     "cefrShort": "A1/A2",
     "updatedAt": "02/05/2026"
+  },
+  "Bank": {
+    "label": "Bank",
+    "emoji": "🏦",
+    "sentences": [
+      {
+        "pt": "Quero sacar dinheiro.",
+        "en": "I want to withdraw money."
+      },
+      {
+        "pt": "Onde é o ATM?",
+        "en": "Where is the ATM?"
+      },
+      {
+        "pt": "Quer ajudar-me?",
+        "en": "Do you want to help me?"
+      },
+      {
+        "pt": "Eu ir ao banco.",
+        "en": "I'm going to the bank."
+      },
+      {
+        "pt": "Posso fazer um saque?",
+        "en": "Can I make a withdrawal?"
+      },
+      {
+        "pt": "O que é o destino do meu dinheiro?",
+        "en": "What is the destination of my money?"
+      },
+      {
+        "pt": "-> Revised: 6. Quero saber o saldo.",
+        "en": "I want to know the balance."
+      },
+      {
+        "pt": "Deseja ajudar-me?",
+        "en": "Do you want to help me?"
+      },
+      {
+        "pt": "-> Revised: 7. Quero falar com alguém.",
+        "en": "I want to speak with someone."
+      },
+      {
+        "pt": "Posso ter dinheiro?",
+        "en": "Can I have money?"
+      }
+    ],
+    "level": "essential",
+    "cefrShort": "A1/A2",
+    "updatedAt": "02/05/2026"
   }
 }
