@@ -1457,7 +1457,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "02/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -1525,9 +1525,51 @@
           "en": "They said"
         }
       ],
-      "future": []
+      "future": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou dizer",
+          "en": "I will say"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais dizer",
+          "en": "You will say"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai dizer",
+          "en": "She will say"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos dizer",
+          "en": "We will say"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão dizer",
+          "en": "You will say"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão dizer",
+          "en": "They will say"
+        }
+      ]
     },
     "_activeTense": "future",
-    "_generatingTense": "future"
+    "_generatingTense": null
+  },
+  {
+    "id": 1777727349300,
+    "word": "dar",
+    "translation": "give",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "02/05/2026",
+    "generatingExample": true,
+    "assessingFreq": true
   }
 ]
