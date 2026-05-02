@@ -464,6 +464,26 @@
       {
         "pt": "Faça um desconto, por favor.",
         "en": "Give me a discount, please."
+      },
+      {
+        "pt": "Eu ter uma dor",
+        "en": "I have a pain"
+      },
+      {
+        "pt": "Quero falar com um farmacêutico",
+        "en": "I want to speak with a pharmacist"
+      },
+      {
+        "pt": "Desejo um remédio para a tormenta",
+        "en": "I want a remedy for the storm"
+      },
+      {
+        "pt": "Eu saber o que é isso",
+        "en": "I know what this is"
+      },
+      {
+        "pt": "É um medicamento escasso",
+        "en": "It is a scarce medication"
       }
     ],
     "level": "essential",
