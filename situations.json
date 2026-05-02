@@ -97,40 +97,41 @@
         ]
       },
       {
-        "pt": "Quero ouvir os preços.",
-        "en": "I want to hear the prices.",
+        "pt": "Quero ouvir o preço.",
+        "en": "I want to hear the price.",
         "uses": [
-          "ouvir",
-          "querer"
+          "querer",
+          "ouvir"
         ]
       },
       {
-        "pt": "Desejo um torrão de açúcar, por favor.",
-        "en": "I want a sugar cube, please.",
+        "pt": "Desejo comprar sementes.",
+        "en": "I want to buy seeds.",
         "uses": [
-          "desejar"
+          "desejar",
+          "semente"
         ]
       },
       {
-        "pt": "Fica o queijo na secção de laticínios?",
-        "en": "Is the cheese in the dairy section?",
+        "pt": "Fica aqui, por favor.",
+        "en": "Stay here, please.",
         "uses": [
           "fica"
         ]
       },
       {
-        "pt": "Ter água é importante.",
-        "en": "Having water is important.",
+        "pt": "Ter trabalho aqui?",
+        "en": "Is there work here?",
         "uses": [
-          "ter"
+          "ter",
+          "trabalho"
         ]
       },
       {
-        "pt": "Ir à seção de sementes, por favor.",
-        "en": "Go to the seed section, please.",
+        "pt": "Saber o preço, por favor?",
+        "en": "Do you know the price, please?",
         "uses": [
-          "ir",
-          "semente"
+          "saber"
         ]
       }
     ],
