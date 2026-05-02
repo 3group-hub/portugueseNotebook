@@ -424,35 +424,64 @@
     "sentences": [
       {
         "pt": "Quero um café, por favor.",
-        "en": "I want a coffee, please."
+        "en": "I would like a coffee, please.",
+        "uses": [
+          "querer"
+        ]
       },
       {
-        "pt": "É alta a torre?",
-        "en": "Is the tower high?"
+        "pt": "O que desejar para comer?",
+        "en": "What would you like to eat?",
+        "uses": [
+          "desejar"
+        ]
       },
       {
-        "pt": "Desejo um pastel.",
-        "en": "I want a pastry."
+        "pt": "Posso ouvir o menu, por favor?",
+        "en": "Can I hear the menu, please?",
+        "uses": [
+          "ouvir"
+        ]
       },
       {
-        "pt": "Onde fica o café?",
-        "en": "Where is the coffee?"
+        "pt": "Quero um bolo, é alto?",
+        "en": "I want a cake, is it tall?",
+        "uses": [
+          "querer",
+          "alta"
+        ]
       },
       {
-        "pt": "Quero ir ao café.",
-        "en": "I want to go to the café."
+        "pt": "Ter pastéis escassos hoje?",
+        "en": "Are pastries scarce today?",
+        "uses": [
+          "ter",
+          "escasso"
+        ]
       },
       {
-        "pt": "Bom dia, quero um chá.",
-        "en": "Good morning, I want a tea."
+        "pt": "Desejo um café para ir.",
+        "en": "I want a coffee to go.",
+        "uses": [
+          "desejar",
+          "ir"
+        ]
       },
       {
-        "pt": "Fazer um café, por favor.",
-        "en": "Make a coffee, please."
+        "pt": "Quero falar com o empregado, por favor.",
+        "en": "I want to speak with the employee, please.",
+        "uses": [
+          "querer",
+          "falar"
+        ]
       },
       {
-        "pt": "Dar-me um pastel, por favor.",
-        "en": "Give me a pastry, please."
+        "pt": "Posso ter um café, é bom?",
+        "en": "Can I have a coffee, is it good?",
+        "uses": [
+          "ter",
+          "é"
+        ]
       }
     ],
     "level": "essential",
