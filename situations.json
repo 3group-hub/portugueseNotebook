@@ -141,5 +141,46 @@
     "level": "essential",
     "cefrShort": "A1/A2",
     "updatedAt": "02/05/2026"
+  },
+  "Beach": {
+    "label": "Beach",
+    "emoji": "🏖️",
+    "sentences": [
+      {
+        "pt": "Quero ir à praia",
+        "en": "I want to go to the beach"
+      },
+      {
+        "pt": "É alta a praia?",
+        "en": "Is the beach high?"
+      },
+      {
+        "pt": "Fica aqui",
+        "en": "Stay here"
+      },
+      {
+        "pt": "Quer ir?",
+        "en": "Do you want to go?"
+      },
+      {
+        "pt": "Dizer onde fica a praia",
+        "en": "Say where the beach is"
+      },
+      {
+        "pt": "Ter praia é bom",
+        "en": "Having a beach is good"
+      },
+      {
+        "pt": "Ir à praia é divertido",
+        "en": "Going to the beach is fun"
+      },
+      {
+        "pt": "Quero ouvir o mar",
+        "en": "I want to listen to the sea"
+      }
+    ],
+    "level": "essential",
+    "cefrShort": "A1/A2",
+    "updatedAt": "02/05/2026"
   }
 }
