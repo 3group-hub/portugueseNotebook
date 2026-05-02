@@ -868,10 +868,22 @@
       {
         "pt": "Bom dia, como está hoje?",
         "en": "Good morning, how are you today?"
+      },
+      {
+        "pt": "Bom dia, vou ao trabalho",
+        "en": "Good morning, I'm going to work"
+      },
+      {
+        "pt": "Bom dia, como posso ajudar",
+        "en": "Good morning, how can I help"
+      },
+      {
+        "pt": "Bom dia, está um dia lindo",
+        "en": "Good morning, it's a beautiful day"
       }
     ],
     "addedAt": "28/04/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "common"
   }
