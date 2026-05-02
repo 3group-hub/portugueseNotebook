@@ -1345,7 +1345,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "02/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -1413,9 +1413,51 @@
           "en": "They did"
         }
       ],
-      "future": []
+      "future": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou fazer",
+          "en": "I will do"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais fazer",
+          "en": "You will do"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai fazer",
+          "en": "She will do"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos fazer",
+          "en": "We will do"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão fazer",
+          "en": "You will do"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão fazer",
+          "en": "They will do"
+        }
+      ]
     },
     "_activeTense": "future",
-    "_generatingTense": "future"
+    "_generatingTense": null
+  },
+  {
+    "id": 1777727145899,
+    "word": "dizer",
+    "translation": "say",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "02/05/2026",
+    "generatingExample": true,
+    "assessingFreq": true
   }
 ]
