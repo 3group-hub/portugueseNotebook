@@ -1941,10 +1941,41 @@
           "en": "They work a lot."
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu trabalhei ontem",
+          "en": "I worked yesterday"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu trabalhaste ontem",
+          "en": "You worked yesterday"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela trabalhou ontem",
+          "en": "She worked yesterday"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós trabalhámos ontem",
+          "en": "We worked yesterday"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês trabalharam ontem",
+          "en": "You worked yesterday"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles trabalharam ontem",
+          "en": "They worked yesterday"
+        }
+      ],
       "future": []
     },
-    "_activeTense": "past",
-    "_generatingTense": "past"
+    "_activeTense": "future",
+    "_generatingTense": "future"
   }
 ]
