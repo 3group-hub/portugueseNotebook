@@ -305,5 +305,46 @@
     "level": "essential",
     "cefrShort": "A1/A2",
     "updatedAt": "02/05/2026"
+  },
+  "Directions": {
+    "label": "Directions",
+    "emoji": "🧭",
+    "sentences": [
+      {
+        "pt": "Quero ir ao dentista",
+        "en": "I want to go to the dentist"
+      },
+      {
+        "pt": "Onde fica o trabalho?",
+        "en": "Where is the work?"
+      },
+      {
+        "pt": "É alta a semente?",
+        "en": "Is the seed tall?"
+      },
+      {
+        "pt": "Quer ir comigo?",
+        "en": "Do you want to go with me?"
+      },
+      {
+        "pt": "Desejo fazer trabalho",
+        "en": "I want to do work"
+      },
+      {
+        "pt": "Onde é o destino?",
+        "en": "Where is the destination?"
+      },
+      {
+        "pt": "Posso dar esperança?",
+        "en": "Can I give hope?"
+      },
+      {
+        "pt": "Saber ir à direita?",
+        "en": "Do you know how to go to the right?"
+      }
+    ],
+    "level": "essential",
+    "cefrShort": "A1/A2",
+    "updatedAt": "02/05/2026"
   }
 }
