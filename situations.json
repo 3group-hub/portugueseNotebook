@@ -910,36 +910,71 @@
     "emoji": "📞",
     "sentences": [
       {
-        "pt": "Quero falar com o dentista",
-        "en": "I want to speak with the dentist"
+        "pt": "Quero falar com o dentista.",
+        "en": "I want to speak with the dentist.",
+        "uses": [
+          "querer",
+          "falar",
+          "dentista"
+        ]
       },
       {
-        "pt": "É o trabalho?",
-        "en": "Is it work?"
+        "pt": "O que é o trabalho?",
+        "en": "What is the work?",
+        "uses": [
+          "é",
+          "trabalho"
+        ]
       },
       {
-        "pt": "Onde fica o dentista?",
-        "en": "Where is the dentist?"
+        "pt": "Desejo saber o preço.",
+        "en": "I want to know the price.",
+        "uses": [
+          "desejar",
+          "saber"
+        ]
       },
       {
-        "pt": "Quer ouvir?",
-        "en": "Do you want to listen?"
+        "pt": "Posso ouvir a mensagem?",
+        "en": "Can I listen to the message?",
+        "uses": [
+          "ouvir"
+        ]
       },
       {
-        "pt": "Bom dia, por favor",
-        "en": "Good morning, please"
+        "pt": "Quero ir ao trabalho.",
+        "en": "I want to go to work.",
+        "uses": [
+          "querer",
+          "ir",
+          "trabalho"
+        ]
       },
       {
-        "pt": "Quero dar uma mensagem",
-        "en": "I want to give a message"
+        "pt": "É casada?",
+        "en": "Are you married?",
+        "uses": [
+          "é",
+          "casada"
+        ]
       },
       {
-        "pt": "Saber o preço?",
-        "en": "Do you know the price?"
+        "pt": "Quero dar um lamento.",
+        "en": "I want to give a lament.",
+        "uses": [
+          "querer",
+          "lamento",
+          "dar"
+        ]
       },
       {
-        "pt": "Posso falar com alguém?",
-        "en": "Can I speak with someone?"
+        "pt": "Posso fazer um pedido?",
+        "en": "Can I make a request?",
+        "uses": [
+          "fazer",
+          "dar",
+          "pedido"
+        ]
       }
     ],
     "level": "essential",
