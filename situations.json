@@ -428,5 +428,46 @@
     "level": "essential",
     "cefrShort": "A1/A2",
     "updatedAt": "02/05/2026"
+  },
+  "Pharmacy": {
+    "label": "Pharmacy",
+    "emoji": "💊",
+    "sentences": [
+      {
+        "pt": "Quero um medicamento.",
+        "en": "I want a medicine."
+      },
+      {
+        "pt": "Onde fica a farmácia?",
+        "en": "Where is the pharmacy?"
+      },
+      {
+        "pt": "Quer ouvir o preço?",
+        "en": "Do you want to hear the price?"
+      },
+      {
+        "pt": "Desejo um remédio para dor.",
+        "en": "I want a medicine for pain."
+      },
+      {
+        "pt": "É alta a esperança de cura?",
+        "en": "Is the hope of cure high?"
+      },
+      {
+        "pt": "Posso dar o meu dinheiro?",
+        "en": "Can I give my money?"
+      },
+      {
+        "pt": "Saber o preço, por favor?",
+        "en": "To know the price, please?"
+      },
+      {
+        "pt": "Ir à farmácia comigo?",
+        "en": "Go to the pharmacy with me?"
+      }
+    ],
+    "level": "essential",
+    "cefrShort": "A1/A2",
+    "updatedAt": "02/05/2026"
   }
 }
