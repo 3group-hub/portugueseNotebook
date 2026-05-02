@@ -353,36 +353,65 @@
     "emoji": "🏨",
     "sentences": [
       {
-        "pt": "Quero o quarto, por favor",
-        "en": "I want the room, please"
+        "pt": "Quero fazer check-in, por favor.",
+        "en": "I want to check-in, please.",
+        "uses": [
+          "querer",
+          "fazer"
+        ]
       },
       {
-        "pt": "É alta a cama?",
-        "en": "Is the bed high?"
+        "pt": "O meu trabalho é aqui no hotel.",
+        "en": "My work is here at the hotel.",
+        "uses": [
+          "trabalho"
+        ]
       },
       {
-        "pt": "Onde fica o trabalho?",
-        "en": "Where is the work?"
+        "pt": "Desejo um quarto alto, por favor.",
+        "en": "I want a high room, please.",
+        "uses": [
+          "desejar",
+          "alto"
+        ]
       },
       {
-        "pt": "Quero ir ao quarto",
-        "en": "I want to go to the room"
+        "pt": "É alta a temporada agora?",
+        "en": "Is it high season now?",
+        "uses": [
+          "alta",
+          "é"
+        ]
       },
       {
-        "pt": "Deseja ajuda?",
-        "en": "Do you want help?"
+        "pt": "Quero ir para o meu quarto, por favor.",
+        "en": "I want to go to my room, please.",
+        "uses": [
+          "querer",
+          "ir"
+        ]
       },
       {
-        "pt": "Eu ter quarto?",
-        "en": "Do I have a room?"
+        "pt": "O que é que você quer fazer?",
+        "en": "What do you want to do?",
+        "uses": [
+          "querer",
+          "fazer"
+        ]
       },
       {
-        "pt": "O que é o preço?",
-        "en": "What is the price?"
+        "pt": "Posso dar o meu cartão, por favor?",
+        "en": "Can I give my card, please?",
+        "uses": [
+          "dar"
+        ]
       },
       {
-        "pt": "Posso dar o dinheiro?",
-        "en": "Can I give the money?"
+        "pt": "Saber o preço do quarto, por favor.",
+        "en": "I want to know the room price, please.",
+        "uses": [
+          "saber"
+        ]
       }
     ],
     "level": "essential",
