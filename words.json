@@ -1717,10 +1717,41 @@
           "en": "They know that"
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu sabia",
+          "en": "I knew"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu sabias",
+          "en": "You knew"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele soube",
+          "en": "He/She knew"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós soubemos",
+          "en": "We knew"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês souberam",
+          "en": "You knew"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles souberam",
+          "en": "They knew"
+        }
+      ],
       "future": []
     },
-    "_activeTense": "past",
-    "_generatingTense": "past"
+    "_activeTense": "future",
+    "_generatingTense": "future"
   }
 ]
