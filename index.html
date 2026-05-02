@@ -408,6 +408,26 @@
       <h2 style="margin:0 0 6px;">🗺️ Situations</h2>
       <p style="font-size:13px;color:#888;margin-bottom:14px;">Generate phrases for real-life situations. Saved packs are shared automatically with the viewer — your classmates see them without needing an API key.</p>
 
+      <!-- CEFR level selector -->
+      <div style="margin-bottom:14px;">
+        <label style="font-size:11px;color:#999;text-transform:uppercase;letter-spacing:0.06em;display:block;margin-bottom:8px;">Generate at level:</label>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;">
+          <button onclick="setSitLevel('essential')" id="sitLvl_essential"
+            style="padding:6px 14px;border-radius:8px;border:2px solid #c1440e;background:#fdf0ec;color:#c1440e;cursor:pointer;font-family:inherit;font-size:13px;font-weight:700;transition:all 0.15s;">
+            A1/A2 · Essential
+          </button>
+          <button onclick="setSitLevel('common')" id="sitLvl_common"
+            style="padding:6px 14px;border-radius:8px;border:2px solid #ddd;background:#fafafa;color:#888;cursor:pointer;font-family:inherit;font-size:13px;transition:all 0.15s;">
+            B1/B2 · Common
+          </button>
+          <button onclick="setSitLevel('advanced')" id="sitLvl_advanced"
+            style="padding:6px 14px;border-radius:8px;border:2px solid #ddd;background:#fafafa;color:#888;cursor:pointer;font-family:inherit;font-size:13px;transition:all 0.15s;">
+            C1/C2 · Advanced
+          </button>
+        </div>
+        <p id="sitLevelDesc" style="font-size:12px;color:#aaa;margin-top:6px;">Short, simple, everyday phrases — perfect for beginners.</p>
+      </div>
+
       <!-- Situation grid -->
       <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:8px;margin-bottom:14px;" id="sitBtnGrid"></div>
 
@@ -1948,7 +1968,49 @@ const SITUATION_LIST = [
   {emoji:'⚽',label:'Sports',          en:'talking about sports and activities'},
 ];
 
-let savedSituations = {}; // { label: { label, emoji, sentences: [{pt,en}] } }
+const SIT_LEVELS = {
+  essential: {
+    cefrShort:'A1/A2', color:'#c1440e', bg:'#fdf0ec',
+    desc:'Short, simple, everyday phrases — perfect for beginners.',
+    prompt:'A1–A2 level — very short, simple sentences (4–8 words). Use only the most basic vocabulary and grammar. No complex structures.',
+  },
+  common: {
+    cefrShort:'B1/B2', color:'#b5830a', bg:'#fdf8ec',
+    desc:'Natural everyday language — intermediate structures and vocabulary.',
+    prompt:'B1–B2 level — natural everyday sentences (6–12 words). Use intermediate vocabulary and structures like past tense, conditionals, and common expressions.',
+  },
+  advanced: {
+    cefrShort:'C1/C2', color:'#2c5f8a', bg:'#eef4fb',
+    desc:'Rich, nuanced language — complex grammar and wider vocabulary.',
+    prompt:'C1–C2 level — richer, more complex sentences. Use advanced vocabulary, subjunctive mood, idiomatic expressions, and nuanced structures.',
+  },
+};
+
+let currentSitLevel = 'essential';
+let savedSituations = {};
+
+function setSitLevel(level){
+  currentSitLevel = level;
+  const cfg = SIT_LEVELS[level];
+  // Update button styles
+  Object.keys(SIT_LEVELS).forEach(l=>{
+    const btn = document.getElementById('sitLvl_'+l);
+    if(!btn) return;
+    const c = SIT_LEVELS[l];
+    if(l===level){
+      btn.style.border=`2px solid ${c.color}`;
+      btn.style.background=c.bg;
+      btn.style.color=c.color;
+      btn.style.fontWeight='700';
+    } else {
+      btn.style.border='2px solid #ddd';
+      btn.style.background='#fafafa';
+      btn.style.color='#888';
+      btn.style.fontWeight='400';
+    }
+  });
+  document.getElementById('sitLevelDesc').textContent = cfg.desc;
+} // { label: { label, emoji, sentences: [{pt,en}] } }
 
 function initSituationsTab(){
   renderSitBtnGrid();
@@ -1996,6 +2058,7 @@ async function generateAndSaveSituation(situation, label, emoji){
   emoji = emoji || '🗺️';
   const wordList = words.map(w=>`"${w.word}" (${w.translation}) [${w.category}]${w.freq?` [${FREQ_TIERS[w.freq]?.cefrShort||''}]`:''}`).join('\n');
   if(!wordList){ showToast('Add some words first'); return; }
+  const level = SIT_LEVELS[currentSitLevel];
 
   document.getElementById('sitGenLoading').classList.remove('hidden');
   try{
@@ -2005,7 +2068,7 @@ Their vocabulary:\n${wordList}\n
 Generate 8 practical, natural sentences they would actually use in this situation.
 - ONLY European Portuguese (Portugal, not Brazilian).
 - Use words from their vocabulary wherever possible and natural.
-- Keep sentences appropriate for A1–A2 level — short, clear, practical.
+- ${level.prompt}
 - Mix statements, questions, and requests.
 - Include the English translation in parentheses after each sentence.
 - Number them 1–8, one per line.`, 1200);
@@ -2019,11 +2082,16 @@ Generate 8 practical, natural sentences they would actually use in this situatio
       return pt ? {pt, en} : null;
     }).filter(Boolean);
 
-    savedSituations[label] = { label, emoji, sentences, updatedAt: new Date().toLocaleDateString('pt-PT') };
+    savedSituations[label] = {
+      label, emoji, sentences,
+      level: currentSitLevel,
+      cefrShort: level.cefrShort,
+      updatedAt: new Date().toLocaleDateString('pt-PT')
+    };
     await saveSituationsToGH();
     renderSitBtnGrid();
     renderSavedPacks();
-    showToast(`✅ "${label}" saved and shared!`);
+    showToast(`✅ "${label}" saved at ${level.cefrShort}!`);
   }catch(e){ showToast('Generation failed: '+e.message); }
   document.getElementById('sitGenLoading').classList.add('hidden');
 }
@@ -2045,30 +2113,93 @@ function renderSavedPacks(){
   }
   el.innerHTML = packs.map(pack=>`
     <div style="background:#fff;border-radius:10px;margin-bottom:10px;box-shadow:0 1px 6px rgba(0,0,0,0.07);overflow:hidden;border-left:3px solid #8a3a5c;">
-      <div style="padding:12px 14px;display:flex;align-items:center;gap:10px;">
+      <div style="padding:12px 14px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
         <span style="font-size:20px;">${pack.emoji}</span>
         <div style="flex:1;">
           <span style="font-size:14px;font-weight:700;color:#1a3a5c;">${pack.label}</span>
-          <span style="font-size:11px;color:#aaa;margin-left:8px;">${pack.sentences.length} sentences · ${pack.updatedAt||''}</span>
+          ${pack.cefrShort ? `<span style="font-size:10px;padding:1px 6px;border-radius:5px;background:${(SIT_LEVELS[pack.level]||SIT_LEVELS.essential).bg};color:${(SIT_LEVELS[pack.level]||SIT_LEVELS.essential).color};font-weight:700;margin-left:6px;border:1px solid ${(SIT_LEVELS[pack.level]||SIT_LEVELS.essential).color}33;">${pack.cefrShort}</span>` : ''}
+          <span style="font-size:11px;color:#aaa;margin-left:6px;">${pack.sentences.length} sentences · ${pack.updatedAt||''}</span>
         </div>
-        <button onclick="generateAndSaveSituation('${SITUATION_LIST.find(s=>s.label===pack.label)?.en||pack.label}','${pack.label}','${pack.emoji}')" style="padding:3px 9px;border-radius:6px;border:1px solid #ddd;background:#fafafa;font-size:11px;cursor:pointer;color:#666;">↺ Refresh</button>
-        <button onclick="deleteSituation('${pack.label}')" style="padding:3px 8px;border-radius:6px;border:none;background:transparent;font-size:13px;cursor:pointer;color:#ddd;">🗑️</button>
+        <div style="display:flex;gap:6px;flex-wrap:wrap;">
+          <button onclick="addMoreSituationSentences('${pack.label}')" id="moreBtn_${pack.label.replace(/\s/g,'_')}"
+            style="padding:4px 12px;border-radius:6px;border:1px solid #8a3a5c55;background:#fdf5f8;color:#8a3a5c;cursor:pointer;font-size:12px;font-family:inherit;">
+            + More
+          </button>
+          <button onclick="generateAndSaveSituation('${SITUATION_LIST.find(s=>s.label===pack.label)?.en||pack.label}','${pack.label}','${pack.emoji}')"
+            style="padding:4px 10px;border-radius:6px;border:1px solid #ddd;background:#fafafa;font-size:12px;cursor:pointer;color:#666;font-family:inherit;">↺ Refresh</button>
+          <button onclick="deleteSituation('${pack.label}')"
+            style="padding:4px 8px;border-radius:6px;border:none;background:transparent;font-size:13px;cursor:pointer;color:#ddd;">🗑️</button>
+        </div>
       </div>
-      <div style="border-top:1px solid #f5efe6;background:#fdfaf7;">
-        ${pack.sentences.map((s,i)=>`
-          <div style="padding:8px 14px;${i<pack.sentences.length-1?'border-bottom:1px solid #f0ebe4;':''}">
-            <div style="display:flex;align-items:center;gap:5px;flex-wrap:wrap;">
-              <span style="font-size:11px;color:#ccc;">${i+1}.</span>
-              <span style="font-size:13px;color:#1a3a5c;">${s.pt}</span>
-              <button class="speak-btn" onclick="speakText('${escQ(s.pt)}','pt-PT',this)">🔊</button>
-            </div>
-            <div style="display:flex;align-items:center;gap:5px;margin-top:2px;">
-              <span style="font-size:12px;color:#999;font-style:italic;">${s.en}</span>
-              <button class="speak-btn" onclick="speakText('${escQ(s.en)}','en-GB',this)" style="font-size:11px;">🔊</button>
-            </div>
-          </div>`).join('')}
+      <div style="border-top:1px solid #f5efe6;background:#fdfaf7;" id="sitRows_${pack.label.replace(/\s/g,'_')}">
+        ${renderSentenceRows(pack.sentences, pack.label)}
       </div>
     </div>`).join('');
+}
+
+function renderSentenceRows(sentences, label){
+  return sentences.map((s,i)=>`
+    <div style="padding:8px 14px;${i<sentences.length-1?'border-bottom:1px solid #f0ebe4;':''}display:flex;align-items:flex-start;gap:8px;">
+      <div style="flex:1;">
+        <div style="display:flex;align-items:center;gap:5px;flex-wrap:wrap;">
+          <span style="font-size:11px;color:#ccc;">${i+1}.</span>
+          <span style="font-size:13px;color:#1a3a5c;">${s.pt}</span>
+          <button class="speak-btn" onclick="speakText('${escQ(s.pt)}','pt-PT',this)">🔊</button>
+        </div>
+        <div style="display:flex;align-items:center;gap:5px;margin-top:2px;">
+          <span style="font-size:12px;color:#999;font-style:italic;">${s.en}</span>
+          <button class="speak-btn" onclick="speakText('${escQ(s.en)}','en-GB',this)" style="font-size:11px;">🔊</button>
+        </div>
+      </div>
+      <button onclick="deleteSentenceFromPack('${label}',${i})"
+        style="padding:2px 5px;background:transparent;border:none;cursor:pointer;font-size:11px;color:#ddd;flex-shrink:0;">✕</button>
+    </div>`).join('');
+}
+
+async function addMoreSituationSentences(label){
+  const pack = savedSituations[label]; if(!pack) return;
+  const btn = document.getElementById('moreBtn_'+label.replace(/\s/g,'_'));
+  if(btn){ btn.textContent='⏳ Generating…'; btn.disabled=true; }
+  const situation = SITUATION_LIST.find(s=>s.label===label)?.en || label;
+  const wordList = words.map(w=>`"${w.word}" (${w.translation}) [${w.category}]`).join('\n');
+  const existing = pack.sentences.map(s=>`"${s.pt}"`).join(', ');
+  const packLevel = SIT_LEVELS[pack.level] || SIT_LEVELS[currentSitLevel];
+  try{
+    const raw = await claudeCall(
+      `You are a European Portuguese tutor. A student is going to be: ${situation}.
+Their vocabulary:\n${wordList}\n
+Generate 5 MORE natural sentences for this situation.
+- ONLY European Portuguese (Portugal, not Brazilian).
+- Use words from their vocabulary wherever possible.
+- ${packLevel.prompt}
+- Do NOT repeat or closely resemble these existing sentences: ${existing}
+- Include the English translation in parentheses after each sentence.
+- Number them 1–5, one per line.`, 800);
+    const newSentences = raw.split('\n').filter(l=>l.trim()).map(line=>{
+      const match = line.match(/^(\d+[\.\)]?\s*)(.+)/);
+      const text = match ? match[2] : line;
+      const pt = text.split('(')[0].trim();
+      const enMatch = text.match(/\(([^)]+)\)/);
+      const en = enMatch ? enMatch[1] : '';
+      return pt ? {pt, en} : null;
+    }).filter(Boolean);
+    pack.sentences = [...pack.sentences, ...newSentences];
+    pack.updatedAt = new Date().toLocaleDateString('pt-PT');
+    await saveSituationsToGH();
+    const rowsEl = document.getElementById('sitRows_'+label.replace(/\s/g,'_'));
+    if(rowsEl) rowsEl.innerHTML = renderSentenceRows(pack.sentences, label);
+    showToast(`✅ Added ${newSentences.length} more sentences!`);
+  }catch(e){ showToast('Failed: '+e.message); }
+  if(btn){ btn.textContent='+ More'; btn.disabled=false; }
+}
+
+async function deleteSentenceFromPack(label, index){
+  const pack = savedSituations[label]; if(!pack) return;
+  pack.sentences = pack.sentences.filter((_,i)=>i!==index);
+  await saveSituationsToGH();
+  const rowsEl = document.getElementById('sitRows_'+label.replace(/\s/g,'_'));
+  if(rowsEl) rowsEl.innerHTML = renderSentenceRows(pack.sentences, label);
+  showToast('Sentence removed.');
 }
 
 // ═══ TEXT IMPORT ══════════════════════════════════════════════════════════
