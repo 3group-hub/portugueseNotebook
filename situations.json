@@ -559,5 +559,46 @@
     "level": "essential",
     "cefrShort": "A1/A2",
     "updatedAt": "02/05/2026"
+  },
+  "Phone call": {
+    "label": "Phone call",
+    "emoji": "📞",
+    "sentences": [
+      {
+        "pt": "Quero falar com o dentista",
+        "en": "I want to speak with the dentist"
+      },
+      {
+        "pt": "É o trabalho?",
+        "en": "Is it work?"
+      },
+      {
+        "pt": "Onde fica o dentista?",
+        "en": "Where is the dentist?"
+      },
+      {
+        "pt": "Quer ouvir?",
+        "en": "Do you want to listen?"
+      },
+      {
+        "pt": "Bom dia, por favor",
+        "en": "Good morning, please"
+      },
+      {
+        "pt": "Quero dar uma mensagem",
+        "en": "I want to give a message"
+      },
+      {
+        "pt": "Saber o preço?",
+        "en": "Do you know the price?"
+      },
+      {
+        "pt": "Posso falar com alguém?",
+        "en": "Can I speak with someone?"
+      }
+    ],
+    "level": "essential",
+    "cefrShort": "A1/A2",
+    "updatedAt": "02/05/2026"
   }
 }
