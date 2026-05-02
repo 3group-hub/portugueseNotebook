@@ -1906,6 +1906,45 @@
     "examples": [],
     "addedAt": "02/05/2026",
     "generatingExample": true,
-    "assessingFreq": true
+    "assessingFreq": false,
+    "freq": "essential",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu trabalho aqui.",
+          "en": "I work here."
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu trabalhas muito.",
+          "en": "You work a lot."
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela trabalha todos os dias.",
+          "en": "She works every day."
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós trabalhamos juntos.",
+          "en": "We work together."
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês trabalham bem.",
+          "en": "You work well."
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles trabalham muito.",
+          "en": "They work a lot."
+        }
+      ],
+      "past": [],
+      "future": []
+    },
+    "_activeTense": "past",
+    "_generatingTense": "past"
   }
 ]
