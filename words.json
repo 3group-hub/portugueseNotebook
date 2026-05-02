@@ -1784,16 +1784,5 @@
     },
     "_activeTense": "present",
     "_generatingTense": null
-  },
-  {
-    "id": 1777728713428,
-    "word": "falar",
-    "translation": "to speak",
-    "category": "Noun",
-    "notes": "",
-    "examples": [],
-    "addedAt": "02/05/2026",
-    "generatingExample": true,
-    "assessingFreq": true
   }
 ]
