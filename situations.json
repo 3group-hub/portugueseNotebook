@@ -518,5 +518,46 @@
     "level": "essential",
     "cefrShort": "A1/A2",
     "updatedAt": "02/05/2026"
+  },
+  "Greetings": {
+    "label": "Greetings",
+    "emoji": "🎉",
+    "sentences": [
+      {
+        "pt": "Bom dia, como é?",
+        "en": "Good morning, how are you?"
+      },
+      {
+        "pt": "Quero ir ao trabalho",
+        "en": "I want to go to work"
+      },
+      {
+        "pt": "Onde fica o dentista?",
+        "en": "Where is the dentist?"
+      },
+      {
+        "pt": "É casada?",
+        "en": "Are you married?"
+      },
+      {
+        "pt": "Quer ouvir música?",
+        "en": "Do you want to listen to music?"
+      },
+      {
+        "pt": "Eu creio que é alta",
+        "en": "I believe it's tall"
+      },
+      {
+        "pt": "Posso dar um lamento?",
+        "en": "Can I give a lament?"
+      },
+      {
+        "pt": "Deseja fazer trabalho?",
+        "en": "Do you want to do work?"
+      }
+    ],
+    "level": "essential",
+    "cefrShort": "A1/A2",
+    "updatedAt": "02/05/2026"
   }
 }
