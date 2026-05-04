@@ -2017,6 +2017,54 @@
     "notes": "",
     "examples": [],
     "addedAt": "04/05/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "essential",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu sinto fome",
+          "en": "I feel hungry"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu sentes frio",
+          "en": "You feel cold"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela sente dor",
+          "en": "She feels pain"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós sentimos sede",
+          "en": "We feel thirsty"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês sentem calor",
+          "en": "You feel hot"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles sentem medo",
+          "en": "They feel fear"
+        }
+      ],
+      "past": [],
+      "future": []
+    }
+  },
+  {
+    "id": 1777897550632,
+    "word": "Comer",
+    "translation": "Eat",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "04/05/2026",
     "generatingExample": true,
     "assessingFreq": true
   }
