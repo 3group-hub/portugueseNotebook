@@ -2008,5 +2008,16 @@
     },
     "_activeTense": "future",
     "_generatingTense": null
+  },
+  {
+    "id": 1777897469362,
+    "word": "sentir",
+    "translation": "to feel",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "04/05/2026",
+    "generatingExample": true,
+    "assessingFreq": true
   }
 ]
