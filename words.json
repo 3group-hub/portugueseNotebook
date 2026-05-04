@@ -2065,6 +2065,54 @@
     "notes": "",
     "examples": [],
     "addedAt": "04/05/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "essential",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu como pão",
+          "en": "I eat bread"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu comes fruta",
+          "en": "You eat fruit"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela come carne",
+          "en": "She eats meat"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós comemos peixe",
+          "en": "We eat fish"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês comem legumes",
+          "en": "You eat vegetables"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles comem arroz",
+          "en": "They eat rice"
+        }
+      ],
+      "past": [],
+      "future": []
+    }
+  },
+  {
+    "id": 1777897636633,
+    "word": "feliz",
+    "translation": "happy",
+    "category": "Adjective",
+    "notes": "",
+    "examples": [],
+    "addedAt": "04/05/2026",
     "generatingExample": true,
     "assessingFreq": true
   }
