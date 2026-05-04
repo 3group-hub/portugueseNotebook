@@ -2604,6 +2604,54 @@
     "notes": "",
     "examples": [],
     "addedAt": "04/05/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "essential",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu moro em Lisboa",
+          "en": "I live in Lisbon"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu moras em casa",
+          "en": "You live at home"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela mora aqui",
+          "en": "She lives here"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós moramos juntos",
+          "en": "We live together"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês moram perto",
+          "en": "You live nearby"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles moram lá",
+          "en": "They live there"
+        }
+      ],
+      "past": [],
+      "future": []
+    }
+  },
+  {
+    "id": 1777899047917,
+    "word": "usar",
+    "translation": "to use",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "04/05/2026",
     "generatingExample": true,
     "assessingFreq": true
   }
