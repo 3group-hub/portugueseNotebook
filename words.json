@@ -2460,6 +2460,54 @@
     "notes": "",
     "examples": [],
     "addedAt": "04/05/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu utilizo o computador",
+          "en": "I use the computer"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu utilizas o telemóvel",
+          "en": "You use the mobile phone"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela utiliza o carro",
+          "en": "She uses the car"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós utilizamos o transporte público",
+          "en": "We use public transport"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês utilizam a internet",
+          "en": "You use the internet"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles utilizam os recursos naturais",
+          "en": "They use natural resources"
+        }
+      ],
+      "past": [],
+      "future": []
+    }
+  },
+  {
+    "id": 1777898628330,
+    "word": "obter",
+    "translation": "optain",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "04/05/2026",
     "generatingExample": true,
     "assessingFreq": true
   }
