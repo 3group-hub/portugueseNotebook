@@ -2213,6 +2213,23 @@
     "translation": "tired",
     "category": "Adjective",
     "notes": "",
+    "examples": [
+      {
+        "pt": "Estou cansado depois do trabalho",
+        "en": "I am tired after work"
+      }
+    ],
+    "addedAt": "04/05/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "essential"
+  },
+  {
+    "id": 1777897895256,
+    "word": "pensar",
+    "translation": "think",
+    "category": "Verb",
+    "notes": "",
     "examples": [],
     "addedAt": "04/05/2026",
     "generatingExample": true,
