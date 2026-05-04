@@ -2196,6 +2196,23 @@
     "translation": "sad",
     "category": "Adjective",
     "notes": "",
+    "examples": [
+      {
+        "pt": "Ela está triste hoje",
+        "en": "She is sad today"
+      }
+    ],
+    "addedAt": "04/05/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common"
+  },
+  {
+    "id": 1777897855198,
+    "word": "cansado",
+    "translation": "tired",
+    "category": "Adjective",
+    "notes": "",
     "examples": [],
     "addedAt": "04/05/2026",
     "generatingExample": true,
