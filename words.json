@@ -2508,6 +2508,54 @@
     "notes": "",
     "examples": [],
     "addedAt": "04/05/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu obto resultados",
+          "en": "I obtain results"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu obténs sucesso",
+          "en": "You obtain success"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela obtém prémios",
+          "en": "She obtains awards"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós obtemos diplomas",
+          "en": "We obtain diplomas"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês obtêm sucesso",
+          "en": "You obtain success"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles obtêm medalhas",
+          "en": "They obtain medals"
+        }
+      ],
+      "past": [],
+      "future": []
+    }
+  },
+  {
+    "id": 1777898746444,
+    "word": "ter",
+    "translation": "have",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "04/05/2026",
     "generatingExample": true,
     "assessingFreq": true
   }
