@@ -2441,6 +2441,23 @@
     "translation": "begin",
     "category": "Noun",
     "notes": "",
+    "examples": [
+      {
+        "pt": "Vou comencar o projeto amanhã",
+        "en": "I'm going to begin the project tomorrow"
+      }
+    ],
+    "addedAt": "04/05/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common"
+  },
+  {
+    "id": 1777898571478,
+    "word": "utilizar",
+    "translation": "use",
+    "category": "Verb",
+    "notes": "",
     "examples": [],
     "addedAt": "04/05/2026",
     "generatingExample": true,
