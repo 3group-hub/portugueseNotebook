@@ -2111,6 +2111,23 @@
     "translation": "happy",
     "category": "Adjective",
     "notes": "",
+    "examples": [
+      {
+        "pt": "Eu sou feliz hoje",
+        "en": "I am happy today"
+      }
+    ],
+    "addedAt": "04/05/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "essential"
+  },
+  {
+    "id": 1777897662978,
+    "word": "conteúdo",
+    "translation": "content",
+    "category": "Noun",
+    "notes": "",
     "examples": [],
     "addedAt": "04/05/2026",
     "generatingExample": true,
