@@ -2282,6 +2282,54 @@
     "notes": "",
     "examples": [],
     "addedAt": "04/05/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "essential",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu escrevo uma carta.",
+          "en": "I write a letter."
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu escreves um email.",
+          "en": "You write an email."
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela escreve um livro.",
+          "en": "She writes a book."
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós escrevemos uma mensagem.",
+          "en": "We write a message."
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês escrevem cartas.",
+          "en": "You write letters."
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles escrevem histórias.",
+          "en": "They write stories."
+        }
+      ],
+      "past": [],
+      "future": []
+    }
+  },
+  {
+    "id": 1777898155068,
+    "word": "significativo",
+    "translation": "significant",
+    "category": "Adjective",
+    "notes": "",
+    "examples": [],
+    "addedAt": "04/05/2026",
     "generatingExample": true,
     "assessingFreq": true
   }
