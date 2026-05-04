@@ -580,6 +580,7 @@ function saveApiKey(){
   const k=document.getElementById('apiKeyInp').value.trim();
   if(!k){showToast('Please enter an API key');return;}
   localStorage.setItem('pt-apikey',k);
+  localStorage.setItem('pt-ro-transkey',k); // also save for auto-translation
   document.getElementById('apiBanner').style.display='none';
   showToast('API key saved!');
 }
@@ -700,8 +701,113 @@ async function writeToFile(){
 async function saveWords(){
   localStorage.setItem('pt-words', JSON.stringify(words));
   await writeToFile();
-  if(ghCredentials()) ghSave(true); // auto-sync silently
+  if(ghCredentials()) ghSave(true); // sync words.json
+  // Silently update translations for any new/missing phrases
+  autoUpdateTranslations();
 }
+
+// ═══ AUTO-TRANSLATION SYNC ══════════════════════════════════════════════
+const GH_TRANS_FILE = 'translations.json';
+let _transUpdateTimer = null;
+
+function autoUpdateTranslations(){
+  // Debounce — wait 3 seconds after last save before translating
+  // (avoids hammering the API while adding words rapidly)
+  clearTimeout(_transUpdateTimer);
+  _transUpdateTimer = setTimeout(async ()=>{
+    await doAutoUpdateTranslations();
+  }, 3000);
+}
+
+async function doAutoUpdateTranslations(){
+  const creds = ghCredentials(); if(!creds) return;
+  // Load existing translations from GitHub
+  let translations = {};
+  try{
+    const file = await ghApiCall(GH_TRANS_FILE);
+    const json = decodeURIComponent(escape(atob(file.content.replace(/\n/g,''))));
+    translations = JSON.parse(json);
+  }catch(e){ return; } // no translations.json yet — nothing to update
+
+  const langs = Object.keys(translations);
+  if(!langs.length) return; // no languages translated yet
+
+  // Collect all English texts that should be translated
+  const allTexts = new Set();
+  words.forEach(w => {
+    if(w.translation) allTexts.add(w.translation);
+    (w.examples||(w.example?[w.example]:[])).forEach(e=>{ if(e.en) allTexts.add(e.en); });
+    if(w.tenses) Object.values(w.tenses).forEach(rows=>rows.forEach(r=>{ if(r.en) allTexts.add(r.en); }));
+  });
+
+  // Find which texts are missing in any language
+  let anyMissing = false;
+  const missing = {}; // { lang: [texts] }
+  langs.forEach(lang => {
+    const m = [...allTexts].filter(t => !translations[lang]?.[t]);
+    if(m.length){ missing[lang] = m; anyMissing = true; }
+  });
+  if(!anyMissing) return;
+
+  // We need a Groq key to translate — check if user has one saved
+  const groqKey = localStorage.getItem('pt-ro-transkey') || '';
+  if(!groqKey){
+    // Show a subtle indicator that translations need updating
+    showToast(`⚠️ New words need translation — open the viewer and select a langue to update`);
+    return;
+  }
+
+  showToast(`🌐 Updating translations for ${langs.length} langue${langs.length!==1?'s':''}…`);
+
+  // Translate missing texts for each language
+  for(const lang of langs){
+    if(!missing[lang]?.length) continue;
+    if(!translations[lang]) translations[lang] = {};
+    const CHUNK = 40;
+    const toTranslate = missing[lang];
+    for(let i=0; i<toTranslate.length; i+=CHUNK){
+      const chunk = toTranslate.slice(i, i+CHUNK);
+      try{
+        const numbered = chunk.map((t,j)=>`${j+1}. ${t}`).join('\n');
+        const res = await fetch('https://api.groq.com/openai/v1/chat/completions',{
+          method:'POST',
+          headers:{'Content-Type':'application/json','Authorization':`Bearer ${groqKey}`},
+          body:JSON.stringify({
+            model:'llama-3.3-70b-versatile',
+            max_tokens:2000,
+            messages:[{role:'user',content:`Translate into ${LANG_NAMES_MAIN[lang]}. Same numbering. Output ONLY numbered translations.\n\n${numbered}`}]
+          })
+        });
+        const data = await res.json();
+        if(!res.ok) throw new Error(data.error?.message);
+        const lines = (data.choices?.[0]?.message?.content||'').split('\n').filter(l=>l.trim());
+        lines.forEach((line,j)=>{
+          const match = line.match(/^\d+[\.\)]\s*(.+)/);
+          if(match && chunk[j]) translations[lang][chunk[j]] = match[1].trim();
+        });
+      }catch(e){ console.warn(`Translation update failed for ${lang}:`, e); }
+    }
+  }
+
+  // Save updated translations back to GitHub
+  try{
+    const content = btoa(unescape(encodeURIComponent(JSON.stringify(translations, null, 2))));
+    let sha;
+    try{ const f = await ghApiCall(GH_TRANS_FILE); sha = f.sha; }catch(e){}
+    await ghApiCall(GH_TRANS_FILE, 'PUT', {
+      message:`Auto-update translations (${langs.join(', ')})`,
+      content, ...(sha?{sha}:{})
+    });
+    showToast(`✅ Translations updated for ${langs.join(', ')}!`);
+  }catch(e){ showToast('Could not save translations: '+e.message); }
+}
+
+// Language names for the main app translation updates
+const LANG_NAMES_MAIN = {
+  en:'English', fr:'French', de:'German', es:'Spanish', it:'Italian',
+  nl:'Dutch', pl:'Polish', ru:'Russian', ar:'Arabic', zh:'Chinese',
+  ja:'Japanese', ko:'Korean', hi:'Hindi', tr:'Turkish', sv:'Swedish', uk:'Ukrainian'
+};
 
 // ═══ GITHUB SYNC ════════════════════════════════════════════════════════
 const GH_WORDS_FILE = 'words.json';
@@ -1423,65 +1529,76 @@ function renderWords(){
   }
   empty.style.display = 'none';
 
-  // ══ STUDY MODE (A1/A2 focus) ════════════════════════════════════════════
+  // ══ STUDY MODE ════════════════════════════════════════════════════════════
   if(sortMode === 'study'){
-    const RECENT_N = 7;
-    const freqOrder = { essential:0, common:1, advanced:2 };
-    // Sort: A1/A2 newest first → B1/B2 newest first → C1/C2 newest first → unassessed last
-    const recentWords = [...filtered]
-      .sort((a,b) => {
-        const ao = freqOrder[a.freq] ?? 3;
-        const bo = freqOrder[b.freq] ?? 3;
-        if(ao !== bo) return ao - bo;   // level first
-        return b.id - a.id;             // newest first within level
-      })
-      .slice(0, RECENT_N);
-    const recentIds     = new Set(recentWords.map(w=>w.id));
-    const essentialRest = [...filtered].filter(w => w.freq==='essential' && !recentIds.has(w.id)).sort((a,b)=>b.id-a.id);
-    const commonWords   = [...filtered].filter(w => (w.freq==='common'||!w.freq) && !recentIds.has(w.id)).sort((a,b)=>a.word.localeCompare(b.word,'pt'));
-    const advancedWords = [...filtered].filter(w => w.freq==='advanced' && !recentIds.has(w.id)).sort((a,b)=>a.word.localeCompare(b.word,'pt'));
+    const now = Date.now();
+    const DAY = 86400000;
+    const WEEK = DAY * 7;
 
-    // Auto-collapse Common and Advanced on first view
-    ['__common__','__advanced__'].forEach(k=>{
+    // Week helpers — use word.id (timestamp) for reliable week assignment
+    function getWeekBucket(w){
+      const age = now - w.id;
+      if(age < WEEK)     return 0; // this week
+      if(age < WEEK*2)   return 1; // last week
+      if(age < WEEK*3)   return 2; // 2 weeks ago
+      if(age < WEEK*4)   return 3; // 3 weeks ago
+      return 4;                     // older
+    }
+
+    const WEEK_LABELS = [
+      { key:'__w0__', icon:'📅', label:'This week',    sub:'Review your newest words first' },
+      { key:'__w1__', icon:'📅', label:'Last week',    sub:'Reinforce what you learned last week' },
+      { key:'__w2__', icon:'📅', label:'2 weeks ago',  sub:'Keep these fresh in your memory' },
+      { key:'__w3__', icon:'📅', label:'3 weeks ago',  sub:'Nearly mastered — keep reviewing!' },
+    ];
+
+    // Auto-collapse CEFR buckets on first visit
+    ['__essential__','__common__','__advanced__'].forEach(k=>{
       if(!localStorage.getItem('pt-opened-'+k)) collapsedGroups.add(k);
     });
 
     let html = '';
 
-    if(recentWords.length){
-      const key='__recent__';
-      html += renderGroup(key, recentWords, '#1a3a5c',
-        `<span style="font-size:15px;font-weight:700;color:#1a3a5c;">📌 Recently added</span>
-         <span style="font-size:11px;color:#aaa;font-style:italic;">A1/A2 first · review these</span>`,
+    // ── 4 weekly buckets ──────────────────────────────────────────────────
+    WEEK_LABELS.forEach(({key, icon, label, sub}, wi)=>{
+      const weekWords = [...filtered]
+        .filter(w => getWeekBucket(w) === wi)
+        .sort((a,b)=>{
+          // Within each week: A1/A2 first, then by recency
+          const fo = {essential:0, common:1, advanced:2};
+          const ao = fo[a.freq]??3, bo = fo[b.freq]??3;
+          if(ao!==bo) return ao-bo;
+          return b.id-a.id;
+        });
+      if(!weekWords.length) return;
+      html += renderGroup(key, weekWords, '#1a3a5c',
+        `<span style="font-size:20px;">${icon}</span>
+         <span style="font-size:14px;font-weight:700;color:#1a3a5c;">${label}</span>
+         <span style="font-size:11px;color:#aaa;font-style:italic;">${sub}</span>`,
         collapsedGroups.has(key));
-    }
+    });
 
-    if(essentialRest.length){
-      const key='__essential__'; const t=FREQ_TIERS.essential;
-      html += renderGroup(key, essentialRest, t.color,
-        `<span style="padding:2px 8px;border-radius:6px;background:${t.bg};border:1px solid ${t.color}44;font-size:13px;font-weight:700;color:${t.color};">${t.cefrShort}</span>
-         <span style="font-weight:700;color:${t.color};font-size:14px;">${t.label}</span>
-         <span style="font-size:11px;color:#aaa;font-style:italic;">Your core vocabulary · focus here</span>`,
-        collapsedGroups.has(key));
-    }
+    // ── CEFR buckets (ALL words, collapsed by default) ────────────────────
+    const freqBuckets = [
+      { key:'__essential__', tier: FREQ_TIERS.essential,
+        words: [...filtered].filter(w=>w.freq==='essential').sort((a,b)=>b.id-a.id),
+        sub:'All your A1/A2 core vocabulary' },
+      { key:'__common__', tier: FREQ_TIERS.common,
+        words: [...filtered].filter(w=>w.freq==='common'||!w.freq).sort((a,b)=>a.word.localeCompare(b.word,'pt')),
+        sub:'Expand when ready ↓' },
+      { key:'__advanced__', tier: FREQ_TIERS.advanced,
+        words: [...filtered].filter(w=>w.freq==='advanced').sort((a,b)=>a.word.localeCompare(b.word,'pt')),
+        sub:'For later ↓' },
+    ];
 
-    if(commonWords.length){
-      const key='__common__'; const t=FREQ_TIERS.common;
-      html += renderGroup(key, commonWords, t.color,
-        `<span style="padding:2px 8px;border-radius:6px;background:${t.bg};border:1px solid ${t.color}44;font-size:13px;font-weight:700;color:${t.color};">${t.cefrShort}</span>
-         <span style="font-weight:700;color:${t.color};font-size:14px;">${t.label}</span>
-         <span style="font-size:11px;color:#aaa;font-style:italic;">Expand when ready ↓</span>`,
+    freqBuckets.forEach(({key, tier, words: bWords, sub})=>{
+      if(!bWords.length) return;
+      html += renderGroup(key, bWords, tier.color,
+        `<span style="padding:2px 8px;border-radius:6px;background:${tier.bg};border:1px solid ${tier.color}44;font-size:13px;font-weight:700;color:${tier.color};">${tier.cefrShort}</span>
+         <span style="font-weight:700;color:${tier.color};font-size:14px;">${tier.label}</span>
+         <span style="font-size:11px;color:#aaa;font-style:italic;">${sub}</span>`,
         collapsedGroups.has(key));
-    }
-
-    if(advancedWords.length){
-      const key='__advanced__'; const t=FREQ_TIERS.advanced;
-      html += renderGroup(key, advancedWords, t.color,
-        `<span style="padding:2px 8px;border-radius:6px;background:${t.bg};border:1px solid ${t.color}44;font-size:13px;font-weight:700;color:${t.color};">${t.cefrShort}</span>
-         <span style="font-weight:700;color:${t.color};font-size:14px;">${t.label}</span>
-         <span style="font-size:11px;color:#aaa;font-style:italic;">For later ↓</span>`,
-        collapsedGroups.has(key));
-    }
+    });
 
     list.innerHTML = html;
     return;
