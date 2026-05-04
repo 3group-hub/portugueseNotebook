@@ -2179,6 +2179,23 @@
     "translation": "Hungry",
     "category": "Adjective",
     "notes": "",
+    "examples": [
+      {
+        "pt": "Estou com fome",
+        "en": "I am hungry"
+      }
+    ],
+    "addedAt": "04/05/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "essential"
+  },
+  {
+    "id": 1777897841356,
+    "word": "triste",
+    "translation": "sad",
+    "category": "Adjective",
+    "notes": "",
     "examples": [],
     "addedAt": "04/05/2026",
     "generatingExample": true,
