@@ -2162,6 +2162,23 @@
     "translation": "sono",
     "category": "Noun",
     "notes": "",
+    "examples": [
+      {
+        "pt": "Preciso de sono para me sentir bem",
+        "en": "I need sleep to feel good"
+      }
+    ],
+    "addedAt": "04/05/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common"
+  },
+  {
+    "id": 1777897812740,
+    "word": "Com fome",
+    "translation": "Hungry",
+    "category": "Adjective",
+    "notes": "",
     "examples": [],
     "addedAt": "04/05/2026",
     "generatingExample": true,
