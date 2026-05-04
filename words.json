@@ -2328,6 +2328,23 @@
     "translation": "significant",
     "category": "Adjective",
     "notes": "",
+    "examples": [
+      {
+        "pt": "O aumento foi significativo nos últimos anos",
+        "en": "The increase was significant in recent years"
+      }
+    ],
+    "addedAt": "04/05/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common"
+  },
+  {
+    "id": 1777898266425,
+    "word": "amar",
+    "translation": "to love",
+    "category": "Verb",
+    "notes": "",
     "examples": [],
     "addedAt": "04/05/2026",
     "generatingExample": true,
