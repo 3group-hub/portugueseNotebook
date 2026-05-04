@@ -2232,7 +2232,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "04/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -2271,7 +2271,18 @@
       "past": [],
       "future": []
     },
-    "_generatingTense": "present",
+    "_generatingTense": null,
     "_activeTense": "present"
+  },
+  {
+    "id": 1777898024631,
+    "word": "escrever",
+    "translation": "write",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "04/05/2026",
+    "generatingExample": true,
+    "assessingFreq": true
   }
 ]
