@@ -2128,6 +2128,23 @@
     "translation": "content",
     "category": "Noun",
     "notes": "",
+    "examples": [
+      {
+        "pt": "O conteúdo do livro é muito interessante",
+        "en": "The content of the book is very interesting"
+      }
+    ],
+    "addedAt": "04/05/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common"
+  },
+  {
+    "id": 1777897697678,
+    "word": "frio",
+    "translation": "cold",
+    "category": "Adjective",
+    "notes": "",
     "examples": [],
     "addedAt": "04/05/2026",
     "generatingExample": true,
