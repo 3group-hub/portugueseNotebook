@@ -2145,6 +2145,23 @@
     "translation": "cold",
     "category": "Adjective",
     "notes": "",
+    "examples": [
+      {
+        "pt": "A água está frio",
+        "en": "The water is cold"
+      }
+    ],
+    "addedAt": "04/05/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "essential"
+  },
+  {
+    "id": 1777897760304,
+    "word": "sleep",
+    "translation": "sono",
+    "category": "Noun",
+    "notes": "",
     "examples": [],
     "addedAt": "04/05/2026",
     "generatingExample": true,
