@@ -2347,6 +2347,54 @@
     "notes": "",
     "examples": [],
     "addedAt": "04/05/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "essential",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu amo minha família.",
+          "en": "I love my family."
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu amas o teu cão.",
+          "en": "You love your dog."
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela ama o mar.",
+          "en": "She loves the sea."
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós amamos Portugal.",
+          "en": "We love Portugal."
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês amam futebol.",
+          "en": "You love football."
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles amam música.",
+          "en": "They love music."
+        }
+      ],
+      "past": [],
+      "future": []
+    }
+  },
+  {
+    "id": 1777898458608,
+    "word": "viver",
+    "translation": "to  live",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "04/05/2026",
     "generatingExample": true,
     "assessingFreq": true
   }
