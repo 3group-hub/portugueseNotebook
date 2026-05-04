@@ -2556,6 +2556,54 @@
     "notes": "",
     "examples": [],
     "addedAt": "04/05/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "essential",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu tenho um livro.",
+          "en": "I have a book."
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu tens um lápis.",
+          "en": "You have a pencil."
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela tem um gato.",
+          "en": "She has a cat."
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós temos um carro.",
+          "en": "We have a car."
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês têm um telefone.",
+          "en": "You have a phone."
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles têm um computador.",
+          "en": "They have a computer."
+        }
+      ],
+      "past": [],
+      "future": []
+    }
+  },
+  {
+    "id": 1777898856760,
+    "word": "Morar",
+    "translation": "To live",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "04/05/2026",
     "generatingExample": true,
     "assessingFreq": true
   }
