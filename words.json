@@ -2233,6 +2233,45 @@
     "examples": [],
     "addedAt": "04/05/2026",
     "generatingExample": true,
-    "assessingFreq": true
+    "assessingFreq": false,
+    "freq": "essential",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu penso",
+          "en": "I think"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu penses",
+          "en": "You think"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela pensa",
+          "en": "She thinks"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós pensamos",
+          "en": "We think"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês pensam",
+          "en": "You think"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles pensam",
+          "en": "They think"
+        }
+      ],
+      "past": [],
+      "future": []
+    },
+    "_generatingTense": "present",
+    "_activeTense": "present"
   }
 ]
