@@ -2395,6 +2395,54 @@
     "notes": "",
     "examples": [],
     "addedAt": "04/05/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "essential",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vivo em Lisboa",
+          "en": "I live in Lisbon"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vives em casa",
+          "en": "You live at home"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vive sozinha",
+          "en": "She lives alone"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vivemos juntos",
+          "en": "We live together"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vivem aqui",
+          "en": "You live here"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vivem longe",
+          "en": "They live far"
+        }
+      ],
+      "past": [],
+      "future": []
+    }
+  },
+  {
+    "id": 1777898538889,
+    "word": "comencar",
+    "translation": "begin",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "04/05/2026",
     "generatingExample": true,
     "assessingFreq": true
   }
