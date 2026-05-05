@@ -2268,11 +2268,42 @@
           "en": "They think"
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu pensei",
+          "en": "I thought"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu pensaste",
+          "en": "You thought"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela pensou",
+          "en": "She thought"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós pensámos",
+          "en": "We thought"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês pensaram",
+          "en": "You thought"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles pensaram",
+          "en": "They thought"
+        }
+      ],
       "future": []
     },
-    "_generatingTense": "past",
-    "_activeTense": "past"
+    "_generatingTense": "future",
+    "_activeTense": "future"
   },
   {
     "id": 1777898024631,
