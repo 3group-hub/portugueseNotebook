@@ -2556,7 +2556,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "04/05/2026",
-    "generatingExample": false,
+    "generatingExample": true,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -2626,8 +2626,8 @@
       ],
       "future": []
     },
-    "_activeTense": "past",
-    "_generatingTense": null
+    "_activeTense": "future",
+    "_generatingTense": "future"
   },
   {
     "id": 1777898856760,
@@ -2637,7 +2637,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "04/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -2705,10 +2705,41 @@
           "en": "They lived in Lisbon"
         }
       ],
-      "future": []
+      "future": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou morar",
+          "en": "I will live"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais morar",
+          "en": "You will live"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai morar",
+          "en": "She will live"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos morar",
+          "en": "We will live"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão morar",
+          "en": "You will live"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão morar",
+          "en": "They will live"
+        }
+      ]
     },
     "_activeTense": "future",
-    "_generatingTense": "future"
+    "_generatingTense": null
   },
   {
     "id": 1777899047917,
