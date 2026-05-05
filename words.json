@@ -639,9 +639,16 @@
       }
     ],
     "addedAt": "28/04/2026",
-    "generatingExample": false,
+    "generatingExample": true,
     "assessingFreq": false,
-    "freq": "common"
+    "freq": "common",
+    "tenses": {
+      "present": [],
+      "past": [],
+      "future": []
+    },
+    "_generatingTense": "present",
+    "_activeTense": "present"
   },
   {
     "id": 1777373855443,
@@ -682,7 +689,7 @@
       }
     ],
     "addedAt": "28/04/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "common",
     "tenses": {
@@ -750,9 +757,40 @@
           "en": "They became famous."
         }
       ],
-      "future": []
+      "future": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou tornar-me um especialista",
+          "en": "I will become a specialist"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais tornar-te uma boa pessoa",
+          "en": "You will become a good person"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai tornar-se uma grande líder",
+          "en": "She will become a great leader"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos tornar-nos mais fortes",
+          "en": "We will become stronger"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão tornar-se excelentes profissionais",
+          "en": "You will become excellent professionals"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão tornar-se muito ricos",
+          "en": "They will become very rich"
+        }
+      ]
     },
-    "_generatingTense": "future",
+    "_generatingTense": null,
     "_activeTense": "future"
   },
   {
