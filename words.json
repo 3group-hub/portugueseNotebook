@@ -568,7 +568,7 @@
       }
     ],
     "addedAt": "28/04/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "advanced",
     "tenses": {
@@ -636,9 +636,40 @@
           "en": "They radiated lights"
         }
       ],
-      "future": []
+      "future": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou irradiar calor",
+          "en": "I will radiate heat"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais irradiar confiança",
+          "en": "You will radiate confidence"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai irradiar positividade",
+          "en": "She will radiate positivity"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos irradiar energia",
+          "en": "We will radiate energy"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão irradiar entusiasmo",
+          "en": "You will radiate enthusiasm"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão irradiar felicidade",
+          "en": "They will radiate happiness"
+        }
+      ]
     },
-    "_generatingTense": "future",
+    "_generatingTense": null,
     "_activeTense": "future"
   },
   {
@@ -4313,5 +4344,16 @@
     },
     "_activeTense": "future",
     "_generatingTense": null
+  },
+  {
+    "id": 1778010636059,
+    "word": "estudar",
+    "translation": "to study",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "05/05/2026",
+    "generatingExample": true,
+    "assessingFreq": true
   }
 ]
