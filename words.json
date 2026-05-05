@@ -446,12 +446,43 @@
     "assessingFreq": false,
     "freq": "common",
     "tenses": {
-      "present": [],
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu seduzo os meus amigos",
+          "en": "I seduce my friends"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu seduzes com facilidade",
+          "en": "You seduce with ease"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela seduz com um sorriso",
+          "en": "She seduces with a smile"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós seduzimos os clientes",
+          "en": "We seduce the clients"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês seduzem com charme",
+          "en": "You seduce with charm"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles seduzem as mulheres",
+          "en": "They seduce the women"
+        }
+      ],
       "past": [],
       "future": []
     },
-    "_generatingTense": "present",
-    "_activeTense": "present"
+    "_generatingTense": "past",
+    "_activeTense": "past"
   },
   {
     "id": 1777373855436,
