@@ -718,11 +718,42 @@
           "en": "They become very happy"
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu tornei-me adulto.",
+          "en": "I became an adult."
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu tornaste-te médico.",
+          "en": "You became a doctor."
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela tornou-se professora.",
+          "en": "She became a teacher."
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós tornámo-nos amigos.",
+          "en": "We became friends."
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês tornaram-se ricos.",
+          "en": "You became rich."
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles tornaram-se famosos.",
+          "en": "They became famous."
+        }
+      ],
       "future": []
     },
-    "_generatingTense": "past",
-    "_activeTense": "past"
+    "_generatingTense": "future",
+    "_activeTense": "future"
   },
   {
     "id": 1777374156770,
