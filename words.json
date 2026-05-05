@@ -2318,11 +2318,42 @@
           "en": "They write stories."
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu escrevi uma carta.",
+          "en": "I wrote a letter."
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu escreveste uma carta.",
+          "en": "You wrote a letter."
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela escreveu uma carta.",
+          "en": "She wrote a letter."
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós escrevemos uma carta.",
+          "en": "We wrote a letter."
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês escreveram uma carta.",
+          "en": "You wrote a letter."
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles escreveram uma carta.",
+          "en": "They wrote a letter."
+        }
+      ],
       "future": []
     },
-    "_activeTense": "past",
-    "_generatingTense": "past"
+    "_activeTense": "future",
+    "_generatingTense": "future"
   },
   {
     "id": 1777898155068,
