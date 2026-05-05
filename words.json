@@ -322,9 +322,16 @@
       }
     ],
     "addedAt": "28/04/2026",
-    "generatingExample": false,
+    "generatingExample": true,
     "assessingFreq": false,
-    "freq": "common"
+    "freq": "common",
+    "tenses": {
+      "present": [],
+      "past": [],
+      "future": []
+    },
+    "_generatingTense": "present",
+    "_activeTense": "present"
   },
   {
     "id": 1777373855432,
@@ -442,7 +449,7 @@
       }
     ],
     "addedAt": "28/04/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "common",
     "tenses": {
@@ -510,9 +517,40 @@
           "en": "They seduced the crowd"
         }
       ],
-      "future": []
+      "future": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou seduzir alguém",
+          "en": "I will seduce someone"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais seduzir muita gente",
+          "en": "You will seduce many people"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai seduzir o público",
+          "en": "She will seduce the audience"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos seduzir os investidores",
+          "en": "We will seduce the investors"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão seduzir os clientes",
+          "en": "You will seduce the clients"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão seduzir o júri",
+          "en": "They will seduce the jury"
+        }
+      ]
     },
-    "_generatingTense": "future",
+    "_generatingTense": null,
     "_activeTense": "future"
   },
   {
