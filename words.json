@@ -2753,11 +2753,42 @@
           "en": "They use natural resources"
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu utilizei o computador",
+          "en": "I used the computer"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu utilizaste o telemóvel",
+          "en": "You used the mobile phone"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela utilizou o carro",
+          "en": "She used the car"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós utilizamos o software",
+          "en": "We used the software"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês utilizaram o microfone",
+          "en": "You used the microphone"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles utilizaram o equipamento",
+          "en": "They used the equipment"
+        }
+      ],
       "future": []
     },
-    "_activeTense": "past",
-    "_generatingTense": "past"
+    "_activeTense": "future",
+    "_generatingTense": "future"
   },
   {
     "id": 1777898628330,
