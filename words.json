@@ -643,12 +643,43 @@
     "assessingFreq": false,
     "freq": "common",
     "tenses": {
-      "present": [],
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu erro muitas vezes.",
+          "en": "I make many mistakes."
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu erras sempre.",
+          "en": "You always make mistakes."
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela erra raramente.",
+          "en": "She rarely makes mistakes."
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós erramos juntos.",
+          "en": "We make mistakes together."
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês erram muito.",
+          "en": "You make many mistakes."
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles erram frequentemente.",
+          "en": "They often make mistakes."
+        }
+      ],
       "past": [],
       "future": []
     },
-    "_generatingTense": "present",
-    "_activeTense": "present"
+    "_generatingTense": "past",
+    "_activeTense": "past"
   },
   {
     "id": 1777373855443,
