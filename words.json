@@ -198,11 +198,42 @@
           "en": "They listen to radio"
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu ouvi",
+          "en": "I listened"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu ouviste",
+          "en": "You listened"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela ouviu",
+          "en": "She listened"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós ouvimos",
+          "en": "We listened"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês ouviram",
+          "en": "You listened"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles ouviram",
+          "en": "They listened"
+        }
+      ],
       "future": []
     },
-    "_generatingTense": "past",
-    "_activeTense": "past"
+    "_generatingTense": "future",
+    "_activeTense": "future"
   },
   {
     "id": 1777373855359,
