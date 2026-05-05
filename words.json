@@ -2673,11 +2673,42 @@
           "en": "They live there"
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu morri em Lisboa",
+          "en": "I lived in Lisbon"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu moraste em Lisboa",
+          "en": "You lived in Lisbon"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela morou em Lisboa",
+          "en": "She lived in Lisbon"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós morámos em Lisboa",
+          "en": "We lived in Lisbon"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês moraram em Lisboa",
+          "en": "You lived in Lisbon"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles moraram em Lisboa",
+          "en": "They lived in Lisbon"
+        }
+      ],
       "future": []
     },
-    "_activeTense": "past",
-    "_generatingTense": "past"
+    "_activeTense": "future",
+    "_generatingTense": "future"
   },
   {
     "id": 1777899047917,
