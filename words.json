@@ -2556,7 +2556,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "04/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -2592,11 +2592,42 @@
           "en": "They have a computer."
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu tive um livro",
+          "en": "I had a book"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu tiveste um carro",
+          "en": "You had a car"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela teve um gato",
+          "en": "She had a cat"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós tivemos fome",
+          "en": "We were hungry"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês tiveram dinheiro",
+          "en": "You had money"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles tiveram um filho",
+          "en": "They had a son"
+        }
+      ],
       "future": []
     },
     "_activeTense": "past",
-    "_generatingTense": "past"
+    "_generatingTense": null
   },
   {
     "id": 1777898856760,
@@ -2606,7 +2637,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "04/05/2026",
-    "generatingExample": false,
+    "generatingExample": true,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -2645,7 +2676,8 @@
       "past": [],
       "future": []
     },
-    "_activeTense": "past"
+    "_activeTense": "past",
+    "_generatingTense": "past"
   },
   {
     "id": 1777899047917,
