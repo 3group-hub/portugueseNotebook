@@ -682,9 +682,16 @@
       }
     ],
     "addedAt": "28/04/2026",
-    "generatingExample": false,
+    "generatingExample": true,
     "assessingFreq": false,
-    "freq": "common"
+    "freq": "common",
+    "tenses": {
+      "present": [],
+      "past": [],
+      "future": []
+    },
+    "_generatingTense": "present",
+    "_activeTense": "present"
   },
   {
     "id": 1777374156770,
@@ -725,7 +732,7 @@
       }
     ],
     "addedAt": "28/04/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "common",
     "tenses": {
@@ -793,9 +800,40 @@
           "en": "They seduced the women."
         }
       ],
-      "future": []
+      "future": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou seduzir",
+          "en": "I will seduce"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais seduzir",
+          "en": "You will seduce"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai seduzir",
+          "en": "She will seduce"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos seduzir",
+          "en": "We will seduce"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão seduzir",
+          "en": "You will seduce"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão seduzir",
+          "en": "They will seduce"
+        }
+      ]
     },
-    "_generatingTense": "future",
+    "_generatingTense": null,
     "_activeTense": "future"
   },
   {
