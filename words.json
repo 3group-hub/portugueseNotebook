@@ -2065,7 +2065,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "04/05/2026",
-    "generatingExample": false,
+    "generatingExample": true,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -2103,7 +2103,9 @@
       ],
       "past": [],
       "future": []
-    }
+    },
+    "_activeTense": "past",
+    "_generatingTense": "past"
   },
   {
     "id": 1777897636633,
@@ -2232,7 +2234,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "04/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -2300,9 +2302,40 @@
           "en": "They thought"
         }
       ],
-      "future": []
+      "future": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou pensar",
+          "en": "I will think"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais pensar",
+          "en": "You will think"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai pensar",
+          "en": "She will think"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos pensar",
+          "en": "We will think"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão pensar",
+          "en": "You will think"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão pensar",
+          "en": "They will think"
+        }
+      ]
     },
-    "_generatingTense": "future",
+    "_generatingTense": null,
     "_activeTense": "future"
   },
   {
