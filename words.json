@@ -4354,6 +4354,45 @@
     "examples": [],
     "addedAt": "05/05/2026",
     "generatingExample": true,
-    "assessingFreq": true
+    "assessingFreq": false,
+    "freq": "common",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu estudo muito",
+          "en": "I study a lot"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu estudas todos os dias",
+          "en": "You study every day"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela estuda para os exames",
+          "en": "She studies for the exams"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós estudamos juntos",
+          "en": "We study together"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês estudam muito bem",
+          "en": "You study very well"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles estudam em grupos",
+          "en": "They study in groups"
+        }
+      ],
+      "past": [],
+      "future": []
+    },
+    "_activeTense": "past",
+    "_generatingTense": "past"
   }
 ]
