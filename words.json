@@ -119,7 +119,7 @@
       }
     ],
     "addedAt": "24/04/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "common",
     "tenses": {
@@ -155,10 +155,41 @@
           "en": "They want a better future."
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu desejei um bolo",
+          "en": "I wanted a cake"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu desejuste um carro",
+          "en": "You wanted a car"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela deseitou um emprego",
+          "en": "She wanted a job"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós deseámos um filho",
+          "en": "We wanted a child"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês desejaram um computador",
+          "en": "You wanted a computer"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles desejaram um aumento",
+          "en": "They wanted a raise"
+        }
+      ],
       "future": []
     },
-    "_generatingTense": "past",
+    "_generatingTense": null,
     "_activeTense": "past"
   },
   {
@@ -1344,9 +1375,16 @@
       }
     ],
     "addedAt": "28/04/2026",
-    "generatingExample": false,
+    "generatingExample": true,
     "assessingFreq": false,
-    "freq": "advanced"
+    "freq": "advanced",
+    "tenses": {
+      "present": [],
+      "past": [],
+      "future": []
+    },
+    "_generatingTense": "present",
+    "_activeTense": "present"
   },
   {
     "id": 1777374156772,
