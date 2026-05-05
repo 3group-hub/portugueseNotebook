@@ -358,11 +358,42 @@
           "en": "They close the meeting"
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu encerrei a porta.",
+          "en": "I closed the door."
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu encerraste a janela.",
+          "en": "You closed the window."
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela encerrou o livro.",
+          "en": "She closed the book."
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós encerrámos a loja.",
+          "en": "We closed the shop."
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês encerraram o projeto.",
+          "en": "You closed the project."
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles encerraram a reunião.",
+          "en": "They closed the meeting."
+        }
+      ],
       "future": []
     },
-    "_generatingTense": "past",
-    "_activeTense": "past"
+    "_generatingTense": "future",
+    "_activeTense": "future"
   },
   {
     "id": 1777373855432,
