@@ -3205,7 +3205,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "04/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -3273,10 +3273,41 @@
           "en": "They ate"
         }
       ],
-      "future": []
+      "future": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou comer",
+          "en": "I will eat"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais comer",
+          "en": "You will eat"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai comer",
+          "en": "She will eat"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos comer",
+          "en": "We will eat"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão comer",
+          "en": "You will eat"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão comer",
+          "en": "They will eat"
+        }
+      ]
     },
     "_activeTense": "future",
-    "_generatingTense": "future"
+    "_generatingTense": null
   },
   {
     "id": 1777897636633,
