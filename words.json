@@ -2347,7 +2347,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "04/05/2026",
-    "generatingExample": false,
+    "generatingExample": true,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -2385,7 +2385,9 @@
       ],
       "past": [],
       "future": []
-    }
+    },
+    "_activeTense": "past",
+    "_generatingTense": "past"
   },
   {
     "id": 1777898458608,
@@ -2433,7 +2435,8 @@
       ],
       "past": [],
       "future": []
-    }
+    },
+    "_activeTense": "past"
   },
   {
     "id": 1777898538889,
@@ -2556,7 +2559,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "04/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -2624,10 +2627,41 @@
           "en": "They had a son"
         }
       ],
-      "future": []
+      "future": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou ter",
+          "en": "I will have"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais ter",
+          "en": "You will have"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai ter",
+          "en": "She will have"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos ter",
+          "en": "We will have"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão ter",
+          "en": "You will have"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão ter",
+          "en": "They will have"
+        }
+      ]
     },
     "_activeTense": "future",
-    "_generatingTense": "future"
+    "_generatingTense": null
   },
   {
     "id": 1777898856760,
