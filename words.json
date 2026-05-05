@@ -119,9 +119,16 @@
       }
     ],
     "addedAt": "24/04/2026",
-    "generatingExample": false,
+    "generatingExample": true,
     "assessingFreq": false,
-    "freq": "common"
+    "freq": "common",
+    "tenses": {
+      "present": [],
+      "past": [],
+      "future": []
+    },
+    "_generatingTense": "present",
+    "_activeTense": "present"
   },
   {
     "id": 1777366537228,
@@ -322,7 +329,7 @@
       }
     ],
     "addedAt": "28/04/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "common",
     "tenses": {
@@ -390,9 +397,40 @@
           "en": "They closed the meeting."
         }
       ],
-      "future": []
+      "future": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou encerrar a porta",
+          "en": "I will close the door"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais encerrar a janela",
+          "en": "You will close the window"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai encerrar o armário",
+          "en": "She will close the closet"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos encerrar a loja",
+          "en": "We will close the store"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão encerrar o negócio",
+          "en": "You will close the business"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão encerrar a fábrica",
+          "en": "They will close the factory"
+        }
+      ]
     },
-    "_generatingTense": "future",
+    "_generatingTense": null,
     "_activeTense": "future"
   },
   {
