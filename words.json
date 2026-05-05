@@ -442,9 +442,16 @@
       }
     ],
     "addedAt": "28/04/2026",
-    "generatingExample": false,
+    "generatingExample": true,
     "assessingFreq": false,
-    "freq": "common"
+    "freq": "common",
+    "tenses": {
+      "present": [],
+      "past": [],
+      "future": []
+    },
+    "_generatingTense": "present",
+    "_activeTense": "present"
   },
   {
     "id": 1777373855436,
@@ -502,7 +509,7 @@
       }
     ],
     "addedAt": "28/04/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "common",
     "tenses": {
@@ -538,10 +545,41 @@
           "en": "They illuminate the street"
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu iluminei o quarto.",
+          "en": "I illuminated the room."
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu iluminaste o caminho.",
+          "en": "You illuminated the path."
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela iluminou a sala.",
+          "en": "She illuminated the hall."
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós iluminamos a casa.",
+          "en": "We illuminated the house."
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês iluminaram o jardim.",
+          "en": "You illuminated the garden."
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles iluminaram o estádio.",
+          "en": "They illuminated the stadium."
+        }
+      ],
       "future": []
     },
-    "_generatingTense": "past",
+    "_generatingTense": null,
     "_activeTense": "past"
   },
   {
