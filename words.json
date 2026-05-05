@@ -2232,7 +2232,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "04/05/2026",
-    "generatingExample": false,
+    "generatingExample": true,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -2271,8 +2271,8 @@
       "past": [],
       "future": []
     },
-    "_generatingTense": null,
-    "_activeTense": "present"
+    "_generatingTense": "past",
+    "_activeTense": "past"
   },
   {
     "id": 1777898024631,
@@ -2282,7 +2282,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "04/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -2350,10 +2350,41 @@
           "en": "They wrote a letter."
         }
       ],
-      "future": []
+      "future": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou escrever",
+          "en": "I will write"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais escrever",
+          "en": "You will write"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele/Ela vai escrever",
+          "en": "He/She will write"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos escrever",
+          "en": "We will write"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão escrever",
+          "en": "You will write"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles/Elas vão escrever",
+          "en": "They will write"
+        }
+      ]
     },
     "_activeTense": "future",
-    "_generatingTense": "future"
+    "_generatingTense": null
   },
   {
     "id": 1777898155068,
