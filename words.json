@@ -1379,12 +1379,43 @@
     "assessingFreq": false,
     "freq": "advanced",
     "tenses": {
-      "present": [],
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu irradiar uma energia positiva",
+          "en": "I radiate positive energy"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu irradias uma luz intensa",
+          "en": "You radiate intense light"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela irradia calor e confiança",
+          "en": "She radiates warmth and confidence"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós irradiamos boas vibrações",
+          "en": "We radiate good vibes"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês irradiam uma aura de sucesso",
+          "en": "You radiate an aura of success"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles irradiam uma força irresistível",
+          "en": "They radiate an irresistible force"
+        }
+      ],
       "past": [],
       "future": []
     },
-    "_generatingTense": "present",
-    "_activeTense": "present"
+    "_generatingTense": "past",
+    "_activeTense": "past"
   },
   {
     "id": 1777374156772,
