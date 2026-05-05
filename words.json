@@ -4353,7 +4353,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "05/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "common",
     "tenses": {
@@ -4389,10 +4389,41 @@
           "en": "They study in groups"
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu estudei muito",
+          "en": "I studied a lot"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu estudaste uma hora",
+          "en": "You studied for an hour"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela estudou ontem",
+          "en": "She studied yesterday"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós estudamos juntos",
+          "en": "We studied together"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês estudaram bem",
+          "en": "You studied well"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles estudaram muito",
+          "en": "They studied a lot"
+        }
+      ],
       "future": []
     },
     "_activeTense": "past",
-    "_generatingTense": "past"
+    "_generatingTense": null
   }
 ]
