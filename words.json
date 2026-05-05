@@ -725,9 +725,16 @@
       }
     ],
     "addedAt": "28/04/2026",
-    "generatingExample": false,
+    "generatingExample": true,
     "assessingFreq": false,
-    "freq": "common"
+    "freq": "common",
+    "tenses": {
+      "present": [],
+      "past": [],
+      "future": []
+    },
+    "_generatingTense": "present",
+    "_activeTense": "present"
   },
   {
     "id": 1777374156771,
@@ -811,7 +818,7 @@
       }
     ],
     "addedAt": "28/04/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "common",
     "tenses": {
@@ -879,9 +886,40 @@
           "en": "They believed in destiny"
         }
       ],
-      "future": []
+      "future": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou crer",
+          "en": "I will believe"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais crer",
+          "en": "You will believe"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai crer",
+          "en": "She will believe"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos crer",
+          "en": "We will believe"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão crer",
+          "en": "You will believe"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão crer",
+          "en": "They will believe"
+        }
+      ]
     },
-    "_generatingTense": "future",
+    "_generatingTense": null,
     "_activeTense": "future"
   },
   {
