@@ -123,12 +123,43 @@
     "assessingFreq": false,
     "freq": "common",
     "tenses": {
-      "present": [],
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu desejo um café.",
+          "en": "I want a coffee."
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu desejas um bolo.",
+          "en": "You want a cake."
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela deseja um chá.",
+          "en": "She wants a tea."
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós desejamos um descanso.",
+          "en": "We want a rest."
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês desejam um sucesso.",
+          "en": "You want success."
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles desejam um futuro melhor.",
+          "en": "They want a better future."
+        }
+      ],
       "past": [],
       "future": []
     },
-    "_generatingTense": "present",
-    "_activeTense": "present"
+    "_generatingTense": "past",
+    "_activeTense": "past"
   },
   {
     "id": 1777366537228,
