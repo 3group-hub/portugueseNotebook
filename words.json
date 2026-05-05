@@ -2017,7 +2017,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "04/05/2026",
-    "generatingExample": false,
+    "generatingExample": true,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -2055,7 +2055,9 @@
       ],
       "past": [],
       "future": []
-    }
+    },
+    "_activeTense": "future",
+    "_generatingTense": "future"
   },
   {
     "id": 1777897550632,
@@ -2065,7 +2067,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "04/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -2101,11 +2103,42 @@
           "en": "They eat rice"
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu comi",
+          "en": "I ate"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu comeste",
+          "en": "You ate"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela comeu",
+          "en": "She ate"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós comemos",
+          "en": "We ate"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês comeram",
+          "en": "You ate"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles comeram",
+          "en": "They ate"
+        }
+      ],
       "future": []
     },
-    "_activeTense": "past",
-    "_generatingTense": "past"
+    "_activeTense": "future",
+    "_generatingTense": null
   },
   {
     "id": 1777897636633,
