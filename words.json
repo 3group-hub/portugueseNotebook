@@ -1110,7 +1110,7 @@
         }
       ]
     },
-    "_activeTense": "present",
+    "_activeTense": "future",
     "_generatingTense": null
   },
   {
@@ -1222,7 +1222,7 @@
         }
       ]
     },
-    "_activeTense": "present",
+    "_activeTense": "future",
     "_generatingTense": null
   },
   {
@@ -1446,7 +1446,7 @@
         }
       ]
     },
-    "_activeTense": "present",
+    "_activeTense": "future",
     "_generatingTense": null
   },
   {
@@ -1558,7 +1558,7 @@
         }
       ]
     },
-    "_activeTense": "present",
+    "_activeTense": "future",
     "_generatingTense": null
   },
   {
@@ -1670,7 +1670,7 @@
         }
       ]
     },
-    "_activeTense": "present",
+    "_activeTense": "future",
     "_generatingTense": null
   },
   {
@@ -1782,7 +1782,7 @@
         }
       ]
     },
-    "_activeTense": "present",
+    "_activeTense": "future",
     "_generatingTense": null
   },
   {
@@ -1894,7 +1894,7 @@
         }
       ]
     },
-    "_activeTense": "present",
+    "_activeTense": "future",
     "_generatingTense": null
   },
   {
@@ -2017,7 +2017,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "04/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -2054,10 +2054,41 @@
         }
       ],
       "past": [],
-      "future": []
+      "future": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou sentir frio.",
+          "en": "I will feel cold."
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais sentir dor.",
+          "en": "You will feel pain."
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai sentir medo.",
+          "en": "She will feel fear."
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos sentir fome.",
+          "en": "We will feel hungry."
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão sentir calor.",
+          "en": "You will feel hot."
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão sentir alegria.",
+          "en": "They will feel happy."
+        }
+      ]
     },
     "_activeTense": "future",
-    "_generatingTense": "future"
+    "_generatingTense": null
   },
   {
     "id": 1777897550632,
@@ -2734,7 +2765,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "04/05/2026",
-    "generatingExample": false,
+    "generatingExample": true,
     "assessingFreq": false,
     "freq": "common",
     "tenses": {
@@ -2772,7 +2803,9 @@
       ],
       "past": [],
       "future": []
-    }
+    },
+    "_activeTense": "past",
+    "_generatingTense": "past"
   },
   {
     "id": 1777898746444,
