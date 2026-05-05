@@ -502,9 +502,16 @@
       }
     ],
     "addedAt": "28/04/2026",
-    "generatingExample": false,
+    "generatingExample": true,
     "assessingFreq": false,
-    "freq": "common"
+    "freq": "common",
+    "tenses": {
+      "present": [],
+      "past": [],
+      "future": []
+    },
+    "_generatingTense": "present",
+    "_activeTense": "present"
   },
   {
     "id": 1777373855438,
@@ -639,7 +646,7 @@
       }
     ],
     "addedAt": "28/04/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "common",
     "tenses": {
@@ -675,10 +682,41 @@
           "en": "They often make mistakes."
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu errei a resposta.",
+          "en": "I got the answer wrong."
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu erraste novamente.",
+          "en": "You made another mistake."
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela errara não foi ela.",
+          "en": "She didn't make the mistake."
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós errámos na prova.",
+          "en": "We made mistakes on the test."
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês erraram a hora.",
+          "en": "You guys got the time wrong."
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles erraram tudo.",
+          "en": "They got everything wrong."
+        }
+      ],
       "future": []
     },
-    "_generatingTense": "past",
+    "_generatingTense": null,
     "_activeTense": "past"
   },
   {
