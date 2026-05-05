@@ -2556,7 +2556,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "04/05/2026",
-    "generatingExample": false,
+    "generatingExample": true,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -2594,7 +2594,9 @@
       ],
       "past": [],
       "future": []
-    }
+    },
+    "_activeTense": "past",
+    "_generatingTense": "past"
   },
   {
     "id": 1777898856760,
@@ -2642,7 +2644,8 @@
       ],
       "past": [],
       "future": []
-    }
+    },
+    "_activeTense": "past"
   },
   {
     "id": 1777899047917,
@@ -2652,7 +2655,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "04/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -2720,9 +2723,40 @@
           "en": "They used a pencil."
         }
       ],
-      "future": []
+      "future": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou usar",
+          "en": "I will use"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais usar",
+          "en": "You will use"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele/Ela vai usar",
+          "en": "He/She will use"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos usar",
+          "en": "We will use"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão usar",
+          "en": "You will use"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles/Elas vão usar",
+          "en": "They will use"
+        }
+      ]
     },
     "_activeTense": "future",
-    "_generatingTense": "future"
+    "_generatingTense": null
   }
 ]
