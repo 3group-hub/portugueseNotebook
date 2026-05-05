@@ -686,12 +686,43 @@
     "assessingFreq": false,
     "freq": "common",
     "tenses": {
-      "present": [],
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu tornar-me-ei um especialista",
+          "en": "I will become an expert"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu tornas-te um bom profissional",
+          "en": "You become a good professional"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela torna-se uma boa mãe",
+          "en": "She becomes a good mother"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós tornamo-nos amigos",
+          "en": "We become friends"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês tornam-se uns grandes jogadores",
+          "en": "You become great players"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles tornam-se muito felizes",
+          "en": "They become very happy"
+        }
+      ],
       "past": [],
       "future": []
     },
-    "_generatingTense": "present",
-    "_activeTense": "present"
+    "_generatingTense": "past",
+    "_activeTense": "past"
   },
   {
     "id": 1777374156770,
