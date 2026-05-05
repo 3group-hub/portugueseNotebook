@@ -2688,10 +2688,41 @@
           "en": "They use headphones."
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu usei um lápis.",
+          "en": "I used a pencil."
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu usaste um lápis.",
+          "en": "You used a pencil."
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela usou um lápis.",
+          "en": "She used a pencil."
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós usámos um lápis.",
+          "en": "We used a pencil."
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês usaram um lápis.",
+          "en": "You used a pencil."
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles usaram um lápis.",
+          "en": "They used a pencil."
+        }
+      ],
       "future": []
     },
-    "_activeTense": "past",
-    "_generatingTense": "past"
+    "_activeTense": "future",
+    "_generatingTense": "future"
   }
 ]
