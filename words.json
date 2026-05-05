@@ -326,12 +326,43 @@
     "assessingFreq": false,
     "freq": "common",
     "tenses": {
-      "present": [],
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu encerro a porta",
+          "en": "I close the door"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu encerras a carta",
+          "en": "You close the letter"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela encerra o livro",
+          "en": "She closes the book"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós encerramos a janela",
+          "en": "We close the window"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês encerram a loja",
+          "en": "You close the shop"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles encerram a reunião",
+          "en": "They close the meeting"
+        }
+      ],
       "past": [],
       "future": []
     },
-    "_generatingTense": "present",
-    "_activeTense": "present"
+    "_generatingTense": "past",
+    "_activeTense": "past"
   },
   {
     "id": 1777373855432,
