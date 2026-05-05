@@ -847,11 +847,42 @@
           "en": "They believe in themselves."
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu creio em Deus",
+          "en": "I believe in God"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu creias em mim",
+          "en": "You believed in me"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela creu na teoria",
+          "en": "She believed in the theory"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós creíamos no projeto",
+          "en": "We believed in the project"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês creiam no time",
+          "en": "You believed in the team"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles creiam no destino",
+          "en": "They believed in destiny"
+        }
+      ],
       "future": []
     },
-    "_generatingTense": "past",
-    "_activeTense": "past"
+    "_generatingTense": "future",
+    "_activeTense": "future"
   },
   {
     "id": 1777374156773,
