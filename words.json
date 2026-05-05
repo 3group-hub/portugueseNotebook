@@ -162,9 +162,16 @@
       }
     ],
     "addedAt": "28/04/2026",
-    "generatingExample": false,
+    "generatingExample": true,
     "assessingFreq": false,
-    "freq": "essential"
+    "freq": "essential",
+    "tenses": {
+      "present": [],
+      "past": [],
+      "future": []
+    },
+    "_generatingTense": "present",
+    "_activeTense": "present"
   },
   {
     "id": 1777373855359,
@@ -2717,7 +2724,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "04/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "common",
     "tenses": {
@@ -2785,10 +2792,41 @@
           "en": "They used the equipment"
         }
       ],
-      "future": []
+      "future": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou utilizar um computador.",
+          "en": "I will use a computer."
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais utilizar um telemóvel.",
+          "en": "You will use a mobile phone."
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai utilizar um laptop.",
+          "en": "She will use a laptop."
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos utilizar um projeto.",
+          "en": "We will use a project."
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão utilizar um software.",
+          "en": "You will use software."
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão utilizar um programa.",
+          "en": "They will use a program."
+        }
+      ]
     },
     "_activeTense": "future",
-    "_generatingTense": "future"
+    "_generatingTense": null
   },
   {
     "id": 1777898628330,
