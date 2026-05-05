@@ -2383,11 +2383,42 @@
           "en": "They love music."
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu amei",
+          "en": "I loved"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu amaste",
+          "en": "You loved"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela amou",
+          "en": "She loved"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós amamos",
+          "en": "We loved"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês amaram",
+          "en": "You loved"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles amaram",
+          "en": "They loved"
+        }
+      ],
       "future": []
     },
-    "_activeTense": "past",
-    "_generatingTense": "past"
+    "_activeTense": "future",
+    "_generatingTense": "future"
   },
   {
     "id": 1777898458608,
