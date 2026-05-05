@@ -815,12 +815,43 @@
     "assessingFreq": false,
     "freq": "common",
     "tenses": {
-      "present": [],
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu creio que sim.",
+          "en": "I believe so."
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu crees que ele vem.",
+          "en": "You believe he's coming."
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela crê no destino.",
+          "en": "She believes in fate."
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós cremos em ti.",
+          "en": "We believe in you."
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês creem nisso?",
+          "en": "Do you believe that?"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles creem em si mesmos.",
+          "en": "They believe in themselves."
+        }
+      ],
       "past": [],
       "future": []
     },
-    "_generatingTense": "present",
-    "_activeTense": "present"
+    "_generatingTense": "past",
+    "_activeTense": "past"
   },
   {
     "id": 1777374156773,
