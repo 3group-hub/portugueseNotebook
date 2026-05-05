@@ -920,13 +920,44 @@
     "generatingExample": true,
     "assessingFreq": false,
     "freq": "advanced",
-    "_activeTense": "present",
+    "_activeTense": "past",
     "tenses": {
-      "present": [],
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu renasco em cada amanhecer",
+          "en": "I am reborn with each dawn"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu renascem em cada desafio",
+          "en": "You are reborn with each challenge"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela renasce após cada derrota",
+          "en": "She is reborn after each defeat"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós renascemos em cada conquista",
+          "en": "We are reborn with each conquest"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês renascem em cada vitória",
+          "en": "You are reborn with each victory"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles renascem após cada crise",
+          "en": "They are reborn after each crisis"
+        }
+      ],
       "past": [],
       "future": []
     },
-    "_generatingTense": "present"
+    "_generatingTense": "past"
   },
   {
     "id": 1777373855441,
