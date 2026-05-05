@@ -478,11 +478,42 @@
           "en": "They seduce the women"
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu seduzi a plateia",
+          "en": "I seduced the audience"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu seduziste o professor",
+          "en": "You seduced the teacher"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela seduziu o chefe",
+          "en": "She seduced the boss"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós seduzimos os clientes",
+          "en": "We seduced the clients"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês seduziram os investidores",
+          "en": "You seduced the investors"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles seduziram a multidão",
+          "en": "They seduced the crowd"
+        }
+      ],
       "future": []
     },
-    "_generatingTense": "past",
-    "_activeTense": "past"
+    "_generatingTense": "future",
+    "_activeTense": "future"
   },
   {
     "id": 1777373855436,
