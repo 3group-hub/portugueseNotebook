@@ -604,11 +604,42 @@
           "en": "They radiate optimism."
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu irradiei calor",
+          "en": "I radiated heat"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu irradiaste luz",
+          "en": "You radiated light"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela irradia energia",
+          "en": "She radiates energy"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós irradiámos radiação",
+          "en": "We radiated radiation"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês irradiaram calor",
+          "en": "You radiated heat"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles irradiaram luzes",
+          "en": "They radiated lights"
+        }
+      ],
       "future": []
     },
-    "_generatingTense": "past",
-    "_activeTense": "past"
+    "_generatingTense": "future",
+    "_activeTense": "future"
   },
   {
     "id": 1777373855435,
