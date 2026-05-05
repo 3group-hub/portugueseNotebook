@@ -1411,11 +1411,42 @@
           "en": "They radiate an irresistible force"
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu irradieie uma luz suave.",
+          "en": "I radiated a soft light."
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu irradiaste uma energia positiva.",
+          "en": "You radiated positive energy."
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela irradiou confiança absoluta.",
+          "en": "She radiated absolute confidence."
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós irradiámos calor humano.",
+          "en": "We radiated human warmth."
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês irradiaram alegria contagiante.",
+          "en": "You radiated contagious joy."
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles irradiaram uma força interior.",
+          "en": "They radiated inner strength."
+        }
+      ],
       "future": []
     },
-    "_generatingTense": "past",
-    "_activeTense": "past"
+    "_generatingTense": "future",
+    "_activeTense": "future"
   },
   {
     "id": 1777374156772,
