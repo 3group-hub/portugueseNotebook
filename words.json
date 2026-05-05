@@ -162,7 +162,7 @@
       }
     ],
     "addedAt": "28/04/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -230,9 +230,40 @@
           "en": "They listened"
         }
       ],
-      "future": []
+      "future": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou ouvir",
+          "en": "I will listen"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais ouvir",
+          "en": "You will listen"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele vai ouvir",
+          "en": "He/She will listen"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos ouvir",
+          "en": "We will listen"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão ouvir",
+          "en": "You will listen"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão ouvir",
+          "en": "They will listen"
+        }
+      ]
     },
-    "_generatingTense": "future",
+    "_generatingTense": null,
     "_activeTense": "future"
   },
   {
@@ -780,9 +811,16 @@
       }
     ],
     "addedAt": "28/04/2026",
-    "generatingExample": false,
+    "generatingExample": true,
     "assessingFreq": false,
-    "freq": "common"
+    "freq": "common",
+    "tenses": {
+      "present": [],
+      "past": [],
+      "future": []
+    },
+    "_generatingTense": "present",
+    "_activeTense": "present"
   },
   {
     "id": 1777374156773,
