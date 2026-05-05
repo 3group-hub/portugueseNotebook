@@ -568,9 +568,16 @@
       }
     ],
     "addedAt": "28/04/2026",
-    "generatingExample": false,
+    "generatingExample": true,
     "assessingFreq": false,
-    "freq": "advanced"
+    "freq": "advanced",
+    "tenses": {
+      "present": [],
+      "past": [],
+      "future": []
+    },
+    "_generatingTense": "present",
+    "_activeTense": "present"
   },
   {
     "id": 1777373855435,
@@ -917,7 +924,7 @@
       }
     ],
     "addedAt": "28/04/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "advanced",
     "_activeTense": "future",
@@ -986,9 +993,40 @@
           "en": "They were reborn new"
         }
       ],
-      "future": []
+      "future": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou renascer espiritualmente",
+          "en": "I will be spiritually reborn"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais renascer como artista",
+          "en": "You will be reborn as an artist"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai renascer das cinzas",
+          "en": "She will be reborn from the ashes"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos renascer juntos",
+          "en": "We will be reborn together"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão renascer como líderes",
+          "en": "You will be reborn as leaders"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão renascer em nova forma",
+          "en": "They will be reborn in a new form"
+        }
+      ]
     },
-    "_generatingTense": "future"
+    "_generatingTense": null
   },
   {
     "id": 1777373855441,
