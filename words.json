@@ -506,12 +506,43 @@
     "assessingFreq": false,
     "freq": "common",
     "tenses": {
-      "present": [],
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu ilumino a sala",
+          "en": "I illuminate the room"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu iluminas a cozinha",
+          "en": "You illuminate the kitchen"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela ilumina o quarto",
+          "en": "She illuminates the bedroom"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós iluminamos a casa",
+          "en": "We illuminate the house"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês iluminam o jardim",
+          "en": "You illuminate the garden"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles iluminam a rua",
+          "en": "They illuminate the street"
+        }
+      ],
       "past": [],
       "future": []
     },
-    "_generatingTense": "present",
-    "_activeTense": "present"
+    "_generatingTense": "past",
+    "_activeTense": "past"
   },
   {
     "id": 1777373855438,
