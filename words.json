@@ -761,11 +761,42 @@
           "en": "They seduce everyone"
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu seduzi o meu parceiro.",
+          "en": "I seduced my partner."
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu seduziste a tua amiga.",
+          "en": "You seduced your friend."
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela seduziu o actor.",
+          "en": "She seduced the actor."
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós seduzimos o público.",
+          "en": "We seduced the audience."
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês seduziram o júri.",
+          "en": "You seduced the jury."
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles seduziram as mulheres.",
+          "en": "They seduced the women."
+        }
+      ],
       "future": []
     },
-    "_generatingTense": "past",
-    "_activeTense": "past"
+    "_generatingTense": "future",
+    "_activeTense": "future"
   },
   {
     "id": 1777374156771,
