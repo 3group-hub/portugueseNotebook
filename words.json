@@ -729,12 +729,43 @@
     "assessingFreq": false,
     "freq": "common",
     "tenses": {
-      "present": [],
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu seduzo facilmente",
+          "en": "I seduce easily"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu seduzes bem",
+          "en": "You seduce well"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela seduz todos",
+          "en": "She seduces everyone"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós seduzimos sempre",
+          "en": "We always seduce"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês seduzem facilmente",
+          "en": "You seduce easily"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles seduzem a todos",
+          "en": "They seduce everyone"
+        }
+      ],
       "past": [],
       "future": []
     },
-    "_generatingTense": "present",
-    "_activeTense": "present"
+    "_generatingTense": "past",
+    "_activeTense": "past"
   },
   {
     "id": 1777374156771,
