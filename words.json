@@ -2653,6 +2653,45 @@
     "examples": [],
     "addedAt": "04/05/2026",
     "generatingExample": true,
-    "assessingFreq": true
+    "assessingFreq": false,
+    "freq": "essential",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu uso um telemóvel.",
+          "en": "I use a mobile phone."
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu usas um computador.",
+          "en": "You use a computer."
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela usa óculos.",
+          "en": "She uses glasses."
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós usamos bicicletas.",
+          "en": "We use bicycles."
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês usam carros.",
+          "en": "You use cars."
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles usam fones.",
+          "en": "They use headphones."
+        }
+      ],
+      "past": [],
+      "future": []
+    },
+    "_activeTense": "past",
+    "_generatingTense": "past"
   }
 ]
