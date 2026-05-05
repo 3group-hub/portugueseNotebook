@@ -920,7 +920,7 @@
     "generatingExample": true,
     "assessingFreq": false,
     "freq": "advanced",
-    "_activeTense": "past",
+    "_activeTense": "future",
     "tenses": {
       "present": [
         {
@@ -954,10 +954,41 @@
           "en": "They are reborn after each crisis"
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu renasci espiritualmente",
+          "en": "I was reborn spiritually"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu renaceste novamente",
+          "en": "You were reborn again"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela renasceu forte",
+          "en": "She was reborn strong"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós renacemos juntos",
+          "en": "We were reborn together"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês reneceram livremente",
+          "en": "You were reborn freely"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles renasceram novos",
+          "en": "They were reborn new"
+        }
+      ],
       "future": []
     },
-    "_generatingTense": "past"
+    "_generatingTense": "future"
   },
   {
     "id": 1777373855441,
