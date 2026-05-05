@@ -2282,7 +2282,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "04/05/2026",
-    "generatingExample": false,
+    "generatingExample": true,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -2320,7 +2320,9 @@
       ],
       "past": [],
       "future": []
-    }
+    },
+    "_activeTense": "past",
+    "_generatingTense": "past"
   },
   {
     "id": 1777898155068,
@@ -2347,7 +2349,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "04/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -2415,10 +2417,41 @@
           "en": "They loved"
         }
       ],
-      "future": []
+      "future": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou amar",
+          "en": "I will love"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais amar",
+          "en": "You will love"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai amar",
+          "en": "She will love"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos amar",
+          "en": "We will love"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão amar",
+          "en": "You will love"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão amar",
+          "en": "They will love"
+        }
+      ]
     },
-    "_activeTense": "future",
-    "_generatingTense": "future"
+    "_activeTense": "present",
+    "_generatingTense": null
   },
   {
     "id": 1777898458608,
