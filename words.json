@@ -2717,7 +2717,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "04/05/2026",
-    "generatingExample": false,
+    "generatingExample": true,
     "assessingFreq": false,
     "freq": "common",
     "tenses": {
@@ -2755,7 +2755,9 @@
       ],
       "past": [],
       "future": []
-    }
+    },
+    "_activeTense": "past",
+    "_generatingTense": "past"
   },
   {
     "id": 1777898628330,
@@ -2765,7 +2767,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "04/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "common",
     "tenses": {
@@ -2801,11 +2803,42 @@
           "en": "They obtain medals"
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu obtive um prémio",
+          "en": "I obtained a prize"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu obtiveste um emprego",
+          "en": "You obtained a job"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela obteve sucesso",
+          "en": "She obtained success"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós obtivemos resultados",
+          "en": "We obtained results"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês obtiveram diplomas",
+          "en": "You obtained diplomas"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles obtiveram medalhas",
+          "en": "They obtained medals"
+        }
+      ],
       "future": []
     },
     "_activeTense": "past",
-    "_generatingTense": "past"
+    "_generatingTense": null
   },
   {
     "id": 1777898746444,
