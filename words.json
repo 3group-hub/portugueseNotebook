@@ -4594,6 +4594,46 @@
     "examples": [],
     "addedAt": "06/05/2026",
     "generatingExample": true,
-    "assessingFreq": true
+    "assessingFreq": false,
+    "freq": "essential",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu quero um bolo",
+          "en": "I want a cake"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu queres um bolo",
+          "en": "You want a cake"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela quer um bolo",
+          "en": "She wants a cake"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós queremos um bolo",
+          "en": "We want a cake"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês querem um bolo",
+          "en": "You want a cake"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles querem um bolo",
+          "en": "They want a cake"
+        }
+      ],
+      "past": [],
+      "future-peri": [],
+      "future-simple": []
+    },
+    "_activeTense": "past",
+    "_generatingTense": "past"
   }
 ]
