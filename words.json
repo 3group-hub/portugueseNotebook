@@ -5381,10 +5381,41 @@
           "en": "They read a book."
         }
       ],
-      "future-peri": [],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou ler",
+          "en": "I will read"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais ler",
+          "en": "You will read"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele vai ler",
+          "en": "He/She will read"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos ler",
+          "en": "We will read"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão ler",
+          "en": "You will read"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão ler",
+          "en": "They will read"
+        }
+      ],
       "future-simple": []
     },
-    "_activeTense": "future-peri",
-    "_generatingTense": "future-peri"
+    "_activeTense": "future-simple",
+    "_generatingTense": "future-simple"
   }
 ]
