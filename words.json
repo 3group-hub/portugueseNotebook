@@ -4259,10 +4259,42 @@
           "pt": "Eles morarão lá",
           "en": "They will live there"
         }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu morarei",
+          "en": "I will live"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu morarás",
+          "en": "You will live"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela morará",
+          "en": "She will live"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós moraremos",
+          "en": "We will live"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês morarão",
+          "en": "You will live"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles morarão",
+          "en": "They will live"
+        }
       ]
     },
-    "_activeTense": "future-simple",
-    "_generatingTense": "future-simple"
+    "_activeTense": "future-peri",
+    "_generatingTense": "future-peri"
   },
   {
     "id": 1777899047917,
