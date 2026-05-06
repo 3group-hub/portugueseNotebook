@@ -5026,6 +5026,46 @@
     "examples": [],
     "addedAt": "06/05/2026",
     "generatingExample": true,
-    "assessingFreq": true
+    "assessingFreq": false,
+    "freq": "essential",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu venho todos os dias",
+          "en": "I come every day"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vens comigo",
+          "en": "You come with me"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vem agora",
+          "en": "She comes now"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos juntos",
+          "en": "We come together"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vêm também",
+          "en": "You come too"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vêm depois",
+          "en": "They come later"
+        }
+      ],
+      "past": [],
+      "future-peri": [],
+      "future-simple": []
+    },
+    "_activeTense": "future-simple",
+    "_generatingTense": "future-simple"
   }
 ]
