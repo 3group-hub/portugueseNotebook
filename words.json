@@ -5648,6 +5648,46 @@
     "examples": [],
     "addedAt": "06/05/2026",
     "generatingExample": true,
-    "assessingFreq": true
+    "assessingFreq": false,
+    "freq": "essential",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vejo",
+          "en": "I see"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vês",
+          "en": "You see"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vê",
+          "en": "She sees"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vemos",
+          "en": "We see"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês veem",
+          "en": "You see"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles veem",
+          "en": "They see"
+        }
+      ],
+      "past": [],
+      "future-peri": [],
+      "future-simple": []
+    },
+    "_activeTense": "past",
+    "_generatingTense": "past"
   }
 ]
