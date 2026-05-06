@@ -4,71 +4,120 @@
     "emoji": "🍽️",
     "sentences": [
       {
-        "pt": "Quero um café, por favor.",
-        "en": "I would like a coffee, please.",
+        "pt": "Eu quero comer.",
+        "en": "I want to eat.",
         "uses": [
           "querer"
         ]
       },
       {
-        "pt": "O que é que você deseja?",
-        "en": "What do you want?",
+        "pt": "Estou com fome.",
+        "en": "I am hungry.",
         "uses": [
-          "desejar"
+          "Com fome"
         ]
       },
       {
-        "pt": "Posso ouvir a música?",
-        "en": "Can I listen to the music?",
+        "pt": "Eu como pão.",
+        "en": "I eat bread.",
         "uses": [
-          "ouvir"
+          "Comer"
         ]
       },
       {
-        "pt": "Quero fazer um trabalho aqui.",
-        "en": "I want to do some work here.",
+        "pt": "Eu bebo água fria.",
+        "en": "I drink cold water.",
         "uses": [
-          "fazer",
-          "trabalho"
+          "frio"
         ]
       },
       {
-        "pt": "Eu creio que é um bom dia.",
-        "en": "I believe it's a good day.",
+        "pt": "Eu estou cansado.",
+        "en": "I am tired.",
         "uses": [
-          "creio",
-          "dia"
+          "cansado"
         ]
-      },
+      }
+    ],
+    "dialogues": [
       {
-        "pt": "O dentista vai ter um trabalho.",
-        "en": "The dentist is going to have some work.",
-        "uses": [
-          "dentista",
-          "trabalho",
-          "ter"
-        ]
-      },
-      {
-        "pt": "Quero ir ao restaurante com você.",
-        "en": "I want to go to the restaurant with you.",
-        "uses": [
-          "querer",
-          "ir"
-        ]
-      },
-      {
-        "pt": "Posso dar um lamento se não tiver comida?",
-        "en": "Can I complain if there's no food?",
-        "uses": [
-          "dar",
-          "lamento"
+        "title": "Ordering Food",
+        "lines": [
+          {
+            "speaker": "A",
+            "role": "Customer",
+            "pt": "Bom dia, eu quero comer.",
+            "en": "Good morning, I want to eat.",
+            "uses": [
+              "Bom dia",
+              "querer"
+            ]
+          },
+          {
+            "speaker": "B",
+            "role": "Waiter",
+            "pt": "O que deseja?",
+            "en": "What do you want?",
+            "uses": [
+              "desejar"
+            ]
+          },
+          {
+            "speaker": "A",
+            "role": "Customer",
+            "pt": "Eu estou com fome, o que me aconselha?",
+            "en": "I am hungry, what do you advise me?",
+            "uses": [
+              "Com fome"
+            ]
+          },
+          {
+            "speaker": "B",
+            "role": "Waiter",
+            "pt": "Tenho um prato feliz.",
+            "en": "I have a happy dish.",
+            "uses": [
+              "feliz"
+            ]
+          },
+          {
+            "speaker": "A",
+            "role": "Customer",
+            "pt": "Eu como pão, é uma boa escolha?",
+            "en": "I eat bread, is it a good choice?",
+            "uses": [
+              "Comer"
+            ]
+          },
+          {
+            "speaker": "B",
+            "role": "Waiter",
+            "pt": "Sim, é uma boa escolha, está muito bom.",
+            "en": "Yes, it's a good choice, it's very good.",
+            "uses": []
+          },
+          {
+            "speaker": "A",
+            "role": "Customer",
+            "pt": "Eu bebo água fria, por favor.",
+            "en": "I drink cold water, please.",
+            "uses": [
+              "frio"
+            ]
+          },
+          {
+            "speaker": "B",
+            "role": "Waiter",
+            "pt": "Claro, já lhe trago.",
+            "en": "Of course, I'll bring it to you.",
+            "uses": []
+          }
         ]
       }
     ],
     "level": "essential",
     "cefrShort": "A1/A2",
-    "updatedAt": "02/05/2026"
+    "updatedAt": "06/05/2026"
   },
   "Grocery store": {
     "label": "Grocery store",
@@ -565,75 +614,117 @@
     "emoji": "🏥",
     "sentences": [
       {
-        "pt": "Quero falar com o dentista.",
-        "en": "I want to speak with the dentist.",
+        "pt": "Quero ir ao dentista.",
+        "en": "I want to go to the dentist.",
         "uses": [
           "querer",
-          "falar",
           "dentista"
         ]
       },
       {
-        "pt": "O médico é casada?",
-        "en": "Is the doctor married?",
+        "pt": "Estou com fome.",
+        "en": "I am hungry.",
         "uses": [
-          "é",
-          "casada"
+          "Com fome"
         ]
       },
       {
-        "pt": "Quero ir ao trabalho.",
-        "en": "I want to go to work.",
+        "pt": "Eu amo viver.",
+        "en": "I love to live.",
         "uses": [
-          "querer",
-          "ir",
-          "trabalho"
+          "amar",
+          "viver"
         ]
       },
       {
-        "pt": "Desejo uma boa alta.",
-        "en": "I want a good height.",
+        "pt": "Eu estou cansado.",
+        "en": "I am tired.",
         "uses": [
-          "desejar",
-          "alta"
+          "cansado"
         ]
       },
       {
-        "pt": "O que diz o médico?",
-        "en": "What does the doctor say?",
-        "uses": [
-          "dizer",
-          "médico"
-        ]
-      },
+        "pt": "Eu tenho sede.",
+        "en": "I am thirsty.",
+        "uses": []
+      }
+    ],
+    "dialogues": [
       {
-        "pt": "Quero ouvir o diagnóstico.",
-        "en": "I want to hear the diagnosis.",
-        "uses": [
-          "querer",
-          "ouvir"
-        ]
-      },
-      {
-        "pt": "Posso dar um lamento?",
-        "en": "Can I give a lament?",
-        "uses": [
-          "dar",
-          "lamento"
-        ]
-      },
-      {
-        "pt": "Creio que o médico me ajuda.",
-        "en": "I believe the doctor helps me.",
-        "uses": [
-          "creio",
-          "médico"
+        "title": "At the Hospital",
+        "lines": [
+          {
+            "speaker": "A",
+            "role": "Patient",
+            "pt": "Bom dia, quero ir ao dentista.",
+            "en": "Good morning, I want to go to the dentist.",
+            "uses": [
+              "Bom dia",
+              "querer",
+              "dentista"
+            ]
+          },
+          {
+            "speaker": "B",
+            "role": "Nurse",
+            "pt": "Ok, por favor sente-se.",
+            "en": "Ok, please sit down.",
+            "uses": []
+          },
+          {
+            "speaker": "A",
+            "role": "Patient",
+            "pt": "Estou com dor de dente.",
+            "en": "I have a toothache.",
+            "uses": []
+          },
+          {
+            "speaker": "B",
+            "role": "Nurse",
+            "pt": "Sinto muito, vamos chamar o dentista.",
+            "en": "I'm sorry, we'll call the dentist.",
+            "uses": [
+              "dentista"
+            ]
+          },
+          {
+            "speaker": "A",
+            "role": "Patient",
+            "pt": "Obrigado, estou muito cansado.",
+            "en": "Thank you, I am very tired.",
+            "uses": [
+              "cansado"
+            ]
+          },
+          {
+            "speaker": "B",
+            "role": "Nurse",
+            "pt": "Não se preocupe, vamos cuidar de você.",
+            "en": "Don't worry, we'll take care of you.",
+            "uses": []
+          },
+          {
+            "speaker": "A",
+            "role": "Patient",
+            "pt": "Eu desejo uma boa recuperação.",
+            "en": "I want a good recovery.",
+            "uses": [
+              "desejar"
+            ]
+          },
+          {
+            "speaker": "B",
+            "role": "Nurse",
+            "pt": "Claro, vamos fazer tudo para ajudar.",
+            "en": "Of course, we'll do everything to help.",
+            "uses": []
+          }
         ]
       }
     ],
     "level": "essential",
     "cefrShort": "A1/A2",
-    "updatedAt": "02/05/2026"
+    "updatedAt": "06/05/2026"
   },
   "Pharmacy": {
     "label": "Pharmacy",
@@ -1143,31 +1234,52 @@
         ]
       },
       {
+        "pt": "É frio aqui.",
+        "en": "It's cold here.",
+        "uses": [
+          "frio"
+        ]
+      },
+      {
         "pt": "Estou cansado.",
-        "en": "I am tired.",
+        "en": "I'm tired.",
         "uses": [
           "cansado"
         ]
       },
       {
         "pt": "Desejo um quarto.",
-        "en": "I desire a room.",
+        "en": "I want a room.",
         "uses": [
-          "Desejar"
+          "desejar"
         ]
       },
       {
-        "pt": "Estou com fome.",
-        "en": "I am hungry.",
+        "pt": "Vou comer.",
+        "en": "I'm going to eat.",
         "uses": [
-          "Com fome"
+          "comer"
         ]
       },
       {
-        "pt": "O hotel é alto.",
-        "en": "The hotel is tall.",
+        "pt": "Eu querer um quarto",
+        "en": "I want a room",
+        "uses": [
+          "querer"
+        ]
+      },
+      {
+        "pt": "O hotel é alto",
+        "en": "The hotel is tall",
         "uses": [
           "alta"
+        ]
+      },
+      {
+        "pt": "Eu estou com fome",
+        "en": "I am hungry",
+        "uses": [
+          "com fome"
         ]
       }
     ],
@@ -1181,38 +1293,22 @@
             "pt": "Bom dia, quero o quarto.",
             "en": "Good morning, I want the room.",
             "uses": [
-              "Bom dia",
-              "querer"
+              "querer",
+              "Bom dia"
             ]
           },
           {
             "speaker": "B",
             "role": "Receptionist",
-            "pt": "Sim, como posso ajudar?",
-            "en": "Yes, how can I help?",
+            "pt": "Sim, é para uma pessoa?",
+            "en": "Yes, is it for one person?",
             "uses": []
           },
           {
             "speaker": "A",
             "role": "Customer",
-            "pt": "Desejo um quarto com vista.",
-            "en": "I desire a room with a view.",
-            "uses": [
-              "Desejar"
-            ]
-          },
-          {
-            "speaker": "B",
-            "role": "Receptionist",
-            "pt": "Ok, temos um quarto disponível.",
-            "en": "Ok, we have a room available.",
-            "uses": []
-          },
-          {
-            "speaker": "A",
-            "role": "Customer",
-            "pt": "Estou cansado, onde está o elevador?",
-            "en": "I am tired, where is the elevator?",
+            "pt": "Sim, estou cansado.",
+            "en": "Yes, I'm tired.",
             "uses": [
               "cansado"
             ]
@@ -1220,15 +1316,89 @@
           {
             "speaker": "B",
             "role": "Receptionist",
-            "pt": "O elevador está à esquerda.",
-            "en": "The elevator is to the left.",
+            "pt": "Ok, o quarto é muito confortável.",
+            "en": "Ok, the room is very comfortable.",
+            "uses": []
+          },
+          {
+            "speaker": "A",
+            "role": "Customer",
+            "pt": "Desejo um quarto com vista.",
+            "en": "I want a room with a view.",
+            "uses": [
+              "desejar"
+            ]
+          },
+          {
+            "speaker": "B",
+            "role": "Receptionist",
+            "pt": "Ok, vamos ver o que podemos fazer.",
+            "en": "Ok, let's see what we can do.",
             "uses": []
           },
           {
             "speaker": "A",
             "role": "Customer",
             "pt": "Obrigado, estou feliz.",
-            "en": "Thank you, I am happy.",
+            "en": "Thank you, I'm happy.",
+            "uses": [
+              "feliz"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Check-in",
+        "lines": [
+          {
+            "speaker": "A",
+            "role": "Customer",
+            "pt": "Bom dia, desejo um quarto",
+            "en": "Good morning, I want a room",
+            "uses": [
+              "Bom dia",
+              "desejar"
+            ]
+          },
+          {
+            "speaker": "B",
+            "role": "Staff",
+            "pt": "Sim, temos quartos disponíveis",
+            "en": "Yes, we have available rooms",
+            "uses": []
+          },
+          {
+            "speaker": "A",
+            "role": "Customer",
+            "pt": "Eu querer um quarto com vista",
+            "en": "I want a room with a view",
+            "uses": [
+              "querer"
+            ]
+          },
+          {
+            "speaker": "B",
+            "role": "Staff",
+            "pt": "Ok, vamos dar um quarto alto",
+            "en": "Ok, we will give you a high room",
+            "uses": [
+              "alta"
+            ]
+          },
+          {
+            "speaker": "A",
+            "role": "Customer",
+            "pt": "Obrigado, eu estou cansado",
+            "en": "Thank you, I am tired",
+            "uses": [
+              "cansado"
+            ]
+          },
+          {
+            "speaker": "B",
+            "role": "Staff",
+            "pt": "Descansa, é um quarto feliz",
+            "en": "Rest, it's a happy room",
             "uses": [
               "feliz"
             ]
