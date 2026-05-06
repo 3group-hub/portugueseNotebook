@@ -4806,9 +4806,40 @@
           "en": "They will put"
         }
       ],
-      "future-simple": []
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu porei",
+          "en": "I will put"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu porás",
+          "en": "You will put"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela porá",
+          "en": "She will put"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós poremos",
+          "en": "We will put"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês porão",
+          "en": "You will put"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles porão",
+          "en": "They will put"
+        }
+      ]
     },
-    "_activeTense": "future-simple",
-    "_generatingTense": "future-simple"
+    "_activeTense": "past",
+    "_generatingTense": "past"
   }
 ]
