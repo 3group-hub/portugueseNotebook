@@ -4160,7 +4160,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "04/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -4291,10 +4291,42 @@
           "pt": "Eles morarão",
           "en": "They will live"
         }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou morar",
+          "en": "I will live"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais morar",
+          "en": "You will live"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele/Ela vai morar",
+          "en": "He/She will live"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos morar",
+          "en": "We will live"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão morar",
+          "en": "You will live"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles/Elas vão morar",
+          "en": "They will live"
+        }
       ]
     },
-    "_activeTense": "future-peri",
-    "_generatingTense": "future-peri"
+    "_activeTense": "present",
+    "_generatingTense": null
   },
   {
     "id": 1777899047917,
