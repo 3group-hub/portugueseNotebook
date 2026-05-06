@@ -4272,7 +4272,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "04/05/2026",
-    "generatingExample": false,
+    "generatingExample": true,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -4374,7 +4374,7 @@
       ]
     },
     "_activeTense": "future",
-    "_generatingTense": null
+    "_generatingTense": "future"
   },
   {
     "id": 1778010636059,
