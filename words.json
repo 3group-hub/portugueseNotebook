@@ -5160,16 +5160,5 @@
     },
     "_activeTense": "present",
     "_generatingTense": null
-  },
-  {
-    "id": 1778076579930,
-    "word": "sair",
-    "translation": "leave (to go out)",
-    "category": "Noun",
-    "notes": "",
-    "examples": [],
-    "addedAt": "06/05/2026",
-    "generatingExample": true,
-    "assessingFreq": true
   }
 ]
