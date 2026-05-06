@@ -4662,9 +4662,40 @@
           "en": "They will want"
         }
       ],
-      "future-simple": []
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu quererei",
+          "en": "I will want"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu quererás",
+          "en": "You will want"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela quererá",
+          "en": "She will want"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós quereremos",
+          "en": "We will want"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês quererão",
+          "en": "You will want"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles quererão",
+          "en": "They will want"
+        }
+      ]
     },
-    "_activeTense": "future-simple",
-    "_generatingTense": "future-simple"
+    "_activeTense": "past",
+    "_generatingTense": "past"
   }
 ]
