@@ -4630,10 +4630,41 @@
         }
       ],
       "past": [],
-      "future-peri": [],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou querer",
+          "en": "I will want"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais querer",
+          "en": "You will want"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele/Ela vai querer",
+          "en": "He/She will want"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos querer",
+          "en": "We will want"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão querer",
+          "en": "You will want"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles/Elas vão querer",
+          "en": "They will want"
+        }
+      ],
       "future-simple": []
     },
-    "_activeTense": "future-peri",
-    "_generatingTense": "future-peri"
+    "_activeTense": "future-simple",
+    "_generatingTense": "future-simple"
   }
 ]
