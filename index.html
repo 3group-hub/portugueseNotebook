@@ -1331,7 +1331,7 @@ async function generateAndAttach(wordId){
     // Then generate examples
     if(w.category==='Verb'){
       const present = await genVerbExamples(w.word, w.translation, 'present', w.freq||'common');
-      w.tenses = { present, past:[], future:[] };
+      w.tenses = { present, past:[], 'future-peri':[], 'future-simple':[] };
       w.examples = [];
     } else {
       w.examples = await genRegularExamples(w.word, w.translation, w.category, 1, [], w.freq||'common');
@@ -1365,10 +1365,20 @@ Word: "${word}" (${translation}) [${category}]`, 400);
 }
 
 async function genVerbExamples(verb, translation, tense, freq){
-  const tenseLabel = tense==='present' ? 'present tense (Presente do Indicativo)'
-                   : tense==='past'    ? 'simple past tense (Pretérito Perfeito Simples)'
-                   :                    'simple future tense (Futuro do Indicativo / ir + infinitivo)';
+  const tenseLabel =
+    tense==='present'            ? 'present tense (Presente do Indicativo)'
+    : tense==='past'             ? 'simple past tense (Pretérito Perfeito Simples)'
+    : tense==='future-peri'      ? 'periphrastic future (Futuro Perifrástico: ir + infinitivo, e.g. "vou falar", "vais comer")'
+    :                              'simple future tense (Futuro Simples do Indicativo: conjugated endings, e.g. "falarei", "falarás", "comerá")';
+
   const level = FREQ_CEFR[freq] || FREQ_CEFR.common;
+  const extraRule =
+    tense==='future-peri'
+      ? '- Use ONLY "ir + infinitivo" form (e.g. "Eu vou falar", "Tu vais comer"). This is the common spoken form in EP.'
+      : tense==='future-simple'
+      ? '- Use ONLY the conjugated Futuro Simples endings (-ei, -ás, -á, -emos, -ão). Do NOT use "ir + infinitivo".'
+      : '';
+
   const result = await claudeCall(
     `You are a European Portuguese tutor creating conjugation examples for a ${level.cefr} level verb.
 For the verb "${verb}" (${translation}), write one short natural sentence in ${tenseLabel} for each of these subjects: ${EP_PRONOUNS.join(', ')}.
@@ -1378,7 +1388,7 @@ Rules:
 - CEFR level: ${level.cefr}. ${level.vocab}
 - 5–10 words per sentence.
 - Use "vocês" (not vós) for plural you.
-- For future tense use "ir + infinitivo" (e.g. "vou falar").
+${extraRule}
 Return ONLY valid JSON, no markdown: [{"pronoun":"eu","pt":"...","en":"..."}, ...]`, 700);
   const p = JSON.parse(result.replace(/```json|```/g,'').trim());
   return Array.isArray(p) ? p : [];
@@ -1699,11 +1709,12 @@ async function assessAllLevels(){
 function escQ(s){ return (s||'').replace(/\\/g,'\\\\').replace(/'/g,"\\'"); }
 
 function renderVerbTenses(w, color){
-  const tenses = w.tenses || { present:[], past:[], future:[] };
+  const tenses = w.tenses || { present:[], past:[], 'future-peri':[], 'future-simple':[] };
   const tabs = [
-    { key:'present', label:'Present',  ptName:'Presente'          },
-    { key:'past',    label:'Past',     ptName:'Pretérito Perfeito'},
-    { key:'future',  label:'Future',   ptName:'Futuro'            },
+    { key:'present',       label:'Present',        ptName:'Presente'            },
+    { key:'past',          label:'Past',            ptName:'Pret. Perfeito'      },
+    { key:'future-peri',   label:'Fut. Perifrástico', ptName:'ir + inf.'         },
+    { key:'future-simple', label:'Fut. Simples',    ptName:'Futuro Simples'      },
   ];
   const activeKey = w._activeTense || 'present';
 
@@ -1833,7 +1844,7 @@ function setVerbTense(wordId, tense){
 
 async function generateTense(wordId, tense){
   const w = words.find(x=>x.id===wordId); if(!w)return;
-  if(!w.tenses) w.tenses = { present:[], past:[], future:[] };
+  if(!w.tenses) w.tenses = { present:[], past:[], 'future-peri':[], 'future-simple':[] };
   w.generatingExample = true;
   w._generatingTense = tense;
   w._activeTense = tense;
@@ -2174,10 +2185,6 @@ async function generateAndSaveSituation(situation, label, emoji){
   label = label || situation;
   emoji = emoji || '🗺️';
 
-  // Filter words relevant to this situation level
-  const relevantWords = words.filter(w =>
-    !currentSitLevel || w.freq === currentSitLevel || !w.freq
-  );
   const allWordsList = words.map(w=>`"${w.word}" (${w.translation}) [${w.category}]${w.freq?` [${FREQ_TIERS[w.freq]?.cefrShort||''}]`:''}`).join('\n');
   if(!allWordsList){ showToast('Add some words first'); return; }
   const level = SIT_LEVELS[currentSitLevel];
@@ -2185,43 +2192,49 @@ async function generateAndSaveSituation(situation, label, emoji){
   document.getElementById('sitGenLoading').classList.remove('hidden');
   try{
     const raw = await claudeCall(
-      `You are a European Portuguese tutor creating situational practice sentences.
+      `You are a European Portuguese tutor creating situational practice content.
 
 SITUATION: A student is going to be ${situation}.
 
 STUDENT'S VOCABULARY:
 ${allWordsList}
 
-TASK: Generate 8 practical sentences for this situation.
+TASK: Generate BOTH standalone sentences AND a short dialogue for this situation.
 
 STRICT RULES:
-1. ONLY European Portuguese (Portugal, not Brazilian Portuguese).
-2. MANDATORY: Every sentence MUST include at least one word from the student's vocabulary list above. Do not write a sentence that uses none of their words.
-3. Prefer words the student already knows — this helps reinforce their learning in context.
-4. ${level.prompt}
-5. Mix statements, questions and requests — make them realistic for this situation.
-6. After each Portuguese sentence, add the English translation in parentheses.
-7. At the very end of each sentence, add [uses: word1, word2] listing which vocabulary words appear in that sentence.
-8. Number them 1–8, one per line.
+- ONLY European Portuguese (Portugal, not Brazilian Portuguese).
+- MANDATORY: Use words from the student's vocabulary list wherever naturally possible.
+- ${level.prompt}
+- After each Portuguese line, add the English translation in parentheses.
+- At the end of each line add [uses: word1, word2] if vocabulary words appear, otherwise omit.
 
-Example format:
-1. Quero um café, por favor. (I would like a coffee, please.) [uses: querer, café]`, 1400);
+OUTPUT FORMAT — return ONLY valid JSON, no markdown:
+{
+  "sentences": [
+    {"pt": "...", "en": "...", "uses": ["word1"]},
+    {"pt": "...", "en": "...", "uses": []}
+  ],
+  "dialogues": [
+    {
+      "title": "Short dialogue title",
+      "lines": [
+        {"speaker": "A", "role": "Customer", "pt": "...", "en": "...", "uses": ["word1"]},
+        {"speaker": "B", "role": "Waiter",   "pt": "...", "en": "...", "uses": []}
+      ]
+    }
+  ]
+}
 
-    const sentences = raw.split('\n').filter(l=>l.trim()).map(line=>{
-      const match = line.match(/^(\d+[\.\)]?\s*)(.+)/);
-      const text = match ? match[2] : line;
-      // Extract [uses: ...] tag
-      const usesMatch = text.match(/\[uses:\s*([^\]]+)\]/i);
-      const uses = usesMatch ? usesMatch[1].split(',').map(s=>s.trim()) : [];
-      const withoutUses = text.replace(/\[uses:[^\]]*\]/i,'').trim();
-      const pt = withoutUses.split('(')[0].trim();
-      const enMatch = withoutUses.match(/\(([^)]+)\)/);
-      const en = enMatch ? enMatch[1] : '';
-      return pt ? {pt, en, uses} : null;
-    }).filter(Boolean);
+Generate 5 standalone sentences and 1 dialogue with 6–8 lines.
+The dialogue should be a realistic conversation between two people in this situation.`, 1800);
+
+    const clean = raw.replace(/```json|```/g,'').trim();
+    const parsed = JSON.parse(clean);
 
     savedSituations[label] = {
-      label, emoji, sentences,
+      label, emoji,
+      sentences: (parsed.sentences||[]).map(s=>({...s, uses: s.uses||[]})),
+      dialogues: parsed.dialogues||[],
       level: currentSitLevel,
       cefrShort: level.cefrShort,
       updatedAt: new Date().toLocaleDateString('pt-PT')
@@ -2302,33 +2315,77 @@ function renderSavedPacks(){
       </div>
       <!-- Sentences -->
       <div id="sitRows_${openPack.label.replace(/\s/g,'_')}" style="background:#fdfaf7;">
-        ${renderSentenceRows(openPack.sentences, openPack.label)}
+        ${renderSentenceRows(openPack.sentences, openPack.label, openPack.dialogues||[])}
       </div>
     </div>` : '';
 
   el.innerHTML = gridHTML + panelHTML;
 }
 
-function renderSentenceRows(sentences, label){
-  return sentences.map((s,i)=>`
-    <div style="padding:10px 14px;${i<sentences.length-1?'border-bottom:1px solid #f0ebe4;':''}display:flex;align-items:flex-start;gap:8px;">
-      <div style="flex:1;">
-        <div style="display:flex;align-items:center;gap:5px;flex-wrap:wrap;">
-          <span style="font-size:11px;color:#ccc;">${i+1}.</span>
-          <span style="font-size:13px;color:#1a3a5c;">${s.pt}</span>
-          <button class="speak-btn" onclick="speakText('${escQ(s.pt)}','pt-PT',this)">🔊</button>
-        </div>
-        <div style="display:flex;align-items:center;gap:5px;margin-top:2px;">
-          <span style="font-size:12px;color:#999;font-style:italic;">${s.en}</span>
-          <button class="speak-btn" onclick="speakText('${escQ(s.en)}','en-GB',this)" style="font-size:11px;">🔊</button>
-        </div>
-        ${s.uses&&s.uses.length?`<div style="margin-top:4px;display:flex;gap:4px;flex-wrap:wrap;">
-          ${s.uses.map(u=>`<span style="font-size:10px;padding:1px 6px;border-radius:8px;background:#1a3a5c12;color:#1a3a5c;border:1px solid #1a3a5c22;">📖 ${u}</span>`).join('')}
-        </div>`:''}
+function renderDialogue(dialogue, packLabel){
+  const speakerColors = { A:'#1a3a5c', B:'#1a6b3c', C:'#b5830a', D:'#7b4ea0' };
+  return `
+    <div style="background:#f5f9ff;border-radius:8px;margin:10px 14px;overflow:hidden;border:1px solid #dde8f5;">
+      <div style="padding:8px 12px;background:#e8f0fb;display:flex;align-items:center;gap:8px;">
+        <span style="font-size:14px;">💬</span>
+        <span style="font-size:12px;font-weight:700;color:#1a3a5c;">${dialogue.title||'Dialogue'}</span>
       </div>
-      <button onclick="deleteSentenceFromPack('${escQ(label)}',${i})"
-        style="padding:2px 5px;background:transparent;border:none;cursor:pointer;font-size:11px;color:#ddd;flex-shrink:0;">✕</button>
-    </div>`).join('');
+      ${(dialogue.lines||[]).map((line,i)=>{
+        const color = speakerColors[line.speaker] || '#555';
+        const isLeft = line.speaker === 'A' || line.speaker === 'C';
+        return `<div style="padding:8px 12px;${i<dialogue.lines.length-1?'border-bottom:1px solid #dde8f5;':''}${isLeft?'':'background:#fafcff;'}display:flex;gap:10px;align-items:flex-start;">
+          <div style="flex-shrink:0;text-align:center;min-width:36px;">
+            <div style="width:28px;height:28px;border-radius:50%;background:${color}22;border:1px solid ${color}44;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:${color};">${line.speaker}</div>
+            <div style="font-size:9px;color:#aaa;margin-top:2px;white-space:nowrap;">${line.role||''}</div>
+          </div>
+          <div style="flex:1;">
+            <div style="display:flex;align-items:center;gap:5px;flex-wrap:wrap;">
+              <span style="font-size:13px;color:#1a3a5c;font-weight:500;">${line.pt}</span>
+              <button class="speak-btn" onclick="speakText('${escQ(line.pt)}','pt-PT',this)">🔊</button>
+            </div>
+            <div style="display:flex;align-items:center;gap:5px;margin-top:2px;">
+              <span style="font-size:12px;color:#888;font-style:italic;">${line.en}</span>
+              <button class="speak-btn" onclick="speakText('${escQ(line.en)}','en-GB',this)" style="font-size:11px;">🔊</button>
+            </div>
+            ${line.uses&&line.uses.length?`<div style="margin-top:3px;display:flex;gap:3px;flex-wrap:wrap;">${line.uses.map(u=>`<span style="font-size:9px;padding:1px 5px;border-radius:6px;background:#1a3a5c10;color:#1a3a5c;border:1px solid #1a3a5c20;">📖 ${u}</span>`).join('')}</div>`:''}
+          </div>
+        </div>`;
+      }).join('')}
+    </div>`;
+}
+
+function renderSentenceRows(sentences, label, dialogues){
+  let html = '';
+
+  // Sentences section
+  if(sentences&&sentences.length){
+    html += `<div style="padding:8px 14px 4px;font-size:10px;color:#aaa;text-transform:uppercase;letter-spacing:0.06em;font-weight:700;">Sentences</div>`;
+    html += sentences.map((s,i)=>`
+      <div style="padding:8px 14px;${i<sentences.length-1?'border-bottom:1px solid #f0ebe4;':''}display:flex;align-items:flex-start;gap:8px;">
+        <div style="flex:1;">
+          <div style="display:flex;align-items:center;gap:5px;flex-wrap:wrap;">
+            <span style="font-size:11px;color:#ccc;">${i+1}.</span>
+            <span style="font-size:13px;color:#1a3a5c;">${s.pt}</span>
+            <button class="speak-btn" onclick="speakText('${escQ(s.pt)}','pt-PT',this)">🔊</button>
+          </div>
+          <div style="display:flex;align-items:center;gap:5px;margin-top:2px;">
+            <span style="font-size:12px;color:#999;font-style:italic;">${s.en}</span>
+            <button class="speak-btn" onclick="speakText('${escQ(s.en)}','en-GB',this)" style="font-size:11px;">🔊</button>
+          </div>
+          ${s.uses&&s.uses.length?`<div style="margin-top:3px;display:flex;gap:3px;flex-wrap:wrap;">${s.uses.map(u=>`<span style="font-size:9px;padding:1px 5px;border-radius:6px;background:#1a3a5c10;color:#1a3a5c;border:1px solid #1a3a5c20;">📖 ${u}</span>`).join('')}</div>`:''}
+        </div>
+        <button onclick="deleteSentenceFromPack('${escQ(label)}',${i})"
+          style="padding:2px 5px;background:transparent;border:none;cursor:pointer;font-size:11px;color:#ddd;flex-shrink:0;">✕</button>
+      </div>`).join('');
+  }
+
+  // Dialogues section
+  if(dialogues&&dialogues.length){
+    html += `<div style="padding:8px 14px 0;font-size:10px;color:#aaa;text-transform:uppercase;letter-spacing:0.06em;font-weight:700;border-top:2px solid #f0ebe4;margin-top:4px;">Dialogues</div>`;
+    html += dialogues.map(d => renderDialogue(d, label)).join('');
+  }
+
+  return html || '<div style="padding:10px 14px;font-size:12px;color:#ccc;font-style:italic;">Nothing yet</div>';
 }
 
 async function addMoreSituationSentences(label){
@@ -2337,46 +2394,54 @@ async function addMoreSituationSentences(label){
   if(btn){ btn.textContent='⏳ Generating…'; btn.disabled=true; }
   const situation = SITUATION_LIST.find(s=>s.label===label)?.en || label;
   const allWordsList = words.map(w=>`"${w.word}" (${w.translation}) [${w.category}]`).join('\n');
-  const existing = pack.sentences.map(s=>`"${s.pt}"`).join(', ');
+  const existingPt = (pack.sentences||[]).map(s=>`"${s.pt}"`).join(', ');
   const packLevel = SIT_LEVELS[pack.level] || SIT_LEVELS[currentSitLevel];
   try{
     const raw = await claudeCall(
-      `You are a European Portuguese tutor creating situational practice sentences.
+      `You are a European Portuguese tutor creating situational practice content.
 
 SITUATION: A student is going to be ${situation}.
 
 STUDENT'S VOCABULARY:
 ${allWordsList}
 
-TASK: Generate 5 MORE sentences for this situation.
+TASK: Generate MORE sentences AND a new dialogue for this situation.
 
 STRICT RULES:
-1. ONLY European Portuguese (Portugal, not Brazilian).
-2. MANDATORY: Every sentence MUST include at least one word from the vocabulary list above.
-3. ${packLevel.prompt}
-4. Do NOT repeat or closely resemble these existing sentences: ${existing}
-5. After each Portuguese sentence, add the English translation in parentheses.
-6. At the end of each sentence add [uses: word1, word2] listing which vocabulary words appear.
-7. Number them 1–5, one per line.`, 900);
+- ONLY European Portuguese (Portugal, not Brazilian).
+- MANDATORY: Use vocabulary words wherever naturally possible.
+- ${packLevel.prompt}
+- Do NOT repeat these existing sentences: ${existingPt}
+- After each line add the English translation in parentheses.
+- Add [uses: word1] if vocabulary words appear.
 
-    const newSentences = raw.split('\n').filter(l=>l.trim()).map(line=>{
-      const match = line.match(/^(\d+[\.\)]?\s*)(.+)/);
-      const text = match ? match[2] : line;
-      const usesMatch = text.match(/\[uses:\s*([^\]]+)\]/i);
-      const uses = usesMatch ? usesMatch[1].split(',').map(s=>s.trim()) : [];
-      const withoutUses = text.replace(/\[uses:[^\]]*\]/i,'').trim();
-      const pt = withoutUses.split('(')[0].trim();
-      const enMatch = withoutUses.match(/\(([^)]+)\)/);
-      const en = enMatch ? enMatch[1] : '';
-      return pt ? {pt, en, uses} : null;
-    }).filter(Boolean);
+OUTPUT FORMAT — return ONLY valid JSON, no markdown:
+{
+  "sentences": [
+    {"pt": "...", "en": "...", "uses": ["word1"]}
+  ],
+  "dialogues": [
+    {
+      "title": "Short dialogue title",
+      "lines": [
+        {"speaker": "A", "role": "Customer", "pt": "...", "en": "...", "uses": []},
+        {"speaker": "B", "role": "Staff",    "pt": "...", "en": "...", "uses": []}
+      ]
+    }
+  ]
+}
 
-    pack.sentences = [...pack.sentences, ...newSentences];
+Generate 3 new standalone sentences and 1 new dialogue with 4–6 lines.`, 1200);
+
+    const clean = raw.replace(/```json|```/g,'').trim();
+    const parsed = JSON.parse(clean);
+    pack.sentences = [...(pack.sentences||[]), ...(parsed.sentences||[])];
+    pack.dialogues = [...(pack.dialogues||[]), ...(parsed.dialogues||[])];
     pack.updatedAt = new Date().toLocaleDateString('pt-PT');
     await saveSituationsToGH();
     const rowsEl = document.getElementById('sitRows_'+label.replace(/\s/g,'_'));
-    if(rowsEl) rowsEl.innerHTML = renderSentenceRows(pack.sentences, label);
-    showToast(`✅ Added ${newSentences.length} more sentences!`);
+    if(rowsEl) rowsEl.innerHTML = renderSentenceRows(pack.sentences, label, pack.dialogues);
+    showToast(`✅ Added more content to ${label}!`);
   }catch(e){ showToast('Failed: '+e.message); }
   if(btn){ btn.textContent='+ More'; btn.disabled=false; }
 }
@@ -2386,7 +2451,7 @@ async function deleteSentenceFromPack(label, index){
   pack.sentences = pack.sentences.filter((_,i)=>i!==index);
   await saveSituationsToGH();
   const rowsEl = document.getElementById('sitRows_'+label.replace(/\s/g,'_'));
-  if(rowsEl) rowsEl.innerHTML = renderSentenceRows(pack.sentences, label);
+  if(rowsEl) rowsEl.innerHTML = renderSentenceRows(pack.sentences, label, pack.dialogues||[]);
   showToast('Sentence removed.');
 }
 
@@ -2500,7 +2565,7 @@ async function addExtractedBatch(toAdd){
     const newWord = { id: Date.now()+added, word: w.word, translation: w.translation,
       category: w.category, notes: '', examples: [],
       freq: w.freq || null,
-      tenses: w.category==='Verb' ? {present:[],past:[],future:[]} : undefined,
+      tenses: w.category==='Verb' ? {present:[],'future-peri':[],'future-simple':[],past:[]} : undefined,
       addedAt: new Date().toLocaleDateString('pt-PT') };
     words.push(newWord);
     existingIds.add(w.word.toLowerCase());
