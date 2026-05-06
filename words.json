@@ -4160,7 +4160,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "04/05/2026",
-    "generatingExample": false,
+    "generatingExample": true,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -4262,7 +4262,7 @@
       ]
     },
     "_activeTense": "future",
-    "_generatingTense": null
+    "_generatingTense": "future"
   },
   {
     "id": 1777899047917,
@@ -4272,7 +4272,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "04/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -4294,18 +4294,18 @@
         },
         {
           "pronoun": "nós",
-          "pt": "Nós usamos bicicletas.",
-          "en": "We use bicycles."
+          "pt": "Nós usamos carros.",
+          "en": "We use cars."
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês usam carros.",
-          "en": "You use cars."
+          "pt": "Vocês usam bicicletas.",
+          "en": "You use bicycles."
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles usam fones.",
-          "en": "They use headphones."
+          "pt": "Eles usam futebol.",
+          "en": "They use football."
         }
       ],
       "past": [
@@ -4438,7 +4438,7 @@
       ]
     },
     "_activeTense": "present",
-    "_generatingTense": "present"
+    "_generatingTense": null
   },
   {
     "id": 1778010636059,
