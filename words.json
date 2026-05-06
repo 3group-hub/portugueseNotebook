@@ -5025,40 +5025,40 @@
     "notes": "",
     "examples": [],
     "addedAt": "06/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu venho todos os dias",
-          "en": "I come every day"
+          "pt": "Eu venho todos os dias.",
+          "en": "I come every day."
         },
         {
           "pronoun": "tu",
-          "pt": "Tu vens comigo",
-          "en": "You come with me"
+          "pt": "Tu vens comigo.",
+          "en": "You come with me."
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela vem agora",
-          "en": "She comes now"
+          "pt": "Ela vem agora.",
+          "en": "She comes now."
         },
         {
           "pronoun": "nós",
-          "pt": "Nós vamos juntos",
-          "en": "We come together"
+          "pt": "Nós vamos juntos.",
+          "en": "We come together."
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês vêm também",
-          "en": "You come too"
+          "pt": "Vocês vêm hoje.",
+          "en": "You come today."
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles vêm depois",
-          "en": "They come later"
+          "pt": "Eles vêm amanhã.",
+          "en": "They come tomorrow."
         }
       ],
       "past": [
@@ -5159,6 +5159,17 @@
       ]
     },
     "_activeTense": "present",
-    "_generatingTense": "present"
+    "_generatingTense": null
+  },
+  {
+    "id": 1778076579930,
+    "word": "sair",
+    "translation": "leave (to go out)",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "06/05/2026",
+    "generatingExample": true,
+    "assessingFreq": true
   }
 ]
