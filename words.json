@@ -5106,7 +5106,7 @@
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ele/Ela vai vir",
+          "pt": "Ele/ela vai vir",
           "en": "He/She will come"
         },
         {
@@ -5121,7 +5121,7 @@
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles/Elas vão vir",
+          "pt": "Eles/elas vão vir",
           "en": "They will come"
         }
       ],
@@ -5158,7 +5158,7 @@
         }
       ]
     },
-    "_activeTense": "future-peri",
-    "_generatingTense": "future-peri"
+    "_activeTense": "present",
+    "_generatingTense": "present"
   }
 ]
