@@ -5169,7 +5169,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "06/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -5269,9 +5269,51 @@
           "en": "They will leave"
         }
       ],
-      "future-simple": []
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu sairei cedo",
+          "en": "I will leave early"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu sairás tarde",
+          "en": "You will leave late"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela sairá agora",
+          "en": "She will leave now"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós sairemos juntos",
+          "en": "We will leave together"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês sairão tarde",
+          "en": "You will leave late"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles sairão logo",
+          "en": "They will leave soon"
+        }
+      ]
     },
     "_activeTense": "future-simple",
-    "_generatingTense": "future-simple"
+    "_generatingTense": null
+  },
+  {
+    "id": 1778076693101,
+    "word": "ler",
+    "translation": "to read",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "06/05/2026",
+    "generatingExample": true,
+    "assessingFreq": true
   }
 ]
