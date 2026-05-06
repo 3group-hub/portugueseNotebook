@@ -5789,6 +5789,23 @@
     "translation": "First name",
     "category": "Noun",
     "notes": "",
+    "examples": [
+      {
+        "pt": "O nome proprio é único",
+        "en": "The first name is unique"
+      }
+    ],
+    "addedAt": "06/05/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common"
+  },
+  {
+    "id": 1778077196427,
+    "word": "Nome próprio",
+    "translation": "First name",
+    "category": "Noun",
+    "notes": "",
     "examples": [],
     "addedAt": "06/05/2026",
     "generatingExample": true,
