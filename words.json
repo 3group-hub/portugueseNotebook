@@ -5457,7 +5457,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "06/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -5557,9 +5557,51 @@
           "en": "They will listen"
         }
       ],
-      "future-simple": []
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu ouvirei",
+          "en": "I will listen"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu ouvirás",
+          "en": "You will listen"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela ouvirá",
+          "en": "She will listen"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós ouviremos",
+          "en": "We will listen"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês ouvirão",
+          "en": "You will listen"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles ouvirão",
+          "en": "They will listen"
+        }
+      ]
     },
     "_activeTense": "future-simple",
-    "_generatingTense": "future-simple"
+    "_generatingTense": null
+  },
+  {
+    "id": 1778076829807,
+    "word": "Agora",
+    "translation": "Now",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "06/05/2026",
+    "generatingExample": true,
+    "assessingFreq": true
   }
 ]
