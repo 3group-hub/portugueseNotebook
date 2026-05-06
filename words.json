@@ -5620,11 +5620,34 @@
       {
         "pt": "Tenho alguma comida em casa",
         "en": "I have some food at home"
+      },
+      {
+        "pt": "Quero alguma água, por favor",
+        "en": "I want some water, please"
+      },
+      {
+        "pt": "Há alguma fruta na mesa",
+        "en": "There is some fruit on the table"
+      },
+      {
+        "pt": "Tenho alguma roupa suja",
+        "en": "I have some dirty clothes"
       }
     ],
     "addedAt": "06/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential"
+  },
+  {
+    "id": 1778076982500,
+    "word": "Vijo",
+    "translation": "I see",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "06/05/2026",
+    "generatingExample": true,
+    "assessingFreq": true
   }
 ]
