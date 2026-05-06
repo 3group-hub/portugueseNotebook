@@ -4738,6 +4738,46 @@
     "examples": [],
     "addedAt": "06/05/2026",
     "generatingExample": true,
-    "assessingFreq": true
+    "assessingFreq": false,
+    "freq": "essential",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu ponho o livro",
+          "en": "I put the book"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu pões o livro",
+          "en": "You put the book"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela põe o livro",
+          "en": "She puts the book"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós pomos o livro",
+          "en": "We put the book"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês põem o livro",
+          "en": "You put the book"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles põem o livro",
+          "en": "They put the book"
+        }
+      ],
+      "past": [],
+      "future-peri": [],
+      "future-simple": []
+    },
+    "_activeTense": "past",
+    "_generatingTense": "past"
   }
 ]
