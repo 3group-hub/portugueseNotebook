@@ -4231,38 +4231,38 @@
       "future": [
         {
           "pronoun": "eu",
-          "pt": "Eu vou morar",
-          "en": "I will live"
+          "pt": "Eu morarei em Lisboa",
+          "en": "I will live in Lisbon"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu vais morar",
-          "en": "You will live"
+          "pt": "Tu morarás em casa",
+          "en": "You will live at home"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela vai morar",
-          "en": "She will live"
+          "pt": "Ela morará em Paris",
+          "en": "She will live in Paris"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós vamos morar",
-          "en": "We will live"
+          "pt": "Nós moraremos juntos",
+          "en": "We will live together"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês vão morar",
-          "en": "You will live"
+          "pt": "Vocês morarão perto",
+          "en": "You will live nearby"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles vão morar",
-          "en": "They will live"
+          "pt": "Eles morarão lá",
+          "en": "They will live there"
         }
       ]
     },
-    "_activeTense": "future",
-    "_generatingTense": "future"
+    "_activeTense": "future-simple",
+    "_generatingTense": "future-simple"
   },
   {
     "id": 1777899047917,
