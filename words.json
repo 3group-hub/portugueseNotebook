@@ -4726,7 +4726,18 @@
         }
       ]
     },
-    "_activeTense": "past",
+    "_activeTense": "present",
     "_generatingTense": null
+  },
+  {
+    "id": 1778076247231,
+    "word": "por",
+    "translation": "put",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "06/05/2026",
+    "generatingExample": true,
+    "assessingFreq": true
   }
 ]
