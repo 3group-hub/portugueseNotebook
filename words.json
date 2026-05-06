@@ -4403,10 +4403,42 @@
           "pt": "Eles usarão um barco",
           "en": "They will use a boat"
         }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou usar",
+          "en": "I will use"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais usar",
+          "en": "You will use"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai usar",
+          "en": "She will use"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos usar",
+          "en": "We will use"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão usar",
+          "en": "You will use"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão usar",
+          "en": "They will use"
+        }
       ]
     },
-    "_activeTense": "future-peri",
-    "_generatingTense": "future-peri"
+    "_activeTense": "present",
+    "_generatingTense": "present"
   },
   {
     "id": 1778010636059,
