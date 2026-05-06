@@ -5715,10 +5715,41 @@
           "en": "They saw"
         }
       ],
-      "future-peri": [],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou ver",
+          "en": "I will see"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais ver",
+          "en": "You will see"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai ver",
+          "en": "She will see"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos ver",
+          "en": "We will see"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão ver",
+          "en": "You will see"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão ver",
+          "en": "They will see"
+        }
+      ],
       "future-simple": []
     },
-    "_activeTense": "future-peri",
-    "_generatingTense": "future-peri"
+    "_activeTense": "future-simple",
+    "_generatingTense": "future-simple"
   }
 ]
