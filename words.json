@@ -4593,7 +4593,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "06/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -4629,7 +4629,38 @@
           "en": "They want a cake"
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu queri um bolo",
+          "en": "I wanted a cake"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu quereste um carro",
+          "en": "You wanted a car"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela queriu um livro",
+          "en": "She wanted a book"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós quisemos um filme",
+          "en": "We wanted a movie"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês quiseram um jogo",
+          "en": "You wanted a game"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles quiseram um hotel",
+          "en": "They wanted a hotel"
+        }
+      ],
       "future-peri": [
         {
           "pronoun": "eu",
@@ -4696,6 +4727,6 @@
       ]
     },
     "_activeTense": "past",
-    "_generatingTense": "past"
+    "_generatingTense": null
   }
 ]
