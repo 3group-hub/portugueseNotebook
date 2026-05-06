@@ -4584,5 +4584,16 @@
     },
     "_activeTense": "past",
     "_generatingTense": null
+  },
+  {
+    "id": 1778076047174,
+    "word": "querer",
+    "translation": "want",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "06/05/2026",
+    "generatingExample": true,
+    "assessingFreq": true
   }
 ]
