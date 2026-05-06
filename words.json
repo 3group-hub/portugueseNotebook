@@ -5062,7 +5062,38 @@
         }
       ],
       "past": [],
-      "future-peri": [],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou vir",
+          "en": "I will come"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais vir",
+          "en": "You will come"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele/Ela vai vir",
+          "en": "He/She will come"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos vir",
+          "en": "We will come"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão vir",
+          "en": "You will come"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles/Elas vão vir",
+          "en": "They will come"
+        }
+      ],
       "future-simple": [
         {
           "pronoun": "eu",
@@ -5096,7 +5127,7 @@
         }
       ]
     },
-    "_activeTense": "future-peri",
-    "_generatingTense": "future-peri"
+    "_activeTense": "past",
+    "_generatingTense": "past"
   }
 ]
