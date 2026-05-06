@@ -5810,11 +5810,34 @@
       {
         "pt": "O meu apélido é Silva",
         "en": "My last name is Silva"
+      },
+      {
+        "pt": "O apélido da minha mãe é Santos",
+        "en": "My mother's last name is Santos"
+      },
+      {
+        "pt": "Esqueci o apélido do professor",
+        "en": "I forgot the teacher's last name"
+      },
+      {
+        "pt": "O apélido do meu pai é Costa",
+        "en": "My father's last name is Costa"
       }
     ],
     "addedAt": "06/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "common"
+  },
+  {
+    "id": 1778077373462,
+    "word": "Língua materna",
+    "translation": "First language",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "06/05/2026",
+    "generatingExample": true,
+    "assessingFreq": true
   }
 ]
