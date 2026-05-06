@@ -4737,7 +4737,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "06/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -4773,7 +4773,38 @@
           "en": "They put the book"
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu pus o livro",
+          "en": "I put the book"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu puseste o prato",
+          "en": "You put the plate"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela pôs a chave",
+          "en": "She put the key"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós pusemos a mesa",
+          "en": "We set the table"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês puseram o quadro",
+          "en": "You put the picture"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles puseram a TV",
+          "en": "They put the TV"
+        }
+      ],
       "future-peri": [
         {
           "pronoun": "eu",
@@ -4840,6 +4871,17 @@
       ]
     },
     "_activeTense": "past",
-    "_generatingTense": "past"
+    "_generatingTense": null
+  },
+  {
+    "id": 1778076415293,
+    "word": "trazer",
+    "translation": "to bring",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "06/05/2026",
+    "generatingExample": true,
+    "assessingFreq": true
   }
 ]
