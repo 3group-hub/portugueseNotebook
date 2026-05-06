@@ -4737,7 +4737,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "06/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -4778,6 +4778,6 @@
       "future-simple": []
     },
     "_activeTense": "past",
-    "_generatingTense": "past"
+    "_generatingTense": null
   }
 ]
