@@ -413,11 +413,53 @@
         "uses": [
           "saber"
         ]
+      },
+      {
+        "pt": "Quero um quarto feliz, por favor.",
+        "en": "I want a happy room, please.",
+        "uses": [
+          "querer",
+          "feliz"
+        ]
+      },
+      {
+        "pt": "Estou com fome, desejo comer.",
+        "en": "I'm hungry, I want to eat.",
+        "uses": [
+          "desejar",
+          "comer",
+          "com fome"
+        ]
+      },
+      {
+        "pt": "O meu trabalho é estudar aqui.",
+        "en": "My work is to study here.",
+        "uses": [
+          "trabalho",
+          "estudar"
+        ]
+      },
+      {
+        "pt": "É frio no quarto, por favor.",
+        "en": "It's cold in the room, please.",
+        "uses": [
+          "é",
+          "frio"
+        ]
+      },
+      {
+        "pt": "Quero ir para o meu destino.",
+        "en": "I want to go to my destiny.",
+        "uses": [
+          "querer",
+          "ir",
+          "destino"
+        ]
       }
     ],
     "level": "essential",
     "cefrShort": "A1/A2",
-    "updatedAt": "02/05/2026"
+    "updatedAt": "06/05/2026"
   },
   "Café": {
     "label": "Café",
