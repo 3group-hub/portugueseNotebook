@@ -418,15 +418,20 @@ function renderWordCard(w, showDivider=false){
   const vType=isVerb?verbType(w.word):null;
   const vBadge=isVerb?`<span style="font-size:10px;padding:1px 7px;border-radius:8px;background:${vType==='irregular'?'#7b4ea020':'#1a6b3c15'};color:${vType==='irregular'?'#7b4ea0':'#1a6b3c'};font-weight:700;">${verbTypeLabel(vType)}</span>`:'';
   const examples=w.examples||(w.example?[w.example]:[]);
-  const tenses=w.tenses||{present:[],past:[],future:[]};
+  const tenses=w.tenses||{present:[],past:[],'future-peri':[],'future-simple':[]};
   const activeTense=activeTenses[w.id]||'present';
 
   let examplesHTML='';
   if(isVerb){
-    const tabs=['present','past','future'];
+    const tabs=[
+      {key:'present',       label:'Present'},
+      {key:'past',          label:'Past'},
+      {key:'future-peri',   label:'Fut. Perifrástico'},
+      {key:'future-simple', label:'Fut. Simples'},
+    ];
     const tabsHTML=tabs.map(t=>`
-      <button class="tense-tab${activeTense===t?' active':''}" onclick="setTense(${w.id},'${t}')">
-        ${t.charAt(0).toUpperCase()+t.slice(1)}
+      <button class="tense-tab${activeTense===t.key?' active':''}" onclick="setTense(${w.id},'${t.key}')">
+        ${t.label}
       </button>`).join('');
     const rows=tenses[activeTense]||[];
     const rowsHTML=rows.map((ex,i)=>`
@@ -444,7 +449,7 @@ function renderWordCard(w, showDivider=false){
     examplesHTML=`
       <div class="tense-tabs">${tabsHTML}</div>
       <div class="examples-section">
-        ${rows.length===0?`<div style="padding:10px 14px;font-size:12px;color:#ccc;font-style:italic;">No ${activeTense} conjugations yet</div>`:rowsHTML}
+        ${rows.length===0?`<div style="padding:10px 14px;font-size:12px;color:#ccc;font-style:italic;">No conjugations yet for this tense</div>`:rowsHTML}
       </div>`;
   } else {
     const rowsHTML=examples.map((ex,i)=>`
@@ -847,26 +852,60 @@ function renderViewerPacks(){
           <div style="font-size:16px;font-weight:700;color:var(--navy);">${openPack.label}</div>
           <div style="display:flex;align-items:center;gap:8px;margin-top:3px;flex-wrap:wrap;">
             ${openPack.cefrShort?`<span style="font-size:11px;padding:1px 7px;border-radius:5px;background:#f5f5f5;color:#888;font-weight:700;border:1px solid #ddd;">${openPack.cefrShort}</span>`:''}
-            <span style="font-size:11px;color:#aaa;">${openPack.sentences.length} phrases</span>
+            <span style="font-size:11px;color:#aaa;">${(openPack.sentences||[]).length} sentences · ${(openPack.dialogues||[]).length} dialogue${(openPack.dialogues||[]).length!==1?'s':''}</span>
           </div>
         </div>
       </div>
       <div style="background:#fdfaf7;">
-        ${openPack.sentences.map((s,i)=>`
-          <div style="padding:10px 16px;${i<openPack.sentences.length-1?'border-bottom:1px solid #f0ebe4;':''}">
-            <div style="display:flex;align-items:center;gap:5px;flex-wrap:wrap;">
-              <span style="font-size:11px;color:#ccc;flex-shrink:0;">${i+1}.</span>
-              <span style="font-size:14px;color:var(--navy);">${s.pt}</span>
-              <button class="speak-btn" onclick="speakText('${escQ(s.pt)}','pt-PT',this)">🔊</button>
-            </div>
-            <div style="display:flex;align-items:center;gap:5px;margin-top:3px;">
-              <span style="font-size:12px;color:#999;font-style:italic;">${getTranslation(s.en)}</span>
-              <button class="speak-btn" onclick="speakText('${escQ(s.en)}','en-GB',this)" style="font-size:11px;">🔊</button>
-            </div>
-            ${s.uses&&s.uses.length?`<div style="margin-top:4px;display:flex;gap:4px;flex-wrap:wrap;">
-              ${s.uses.map(u=>`<span style="font-size:10px;padding:1px 6px;border-radius:8px;background:rgba(26,58,92,0.07);color:var(--navy);border:1px solid rgba(26,58,92,0.12);">📖 ${u}</span>`).join('')}
-            </div>`:''}
-          </div>`).join('')}
+        ${(openPack.sentences||[]).length ? `
+          <div style="padding:8px 14px 4px;font-size:10px;color:#aaa;text-transform:uppercase;letter-spacing:0.06em;font-weight:700;">Sentences</div>
+          ${(openPack.sentences||[]).map((s,i)=>`
+            <div style="padding:10px 16px;${i<openPack.sentences.length-1?'border-bottom:1px solid #f0ebe4;':''}">
+              <div style="display:flex;align-items:center;gap:5px;flex-wrap:wrap;">
+                <span style="font-size:11px;color:#ccc;flex-shrink:0;">${i+1}.</span>
+                <span style="font-size:14px;color:var(--navy);">${s.pt}</span>
+                <button class="speak-btn" onclick="speakText('${escQ(s.pt)}','pt-PT',this)">🔊</button>
+              </div>
+              <div style="display:flex;align-items:center;gap:5px;margin-top:3px;">
+                <span style="font-size:12px;color:#999;font-style:italic;">${getTranslation(s.en)}</span>
+                <button class="speak-btn" onclick="speakText('${escQ(s.en)}','en-GB',this)" style="font-size:11px;">🔊</button>
+              </div>
+              ${s.uses&&s.uses.length?`<div style="margin-top:3px;display:flex;gap:3px;flex-wrap:wrap;">${s.uses.map(u=>`<span style="font-size:9px;padding:1px 5px;border-radius:6px;background:rgba(26,58,92,0.07);color:var(--navy);border:1px solid rgba(26,58,92,0.12);">📖 ${u}</span>`).join('')}</div>`:''}
+            </div>`).join('')}
+        ` : ''}
+        ${(openPack.dialogues||[]).length ? `
+          <div style="padding:8px 14px 0;font-size:10px;color:#aaa;text-transform:uppercase;letter-spacing:0.06em;font-weight:700;border-top:2px solid #f0ebe4;margin-top:4px;">Dialogues</div>
+          ${(openPack.dialogues||[]).map(dialogue=>{
+            const speakerColors = {A:'#1a3a5c',B:'#1a6b3c',C:'#b5830a',D:'#7b4ea0'};
+            return `<div style="background:#f5f9ff;border-radius:8px;margin:10px 14px;overflow:hidden;border:1px solid #dde8f5;">
+              <div style="padding:8px 12px;background:#e8f0fb;display:flex;align-items:center;gap:8px;">
+                <span style="font-size:14px;">💬</span>
+                <span style="font-size:12px;font-weight:700;color:#1a3a5c;">${dialogue.title||'Dialogue'}</span>
+              </div>
+              ${(dialogue.lines||[]).map((line,i)=>{
+                const color=speakerColors[line.speaker]||'#555';
+                const isLeft=line.speaker==='A'||line.speaker==='C';
+                return `<div style="padding:8px 12px;${i<dialogue.lines.length-1?'border-bottom:1px solid #dde8f5;':''}${isLeft?'':'background:#fafcff;'}display:flex;gap:10px;align-items:flex-start;">
+                  <div style="flex-shrink:0;text-align:center;min-width:36px;">
+                    <div style="width:28px;height:28px;border-radius:50%;background:${color}22;border:1px solid ${color}44;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:${color};">${line.speaker}</div>
+                    <div style="font-size:9px;color:#aaa;margin-top:2px;">${line.role||''}</div>
+                  </div>
+                  <div style="flex:1;">
+                    <div style="display:flex;align-items:center;gap:5px;flex-wrap:wrap;">
+                      <span style="font-size:13px;color:var(--navy);font-weight:500;">${line.pt}</span>
+                      <button class="speak-btn" onclick="speakText('${escQ(line.pt)}','pt-PT',this)">🔊</button>
+                    </div>
+                    <div style="display:flex;align-items:center;gap:5px;margin-top:2px;">
+                      <span style="font-size:12px;color:#888;font-style:italic;">${getTranslation(line.en)}</span>
+                      <button class="speak-btn" onclick="speakText('${escQ(line.en)}','en-GB',this)" style="font-size:11px;">🔊</button>
+                    </div>
+                    ${line.uses&&line.uses.length?`<div style="margin-top:3px;display:flex;gap:3px;flex-wrap:wrap;">${line.uses.map(u=>`<span style="font-size:9px;padding:1px 5px;border-radius:6px;background:rgba(26,58,92,0.07);color:var(--navy);border:1px solid rgba(26,58,92,0.12);">📖 ${u}</span>`).join('')}</div>`:''}
+                  </div>
+                </div>`;
+              }).join('')}
+            </div>`;
+          }).join('')}
+        ` : ''}
       </div>
     </div>` : '';
 
