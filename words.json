@@ -5314,6 +5314,46 @@
     "examples": [],
     "addedAt": "06/05/2026",
     "generatingExample": true,
-    "assessingFreq": true
+    "assessingFreq": false,
+    "freq": "essential",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu leio livros",
+          "en": "I read books"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu lês livros",
+          "en": "You read books"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela lê livros",
+          "en": "She reads books"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós lemos livros",
+          "en": "We read books"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês lêem livros",
+          "en": "You read books"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles lêem livros",
+          "en": "They read books"
+        }
+      ],
+      "past": [],
+      "future-peri": [],
+      "future-simple": []
+    },
+    "_activeTense": "past",
+    "_generatingTense": "past"
   }
 ]
