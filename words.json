@@ -5313,7 +5313,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "06/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -5413,9 +5413,51 @@
           "en": "They will read"
         }
       ],
-      "future-simple": []
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu lererei um livro",
+          "en": "I will read a book"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu leres um jornal",
+          "en": "You will read a newspaper"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela lerá uma revista",
+          "en": "She will read a magazine"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós leremos livros",
+          "en": "We will read books"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês lerão histórias",
+          "en": "You will read stories"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles lerão notícias",
+          "en": "They will read news"
+        }
+      ]
     },
     "_activeTense": "future-simple",
-    "_generatingTense": "future-simple"
+    "_generatingTense": null
+  },
+  {
+    "id": 1778076747401,
+    "word": "Ouvir",
+    "translation": "Listen",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "06/05/2026",
+    "generatingExample": true,
+    "assessingFreq": true
   }
 ]
