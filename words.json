@@ -5616,9 +5616,15 @@
     "translation": "some",
     "category": "Noun",
     "notes": "",
-    "examples": [],
+    "examples": [
+      {
+        "pt": "Tenho alguma comida em casa",
+        "en": "I have some food at home"
+      }
+    ],
     "addedAt": "06/05/2026",
     "generatingExample": true,
-    "assessingFreq": true
+    "assessingFreq": false,
+    "freq": "essential"
   }
 ]
