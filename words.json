@@ -5349,11 +5349,42 @@
           "en": "They read books"
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu li um livro.",
+          "en": "I read a book."
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu lestes um jornal.",
+          "en": "You read a newspaper."
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela leu uma revista.",
+          "en": "She read a magazine."
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós lemos um livro.",
+          "en": "We read a book."
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês leram um jornal.",
+          "en": "You read a newspaper."
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles leram um livro.",
+          "en": "They read a book."
+        }
+      ],
       "future-peri": [],
       "future-simple": []
     },
-    "_activeTense": "past",
-    "_generatingTense": "past"
+    "_activeTense": "future-peri",
+    "_generatingTense": "future-peri"
   }
 ]
