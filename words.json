@@ -5599,6 +5599,23 @@
     "translation": "Now",
     "category": "Noun",
     "notes": "",
+    "examples": [
+      {
+        "pt": "Agora é tarde",
+        "en": "Now it's late"
+      }
+    ],
+    "addedAt": "06/05/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "essential"
+  },
+  {
+    "id": 1778076879475,
+    "word": "alguma",
+    "translation": "some",
+    "category": "Noun",
+    "notes": "",
     "examples": [],
     "addedAt": "06/05/2026",
     "generatingExample": true,
