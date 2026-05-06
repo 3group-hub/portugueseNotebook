@@ -4881,7 +4881,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "06/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -4917,7 +4917,38 @@
           "en": "They bring money"
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu trazia",
+          "en": "I brought"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu trazeste",
+          "en": "You brought"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele trouxe",
+          "en": "He/She brought"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós trazemos",
+          "en": "We brought"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês trouxeram",
+          "en": "You brought"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles trouxeram",
+          "en": "They brought"
+        }
+      ],
       "future-peri": [
         {
           "pronoun": "eu",
@@ -4984,6 +5015,17 @@
       ]
     },
     "_activeTense": "past",
-    "_generatingTense": "past"
+    "_generatingTense": null
+  },
+  {
+    "id": 1778076494404,
+    "word": "vir",
+    "translation": "to come",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "06/05/2026",
+    "generatingExample": true,
+    "assessingFreq": true
   }
 ]
