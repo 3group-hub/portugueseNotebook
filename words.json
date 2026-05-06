@@ -5160,5 +5160,16 @@
     },
     "_activeTense": "present",
     "_generatingTense": null
+  },
+  {
+    "id": 1778076608740,
+    "word": "sair",
+    "translation": "leave",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "06/05/2026",
+    "generatingExample": true,
+    "assessingFreq": true
   }
 ]
