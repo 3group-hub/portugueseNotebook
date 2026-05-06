@@ -4371,10 +4371,42 @@
           "pt": "Eles vão usar.",
           "en": "They will use."
         }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu usarei um computador",
+          "en": "I will use a computer"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu usares um telemóvel",
+          "en": "You will use a mobile phone"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela usará um lápis",
+          "en": "She will use a pencil"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós usaremos um carro",
+          "en": "We will use a car"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês usarão um avião",
+          "en": "You will use a plane"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles usarão um barco",
+          "en": "They will use a boat"
+        }
       ]
     },
-    "_activeTense": "future-simple",
-    "_generatingTense": "future-simple"
+    "_activeTense": "future-peri",
+    "_generatingTense": "future-peri"
   },
   {
     "id": 1778010636059,
