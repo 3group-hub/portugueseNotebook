@@ -5683,11 +5683,42 @@
           "en": "They see"
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vi",
+          "en": "I saw"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu viste",
+          "en": "You saw"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela viu",
+          "en": "She saw"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vimos",
+          "en": "We saw"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês viram",
+          "en": "You saw"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles viram",
+          "en": "They saw"
+        }
+      ],
       "future-peri": [],
       "future-simple": []
     },
-    "_activeTense": "past",
-    "_generatingTense": "past"
+    "_activeTense": "future-peri",
+    "_generatingTense": "future-peri"
   }
 ]
