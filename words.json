@@ -5458,6 +5458,46 @@
     "examples": [],
     "addedAt": "06/05/2026",
     "generatingExample": true,
-    "assessingFreq": true
+    "assessingFreq": false,
+    "freq": "essential",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu ouço música",
+          "en": "I listen to music"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu ouves TV",
+          "en": "You listen to TV"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela ouve rádio",
+          "en": "She listens to the radio"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós ouvimos notícias",
+          "en": "We listen to news"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês ouvem música",
+          "en": "You listen to music"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles ouvem rádio",
+          "en": "They listen to the radio"
+        }
+      ],
+      "past": [],
+      "future-peri": [],
+      "future-simple": []
+    },
+    "_activeTense": "past",
+    "_generatingTense": "past"
   }
 ]
