@@ -5835,6 +5835,23 @@
     "translation": "First language",
     "category": "Noun",
     "notes": "",
+    "examples": [
+      {
+        "pt": "A língua materna é o português",
+        "en": "The first language is Portuguese"
+      }
+    ],
+    "addedAt": "06/05/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common"
+  },
+  {
+    "id": 1778077402720,
+    "word": "outro",
+    "translation": "other",
+    "category": "Noun",
+    "notes": "",
     "examples": [],
     "addedAt": "06/05/2026",
     "generatingExample": true,
