@@ -5205,11 +5205,42 @@
           "en": "They leave early."
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu saí",
+          "en": "I left"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu saíste",
+          "en": "You left"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela saiu",
+          "en": "She left"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós saímos",
+          "en": "We left"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês saíram",
+          "en": "You left"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles saíram",
+          "en": "They left"
+        }
+      ],
       "future-peri": [],
       "future-simple": []
     },
-    "_activeTense": "past",
-    "_generatingTense": "past"
+    "_activeTense": "future-peri",
+    "_generatingTense": "future-peri"
   }
 ]
