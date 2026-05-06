@@ -5170,6 +5170,46 @@
     "examples": [],
     "addedAt": "06/05/2026",
     "generatingExample": true,
-    "assessingFreq": true
+    "assessingFreq": false,
+    "freq": "essential",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu saio cedo.",
+          "en": "I leave early."
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu sais à noite.",
+          "en": "You leave at night."
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela sai agora.",
+          "en": "She leaves now."
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós saímos juntos.",
+          "en": "We leave together."
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês saem tarde.",
+          "en": "You leave late."
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles saem cedo.",
+          "en": "They leave early."
+        }
+      ],
+      "past": [],
+      "future-peri": [],
+      "future-simple": []
+    },
+    "_activeTense": "past",
+    "_generatingTense": "past"
   }
 ]
