@@ -5237,10 +5237,41 @@
           "en": "They left"
         }
       ],
-      "future-peri": [],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou sair",
+          "en": "I will leave"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais sair",
+          "en": "You will leave"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele/ela vai sair",
+          "en": "He/She will leave"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos sair",
+          "en": "We will leave"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão sair",
+          "en": "You will leave"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles/elas vão sair",
+          "en": "They will leave"
+        }
+      ],
       "future-simple": []
     },
-    "_activeTense": "future-peri",
-    "_generatingTense": "future-peri"
+    "_activeTense": "future-simple",
+    "_generatingTense": "future-simple"
   }
 ]
