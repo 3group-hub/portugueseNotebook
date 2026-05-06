@@ -455,11 +455,92 @@
           "ir",
           "destino"
         ]
+      },
+      {
+        "pt": "Quero um quarto com esperança.",
+        "en": "I want a room with hope.",
+        "uses": [
+          "esperança"
+        ]
+      },
+      {
+        "pt": "Desejo ir para o meu quarto agora.",
+        "en": "I want to go to my room now.",
+        "uses": [
+          "desejo"
+        ]
+      },
+      {
+        "pt": "O meu quarto é escasso.",
+        "en": "My room is scarce.",
+        "uses": [
+          "escasso"
+        ]
       }
     ],
     "level": "essential",
     "cefrShort": "A1/A2",
-    "updatedAt": "06/05/2026"
+    "updatedAt": "06/05/2026",
+    "dialogues": [
+      {
+        "title": "Check-in",
+        "lines": [
+          {
+            "speaker": "A",
+            "role": "Customer",
+            "pt": "Bom dia, quero fazer check-out.",
+            "en": "Good morning, I want to check out.",
+            "uses": [
+              "Bom dia"
+            ]
+          },
+          {
+            "speaker": "B",
+            "role": "Staff",
+            "pt": "O que é que você quer fazer?",
+            "en": "What do you want to do?",
+            "uses": [
+              "quer"
+            ]
+          },
+          {
+            "speaker": "A",
+            "role": "Customer",
+            "pt": "Desejo pagar a conta.",
+            "en": "I want to pay the bill.",
+            "uses": [
+              "desejo"
+            ]
+          },
+          {
+            "speaker": "B",
+            "role": "Staff",
+            "pt": "A conta é alta.",
+            "en": "The bill is high.",
+            "uses": [
+              "alta"
+            ]
+          },
+          {
+            "speaker": "A",
+            "role": "Customer",
+            "pt": "Estou cansado, quero ir embora.",
+            "en": "I am tired, I want to leave.",
+            "uses": [
+              "cansado",
+              "quer"
+            ]
+          },
+          {
+            "speaker": "B",
+            "role": "Staff",
+            "pt": "Posso ajudar com algo mais?",
+            "en": "Can I help you with something else?",
+            "uses": []
+          }
+        ]
+      }
+    ]
   },
   "Café": {
     "label": "Café",
