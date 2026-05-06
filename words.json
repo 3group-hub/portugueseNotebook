@@ -4774,10 +4774,41 @@
         }
       ],
       "past": [],
-      "future-peri": [],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou por",
+          "en": "I will put"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais por",
+          "en": "You will put"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele/Ela vai por",
+          "en": "He/She will put"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos por",
+          "en": "We will put"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão por",
+          "en": "You will put"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles/Elas vão por",
+          "en": "They will put"
+        }
+      ],
       "future-simple": []
     },
-    "_activeTense": "future-peri",
-    "_generatingTense": "future-peri"
+    "_activeTense": "future-simple",
+    "_generatingTense": "future-simple"
   }
 ]
