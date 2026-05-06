@@ -4919,9 +4919,40 @@
       ],
       "past": [],
       "future-peri": [],
-      "future-simple": []
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu trarei",
+          "en": "I will bring"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu trarás",
+          "en": "You will bring"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela trará",
+          "en": "She will bring"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós traremos",
+          "en": "We will bring"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês trarão",
+          "en": "You will bring"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles trarão",
+          "en": "They will bring"
+        }
+      ]
     },
-    "_activeTense": "future-simple",
-    "_generatingTense": "future-simple"
+    "_activeTense": "future-peri",
+    "_generatingTense": "future-peri"
   }
 ]
