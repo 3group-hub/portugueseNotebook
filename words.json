@@ -4882,6 +4882,46 @@
     "examples": [],
     "addedAt": "06/05/2026",
     "generatingExample": true,
-    "assessingFreq": true
+    "assessingFreq": false,
+    "freq": "essential",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu trago água",
+          "en": "I bring water"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu trazes um livro",
+          "en": "You bring a book"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela traz um presente",
+          "en": "She brings a gift"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós trazemos comida",
+          "en": "We bring food"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês trazem flores",
+          "en": "You bring flowers"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles trazem dinheiro",
+          "en": "They bring money"
+        }
+      ],
+      "past": [],
+      "future-peri": [],
+      "future-simple": []
+    },
+    "_activeTense": "future-simple",
+    "_generatingTense": "future-simple"
   }
 ]
