@@ -5061,7 +5061,38 @@
           "en": "They come later"
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vim",
+          "en": "I came"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vieste",
+          "en": "You came"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela veio",
+          "en": "She came"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós viemos",
+          "en": "We came"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vieram",
+          "en": "You came"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vieram",
+          "en": "They came"
+        }
+      ],
       "future-peri": [
         {
           "pronoun": "eu",
@@ -5127,7 +5158,7 @@
         }
       ]
     },
-    "_activeTense": "past",
-    "_generatingTense": "past"
+    "_activeTense": "future-peri",
+    "_generatingTense": "future-peri"
   }
 ]
