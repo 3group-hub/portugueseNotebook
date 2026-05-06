@@ -5647,7 +5647,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "06/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -5747,9 +5747,51 @@
           "en": "They will see"
         }
       ],
-      "future-simple": []
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu verei",
+          "en": "I will see"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu verás",
+          "en": "You will see"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela verá",
+          "en": "She will see"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós veremos",
+          "en": "We will see"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês verão",
+          "en": "You will see"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles verão",
+          "en": "They will see"
+        }
+      ]
     },
     "_activeTense": "future-simple",
-    "_generatingTense": "future-simple"
+    "_generatingTense": null
+  },
+  {
+    "id": 1778077170819,
+    "word": "Nome proprio",
+    "translation": "First name",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "06/05/2026",
+    "generatingExample": true,
+    "assessingFreq": true
   }
 ]
