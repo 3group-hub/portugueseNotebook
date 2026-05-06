@@ -4918,7 +4918,38 @@
         }
       ],
       "past": [],
-      "future-peri": [],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou trazer",
+          "en": "I will bring"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais trazer",
+          "en": "You will bring"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele/ela vai trazer",
+          "en": "He/She will bring"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos trazer",
+          "en": "We will bring"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão trazer",
+          "en": "You will bring"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles/elas vão trazer",
+          "en": "They will bring"
+        }
+      ],
       "future-simple": [
         {
           "pronoun": "eu",
@@ -4952,7 +4983,7 @@
         }
       ]
     },
-    "_activeTense": "future-peri",
-    "_generatingTense": "future-peri"
+    "_activeTense": "past",
+    "_generatingTense": "past"
   }
 ]
