@@ -1130,5 +1130,114 @@
     "level": "essential",
     "cefrShort": "A1/A2",
     "updatedAt": "02/05/2026"
+  },
+  "Hotel": {
+    "label": "Hotel",
+    "emoji": "🏨",
+    "sentences": [
+      {
+        "pt": "Quero o quarto.",
+        "en": "I want the room.",
+        "uses": [
+          "querer"
+        ]
+      },
+      {
+        "pt": "Estou cansado.",
+        "en": "I am tired.",
+        "uses": [
+          "cansado"
+        ]
+      },
+      {
+        "pt": "Desejo um quarto.",
+        "en": "I desire a room.",
+        "uses": [
+          "Desejar"
+        ]
+      },
+      {
+        "pt": "Estou com fome.",
+        "en": "I am hungry.",
+        "uses": [
+          "Com fome"
+        ]
+      },
+      {
+        "pt": "O hotel é alto.",
+        "en": "The hotel is tall.",
+        "uses": [
+          "alta"
+        ]
+      }
+    ],
+    "dialogues": [
+      {
+        "title": "Check-in",
+        "lines": [
+          {
+            "speaker": "A",
+            "role": "Customer",
+            "pt": "Bom dia, quero o quarto.",
+            "en": "Good morning, I want the room.",
+            "uses": [
+              "Bom dia",
+              "querer"
+            ]
+          },
+          {
+            "speaker": "B",
+            "role": "Receptionist",
+            "pt": "Sim, como posso ajudar?",
+            "en": "Yes, how can I help?",
+            "uses": []
+          },
+          {
+            "speaker": "A",
+            "role": "Customer",
+            "pt": "Desejo um quarto com vista.",
+            "en": "I desire a room with a view.",
+            "uses": [
+              "Desejar"
+            ]
+          },
+          {
+            "speaker": "B",
+            "role": "Receptionist",
+            "pt": "Ok, temos um quarto disponível.",
+            "en": "Ok, we have a room available.",
+            "uses": []
+          },
+          {
+            "speaker": "A",
+            "role": "Customer",
+            "pt": "Estou cansado, onde está o elevador?",
+            "en": "I am tired, where is the elevator?",
+            "uses": [
+              "cansado"
+            ]
+          },
+          {
+            "speaker": "B",
+            "role": "Receptionist",
+            "pt": "O elevador está à esquerda.",
+            "en": "The elevator is to the left.",
+            "uses": []
+          },
+          {
+            "speaker": "A",
+            "role": "Customer",
+            "pt": "Obrigado, estou feliz.",
+            "en": "Thank you, I am happy.",
+            "uses": [
+              "feliz"
+            ]
+          }
+        ]
+      }
+    ],
+    "level": "essential",
+    "cefrShort": "A1/A2",
+    "updatedAt": "06/05/2026"
   }
 }
