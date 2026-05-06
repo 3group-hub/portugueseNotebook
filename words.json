@@ -5852,9 +5852,15 @@
     "translation": "other",
     "category": "Noun",
     "notes": "",
-    "examples": [],
+    "examples": [
+      {
+        "pt": "Eu gosto de outro café",
+        "en": "I like another coffee"
+      }
+    ],
     "addedAt": "06/05/2026",
-    "generatingExample": true,
-    "assessingFreq": true
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "essential"
   }
 ]
