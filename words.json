@@ -5493,11 +5493,42 @@
           "en": "They listen to the radio"
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu ouvi",
+          "en": "I listened"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu ouviste",
+          "en": "You listened"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela ouviu",
+          "en": "She listened"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós ouvimos",
+          "en": "We listened"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês ouviram",
+          "en": "You listened"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles ouviram",
+          "en": "They listened"
+        }
+      ],
       "future-peri": [],
       "future-simple": []
     },
-    "_activeTense": "past",
-    "_generatingTense": "past"
+    "_activeTense": "future-peri",
+    "_generatingTense": "future-peri"
   }
 ]
