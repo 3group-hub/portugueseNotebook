@@ -5784,31 +5784,20 @@
     "_generatingTense": null
   },
   {
-    "id": 1778077170819,
-    "word": "Nome proprio",
+    "id": 1778077196427,
+    "word": "Nome próprio",
     "translation": "First name",
     "category": "Noun",
     "notes": "",
     "examples": [
       {
-        "pt": "O nome proprio é único",
-        "en": "The first name is unique"
+        "pt": "O nome próprio é escrito em letras maiúsculas",
+        "en": "The first name is written in uppercase letters"
       }
     ],
     "addedAt": "06/05/2026",
     "generatingExample": false,
     "assessingFreq": false,
     "freq": "common"
-  },
-  {
-    "id": 1778077196427,
-    "word": "Nome próprio",
-    "translation": "First name",
-    "category": "Noun",
-    "notes": "",
-    "examples": [],
-    "addedAt": "06/05/2026",
-    "generatingExample": true,
-    "assessingFreq": true
   }
 ]
