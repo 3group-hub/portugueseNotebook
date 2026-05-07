@@ -4097,7 +4097,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "04/05/2026",
-    "generatingExample": false,
+    "generatingExample": true,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -4198,8 +4198,8 @@
         }
       ]
     },
-    "_activeTense": "future",
-    "_generatingTense": null
+    "_activeTense": "future-peri",
+    "_generatingTense": "future-peri"
   },
   {
     "id": 1777898856760,
@@ -5776,7 +5776,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "07/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -5889,7 +5889,7 @@
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela será médica",
+          "pt": "Ela será uma médica",
           "en": "She will be a doctor"
         },
         {
@@ -5899,17 +5899,17 @@
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês serão professores",
-          "en": "You will be teachers"
+          "pt": "Vocês serão bons",
+          "en": "You will be good"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles serão campeões",
-          "en": "They will be champions"
+          "pt": "Eles serão felizes",
+          "en": "They will be happy"
         }
       ]
     },
     "_activeTense": "future-simple",
-    "_generatingTense": "future-simple"
+    "_generatingTense": null
   }
 ]
