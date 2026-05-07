@@ -2683,65 +2683,65 @@
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu dou um livro.",
-          "en": "I give a book."
+          "pt": "Eu dou um livro",
+          "en": "I give a book"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu dás um presente.",
-          "en": "You give a gift."
+          "pt": "Tu dás um presente",
+          "en": "You give a gift"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela dá um abraço.",
-          "en": "She gives a hug."
+          "pt": "Ela dá um beijo",
+          "en": "She gives a kiss"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós damos ajuda.",
-          "en": "We give help."
+          "pt": "Nós damos ajuda",
+          "en": "We give help"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês dão um exemplo.",
-          "en": "You give an example."
+          "pt": "Vocês dão um exemplo",
+          "en": "You give an example"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles dão uma mão.",
-          "en": "They give a hand."
+          "pt": "Eles dão trabalho",
+          "en": "They give work"
         }
       ],
       "past": [
         {
           "pronoun": "eu",
-          "pt": "Eu dei um livro",
-          "en": "I gave a book"
+          "pt": "Eu dei um livro.",
+          "en": "I gave a book."
         },
         {
           "pronoun": "tu",
-          "pt": "Tu deste um brinquedo",
-          "en": "You gave a toy"
+          "pt": "Tu deste um brinquedo.",
+          "en": "You gave a toy."
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela deu um abraço",
-          "en": "She gave a hug"
+          "pt": "Ela deu um abraço.",
+          "en": "She gave a hug."
         },
         {
           "pronoun": "nós",
-          "pt": "Nós demos comida",
-          "en": "We gave food"
+          "pt": "Nós demos um presente.",
+          "en": "We gave a gift."
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês deram ajuda",
-          "en": "You gave help"
+          "pt": "Vocês deram um carro.",
+          "en": "You gave a car."
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles deram presentes",
-          "en": "They gave gifts"
+          "pt": "Eles deram um computador.",
+          "en": "They gave a computer."
         }
       ],
       "future": [
