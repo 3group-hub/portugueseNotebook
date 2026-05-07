@@ -3096,10 +3096,42 @@
           "pt": "Eles vão trabalhar",
           "en": "They will work"
         }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou trabalhar",
+          "en": "I will work"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais trabalhar",
+          "en": "You will work"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai trabalhar",
+          "en": "She will work"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos trabalhar",
+          "en": "We will work"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão trabalhar",
+          "en": "You will work"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão trabalhar",
+          "en": "They will work"
+        }
       ]
     },
-    "_activeTense": "future-peri",
-    "_generatingTense": "future-peri"
+    "_activeTense": "future-simple",
+    "_generatingTense": "future-simple"
   },
   {
     "id": 1777897469362,
