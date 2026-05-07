@@ -2094,118 +2094,6 @@
     "freq": "advanced"
   },
   {
-    "id": 1777725991795,
-    "word": "é",
-    "translation": "is",
-    "category": "Verb",
-    "notes": "",
-    "examples": [],
-    "addedAt": "02/05/2026",
-    "generatingExample": false,
-    "assessingFreq": false,
-    "freq": "essential",
-    "tenses": {
-      "present": [
-        {
-          "pronoun": "eu",
-          "pt": "Eu sou feliz",
-          "en": "I am happy"
-        },
-        {
-          "pronoun": "tu",
-          "pt": "Tu és feliz",
-          "en": "You are happy"
-        },
-        {
-          "pronoun": "ele/ela",
-          "pt": "Ele é feliz",
-          "en": "He/She is happy"
-        },
-        {
-          "pronoun": "nós",
-          "pt": "Nós somos felizes",
-          "en": "We are happy"
-        },
-        {
-          "pronoun": "vocês",
-          "pt": "Vocês são felizes",
-          "en": "You are happy"
-        },
-        {
-          "pronoun": "eles/elas",
-          "pt": "Eles são felizes",
-          "en": "They are happy"
-        }
-      ],
-      "past": [
-        {
-          "pronoun": "eu",
-          "pt": "Eu fui",
-          "en": "I was"
-        },
-        {
-          "pronoun": "tu",
-          "pt": "Tu foste",
-          "en": "You were"
-        },
-        {
-          "pronoun": "ele/ela",
-          "pt": "Ela foi",
-          "en": "She was"
-        },
-        {
-          "pronoun": "nós",
-          "pt": "Nós fomos",
-          "en": "We were"
-        },
-        {
-          "pronoun": "vocês",
-          "pt": "Vocês foram",
-          "en": "You were"
-        },
-        {
-          "pronoun": "eles/elas",
-          "pt": "Eles foram",
-          "en": "They were"
-        }
-      ],
-      "future": [
-        {
-          "pronoun": "eu",
-          "pt": "Eu vou ser",
-          "en": "I will be"
-        },
-        {
-          "pronoun": "tu",
-          "pt": "Tu vais ser",
-          "en": "You will be"
-        },
-        {
-          "pronoun": "ele/ela",
-          "pt": "Ela vai ser",
-          "en": "She will be"
-        },
-        {
-          "pronoun": "nós",
-          "pt": "Nós vamos ser",
-          "en": "We will be"
-        },
-        {
-          "pronoun": "vocês",
-          "pt": "Vocês vão ser",
-          "en": "You will be"
-        },
-        {
-          "pronoun": "eles/elas",
-          "pt": "Eles vão ser",
-          "en": "They will be"
-        }
-      ]
-    },
-    "_activeTense": "present",
-    "_generatingTense": null
-  },
-  {
     "id": 1777726263392,
     "word": "ter",
     "translation": "to have",
@@ -3125,40 +3013,40 @@
     "notes": "",
     "examples": [],
     "addedAt": "02/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu trabalho aqui.",
-          "en": "I work here."
+          "pt": "Eu trabalho",
+          "en": "I work"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu trabalhas muito.",
-          "en": "You work a lot."
+          "pt": "Tu trabalhas",
+          "en": "You work"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela trabalha todos os dias.",
-          "en": "She works every day."
+          "pt": "Ela trabalha",
+          "en": "She works"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós trabalhamos juntos.",
-          "en": "We work together."
+          "pt": "Nós trabalhamos",
+          "en": "We work"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês trabalham bem.",
-          "en": "You work well."
+          "pt": "Vocês trabalham",
+          "en": "You work"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles trabalham muito.",
-          "en": "They work a lot."
+          "pt": "Eles trabalham",
+          "en": "They work"
         }
       ],
       "past": [
@@ -3291,7 +3179,7 @@
       ]
     },
     "_activeTense": "present",
-    "_generatingTense": "present"
+    "_generatingTense": null
   },
   {
     "id": 1777897469362,
