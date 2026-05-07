@@ -2586,18 +2586,18 @@
         },
         {
           "pronoun": "nós",
-          "pt": "Nós dizemos pronto",
-          "en": "We say ready"
+          "pt": "Nós dizemos tudo",
+          "en": "We say everything"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês dizem talvez",
-          "en": "You say maybe"
+          "pt": "Vocês dizem nada",
+          "en": "You say nothing"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles dizem não",
-          "en": "They say no"
+          "pt": "Eles dizem sim",
+          "en": "They say yes"
         }
       ],
       "past": [
@@ -2693,8 +2693,8 @@
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela dá um sorriso.",
-          "en": "She gives a smile."
+          "pt": "Ela dá um beijo.",
+          "en": "She gives a kiss."
         },
         {
           "pronoun": "nós",
@@ -2703,13 +2703,13 @@
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês dão um exemplo.",
-          "en": "You give an example."
+          "pt": "Vocês dão comida.",
+          "en": "You give food."
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles dão uma mão.",
-          "en": "They give a hand."
+          "pt": "Eles dão dinheiro.",
+          "en": "They give money."
         }
       ],
       "past": [
@@ -2720,8 +2720,8 @@
         },
         {
           "pronoun": "tu",
-          "pt": "Tu deste um brinquedo.",
-          "en": "You gave a toy."
+          "pt": "Tu deste um bolo.",
+          "en": "You gave a cake."
         },
         {
           "pronoun": "ele/ela",
@@ -2735,13 +2735,13 @@
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês deram um livro.",
-          "en": "You gave a book."
+          "pt": "Vocês deram um sorriso.",
+          "en": "You gave a smile."
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles deram um carro.",
-          "en": "They gave a car."
+          "pt": "Eles deram ajuda.",
+          "en": "They gave help."
         }
       ],
       "future": [
