@@ -5442,7 +5442,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "06/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -5576,7 +5576,7 @@
       ]
     },
     "_activeTense": "present",
-    "_generatingTense": "present"
+    "_generatingTense": null
   },
   {
     "id": 1778076747401,
