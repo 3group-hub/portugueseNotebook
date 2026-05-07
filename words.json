@@ -243,13 +243,13 @@
         },
         {
           "pronoun": "tu",
-          "pt": "Tu ouves TV",
-          "en": "You listen to TV"
+          "pt": "Tu ouves rádio",
+          "en": "You listen to the radio"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela ouve rádio",
-          "en": "She listens to the radio"
+          "pt": "Ela ouve TV",
+          "en": "She listens to TV"
         },
         {
           "pronoun": "nós",
