@@ -112,20 +112,29 @@
 
     <!-- Controls row -->
     <div style="display:flex;align-items:center;gap:14px;margin-top:10px;flex-wrap:wrap;">
-      <!-- Speed slider -->
+      <!-- Speed -->
       <div style="display:flex;align-items:center;gap:8px;">
         <label style="font-size:11px;color:#a8c4d8;white-space:nowrap;">🐢 Speed</label>
         <input type="range" id="speechRate" min="0.3" max="1.2" step="0.05" value="0.75"
           oninput="updateRate(this.value)"
-          style="width:100px;accent-color:#c1440e;cursor:pointer;" />
+          style="width:90px;accent-color:#c1440e;cursor:pointer;" />
         <span id="speechRateLabel" style="font-size:12px;font-weight:600;color:#f0e6d3;min-width:34px;">0.75×</span>
-        <button onclick="resetRate()" style="padding:2px 8px;border-radius:5px;border:1px solid rgba(255,255,255,0.2);background:transparent;color:#a8c4d8;cursor:pointer;font-size:11px;font-family:inherit;">Reset</button>
       </div>
+      <!-- Pitch -->
+      <div style="display:flex;align-items:center;gap:8px;">
+        <label style="font-size:11px;color:#a8c4d8;white-space:nowrap;">🎵 Pitch</label>
+        <input type="range" id="speechPitch" min="0.5" max="1.5" step="0.05" value="1.0"
+          oninput="updatePitch(this.value)"
+          style="width:90px;accent-color:#a8c4d8;cursor:pointer;" />
+        <span id="speechPitchLabel" style="font-size:12px;font-weight:600;color:#f0e6d3;min-width:34px;">1.0×</span>
+      </div>
+      <button onclick="resetSpeech()" style="padding:3px 10px;border-radius:5px;border:1px solid rgba(255,255,255,0.2);background:transparent;color:#a8c4d8;cursor:pointer;font-size:11px;font-family:inherit;">Reset</button>
     </div>
 
     <div class="tabs">
       <button class="tab-btn active" data-tab="vocab">📚 Vocabulary</button>
       <button class="tab-btn" data-tab="situations">🗺️ Situations</button>
+      <button class="tab-btn" data-tab="nations">🌍 Nations</button>
       <button class="tab-btn" data-tab="alphabet">🔤 Alphabet</button>
       <button class="tab-btn" data-tab="numbers">🔢 Numbers</button>
     </div>
@@ -153,6 +162,30 @@
       <div class="word-list" id="wordList"></div>
       <div id="emptyMsg" style="text-align:center;padding:48px 0;color:#999;font-size:14px;display:none;">No words match your filter.</div>
     </div>
+  </div>
+
+  <!-- ═══ NATIONS TAB ═══ -->
+  <div id="tab-nations" class="hidden">
+    <div class="card" style="border-left:4px solid #2c5f8a;margin-top:16px;">
+      <h2 style="margin:0 0 4px;">🌍 Nations of the World</h2>
+      <p style="font-size:12px;color:#aaa;margin-bottom:12px;">All countries in European Portuguese · tap any flag to hear the name</p>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;">
+        <input id="nationsSearch" class="search-inp" placeholder="🔍 Search country…" oninput="renderNations()" style="max-width:200px;" />
+        <select id="nationsRegion" onchange="renderNations()" style="padding:5px 10px;border-radius:7px;border:1px solid #e8e0d8;font-size:13px;font-family:inherit;background:#fafafa;">
+          <option value="">🌍 All regions</option>
+          <option value="Europe">🇪🇺 Europe</option>
+          <option value="Americas">🌎 Americas</option>
+          <option value="Africa">🌍 Africa</option>
+          <option value="Asia">🌏 Asia</option>
+          <option value="Oceania">🌊 Oceania</option>
+          <option value="Middle East">🕌 Middle East</option>
+        </select>
+        <label style="display:flex;align-items:center;gap:5px;font-size:12px;color:#888;cursor:pointer;">
+          <input type="checkbox" id="nationsQuiz" onchange="renderNations()" /> Quiz mode
+        </label>
+      </div>
+    </div>
+    <div id="nationsGrid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:8px;margin-top:12px;"></div>
   </div>
 
   <!-- ═══ ALPHABET TAB ═══ -->
@@ -309,19 +342,28 @@ async function loadFromGitHub(){
 let selectedVoice = null;
 // ═══ SPEECH RATE ══════════════════════════════════════════════════════════
 let speechRate = parseFloat(localStorage.getItem('pt-ro-rate') || '0.75');
+let speechPitch = parseFloat(localStorage.getItem('pt-ro-pitch') || '1.0');
 
 function updateRate(val){
   speechRate = parseFloat(val);
   localStorage.setItem('pt-ro-rate', speechRate);
   document.getElementById('speechRateLabel').textContent = speechRate.toFixed(2) + '×';
 }
-function resetRate(){
-  speechRate = 0.75;
-  localStorage.setItem('pt-ro-rate', speechRate);
-  const s = document.getElementById('speechRate');
-  if(s) s.value = speechRate;
-  document.getElementById('speechRateLabel').textContent = '0.75×';
+function updatePitch(val){
+  speechPitch = parseFloat(val);
+  localStorage.setItem('pt-ro-pitch', speechPitch);
+  document.getElementById('speechPitchLabel').textContent = speechPitch.toFixed(2) + '×';
 }
+function resetSpeech(){
+  speechRate = 0.75; speechPitch = 1.0;
+  localStorage.setItem('pt-ro-rate', speechRate);
+  localStorage.setItem('pt-ro-pitch', speechPitch);
+  const rs=document.getElementById('speechRate'); if(rs) rs.value=speechRate;
+  const ps=document.getElementById('speechPitch'); if(ps) ps.value=speechPitch;
+  document.getElementById('speechRateLabel').textContent='0.75×';
+  document.getElementById('speechPitchLabel').textContent='1.0×';
+}
+function resetRate(){ resetSpeech(); }
 
 function getBestPtVoice(){
   if(selectedVoice) return selectedVoice;
@@ -337,9 +379,11 @@ function speakText(text, lang, btn){
   u.lang = lang;
   if(lang==='pt-PT'){
     u.rate = speechRate;
+    u.pitch = speechPitch;
     const v=getBestPtVoice(); if(v) u.voice=v;
   } else {
     u.rate = Math.min(1.0, speechRate * 1.15);
+    u.pitch = 1.0;
     const v=speechSynthesis.getVoices().find(v=>v.lang==='en-GB')||speechSynthesis.getVoices().find(v=>v.lang.startsWith('en')); if(v) u.voice=v;
   }
   if(btn){ btn.textContent='⏹'; btn.classList.add('playing'); }
@@ -803,6 +847,197 @@ async function applyTranslation(){
   renderWords();
   if(activeTab==='situations') renderViewerPacks();
 }
+// ═══ NATIONS ══════════════════════════════════════════════════════════════
+function countryGrammar(name, gender, plural=false){
+  const art = gender==='none' ? '' : plural ? (gender==='m'?'os':'as') : (gender==='m'?'o':'a');
+  const artDef = art ? art+' ' : '';
+  const em   = gender==='none' ? 'em'  : plural ? (gender==='m'?'nos':'nas')  : (gender==='m'?'no':'na');
+  const de   = gender==='none' ? 'de'  : plural ? (gender==='m'?'dos':'das')  : (gender==='m'?'do':'da');
+  const para = gender==='none' ? `para ${name}` : `para ${artDef}${name}`;
+  const a    = gender==='none' ? `a ${name}` : plural ? (gender==='m'?`aos ${name}`:`às ${name}`) : (gender==='m'?`ao ${name}`:`à ${name}`);
+  return { artDef, full:artDef+name, em:em+' '+name, de:de+' '+name, para, a };
+}
+
+const NATIONS=[
+  {flag:'🇵🇹',pt:'Portugal',en:'Portugal',region:'Europe',capital:'Lisboa',gender:'none',nat:['português','portuguesa','portugueses','portuguesas']},
+  {flag:'🇪🇸',pt:'Espanha',en:'Spain',region:'Europe',capital:'Madrid',gender:'f',nat:['espanhol','espanhola','espanhóis','espanholas']},
+  {flag:'🇫🇷',pt:'França',en:'France',region:'Europe',capital:'Paris',gender:'f',nat:['francês','francesa','franceses','francesas']},
+  {flag:'🇩🇪',pt:'Alemanha',en:'Germany',region:'Europe',capital:'Berlim',gender:'f',nat:['alemão','alemã','alemães','alemãs']},
+  {flag:'🇬🇧',pt:'Reino Unido',en:'United Kingdom',region:'Europe',capital:'Londres',gender:'m',nat:['britânico','britânica','britânicos','britânicas']},
+  {flag:'🇮🇹',pt:'Itália',en:'Italy',region:'Europe',capital:'Roma',gender:'f',nat:['italiano','italiana','italianos','italianas']},
+  {flag:'🇳🇱',pt:'Países Baixos',en:'Netherlands',region:'Europe',capital:'Amesterdão',gender:'m',plural:true,nat:['holandês','holandesa','holandeses','holandesas']},
+  {flag:'🇧🇪',pt:'Bélgica',en:'Belgium',region:'Europe',capital:'Bruxelas',gender:'f',nat:['belga','belga','belgas','belgas']},
+  {flag:'🇨🇭',pt:'Suíça',en:'Switzerland',region:'Europe',capital:'Berna',gender:'f',nat:['suíço','suíça','suíços','suíças']},
+  {flag:'🇦🇹',pt:'Áustria',en:'Austria',region:'Europe',capital:'Viena',gender:'f',nat:['austríaco','austríaca','austríacos','austríacas']},
+  {flag:'🇸🇪',pt:'Suécia',en:'Sweden',region:'Europe',capital:'Estocolmo',gender:'f',nat:['sueco','sueca','suecos','suecas']},
+  {flag:'🇳🇴',pt:'Noruega',en:'Norway',region:'Europe',capital:'Oslo',gender:'f',nat:['norueguês','norueguesa','noruegueses','norueguesas']},
+  {flag:'🇩🇰',pt:'Dinamarca',en:'Denmark',region:'Europe',capital:'Copenhaga',gender:'f',nat:['dinamarquês','dinamarquesa','dinamarqueses','dinamarquesas']},
+  {flag:'🇫🇮',pt:'Finlândia',en:'Finland',region:'Europe',capital:'Helsínquia',gender:'f',nat:['finlandês','finlandesa','finlandeses','finlandesas']},
+  {flag:'🇵🇱',pt:'Polónia',en:'Poland',region:'Europe',capital:'Varsóvia',gender:'f',nat:['polaco','polaca','polacos','polacas']},
+  {flag:'🇨🇿',pt:'República Checa',en:'Czech Republic',region:'Europe',capital:'Praga',gender:'f',nat:['checo','checa','checos','checas']},
+  {flag:'🇭🇺',pt:'Hungria',en:'Hungary',region:'Europe',capital:'Budapeste',gender:'f',nat:['húngaro','húngara','húngaros','húngaras']},
+  {flag:'🇷🇴',pt:'Roménia',en:'Romania',region:'Europe',capital:'Bucareste',gender:'f',nat:['romeno','romena','romenos','romenas']},
+  {flag:'🇧🇬',pt:'Bulgária',en:'Bulgaria',region:'Europe',capital:'Sófia',gender:'f',nat:['búlgaro','búlgara','búlgaros','búlgaras']},
+  {flag:'🇬🇷',pt:'Grécia',en:'Greece',region:'Europe',capital:'Atenas',gender:'f',nat:['grego','grega','gregos','gregas']},
+  {flag:'🇭🇷',pt:'Croácia',en:'Croatia',region:'Europe',capital:'Zagreb',gender:'f',nat:['croata','croata','croatas','croatas']},
+  {flag:'🇷🇸',pt:'Sérvia',en:'Serbia',region:'Europe',capital:'Belgrado',gender:'f',nat:['sérvio','sérvia','sérvios','sérvias']},
+  {flag:'🇺🇦',pt:'Ucrânia',en:'Ukraine',region:'Europe',capital:'Kiev',gender:'f',nat:['ucraniano','ucraniana','ucranianos','ucranianas']},
+  {flag:'🇷🇺',pt:'Rússia',en:'Russia',region:'Europe',capital:'Moscovo',gender:'f',nat:['russo','russa','russos','russas']},
+  {flag:'🇮🇪',pt:'Irlanda',en:'Ireland',region:'Europe',capital:'Dublin',gender:'f',nat:['irlandês','irlandesa','irlandeses','irlandesas']},
+  {flag:'🇮🇸',pt:'Islândia',en:'Iceland',region:'Europe',capital:'Reiquiavique',gender:'f',nat:['islandês','islandesa','islandeses','islandesas']},
+  {flag:'🇱🇺',pt:'Luxemburgo',en:'Luxembourg',region:'Europe',capital:'Luxemburgo',gender:'m',nat:['luxemburguês','luxemburguesa','luxemburgueses','luxemburguesas']},
+  {flag:'🇲🇹',pt:'Malta',en:'Malta',region:'Europe',capital:'Valeta',gender:'none',nat:['maltês','maltesa','malteses','maltesas']},
+  {flag:'🇸🇰',pt:'Eslováquia',en:'Slovakia',region:'Europe',capital:'Bratislava',gender:'f',nat:['eslovaco','eslovaca','eslovacos','eslovacas']},
+  {flag:'🇸🇮',pt:'Eslovénia',en:'Slovenia',region:'Europe',capital:'Liubliana',gender:'f',nat:['esloveno','eslovena','eslovenos','eslovenas']},
+  {flag:'🇧🇾',pt:'Bielorrússia',en:'Belarus',region:'Europe',capital:'Minsk',gender:'f',nat:['bielorrusso','bielorrussa','bielorrussos','bielorrussa']},
+  {flag:'🇲🇩',pt:'Moldávia',en:'Moldova',region:'Europe',capital:'Chisinau',gender:'f',nat:['moldavo','moldava','moldavos','moldavas']},
+  {flag:'🇦🇱',pt:'Albânia',en:'Albania',region:'Europe',capital:'Tirana',gender:'f',nat:['albanês','albanesa','albaneses','albanesas']},
+  {flag:'🇲🇪',pt:'Montenegro',en:'Montenegro',region:'Europe',capital:'Podgorica',gender:'m',nat:['montenegrino','montenegrina','montenegrinos','montenegrinas']},
+  {flag:'🇦🇩',pt:'Andorra',en:'Andorra',region:'Europe',capital:'Andorra a Velha',gender:'none',nat:['andorrano','andorrana','andorranos','andorranas']},
+  {flag:'🇨🇾',pt:'Chipre',en:'Cyprus',region:'Europe',capital:'Nicósia',gender:'m',nat:['cipriota','cipriota','cipriotas','cipriotas']},
+  {flag:'🇧🇷',pt:'Brasil',en:'Brazil',region:'Americas',capital:'Brasília',gender:'m',nat:['brasileiro','brasileira','brasileiros','brasileiras']},
+  {flag:'🇺🇸',pt:'Estados Unidos',en:'United States',region:'Americas',capital:'Washington D.C.',gender:'m',plural:true,nat:['americano','americana','americanos','americanas']},
+  {flag:'🇨🇦',pt:'Canadá',en:'Canada',region:'Americas',capital:'Otava',gender:'m',nat:['canadiano','canadiana','canadianos','canadianas']},
+  {flag:'🇲🇽',pt:'México',en:'Mexico',region:'Americas',capital:'Cidade do México',gender:'m',nat:['mexicano','mexicana','mexicanos','mexicanas']},
+  {flag:'🇦🇷',pt:'Argentina',en:'Argentina',region:'Americas',capital:'Buenos Aires',gender:'f',nat:['argentino','argentina','argentinos','argentinas']},
+  {flag:'🇨🇱',pt:'Chile',en:'Chile',region:'Americas',capital:'Santiago',gender:'m',nat:['chileno','chilena','chilenos','chilenas']},
+  {flag:'🇨🇴',pt:'Colômbia',en:'Colombia',region:'Americas',capital:'Bogotá',gender:'f',nat:['colombiano','colombiana','colombianos','colombianas']},
+  {flag:'🇵🇪',pt:'Peru',en:'Peru',region:'Americas',capital:'Lima',gender:'m',nat:['peruano','peruana','peruanos','peruanas']},
+  {flag:'🇻🇪',pt:'Venezuela',en:'Venezuela',region:'Americas',capital:'Caracas',gender:'f',nat:['venezuelano','venezuelana','venezuelanos','venezuelanas']},
+  {flag:'🇧🇴',pt:'Bolívia',en:'Bolivia',region:'Americas',capital:'Sucre',gender:'f',nat:['boliviano','boliviana','bolivianos','bolivianas']},
+  {flag:'🇵🇾',pt:'Paraguai',en:'Paraguay',region:'Americas',capital:'Assunção',gender:'m',nat:['paraguaio','paraguaia','paraguaios','paraguaias']},
+  {flag:'🇺🇾',pt:'Uruguai',en:'Uruguay',region:'Americas',capital:'Montevideu',gender:'m',nat:['uruguaio','uruguaia','uruguaios','uruguaias']},
+  {flag:'🇨🇺',pt:'Cuba',en:'Cuba',region:'Americas',capital:'Havana',gender:'none',nat:['cubano','cubana','cubanos','cubanas']},
+  {flag:'🇩🇴',pt:'República Dominicana',en:'Dominican Republic',region:'Americas',capital:'Santo Domingo',gender:'f',nat:['dominicano','dominicana','dominicanos','dominicanas']},
+  {flag:'🇭🇹',pt:'Haiti',en:'Haiti',region:'Americas',capital:'Porto Príncipe',gender:'m',nat:['haitiano','haitiana','haitianos','haitianas']},
+  {flag:'🇵🇦',pt:'Panamá',en:'Panama',region:'Americas',capital:'Cidade do Panamá',gender:'m',nat:['panamenho','panamenha','panamenhos','panamenhas']},
+  {flag:'🇨🇷',pt:'Costa Rica',en:'Costa Rica',region:'Americas',capital:'São José',gender:'f',nat:['costarriquenho','costarriquenha','costarriquenhos','costarriquenhas']},
+  {flag:'🇲🇦',pt:'Marrocos',en:'Morocco',region:'Africa',capital:'Rabat',gender:'m',nat:['marroquino','marroquina','marroquinos','marroquinas']},
+  {flag:'🇩🇿',pt:'Argélia',en:'Algeria',region:'Africa',capital:'Argel',gender:'f',nat:['argelino','argelina','argelinos','argelinas']},
+  {flag:'🇪🇬',pt:'Egipto',en:'Egypt',region:'Africa',capital:'Cairo',gender:'m',nat:['egípcio','egípcia','egípcios','egípcias']},
+  {flag:'🇿🇦',pt:'África do Sul',en:'South Africa',region:'Africa',capital:'Pretória',gender:'f',nat:['sul-africano','sul-africana','sul-africanos','sul-africanas']},
+  {flag:'🇳🇬',pt:'Nigéria',en:'Nigeria',region:'Africa',capital:'Abuja',gender:'f',nat:['nigeriano','nigeriana','nigerianos','nigerianas']},
+  {flag:'🇪🇹',pt:'Etiópia',en:'Ethiopia',region:'Africa',capital:'Adis Abeba',gender:'f',nat:['etíope','etíope','etíopes','etíopes']},
+  {flag:'🇰🇪',pt:'Quénia',en:'Kenya',region:'Africa',capital:'Nairóbi',gender:'m',nat:['queniano','queniana','quenianos','quenianas']},
+  {flag:'🇦🇴',pt:'Angola',en:'Angola',region:'Africa',capital:'Luanda',gender:'none',nat:['angolano','angolana','angolanos','angolanas']},
+  {flag:'🇲🇿',pt:'Moçambique',en:'Mozambique',region:'Africa',capital:'Maputo',gender:'m',nat:['moçambicano','moçambicana','moçambicanos','moçambicanas']},
+  {flag:'🇷🇼',pt:'Ruanda',en:'Rwanda',region:'Africa',capital:'Quigali',gender:'none',nat:['ruandês','ruandesa','ruandeses','ruandesas']},
+  {flag:'🇨🇩',pt:'República Democrática do Congo',en:'DR Congo',region:'Africa',capital:'Quinxassa',gender:'f',nat:['congolês','congolesa','congoleses','congolesas']},
+  {flag:'🇿🇼',pt:'Zimbabué',en:'Zimbabwe',region:'Africa',capital:'Harare',gender:'m',nat:['zimbabueano','zimbabueana','zimbabueanos','zimbabueanas']},
+  {flag:'🇳🇦',pt:'Namíbia',en:'Namibia',region:'Africa',capital:'Windhoek',gender:'f',nat:['namibiano','namibiana','namibianos','namibianas']},
+  {flag:'🇲🇬',pt:'Madagáscar',en:'Madagascar',region:'Africa',capital:'Antananarivo',gender:'m',nat:['malgaxe','malgaxe','malgaxes','malgaxes']},
+  {flag:'🇨🇻',pt:'Cabo Verde',en:'Cape Verde',region:'Africa',capital:'Praia',gender:'m',nat:['cabo-verdiano','cabo-verdiana','cabo-verdianos','cabo-verdianas']},
+  {flag:'🇸🇹',pt:'São Tomé e Príncipe',en:'São Tomé and Príncipe',region:'Africa',capital:'São Tomé',gender:'m',nat:['são-tomense','são-tomense','são-tomenses','são-tomenses']},
+  {flag:'🇨🇳',pt:'China',en:'China',region:'Asia',capital:'Pequim',gender:'f',nat:['chinês','chinesa','chineses','chinesas']},
+  {flag:'🇯🇵',pt:'Japão',en:'Japan',region:'Asia',capital:'Tóquio',gender:'m',nat:['japonês','japonesa','japoneses','japonesas']},
+  {flag:'🇰🇷',pt:'Coreia do Sul',en:'South Korea',region:'Asia',capital:'Seul',gender:'f',nat:['sul-coreano','sul-coreana','sul-coreanos','sul-coreanas']},
+  {flag:'🇮🇳',pt:'Índia',en:'India',region:'Asia',capital:'Nova Deli',gender:'f',nat:['indiano','indiana','indianos','indianas']},
+  {flag:'🇵🇰',pt:'Paquistão',en:'Pakistan',region:'Asia',capital:'Islamabade',gender:'m',nat:['paquistanês','paquistanesa','paquistaneses','paquistanesas']},
+  {flag:'🇮🇩',pt:'Indonésia',en:'Indonesia',region:'Asia',capital:'Jacarta',gender:'f',nat:['indonésio','indonésia','indonésios','indonésias']},
+  {flag:'🇵🇭',pt:'Filipinas',en:'Philippines',region:'Asia',capital:'Manila',gender:'f',plural:true,nat:['filipino','filipina','filipinos','filipinas']},
+  {flag:'🇻🇳',pt:'Vietname',en:'Vietnam',region:'Asia',capital:'Hanói',gender:'m',nat:['vietnamita','vietnamita','vietnamitas','vietnamitas']},
+  {flag:'🇹🇭',pt:'Tailândia',en:'Thailand',region:'Asia',capital:'Banguecoque',gender:'f',nat:['tailandês','tailandesa','tailandeses','tailandesas']},
+  {flag:'🇲🇾',pt:'Malásia',en:'Malaysia',region:'Asia',capital:'Kuala Lumpur',gender:'f',nat:['malaio','malaia','malaios','malaias']},
+  {flag:'🇸🇬',pt:'Singapura',en:'Singapore',region:'Asia',capital:'Singapura',gender:'none',nat:['singapurense','singapurense','singapurenses','singapurenses']},
+  {flag:'🇲🇳',pt:'Mongólia',en:'Mongolia',region:'Asia',capital:'Ulan Bator',gender:'f',nat:['mongol','mongol','mongóis','mongóis']},
+  {flag:'🇰🇿',pt:'Cazaquistão',en:'Kazakhstan',region:'Asia',capital:'Astana',gender:'m',nat:['cazaque','cazaque','cazaques','cazaques']},
+  {flag:'🇹🇷',pt:'Turquia',en:'Turkey',region:'Middle East',capital:'Ancara',gender:'f',nat:['turco','turca','turcos','turcas']},
+  {flag:'🇮🇷',pt:'Irão',en:'Iran',region:'Middle East',capital:'Teerão',gender:'m',nat:['iraniano','iraniana','iranianos','iranianas']},
+  {flag:'🇮🇶',pt:'Iraque',en:'Iraq',region:'Middle East',capital:'Bagdade',gender:'m',nat:['iraquiano','iraquiana','iraquianos','iraquianas']},
+  {flag:'🇸🇦',pt:'Arábia Saudita',en:'Saudi Arabia',region:'Middle East',capital:'Riade',gender:'f',nat:['saudita','saudita','sauditas','sauditas']},
+  {flag:'🇦🇪',pt:'Emirados Árabes Unidos',en:'UAE',region:'Middle East',capital:'Abu Dhabi',gender:'m',plural:true,nat:['emiradense','emiradense','emiradenses','emiradenses']},
+  {flag:'🇮🇱',pt:'Israel',en:'Israel',region:'Middle East',capital:'Jerusalém',gender:'m',nat:['israelita','israelita','israelitas','israelitas']},
+  {flag:'🇯🇴',pt:'Jordânia',en:'Jordan',region:'Middle East',capital:'Amã',gender:'f',nat:['jordaniano','jordaniana','jordanianos','jordanianas']},
+  {flag:'🇱🇧',pt:'Líbano',en:'Lebanon',region:'Middle East',capital:'Beirute',gender:'m',nat:['libanês','libanesa','libaneses','libanesas']},
+  {flag:'🇸🇾',pt:'Síria',en:'Syria',region:'Middle East',capital:'Damasco',gender:'f',nat:['sírio','síria','sírios','sírias']},
+  {flag:'🇴🇲',pt:'Omã',en:'Oman',region:'Middle East',capital:'Mascate',gender:'m',nat:['omanense','omanense','omanenses','omanenses']},
+  {flag:'🇶🇦',pt:'Catar',en:'Qatar',region:'Middle East',capital:'Doha',gender:'m',nat:['catarense','catarense','catarenses','catarenses']},
+  {flag:'🇦🇺',pt:'Austrália',en:'Australia',region:'Oceania',capital:'Camberra',gender:'f',nat:['australiano','australiana','australianos','australianas']},
+  {flag:'🇳🇿',pt:'Nova Zelândia',en:'New Zealand',region:'Oceania',capital:'Wellington',gender:'f',nat:['neozelandês','neozelandesa','neozelandeses','neozelandesas']},
+  {flag:'🇫🇯',pt:'Fiji',en:'Fiji',region:'Oceania',capital:'Suva',gender:'none',nat:['fijiano','fijiana','fijianos','fijianas']},
+  {flag:'🇵🇬',pt:'Papua Nova Guiné',en:'Papua New Guinea',region:'Oceania',capital:'Porto Moresby',gender:'f',nat:['papuásio','papuásia','papuásios','papuásias']},
+];
+const REGION_COLORS={'Europe':'#2c5f8a','Americas':'#1a6b3c','Africa':'#c1440e','Asia':'#7b4ea0','Middle East':'#b5830a','Oceania':'#1a3a5c'};
+let nationsQuizRevealed=new Set();
+let expandedNation=null;
+
+function renderNations(){
+  const q=(document.getElementById('nationsSearch')?.value||'').toLowerCase();
+  const region=document.getElementById('nationsRegion')?.value||'';
+  const quizMode=document.getElementById('nationsQuiz')?.checked;
+  const filtered=NATIONS.filter(n=>(!region||n.region===region)&&(!q||n.pt.toLowerCase().includes(q)||n.en.toLowerCase().includes(q)||n.capital.toLowerCase().includes(q)));
+  const el=document.getElementById('nationsGrid'); if(!el) return;
+  if(!filtered.length){ el.innerHTML='<p style="color:#bbb;font-size:13px;padding:16px;">No countries match.</p>'; return; }
+  el.innerHTML=filtered.map(n=>{
+    const color=REGION_COLORS[n.region]||'#1a3a5c';
+    const revealed=nationsQuizRevealed.has(n.en);
+    const showName=!quizMode||revealed;
+    const isExpanded=expandedNation===n.en;
+    const gr=countryGrammar(n.pt,n.gender,n.plural||false);
+    const genderLabel=n.gender==='none'?'sem artigo':n.plural?(n.gender==='m'?'masculino plural':'feminino plural'):(n.gender==='m'?'masculino':'feminino');
+    const grammarBlock=`<div style="margin-top:8px;padding:10px 12px;background:#f8f8fc;border-radius:10px;text-align:left;">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;flex-wrap:wrap;">
+        <span style="font-size:15px;font-weight:700;color:#2c5f8a;">${gr.full}</span>
+        <span style="font-size:10px;color:#fff;background:#2c5f8a;padding:2px 8px;border-radius:10px;">${genderLabel}</span>
+        <button class="speak-btn" onclick="speakText('${escQ(gr.full)}','pt-PT',this);event.stopPropagation();">🔊</button>
+      </div>
+      <div style="font-size:11px;color:#aaa;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:5px;">Preposições</div>
+      <div style="background:#fff;border-radius:8px;padding:8px 10px;margin-bottom:10px;display:flex;flex-direction:column;gap:5px;">
+        <div style="display:flex;align-items:center;gap:6px;">
+          <span style="font-size:10px;color:#aaa;background:#f5f5f5;padding:1px 6px;border-radius:4px;min-width:36px;text-align:center;">em</span>
+          <strong style="font-size:13px;color:var(--navy);">${gr.em}</strong>
+          <button class="speak-btn" onclick="speakText('${escQ(gr.em)}','pt-PT',this);event.stopPropagation();">🔊</button>
+        </div>
+        <div style="display:flex;align-items:center;gap:6px;">
+          <span style="font-size:10px;color:#aaa;background:#f5f5f5;padding:1px 6px;border-radius:4px;min-width:36px;text-align:center;">de</span>
+          <strong style="font-size:13px;color:var(--navy);">${gr.de}</strong>
+          <button class="speak-btn" onclick="speakText('${escQ(gr.de)}','pt-PT',this);event.stopPropagation();">🔊</button>
+        </div>
+        <div style="display:flex;align-items:center;gap:6px;">
+          <span style="font-size:10px;color:#aaa;background:#f5f5f5;padding:1px 6px;border-radius:4px;min-width:36px;text-align:center;">para</span>
+          <strong style="font-size:13px;color:var(--navy);">${gr.para}</strong>
+          <button class="speak-btn" onclick="speakText('${escQ(gr.para)}','pt-PT',this);event.stopPropagation();">🔊</button>
+        </div>
+      </div>
+      ${n.nat?`
+      <div style="font-size:11px;color:#aaa;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:5px;">Nacionalidade</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:5px;">
+        <div style="background:#fff;border-radius:8px;padding:7px 8px;border-left:3px solid #2c5f8a;">
+          <div style="font-size:9px;color:#aaa;margin-bottom:2px;">Masculino singular</div>
+          <div style="font-size:13px;font-weight:700;color:var(--navy);">${n.nat[0]}</div>
+          <button class="speak-btn" style="margin-top:2px;" onclick="speakText('${escQ(n.nat[0])}','pt-PT',this);event.stopPropagation();">🔊</button>
+        </div>
+        <div style="background:#fff;border-radius:8px;padding:7px 8px;border-left:3px solid #8a3a5c;">
+          <div style="font-size:9px;color:#aaa;margin-bottom:2px;">Feminino singular</div>
+          <div style="font-size:13px;font-weight:700;color:var(--navy);">${n.nat[1]}</div>
+          <button class="speak-btn" style="margin-top:2px;" onclick="speakText('${escQ(n.nat[1])}','pt-PT',this);event.stopPropagation();">🔊</button>
+        </div>
+        <div style="background:#fff;border-radius:8px;padding:7px 8px;border-left:3px dashed #2c5f8a;">
+          <div style="font-size:9px;color:#aaa;margin-bottom:2px;">Masculino plural</div>
+          <div style="font-size:13px;font-weight:700;color:var(--navy);">${n.nat[2]}</div>
+          <button class="speak-btn" style="margin-top:2px;" onclick="speakText('${escQ(n.nat[2])}','pt-PT',this);event.stopPropagation();">🔊</button>
+        </div>
+        <div style="background:#fff;border-radius:8px;padding:7px 8px;border-left:3px dashed #8a3a5c;">
+          <div style="font-size:9px;color:#aaa;margin-bottom:2px;">Feminino plural</div>
+          <div style="font-size:13px;font-weight:700;color:var(--navy);">${n.nat[3]}</div>
+          <button class="speak-btn" style="margin-top:2px;" onclick="speakText('${escQ(n.nat[3])}','pt-PT',this);event.stopPropagation();">🔊</button>
+        </div>
+      </div>`:''}
+    </div>`;
+    return `<div onclick="${quizMode?`toggleNationReveal('${n.en}')`:`toggleNationExpand('${escQ(n.en)}')`}" style="background:#fff;border-radius:10px;padding:14px 10px;box-shadow:0 1px 5px rgba(0,0,0,0.07);text-align:center;cursor:pointer;border:2px solid ${isExpanded?color:'transparent'};transition:all 0.15s;">
+      <div style="font-size:36px;margin-bottom:6px;">${n.flag}</div>
+      ${showName?`<div style="font-size:12px;font-weight:700;color:${color};margin-bottom:2px;line-height:1.3;">${n.pt}</div>
+      <div style="font-size:10px;color:#aaa;margin-bottom:2px;">${n.en}</div>
+      <div style="font-size:10px;color:#ccc;font-style:italic;margin-bottom:4px;">${n.capital}</div>
+      <button class="speak-btn" onclick="speakText('${escQ(n.pt)}','pt-PT',this);event.stopPropagation();" style="margin-bottom:4px;">🔊</button>
+      ${isExpanded?grammarBlock:`<div style="font-size:10px;color:#ccc;margin-top:2px;">tap for grammar ↓</div>`}`
+      :`<div style="font-size:11px;color:#ddd;font-style:italic;">tap to reveal</div>`}
+    </div>`;
+  }).join('');
+}
+function toggleNationExpand(key){ expandedNation=expandedNation===key?null:key; renderNations(); }
+function toggleNationReveal(key){ nationsQuizRevealed.has(key)?nationsQuizRevealed.delete(key):nationsQuizRevealed.add(key); renderNations(); }
+
 function showToast(msg){
   const t=document.getElementById('toast');
   t.textContent=msg; t.classList.add('show');
@@ -986,9 +1221,10 @@ document.querySelectorAll('.tab-btn').forEach(btn=>{
     document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
     btn.classList.add('active');
     activeTab = btn.dataset.tab;
-    ['vocab','situations','alphabet','numbers'].forEach(t=>document.getElementById('tab-'+t).classList.add('hidden'));
+    ['vocab','situations','nations','alphabet','numbers'].forEach(t=>document.getElementById('tab-'+t).classList.add('hidden'));
     document.getElementById('tab-'+activeTab).classList.remove('hidden');
     if(activeTab==='situations'){ allSitPacks=[]; openSitPack=null; loadSituations(); }
+    if(activeTab==='nations') renderNations();
   });
 });
 loadFromGitHub();
