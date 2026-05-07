@@ -6001,6 +6001,12 @@
     "examples": [],
     "addedAt": "07/05/2026",
     "generatingExample": false,
-    "assessingFreq": false
+    "assessingFreq": false,
+    "tenses": {
+      "present": [],
+      "past": [],
+      "future-peri": [],
+      "future-simple": []
+    }
   }
 ]
