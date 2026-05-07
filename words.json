@@ -2097,8 +2097,8 @@
         },
         {
           "pronoun": "tu",
-          "pt": "Tu tens um carro.",
-          "en": "You have a car."
+          "pt": "Tu tens um amigo.",
+          "en": "You have a friend."
         },
         {
           "pronoun": "ele/ela",
@@ -2107,30 +2107,30 @@
         },
         {
           "pronoun": "nós",
-          "pt": "Nós temos um filho.",
-          "en": "We have a son."
+          "pt": "Nós temos uma casa.",
+          "en": "We have a house."
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês têm um problema.",
-          "en": "You have a problem."
+          "pt": "Vocês têm um carro.",
+          "en": "You have a car."
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles têm uma casa.",
-          "en": "They have a house."
+          "pt": "Eles têm um jardim.",
+          "en": "They have a garden."
         }
       ],
       "past": [
         {
           "pronoun": "eu",
-          "pt": "Eu tive um cão",
-          "en": "I had a dog"
+          "pt": "Eu tive um livro",
+          "en": "I had a book"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu tiveste um gato",
-          "en": "You had a cat"
+          "pt": "Tu tiveste um carro",
+          "en": "You had a car"
         },
         {
           "pronoun": "ele/ela",
@@ -2139,18 +2139,18 @@
         },
         {
           "pronoun": "nós",
-          "pt": "Nós tivemos um carro",
-          "en": "We had a car"
+          "pt": "Nós tivemos um cão",
+          "en": "We had a dog"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês tiveram um problema",
-          "en": "You had a problem"
+          "pt": "Vocês tiveram um apartamento",
+          "en": "You had an apartment"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles tiveram fome",
-          "en": "They were hungry"
+          "pt": "Eles tiveram um jardim",
+          "en": "They had a garden"
         }
       ],
       "future": [
@@ -2209,13 +2209,13 @@
         },
         {
           "pronoun": "tu",
-          "pt": "Tu vais ao cinema",
-          "en": "You go to the cinema"
+          "pt": "Tu vais à escola",
+          "en": "You go to school"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela vai à escola",
-          "en": "She goes to school"
+          "pt": "Ela vai ao cinema",
+          "en": "She goes to the movies"
         },
         {
           "pronoun": "nós",
@@ -2261,8 +2261,8 @@
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles foram ao estádio",
-          "en": "They went to the stadium"
+          "pt": "Eles foram ao jogo",
+          "en": "They went to the game"
         }
       ],
       "future": [
