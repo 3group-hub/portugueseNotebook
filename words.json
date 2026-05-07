@@ -4600,33 +4600,33 @@
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu quero um bolo",
-          "en": "I want a cake"
+          "pt": "Eu quero comer",
+          "en": "I want to eat"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu queres ir",
-          "en": "You want to go"
+          "pt": "Tu queres dormir",
+          "en": "You want to sleep"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela quer dormir",
-          "en": "She wants to sleep"
+          "pt": "Ela quer jogar",
+          "en": "She wants to play"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós queremos comer",
-          "en": "We want to eat"
+          "pt": "Nós queremos ir",
+          "en": "We want to go"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês querem ler",
-          "en": "You want to read"
+          "pt": "Vocês querem estudar",
+          "en": "You want to study"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles querem jogar",
-          "en": "They want to play"
+          "pt": "Eles querem correr",
+          "en": "They want to run"
         }
       ],
       "past": [
