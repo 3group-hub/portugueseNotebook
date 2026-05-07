@@ -2459,33 +2459,33 @@
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu faço casa.",
-          "en": "I do homework."
+          "pt": "Eu faço um bolo",
+          "en": "I bake a cake"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu fazes isso.",
-          "en": "You do this."
+          "pt": "Tu fazes um bolo",
+          "en": "You bake a cake"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela faz comida.",
-          "en": "She cooks food."
+          "pt": "Ela faz um bolo",
+          "en": "She bakes a cake"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós fazemos esporte.",
-          "en": "We do sports."
+          "pt": "Nós fazemos um bolo",
+          "en": "We bake a cake"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês fazem exercícios.",
-          "en": "You do exercises."
+          "pt": "Vocês fazem um bolo",
+          "en": "You bake a cake"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles fazem trabalho.",
-          "en": "They do work."
+          "pt": "Eles fazem um bolo",
+          "en": "They bake a cake"
         }
       ],
       "past": [
