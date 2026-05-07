@@ -3917,8 +3917,8 @@
         },
         {
           "pronoun": "tu",
-          "pt": "Tu tens um carro",
-          "en": "You have a car"
+          "pt": "Tu tens um amigo",
+          "en": "You have a friend"
         },
         {
           "pronoun": "ele/ela",
@@ -3927,8 +3927,8 @@
         },
         {
           "pronoun": "nós",
-          "pt": "Nós temos uma casa",
-          "en": "We have a house"
+          "pt": "Nós temos um carro",
+          "en": "We have a car"
         },
         {
           "pronoun": "vocês",
@@ -3937,40 +3937,40 @@
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles têm um jardim",
-          "en": "They have a garden"
+          "pt": "Eles têm um computador",
+          "en": "They have a computer"
         }
       ],
       "past": [
         {
           "pronoun": "eu",
-          "pt": "Eu tive um livro",
-          "en": "I had a book"
+          "pt": "Eu tive um livro.",
+          "en": "I had a book."
         },
         {
           "pronoun": "tu",
-          "pt": "Tu tiveste um lápis",
-          "en": "You had a pencil"
+          "pt": "Tu tiveste um carro.",
+          "en": "You had a car."
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela teve um gato",
-          "en": "She had a cat"
+          "pt": "Ela teve um gato.",
+          "en": "She had a cat."
         },
         {
           "pronoun": "nós",
-          "pt": "Nós tivemos fome",
-          "en": "We were hungry"
+          "pt": "Nós tivemos fome.",
+          "en": "We were hungry."
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês tiveram um carro",
-          "en": "You had a car"
+          "pt": "Vocês tiveram um filho.",
+          "en": "You had a child."
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles tiveram um problema",
-          "en": "They had a problem"
+          "pt": "Eles tiveram um dia livre.",
+          "en": "They had a free day."
         }
       ],
       "future": [
