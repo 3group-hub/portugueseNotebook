@@ -2424,10 +2424,42 @@
           "pt": "Eles vão ir ao estádio",
           "en": "They will go to the stadium"
         }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou ir ao cinema",
+          "en": "I am going to the movies"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais ir à praia",
+          "en": "You are going to the beach"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai ir ao parque",
+          "en": "She is going to the park"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos ir jantar",
+          "en": "We are going to dinner"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão ir ao shopping",
+          "en": "You are going to the mall"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão ir ao estádio",
+          "en": "They are going to the stadium"
+        }
       ]
     },
-    "_activeTense": "future-peri",
-    "_generatingTense": "future-peri"
+    "_activeTense": "future-simple",
+    "_generatingTense": "future-simple"
   },
   {
     "id": 1777726848084,
