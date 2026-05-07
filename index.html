@@ -1193,31 +1193,63 @@ function speakText(text, lang, btn){
 // ═══ GROQ API ═══════════════════════════════════════════════════════════
 const GROQ_MODEL = 'llama-3.3-70b-versatile'; // free, fast, great at languages
 
-async function claudeCall(prompt, maxTokens=500){
+// Minimum gap between API calls (ms) — stays well within 30 RPM
+const API_MIN_GAP = 2200;
+let _lastApiCall = 0;
+
+async function claudeCall(prompt, maxTokens=500, retries=3){
   const key = getApiKey();
   if(!key){ showToast('Please add your Groq API key first'); throw new Error('No API key'); }
 
-  const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'Authorization': `Bearer ${key}`
-    },
-    body: JSON.stringify({
-      model: GROQ_MODEL,
-      messages: [{ role: 'user', content: prompt }],
-      max_tokens: maxTokens,
-      temperature: 0.7
-    })
-  });
+  // Enforce minimum gap between calls
+  const now = Date.now();
+  const wait = Math.max(0, _lastApiCall + API_MIN_GAP - now);
+  if(wait > 0) await new Promise(r=>setTimeout(r, wait));
+  _lastApiCall = Date.now();
 
-  const data = await res.json();
-  if(!res.ok || data.error){
-    const msg = data.error?.message || `HTTP ${res.status}`;
-    showApiError(msg);
-    throw new Error(msg);
+  for(let attempt=0; attempt<retries; attempt++){
+    try{
+      const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${key}`
+        },
+        body: JSON.stringify({
+          model: GROQ_MODEL,
+          messages: [{ role: 'user', content: prompt }],
+          max_tokens: maxTokens,
+          temperature: 0.7
+        })
+      });
+
+      const data = await res.json();
+
+      // Rate limit hit — wait and retry
+      if(res.status === 429){
+        const retryAfter = parseInt(data.error?.message?.match(/try again in (\d+)s/)?.[1] || '5') * 1000 + 500;
+        showToast(`⏳ Rate limit — waiting ${Math.ceil(retryAfter/1000)}s before retry…`);
+        await new Promise(r=>setTimeout(r, retryAfter));
+        _lastApiCall = Date.now();
+        continue;
+      }
+
+      if(!res.ok || data.error){
+        const msg = data.error?.message || `HTTP ${res.status}`;
+        showApiError(msg);
+        throw new Error(msg);
+      }
+      return data.choices?.[0]?.message?.content || '';
+    }catch(e){
+      if(e.message?.includes('No API key')) throw e;
+      if(attempt < retries-1){
+        await new Promise(r=>setTimeout(r, 3000));
+        continue;
+      }
+      throw e;
+    }
   }
-  return data.choices?.[0]?.message?.content || '';
+  throw new Error('Max retries exceeded');
 }
 
 function showApiError(msg){
@@ -1613,15 +1645,22 @@ async function fixAllVerbConjugations(){
   // Now offer to regenerate all tenses for irregular verbs with the improved prompt
   const irregularVerbs = verbs.filter(w => EP_IRREGULAR_VERBS[w.word.toLowerCase().trim()]);
   if(irregularVerbs.length > 0){
-    showToast(`Regenerating ${irregularVerbs.length} irregular verbs with correct forms…`);
+    let done = 0;
+    const total = irregularVerbs.reduce((n,w)=>
+      n + tenses.filter(t => w.tenses?.[t]?.length > 0).length, 0);
+    showToast(`Regenerating ${total} tense${total!==1?'s':''} across ${irregularVerbs.length} irregular verb${irregularVerbs.length!==1?'s':''}…`);
+
     for(const w of irregularVerbs){
       for(const tense of tenses){
         if(w.tenses?.[tense]?.length > 0){
           try{
             const rows = await genVerbExamples(w.word, w.translation, tense, w.freq||'common');
             if(rows.length > 0) w.tenses[tense] = rows;
-            await new Promise(r=>setTimeout(r,400)); // rate limit
-          }catch(e){}
+            done++;
+            if(done % 3 === 0) showToast(`🔧 Progress: ${done}/${total} tenses fixed…`);
+          }catch(e){
+            if(e.message?.includes('No API key')) break;
+          }
         }
       }
       saveWords();
