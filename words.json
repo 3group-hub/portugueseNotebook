@@ -2652,64 +2652,64 @@
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu sei o meu nome",
-          "en": "I know my name"
+          "pt": "Eu sei inglês",
+          "en": "I know English"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu sabes a resposta",
-          "en": "You know the answer"
+          "pt": "Tu sabes ler",
+          "en": "You know how to read"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela sabe o caminho",
-          "en": "She knows the way"
+          "pt": "Ela sabe cantar",
+          "en": "She knows how to sing"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós sabemos a verdade",
-          "en": "We know the truth"
+          "pt": "Nós sabemos nadar",
+          "en": "We know how to swim"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês sabem tudo",
-          "en": "You know everything"
+          "pt": "Vocês sabem dançar",
+          "en": "You know how to dance"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles sabem o que fazem",
-          "en": "They know what they do"
+          "pt": "Eles sabem jogar",
+          "en": "They know how to play"
         }
       ],
       "past": [
         {
           "pronoun": "eu",
-          "pt": "Eu soube",
+          "pt": "Eu soube ",
           "en": "I knew"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu soubeste",
+          "pt": "Tu soubeste ",
           "en": "You knew"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela soube",
+          "pt": "Ela soube ",
           "en": "She knew"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós soubemos",
+          "pt": "Nós soubemos ",
           "en": "We knew"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês souberam",
+          "pt": "Vocês souberam ",
           "en": "You knew"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles souberam",
+          "pt": "Eles souberam ",
           "en": "They knew"
         }
       ],
