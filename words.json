@@ -5844,10 +5844,41 @@
           "en": "They were good"
         }
       ],
-      "future-peri": [],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou ser feliz",
+          "en": "I will be happy"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais ser rico",
+          "en": "You will be rich"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai ser médica",
+          "en": "She will be a doctor"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos ser amigos",
+          "en": "We will be friends"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão ser felizes",
+          "en": "You will be happy"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão ser professores",
+          "en": "They will be teachers"
+        }
+      ],
       "future-simple": []
     },
-    "_activeTense": "future-peri",
-    "_generatingTense": "future-peri"
+    "_activeTense": "future-simple",
+    "_generatingTense": "future-simple"
   }
 ]
