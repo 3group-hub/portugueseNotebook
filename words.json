@@ -2396,8 +2396,8 @@
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu faço um bolo",
-          "en": "I make a cake"
+          "pt": "Eu faço exercício",
+          "en": "I do exercise"
         },
         {
           "pronoun": "tu",
@@ -2406,23 +2406,23 @@
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela faz um bolo",
-          "en": "She makes a cake"
+          "pt": "Ela faz um café",
+          "en": "She makes a coffee"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós fazemos um bolo",
-          "en": "We make a cake"
+          "pt": "Nós fazemos um piquenique",
+          "en": "We have a picnic"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês fazem um bolo",
-          "en": "You make a cake"
+          "pt": "Vocês fazem um teste",
+          "en": "You take a test"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles fazem um bolo",
-          "en": "They make a cake"
+          "pt": "Eles fazem um jogo",
+          "en": "They play a game"
         }
       ],
       "past": [
