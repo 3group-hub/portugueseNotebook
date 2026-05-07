@@ -2214,8 +2214,8 @@
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela vai à escola",
-          "en": "She goes to school"
+          "pt": "Ela vai ao trabalho",
+          "en": "She goes to work"
         },
         {
           "pronoun": "nós",
@@ -2224,8 +2224,8 @@
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês vão ao restaurante",
-          "en": "You go to the restaurant"
+          "pt": "Vocês vão ao shopping",
+          "en": "You go to the mall"
         },
         {
           "pronoun": "eles/elas",
@@ -2242,7 +2242,7 @@
         {
           "pronoun": "tu",
           "pt": "Tu foste ao cinema",
-          "en": "You went to the movies"
+          "en": "You went to the cinema"
         },
         {
           "pronoun": "ele/ela",
@@ -2261,8 +2261,8 @@
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles foram ao jogo",
-          "en": "They went to the game"
+          "pt": "Eles foram ao estádio",
+          "en": "They went to the stadium"
         }
       ],
       "future": [
@@ -2316,33 +2316,33 @@
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu faço exercício.",
-          "en": "I do exercise."
+          "pt": "Eu faço um bolo",
+          "en": "I make a cake"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu fazes um bolo.",
-          "en": "You make a cake."
+          "pt": "Tu fazes um bolo",
+          "en": "You make a cake"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela faz um café.",
-          "en": "She makes a coffee."
+          "pt": "Ela faz um bolo",
+          "en": "She makes a cake"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós fazemos um piquenique.",
-          "en": "We have a picnic."
+          "pt": "Nós fazemos um bolo",
+          "en": "We make a cake"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês fazem um teste.",
-          "en": "You take a test."
+          "pt": "Vocês fazem um bolo",
+          "en": "You make a cake"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles fazem um jogo.",
-          "en": "They play a game."
+          "pt": "Eles fazem um bolo",
+          "en": "They make a cake"
         }
       ],
       "past": [
@@ -2438,55 +2438,55 @@
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela diz oi",
-          "en": "She says hi"
+          "pt": "Ela diz oui",
+          "en": "She says yes"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós dizemos tudo",
-          "en": "We say everything"
+          "pt": "Nós dizemos não",
+          "en": "We say no"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês dizem nada",
-          "en": "You say nothing"
+          "pt": "Vocês dizem sim",
+          "en": "You say yes"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles dizem sim",
-          "en": "They say yes"
+          "pt": "Eles dizem não",
+          "en": "They say no"
         }
       ],
       "past": [
         {
           "pronoun": "eu",
-          "pt": "Eu disse sim",
-          "en": "I said yes"
+          "pt": "Eu disse",
+          "en": "I said"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu disseste não",
-          "en": "You said no"
+          "pt": "Tu disseste",
+          "en": "You said"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela disse oui",
-          "en": "She said yes"
+          "pt": "Ela disse",
+          "en": "She said"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós dissemos não",
-          "en": "We said no"
+          "pt": "Nós dissemos",
+          "en": "We said"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês disseram sim",
-          "en": "You said yes"
+          "pt": "Vocês disseram",
+          "en": "You said"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles disseram não",
-          "en": "They said no"
+          "pt": "Eles disseram",
+          "en": "They said"
         }
       ],
       "future": [
@@ -2540,65 +2540,65 @@
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu dou um livro.",
-          "en": "I give a book."
+          "pt": "Eu dou um livro",
+          "en": "I give a book"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu dás um presente.",
-          "en": "You give a gift."
+          "pt": "Tu dás um presente",
+          "en": "You give a gift"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela dá um abraço.",
-          "en": "She gives a hug."
+          "pt": "Ela dá um beijo",
+          "en": "She gives a kiss"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós damos ajuda.",
-          "en": "We give help."
+          "pt": "Nós damos ajuda",
+          "en": "We give help"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês dão um exemplo.",
-          "en": "You give an example."
+          "pt": "Vocês dão dinheiro",
+          "en": "You give money"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles dão uma mão.",
-          "en": "They give a hand."
+          "pt": "Eles dão comida",
+          "en": "They give food"
         }
       ],
       "past": [
         {
           "pronoun": "eu",
-          "pt": "Eu dei um livro.",
-          "en": "I gave a book."
+          "pt": "Eu dei um livro",
+          "en": "I gave a book"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu deste um brinquedo.",
-          "en": "You gave a toy."
+          "pt": "Tu deste um brinquedo",
+          "en": "You gave a toy"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela deu um beijo.",
-          "en": "She gave a kiss."
+          "pt": "Ela deu um abraço",
+          "en": "She gave a hug"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós demos um presente.",
-          "en": "We gave a gift."
+          "pt": "Nós demos um presente",
+          "en": "We gave a gift"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês deram um abraço.",
-          "en": "You gave a hug."
+          "pt": "Vocês deram um ajudar",
+          "en": "You gave help"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles deram uma mão.",
-          "en": "They gave a hand."
+          "pt": "Eles deram um sorriso",
+          "en": "They gave a smile"
         }
       ],
       "future": [
@@ -2652,64 +2652,64 @@
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu sei inglês",
-          "en": "I know English"
+          "pt": "Eu sei o meu nome",
+          "en": "I know my name"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu sabes ler",
-          "en": "You know how to read"
+          "pt": "Tu sabes a resposta",
+          "en": "You know the answer"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela sabe cantar",
-          "en": "She knows how to sing"
+          "pt": "Ela sabe o caminho",
+          "en": "She knows the way"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós sabemos nadar",
-          "en": "We know how to swim"
+          "pt": "Nós sabemos a verdade",
+          "en": "We know the truth"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês sabem dançar",
-          "en": "You know how to dance"
+          "pt": "Vocês sabem tudo",
+          "en": "You know everything"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles sabem jogar",
-          "en": "They know how to play"
+          "pt": "Eles sabem o que fazem",
+          "en": "They know what they do"
         }
       ],
       "past": [
         {
           "pronoun": "eu",
-          "pt": "Eu soube ",
+          "pt": "Eu soube",
           "en": "I knew"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu soubeste ",
+          "pt": "Tu soubeste",
           "en": "You knew"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela soube ",
+          "pt": "Ela soube",
           "en": "She knew"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós soubemos ",
+          "pt": "Nós soubemos",
           "en": "We knew"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês souberam ",
+          "pt": "Vocês souberam",
           "en": "You knew"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles souberam ",
+          "pt": "Eles souberam",
           "en": "They knew"
         }
       ],
@@ -3912,65 +3912,65 @@
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu tenho um livro.",
-          "en": "I have a book."
+          "pt": "Eu tenho um livro",
+          "en": "I have a book"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu tens um carro.",
-          "en": "You have a car."
+          "pt": "Tu tens um amigo",
+          "en": "You have a friend"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela tem um gato.",
-          "en": "She has a cat."
+          "pt": "Ela tem um gato",
+          "en": "She has a cat"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós temos uma casa.",
-          "en": "We have a house."
+          "pt": "Nós temos um carro",
+          "en": "We have a car"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês têm um telefone.",
-          "en": "You have a phone."
+          "pt": "Vocês têm um telefone",
+          "en": "You have a phone"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles têm um computador.",
-          "en": "They have a computer."
+          "pt": "Eles têm um computador",
+          "en": "They have a computer"
         }
       ],
       "past": [
         {
           "pronoun": "eu",
-          "pt": "Eu tive um cão",
-          "en": "I had a dog"
+          "pt": "Eu tive um livro.",
+          "en": "I had a book."
         },
         {
           "pronoun": "tu",
-          "pt": "Tu tiveste um gato",
-          "en": "You had a cat"
+          "pt": "Tu tiveste um carro.",
+          "en": "You had a car."
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela teve um livro",
-          "en": "She had a book"
+          "pt": "Ela teve um gato.",
+          "en": "She had a cat."
         },
         {
           "pronoun": "nós",
-          "pt": "Nós tivemos fome",
-          "en": "We were hungry"
+          "pt": "Nós tivemos fome.",
+          "en": "We were hungry."
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês tiveram sorte",
-          "en": "You were lucky"
+          "pt": "Vocês tiveram um filho.",
+          "en": "You had a child."
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles tiveram um carro",
-          "en": "They had a car"
+          "pt": "Eles tiveram um dia livre.",
+          "en": "They had a free day."
         }
       ],
       "future": [
@@ -4457,18 +4457,18 @@
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu quero comer",
-          "en": "I want to eat"
+          "pt": "Eu quero um bolo",
+          "en": "I want a cake"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu queres dormir",
-          "en": "You want to sleep"
+          "pt": "Tu queres um carro",
+          "en": "You want a car"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela quer estudar",
-          "en": "She wants to study"
+          "pt": "Ela quer um livro",
+          "en": "She wants a book"
         },
         {
           "pronoun": "nós",
@@ -4477,13 +4477,13 @@
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês querem jogar",
-          "en": "You want to play"
+          "pt": "Vocês querem ajudar",
+          "en": "You want to help"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles querem falar",
-          "en": "They want to talk"
+          "pt": "Eles querem jogar",
+          "en": "They want to play"
         }
       ],
       "past": [
@@ -4494,13 +4494,13 @@
         },
         {
           "pronoun": "tu",
-          "pt": "Tu quiseste um livro",
-          "en": "You wanted a book"
+          "pt": "Tu quiseste um sorvete",
+          "en": "You wanted an ice cream"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela quis um carro",
-          "en": "She wanted a car"
+          "pt": "Ela quis um livro",
+          "en": "She wanted a book"
         },
         {
           "pronoun": "nós",
@@ -4745,8 +4745,8 @@
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu trago água",
-          "en": "I bring water"
+          "pt": "Eu trago um livro",
+          "en": "I bring a book"
         },
         {
           "pronoun": "tu",
@@ -4755,55 +4755,55 @@
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela traz um cadeado",
-          "en": "She brings a lock"
+          "pt": "Ela traz um livro",
+          "en": "She brings a book"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós trazemos comida",
-          "en": "We bring food"
+          "pt": "Nós trazemos um livro",
+          "en": "We bring a book"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês trazem presentes",
-          "en": "You bring gifts"
+          "pt": "Vocês trazem um livro",
+          "en": "You bring a book"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles trazem malas",
-          "en": "They bring suitcases"
+          "pt": "Eles trazem um livro",
+          "en": "They bring a book"
         }
       ],
       "past": [
         {
           "pronoun": "eu",
-          "pt": "Eu trouxe um livro.",
-          "en": "I brought a book."
+          "pt": "Eu trouxe livro",
+          "en": "I brought a book"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu trouxeste uma maçã.",
-          "en": "You brought an apple."
+          "pt": "Tu trouxeste comida",
+          "en": "You brought food"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela trouxe um caderno.",
-          "en": "She brought a notebook."
+          "pt": "Ela trouxe flores",
+          "en": "She brought flowers"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós trouxemos um bolo.",
-          "en": "We brought a cake."
+          "pt": "Nós trouxemos água",
+          "en": "We brought water"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês trouxeram flores.",
-          "en": "You brought flowers."
+          "pt": "Vocês trouxeram cadeiras",
+          "en": "You brought chairs"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles trouxeram um presente.",
-          "en": "They brought a gift."
+          "pt": "Eles trouxeram bolas",
+          "en": "They brought balls"
         }
       ],
       "future-peri": [
@@ -4819,8 +4819,8 @@
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ele vai trazer",
-          "en": "He/She will bring"
+          "pt": "Ela vai trazer",
+          "en": "She will bring"
         },
         {
           "pronoun": "nós",
@@ -4841,33 +4841,33 @@
       "future-simple": [
         {
           "pronoun": "eu",
-          "pt": "Eu trarei livro.",
+          "pt": "Eu trarei um livro.",
           "en": "I will bring a book."
         },
         {
           "pronoun": "tu",
-          "pt": "Tu trarás agua.",
-          "en": "You will bring water."
+          "pt": "Tu trarás uma caneta.",
+          "en": "You will bring a pen."
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela trará comida.",
-          "en": "She will bring food."
+          "pt": "Ela trará o dinheiro.",
+          "en": "She will bring the money."
         },
         {
           "pronoun": "nós",
-          "pt": "Nós traremos frutas.",
-          "en": "We will bring fruits."
+          "pt": "Nós traremos comida.",
+          "en": "We will bring food."
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês trarão dinheiro.",
-          "en": "You will bring money."
+          "pt": "Vocês trarão água.",
+          "en": "You will bring water."
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles trarão brinquedos.",
-          "en": "They will bring toys."
+          "pt": "Eles trarão os livros.",
+          "en": "They will bring the books."
         }
       ]
     },
@@ -4889,33 +4889,33 @@
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu venho todos os dias.",
-          "en": "I come every day."
+          "pt": "Eu venho aqui",
+          "en": "I come here"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu vens comigo.",
-          "en": "You come with me."
+          "pt": "Tu vens também",
+          "en": "You come too"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela vem agora.",
-          "en": "She comes now."
+          "pt": "Ela vem agora",
+          "en": "She comes now"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós vimos ontem.",
-          "en": "We came yesterday."
+          "pt": "Nós vimos ontem",
+          "en": "We came yesterday"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês vêm hoje.",
-          "en": "You come today."
+          "pt": "Vocês vêm hoje",
+          "en": "You come today"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles vêm à noite.",
-          "en": "They come at night."
+          "pt": "Eles vêm amanhã",
+          "en": "They come tomorrow"
         }
       ],
       "past": [
@@ -4954,32 +4954,32 @@
         {
           "pronoun": "eu",
           "pt": "Eu vou vir",
-          "en": "I am going to come"
+          "en": "I will come"
         },
         {
           "pronoun": "tu",
           "pt": "Tu vais vir",
-          "en": "You are going to come"
+          "en": "You will come"
         },
         {
           "pronoun": "ele/ela",
           "pt": "Ele vai vir",
-          "en": "He/She is going to come"
+          "en": "He/She will come"
         },
         {
           "pronoun": "nós",
           "pt": "Nós vamos vir",
-          "en": "We are going to come"
+          "en": "We will come"
         },
         {
           "pronoun": "vocês",
           "pt": "Vocês vão vir",
-          "en": "You are going to come"
+          "en": "You will come"
         },
         {
           "pronoun": "eles/elas",
           "pt": "Eles vão vir",
-          "en": "They are going to come"
+          "en": "They will come"
         }
       ],
       "future-simple": [
@@ -4995,8 +4995,8 @@
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela virá tarde",
-          "en": "She will come late"
+          "pt": "Ela virá logo",
+          "en": "She will come soon"
         },
         {
           "pronoun": "nós",
@@ -5005,13 +5005,13 @@
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês virão também",
-          "en": "You will come too"
+          "pt": "Vocês virão depois",
+          "en": "You will come later"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles virão depois",
-          "en": "They will come later"
+          "pt": "Eles virão também",
+          "en": "They will come too"
         }
       ]
     },
@@ -5187,8 +5187,8 @@
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela lê romances",
-          "en": "She reads novels"
+          "pt": "Ela lê revistas",
+          "en": "She reads magazines"
         },
         {
           "pronoun": "nós",
@@ -5197,13 +5197,13 @@
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês leem revistas",
-          "en": "You read magazines"
+          "pt": "Vocês leem notícias",
+          "en": "You read news"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles leem jornais",
-          "en": "They read newspapers"
+          "pt": "Eles leem livros",
+          "en": "They read books"
         }
       ],
       "past": [
@@ -5214,7 +5214,7 @@
         },
         {
           "pronoun": "tu",
-          "pt": "Tu leste um jornal.",
+          "pt": "Tu lestes um jornal.",
           "en": "You read a newspaper."
         },
         {
@@ -5224,13 +5224,13 @@
         },
         {
           "pronoun": "nós",
-          "pt": "Nós lemos um conto.",
-          "en": "We read a story."
+          "pt": "Nós lemos um livro.",
+          "en": "We read a book."
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês leram um romance.",
-          "en": "You read a novel."
+          "pt": "Vocês leram um jornal.",
+          "en": "You read a newspaper."
         },
         {
           "pronoun": "eles/elas",
@@ -5273,12 +5273,12 @@
       "future-simple": [
         {
           "pronoun": "eu",
-          "pt": "Eu lerei um livro",
+          "pt": "lerei lererei um livro",
           "en": "I will read a book"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu lerás um jornal",
+          "pt": "lerás leres um jornal",
           "en": "You will read a newspaper"
         },
         {
@@ -5303,7 +5303,7 @@
         }
       ]
     },
-    "_activeTense": "future-simple",
+    "_activeTense": "present",
     "_generatingTense": null
   },
   {
@@ -5326,13 +5326,13 @@
         },
         {
           "pronoun": "tu",
-          "pt": "Tu ouves rádio",
-          "en": "You listen to the radio"
+          "pt": "Tu ouves TV",
+          "en": "You listen to TV"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela ouve TV",
-          "en": "She listens to TV"
+          "pt": "Ela ouve rádio",
+          "en": "She listens to the radio"
         },
         {
           "pronoun": "nós",
@@ -5417,33 +5417,33 @@
       "future-simple": [
         {
           "pronoun": "eu",
-          "pt": "Eu ouvirei música",
-          "en": "I will listen to music"
+          "pt": "Eu ouvirei",
+          "en": "I will listen"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu ouvirás um som",
-          "en": "You will hear a sound"
+          "pt": "Tu ouvirás",
+          "en": "You will listen"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela ouvirá o professor",
-          "en": "She will listen to the teacher"
+          "pt": "Ela ouvirá",
+          "en": "She will listen"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós ouviremos um disco",
-          "en": "We will listen to a record"
+          "pt": "Nós ouviremos",
+          "en": "We will listen"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês ouvirão notícias",
-          "en": "You will hear news"
+          "pt": "Vocês ouvirão",
+          "en": "You will listen"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles ouvirão um aviso",
-          "en": "They will hear a warning"
+          "pt": "Eles ouvirão",
+          "en": "They will listen"
         }
       ]
     },
