@@ -5812,11 +5812,42 @@
           "en": "They are friends."
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu fui feliz",
+          "en": "I was happy"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu foste bom",
+          "en": "You were good"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela foi boa",
+          "en": "She was good"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós fomos felizes",
+          "en": "We were happy"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês foram bons",
+          "en": "You were good"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles foram bons",
+          "en": "They were good"
+        }
+      ],
       "future-peri": [],
       "future-simple": []
     },
-    "_activeTense": "past",
-    "_generatingTense": "past"
+    "_activeTense": "future-peri",
+    "_generatingTense": "future-peri"
   }
 ]
