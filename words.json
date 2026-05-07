@@ -5326,13 +5326,13 @@
         },
         {
           "pronoun": "tu",
-          "pt": "Tu ouves TV",
-          "en": "You listen to TV"
+          "pt": "Tu ouves rádio",
+          "en": "You listen to the radio"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela ouve rádio",
-          "en": "She listens to the radio"
+          "pt": "Ela ouve TV",
+          "en": "She listens to TV"
         },
         {
           "pronoun": "nós",
@@ -5417,33 +5417,33 @@
       "future-simple": [
         {
           "pronoun": "eu",
-          "pt": "Eu ouvirei",
-          "en": "I will listen"
+          "pt": "Eu ouvirei música",
+          "en": "I will listen to music"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu ouvirás",
-          "en": "You will listen"
+          "pt": "Tu ouvirás um som",
+          "en": "You will hear a sound"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela ouvirá",
-          "en": "She will listen"
+          "pt": "Ela ouvirá o professor",
+          "en": "She will listen to the teacher"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós ouviremos",
-          "en": "We will listen"
+          "pt": "Nós ouviremos um disco",
+          "en": "We will listen to a record"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês ouvirão",
-          "en": "You will listen"
+          "pt": "Vocês ouvirão notícias",
+          "en": "You will hear news"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles ouvirão",
-          "en": "They will listen"
+          "pt": "Eles ouvirão um aviso",
+          "en": "They will hear a warning"
         }
       ]
     },
