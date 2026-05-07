@@ -2652,13 +2652,13 @@
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu sei inglês",
-          "en": "I know English"
+          "pt": "Eu sei o caminho",
+          "en": "I know the way"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu sabes português",
-          "en": "You know Portuguese"
+          "pt": "Tu sabes a resposta",
+          "en": "You know the answer"
         },
         {
           "pronoun": "ele/ela",
@@ -2667,18 +2667,18 @@
         },
         {
           "pronoun": "nós",
-          "pt": "Nós sabemos escrever",
-          "en": "We know how to write"
+          "pt": "Nós sabemos nadar",
+          "en": "We know how to swim"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês sabem contar",
-          "en": "You know how to count"
+          "pt": "Vocês sabem inglês",
+          "en": "You know English"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles sabem falar",
-          "en": "They know how to speak"
+          "pt": "Eles sabem jogar",
+          "en": "They know how to play"
         }
       ],
       "past": [
@@ -3927,8 +3927,8 @@
         },
         {
           "pronoun": "nós",
-          "pt": "Nós temos fome",
-          "en": "We are hungry"
+          "pt": "Nós temos uma casa",
+          "en": "We have a house"
         },
         {
           "pronoun": "vocês",
@@ -3937,40 +3937,40 @@
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles têm um casa",
-          "en": "They have a house"
+          "pt": "Eles têm um jardim",
+          "en": "They have a garden"
         }
       ],
       "past": [
         {
           "pronoun": "eu",
-          "pt": "Eu tive um livro.",
-          "en": "I had a book."
+          "pt": "Eu tive um livro",
+          "en": "I had a book"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu tiveste um amigo.",
-          "en": "You had a friend."
+          "pt": "Tu tiveste um lápis",
+          "en": "You had a pencil"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela teve um gato.",
-          "en": "She had a cat."
+          "pt": "Ela teve um gato",
+          "en": "She had a cat"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós tivemos um carro.",
-          "en": "We had a car."
+          "pt": "Nós tivemos fome",
+          "en": "We were hungry"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês tiveram um filho.",
-          "en": "You had a son."
+          "pt": "Vocês tiveram um carro",
+          "en": "You had a car"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles tiveram um jardim.",
-          "en": "They had a garden."
+          "pt": "Eles tiveram um problema",
+          "en": "They had a problem"
         }
       ],
       "future": [
