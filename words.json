@@ -711,7 +711,7 @@
       }
     ],
     "addedAt": "28/04/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "common",
     "tenses": {
@@ -842,10 +842,42 @@
           "pt": "Eles/elas vão seduzir",
           "en": "They will seduce"
         }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu seduzirei",
+          "en": "I will seduce"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu seduzirás",
+          "en": "You will seduce"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela seduzirá",
+          "en": "She will seduce"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós seduziremos",
+          "en": "We will seduce"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês seduzirão",
+          "en": "You will seduce"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles seduzirão",
+          "en": "They will seduce"
+        }
       ]
     },
-    "_generatingTense": "future-simple",
-    "_activeTense": "future-simple"
+    "_generatingTense": null,
+    "_activeTense": "present"
   },
   {
     "id": 1777373855436,
@@ -2965,7 +2997,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "02/05/2026",
-    "generatingExample": false,
+    "generatingExample": true,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -3066,8 +3098,8 @@
         }
       ]
     },
-    "_activeTense": "present",
-    "_generatingTense": null
+    "_activeTense": "future-peri",
+    "_generatingTense": "future-peri"
   },
   {
     "id": 1777897469362,
