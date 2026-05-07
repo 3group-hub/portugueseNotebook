@@ -2235,13 +2235,13 @@
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu tenho um livro",
-          "en": "I have a book"
+          "pt": "Eu tenho um cão",
+          "en": "I have a dog"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu tens um cachorro",
-          "en": "You have a dog"
+          "pt": "Tu tens um carro",
+          "en": "You have a car"
         },
         {
           "pronoun": "ele/ela",
@@ -2255,8 +2255,8 @@
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês têm um carro",
-          "en": "You have a car"
+          "pt": "Vocês têm um livro",
+          "en": "You have a book"
         },
         {
           "pronoun": "eles/elas",
@@ -2282,18 +2282,18 @@
         },
         {
           "pronoun": "nós",
-          "pt": "Nós tivemos um cachorro",
-          "en": "We had a dog"
+          "pt": "Nós tivemos fome",
+          "en": "We were hungry"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês tiveram um jardim",
-          "en": "You had a garden"
+          "pt": "Vocês tiveram sorte",
+          "en": "You were lucky"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles tiveram um problema",
-          "en": "They had a problem"
+          "pt": "Eles tiveram dinheiro",
+          "en": "They had money"
         }
       ],
       "future": [
