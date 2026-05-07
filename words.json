@@ -718,18 +718,18 @@
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu seduzo os meus amigos",
-          "en": "I seduce my friends"
+          "pt": "Eu seduzo facilmente",
+          "en": "I seduce easily"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu seduzes com facilidade",
-          "en": "You seduce with ease"
+          "pt": "Tu seduzes bem",
+          "en": "You seduce well"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela seduz com um sorriso",
-          "en": "She seduces with a smile"
+          "pt": "Ela seduz todos",
+          "en": "She seduces everyone"
         },
         {
           "pronoun": "nós",
@@ -738,8 +738,8 @@
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês seduzem com charme",
-          "en": "You seduce with charm"
+          "pt": "Vocês seduzem com facilidade",
+          "en": "You seduce with ease"
         },
         {
           "pronoun": "eles/elas",
@@ -812,8 +812,8 @@
         }
       ]
     },
-    "_generatingTense": "present",
-    "_activeTense": "present"
+    "_generatingTense": "future-peri",
+    "_activeTense": "future-peri"
   },
   {
     "id": 1777373855436,
