@@ -197,7 +197,7 @@
         </label>
       </div>
     </div>
-    <div id="nationsGrid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:8px;margin-top:12px;"></div>
+    <div id="nationsGrid" style="margin-top:12px;display:flex;flex-direction:column;gap:4px;"></div>
   </div>
 
   <!-- ═══ ALPHABET TAB ═══ -->
@@ -1088,6 +1088,60 @@ const REGION_COLORS={'Europe':'#2c5f8a','Americas':'#1a6b3c','Africa':'#c1440e',
 let nationsQuizRevealed=new Set();
 let expandedNation=null;
 
+function buildGrammarBlock(n){
+  const gr=countryGrammar(n.pt,n.gender,n.plural||false);
+  const genderLabel=n.gender==='none'?'sem artigo':n.plural?(n.gender==='m'?'masculino plural':'feminino plural'):(n.gender==='m'?'masculino':'feminino');
+  return `<div style="padding:12px 16px;background:#f8f9fc;border-top:1px solid #eef0f8;">
+    <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;flex-wrap:wrap;">
+      <span style="font-size:15px;font-weight:700;color:#2c5f8a;">${gr.full}</span>
+      <span style="font-size:10px;color:#fff;background:#2c5f8a;padding:2px 8px;border-radius:10px;">${genderLabel}</span>
+      <button class="speak-btn" onclick="speakText('${escQ(gr.full)}','pt-PT',this);event.stopPropagation();">🔊</button>
+    </div>
+    <div style="font-size:10px;color:#aaa;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:5px;">Preposições</div>
+    <div style="background:#fff;border-radius:8px;padding:8px 10px;margin-bottom:10px;display:flex;flex-direction:column;gap:5px;">
+      <div style="display:flex;align-items:center;gap:8px;">
+        <span style="font-size:10px;color:#aaa;background:#f0f0f0;padding:1px 8px;border-radius:4px;min-width:38px;text-align:center;">em</span>
+        <strong style="font-size:13px;color:var(--navy);">${gr.em}</strong>
+        <button class="speak-btn" onclick="speakText('${escQ(gr.em)}','pt-PT',this);event.stopPropagation();">🔊</button>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <span style="font-size:10px;color:#aaa;background:#f0f0f0;padding:1px 8px;border-radius:4px;min-width:38px;text-align:center;">de</span>
+        <strong style="font-size:13px;color:var(--navy);">${gr.de}</strong>
+        <button class="speak-btn" onclick="speakText('${escQ(gr.de)}','pt-PT',this);event.stopPropagation();">🔊</button>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <span style="font-size:10px;color:#aaa;background:#f0f0f0;padding:1px 8px;border-radius:4px;min-width:38px;text-align:center;">para</span>
+        <strong style="font-size:13px;color:var(--navy);">${gr.para}</strong>
+        <button class="speak-btn" onclick="speakText('${escQ(gr.para)}','pt-PT',this);event.stopPropagation();">🔊</button>
+      </div>
+    </div>
+    ${n.nat?`
+    <div style="font-size:10px;color:#aaa;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:5px;">Nacionalidade</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;">
+      <div style="background:#fff;border-radius:8px;padding:8px;border-left:3px solid #2c5f8a;">
+        <div style="font-size:9px;color:#aaa;margin-bottom:2px;">Masculino singular</div>
+        <div style="font-size:13px;font-weight:700;color:var(--navy);">${n.nat[0]}</div>
+        <button class="speak-btn" style="margin-top:3px;" onclick="speakText('${escQ(n.nat[0])}','pt-PT',this);event.stopPropagation();">🔊</button>
+      </div>
+      <div style="background:#fff;border-radius:8px;padding:8px;border-left:3px solid #8a3a5c;">
+        <div style="font-size:9px;color:#aaa;margin-bottom:2px;">Feminino singular</div>
+        <div style="font-size:13px;font-weight:700;color:var(--navy);">${n.nat[1]}</div>
+        <button class="speak-btn" style="margin-top:3px;" onclick="speakText('${escQ(n.nat[1])}','pt-PT',this);event.stopPropagation();">🔊</button>
+      </div>
+      <div style="background:#fff;border-radius:8px;padding:8px;border-left:3px dashed #2c5f8a;">
+        <div style="font-size:9px;color:#aaa;margin-bottom:2px;">Masculino plural</div>
+        <div style="font-size:13px;font-weight:700;color:var(--navy);">${n.nat[2]}</div>
+        <button class="speak-btn" style="margin-top:3px;" onclick="speakText('${escQ(n.nat[2])}','pt-PT',this);event.stopPropagation();">🔊</button>
+      </div>
+      <div style="background:#fff;border-radius:8px;padding:8px;border-left:3px dashed #8a3a5c;">
+        <div style="font-size:9px;color:#aaa;margin-bottom:2px;">Feminino plural</div>
+        <div style="font-size:13px;font-weight:700;color:var(--navy);">${n.nat[3]}</div>
+        <button class="speak-btn" style="margin-top:3px;" onclick="speakText('${escQ(n.nat[3])}','pt-PT',this);event.stopPropagation();">🔊</button>
+      </div>
+    </div>`:''}
+  </div>`;
+}
+
 function renderNations(){
   const q=(document.getElementById('nationsSearch')?.value||'').toLowerCase();
   const region=document.getElementById('nationsRegion')?.value||'';
@@ -1100,65 +1154,19 @@ function renderNations(){
     const revealed=nationsQuizRevealed.has(n.en);
     const showName=!quizMode||revealed;
     const isExpanded=expandedNation===n.en;
-    const gr=countryGrammar(n.pt,n.gender,n.plural||false);
-    const genderLabel=n.gender==='none'?'sem artigo':n.plural?(n.gender==='m'?'masculino plural':'feminino plural'):(n.gender==='m'?'masculino':'feminino');
-    const grammarBlock=`<div style="margin-top:8px;padding:10px 12px;background:#f8f8fc;border-radius:10px;text-align:left;">
-      <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;flex-wrap:wrap;">
-        <span style="font-size:15px;font-weight:700;color:#2c5f8a;">${gr.full}</span>
-        <span style="font-size:10px;color:#fff;background:#2c5f8a;padding:2px 8px;border-radius:10px;">${genderLabel}</span>
-        <button class="speak-btn" onclick="speakText('${escQ(gr.full)}','pt-PT',this);event.stopPropagation();">🔊</button>
+    return `<div style="background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,0.07);border:1px solid ${isExpanded?color+'66':'#f0ebe4'};transition:border-color 0.15s;">
+      <div onclick="${quizMode?`toggleNationReveal('${escQ(n.en)}')`:`toggleNationExpand('${escQ(n.en)}')`}"
+        style="display:flex;align-items:center;gap:12px;padding:11px 14px;cursor:pointer;user-select:none;">
+        <span style="font-size:26px;flex-shrink:0;line-height:1;">${n.flag}</span>
+        <div style="flex:1;min-width:0;">
+          ${showName?`<div style="font-size:14px;font-weight:700;color:${color};line-height:1.3;">${n.pt}</div>
+          <div style="font-size:11px;color:#aaa;margin-top:1px;">${n.en} · <em>${n.capital}</em></div>`
+          :`<div style="font-size:13px;color:#ccc;font-style:italic;">tap to reveal</div>`}
+        </div>
+        ${showName?`<button class="speak-btn" onclick="speakText('${escQ(n.pt)}','pt-PT',this);event.stopPropagation();">🔊</button>`:''}
+        ${showName?`<span style="font-size:12px;color:#ccc;transition:transform 0.2s;display:inline-block;${isExpanded?'transform:rotate(180deg)':''}">▼</span>`:''}
       </div>
-      <div style="font-size:11px;color:#aaa;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:5px;">Preposições</div>
-      <div style="background:#fff;border-radius:8px;padding:8px 10px;margin-bottom:10px;display:flex;flex-direction:column;gap:5px;">
-        <div style="display:flex;align-items:center;gap:6px;">
-          <span style="font-size:10px;color:#aaa;background:#f5f5f5;padding:1px 6px;border-radius:4px;min-width:36px;text-align:center;">em</span>
-          <strong style="font-size:13px;color:var(--navy);">${gr.em}</strong>
-          <button class="speak-btn" onclick="speakText('${escQ(gr.em)}','pt-PT',this);event.stopPropagation();">🔊</button>
-        </div>
-        <div style="display:flex;align-items:center;gap:6px;">
-          <span style="font-size:10px;color:#aaa;background:#f5f5f5;padding:1px 6px;border-radius:4px;min-width:36px;text-align:center;">de</span>
-          <strong style="font-size:13px;color:var(--navy);">${gr.de}</strong>
-          <button class="speak-btn" onclick="speakText('${escQ(gr.de)}','pt-PT',this);event.stopPropagation();">🔊</button>
-        </div>
-        <div style="display:flex;align-items:center;gap:6px;">
-          <span style="font-size:10px;color:#aaa;background:#f5f5f5;padding:1px 6px;border-radius:4px;min-width:36px;text-align:center;">para</span>
-          <strong style="font-size:13px;color:var(--navy);">${gr.para}</strong>
-          <button class="speak-btn" onclick="speakText('${escQ(gr.para)}','pt-PT',this);event.stopPropagation();">🔊</button>
-        </div>
-      </div>
-      ${n.nat?`
-      <div style="font-size:11px;color:#aaa;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:5px;">Nacionalidade</div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:5px;">
-        <div style="background:#fff;border-radius:8px;padding:7px 8px;border-left:3px solid #2c5f8a;">
-          <div style="font-size:9px;color:#aaa;margin-bottom:2px;">Masculino singular</div>
-          <div style="font-size:13px;font-weight:700;color:var(--navy);">${n.nat[0]}</div>
-          <button class="speak-btn" style="margin-top:2px;" onclick="speakText('${escQ(n.nat[0])}','pt-PT',this);event.stopPropagation();">🔊</button>
-        </div>
-        <div style="background:#fff;border-radius:8px;padding:7px 8px;border-left:3px solid #8a3a5c;">
-          <div style="font-size:9px;color:#aaa;margin-bottom:2px;">Feminino singular</div>
-          <div style="font-size:13px;font-weight:700;color:var(--navy);">${n.nat[1]}</div>
-          <button class="speak-btn" style="margin-top:2px;" onclick="speakText('${escQ(n.nat[1])}','pt-PT',this);event.stopPropagation();">🔊</button>
-        </div>
-        <div style="background:#fff;border-radius:8px;padding:7px 8px;border-left:3px dashed #2c5f8a;">
-          <div style="font-size:9px;color:#aaa;margin-bottom:2px;">Masculino plural</div>
-          <div style="font-size:13px;font-weight:700;color:var(--navy);">${n.nat[2]}</div>
-          <button class="speak-btn" style="margin-top:2px;" onclick="speakText('${escQ(n.nat[2])}','pt-PT',this);event.stopPropagation();">🔊</button>
-        </div>
-        <div style="background:#fff;border-radius:8px;padding:7px 8px;border-left:3px dashed #8a3a5c;">
-          <div style="font-size:9px;color:#aaa;margin-bottom:2px;">Feminino plural</div>
-          <div style="font-size:13px;font-weight:700;color:var(--navy);">${n.nat[3]}</div>
-          <button class="speak-btn" style="margin-top:2px;" onclick="speakText('${escQ(n.nat[3])}','pt-PT',this);event.stopPropagation();">🔊</button>
-        </div>
-      </div>`:''}
-    </div>`;
-    return `<div onclick="${quizMode?`toggleNationReveal('${n.en}')`:`toggleNationExpand('${escQ(n.en)}')`}" style="background:#fff;border-radius:10px;padding:14px 10px;box-shadow:0 1px 5px rgba(0,0,0,0.07);text-align:center;cursor:pointer;border:2px solid ${isExpanded?color:'transparent'};transition:all 0.15s;">
-      <div style="font-size:36px;margin-bottom:6px;">${n.flag}</div>
-      ${showName?`<div style="font-size:11px;font-weight:700;color:${color};margin-bottom:2px;line-height:1.4;word-break:break-word;hyphens:auto;">${n.pt}</div>
-      <div style="font-size:10px;color:#aaa;margin-bottom:2px;">${n.en}</div>
-      <div style="font-size:10px;color:#ccc;font-style:italic;margin-bottom:4px;">${n.capital}</div>
-      <button class="speak-btn" onclick="speakText('${escQ(n.pt)}','pt-PT',this);event.stopPropagation();" style="margin-bottom:4px;">🔊</button>
-      ${isExpanded?grammarBlock:`<div style="font-size:10px;color:#ccc;margin-top:2px;">tap for grammar ↓</div>`}`
-      :`<div style="font-size:11px;color:#ddd;font-style:italic;">tap to reveal</div>`}
+      ${isExpanded&&showName?buildGrammarBlock(n):''}
     </div>`;
   }).join('');
 }
