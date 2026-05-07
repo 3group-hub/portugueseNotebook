@@ -2683,33 +2683,33 @@
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu dou um livro",
-          "en": "I give a book"
+          "pt": "Eu dou um livro.",
+          "en": "I give a book."
         },
         {
           "pronoun": "tu",
-          "pt": "Tu dás um presente",
-          "en": "You give a gift"
+          "pt": "Tu dás um presente.",
+          "en": "You give a gift."
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela dá um beijo",
-          "en": "She gives a kiss"
+          "pt": "Ela dá um sorriso.",
+          "en": "She gives a smile."
         },
         {
           "pronoun": "nós",
-          "pt": "Nós damos ajuda",
-          "en": "We give help"
+          "pt": "Nós damos ajuda.",
+          "en": "We give help."
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês dão um exemplo",
-          "en": "You give an example"
+          "pt": "Vocês dão um exemplo.",
+          "en": "You give an example."
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles dão trabalho",
-          "en": "They give work"
+          "pt": "Eles dão uma mão.",
+          "en": "They give a hand."
         }
       ],
       "past": [
@@ -2735,13 +2735,13 @@
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês deram um carro.",
-          "en": "You gave a car."
+          "pt": "Vocês deram um livro.",
+          "en": "You gave a book."
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles deram um computador.",
-          "en": "They gave a computer."
+          "pt": "Eles deram um carro.",
+          "en": "They gave a car."
         }
       ],
       "future": [
