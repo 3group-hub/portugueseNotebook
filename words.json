@@ -243,28 +243,28 @@
         },
         {
           "pronoun": "tu",
-          "pt": "Tu ouves TV",
-          "en": "You listen to TV"
+          "pt": "Tu ouves rádio",
+          "en": "You listen to the radio"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela ouve rádio",
-          "en": "She listens to the radio"
+          "pt": "Ela ouve televisão",
+          "en": "She listens to TV"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós ouvimos tudo",
-          "en": "We listen to everything"
+          "pt": "Nós ouvimos notícias",
+          "en": "We listen to news"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês ouvem nós",
-          "en": "You listen to us"
+          "pt": "Vocês ouvem música",
+          "en": "You listen to music"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles ouvem música",
-          "en": "They listen to music"
+          "pt": "Eles ouvem rádio",
+          "en": "They listen to the radio"
         }
       ],
       "past": [
@@ -2240,8 +2240,8 @@
         },
         {
           "pronoun": "tu",
-          "pt": "Tu tens um carro",
-          "en": "You have a car"
+          "pt": "Tu tens um cachorro",
+          "en": "You have a dog"
         },
         {
           "pronoun": "ele/ela",
@@ -2255,8 +2255,8 @@
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês têm um telefone",
-          "en": "You have a phone"
+          "pt": "Vocês têm um carro",
+          "en": "You have a car"
         },
         {
           "pronoun": "eles/elas",
@@ -2287,8 +2287,8 @@
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês tiveram um jantar",
-          "en": "You had dinner"
+          "pt": "Vocês tiveram um jardim",
+          "en": "You had a garden"
         },
         {
           "pronoun": "eles/elas",
