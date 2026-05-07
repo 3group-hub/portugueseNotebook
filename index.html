@@ -744,113 +744,10 @@ async function writeToFile(){
 async function saveWords(){
   localStorage.setItem('pt-words', JSON.stringify(words));
   await writeToFile();
-  if(ghCredentials()) ghSave(true); // sync words.json
-  // Silently update translations for any new/missing phrases
-  autoUpdateTranslations();
+  if(ghCredentials()) ghSave(true); // sync words.json silently
+  // Note: auto-translation removed from here to avoid rate limit issues
+  // Use the viewer's langue selector to translate on demand
 }
-
-// ═══ AUTO-TRANSLATION SYNC ══════════════════════════════════════════════
-const GH_TRANS_FILE = 'translations.json';
-let _transUpdateTimer = null;
-
-function autoUpdateTranslations(){
-  // Debounce — wait 3 seconds after last save before translating
-  // (avoids hammering the API while adding words rapidly)
-  clearTimeout(_transUpdateTimer);
-  _transUpdateTimer = setTimeout(async ()=>{
-    await doAutoUpdateTranslations();
-  }, 3000);
-}
-
-async function doAutoUpdateTranslations(){
-  const creds = ghCredentials(); if(!creds) return;
-  // Load existing translations from GitHub
-  let translations = {};
-  try{
-    const file = await ghApiCall(GH_TRANS_FILE);
-    const json = decodeURIComponent(escape(atob(file.content.replace(/\n/g,''))));
-    translations = JSON.parse(json);
-  }catch(e){ return; } // no translations.json yet — nothing to update
-
-  const langs = Object.keys(translations);
-  if(!langs.length) return; // no languages translated yet
-
-  // Collect all English texts that should be translated
-  const allTexts = new Set();
-  words.forEach(w => {
-    if(w.translation) allTexts.add(w.translation);
-    (w.examples||(w.example?[w.example]:[])).forEach(e=>{ if(e.en) allTexts.add(e.en); });
-    if(w.tenses) Object.values(w.tenses).forEach(rows=>rows.forEach(r=>{ if(r.en) allTexts.add(r.en); }));
-  });
-
-  // Find which texts are missing in any language
-  let anyMissing = false;
-  const missing = {}; // { lang: [texts] }
-  langs.forEach(lang => {
-    const m = [...allTexts].filter(t => !translations[lang]?.[t]);
-    if(m.length){ missing[lang] = m; anyMissing = true; }
-  });
-  if(!anyMissing) return;
-
-  // We need a Groq key to translate — check if user has one saved
-  const groqKey = localStorage.getItem('pt-ro-transkey') || '';
-  if(!groqKey){
-    // Show a subtle indicator that translations need updating
-    showToast(`⚠️ New words need translation — open the viewer and select a langue to update`);
-    return;
-  }
-
-  showToast(`🌐 Updating translations for ${langs.length} langue${langs.length!==1?'s':''}…`);
-
-  // Translate missing texts for each language
-  for(const lang of langs){
-    if(!missing[lang]?.length) continue;
-    if(!translations[lang]) translations[lang] = {};
-    const CHUNK = 40;
-    const toTranslate = missing[lang];
-    for(let i=0; i<toTranslate.length; i+=CHUNK){
-      const chunk = toTranslate.slice(i, i+CHUNK);
-      try{
-        const numbered = chunk.map((t,j)=>`${j+1}. ${t}`).join('\n');
-        const res = await fetch('https://api.groq.com/openai/v1/chat/completions',{
-          method:'POST',
-          headers:{'Content-Type':'application/json','Authorization':`Bearer ${groqKey}`},
-          body:JSON.stringify({
-            model:'llama-3.3-70b-versatile',
-            max_tokens:2000,
-            messages:[{role:'user',content:`Translate into ${LANG_NAMES_MAIN[lang]}. Same numbering. Output ONLY numbered translations.\n\n${numbered}`}]
-          })
-        });
-        const data = await res.json();
-        if(!res.ok) throw new Error(data.error?.message);
-        const lines = (data.choices?.[0]?.message?.content||'').split('\n').filter(l=>l.trim());
-        lines.forEach((line,j)=>{
-          const match = line.match(/^\d+[\.\)]\s*(.+)/);
-          if(match && chunk[j]) translations[lang][chunk[j]] = match[1].trim();
-        });
-      }catch(e){ console.warn(`Translation update failed for ${lang}:`, e); }
-    }
-  }
-
-  // Save updated translations back to GitHub
-  try{
-    const content = btoa(unescape(encodeURIComponent(JSON.stringify(translations, null, 2))));
-    let sha;
-    try{ const f = await ghApiCall(GH_TRANS_FILE); sha = f.sha; }catch(e){}
-    await ghApiCall(GH_TRANS_FILE, 'PUT', {
-      message:`Auto-update translations (${langs.join(', ')})`,
-      content, ...(sha?{sha}:{})
-    });
-    showToast(`✅ Translations updated for ${langs.join(', ')}!`);
-  }catch(e){ showToast('Could not save translations: '+e.message); }
-}
-
-// Language names for the main app translation updates
-const LANG_NAMES_MAIN = {
-  en:'English', fr:'French', de:'German', es:'Spanish', it:'Italian',
-  nl:'Dutch', pl:'Polish', ru:'Russian', ar:'Arabic', zh:'Chinese',
-  ja:'Japanese', ko:'Korean', hi:'Hindi', tr:'Turkish', sv:'Swedish', uk:'Ukrainian'
-};
 
 // ═══ GITHUB SYNC ════════════════════════════════════════════════════════
 const GH_WORDS_FILE = 'words.json';
@@ -3324,10 +3221,20 @@ setTimeout(()=>loadVoices(), 100);
 setTimeout(()=>loadVoices(), 600);
 setTimeout(()=>{ loadVoices(); initRateSlider(); }, 2000);
 
-initFileStorage().then(()=>{
-  updateSubtitle(); renderWords();
+initFileStorage().then(async ()=>{
   const creds = ghCredentials();
-  if(creds) updateFileStatus(`${creds.user}/${creds.repo}`, 'Connected — words sync to GitHub on every change ✓', '🐙');
+  if(creds){
+    updateFileStatus(`${creds.user}/${creds.repo}`, 'Loading words from GitHub…', '⏳');
+    try{
+      await ghLoad(true); // auto-load words from GitHub on startup
+      updateFileStatus(`${creds.user}/${creds.repo}`, 'Words loaded from GitHub ✓', '🐙');
+    }catch(e){
+      // Fall back to localStorage if GitHub load fails
+      updateFileStatus(`${creds.user}/${creds.repo}`, 'Could not load from GitHub — using local copy', '⚠️');
+    }
+  }
+  updateSubtitle();
+  renderWords();
 });
 initRateSlider();
 renderNumGroups();
