@@ -5767,5 +5767,16 @@
     "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential"
+  },
+  {
+    "id": 1778150669868,
+    "word": "ser",
+    "translation": "to be",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "07/05/2026",
+    "generatingExample": true,
+    "assessingFreq": true
   }
 ]
