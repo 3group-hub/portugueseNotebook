@@ -711,7 +711,7 @@
       }
     ],
     "addedAt": "28/04/2026",
-    "generatingExample": false,
+    "generatingExample": true,
     "assessingFreq": false,
     "freq": "common",
     "tenses": {
@@ -812,7 +812,7 @@
         }
       ]
     },
-    "_generatingTense": null,
+    "_generatingTense": "present",
     "_activeTense": "present"
   },
   {
@@ -1177,40 +1177,40 @@
       }
     ],
     "addedAt": "28/04/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "common",
     "tenses": {
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu erraria ",
-          "en": "I would make a mistake "
+          "pt": "Eu erro frequentemente.",
+          "en": "I make mistakes frequently."
         },
         {
           "pronoun": "tu",
-          "pt": "Tu erras ",
-          "en": "You make a mistake "
+          "pt": "Tu erras muito.",
+          "en": "You make many mistakes."
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela erra ",
-          "en": "She makes a mistake "
+          "pt": "Ela erra às vezes.",
+          "en": "She makes mistakes sometimes."
         },
         {
           "pronoun": "nós",
-          "pt": "Nós erramos ",
-          "en": "We make mistakes "
+          "pt": "Nós erramos juntos.",
+          "en": "We make mistakes together."
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês erram ",
-          "en": "You make mistakes "
+          "pt": "Vocês erram mais do que eu.",
+          "en": "You make more mistakes than I do."
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles erram ",
-          "en": "They make mistakes "
+          "pt": "Eles erram sempre.",
+          "en": "They always make mistakes."
         }
       ],
       "past": [
@@ -1311,7 +1311,7 @@
         }
       ]
     },
-    "_generatingTense": "present",
+    "_generatingTense": null,
     "_activeTense": "present"
   },
   {
