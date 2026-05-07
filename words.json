@@ -3912,65 +3912,65 @@
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu tenho um livro",
-          "en": "I have a book"
+          "pt": "Eu tenho um livro.",
+          "en": "I have a book."
         },
         {
           "pronoun": "tu",
-          "pt": "Tu tens um amigo",
-          "en": "You have a friend"
+          "pt": "Tu tens um carro.",
+          "en": "You have a car."
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela tem um gato",
-          "en": "She has a cat"
+          "pt": "Ela tem um gato.",
+          "en": "She has a cat."
         },
         {
           "pronoun": "nós",
-          "pt": "Nós temos um carro",
-          "en": "We have a car"
+          "pt": "Nós temos uma casa.",
+          "en": "We have a house."
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês têm um telefone",
-          "en": "You have a phone"
+          "pt": "Vocês têm um telefone.",
+          "en": "You have a phone."
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles têm um computador",
-          "en": "They have a computer"
+          "pt": "Eles têm um computador.",
+          "en": "They have a computer."
         }
       ],
       "past": [
         {
           "pronoun": "eu",
-          "pt": "Eu tive um livro.",
-          "en": "I had a book."
+          "pt": "Eu tive um cão",
+          "en": "I had a dog"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu tiveste um carro.",
-          "en": "You had a car."
+          "pt": "Tu tiveste um gato",
+          "en": "You had a cat"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela teve um gato.",
-          "en": "She had a cat."
+          "pt": "Ela teve um livro",
+          "en": "She had a book"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós tivemos fome.",
-          "en": "We were hungry."
+          "pt": "Nós tivemos fome",
+          "en": "We were hungry"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês tiveram um filho.",
-          "en": "You had a child."
+          "pt": "Vocês tiveram sorte",
+          "en": "You were lucky"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles tiveram um dia livre.",
-          "en": "They had a free day."
+          "pt": "Eles tiveram um carro",
+          "en": "They had a car"
         }
       ],
       "future": [
