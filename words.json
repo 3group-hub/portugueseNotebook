@@ -2652,8 +2652,8 @@
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu sei o caminho",
-          "en": "I know the way"
+          "pt": "Eu sei o meu nome",
+          "en": "I know my name"
         },
         {
           "pronoun": "tu",
@@ -2662,23 +2662,23 @@
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela sabe ler",
-          "en": "She knows how to read"
+          "pt": "Ela sabe o caminho",
+          "en": "She knows the way"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós sabemos nadar",
-          "en": "We know how to swim"
+          "pt": "Nós sabemos a verdade",
+          "en": "We know the truth"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês sabem inglês",
-          "en": "You know English"
+          "pt": "Vocês sabem tudo",
+          "en": "You know everything"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles sabem jogar",
-          "en": "They know how to play"
+          "pt": "Eles sabem o que fazem",
+          "en": "They know what they do"
         }
       ],
       "past": [
