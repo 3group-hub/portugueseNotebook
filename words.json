@@ -2325,7 +2325,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "02/05/2026",
-    "generatingExample": false,
+    "generatingExample": true,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -2426,8 +2426,8 @@
         }
       ]
     },
-    "_activeTense": "future",
-    "_generatingTense": null
+    "_activeTense": "future-peri",
+    "_generatingTense": "future-peri"
   },
   {
     "id": 1777726848084,
@@ -4097,7 +4097,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "04/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -4228,10 +4228,42 @@
           "pt": "Eles vão ter um novo computador",
           "en": "They will have a new computer"
         }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu terei um carro.",
+          "en": "I will have a car."
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu terás dinheiro.",
+          "en": "You will have money."
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela terá um filho.",
+          "en": "She will have a child."
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós teremos um casa.",
+          "en": "We will have a house."
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês terão sucesso.",
+          "en": "You will have success."
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles terão fome.",
+          "en": "They will be hungry."
+        }
       ]
     },
     "_activeTense": "future-simple",
-    "_generatingTense": "future-simple"
+    "_generatingTense": null
   },
   {
     "id": 1777898856760,
