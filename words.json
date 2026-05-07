@@ -6008,5 +6008,48 @@
       "future-peri": [],
       "future-simple": []
     }
+  },
+  {
+    "id": 1777374156772,
+    "word": "creio",
+    "translation": "I believe",
+    "category": "Verb",
+    "notes": "",
+    "examples": [
+      {
+        "pronoun": "eu",
+        "pt": "Eu creio que vai chover",
+        "en": "I believe it will rain"
+      },
+      {
+        "pronoun": "tu",
+        "pt": "Tu cres que é verdade",
+        "en": "You believe it's true"
+      },
+      {
+        "pronoun": "ele/ela",
+        "pt": "Ela crê que está certa",
+        "en": "She believes she's right"
+      },
+      {
+        "pronoun": "nós",
+        "pt": "Nós cremos na igualdade",
+        "en": "We believe in equality"
+      },
+      {
+        "pronoun": "vocês",
+        "pt": "Vocês creem que é fácil",
+        "en": "You believe it's easy"
+      },
+      {
+        "pronoun": "eles/elas",
+        "pt": "Eles creem na justiça",
+        "en": "They believe in justice"
+      }
+    ],
+    "addedAt": "28/04/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common"
   }
 ]
