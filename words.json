@@ -2795,33 +2795,33 @@
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu sei inglês.",
-          "en": "I know English."
+          "pt": "Eu sei inglês",
+          "en": "I know English"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu sabes português.",
-          "en": "You know Portuguese."
+          "pt": "Tu sabes português",
+          "en": "You know Portuguese"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela sabe francês.",
-          "en": "She knows French."
+          "pt": "Ela sabe ler",
+          "en": "She knows how to read"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós sabemos espanhol.",
-          "en": "We know Spanish."
+          "pt": "Nós sabemos escrever",
+          "en": "We know how to write"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês sabem alemão.",
-          "en": "You know German."
+          "pt": "Vocês sabem contar",
+          "en": "You know how to count"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles sabem italiano.",
-          "en": "They know Italian."
+          "pt": "Eles sabem falar",
+          "en": "They know how to speak"
         }
       ],
       "past": [
