@@ -2464,28 +2464,28 @@
         },
         {
           "pronoun": "tu",
-          "pt": "Tu fazes o trabalho",
-          "en": "You do the work"
+          "pt": "Tu fazes um bolo",
+          "en": "You do a cake"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela faz o bolo",
-          "en": "She does the cake"
+          "pt": "Ela faz o trabalho",
+          "en": "She does the work"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós fazemos exercício",
-          "en": "We do exercise"
+          "pt": "Nós fazemos um teste",
+          "en": "We do a test"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês fazem o que querem",
-          "en": "You do what you want"
+          "pt": "Vocês fazem um curso",
+          "en": "You do a course"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles fazem futebol",
-          "en": "They do football"
+          "pt": "Eles fazem um projeto",
+          "en": "They do a project"
         }
       ],
       "past": [
@@ -2501,8 +2501,8 @@
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ele fez",
-          "en": "He/She did"
+          "pt": "Ela fez",
+          "en": "She did"
         },
         {
           "pronoun": "nós",
