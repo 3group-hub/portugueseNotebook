@@ -3164,33 +3164,33 @@
       "past": [
         {
           "pronoun": "eu",
-          "pt": "Eu trabalhei ontem",
-          "en": "I worked yesterday"
+          "pt": "Eu trabalhei",
+          "en": "I worked"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu trabalhaste ontem",
-          "en": "You worked yesterday"
+          "pt": "Tu trabalhaste",
+          "en": "You worked"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela trabalhou ontem",
-          "en": "She worked yesterday"
+          "pt": "Ele trabalhou",
+          "en": "He/She worked"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós trabalhámos ontem",
-          "en": "We worked yesterday"
+          "pt": "Nós trabalhamos",
+          "en": "We worked"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês trabalharam ontem",
-          "en": "You worked yesterday"
+          "pt": "Vocês trabalharam",
+          "en": "You worked"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles trabalharam ontem",
-          "en": "They worked yesterday"
+          "pt": "Eles trabalharam",
+          "en": "They worked"
         }
       ],
       "future": [
@@ -3290,8 +3290,8 @@
         }
       ]
     },
-    "_activeTense": "past",
-    "_generatingTense": "past"
+    "_activeTense": "present",
+    "_generatingTense": "present"
   },
   {
     "id": 1777897469362,
