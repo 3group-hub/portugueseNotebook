@@ -5032,8 +5032,8 @@
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu venho todos os dias.",
-          "en": "I come every day."
+          "pt": "Eu venho aqui.",
+          "en": "I come here."
         },
         {
           "pronoun": "tu",
@@ -5047,8 +5047,8 @@
         },
         {
           "pronoun": "nós",
-          "pt": "vimosós vamos juntos.",
-          "en": "We come together."
+          "pt": "Nós vimos ontem.",
+          "en": "We came yesterday."
         },
         {
           "pronoun": "vocês",
@@ -5106,7 +5106,7 @@
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ele/ela vai vir",
+          "pt": "Ele vai vir",
           "en": "He/She will come"
         },
         {
@@ -5121,7 +5121,7 @@
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles/elas vão vir",
+          "pt": "Eles vão vir",
           "en": "They will come"
         }
       ],
