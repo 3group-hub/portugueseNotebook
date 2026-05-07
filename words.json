@@ -4600,33 +4600,33 @@
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu quero comer",
-          "en": "I want to eat"
+          "pt": "Eu quero um bolo",
+          "en": "I want a cake"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu queres dormir",
-          "en": "You want to sleep"
+          "pt": "Tu queres um café",
+          "en": "You want a coffee"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela quer jogar",
-          "en": "She wants to play"
+          "pt": "Ela quer um chá",
+          "en": "She wants a tea"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós queremos ir",
-          "en": "We want to go"
+          "pt": "Nós queremos comer",
+          "en": "We want to eat"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês querem estudar",
-          "en": "You want to study"
+          "pt": "Vocês querem jogar",
+          "en": "You want to play"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles querem correr",
-          "en": "They want to run"
+          "pt": "Eles querem futebol",
+          "en": "They want football"
         }
       ],
       "past": [
@@ -4711,18 +4711,18 @@
         },
         {
           "pronoun": "nós",
-          "pt": "Nós quereremos ir",
-          "en": "We will want to go"
+          "pt": "Nós quereremos uma casa",
+          "en": "We will want a house"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês quererão jogar",
-          "en": "You will want to play"
+          "pt": "Vocês quererão um telefone",
+          "en": "You will want a phone"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles quererão comer",
-          "en": "They will want to eat"
+          "pt": "Eles quererão um computador",
+          "en": "They will want a computer"
         }
       ]
     },
