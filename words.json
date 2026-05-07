@@ -253,50 +253,50 @@
         },
         {
           "pronoun": "nós",
-          "pt": "Nós ouvimos tudo",
-          "en": "We listen to everything"
+          "pt": "Nós ouvimos música",
+          "en": "We listen to music"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês ouvem música",
-          "en": "You listen to music"
+          "pt": "Vocês ouvem rádio",
+          "en": "You listen to the radio"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles ouvem rádio",
-          "en": "They listen to the radio"
+          "pt": "Eles ouvem TV",
+          "en": "They listen to TV"
         }
       ],
       "past": [
         {
           "pronoun": "eu",
-          "pt": "Eu ouvi",
-          "en": "I listened"
+          "pt": "Eu ouvi música",
+          "en": "I listened to music"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu ouviste",
-          "en": "You listened"
+          "pt": "Tu ouviste rádio",
+          "en": "You listened to the radio"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela ouviu",
-          "en": "She listened"
+          "pt": "Ela ouviu notícias",
+          "en": "She listened to news"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós ouvimos",
-          "en": "We listened"
+          "pt": "Nós ouvimos um disco",
+          "en": "We listened to a record"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês ouviram",
-          "en": "You listened"
+          "pt": "Vocês ouviram um som",
+          "en": "You heard a sound"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles ouviram",
-          "en": "They listened"
+          "pt": "Eles ouviram um barulho",
+          "en": "They heard a noise"
         }
       ],
       "future": [
