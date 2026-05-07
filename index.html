@@ -232,6 +232,7 @@
       <button class="btn-small" style="color:var(--navy);border-color:rgba(26,58,92,0.3);" onclick="pickNewFile()">📂 Local file</button>
       <button class="btn-small" style="color:var(--green);border-color:rgba(26,107,60,0.3);" onclick="openImport()">⬆️ Import</button>
       <button class="btn-small" id="assessAllBtn" style="color:var(--gold);border-color:rgba(181,131,10,0.3);" onclick="assessAllLevels()">⭐ Assess levels</button>
+      <button class="btn-small" id="fixVerbsBtn" style="color:#c1440e;border-color:rgba(193,68,14,0.3);" onclick="fixAllVerbConjugations()" title="Fix irregular verb conjugations using built-in conjugation table">🔧 Fix verb conjugations</button>
     </div>
 
     <!-- GitHub sync panel -->
@@ -281,21 +282,36 @@
     <!-- Voice picker -->
     <div style="margin-top:10px;background:#fff;border-radius:10px;padding:14px 16px;box-shadow:0 1px 6px rgba(0,0,0,0.07);border-left:3px solid var(--green);">
       <div id="voicePicker"><span style="font-size:11px;color:#aaa;">Loading voices…</span></div>
-      <!-- Speed slider -->
-      <div style="margin-top:12px;padding-top:12px;border-top:1px solid #f5efe6;display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
-        <label style="font-size:11px;color:#999;text-transform:uppercase;letter-spacing:0.06em;white-space:nowrap;">🐢 Speed</label>
-        <input type="range" id="speechRate" min="0.3" max="1.2" step="0.05" value="0.75"
-          oninput="updateRate(this.value)"
-          style="flex:1;min-width:120px;max-width:220px;accent-color:var(--green);cursor:pointer;" />
-        <span id="speechRateLabel" style="font-size:13px;font-weight:600;color:var(--navy);min-width:36px;">0.75×</span>
-        <button onclick="testVoice()" class="btn-small" style="color:var(--green);border-color:rgba(26,107,60,0.3);white-space:nowrap;">▶ Test</button>
-        <button onclick="resetRate()" style="padding:3px 9px;border-radius:6px;border:1px solid #ddd;background:#fafafa;font-size:11px;font-family:inherit;cursor:pointer;color:#888;">Reset</button>
+      <!-- Speech controls -->
+      <div style="margin-top:12px;padding-top:12px;border-top:1px solid #f5efe6;display:flex;flex-direction:column;gap:8px;">
+        <!-- Speed -->
+        <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
+          <label style="font-size:11px;color:#999;text-transform:uppercase;letter-spacing:0.06em;white-space:nowrap;width:52px;">🐢 Speed</label>
+          <input type="range" id="speechRate" min="0.3" max="1.2" step="0.05" value="0.75"
+            oninput="updateRate(this.value)"
+            style="flex:1;min-width:100px;max-width:200px;accent-color:var(--green);cursor:pointer;" />
+          <span id="speechRateLabel" style="font-size:12px;font-weight:600;color:var(--navy);min-width:34px;">0.75×</span>
+        </div>
+        <!-- Pitch -->
+        <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
+          <label style="font-size:11px;color:#999;text-transform:uppercase;letter-spacing:0.06em;white-space:nowrap;width:52px;">🎵 Pitch</label>
+          <input type="range" id="speechPitch" min="0.5" max="1.5" step="0.05" value="1.0"
+            oninput="updatePitch(this.value)"
+            style="flex:1;min-width:100px;max-width:200px;accent-color:var(--blue);cursor:pointer;" />
+          <span id="speechPitchLabel" style="font-size:12px;font-weight:600;color:var(--navy);min-width:34px;">1.0×</span>
+        </div>
+        <!-- Buttons -->
+        <div style="display:flex;gap:8px;margin-top:2px;">
+          <button onclick="testVoice()" class="btn-small" style="color:var(--green);border-color:rgba(26,107,60,0.3);">▶ Test voice</button>
+          <button onclick="resetSpeech()" style="padding:4px 10px;border-radius:6px;border:1px solid #ddd;background:#fafafa;font-size:11px;font-family:inherit;cursor:pointer;color:#888;">Reset all</button>
+        </div>
+        <p style="font-size:10px;color:#ccc;margin:0;">💡 Pitch below 1.0 = deeper voice (more natural for EP) · above 1.0 = higher</p>
       </div>
       <div id="voiceInstallGuide" class="hidden" style="margin-top:10px;padding:10px 12px;background:#fff8e6;border-radius:8px;font-size:12px;color:#555;line-height:1.7;">
         <strong style="color:var(--gold);">📖 How to install a European Portuguese voice:</strong><br>
         <strong>Windows:</strong> Settings → Time &amp; Language → Language &amp; Region → Add a language → search "Portuguese (Portugal)" → install<br>
-        <strong>Mac:</strong> System Settings → Accessibility → Spoken Content → System Voice → Manage Voices → Portuguese (Portugal) e.g. "Joana"<br>
-        <strong>iPhone/iPad:</strong> Settings → Accessibility → Spoken Content → Voices → Portuguese → Portugal<br>
+        <strong>Mac:</strong> System Settings → Accessibility → Spoken Content → System Voice → Manage Voices → Portuguese (Portugal) → download <strong>Joana (Enhanced)</strong><br>
+        <strong>iPhone/iPad:</strong> Settings → Accessibility → Spoken Content → Voices → Portuguese → Portugal → download <strong>Joana (Enhanced)</strong><br>
         <strong>Android:</strong> Settings → General Management → Language → Text-to-Speech → Install "Portuguese (Portugal)"<br>
         <span style="color:#aaa;">After installing, reload this page and select the new voice above.</span>
       </div>
@@ -1104,6 +1120,7 @@ function testVoice(){
 }
 
 let speechRate = parseFloat(localStorage.getItem('pt-speech-rate') || '0.75');
+let speechPitch = parseFloat(localStorage.getItem('pt-speech-pitch') || '1.0');
 
 function updateRate(val){
   speechRate = parseFloat(val);
@@ -1111,19 +1128,34 @@ function updateRate(val){
   document.getElementById('speechRateLabel').textContent = speechRate.toFixed(2) + '×';
 }
 
-function resetRate(){
-  speechRate = 0.75;
-  localStorage.setItem('pt-speech-rate', speechRate);
-  const slider = document.getElementById('speechRate');
-  if(slider) slider.value = speechRate;
-  document.getElementById('speechRateLabel').textContent = '0.75×';
+function updatePitch(val){
+  speechPitch = parseFloat(val);
+  localStorage.setItem('pt-speech-pitch', speechPitch);
+  document.getElementById('speechPitchLabel').textContent = speechPitch.toFixed(2) + '×';
 }
 
+function resetSpeech(){
+  speechRate = 0.75; speechPitch = 1.0;
+  localStorage.setItem('pt-speech-rate', speechRate);
+  localStorage.setItem('pt-speech-pitch', speechPitch);
+  const rs = document.getElementById('speechRate');   if(rs) rs.value = speechRate;
+  const ps = document.getElementById('speechPitch');  if(ps) ps.value = speechPitch;
+  document.getElementById('speechRateLabel').textContent  = '0.75×';
+  document.getElementById('speechPitchLabel').textContent = '1.0×';
+}
+
+// Keep resetRate for backwards compat
+function resetRate(){ resetSpeech(); }
+
 function initRateSlider(){
-  const slider = document.getElementById('speechRate');
-  const label  = document.getElementById('speechRateLabel');
-  if(slider){ slider.value = speechRate; }
-  if(label) { label.textContent = speechRate.toFixed(2) + '×'; }
+  const rs = document.getElementById('speechRate');
+  const ps = document.getElementById('speechPitch');
+  const rl = document.getElementById('speechRateLabel');
+  const pl = document.getElementById('speechPitchLabel');
+  if(rs) rs.value = speechRate;
+  if(ps) ps.value = speechPitch;
+  if(rl) rl.textContent = speechRate.toFixed(2) + '×';
+  if(pl) pl.textContent = speechPitch.toFixed(2) + '×';
 }
 
 function speakText(text, lang, btn){
@@ -1144,14 +1176,13 @@ function speakText(text, lang, btn){
     }
     u.rate = speechRate;
   } else {
-    // English: slightly faster than PT rate but still respect slider loosely
     u.lang = lang;
     u.rate = Math.min(1.0, speechRate * 1.15);
     const enVoice = speechSynthesis.getVoices().find(v => v.lang === 'en-GB') ||
                     speechSynthesis.getVoices().find(v => v.lang.startsWith('en'));
     if(enVoice) u.voice = enVoice;
   }
-  u.pitch = 1.0;
+  u.pitch = (lang === 'pt-PT') ? speechPitch : 1.0;
 
   if(btn){ btn.textContent='⏹'; btn.classList.add('playing'); }
   u.onend = u.onerror = () => { if(btn){ btn.textContent='🔊'; btn.classList.remove('playing'); }};
@@ -1364,6 +1395,245 @@ Word: "${word}" (${translation}) [${category}]`, 400);
   return Array.isArray(p) ? p : [p];
 }
 
+// ═══ EP IRREGULAR VERB CONJUGATION TABLE ════════════════════════════════
+// Format: { present, past, 'future-peri', 'future-simple' }
+// Each tense: [eu, tu, ele/ela, nós, vocês, eles/elas]
+const EP_IRREGULAR_VERBS = {
+  'ser':  {
+    present:       ['sou','és','é','somos','são','são'],
+    past:          ['fui','foste','foi','fomos','foram','foram'],
+    'future-peri': ['vou ser','vais ser','vai ser','vamos ser','vão ser','vão ser'],
+    'future-simple':['serei','serás','será','seremos','serão','serão'],
+  },
+  'estar': {
+    present:       ['estou','estás','está','estamos','estão','estão'],
+    past:          ['estive','estiveste','esteve','estivemos','estiveram','estiveram'],
+    'future-peri': ['vou estar','vais estar','vai estar','vamos estar','vão estar','vão estar'],
+    'future-simple':['estarei','estarás','estará','estaremos','estarão','estarão'],
+  },
+  'ter': {
+    present:       ['tenho','tens','tem','temos','têm','têm'],
+    past:          ['tive','tiveste','teve','tivemos','tiveram','tiveram'],
+    'future-peri': ['vou ter','vais ter','vai ter','vamos ter','vão ter','vão ter'],
+    'future-simple':['terei','terás','terá','teremos','terão','terão'],
+  },
+  'ir': {
+    present:       ['vou','vais','vai','vamos','vão','vão'],
+    past:          ['fui','foste','foi','fomos','foram','foram'],
+    'future-peri': ['vou ir','vais ir','vai ir','vamos ir','vão ir','vão ir'],
+    'future-simple':['irei','irás','irá','iremos','irão','irão'],
+  },
+  'fazer': {
+    present:       ['faço','fazes','faz','fazemos','fazem','fazem'],
+    past:          ['fiz','fizeste','fez','fizemos','fizeram','fizeram'],
+    'future-peri': ['vou fazer','vais fazer','vai fazer','vamos fazer','vão fazer','vão fazer'],
+    'future-simple':['farei','farás','fará','faremos','farão','farão'],
+  },
+  'poder': {
+    present:       ['posso','podes','pode','podemos','podem','podem'],
+    past:          ['pude','pudeste','pôde','pudemos','puderam','puderam'],
+    'future-peri': ['vou poder','vais poder','vai poder','vamos poder','vão poder','vão poder'],
+    'future-simple':['poderei','poderás','poderá','poderemos','poderão','poderão'],
+  },
+  'querer': {
+    present:       ['quero','queres','quer','queremos','querem','querem'],
+    past:          ['quis','quiseste','quis','quisemos','quiseram','quiseram'],
+    'future-peri': ['vou querer','vais querer','vai querer','vamos querer','vão querer','vão querer'],
+    'future-simple':['quererei','quererás','quererá','quereremos','quererão','quererão'],
+  },
+  'vir': {
+    present:       ['venho','vens','vem','vimos','vêm','vêm'],
+    past:          ['vim','vieste','veio','viemos','vieram','vieram'],
+    'future-peri': ['vou vir','vais vir','vai vir','vamos vir','vão vir','vão vir'],
+    'future-simple':['virei','virás','virá','viremos','virão','virão'],
+  },
+  'dizer': {
+    present:       ['digo','dizes','diz','dizemos','dizem','dizem'],
+    past:          ['disse','disseste','disse','dissemos','disseram','disseram'],
+    'future-peri': ['vou dizer','vais dizer','vai dizer','vamos dizer','vão dizer','vão dizer'],
+    'future-simple':['direi','dirás','dirá','diremos','dirão','dirão'],
+  },
+  'saber': {
+    present:       ['sei','sabes','sabe','sabemos','sabem','sabem'],
+    past:          ['soube','soubeste','soube','soubemos','souberam','souberam'],
+    'future-peri': ['vou saber','vais saber','vai saber','vamos saber','vão saber','vão saber'],
+    'future-simple':['saberei','saberás','saberá','saberemos','saberão','saberão'],
+  },
+  'pôr': {
+    present:       ['ponho','pões','põe','pomos','põem','põem'],
+    past:          ['pus','puseste','pôs','pusemos','puseram','puseram'],
+    'future-peri': ['vou pôr','vais pôr','vai pôr','vamos pôr','vão pôr','vão pôr'],
+    'future-simple':['porei','porás','porá','poremos','porão','porão'],
+  },
+  'trazer': {
+    present:       ['trago','trazes','traz','trazemos','trazem','trazem'],
+    past:          ['trouxe','trouxeste','trouxe','trouxemos','trouxeram','trouxeram'],
+    'future-peri': ['vou trazer','vais trazer','vai trazer','vamos trazer','vão trazer','vão trazer'],
+    'future-simple':['trarei','trarás','trará','traremos','trarão','trarão'],
+  },
+  'ver': {
+    present:       ['vejo','vês','vê','vemos','veem','veem'],
+    past:          ['vi','viste','viu','vimos','viram','viram'],
+    'future-peri': ['vou ver','vais ver','vai ver','vamos ver','vão ver','vão ver'],
+    'future-simple':['verei','verás','verá','veremos','verão','verão'],
+  },
+  'dar': {
+    present:       ['dou','dás','dá','damos','dão','dão'],
+    past:          ['dei','deste','deu','demos','deram','deram'],
+    'future-peri': ['vou dar','vais dar','vai dar','vamos dar','vão dar','vão dar'],
+    'future-simple':['darei','darás','dará','daremos','darão','darão'],
+  },
+  'haver': {
+    present:       ['hei','hás','há','havemos','hão','hão'],
+    past:          ['houve','houveste','houve','houvemos','houveram','houveram'],
+    'future-peri': ['vou haver','vais haver','vai haver','vamos haver','vão haver','vão haver'],
+    'future-simple':['haverei','haverás','haverá','haveremos','haverão','haverão'],
+  },
+  'ler': {
+    present:       ['leio','lês','lê','lemos','leem','leem'],
+    past:          ['li','leste','leu','lemos','leram','leram'],
+    'future-peri': ['vou ler','vais ler','vai ler','vamos ler','vão ler','vão ler'],
+    'future-simple':['lerei','lerás','lerá','leremos','lerão','lerão'],
+  },
+  'caber': {
+    present:       ['caibo','cabes','cabe','cabemos','cabem','cabem'],
+    past:          ['coube','coubeste','coube','coubemos','couberam','couberam'],
+    'future-peri': ['vou caber','vais caber','vai caber','vamos caber','vão caber','vão caber'],
+    'future-simple':['caberei','caberás','caberá','caberemos','caberão','caberão'],
+  },
+  'ouvir': {
+    present:       ['ouço','ouves','ouve','ouvimos','ouvem','ouvem'],
+    past:          ['ouvi','ouviste','ouviu','ouvimos','ouviram','ouviram'],
+    'future-peri': ['vou ouvir','vais ouvir','vai ouvir','vamos ouvir','vão ouvir','vão ouvir'],
+    'future-simple':['ouvirei','ouvirás','ouvirá','ouviremos','ouvirão','ouvirão'],
+  },
+  'pedir': {
+    present:       ['peço','pedes','pede','pedimos','pedem','pedem'],
+    past:          ['pedi','pediste','pediu','pedimos','pediram','pediram'],
+    'future-peri': ['vou pedir','vais pedir','vai pedir','vamos pedir','vão pedir','vão pedir'],
+    'future-simple':['pedirei','pedirás','pedirá','pediremos','pedirão','pedirão'],
+  },
+  'seguir': {
+    present:       ['sigo','segues','segue','seguimos','seguem','seguem'],
+    past:          ['segui','seguiste','seguiu','seguimos','seguiram','seguiram'],
+    'future-peri': ['vou seguir','vais seguir','vai seguir','vamos seguir','vão seguir','vão seguir'],
+    'future-simple':['seguirei','seguirás','seguirá','seguiremos','seguirão','seguirão'],
+  },
+};
+
+// Get correct conjugations for a verb and tense from the table
+function getIrregularConjugations(verb, tense){
+  const v = verb.toLowerCase().trim();
+  return EP_IRREGULAR_VERBS[v]?.[tense] || null;
+}
+
+// Build a conjugation hint to inject into the Groq prompt
+function buildConjugationHint(verb, tense){
+  const conj = getIrregularConjugations(verb, tense);
+  if(!conj) return '';
+  const pronouns = EP_PRONOUNS;
+  const table = pronouns.map((p,i)=>`  ${p}: ${conj[i]}`).join('\n');
+  return `\nCRITICAL: "${verb}" is an irregular verb. You MUST use EXACTLY these conjugations:\n${table}\nDo not deviate from these forms under any circumstances.\n`;
+}
+
+// Verify and correct conjugations in generated rows
+function applyIrregularCorrections(verb, tense, rows){
+  const conj = getIrregularConjugations(verb, tense);
+  if(!conj) return rows; // regular verb — trust Groq
+  return rows.map((row, i)=>{
+    const correctForm = conj[i];
+    if(!correctForm) return row;
+    // Replace the conjugated form in the sentence if it contains a wrong form
+    // Simple check: does the sentence contain the correct form?
+    if(!row.pt.toLowerCase().includes(correctForm.toLowerCase())){
+      // Try to replace any of the other incorrect forms with the correct one
+      let fixed = row.pt;
+      conj.forEach((form, j)=>{
+        if(j!==i && row.pt.toLowerCase().includes(form.toLowerCase())){
+          fixed = row.pt.replace(new RegExp(form, 'i'), correctForm);
+        }
+      });
+      // If still not fixed, prepend the correct form
+      if(!fixed.toLowerCase().includes(correctForm.toLowerCase())){
+        fixed = fixed.replace(/^(\w+)/i, correctForm);
+      }
+      return {...row, pt: fixed, _corrected: true};
+    }
+    return row;
+  });
+}
+
+// ── Fix all saved verb conjugations ──────────────────────────────────────
+let fixingAllVerbs = false;
+
+async function fixAllVerbConjugations(){
+  if(fixingAllVerbs) return;
+  const verbs = words.filter(w => w.category === 'Verb');
+  if(!verbs.length){ showToast('No verbs found in your vocabulary'); return; }
+
+  fixingAllVerbs = true;
+  const btn = document.getElementById('fixVerbsBtn');
+  if(btn){ btn.textContent='⏳ Fixing…'; btn.disabled=true; }
+
+  let fixed = 0;
+  const tenses = ['present','past','future-peri','future-simple'];
+
+  for(const w of verbs){
+    const verb = w.word.toLowerCase().trim();
+    const isIrregular = !!EP_IRREGULAR_VERBS[verb];
+
+    if(isIrregular){
+      // For known irregular verbs: regenerate all tenses with the table
+      if(!w.tenses) w.tenses = {present:[],past:[],'future-peri':[],'future-simple':[]};
+      for(const tense of tenses){
+        const rows = w.tenses[tense] || [];
+        if(rows.length > 0){
+          // Apply corrections to existing rows
+          const corrected = applyIrregularCorrections(verb, tense, rows);
+          const hadErrors = corrected.some(r=>r._corrected);
+          if(hadErrors){
+            w.tenses[tense] = corrected.map(r=>({pronoun:r.pronoun, pt:r.pt, en:r.en}));
+            fixed++;
+          }
+        }
+      }
+    } else {
+      // For regular verbs with saved conjugations: no fix needed
+    }
+  }
+
+  if(fixed > 0){
+    saveWords();
+    showToast(`✅ Fixed conjugations in ${fixed} tense${fixed!==1?'s':''}!`);
+    renderWords();
+  } else {
+    showToast('✅ All saved conjugations look correct!');
+  }
+
+  // Now offer to regenerate all tenses for irregular verbs with the improved prompt
+  const irregularVerbs = verbs.filter(w => EP_IRREGULAR_VERBS[w.word.toLowerCase().trim()]);
+  if(irregularVerbs.length > 0){
+    showToast(`Regenerating ${irregularVerbs.length} irregular verbs with correct forms…`);
+    for(const w of irregularVerbs){
+      for(const tense of tenses){
+        if(w.tenses?.[tense]?.length > 0){
+          try{
+            const rows = await genVerbExamples(w.word, w.translation, tense, w.freq||'common');
+            if(rows.length > 0) w.tenses[tense] = rows;
+            await new Promise(r=>setTimeout(r,400)); // rate limit
+          }catch(e){}
+        }
+      }
+      saveWords();
+    }
+    showToast(`✅ All irregular verbs regenerated with correct conjugations!`);
+    renderWords();
+  }
+
+  fixingAllVerbs = false;
+  if(btn){ btn.textContent='🔧 Fix all verb conjugations'; btn.disabled=false; }
+}
+
 async function genVerbExamples(verb, translation, tense, freq){
   const tenseLabel =
     tense==='present'            ? 'present tense (Presente do Indicativo)'
@@ -1379,6 +1649,9 @@ async function genVerbExamples(verb, translation, tense, freq){
       ? '- Use ONLY the conjugated Futuro Simples endings (-ei, -ás, -á, -emos, -ão). Do NOT use "ir + infinitivo".'
       : '';
 
+  // Inject conjugation table for irregular verbs
+  const conjHint = buildConjugationHint(verb, tense);
+
   const result = await claudeCall(
     `You are a European Portuguese tutor creating conjugation examples for a ${level.cefr} level verb.
 For the verb "${verb}" (${translation}), write one short natural sentence in ${tenseLabel} for each of these subjects: ${EP_PRONOUNS.join(', ')}.
@@ -1388,10 +1661,12 @@ Rules:
 - CEFR level: ${level.cefr}. ${level.vocab}
 - 5–10 words per sentence.
 - Use "vocês" (not vós) for plural you.
-${extraRule}
+${extraRule}${conjHint}
 Return ONLY valid JSON, no markdown: [{"pronoun":"eu","pt":"...","en":"..."}, ...]`, 700);
   const p = JSON.parse(result.replace(/```json|```/g,'').trim());
-  return Array.isArray(p) ? p : [];
+  const rows = Array.isArray(p) ? p : [];
+  // Apply corrections as a safety net for irregular verbs
+  return applyIrregularCorrections(verb, tense, rows);
 }
 
 function cancelEdit(){
@@ -1771,8 +2046,10 @@ function renderWordCard(w, showDivider=false){
   const color = CAT_COLORS[w.category]||'#555';
   const isVerb = w.category==='Verb';
   const vType = isVerb ? verbType(w.word) : null;
+  const isVerified = isVerb && !!EP_IRREGULAR_VERBS[w.word.toLowerCase().trim()];
   const vBadge = isVerb
-    ? `<span style="font-size:10px;padding:1px 7px;border-radius:8px;background:${vType==='irregular'?'#7b4ea020':'#1a6b3c15'};color:${vType==='irregular'?'#7b4ea0':'#1a6b3c'};font-weight:700;">${verbTypeLabel(vType)}</span>`
+    ? `<span style="font-size:10px;padding:1px 7px;border-radius:8px;background:${vType==='irregular'?'#7b4ea020':'#1a6b3c15'};color:${vType==='irregular'?'#7b4ea0':'#1a6b3c'};font-weight:700;">${verbTypeLabel(vType)}</span>
+       ${isVerified?`<span style="font-size:10px;padding:1px 6px;border-radius:6px;background:#fdf0ec;color:#c1440e;border:1px solid #c1440e33;" title="Conjugations verified from built-in table">📋 verified</span>`:''}`
     : '';
 
   // Non-verb examples section (unchanged)
