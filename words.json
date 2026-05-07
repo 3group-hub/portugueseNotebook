@@ -2108,8 +2108,8 @@
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu tenho um livro",
-          "en": "I have a book"
+          "pt": "Eu tenho um cão",
+          "en": "I have a dog"
         },
         {
           "pronoun": "tu",
@@ -2123,13 +2123,13 @@
         },
         {
           "pronoun": "nós",
-          "pt": "Nós temos uma casa",
-          "en": "We have a house"
+          "pt": "Nós temos um filho",
+          "en": "We have a son"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês têm um telefone",
-          "en": "You have a phone"
+          "pt": "Vocês têm um livro",
+          "en": "You have a book"
         },
         {
           "pronoun": "eles/elas",
@@ -2140,18 +2140,18 @@
       "past": [
         {
           "pronoun": "eu",
-          "pt": "Eu tive um livro",
-          "en": "I had a book"
+          "pt": "Eu tive um cão",
+          "en": "I had a dog"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu tiveste um amigo",
-          "en": "You had a friend"
+          "pt": "Tu tiveste um gato",
+          "en": "You had a cat"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela teve um gato",
-          "en": "She had a cat"
+          "pt": "Ela teve um filho",
+          "en": "She had a son"
         },
         {
           "pronoun": "nós",
@@ -2160,13 +2160,13 @@
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês tiveram um filho",
-          "en": "You had a son"
+          "pt": "Vocês tiveram um problema",
+          "en": "You had a problem"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles tiveram um jardim",
-          "en": "They had a garden"
+          "pt": "Eles tiveram fome",
+          "en": "They were hungry"
         }
       ],
       "future": [
