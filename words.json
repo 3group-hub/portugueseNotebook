@@ -1680,149 +1680,6 @@
     "_activeTense": "future"
   },
   {
-    "id": 1777374156772,
-    "word": "creio",
-    "translation": "I believe",
-    "category": "Verb",
-    "notes": "",
-    "examples": [
-      {
-        "pronoun": "eu",
-        "pt": "Eu creio que vai chover",
-        "en": "I believe it will rain"
-      },
-      {
-        "pronoun": "tu",
-        "pt": "Tu cres que é verdade",
-        "en": "You believe it's true"
-      },
-      {
-        "pronoun": "ele/ela",
-        "pt": "Ela crê que está certa",
-        "en": "She believes she's right"
-      },
-      {
-        "pronoun": "nós",
-        "pt": "Nós cremos na igualdade",
-        "en": "We believe in equality"
-      },
-      {
-        "pronoun": "vocês",
-        "pt": "Vocês creem que é fácil",
-        "en": "You believe it's easy"
-      },
-      {
-        "pronoun": "eles/elas",
-        "pt": "Eles creem na justiça",
-        "en": "They believe in justice"
-      }
-    ],
-    "addedAt": "28/04/2026",
-    "generatingExample": false,
-    "assessingFreq": false,
-    "freq": "common",
-    "tenses": {
-      "present": [
-        {
-          "pronoun": "eu",
-          "pt": "Eu creio que sim.",
-          "en": "I believe so."
-        },
-        {
-          "pronoun": "tu",
-          "pt": "Tu crees que ele vem.",
-          "en": "You believe he's coming."
-        },
-        {
-          "pronoun": "ele/ela",
-          "pt": "Ela crê no destino.",
-          "en": "She believes in fate."
-        },
-        {
-          "pronoun": "nós",
-          "pt": "Nós cremos em ti.",
-          "en": "We believe in you."
-        },
-        {
-          "pronoun": "vocês",
-          "pt": "Vocês creem nisso?",
-          "en": "Do you believe that?"
-        },
-        {
-          "pronoun": "eles/elas",
-          "pt": "Eles creem em si mesmos.",
-          "en": "They believe in themselves."
-        }
-      ],
-      "past": [
-        {
-          "pronoun": "eu",
-          "pt": "Eu creio em Deus",
-          "en": "I believe in God"
-        },
-        {
-          "pronoun": "tu",
-          "pt": "Tu creias em mim",
-          "en": "You believed in me"
-        },
-        {
-          "pronoun": "ele/ela",
-          "pt": "Ela creu na teoria",
-          "en": "She believed in the theory"
-        },
-        {
-          "pronoun": "nós",
-          "pt": "Nós creíamos no projeto",
-          "en": "We believed in the project"
-        },
-        {
-          "pronoun": "vocês",
-          "pt": "Vocês creiam no time",
-          "en": "You believed in the team"
-        },
-        {
-          "pronoun": "eles/elas",
-          "pt": "Eles creiam no destino",
-          "en": "They believed in destiny"
-        }
-      ],
-      "future": [
-        {
-          "pronoun": "eu",
-          "pt": "Eu vou crer",
-          "en": "I will believe"
-        },
-        {
-          "pronoun": "tu",
-          "pt": "Tu vais crer",
-          "en": "You will believe"
-        },
-        {
-          "pronoun": "ele/ela",
-          "pt": "Ela vai crer",
-          "en": "She will believe"
-        },
-        {
-          "pronoun": "nós",
-          "pt": "Nós vamos crer",
-          "en": "We will believe"
-        },
-        {
-          "pronoun": "vocês",
-          "pt": "Vocês vão crer",
-          "en": "You will believe"
-        },
-        {
-          "pronoun": "eles/elas",
-          "pt": "Eles vão crer",
-          "en": "They will believe"
-        }
-      ]
-    },
-    "_generatingTense": null,
-    "_activeTense": "future"
-  },
-  {
     "id": 1777374156773,
     "word": "errar",
     "translation": "to make mistakes",
@@ -2217,7 +2074,7 @@
         }
       ]
     },
-    "_activeTense": "future",
+    "_activeTense": "present",
     "_generatingTense": null
   },
   {
@@ -5538,7 +5395,7 @@
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ele/Ela vai ouvir",
+          "pt": "Ele vai ouvir",
           "en": "He/She will listen"
         },
         {
@@ -5553,7 +5410,7 @@
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles/Elas vão ouvir",
+          "pt": "Eles vão ouvir",
           "en": "They will listen"
         }
       ],
