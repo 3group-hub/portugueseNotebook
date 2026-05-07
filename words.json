@@ -2438,55 +2438,55 @@
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela diz oui",
-          "en": "She says yes"
+          "pt": "Ela diz oi",
+          "en": "She says hi"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós dizemos não",
-          "en": "We say no"
+          "pt": "Nós dizemos tudo",
+          "en": "We say everything"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês dizem sim",
-          "en": "You say yes"
+          "pt": "Vocês dizem nada",
+          "en": "You say nothing"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles dizem não",
-          "en": "They say no"
+          "pt": "Eles dizem sim",
+          "en": "They say yes"
         }
       ],
       "past": [
         {
           "pronoun": "eu",
-          "pt": "Eu disse",
-          "en": "I said"
+          "pt": "Eu disse sim",
+          "en": "I said yes"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu disseste",
-          "en": "You said"
+          "pt": "Tu disseste não",
+          "en": "You said no"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela disse",
-          "en": "She said"
+          "pt": "Ela disse oui",
+          "en": "She said yes"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós dissemos",
-          "en": "We said"
+          "pt": "Nós dissemos não",
+          "en": "We said no"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês disseram",
-          "en": "You said"
+          "pt": "Vocês disseram sim",
+          "en": "You said yes"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles disseram",
-          "en": "They said"
+          "pt": "Eles disseram não",
+          "en": "They said no"
         }
       ],
       "future": [
