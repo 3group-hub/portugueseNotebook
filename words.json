@@ -243,60 +243,60 @@
         },
         {
           "pronoun": "tu",
-          "pt": "Tu ouves rádio",
-          "en": "You listen to the radio"
+          "pt": "Tu ouves TV",
+          "en": "You listen to TV"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela ouve TV",
-          "en": "She listens to TV"
+          "pt": "Ela ouve rádio",
+          "en": "She listens to the radio"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós ouvimos música",
-          "en": "We listen to music"
+          "pt": "Nós ouvimos tudo",
+          "en": "We listen to everything"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês ouvem rádio",
-          "en": "You listen to the radio"
+          "pt": "Vocês ouvem música",
+          "en": "You listen to music"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles ouvem TV",
-          "en": "They listen to TV"
+          "pt": "Eles ouvem rádio",
+          "en": "They listen to the radio"
         }
       ],
       "past": [
         {
           "pronoun": "eu",
-          "pt": "Eu ouvi música",
-          "en": "I listened to music"
+          "pt": "Eu ouvi",
+          "en": "I listened"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu ouviste rádio",
-          "en": "You listened to the radio"
+          "pt": "Tu ouviste",
+          "en": "You listened"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela ouviu notícias",
-          "en": "She listened to news"
+          "pt": "Ela ouviu",
+          "en": "She listened"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós ouvimos um disco",
-          "en": "We listened to a record"
+          "pt": "Nós ouvimos",
+          "en": "We listened"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês ouviram um som",
-          "en": "You heard a sound"
+          "pt": "Vocês ouviram",
+          "en": "You listened"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles ouviram um barulho",
-          "en": "They heard a noise"
+          "pt": "Eles ouviram",
+          "en": "They listened"
         }
       ],
       "future": [
@@ -2092,33 +2092,33 @@
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu tenho um livro.",
-          "en": "I have a book."
+          "pt": "Eu tenho um livro",
+          "en": "I have a book"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu tens um amigo.",
-          "en": "You have a friend."
+          "pt": "Tu tens um carro",
+          "en": "You have a car"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela tem um gato.",
-          "en": "She has a cat."
+          "pt": "Ela tem um gato",
+          "en": "She has a cat"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós temos uma casa.",
-          "en": "We have a house."
+          "pt": "Nós temos uma casa",
+          "en": "We have a house"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês têm um carro.",
-          "en": "You have a car."
+          "pt": "Vocês têm um telefone",
+          "en": "You have a phone"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles têm um jardim.",
-          "en": "They have a garden."
+          "pt": "Eles têm um jardim",
+          "en": "They have a garden"
         }
       ],
       "past": [
@@ -2129,23 +2129,23 @@
         },
         {
           "pronoun": "tu",
-          "pt": "Tu tiveste um carro",
-          "en": "You had a car"
+          "pt": "Tu tiveste um amigo",
+          "en": "You had a friend"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela teve um filho",
-          "en": "She had a son"
+          "pt": "Ela teve um gato",
+          "en": "She had a cat"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós tivemos um cão",
-          "en": "We had a dog"
+          "pt": "Nós tivemos um carro",
+          "en": "We had a car"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês tiveram um apartamento",
-          "en": "You had an apartment"
+          "pt": "Vocês tiveram um filho",
+          "en": "You had a son"
         },
         {
           "pronoun": "eles/elas",
