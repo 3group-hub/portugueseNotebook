@@ -65,13 +65,13 @@
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês quiseram jogar",
-          "en": "You wanted to play"
+          "pt": "Vocês quiseram ajudar",
+          "en": "You wanted to help"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles quiseram comer",
-          "en": "They wanted to eat"
+          "pt": "Eles quiseram jogar",
+          "en": "They wanted to play"
         }
       ],
       "future": []
