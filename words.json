@@ -5320,18 +5320,18 @@
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu leio livros",
-          "en": "I read books"
+          "pt": "Eu leio um livro",
+          "en": "I read a book"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu lês livros",
-          "en": "You read books"
+          "pt": "Tu lês um jornal",
+          "en": "You read a newspaper"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela lê livros",
-          "en": "She reads books"
+          "pt": "Ela lê uma revista",
+          "en": "She reads a magazine"
         },
         {
           "pronoun": "nós",
@@ -5340,12 +5340,12 @@
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês leemem livros",
-          "en": "You read books"
+          "pt": "Vocês leem jornais",
+          "en": "You read newspapers"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles leemem livros",
+          "pt": "Eles leem livros",
           "en": "They read books"
         }
       ],
