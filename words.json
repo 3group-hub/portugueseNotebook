@@ -4605,60 +4605,60 @@
         },
         {
           "pronoun": "tu",
-          "pt": "Tu queres um bolo",
-          "en": "You want a cake"
+          "pt": "Tu queres ir",
+          "en": "You want to go"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela quer um bolo",
-          "en": "She wants a cake"
+          "pt": "Ela quer dormir",
+          "en": "She wants to sleep"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós queremos um bolo",
-          "en": "We want a cake"
+          "pt": "Nós queremos comer",
+          "en": "We want to eat"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês querem um bolo",
-          "en": "You want a cake"
+          "pt": "Vocês querem ler",
+          "en": "You want to read"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles querem um bolo",
-          "en": "They want a cake"
+          "pt": "Eles querem jogar",
+          "en": "They want to play"
         }
       ],
       "past": [
         {
           "pronoun": "eu",
-          "pt": "quis queri um bolo",
+          "pt": "Eu quis um bolo",
           "en": "I wanted a cake"
         },
         {
           "pronoun": "tu",
-          "pt": "quiseste quereste um carro",
+          "pt": "Tu quiseste um carro",
           "en": "You wanted a car"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "quis queriu um livro",
+          "pt": "Ela quis um livro",
           "en": "She wanted a book"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós quisemos um filme",
-          "en": "We wanted a movie"
+          "pt": "Nós quisemos ir",
+          "en": "We wanted to go"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês quiseram um jogo",
-          "en": "You wanted a game"
+          "pt": "Vocês quiseram jogar",
+          "en": "You wanted to play"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles quiseram um hotel",
-          "en": "They wanted a hotel"
+          "pt": "Eles quiseram comer",
+          "en": "They wanted to eat"
         }
       ],
       "future-peri": [
@@ -4674,8 +4674,8 @@
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ele/Ela vai querer",
-          "en": "He/She will want"
+          "pt": "Ela vai querer",
+          "en": "She will want"
         },
         {
           "pronoun": "nós",
@@ -4689,40 +4689,40 @@
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles/Elas vão querer",
+          "pt": "Eles vão querer",
           "en": "They will want"
         }
       ],
       "future-simple": [
         {
           "pronoun": "eu",
-          "pt": "Eu quererei",
-          "en": "I will want"
+          "pt": "Eu quererei um bolo",
+          "en": "I will want a cake"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu quererás",
-          "en": "You will want"
+          "pt": "Tu quererás um carro",
+          "en": "You will want a car"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela quererá",
-          "en": "She will want"
+          "pt": "Ela quererá um livro",
+          "en": "She will want a book"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós quereremos",
-          "en": "We will want"
+          "pt": "Nós quereremos ir",
+          "en": "We will want to go"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês quererão",
-          "en": "You will want"
+          "pt": "Vocês quererão jogar",
+          "en": "You will want to play"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles quererão",
-          "en": "They will want"
+          "pt": "Eles quererão comer",
+          "en": "They will want to eat"
         }
       ]
     },
