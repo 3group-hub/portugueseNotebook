@@ -70,8 +70,8 @@
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles quiseram dormir",
-          "en": "They wanted to sleep"
+          "pt": "Eles quiseram comer",
+          "en": "They wanted to eat"
         }
       ],
       "future": []
@@ -5177,18 +5177,18 @@
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu leio um livro",
-          "en": "I read a book"
+          "pt": "Eu leio livros",
+          "en": "I read books"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu lês um jornal",
-          "en": "You read a newspaper"
+          "pt": "Tu lês jornais",
+          "en": "You read newspapers"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela lê uma revista",
-          "en": "She reads a magazine"
+          "pt": "Ela lê revistas",
+          "en": "She reads magazines"
         },
         {
           "pronoun": "nós",
@@ -5197,8 +5197,8 @@
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês leem jornais",
-          "en": "You read newspapers"
+          "pt": "Vocês leem notícias",
+          "en": "You read news"
         },
         {
           "pronoun": "eles/elas",
