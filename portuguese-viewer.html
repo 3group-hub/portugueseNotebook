@@ -137,6 +137,18 @@
       <button class="tab-btn" data-tab="nations">🌍 Nations</button>
       <button class="tab-btn" data-tab="alphabet">🔤 Alphabet</button>
       <button class="tab-btn" data-tab="numbers">🔢 Numbers</button>
+      <button onclick="toggleEditPanel()" style="padding:5px 10px;border-radius:14px;border:1px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.1);color:#a8c4d8;cursor:pointer;font-size:12px;font-family:inherit;">✏️ Edit access</button>
+    </div>
+
+    <!-- Edit access panel -->
+    <div id="viewerEditPanel" class="hidden" style="margin-top:10px;background:rgba(255,255,255,0.1);border-radius:8px;padding:12px 14px;">
+      <p style="font-size:12px;color:#a8c4d8;margin-bottom:8px;">Enter your GitHub token to fix incorrect words or conjugations directly in the viewer.</p>
+      <div style="display:flex;flex-direction:column;gap:6px;">
+        <input id="viewerUser"  placeholder="GitHub username"  style="padding:5px 10px;border-radius:6px;border:1px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.1);color:#f0e6d3;font-size:12px;font-family:inherit;" />
+        <input id="viewerRepo"  placeholder="Repository name"  style="padding:5px 10px;border-radius:6px;border:1px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.1);color:#f0e6d3;font-size:12px;font-family:inherit;" />
+        <input id="viewerToken" placeholder="ghp_... token" type="password" style="padding:5px 10px;border-radius:6px;border:1px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.1);color:#f0e6d3;font-size:12px;font-family:monospace;" />
+        <button onclick="saveViewerToken()" style="padding:6px 14px;border-radius:6px;border:none;background:#c1440e;color:#fff;cursor:pointer;font-size:12px;font-family:inherit;font-weight:600;align-self:flex-start;">Enable editing</button>
+      </div>
     </div>
   </div>
 </div>
@@ -185,7 +197,7 @@
         </label>
       </div>
     </div>
-    <div id="nationsGrid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:8px;margin-top:12px;"></div>
+    <div id="nationsGrid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:8px;margin-top:12px;"></div>
   </div>
 
   <!-- ═══ ALPHABET TAB ═══ -->
@@ -464,6 +476,32 @@ function renderWordCard(w, showDivider=false){
   const examples=w.examples||(w.example?[w.example]:[]);
   const tenses=w.tenses||{present:[],past:[],'future-peri':[],'future-simple':[]};
   const activeTense=activeTenses[w.id]||'present';
+  const canEdit = !!(localStorage.getItem('gh-user') && localStorage.getItem('gh-token'));
+  const isEditingWord = editingWord === w.id;
+
+  // Word edit panel
+  const wordEditPanel = isEditingWord ? `
+    <div style="padding:10px 14px;background:#fff8f0;border-top:1px solid #f0ebe4;">
+      <div style="font-size:11px;color:#aaa;text-transform:uppercase;font-weight:700;margin-bottom:8px;">✏️ Edit word</div>
+      <div style="display:flex;flex-direction:column;gap:6px;">
+        <div style="display:flex;gap:8px;align-items:center;">
+          <label style="font-size:11px;color:#888;min-width:80px;">Portuguese:</label>
+          <input id="editPt_${w.id}" value="${escQ(w.word)}" style="flex:1;padding:5px 8px;border-radius:6px;border:1px solid #ddd;font-size:13px;font-family:inherit;" />
+        </div>
+        <div style="display:flex;gap:8px;align-items:center;">
+          <label style="font-size:11px;color:#888;min-width:80px;">English:</label>
+          <input id="editEn_${w.id}" value="${escQ(w.translation)}" style="flex:1;padding:5px 8px;border-radius:6px;border:1px solid #ddd;font-size:13px;font-family:inherit;" />
+        </div>
+        <div style="display:flex;gap:8px;align-items:center;">
+          <label style="font-size:11px;color:#888;min-width:80px;">Notes:</label>
+          <input id="editNote_${w.id}" value="${escQ(w.notes||'')}" placeholder="Optional notes…" style="flex:1;padding:5px 8px;border-radius:6px;border:1px solid #ddd;font-size:13px;font-family:inherit;" />
+        </div>
+        <div style="display:flex;gap:8px;margin-top:2px;">
+          <button onclick="saveWordEdit(${w.id})" style="padding:5px 14px;border-radius:6px;border:none;background:#1a6b3c;color:#fff;cursor:pointer;font-size:12px;font-family:inherit;font-weight:600;">Save</button>
+          <button onclick="startEditWord(${w.id})" style="padding:5px 10px;border-radius:6px;border:1px solid #ddd;background:#fff;cursor:pointer;font-size:12px;font-family:inherit;color:#888;">Cancel</button>
+        </div>
+      </div>
+    </div>` : '';
 
   let examplesHTML='';
   if(isVerb){
@@ -478,18 +516,25 @@ function renderWordCard(w, showDivider=false){
         ${t.label}
       </button>`).join('');
     const rows=tenses[activeTense]||[];
-    const rowsHTML=rows.map((ex,i)=>`
-      <div class="example-row" style="${i<rows.length-1?'border-bottom:1px solid #f0ebe4;':''}">
+    const rowsHTML=rows.map((ex,i)=>{
+      const isEditingRow = editingCell?.wordId===w.id && editingCell?.tense===activeTense && editingCell?.rowIndex===i;
+      return `<div class="example-row" style="${i<rows.length-1?'border-bottom:1px solid #f0ebe4;':''}">
         <span class="pronoun-badge" style="background:${color}20;color:${color};">${ex.pronoun}</span>
         <div style="display:flex;align-items:center;gap:5px;flex-wrap:wrap;margin-top:2px;">
-          <span class="example-pt">«${ex.pt}»</span>
-          <button class="speak-btn" onclick="speakText('${escQ(ex.pt)}','pt-PT',this)">🔊</button>
+          ${isEditingRow
+            ? `<input id="editCell_${w.id}_${activeTense}_${i}" value="${escQ(ex.pt)}" style="flex:1;min-width:140px;padding:4px 8px;border-radius:6px;border:1px solid #1a6b3c;font-size:13px;font-family:inherit;font-style:italic;" />
+               <button onclick="saveCellEdit(${w.id},'${activeTense}',${i})" style="padding:3px 10px;border-radius:5px;border:none;background:#1a6b3c;color:#fff;cursor:pointer;font-size:11px;font-family:inherit;">Save</button>
+               <button onclick="startEditCell(${w.id},'${activeTense}',${i})" style="padding:3px 8px;border-radius:5px;border:1px solid #ddd;background:#fff;cursor:pointer;font-size:11px;color:#888;">✕</button>`
+            : `<span class="example-pt">«${ex.pt}»</span>
+               <button class="speak-btn" onclick="speakText('${escQ(ex.pt)}','pt-PT',this)">🔊</button>
+               ${canEdit?`<button onclick="startEditCell(${w.id},'${activeTense}',${i})" style="padding:1px 5px;border-radius:4px;border:1px solid #ddd;background:transparent;cursor:pointer;font-size:10px;color:#ccc;">✏️</button>`:''}`}
         </div>
         <div style="display:flex;align-items:center;gap:5px;margin-top:2px;">
           <span class="example-en">${getTranslation(ex.en)}</span>
           <button class="speak-btn" onclick="speakText('${escQ(ex.en)}','en-GB',this)" style="font-size:11px;">🔊</button>
         </div>
-      </div>`).join('');
+      </div>`;
+    }).join('');
     examplesHTML=`
       <div class="tense-tabs">${tabsHTML}</div>
       <div class="examples-section">
@@ -527,12 +572,94 @@ function renderWordCard(w, showDivider=false){
           ${w.notes?`<span class="word-note">${w.notes}</span>`:''}
         </div>
       </div>
+      ${canEdit ? `<button onclick="startEditWord(${w.id})" style="padding:3px 7px;border-radius:6px;border:1px solid #ddd;background:${isEditingWord?'#fff8f0':'transparent'};cursor:pointer;font-size:12px;color:#ccc;flex-shrink:0;">✏️</button>` : ''}
     </div>
+    ${wordEditPanel}
     ${examplesHTML}
   </div>`;
 }
 
-// ═══ GROUP RENDER ═════════════════════════════════════════════════════════
+// ═══ VIEWER INLINE EDITING ════════════════════════════════════════════════
+let editingWord = null;    // wordId being edited
+let editingCell = null;    // {wordId, tense, rowIndex} for conjugation editing
+
+function startEditWord(wordId){
+  editingWord = editingWord === wordId ? null : wordId;
+  editingCell = null;
+  renderWords();
+}
+
+function startEditCell(wordId, tense, rowIndex){
+  editingCell = (editingCell?.wordId===wordId&&editingCell?.tense===tense&&editingCell?.rowIndex===rowIndex)
+    ? null : {wordId, tense, rowIndex};
+  renderWords();
+}
+
+function saveWordEdit(wordId){
+  const w = words.find(x=>x.id===wordId); if(!w) return;
+  const ptEl  = document.getElementById('editPt_'+wordId);
+  const enEl  = document.getElementById('editEn_'+wordId);
+  const notEl = document.getElementById('editNote_'+wordId);
+  if(ptEl)  w.word        = ptEl.value.trim()  || w.word;
+  if(enEl)  w.translation = enEl.value.trim()  || w.translation;
+  if(notEl) w.notes       = notEl.value.trim();
+  editingWord = null;
+  saveWordsToGitHub();
+  renderWords();
+  showToast('✅ Word updated!');
+}
+
+function saveCellEdit(wordId, tense, rowIndex){
+  const w = words.find(x=>x.id===wordId); if(!w) return;
+  const ptEl = document.getElementById(`editCell_${wordId}_${tense}_${rowIndex}`);
+  if(ptEl && w.tenses?.[tense]?.[rowIndex]){
+    w.tenses[tense][rowIndex].pt = ptEl.value.trim() || w.tenses[tense][rowIndex].pt;
+  }
+  editingCell = null;
+  saveWordsToGitHub();
+  renderWords();
+  showToast('✅ Conjugation updated!');
+}
+
+async function saveWordsToGitHub(){
+  const u = localStorage.getItem('gh-user');
+  const r = localStorage.getItem('gh-repo');
+  const t = localStorage.getItem('gh-token');
+  if(!u||!r||!t) return; // no write access in viewer — silently skip
+  try{
+    const content = btoa(unescape(encodeURIComponent(JSON.stringify(words, null, 2))));
+    let sha;
+    try{
+      const res = await fetch(`https://api.github.com/repos/${u}/${r}/contents/words.json`,
+        {headers:{Authorization:`token ${t}`,Accept:'application/vnd.github.v3+json'}});
+      if(res.ok){ const d=await res.json(); sha=d.sha; }
+    }catch(e){}
+    await fetch(`https://api.github.com/repos/${u}/${r}/contents/words.json`,{
+      method:'PUT',
+      headers:{Authorization:`token ${t}`,Accept:'application/vnd.github.v3+json','Content-Type':'application/json'},
+      body:JSON.stringify({message:'Fix word via viewer',content,...(sha?{sha}:{})})
+    });
+  }catch(e){ console.warn('Could not save to GitHub:', e); }
+}
+
+// ═══ VIEWER GITHUB TOKEN PANEL ════════════════════════════════════════════
+function toggleEditPanel(){
+  const panel = document.getElementById('viewerEditPanel');
+  panel.classList.toggle('hidden');
+}
+
+function saveViewerToken(){
+  const u = document.getElementById('viewerUser').value.trim();
+  const r = document.getElementById('viewerRepo').value.trim();
+  const t = document.getElementById('viewerToken').value.trim();
+  if(!u||!r||!t){ showToast('Please fill in all three fields'); return; }
+  localStorage.setItem('gh-user', u);
+  localStorage.setItem('gh-repo', r);
+  localStorage.setItem('gh-token', t);
+  toggleEditPanel();
+  showToast('✅ Edit access saved — you can now fix words!');
+  renderWords();
+}
 function renderGroup(key, groupWords, color, headerHTML){
   const collapsed=collapsedGroups.has(key);
   const ek=encodeURIComponent(key);
@@ -1026,7 +1153,7 @@ function renderNations(){
     </div>`;
     return `<div onclick="${quizMode?`toggleNationReveal('${n.en}')`:`toggleNationExpand('${escQ(n.en)}')`}" style="background:#fff;border-radius:10px;padding:14px 10px;box-shadow:0 1px 5px rgba(0,0,0,0.07);text-align:center;cursor:pointer;border:2px solid ${isExpanded?color:'transparent'};transition:all 0.15s;">
       <div style="font-size:36px;margin-bottom:6px;">${n.flag}</div>
-      ${showName?`<div style="font-size:12px;font-weight:700;color:${color};margin-bottom:2px;line-height:1.3;">${n.pt}</div>
+      ${showName?`<div style="font-size:11px;font-weight:700;color:${color};margin-bottom:2px;line-height:1.4;word-break:break-word;hyphens:auto;">${n.pt}</div>
       <div style="font-size:10px;color:#aaa;margin-bottom:2px;">${n.en}</div>
       <div style="font-size:10px;color:#ccc;font-style:italic;margin-bottom:4px;">${n.capital}</div>
       <button class="speak-btn" onclick="speakText('${escQ(n.pt)}','pt-PT',this);event.stopPropagation();" style="margin-bottom:4px;">🔊</button>
@@ -1214,6 +1341,10 @@ speechSynthesis.addEventListener('voiceschanged',()=>{ selectedVoice=null; });
 // Init slider
 const _slider=document.getElementById('speechRate');
 if(_slider){ _slider.value=speechRate; document.getElementById('speechRateLabel').textContent=speechRate.toFixed(2)+'×'; }
+// Restore saved edit credentials
+const _vu=localStorage.getItem('gh-user'), _vr=localStorage.getItem('gh-repo');
+if(_vu && document.getElementById('viewerUser')) document.getElementById('viewerUser').value=_vu;
+if(_vr && document.getElementById('viewerRepo')) document.getElementById('viewerRepo').value=_vr;
 loadFromGitHub();
 // Tabs
 document.querySelectorAll('.tab-btn').forEach(btn=>{
