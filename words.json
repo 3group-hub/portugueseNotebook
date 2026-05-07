@@ -1177,7 +1177,7 @@
       }
     ],
     "addedAt": "28/04/2026",
-    "generatingExample": false,
+    "generatingExample": true,
     "assessingFreq": false,
     "freq": "common",
     "tenses": {
@@ -1247,7 +1247,7 @@
       ],
       "future": []
     },
-    "_generatingTense": null,
+    "_generatingTense": "past",
     "_activeTense": "past"
   },
   {
