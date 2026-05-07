@@ -2572,38 +2572,38 @@
       "future": [
         {
           "pronoun": "eu",
-          "pt": "Eu vou fazer",
+          "pt": "Eu farei",
           "en": "I will do"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu vais fazer",
+          "pt": "Tu farás",
           "en": "You will do"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela vai fazer",
+          "pt": "Ela fará",
           "en": "She will do"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós vamos fazer",
+          "pt": "Nós faremos",
           "en": "We will do"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês vão fazer",
+          "pt": "Vocês farão",
           "en": "You will do"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles vão fazer",
+          "pt": "Eles farão",
           "en": "They will do"
         }
       ]
     },
-    "_activeTense": "future",
-    "_generatingTense": "future"
+    "_activeTense": "past",
+    "_generatingTense": "past"
   },
   {
     "id": 1777727145899,
