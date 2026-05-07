@@ -55,8 +55,8 @@
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela quis um livro",
-          "en": "She wanted a book"
+          "pt": "Ela quis um gato",
+          "en": "She wanted a cat"
         },
         {
           "pronoun": "nós",
@@ -70,8 +70,8 @@
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles quiseram comer",
-          "en": "They wanted to eat"
+          "pt": "Eles quiseram dormir",
+          "en": "They wanted to sleep"
         }
       ],
       "future": []
@@ -711,40 +711,40 @@
       }
     ],
     "addedAt": "28/04/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "common",
     "tenses": {
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu seduzo facilmente",
-          "en": "I seduce easily"
+          "pt": "Eu seduzo com facilidade.",
+          "en": "I seduce with ease."
         },
         {
           "pronoun": "tu",
-          "pt": "Tu seduzes bem",
-          "en": "You seduce well"
+          "pt": "Tu seduzes os homens.",
+          "en": "You seduce men."
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela seduz todos",
-          "en": "She seduces everyone"
+          "pt": "Ela seduz com um sorriso.",
+          "en": "She seduces with a smile."
         },
         {
           "pronoun": "nós",
-          "pt": "Nós seduzimos os clientes",
-          "en": "We seduce the clients"
+          "pt": "Nós seduzimos o público.",
+          "en": "We seduce the audience."
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês seduzem com facilidade",
-          "en": "You seduce with ease"
+          "pt": "Vocês seduzem com charme.",
+          "en": "You seduce with charm."
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles seduzem as mulheres",
-          "en": "They seduce the women"
+          "pt": "Eles seduzem as mulheres.",
+          "en": "They seduce women."
         }
       ],
       "past": [
@@ -876,7 +876,7 @@
         }
       ]
     },
-    "_generatingTense": "present",
+    "_generatingTense": null,
     "_activeTense": "present"
   },
   {
