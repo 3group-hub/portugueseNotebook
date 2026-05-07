@@ -45,33 +45,33 @@
       "past": [
         {
           "pronoun": "eu",
-          "pt": "Eu quis um bolo",
-          "en": "I wanted a cake"
+          "pt": "Eu quis um bolo.",
+          "en": "I wanted a cake."
         },
         {
           "pronoun": "tu",
-          "pt": "Tu quiseste um carro",
-          "en": "You wanted a car"
+          "pt": "Tu quiseste um carro.",
+          "en": "You wanted a car."
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela quis um livro",
-          "en": "She wanted a book"
+          "pt": "Ela quis um livro.",
+          "en": "She wanted a book."
         },
         {
           "pronoun": "nós",
-          "pt": "Nós quisemos ir",
-          "en": "We wanted to go"
+          "pt": "Nós quisemos ir.",
+          "en": "We wanted to go."
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês quiseram ajudar",
-          "en": "You wanted to help"
+          "pt": "Vocês quiseram jogar.",
+          "en": "You wanted to play."
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles quiseram comer",
-          "en": "They wanted to eat"
+          "pt": "Eles quiseram comer.",
+          "en": "They wanted to eat."
         }
       ],
       "future": []
