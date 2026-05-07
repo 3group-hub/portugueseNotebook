@@ -2459,33 +2459,33 @@
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu faço o jantar",
-          "en": "I do dinner"
+          "pt": "Eu faço um bolo",
+          "en": "I make a cake"
         },
         {
           "pronoun": "tu",
           "pt": "Tu fazes um bolo",
-          "en": "You do a cake"
+          "en": "You make a cake"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela faz o trabalho",
-          "en": "She does the work"
+          "pt": "Ela faz um bolo",
+          "en": "She makes a cake"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós fazemos um teste",
-          "en": "We do a test"
+          "pt": "Nós fazemos um bolo",
+          "en": "We make a cake"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês fazem um curso",
-          "en": "You do a course"
+          "pt": "Vocês fazem um bolo",
+          "en": "You make a cake"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles fazem um projeto",
-          "en": "They do a project"
+          "pt": "Eles fazem um bolo",
+          "en": "They make a cake"
         }
       ],
       "past": [
@@ -2581,18 +2581,18 @@
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela diz olá",
-          "en": "She says hello"
+          "pt": "Ela diz oui",
+          "en": "She says yes"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós dizemos obrigado",
-          "en": "We say thank you"
+          "pt": "Nós dizemos pronto",
+          "en": "We say ready"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês dizem sim",
-          "en": "You say yes"
+          "pt": "Vocês dizem talvez",
+          "en": "You say maybe"
         },
         {
           "pronoun": "eles/elas",
