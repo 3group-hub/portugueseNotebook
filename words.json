@@ -6000,7 +6000,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "07/05/2026",
-    "generatingExample": true,
-    "assessingFreq": true
+    "generatingExample": false,
+    "assessingFreq": false
   }
 ]
