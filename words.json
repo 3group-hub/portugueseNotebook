@@ -1177,7 +1177,7 @@
       }
     ],
     "addedAt": "28/04/2026",
-    "generatingExample": false,
+    "generatingExample": true,
     "assessingFreq": false,
     "freq": "common",
     "tenses": {
@@ -1247,8 +1247,8 @@
       ],
       "future": []
     },
-    "_generatingTense": null,
-    "_activeTense": "present"
+    "_generatingTense": "future-peri",
+    "_activeTense": "future-peri"
   },
   {
     "id": 1777373855443,
