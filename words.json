@@ -45,13 +45,13 @@
       "past": [
         {
           "pronoun": "eu",
-          "pt": "Eu quis um bolo",
-          "en": "I wanted a cake"
+          "pt": "Eu quis uma maçã",
+          "en": "I wanted an apple"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu quiseste um carro",
-          "en": "You wanted a car"
+          "pt": "Tu quiseste um bolo",
+          "en": "You wanted a cake"
         },
         {
           "pronoun": "ele/ela",
@@ -65,13 +65,13 @@
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês quiseram ajudar",
-          "en": "You wanted to help"
+          "pt": "Vocês quiseram jogar",
+          "en": "You wanted to play"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles quiseram jogar",
-          "en": "They wanted to play"
+          "pt": "Eles quiseram comer",
+          "en": "They wanted to eat"
         }
       ],
       "future": []
