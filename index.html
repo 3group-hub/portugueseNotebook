@@ -1125,10 +1125,22 @@ function speakText(text, lang, btn){
 const GROQ_MODEL = 'llama-3.3-70b-versatile'; // free, fast, great at languages
 
 // Minimum gap between API calls (ms) — stays well within 30 RPM
-const API_MIN_GAP = 2200;
+const API_MIN_GAP = 2500;  // ms between calls — safe under 30 RPM
+const API_TIMEOUT  = 25000; // 25s per request before we give up and retry
 let _lastApiCall = 0;
 
-async function claudeCall(prompt, maxTokens=500, retries=3){
+// Fetch with a hard timeout
+async function fetchWithTimeout(url, opts, ms){
+  const ctrl = new AbortController();
+  const timer = setTimeout(()=>ctrl.abort(), ms);
+  try{
+    return await fetch(url, {...opts, signal: ctrl.signal});
+  }finally{
+    clearTimeout(timer);
+  }
+}
+
+async function claudeCall(prompt, maxTokens=500, retries=4){
   const key = getApiKey();
   if(!key){ showToast('Please add your Groq API key first'); throw new Error('No API key'); }
 
@@ -1140,27 +1152,34 @@ async function claudeCall(prompt, maxTokens=500, retries=3){
 
   for(let attempt=0; attempt<retries; attempt++){
     try{
-      const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${key}`
+      const res = await fetchWithTimeout(
+        'https://api.groq.com/openai/v1/chat/completions',
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${key}`
+          },
+          body: JSON.stringify({
+            model: GROQ_MODEL,
+            messages: [{ role: 'user', content: prompt }],
+            max_tokens: maxTokens,
+            temperature: 0.7
+          })
         },
-        body: JSON.stringify({
-          model: GROQ_MODEL,
-          messages: [{ role: 'user', content: prompt }],
-          max_tokens: maxTokens,
-          temperature: 0.7
-        })
-      });
+        API_TIMEOUT
+      );
 
       const data = await res.json();
 
-      // Rate limit hit — wait and retry
+      // Rate limit — parse retry-after and wait
       if(res.status === 429){
-        const retryAfter = parseInt(data.error?.message?.match(/try again in (\d+)s/)?.[1] || '5') * 1000 + 500;
-        showToast(`⏳ Rate limit — waiting ${Math.ceil(retryAfter/1000)}s before retry…`);
-        await new Promise(r=>setTimeout(r, retryAfter));
+        const secs = parseInt(
+          data.error?.message?.match(/try again in (\d+(\.\d+)?)s/)?.[1] || '8'
+        );
+        const waitMs = Math.ceil(secs) * 1000 + 1000;
+        showToast(`⏳ Rate limit — waiting ${Math.ceil(waitMs/1000)}s…`);
+        await new Promise(r=>setTimeout(r, waitMs));
         _lastApiCall = Date.now();
         continue;
       }
@@ -1170,12 +1189,32 @@ async function claudeCall(prompt, maxTokens=500, retries=3){
         showApiError(msg);
         throw new Error(msg);
       }
+
       return data.choices?.[0]?.message?.content || '';
+
     }catch(e){
       if(e.message?.includes('No API key')) throw e;
-      if(attempt < retries-1){
-        await new Promise(r=>setTimeout(r, 3000));
+
+      const isTimeout = e.name === 'AbortError' || e.message?.includes('abort');
+      const isNetwork = e.message?.includes('fetch') || e.message?.includes('network') || e.message?.includes('Failed');
+
+      if(attempt < retries - 1){
+        const backoff = isTimeout ? 6000 : (attempt + 1) * 3000;
+        if(isTimeout){
+          showToast(`⏳ Groq timed out — retrying in ${backoff/1000}s… (${attempt+1}/${retries})`);
+        } else if(isNetwork){
+          showToast(`⏳ Network error — retrying in ${backoff/1000}s… (${attempt+1}/${retries})`);
+        }
+        await new Promise(r=>setTimeout(r, backoff));
+        _lastApiCall = Date.now();
         continue;
+      }
+
+      // Final failure
+      if(isTimeout){
+        showToast('❌ Groq not responding — try again in a moment');
+      } else {
+        showApiError(e.message);
       }
       throw e;
     }
