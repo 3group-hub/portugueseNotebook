@@ -2252,33 +2252,33 @@
       "past": [
         {
           "pronoun": "eu",
-          "pt": "Eu fui ao parque.",
-          "en": "I went to the park."
+          "pt": "Eu fui ao parque",
+          "en": "I went to the park"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu foste ao cinema.",
-          "en": "You went to the cinema."
+          "pt": "Tu foste à praia",
+          "en": "You went to the beach"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela foi à praia.",
-          "en": "She went to the beach."
+          "pt": "Ela foi ao cinema",
+          "en": "She went to the movies"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós fomos à escola.",
-          "en": "We went to school."
+          "pt": "Nós fomos à escola",
+          "en": "We went to school"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês foram ao shopping.",
-          "en": "You went to the mall."
+          "pt": "Vocês foram ao restaurante",
+          "en": "You went to the restaurant"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles foram ao estádio.",
-          "en": "They went to the stadium."
+          "pt": "Eles foram ao estádio",
+          "en": "They went to the stadium"
         }
       ],
       "future": [
@@ -2317,32 +2317,32 @@
         {
           "pronoun": "eu",
           "pt": "Eu vou ir ao cinema",
-          "en": "I am going to the movies"
+          "en": "I'm going to the movies"
         },
         {
           "pronoun": "tu",
           "pt": "Tu vais ir à praia",
-          "en": "You are going to the beach"
+          "en": "You're going to the beach"
         },
         {
           "pronoun": "ele/ela",
           "pt": "Ela vai ir ao parque",
-          "en": "She is going to the park"
+          "en": "She's going to the park"
         },
         {
           "pronoun": "nós",
           "pt": "Nós vamos ir jantar",
-          "en": "We are going to dinner"
+          "en": "We're going to dinner"
         },
         {
           "pronoun": "vocês",
           "pt": "Vocês vão ir ao shopping",
-          "en": "You are going to the mall"
+          "en": "You're going to the mall"
         },
         {
           "pronoun": "eles/elas",
           "pt": "Eles vão ir ao estádio",
-          "en": "They are going to the stadium"
+          "en": "They're going to the stadium"
         }
       ],
       "future-simple": [
@@ -2354,7 +2354,7 @@
         {
           "pronoun": "tu",
           "pt": "Tu irás ao cinema",
-          "en": "You will go to the movies"
+          "en": "You will go to the cinema"
         },
         {
           "pronoun": "ele/ela",
