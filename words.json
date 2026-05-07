@@ -248,55 +248,55 @@
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela ouve um amigo",
-          "en": "She listens to a friend"
+          "pt": "Ela ouve TV",
+          "en": "She listens to TV"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós ouvimos um professor",
-          "en": "We listen to a teacher"
+          "pt": "Nós ouvimos tudo",
+          "en": "We listen to everything"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês ouvem um disco",
-          "en": "You listen to a record"
+          "pt": "Vocês ouvem isso",
+          "en": "You guys listen to this"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles ouvem televisão",
-          "en": "They listen to television"
+          "pt": "Eles ouvem música",
+          "en": "They listen to music"
         }
       ],
       "past": [
         {
           "pronoun": "eu",
-          "pt": "Eu ouvi",
-          "en": "I listened"
+          "pt": "Eu ouvi música",
+          "en": "I listened to music"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu ouviste",
-          "en": "You listened"
+          "pt": "Tu ouviste o som",
+          "en": "You listened to the sound"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela ouviu",
-          "en": "She listened"
+          "pt": "Ela ouviu a notícia",
+          "en": "She listened to the news"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós ouvimos",
-          "en": "We listened"
+          "pt": "Nós ouvimos o professor",
+          "en": "We listened to the teacher"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês ouviram",
-          "en": "You listened"
+          "pt": "Vocês ouviram isso",
+          "en": "You listened to this"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles ouviram",
-          "en": "They listened"
+          "pt": "Eles ouviram tudo",
+          "en": "They listened to everything"
         }
       ],
       "future": [
