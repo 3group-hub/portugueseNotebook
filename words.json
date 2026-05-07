@@ -2108,13 +2108,13 @@
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu tenho um cão",
-          "en": "I have a dog"
+          "pt": "Eu tenho um carro",
+          "en": "I have a car"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu tens um carro",
-          "en": "You have a car"
+          "pt": "Tu tens um livro",
+          "en": "You have a book"
         },
         {
           "pronoun": "ele/ela",
@@ -2123,18 +2123,18 @@
         },
         {
           "pronoun": "nós",
-          "pt": "Nós temos um filho",
-          "en": "We have a son"
+          "pt": "Nós temos um casa",
+          "en": "We have a house"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês têm um livro",
-          "en": "You have a book"
+          "pt": "Vocês têm um telefone",
+          "en": "You have a phone"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles têm um jardim",
-          "en": "They have a garden"
+          "pt": "Eles têm um computador",
+          "en": "They have a computer"
         }
       ],
       "past": [
