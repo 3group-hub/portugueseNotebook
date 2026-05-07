@@ -5876,7 +5876,38 @@
           "en": "They will be teachers"
         }
       ],
-      "future-simple": []
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu serei feliz",
+          "en": "I will be happy"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu serás rico",
+          "en": "You will be rich"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela será médica",
+          "en": "She will be a doctor"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós seremos amigos",
+          "en": "We will be friends"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês serão professores",
+          "en": "You will be teachers"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles serão campeões",
+          "en": "They will be champions"
+        }
+      ]
     },
     "_activeTense": "future-simple",
     "_generatingTense": "future-simple"
