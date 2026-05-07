@@ -568,40 +568,40 @@
       }
     ],
     "addedAt": "28/04/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "advanced",
     "tenses": {
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu irradia confiança.",
-          "en": "I radiate confidence."
+          "pt": "Eu irradia confiança",
+          "en": "I radiate confidence"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu irradias alegria.",
-          "en": "You radiate joy."
+          "pt": "Tu irradias alegria",
+          "en": "You radiate joy"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela irradia calor.",
-          "en": "She radiates warmth."
+          "pt": "Ela irradia sabedoria",
+          "en": "She radiates wisdom"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós irradiamos positividade.",
-          "en": "We radiate positivity."
+          "pt": "Nós irradiamos calor",
+          "en": "We radiate warmth"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês irradiam energia.",
-          "en": "You radiate energy."
+          "pt": "Vocês irradiam entusiasmo",
+          "en": "You radiate enthusiasm"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles irradiam otimismo.",
-          "en": "They radiate optimism."
+          "pt": "Eles irradiam energia",
+          "en": "They radiate energy"
         }
       ],
       "past": [
@@ -669,7 +669,7 @@
         }
       ]
     },
-    "_generatingTense": "present",
+    "_generatingTense": null,
     "_activeTense": "present"
   },
   {
