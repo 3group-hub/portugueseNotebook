@@ -4060,8 +4060,8 @@
         },
         {
           "pronoun": "tu",
-          "pt": "Tu tens um amigo",
-          "en": "You have a friend"
+          "pt": "Tu tens um carro",
+          "en": "You have a car"
         },
         {
           "pronoun": "ele/ela",
@@ -4075,8 +4075,8 @@
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês têm um carro",
-          "en": "You have a car"
+          "pt": "Vocês têm um computador",
+          "en": "You have a computer"
         },
         {
           "pronoun": "eles/elas",
@@ -4087,33 +4087,33 @@
       "past": [
         {
           "pronoun": "eu",
-          "pt": "Eu tive um livro.",
-          "en": "I had a book."
+          "pt": "Eu tive um cão",
+          "en": "I had a dog"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu tiveste um amigo.",
-          "en": "You had a friend."
+          "pt": "Tu tiveste um gato",
+          "en": "You had a cat"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela teve um gato.",
-          "en": "She had a cat."
+          "pt": "Ela teve um filho",
+          "en": "She had a child"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós tivemos fome.",
-          "en": "We were hungry."
+          "pt": "Nós tivemos um carro",
+          "en": "We had a car"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês tiveram dinheiro.",
-          "en": "You had money."
+          "pt": "Vocês tiveram férias",
+          "en": "You had holidays"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles tiveram um carro.",
-          "en": "They had a car."
+          "pt": "Eles tiveram sorte",
+          "en": "They had luck"
         }
       ],
       "future": [
