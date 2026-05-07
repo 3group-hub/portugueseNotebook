@@ -4055,13 +4055,13 @@
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu tenho um carro",
-          "en": "I have a car"
+          "pt": "Eu tenho um livro",
+          "en": "I have a book"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu tens um livro",
-          "en": "You have a book"
+          "pt": "Tu tens um carro",
+          "en": "You have a car"
         },
         {
           "pronoun": "ele/ela",
@@ -4075,13 +4075,13 @@
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês têm um filho",
-          "en": "You have a son"
+          "pt": "Vocês têm um telefone",
+          "en": "You have a phone"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles têm um cão",
-          "en": "They have a dog"
+          "pt": "Eles têm um casa",
+          "en": "They have a house"
         }
       ],
       "past": [
@@ -4092,8 +4092,8 @@
         },
         {
           "pronoun": "tu",
-          "pt": "Tu tiveste um carro.",
-          "en": "You had a car."
+          "pt": "Tu tiveste um amigo.",
+          "en": "You had a friend."
         },
         {
           "pronoun": "ele/ela",
@@ -4102,18 +4102,18 @@
         },
         {
           "pronoun": "nós",
-          "pt": "Nós tivemos fome.",
-          "en": "We were hungry."
+          "pt": "Nós tivemos um carro.",
+          "en": "We had a car."
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês tiveram filhos.",
-          "en": "You had children."
+          "pt": "Vocês tiveram um filho.",
+          "en": "You had a son."
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles tiveram um filho.",
-          "en": "They had a son."
+          "pt": "Eles tiveram um jardim.",
+          "en": "They had a garden."
         }
       ],
       "future": [
@@ -4610,13 +4610,13 @@
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela quer um chá",
-          "en": "She wants a tea"
+          "pt": "Ela quer um livro",
+          "en": "She wants a book"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós queremos comer",
-          "en": "We want to eat"
+          "pt": "Nós queremos ir",
+          "en": "We want to go"
         },
         {
           "pronoun": "vocês",
@@ -4625,8 +4625,8 @@
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles querem futebol",
-          "en": "They want football"
+          "pt": "Eles querem comer",
+          "en": "They want to eat"
         }
       ],
       "past": [
