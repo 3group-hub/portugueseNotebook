@@ -55,8 +55,8 @@
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela quis um gato",
-          "en": "She wanted a cat"
+          "pt": "Ela quis um livro",
+          "en": "She wanted a book"
         },
         {
           "pronoun": "nós",
@@ -70,8 +70,8 @@
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles quiseram dormir",
-          "en": "They wanted to sleep"
+          "pt": "Eles quiseram comer",
+          "en": "They wanted to eat"
         }
       ],
       "future": []
