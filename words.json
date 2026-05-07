@@ -2571,33 +2571,33 @@
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu digo sim.",
-          "en": "I say yes."
+          "pt": "Eu digo sim",
+          "en": "I say yes"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu dizes não.",
-          "en": "You say no."
+          "pt": "Tu dizes não",
+          "en": "You say no"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela diz isso.",
-          "en": "She says that."
+          "pt": "Ela diz olá",
+          "en": "She says hello"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós dizemos pouco.",
-          "en": "We say little."
+          "pt": "Nós dizemos obrigado",
+          "en": "We say thank you"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês dizem tudo.",
-          "en": "You say everything."
+          "pt": "Vocês dizem sim",
+          "en": "You say yes"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles dizem nada.",
-          "en": "They say nothing."
+          "pt": "Eles dizem não",
+          "en": "They say no"
         }
       ],
       "past": [
@@ -2613,8 +2613,8 @@
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ele disse",
-          "en": "He/She said"
+          "pt": "Ela disse",
+          "en": "She said"
         },
         {
           "pronoun": "nós",
