@@ -5057,8 +5057,8 @@
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles vêm amanhã.",
-          "en": "They come tomorrow."
+          "pt": "Eles vêm à noite.",
+          "en": "They come at night."
         }
       ],
       "past": [
@@ -5097,64 +5097,64 @@
         {
           "pronoun": "eu",
           "pt": "Eu vou vir",
-          "en": "I will come"
+          "en": "I am going to come"
         },
         {
           "pronoun": "tu",
           "pt": "Tu vais vir",
-          "en": "You will come"
+          "en": "You are going to come"
         },
         {
           "pronoun": "ele/ela",
           "pt": "Ele vai vir",
-          "en": "He/She will come"
+          "en": "He/She is going to come"
         },
         {
           "pronoun": "nós",
           "pt": "Nós vamos vir",
-          "en": "We will come"
+          "en": "We are going to come"
         },
         {
           "pronoun": "vocês",
           "pt": "Vocês vão vir",
-          "en": "You will come"
+          "en": "You are going to come"
         },
         {
           "pronoun": "eles/elas",
           "pt": "Eles vão vir",
-          "en": "They will come"
+          "en": "They are going to come"
         }
       ],
       "future-simple": [
         {
           "pronoun": "eu",
-          "pt": "virei verei",
-          "en": "I will come"
+          "pt": "Eu virei amanhã",
+          "en": "I will come tomorrow"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu virás",
-          "en": "You will come"
+          "pt": "Tu virás cedo",
+          "en": "You will come early"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela virá",
-          "en": "She will come"
+          "pt": "Ela virá logo",
+          "en": "She will come soon"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós viremos",
-          "en": "We will come"
+          "pt": "Nós viremos juntos",
+          "en": "We will come together"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês virão",
-          "en": "You will come"
+          "pt": "Vocês virão tarde",
+          "en": "You will come late"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles virão",
-          "en": "They will come"
+          "pt": "Eles virão depois",
+          "en": "They will come later"
         }
       ]
     },
