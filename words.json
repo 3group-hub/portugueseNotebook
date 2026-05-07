@@ -4457,18 +4457,18 @@
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu quero um bolo",
-          "en": "I want a cake"
+          "pt": "Eu quero comer",
+          "en": "I want to eat"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu queres um carro",
-          "en": "You want a car"
+          "pt": "Tu queres dormir",
+          "en": "You want to sleep"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela quer um livro",
-          "en": "She wants a book"
+          "pt": "Ela quer estudar",
+          "en": "She wants to study"
         },
         {
           "pronoun": "nós",
@@ -4477,13 +4477,13 @@
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês querem ajudar",
-          "en": "You want to help"
+          "pt": "Vocês querem jogar",
+          "en": "You want to play"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles querem jogar",
-          "en": "They want to play"
+          "pt": "Eles querem falar",
+          "en": "They want to talk"
         }
       ],
       "past": [
@@ -4494,13 +4494,13 @@
         },
         {
           "pronoun": "tu",
-          "pt": "Tu quiseste um sorvete",
-          "en": "You wanted an ice cream"
+          "pt": "Tu quiseste um livro",
+          "en": "You wanted a book"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela quis um livro",
-          "en": "She wanted a book"
+          "pt": "Ela quis um carro",
+          "en": "She wanted a car"
         },
         {
           "pronoun": "nós",
