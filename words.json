@@ -2325,7 +2325,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "02/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -2456,10 +2456,42 @@
           "pt": "Eles vão ir ao estádio",
           "en": "They are going to the stadium"
         }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu irei ao parque",
+          "en": "I will go to the park"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu irás ao cinema",
+          "en": "You will go to the movies"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela irá à escola",
+          "en": "She will go to school"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós iremos à praia",
+          "en": "We will go to the beach"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês irão ao shopping",
+          "en": "You will go to the mall"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles irão ao estádio",
+          "en": "They will go to the stadium"
+        }
       ]
     },
     "_activeTense": "future-simple",
-    "_generatingTense": "future-simple"
+    "_generatingTense": null
   },
   {
     "id": 1777726848084,
@@ -2469,7 +2501,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "02/05/2026",
-    "generatingExample": false,
+    "generatingExample": true,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -2571,7 +2603,7 @@
       ]
     },
     "_activeTense": "future",
-    "_generatingTense": null
+    "_generatingTense": "future"
   },
   {
     "id": 1777727145899,
