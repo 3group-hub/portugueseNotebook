@@ -2353,7 +2353,7 @@
         {
           "pronoun": "tu",
           "pt": "Tu vais ao cinema",
-          "en": "You go to the movies"
+          "en": "You go to the cinema"
         },
         {
           "pronoun": "ele/ela",
@@ -2385,7 +2385,7 @@
         {
           "pronoun": "tu",
           "pt": "Tu foste ao cinema",
-          "en": "You went to the cinema"
+          "en": "You went to the movies"
         },
         {
           "pronoun": "ele/ela",
@@ -2399,8 +2399,8 @@
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês foram ao restaurante",
-          "en": "You went to the restaurant"
+          "pt": "Vocês foram ao shopping",
+          "en": "You went to the mall"
         },
         {
           "pronoun": "eles/elas",
