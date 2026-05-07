@@ -2230,8 +2230,8 @@
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela vai ao trabalho",
-          "en": "She goes to work"
+          "pt": "Ela vai à escola",
+          "en": "She goes to school"
         },
         {
           "pronoun": "nós",
@@ -2252,33 +2252,33 @@
       "past": [
         {
           "pronoun": "eu",
-          "pt": "Eu fui ao parque",
-          "en": "I went to the park"
+          "pt": "Eu fui ao parque.",
+          "en": "I went to the park."
         },
         {
           "pronoun": "tu",
-          "pt": "Tu foste ao cinema",
-          "en": "You went to the cinema"
+          "pt": "Tu foste ao cinema.",
+          "en": "You went to the cinema."
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela foi à escola",
-          "en": "She went to school"
+          "pt": "Ela foi à praia.",
+          "en": "She went to the beach."
         },
         {
           "pronoun": "nós",
-          "pt": "Nós fomos à praia",
-          "en": "We went to the beach"
+          "pt": "Nós fomos à escola.",
+          "en": "We went to school."
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês foram ao restaurante",
-          "en": "You went to the restaurant"
+          "pt": "Vocês foram ao shopping.",
+          "en": "You went to the mall."
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles foram ao estádio",
-          "en": "They went to the stadium"
+          "pt": "Eles foram ao estádio.",
+          "en": "They went to the stadium."
         }
       ],
       "future": [
