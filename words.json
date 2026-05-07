@@ -2317,32 +2317,32 @@
         {
           "pronoun": "eu",
           "pt": "Eu faço um bolo",
-          "en": "I bake a cake"
+          "en": "I make a cake"
         },
         {
           "pronoun": "tu",
           "pt": "Tu fazes um bolo",
-          "en": "You bake a cake"
+          "en": "You make a cake"
         },
         {
           "pronoun": "ele/ela",
           "pt": "Ela faz um bolo",
-          "en": "She bakes a cake"
+          "en": "She makes a cake"
         },
         {
           "pronoun": "nós",
           "pt": "Nós fazemos um bolo",
-          "en": "We bake a cake"
+          "en": "We make a cake"
         },
         {
           "pronoun": "vocês",
           "pt": "Vocês fazem um bolo",
-          "en": "You bake a cake"
+          "en": "You make a cake"
         },
         {
           "pronoun": "eles/elas",
           "pt": "Eles fazem um bolo",
-          "en": "They bake a cake"
+          "en": "They make a cake"
         }
       ],
       "past": [
