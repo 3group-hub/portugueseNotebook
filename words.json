@@ -2795,33 +2795,33 @@
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu sei pouco.",
-          "en": "I know little."
+          "pt": "Eu sei inglês.",
+          "en": "I know English."
         },
         {
           "pronoun": "tu",
-          "pt": "Tu sabes muito.",
-          "en": "You know a lot."
+          "pt": "Tu sabes português.",
+          "en": "You know Portuguese."
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela sabe tudo.",
-          "en": "She knows everything."
+          "pt": "Ela sabe francês.",
+          "en": "She knows French."
         },
         {
           "pronoun": "nós",
-          "pt": "Nós sabemos isso.",
-          "en": "We know that."
+          "pt": "Nós sabemos espanhol.",
+          "en": "We know Spanish."
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês sabem isso.",
-          "en": "You know that."
+          "pt": "Vocês sabem alemão.",
+          "en": "You know German."
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles sabem pouco.",
-          "en": "They know little."
+          "pt": "Eles sabem italiano.",
+          "en": "They know Italian."
         }
       ],
       "past": [
