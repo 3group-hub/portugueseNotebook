@@ -45,13 +45,13 @@
       "past": [
         {
           "pronoun": "eu",
-          "pt": "Eu quis uma maçã",
-          "en": "I wanted an apple"
+          "pt": "Eu quis um bolo",
+          "en": "I wanted a cake"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu quiseste um bolo",
-          "en": "You wanted a cake"
+          "pt": "Tu quiseste um carro",
+          "en": "You wanted a car"
         },
         {
           "pronoun": "ele/ela",
@@ -70,8 +70,8 @@
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles quiseram comer",
-          "en": "They wanted to eat"
+          "pt": "Eles quiseram dormir",
+          "en": "They wanted to sleep"
         }
       ],
       "future": []
@@ -711,7 +711,7 @@
       }
     ],
     "addedAt": "28/04/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "common",
     "tenses": {
@@ -782,37 +782,37 @@
       "future": [
         {
           "pronoun": "eu",
-          "pt": "Eu vou seduzir alguém",
+          "pt": "Eu seduzirei alguém",
           "en": "I will seduce someone"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu vais seduzir muita gente",
-          "en": "You will seduce many people"
+          "pt": "Tu seduzirás alguém",
+          "en": "You will seduce someone"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela vai seduzir o público",
-          "en": "She will seduce the audience"
+          "pt": "Ela seduzirá alguém",
+          "en": "She will seduce someone"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós vamos seduzir os investidores",
-          "en": "We will seduce the investors"
+          "pt": "Nós seduziremos alguém",
+          "en": "We will seduce someone"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês vão seduzir os clientes",
-          "en": "You will seduce the clients"
+          "pt": "Vocês seduzirão alguém",
+          "en": "You will seduce someone"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles vão seduzir o júri",
-          "en": "They will seduce the jury"
+          "pt": "Eles seduzirão alguém",
+          "en": "They will seduce someone"
         }
       ]
     },
-    "_generatingTense": "future",
+    "_generatingTense": null,
     "_activeTense": "future"
   },
   {
