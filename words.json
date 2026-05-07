@@ -711,7 +711,7 @@
       }
     ],
     "addedAt": "28/04/2026",
-    "generatingExample": false,
+    "generatingExample": true,
     "assessingFreq": false,
     "freq": "common",
     "tenses": {
@@ -812,7 +812,7 @@
         }
       ]
     },
-    "_generatingTense": null,
+    "_generatingTense": "future",
     "_activeTense": "future"
   },
   {
@@ -1177,40 +1177,40 @@
       }
     ],
     "addedAt": "28/04/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "common",
     "tenses": {
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu erro muitas vezes.",
-          "en": "I make many mistakes."
+          "pt": "Eu erro sempre",
+          "en": "I always make mistakes"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu erras sempre.",
-          "en": "You always make mistakes."
+          "pt": "Tu erras muito",
+          "en": "You make many mistakes"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela erra raramente.",
-          "en": "She rarely makes mistakes."
+          "pt": "Ela erra frequentemente",
+          "en": "She often makes mistakes"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós erramos juntos.",
-          "en": "We make mistakes together."
+          "pt": "Nós erramos todos",
+          "en": "We all make mistakes"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês erram muito.",
-          "en": "You make many mistakes."
+          "pt": "Vocês erram juntos",
+          "en": "You make mistakes together"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles erram frequentemente.",
-          "en": "They often make mistakes."
+          "pt": "Eles erram sempre",
+          "en": "They always make mistakes"
         }
       ],
       "past": [
@@ -1247,7 +1247,7 @@
       ],
       "future": []
     },
-    "_generatingTense": "present",
+    "_generatingTense": null,
     "_activeTense": "present"
   },
   {
