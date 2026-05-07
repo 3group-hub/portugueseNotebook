@@ -1216,39 +1216,39 @@
       "past": [
         {
           "pronoun": "eu",
-          "pt": "Eu errei a resposta.",
-          "en": "I got the answer wrong."
+          "pt": "Eu errei.",
+          "en": "I made a mistake."
         },
         {
           "pronoun": "tu",
-          "pt": "Tu erraste novamente.",
-          "en": "You made another mistake."
+          "pt": "Tu erraste.",
+          "en": "You made a mistake."
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela errara não foi ela.",
-          "en": "She didn't make the mistake."
+          "pt": "Ela errou.",
+          "en": "She made a mistake."
         },
         {
           "pronoun": "nós",
-          "pt": "Nós errámos na prova.",
-          "en": "We made mistakes on the test."
+          "pt": "Nós errámos.",
+          "en": "We made a mistake."
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês erraram a hora.",
-          "en": "You guys got the time wrong."
+          "pt": "Vocês erraram.",
+          "en": "You made a mistake."
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles erraram tudo.",
-          "en": "They got everything wrong."
+          "pt": "Eles erraram.",
+          "en": "They made a mistake."
         }
       ],
       "future": []
     },
-    "_generatingTense": "past",
-    "_activeTense": "past"
+    "_generatingTense": "present",
+    "_activeTense": "present"
   },
   {
     "id": 1777373855443,
