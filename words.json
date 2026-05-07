@@ -2587,18 +2587,18 @@
         },
         {
           "pronoun": "nós",
-          "pt": "Nós dizemos não",
-          "en": "We say no"
+          "pt": "Nós dizemos yes",
+          "en": "We say yes"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês dizem sim",
-          "en": "You say yes"
+          "pt": "Vocês dizem não",
+          "en": "You say no"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles dizem não",
-          "en": "They say no"
+          "pt": "Eles dizem sim",
+          "en": "They say yes"
         }
       ],
       "past": [
