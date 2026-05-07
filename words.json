@@ -2396,8 +2396,8 @@
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu faço exercício",
-          "en": "I do exercise"
+          "pt": "Eu faço um bolo",
+          "en": "I make a cake"
         },
         {
           "pronoun": "tu",
@@ -2406,23 +2406,23 @@
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela faz um café",
-          "en": "She makes a coffee"
+          "pt": "Ela faz um bolo",
+          "en": "She makes a cake"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós fazemos um piquenique",
-          "en": "We have a picnic"
+          "pt": "Nós fazemos um bolo",
+          "en": "We make a cake"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês fazem um teste",
-          "en": "You take a test"
+          "pt": "Vocês fazem um bolo",
+          "en": "You make a cake"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles fazem um jogo",
-          "en": "They play a game"
+          "pt": "Eles fazem um bolo",
+          "en": "They make a cake"
         }
       ],
       "past": [
@@ -2524,33 +2524,33 @@
       "future-simple": [
         {
           "pronoun": "eu",
-          "pt": "Eu farei tudo",
-          "en": "I will do everything"
+          "pt": "Eu farei comida",
+          "en": "I will do food"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu farás isso",
-          "en": "You will do this"
+          "pt": "Tu farás um bolo",
+          "en": "You will do a cake"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela fará o trabalho",
-          "en": "She will do the work"
+          "pt": "Ela fará o jantar",
+          "en": "She will do dinner"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós faremos isso",
-          "en": "We will do this"
+          "pt": "Nós faremos um teste",
+          "en": "We will do a test"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês farão tudo",
-          "en": "You will do everything"
+          "pt": "Vocês farão um projeto",
+          "en": "You will do a project"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles farão o projeto",
-          "en": "They will do the project"
+          "pt": "Eles farão o trabalho",
+          "en": "They will do the work"
         }
       ]
     },
@@ -5989,7 +5989,7 @@
         }
       ]
     },
-    "_activeTense": "future-simple",
+    "_activeTense": "present",
     "_generatingTense": null
   },
   {
