@@ -5991,5 +5991,16 @@
     },
     "_activeTense": "future-simple",
     "_generatingTense": null
+  },
+  {
+    "id": 1778151352647,
+    "word": "vir",
+    "translation": "come",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "07/05/2026",
+    "generatingExample": true,
+    "assessingFreq": true
   }
 ]
