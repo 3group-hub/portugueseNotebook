@@ -1245,10 +1245,42 @@
           "en": "They made a mistake."
         }
       ],
-      "future": []
+      "future": [],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou errar",
+          "en": "I will make a mistake"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais errar",
+          "en": "You will make a mistake"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele/Ela vai errar",
+          "en": "He/She will make a mistake"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos errar",
+          "en": "We will make a mistake"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão errar",
+          "en": "You will make a mistake"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles/Elas vão errar",
+          "en": "They will make a mistake"
+        }
+      ]
     },
-    "_generatingTense": "future-peri",
-    "_activeTense": "future-peri"
+    "_generatingTense": "future-simple",
+    "_activeTense": "future-simple"
   },
   {
     "id": 1777373855443,
