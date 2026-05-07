@@ -4196,10 +4196,42 @@
           "pt": "Eles vão ter",
           "en": "They will have"
         }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou ter dinheiro",
+          "en": "I will have money"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais ter um carro",
+          "en": "You will have a car"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai ter um filho",
+          "en": "She will have a child"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos ter fome",
+          "en": "We will be hungry"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão ter sucesso",
+          "en": "You will be successful"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão ter um novo computador",
+          "en": "They will have a new computer"
+        }
       ]
     },
-    "_activeTense": "future-peri",
-    "_generatingTense": "future-peri"
+    "_activeTense": "future-simple",
+    "_generatingTense": "future-simple"
   },
   {
     "id": 1777898856760,
