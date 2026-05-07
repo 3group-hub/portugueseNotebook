@@ -5776,7 +5776,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "07/05/2026",
-    "generatingExample": false,
+    "generatingExample": true,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -5815,6 +5815,8 @@
       "past": [],
       "future-peri": [],
       "future-simple": []
-    }
+    },
+    "_activeTense": "past",
+    "_generatingTense": "past"
   }
 ]
