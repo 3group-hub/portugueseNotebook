@@ -3128,6 +3128,38 @@
           "pt": "Eles vão trabalhar",
           "en": "They will work"
         }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu trabalharei",
+          "en": "I will work"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu trabalharás",
+          "en": "You will work"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela trabalhará",
+          "en": "She will work"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós trabalharemos",
+          "en": "We will work"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês trabalharão",
+          "en": "You will work"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles trabalharão",
+          "en": "They will work"
+        }
       ]
     },
     "_activeTense": "future-simple",
