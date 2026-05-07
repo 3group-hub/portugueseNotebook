@@ -45,32 +45,32 @@
       "past": [
         {
           "pronoun": "eu",
-          "pt": "Eu queria um bolo",
+          "pt": "quis queria um bolo",
           "en": "I wanted a cake"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu querias um carro",
+          "pt": "quiseste querias um carro",
           "en": "You wanted a car"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela queria um emprego",
+          "pt": "quis queria um emprego",
           "en": "She wanted a job"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós queríamos uma casa",
+          "pt": "quisemosós queríamos uma casa",
           "en": "We wanted a house"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês queriam um apartamento",
+          "pt": "quiseramês queriam um apartamento",
           "en": "You wanted an apartment"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles queriam um avião",
+          "pt": "quiseram queriam um avião",
           "en": "They wanted a plane"
         }
       ],
@@ -2827,12 +2827,12 @@
       "past": [
         {
           "pronoun": "eu",
-          "pt": "Eu sabia",
+          "pt": "soube sabia",
           "en": "I knew"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu sabias",
+          "pt": "soubeste sabias",
           "en": "You knew"
         },
         {
@@ -4632,17 +4632,17 @@
       "past": [
         {
           "pronoun": "eu",
-          "pt": "Eu queri um bolo",
+          "pt": "quis queri um bolo",
           "en": "I wanted a cake"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu quereste um carro",
+          "pt": "quiseste quereste um carro",
           "en": "You wanted a car"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela queriu um livro",
+          "pt": "quis queriu um livro",
           "en": "She wanted a book"
         },
         {
@@ -4920,12 +4920,12 @@
       "past": [
         {
           "pronoun": "eu",
-          "pt": "Eu trazia",
+          "pt": "trouxe trazia",
           "en": "I brought"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu trazeste",
+          "pt": "trouxeste trazeste",
           "en": "You brought"
         },
         {
@@ -4935,7 +4935,7 @@
         },
         {
           "pronoun": "nós",
-          "pt": "Nós trazemos",
+          "pt": "trouxemosós trazemos",
           "en": "We brought"
         },
         {
@@ -5047,7 +5047,7 @@
         },
         {
           "pronoun": "nós",
-          "pt": "Nós vamos juntos.",
+          "pt": "vimosós vamos juntos.",
           "en": "We come together."
         },
         {
@@ -5128,7 +5128,7 @@
       "future-simple": [
         {
           "pronoun": "eu",
-          "pt": "Eu verei",
+          "pt": "virei verei",
           "en": "I will come"
         },
         {
@@ -5340,12 +5340,12 @@
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês lêem livros",
+          "pt": "Vocês leemem livros",
           "en": "You read books"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles lêem livros",
+          "pt": "Eles leemem livros",
           "en": "They read books"
         }
       ],
@@ -5416,12 +5416,12 @@
       "future-simple": [
         {
           "pronoun": "eu",
-          "pt": "Eu lererei um livro",
+          "pt": "lerei lererei um livro",
           "en": "I will read a book"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu leres um jornal",
+          "pt": "lerás leres um jornal",
           "en": "You will read a newspaper"
         },
         {
