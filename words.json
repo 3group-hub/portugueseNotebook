@@ -1277,10 +1277,42 @@
           "pt": "Eles/Elas vão errar",
           "en": "They will make a mistake"
         }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu errarei",
+          "en": "I will make a mistake"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu errarás",
+          "en": "You will make a mistake"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela errará",
+          "en": "She will make a mistake"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós erraremos",
+          "en": "We will make a mistake"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês errarão",
+          "en": "You will make a mistake"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles errarão",
+          "en": "They will make a mistake"
+        }
       ]
     },
-    "_generatingTense": "future-simple",
-    "_activeTense": "future-simple"
+    "_generatingTense": "present",
+    "_activeTense": "present"
   },
   {
     "id": 1777373855443,
