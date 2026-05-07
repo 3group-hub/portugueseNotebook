@@ -2501,7 +2501,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "02/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -2632,10 +2632,42 @@
           "pt": "Eles vão fazer",
           "en": "They will do"
         }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu farei tudo",
+          "en": "I will do everything"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu farás isso",
+          "en": "You will do this"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela fará o trabalho",
+          "en": "She will do the work"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós faremos isso",
+          "en": "We will do this"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês farão tudo",
+          "en": "You will do everything"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles farão o projeto",
+          "en": "They will do the project"
+        }
       ]
     },
     "_activeTense": "future-simple",
-    "_generatingTense": "future-simple"
+    "_generatingTense": null
   },
   {
     "id": 1777727145899,
@@ -3093,7 +3125,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "02/05/2026",
-    "generatingExample": false,
+    "generatingExample": true,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -3259,7 +3291,7 @@
       ]
     },
     "_activeTense": "future-simple",
-    "_generatingTense": null
+    "_generatingTense": "future-simple"
   },
   {
     "id": 1777897469362,
