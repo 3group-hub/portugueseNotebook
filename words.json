@@ -727,7 +727,7 @@
       }
     ],
     "addedAt": "28/04/2026",
-    "generatingExample": false,
+    "generatingExample": true,
     "assessingFreq": false,
     "freq": "advanced",
     "tenses": {
@@ -828,8 +828,8 @@
         }
       ]
     },
-    "_generatingTense": null,
-    "_activeTense": "present"
+    "_generatingTense": "future-peri",
+    "_activeTense": "future-peri"
   },
   {
     "id": 1777373855435,
@@ -1535,7 +1535,7 @@
       ]
     },
     "_generatingTense": null,
-    "_activeTense": "present"
+    "_activeTense": "future-simple"
   },
   {
     "id": 1777373855443,
@@ -6109,16 +6109,47 @@
       }
     ],
     "addedAt": "28/04/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "common",
     "tenses": {
-      "present": [],
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu creio que sim.",
+          "en": "I believe so."
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu não creias.",
+          "en": "You didn't believe."
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela creio que não.",
+          "en": "She doesn't believe."
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós cremos.",
+          "en": "We believe."
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês creem.",
+          "en": "You believe."
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles creem.",
+          "en": "They believe."
+        }
+      ],
       "past": [],
       "future-peri": [],
       "future-simple": []
     },
-    "_generatingTense": "present",
+    "_generatingTense": null,
     "_activeTense": "present"
   }
 ]
