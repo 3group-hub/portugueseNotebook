@@ -2295,10 +2295,42 @@
           "pt": "Eles/Elas vão ter",
           "en": "They will have"
         }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou ter um livro",
+          "en": "I will have a book"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais ter um amigo",
+          "en": "You will have a friend"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai ter um gato",
+          "en": "She will have a cat"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos ter um carro",
+          "en": "We will have a car"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão ter um apartamento",
+          "en": "You will have an apartment"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão ter um jardim",
+          "en": "They will have a garden"
+        }
       ]
     },
-    "_activeTense": "future-peri",
-    "_generatingTense": "future-peri"
+    "_activeTense": "future-simple",
+    "_generatingTense": "future-simple"
   },
   {
     "id": 1777726638281,
