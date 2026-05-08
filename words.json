@@ -3576,7 +3576,38 @@
           "en": "They feel fear"
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu senti frio.",
+          "en": "I felt cold."
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu sentiste dor.",
+          "en": "You felt pain."
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela sentiu medo.",
+          "en": "She felt fear."
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós sentimos fome.",
+          "en": "We felt hungry."
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês sentiram cansaço.",
+          "en": "You felt tired."
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles sentiram calor.",
+          "en": "They felt hot."
+        }
+      ],
       "future": [
         {
           "pronoun": "eu",
@@ -3610,8 +3641,8 @@
         }
       ]
     },
-    "_activeTense": "past",
-    "_generatingTense": "past"
+    "_activeTense": "future-peri",
+    "_generatingTense": "future-peri"
   },
   {
     "id": 1777897550632,
