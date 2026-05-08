@@ -826,10 +826,42 @@
           "pt": "Eles vão irradiar felicidade",
           "en": "They will radiate happiness"
         }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou irradiar",
+          "en": "I will radiate"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais irradiar",
+          "en": "You will radiate"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai irradiar",
+          "en": "She will radiate"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos irradiar",
+          "en": "We will radiate"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão irradiar",
+          "en": "You will radiate"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão irradiar",
+          "en": "They will radiate"
+        }
       ]
     },
-    "_generatingTense": "future-peri",
-    "_activeTense": "future-peri"
+    "_generatingTense": "future-simple",
+    "_activeTense": "future-simple"
   },
   {
     "id": 1777373855435,
