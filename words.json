@@ -39,7 +39,7 @@
     ],
     "addedAt": "24/04/2026",
     "generatingExample": true,
-    "_activeTense": "future-peri",
+    "_activeTense": "future-simple",
     "tenses": {
       "present": [
         {
@@ -105,9 +105,41 @@
           "en": "They wanted to study"
         }
       ],
-      "future": []
+      "future": [],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou querer",
+          "en": "I will want"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais querer",
+          "en": "You will want"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai querer",
+          "en": "She will want"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos querer",
+          "en": "We will want"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão querer",
+          "en": "You will want"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão querer",
+          "en": "They will want"
+        }
+      ]
     },
-    "_generatingTense": "future-peri",
+    "_generatingTense": "future-simple",
     "assessingFreq": false,
     "freq": "essential"
   },
