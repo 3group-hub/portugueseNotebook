@@ -38,8 +38,8 @@
       }
     ],
     "addedAt": "24/04/2026",
-    "generatingExample": false,
-    "_activeTense": "past",
+    "generatingExample": true,
+    "_activeTense": "present",
     "tenses": {
       "present": [],
       "past": [
@@ -76,7 +76,7 @@
       ],
       "future": []
     },
-    "_generatingTense": null,
+    "_generatingTense": "present",
     "assessingFreq": false,
     "freq": "essential"
   },
@@ -190,7 +190,7 @@
       "future": []
     },
     "_generatingTense": null,
-    "_activeTense": "past"
+    "_activeTense": "present"
   },
   {
     "id": 1777366537228,
@@ -1519,7 +1519,7 @@
       ]
     },
     "_generatingTense": null,
-    "_activeTense": "future"
+    "_activeTense": "present"
   },
   {
     "id": 1777374156770,
@@ -2554,7 +2554,7 @@
         }
       ]
     },
-    "_activeTense": "future-simple",
+    "_activeTense": "present",
     "_generatingTense": null
   },
   {
@@ -2666,7 +2666,7 @@
         }
       ]
     },
-    "_activeTense": "future",
+    "_activeTense": "present",
     "_generatingTense": null
   },
   {
@@ -2778,7 +2778,7 @@
         }
       ]
     },
-    "_activeTense": "future",
+    "_activeTense": "present",
     "_generatingTense": null
   },
   {
@@ -3371,7 +3371,7 @@
         }
       ]
     },
-    "_activeTense": "future",
+    "_activeTense": "present",
     "_generatingTense": null
   },
   {
@@ -3603,7 +3603,7 @@
       ]
     },
     "_generatingTense": null,
-    "_activeTense": "future"
+    "_activeTense": "present"
   },
   {
     "id": 1777898024631,
@@ -3714,7 +3714,7 @@
         }
       ]
     },
-    "_activeTense": "future",
+    "_activeTense": "present",
     "_generatingTense": null
   },
   {
@@ -4102,7 +4102,7 @@
       ],
       "future": []
     },
-    "_activeTense": "past",
+    "_activeTense": "present",
     "_generatingTense": null
   },
   {
@@ -5719,7 +5719,7 @@
         }
       ]
     },
-    "_activeTense": "future-simple",
+    "_activeTense": "present",
     "_generatingTense": null
   },
   {
