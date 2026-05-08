@@ -4734,28 +4734,28 @@
         },
         {
           "pronoun": "tu",
-          "pt": "Tu queres um carro",
-          "en": "You want a car"
+          "pt": "Tu queres um café",
+          "en": "You want a coffee"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela quer um livro",
-          "en": "She wants a book"
+          "pt": "Ela quer um chá",
+          "en": "She wants a tea"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós queremos ir",
-          "en": "We want to go"
+          "pt": "Nós queremos comer",
+          "en": "We want to eat"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês querem ajudar",
-          "en": "You want to help"
+          "pt": "Vocês querem água",
+          "en": "You want water"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles querem jogar",
-          "en": "They want to play"
+          "pt": "Eles querem dormir",
+          "en": "They want to sleep"
         }
       ],
       "past": [
@@ -4766,8 +4766,8 @@
         },
         {
           "pronoun": "tu",
-          "pt": "Tu quiseste um sorvete",
-          "en": "You wanted an ice cream"
+          "pt": "Tu quiseste um carro",
+          "en": "You wanted a car"
         },
         {
           "pronoun": "ele/ela",
@@ -4786,8 +4786,8 @@
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles quiseram dormir",
-          "en": "They wanted to sleep"
+          "pt": "Eles quiseram comer",
+          "en": "They wanted to eat"
         }
       ],
       "future-peri": [
@@ -4803,8 +4803,8 @@
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela vai querer",
-          "en": "She will want"
+          "pt": "Ele vai querer",
+          "en": "He/She will want"
         },
         {
           "pronoun": "nós",
@@ -4840,18 +4840,18 @@
         },
         {
           "pronoun": "nós",
-          "pt": "Nós quereremos ir",
-          "en": "We will want to go"
+          "pt": "Nós quereremos uma casa",
+          "en": "We will want a house"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês quererão jogar",
-          "en": "You will want to play"
+          "pt": "Vocês quererão um emprego",
+          "en": "You will want a job"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles quererão comer",
-          "en": "They will want to eat"
+          "pt": "Eles quererão dinheiro",
+          "en": "They will want money"
         }
       ]
     },
