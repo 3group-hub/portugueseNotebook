@@ -4145,10 +4145,42 @@
           "en": "They lived"
         }
       ],
-      "future": []
+      "future": [],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou viver",
+          "en": "I will live"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais viver",
+          "en": "You will live"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai viver",
+          "en": "She will live"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos viver",
+          "en": "We will live"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão viver",
+          "en": "You will live"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão viver",
+          "en": "They will live"
+        }
+      ]
     },
-    "_activeTense": "future-peri",
-    "_generatingTense": "future-peri"
+    "_activeTense": "future-simple",
+    "_generatingTense": "future-simple"
   },
   {
     "id": 1777898538889,
