@@ -3540,7 +3540,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "04/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -3671,10 +3671,42 @@
           "pt": "Eles vão sentir",
           "en": "They will feel"
         }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu sentirei",
+          "en": "I will feel"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu sentirás",
+          "en": "You will feel"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela sentirá",
+          "en": "She will feel"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós sentiremos",
+          "en": "We will feel"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês sentirão",
+          "en": "You will feel"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles sentirão",
+          "en": "They will feel"
+        }
       ]
     },
     "_activeTense": "future-simple",
-    "_generatingTense": "future-simple"
+    "_generatingTense": null
   },
   {
     "id": 1777897550632,
@@ -5477,7 +5509,7 @@
         }
       ]
     },
-    "_activeTense": "present",
+    "_activeTense": "future-simple",
     "_generatingTense": null
   },
   {
@@ -6037,23 +6069,6 @@
     },
     "_activeTense": "present",
     "_generatingTense": null
-  },
-  {
-    "id": 1778151352647,
-    "word": "vir",
-    "translation": "come",
-    "category": "Verb",
-    "notes": "",
-    "examples": [],
-    "addedAt": "07/05/2026",
-    "generatingExample": false,
-    "assessingFreq": false,
-    "tenses": {
-      "present": [],
-      "past": [],
-      "future-peri": [],
-      "future-simple": []
-    }
   },
   {
     "id": 1777374156772,
