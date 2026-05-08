@@ -2884,7 +2884,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "02/05/2026",
-    "generatingExample": false,
+    "generatingExample": true,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -2985,8 +2985,8 @@
         }
       ]
     },
-    "_activeTense": "future",
-    "_generatingTense": null
+    "_activeTense": "future-peri",
+    "_generatingTense": "future-peri"
   },
   {
     "id": 1777728741889,
