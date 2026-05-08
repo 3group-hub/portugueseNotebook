@@ -2196,7 +2196,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "02/05/2026",
-    "generatingExample": false,
+    "generatingExample": true,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -2297,8 +2297,8 @@
         }
       ]
     },
-    "_activeTense": "future",
-    "_generatingTense": null
+    "_activeTense": "future-peri",
+    "_generatingTense": "future-peri"
   },
   {
     "id": 1777726638281,
@@ -2884,7 +2884,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "02/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -3015,10 +3015,42 @@
           "pt": "Eles vão saber",
           "en": "They will know"
         }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu saberei",
+          "en": "I will know"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu saberás",
+          "en": "You will know"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela saberá",
+          "en": "She will know"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós saberemos",
+          "en": "We will know"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês saberão",
+          "en": "You will know"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles saberão",
+          "en": "They will know"
+        }
       ]
     },
     "_activeTense": "future-simple",
-    "_generatingTense": "future-simple"
+    "_generatingTense": null
   },
   {
     "id": 1777728741889,
@@ -5972,7 +6004,7 @@
         }
       ]
     },
-    "_activeTense": "future-simple",
+    "_activeTense": "present",
     "_generatingTense": null
   },
   {
