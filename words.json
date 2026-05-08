@@ -5863,33 +5863,33 @@
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu sou feliz.",
-          "en": "I am happy."
+          "pt": "Eu sou feliz",
+          "en": "I am happy"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu és bom.",
-          "en": "You are good."
+          "pt": "Tu és bom",
+          "en": "You are good"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela é minha amiga.",
-          "en": "She is my friend."
+          "pt": "Ela é minha amiga",
+          "en": "She is my friend"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós somos amigos.",
-          "en": "We are friends."
+          "pt": "Nós somos amigos",
+          "en": "We are friends"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês são bons.",
-          "en": "You are good."
+          "pt": "Vocês são simpáticos",
+          "en": "You are kind"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles são amigos.",
-          "en": "They are friends."
+          "pt": "Eles são meus irmãos",
+          "en": "They are my brothers"
         }
       ],
       "past": [
@@ -5910,13 +5910,13 @@
         },
         {
           "pronoun": "nós",
-          "pt": "Nós fomos felizes",
-          "en": "We were happy"
+          "pt": "Nós fomos amigos",
+          "en": "We were friends"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês foram bons",
-          "en": "You were good"
+          "pt": "Vocês foram legais",
+          "en": "You were cool"
         },
         {
           "pronoun": "eles/elas",
@@ -5947,8 +5947,8 @@
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês vão ser felizes",
-          "en": "You will be happy"
+          "pt": "Vocês vão ser pais",
+          "en": "You will be parents"
         },
         {
           "pronoun": "eles/elas",
@@ -5969,7 +5969,7 @@
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela será uma médica",
+          "pt": "Ela será médica",
           "en": "She will be a doctor"
         },
         {
@@ -5979,13 +5979,13 @@
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês serão bons",
-          "en": "You will be good"
+          "pt": "Vocês serão felizes",
+          "en": "You will be happy"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles serão felizes",
-          "en": "They will be happy"
+          "pt": "Eles serão professores",
+          "en": "They will be teachers"
         }
       ]
     },
