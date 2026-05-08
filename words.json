@@ -2983,10 +2983,42 @@
           "pt": "Eles/Elas vão saber",
           "en": "They will know"
         }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou saber",
+          "en": "I will know"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais saber",
+          "en": "You will know"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele vai saber",
+          "en": "He/She will know"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos saber",
+          "en": "We will know"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão saber",
+          "en": "You will know"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão saber",
+          "en": "They will know"
+        }
       ]
     },
-    "_activeTense": "future-peri",
-    "_generatingTense": "future-peri"
+    "_activeTense": "future-simple",
+    "_generatingTense": "future-simple"
   },
   {
     "id": 1777728741889,
