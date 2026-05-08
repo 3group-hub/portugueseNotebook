@@ -3639,10 +3639,42 @@
           "pt": "Eles vão sentir alegria.",
           "en": "They will feel happy."
         }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou sentir",
+          "en": "I will feel"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais sentir",
+          "en": "You will feel"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai sentir",
+          "en": "She will feel"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos sentir",
+          "en": "We will feel"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão sentir",
+          "en": "You will feel"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão sentir",
+          "en": "They will feel"
+        }
       ]
     },
-    "_activeTense": "future-peri",
-    "_generatingTense": "future-peri"
+    "_activeTense": "future-simple",
+    "_generatingTense": "future-simple"
   },
   {
     "id": 1777897550632,
