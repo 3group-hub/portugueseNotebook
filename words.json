@@ -1719,7 +1719,7 @@
       }
     ],
     "addedAt": "28/04/2026",
-    "generatingExample": false,
+    "generatingExample": true,
     "assessingFreq": false,
     "freq": "common",
     "tenses": {
@@ -1820,8 +1820,8 @@
         }
       ]
     },
-    "_generatingTense": null,
-    "_activeTense": "future"
+    "_generatingTense": "future-peri",
+    "_activeTense": "future-peri"
   },
   {
     "id": 1777374156771,
@@ -5494,7 +5494,7 @@
         }
       ]
     },
-    "_activeTense": "future-simple",
+    "_activeTense": "present",
     "_generatingTense": null
   },
   {
