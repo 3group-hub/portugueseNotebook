@@ -248,23 +248,23 @@
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela ouve um amigo",
-          "en": "She listens to a friend"
+          "pt": "Ela ouve TV",
+          "en": "She listens to TV"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós ouvimos um professor",
-          "en": "We listen to a teacher"
+          "pt": "Nós ouvimos tudo",
+          "en": "We listen to everything"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês ouvem um disco",
-          "en": "You listen to a record"
+          "pt": "Vocês ouvem música",
+          "en": "You listen to music"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles ouvem televisão",
-          "en": "They listen to television"
+          "pt": "Eles ouvem rádio",
+          "en": "They listen to the radio"
         }
       ],
       "past": [
