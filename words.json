@@ -4077,7 +4077,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "04/05/2026",
-    "generatingExample": false,
+    "generatingExample": true,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -4116,7 +4116,8 @@
       "past": [],
       "future": []
     },
-    "_activeTense": "past"
+    "_activeTense": "past",
+    "_generatingTense": "past"
   },
   {
     "id": 1777898538889,
@@ -5046,7 +5047,7 @@
         }
       ]
     },
-    "_activeTense": "past",
+    "_activeTense": "present",
     "_generatingTense": null
   },
   {
