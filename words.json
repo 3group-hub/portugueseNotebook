@@ -1818,10 +1818,42 @@
           "pt": "Eles vão seduzir",
           "en": "They will seduce"
         }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou seduzir",
+          "en": "I will seduce"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais seduzir",
+          "en": "You will seduce"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai seduzir",
+          "en": "She will seduce"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos seduzir",
+          "en": "We will seduce"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão seduzir",
+          "en": "You will seduce"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão seduzir",
+          "en": "They will seduce"
+        }
       ]
     },
-    "_generatingTense": "future-peri",
-    "_activeTense": "future-peri"
+    "_generatingTense": "future-simple",
+    "_activeTense": "future-simple"
   },
   {
     "id": 1777374156771,
