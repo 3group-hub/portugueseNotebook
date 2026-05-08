@@ -2108,8 +2108,8 @@
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu tenho um carro",
-          "en": "I have a car"
+          "pt": "Eu tenho um gato",
+          "en": "I have a cat"
         },
         {
           "pronoun": "tu",
@@ -2118,23 +2118,23 @@
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela tem um gato",
-          "en": "She has a cat"
+          "pt": "Ela tem um carro",
+          "en": "She has a car"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós temos um casa",
+          "pt": "Nós temos uma casa",
           "en": "We have a house"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês têm um telefone",
-          "en": "You have a phone"
+          "pt": "Vocês têm dinheiro",
+          "en": "You have money"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles têm um computador",
-          "en": "They have a computer"
+          "pt": "Eles têm fome",
+          "en": "They are hungry"
         }
       ],
       "past": [
@@ -2160,13 +2160,13 @@
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês tiveram um problema",
-          "en": "You had a problem"
+          "pt": "Vocês tiveram um apartamento",
+          "en": "You had an apartment"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles tiveram fome",
-          "en": "They were hungry"
+          "pt": "Eles tiveram um jardim",
+          "en": "They had a garden"
         }
       ],
       "future": [
