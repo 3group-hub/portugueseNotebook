@@ -39,9 +39,40 @@
     ],
     "addedAt": "24/04/2026",
     "generatingExample": true,
-    "_activeTense": "present",
+    "_activeTense": "future-peri",
     "tenses": {
-      "present": [],
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu quero uma maçã",
+          "en": "I want an apple"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu queres um bolo",
+          "en": "You want a cake"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela quer um carro",
+          "en": "She wants a car"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós queremos ir",
+          "en": "We want to go"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês querem jogar",
+          "en": "You want to play"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles querem futebol",
+          "en": "They want football"
+        }
+      ],
       "past": [
         {
           "pronoun": "eu",
@@ -76,7 +107,7 @@
       ],
       "future": []
     },
-    "_generatingTense": "present",
+    "_generatingTense": "future-peri",
     "assessingFreq": false,
     "freq": "essential"
   },
