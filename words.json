@@ -326,7 +326,7 @@
       }
     ],
     "addedAt": "28/04/2026",
-    "generatingExample": false,
+    "generatingExample": true,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -427,8 +427,8 @@
         }
       ]
     },
-    "_generatingTense": null,
-    "_activeTense": "future"
+    "_generatingTense": "future-peri",
+    "_activeTense": "future-peri"
   },
   {
     "id": 1777373855359,
@@ -2537,7 +2537,7 @@
         }
       ]
     },
-    "_activeTense": "future-simple",
+    "_activeTense": "present",
     "_generatingTense": null
   },
   {
@@ -4077,7 +4077,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "04/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -4177,10 +4177,42 @@
           "pt": "Eles vão viver",
           "en": "They will live"
         }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu viverei",
+          "en": "I will live"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu viverás",
+          "en": "You will live"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela viverá",
+          "en": "She will live"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós viveremos",
+          "en": "We will live"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês viverão",
+          "en": "You will live"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles viverão",
+          "en": "They will live"
+        }
       ]
     },
-    "_activeTense": "future-simple",
-    "_generatingTense": "future-simple"
+    "_activeTense": "present",
+    "_generatingTense": null
   },
   {
     "id": 1777898538889,
