@@ -38,8 +38,8 @@
       }
     ],
     "addedAt": "24/04/2026",
-    "generatingExample": true,
-    "_activeTense": "future-simple",
+    "generatingExample": false,
+    "_activeTense": "present",
     "tenses": {
       "present": [
         {
@@ -137,9 +137,41 @@
           "pt": "Eles vão querer",
           "en": "They will want"
         }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu quererei um bolo",
+          "en": "I will want a cake"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu quererás um café",
+          "en": "You will want a coffee"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela quererá um chá",
+          "en": "She will want a tea"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós quereremos frutas",
+          "en": "We will want fruits"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês quererão carne",
+          "en": "You will want meat"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles quererão peixe",
+          "en": "They will want fish"
+        }
       ]
     },
-    "_generatingTense": "future-simple",
+    "_generatingTense": null,
     "assessingFreq": false,
     "freq": "essential"
   },
@@ -4775,150 +4807,6 @@
       "future": []
     },
     "_activeTense": "past",
-    "_generatingTense": null
-  },
-  {
-    "id": 1778076047174,
-    "word": "querer",
-    "translation": "want",
-    "category": "Verb",
-    "notes": "",
-    "examples": [],
-    "addedAt": "06/05/2026",
-    "generatingExample": false,
-    "assessingFreq": false,
-    "freq": "essential",
-    "tenses": {
-      "present": [
-        {
-          "pronoun": "eu",
-          "pt": "Eu quero um bolo",
-          "en": "I want a cake"
-        },
-        {
-          "pronoun": "tu",
-          "pt": "Tu queres um café",
-          "en": "You want a coffee"
-        },
-        {
-          "pronoun": "ele/ela",
-          "pt": "Ela quer um chá",
-          "en": "She wants a tea"
-        },
-        {
-          "pronoun": "nós",
-          "pt": "Nós queremos comer",
-          "en": "We want to eat"
-        },
-        {
-          "pronoun": "vocês",
-          "pt": "Vocês querem água",
-          "en": "You want water"
-        },
-        {
-          "pronoun": "eles/elas",
-          "pt": "Eles querem dormir",
-          "en": "They want to sleep"
-        }
-      ],
-      "past": [
-        {
-          "pronoun": "eu",
-          "pt": "Eu quis um bolo",
-          "en": "I wanted a cake"
-        },
-        {
-          "pronoun": "tu",
-          "pt": "Tu quiseste um carro",
-          "en": "You wanted a car"
-        },
-        {
-          "pronoun": "ele/ela",
-          "pt": "Ela quis um livro",
-          "en": "She wanted a book"
-        },
-        {
-          "pronoun": "nós",
-          "pt": "Nós quisemos ir",
-          "en": "We wanted to go"
-        },
-        {
-          "pronoun": "vocês",
-          "pt": "Vocês quiseram jogar",
-          "en": "You wanted to play"
-        },
-        {
-          "pronoun": "eles/elas",
-          "pt": "Eles quiseram comer",
-          "en": "They wanted to eat"
-        }
-      ],
-      "future-peri": [
-        {
-          "pronoun": "eu",
-          "pt": "Eu vou querer",
-          "en": "I will want"
-        },
-        {
-          "pronoun": "tu",
-          "pt": "Tu vais querer",
-          "en": "You will want"
-        },
-        {
-          "pronoun": "ele/ela",
-          "pt": "Ele vai querer",
-          "en": "He/She will want"
-        },
-        {
-          "pronoun": "nós",
-          "pt": "Nós vamos querer",
-          "en": "We will want"
-        },
-        {
-          "pronoun": "vocês",
-          "pt": "Vocês vão querer",
-          "en": "You will want"
-        },
-        {
-          "pronoun": "eles/elas",
-          "pt": "Eles vão querer",
-          "en": "They will want"
-        }
-      ],
-      "future-simple": [
-        {
-          "pronoun": "eu",
-          "pt": "Eu quererei um bolo",
-          "en": "I will want a cake"
-        },
-        {
-          "pronoun": "tu",
-          "pt": "Tu quererás um carro",
-          "en": "You will want a car"
-        },
-        {
-          "pronoun": "ele/ela",
-          "pt": "Ela quererá um livro",
-          "en": "She will want a book"
-        },
-        {
-          "pronoun": "nós",
-          "pt": "Nós quereremos uma casa",
-          "en": "We will want a house"
-        },
-        {
-          "pronoun": "vocês",
-          "pt": "Vocês quererão um emprego",
-          "en": "You will want a job"
-        },
-        {
-          "pronoun": "eles/elas",
-          "pt": "Eles quererão dinheiro",
-          "en": "They will want money"
-        }
-      ]
-    },
-    "_activeTense": "present",
     "_generatingTense": null
   },
   {
