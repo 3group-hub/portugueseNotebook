@@ -4113,11 +4113,42 @@
           "en": "They live far"
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vivi",
+          "en": "I lived"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu viveste",
+          "en": "You lived"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela viveu",
+          "en": "She lived"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vivemos",
+          "en": "We lived"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês viveram",
+          "en": "You lived"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles viveram",
+          "en": "They lived"
+        }
+      ],
       "future": []
     },
-    "_activeTense": "past",
-    "_generatingTense": "past"
+    "_activeTense": "future-peri",
+    "_generatingTense": "future-peri"
   },
   {
     "id": 1777898538889,
