@@ -425,10 +425,42 @@
           "pt": "Eles vão ouvir",
           "en": "They will listen"
         }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou ouvir",
+          "en": "I will listen"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais ouvir",
+          "en": "You will listen"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai ouvir",
+          "en": "She will listen"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos ouvir",
+          "en": "We will listen"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão ouvir",
+          "en": "You will listen"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão ouvir",
+          "en": "They will listen"
+        }
       ]
     },
-    "_generatingTense": "future-peri",
-    "_activeTense": "future-peri"
+    "_generatingTense": "future-simple",
+    "_activeTense": "future-simple"
   },
   {
     "id": 1777373855359,
