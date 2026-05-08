@@ -2396,33 +2396,33 @@
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu faço exercício",
-          "en": "I do exercise"
+          "pt": "Eu faço exercício.",
+          "en": "I do exercise."
         },
         {
           "pronoun": "tu",
-          "pt": "Tu fazes um bolo",
-          "en": "You make a cake"
+          "pt": "Tu fazes um bolo.",
+          "en": "You make a cake."
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela faz um café",
-          "en": "She makes a coffee"
+          "pt": "Ela faz compras.",
+          "en": "She does shopping."
         },
         {
           "pronoun": "nós",
-          "pt": "Nós fazemos um piquenique",
-          "en": "We have a picnic"
+          "pt": "Nós fazemos um piquenique.",
+          "en": "We have a picnic."
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês fazem um teste",
-          "en": "You take a test"
+          "pt": "Vocês fazem um teste.",
+          "en": "You do a test."
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles fazem um jogo",
-          "en": "They play a game"
+          "pt": "Eles fazem esporte.",
+          "en": "They do sport."
         }
       ],
       "past": [
@@ -2524,33 +2524,33 @@
       "future-simple": [
         {
           "pronoun": "eu",
-          "pt": "Eu farei tudo",
-          "en": "I will do everything"
+          "pt": "Eu farei uma salada",
+          "en": "I will make a salad"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu farás isso",
-          "en": "You will do this"
+          "pt": "Tu farás um bolo",
+          "en": "You will make a cake"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela fará o trabalho",
-          "en": "She will do the work"
+          "pt": "Ela fará um café",
+          "en": "She will make a coffee"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós faremos isso",
-          "en": "We will do this"
+          "pt": "Nós faremos um jantar",
+          "en": "We will make dinner"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês farão tudo",
-          "en": "You will do everything"
+          "pt": "Vocês farão um chá",
+          "en": "You will make a tea"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles farão o projeto",
-          "en": "They will do the project"
+          "pt": "Eles farão um lanche",
+          "en": "They will make a snack"
         }
       ]
     },
