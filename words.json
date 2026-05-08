@@ -727,7 +727,7 @@
       }
     ],
     "addedAt": "28/04/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "advanced",
     "tenses": {
@@ -858,9 +858,41 @@
           "pt": "Eles vão irradiar",
           "en": "They will radiate"
         }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu irradiarei calor",
+          "en": "I will radiate heat"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu irradiarás confiança",
+          "en": "You will radiate confidence"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela irradiará alegria",
+          "en": "She will radiate joy"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós irradiaremos esperança",
+          "en": "We will radiate hope"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês irradiarão entusiasmo",
+          "en": "You will radiate enthusiasm"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles irradiarão energia",
+          "en": "They will radiate energy"
+        }
       ]
     },
-    "_generatingTense": "future-simple",
+    "_generatingTense": null,
     "_activeTense": "future-simple"
   },
   {
