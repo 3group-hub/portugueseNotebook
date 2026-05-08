@@ -1719,7 +1719,7 @@
       }
     ],
     "addedAt": "28/04/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "common",
     "tenses": {
@@ -1850,10 +1850,42 @@
           "pt": "Eles vão seduzir",
           "en": "They will seduce"
         }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu seduzirei todos",
+          "en": "I will seduce everyone"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu seduzirás alguém",
+          "en": "You will seduce someone"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela seduzirá o chefe",
+          "en": "She will seduce the boss"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós seduziremos o público",
+          "en": "We will seduce the audience"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês seduzirão a plateia",
+          "en": "You will seduce the crowd"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles seduzirão as mulheres",
+          "en": "They will seduce the women"
+        }
       ]
     },
-    "_generatingTense": "future-simple",
-    "_activeTense": "future-simple"
+    "_generatingTense": null,
+    "_activeTense": "present"
   },
   {
     "id": 1777374156771,
@@ -3508,7 +3540,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "04/05/2026",
-    "generatingExample": false,
+    "generatingExample": true,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -3578,8 +3610,8 @@
         }
       ]
     },
-    "_activeTense": "future",
-    "_generatingTense": null
+    "_activeTense": "past",
+    "_generatingTense": "past"
   },
   {
     "id": 1777897550632,
