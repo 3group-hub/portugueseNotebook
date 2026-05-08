@@ -5221,7 +5221,7 @@
         }
       ]
     },
-    "_activeTense": "past",
+    "_activeTense": "present",
     "_generatingTense": "past"
   },
   {
@@ -6109,8 +6109,16 @@
       }
     ],
     "addedAt": "28/04/2026",
-    "generatingExample": false,
+    "generatingExample": true,
     "assessingFreq": false,
-    "freq": "common"
+    "freq": "common",
+    "tenses": {
+      "present": [],
+      "past": [],
+      "future-peri": [],
+      "future-simple": []
+    },
+    "_generatingTense": "present",
+    "_activeTense": "present"
   }
 ]
