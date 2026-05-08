@@ -2196,7 +2196,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "02/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -2327,10 +2327,42 @@
           "pt": "Eles vão ter um jardim",
           "en": "They will have a garden"
         }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu terei um carro.",
+          "en": "I will have a car."
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu terás um amigo.",
+          "en": "You will have a friend."
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela terá um filho.",
+          "en": "She will have a child."
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós teremos uma casa.",
+          "en": "We will have a house."
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês terão um computador.",
+          "en": "You will have a computer."
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles terão um telefone.",
+          "en": "They will have a phone."
+        }
       ]
     },
-    "_activeTense": "future-simple",
-    "_generatingTense": "future-simple"
+    "_activeTense": "present",
+    "_generatingTense": null
   },
   {
     "id": 1777726638281,
@@ -4294,182 +4326,6 @@
       "future": []
     },
     "_activeTense": "present",
-    "_generatingTense": null
-  },
-  {
-    "id": 1777898746444,
-    "word": "ter",
-    "translation": "have",
-    "category": "Verb",
-    "notes": "",
-    "examples": [],
-    "addedAt": "04/05/2026",
-    "generatingExample": false,
-    "assessingFreq": false,
-    "freq": "essential",
-    "tenses": {
-      "present": [
-        {
-          "pronoun": "eu",
-          "pt": "Eu tenho um livro.",
-          "en": "I have a book."
-        },
-        {
-          "pronoun": "tu",
-          "pt": "Tu tens um carro.",
-          "en": "You have a car."
-        },
-        {
-          "pronoun": "ele/ela",
-          "pt": "Ela tem um gato.",
-          "en": "She has a cat."
-        },
-        {
-          "pronoun": "nós",
-          "pt": "Nós temos um casa.",
-          "en": "We have a house."
-        },
-        {
-          "pronoun": "vocês",
-          "pt": "Vocês têm um telefone.",
-          "en": "You have a phone."
-        },
-        {
-          "pronoun": "eles/elas",
-          "pt": "Eles têm um computador.",
-          "en": "They have a computer."
-        }
-      ],
-      "past": [
-        {
-          "pronoun": "eu",
-          "pt": "Eu tive um livro.",
-          "en": "I had a book."
-        },
-        {
-          "pronoun": "tu",
-          "pt": "Tu tiveste um amigo.",
-          "en": "You had a friend."
-        },
-        {
-          "pronoun": "ele/ela",
-          "pt": "Ela teve um gato.",
-          "en": "She had a cat."
-        },
-        {
-          "pronoun": "nós",
-          "pt": "Nós tivemos fome.",
-          "en": "We were hungry."
-        },
-        {
-          "pronoun": "vocês",
-          "pt": "Vocês tiveram sorte.",
-          "en": "You were lucky."
-        },
-        {
-          "pronoun": "eles/elas",
-          "pt": "Eles tiveram um filho.",
-          "en": "They had a son."
-        }
-      ],
-      "future": [
-        {
-          "pronoun": "eu",
-          "pt": "Eu vou ter",
-          "en": "I will have"
-        },
-        {
-          "pronoun": "tu",
-          "pt": "Tu vais ter",
-          "en": "You will have"
-        },
-        {
-          "pronoun": "ele/ela",
-          "pt": "Ela vai ter",
-          "en": "She will have"
-        },
-        {
-          "pronoun": "nós",
-          "pt": "Nós vamos ter",
-          "en": "We will have"
-        },
-        {
-          "pronoun": "vocês",
-          "pt": "Vocês vão ter",
-          "en": "You will have"
-        },
-        {
-          "pronoun": "eles/elas",
-          "pt": "Eles vão ter",
-          "en": "They will have"
-        }
-      ],
-      "future-peri": [
-        {
-          "pronoun": "eu",
-          "pt": "Eu vou ter dinheiro",
-          "en": "I will have money"
-        },
-        {
-          "pronoun": "tu",
-          "pt": "Tu vais ter um carro",
-          "en": "You will have a car"
-        },
-        {
-          "pronoun": "ele/ela",
-          "pt": "Ela vai ter um filho",
-          "en": "She will have a child"
-        },
-        {
-          "pronoun": "nós",
-          "pt": "Nós vamos ter férias",
-          "en": "We will have holidays"
-        },
-        {
-          "pronoun": "vocês",
-          "pt": "Vocês vão ter sucesso",
-          "en": "You will have success"
-        },
-        {
-          "pronoun": "eles/elas",
-          "pt": "Eles vão ter sorte",
-          "en": "They will have luck"
-        }
-      ],
-      "future-simple": [
-        {
-          "pronoun": "eu",
-          "pt": "Eu terei um carro.",
-          "en": "I will have a car."
-        },
-        {
-          "pronoun": "tu",
-          "pt": "Tu terás um amigo.",
-          "en": "You will have a friend."
-        },
-        {
-          "pronoun": "ele/ela",
-          "pt": "Ela terá um livro.",
-          "en": "She will have a book."
-        },
-        {
-          "pronoun": "nós",
-          "pt": "Nós teremos uma casa.",
-          "en": "We will have a house."
-        },
-        {
-          "pronoun": "vocês",
-          "pt": "Vocês terão um computador.",
-          "en": "You will have a computer."
-        },
-        {
-          "pronoun": "eles/elas",
-          "pt": "Eles terão um telefone.",
-          "en": "They will have a phone."
-        }
-      ]
-    },
-    "_activeTense": "future-simple",
     "_generatingTense": null
   },
   {
