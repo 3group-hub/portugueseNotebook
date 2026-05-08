@@ -326,7 +326,7 @@
       }
     ],
     "addedAt": "28/04/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -457,10 +457,42 @@
           "pt": "Eles vão ouvir",
           "en": "They will listen"
         }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu ouvirei música",
+          "en": "I will listen to music"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu ouvirás um som",
+          "en": "You will hear a sound"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela ouvirá a rádio",
+          "en": "She will listen to the radio"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós ouviremos um disco",
+          "en": "We will listen to a record"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês ouvirão notícias",
+          "en": "You will hear news"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles ouvirão um professor",
+          "en": "They will listen to a teacher"
+        }
       ]
     },
-    "_generatingTense": "future-simple",
-    "_activeTense": "future-simple"
+    "_generatingTense": null,
+    "_activeTense": "present"
   },
   {
     "id": 1777373855359,
@@ -5603,150 +5635,6 @@
           "pronoun": "eles/elas",
           "pt": "Eles lerão tudo.",
           "en": "They will read everything."
-        }
-      ]
-    },
-    "_activeTense": "present",
-    "_generatingTense": null
-  },
-  {
-    "id": 1778076747401,
-    "word": "Ouvir",
-    "translation": "Listen",
-    "category": "Verb",
-    "notes": "",
-    "examples": [],
-    "addedAt": "06/05/2026",
-    "generatingExample": false,
-    "assessingFreq": false,
-    "freq": "essential",
-    "tenses": {
-      "present": [
-        {
-          "pronoun": "eu",
-          "pt": "Eu ouço música",
-          "en": "I listen to music"
-        },
-        {
-          "pronoun": "tu",
-          "pt": "Tu ouves bem",
-          "en": "You listen well"
-        },
-        {
-          "pronoun": "ele/ela",
-          "pt": "Ela ouve rádio",
-          "en": "She listens to the radio"
-        },
-        {
-          "pronoun": "nós",
-          "pt": "Nós ouvimos tudo",
-          "en": "We listen to everything"
-        },
-        {
-          "pronoun": "vocês",
-          "pt": "Vocês ouvem isso",
-          "en": "You guys listen to this"
-        },
-        {
-          "pronoun": "eles/elas",
-          "pt": "Eles ouvem música",
-          "en": "They listen to music"
-        }
-      ],
-      "past": [
-        {
-          "pronoun": "eu",
-          "pt": "Eu ouvi música",
-          "en": "I listened to music"
-        },
-        {
-          "pronoun": "tu",
-          "pt": "Tu ouviste o rádio",
-          "en": "You listened to the radio"
-        },
-        {
-          "pronoun": "ele/ela",
-          "pt": "Ela ouviu um som",
-          "en": "She heard a sound"
-        },
-        {
-          "pronoun": "nós",
-          "pt": "Nós ouvimos um disco",
-          "en": "We listened to a record"
-        },
-        {
-          "pronoun": "vocês",
-          "pt": "Vocês ouviram isso",
-          "en": "You heard that"
-        },
-        {
-          "pronoun": "eles/elas",
-          "pt": "Eles ouviram a notícia",
-          "en": "They heard the news"
-        }
-      ],
-      "future-peri": [
-        {
-          "pronoun": "eu",
-          "pt": "Eu vou ouvir",
-          "en": "I will listen"
-        },
-        {
-          "pronoun": "tu",
-          "pt": "Tu vais ouvir",
-          "en": "You will listen"
-        },
-        {
-          "pronoun": "ele/ela",
-          "pt": "Ela vai ouvir",
-          "en": "She will listen"
-        },
-        {
-          "pronoun": "nós",
-          "pt": "Nós vamos ouvir",
-          "en": "We will listen"
-        },
-        {
-          "pronoun": "vocês",
-          "pt": "Vocês vão ouvir",
-          "en": "You will listen"
-        },
-        {
-          "pronoun": "eles/elas",
-          "pt": "Eles vão ouvir",
-          "en": "They will listen"
-        }
-      ],
-      "future-simple": [
-        {
-          "pronoun": "eu",
-          "pt": "Eu ouvirei música",
-          "en": "I will listen to music"
-        },
-        {
-          "pronoun": "tu",
-          "pt": "Tu ouvirás um som",
-          "en": "You will hear a sound"
-        },
-        {
-          "pronoun": "ele/ela",
-          "pt": "Ela ouvirá a rádio",
-          "en": "She will listen to the radio"
-        },
-        {
-          "pronoun": "nós",
-          "pt": "Nós ouviremos um disco",
-          "en": "We will listen to a record"
-        },
-        {
-          "pronoun": "vocês",
-          "pt": "Vocês ouvirão notícias",
-          "en": "You will hear news"
-        },
-        {
-          "pronoun": "eles/elas",
-          "pt": "Eles ouvirão um professor",
-          "en": "They will listen to a teacher"
         }
       ]
     },
