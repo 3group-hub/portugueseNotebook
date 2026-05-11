@@ -5735,33 +5735,33 @@
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu leio um livro",
-          "en": "I read a book"
+          "pt": "Eu leio um livro.",
+          "en": "I read a book."
         },
         {
           "pronoun": "tu",
-          "pt": "Tu lês um jornal",
-          "en": "You read a newspaper"
+          "pt": "Tu lês um jornal.",
+          "en": "You read a newspaper."
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela lê uma revista",
-          "en": "She reads a magazine"
+          "pt": "Ela lê uma revista.",
+          "en": "She reads a magazine."
         },
         {
           "pronoun": "nós",
-          "pt": "Nós lemos livros",
-          "en": "We read books"
+          "pt": "Nós lemos livros.",
+          "en": "We read books."
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês leem jornais",
-          "en": "You read newspapers"
+          "pt": "Vocês leem jornais.",
+          "en": "You read newspapers."
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles leem livros",
-          "en": "They read books"
+          "pt": "Eles leem livros.",
+          "en": "They read books."
         }
       ],
       "past": [
@@ -5772,18 +5772,18 @@
         },
         {
           "pronoun": "tu",
-          "pt": "Tu leste um jornal.",
-          "en": "You read a newspaper."
+          "pt": "Tu leste um livro.",
+          "en": "You read a book."
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela leu uma revista.",
-          "en": "She read a magazine."
+          "pt": "Ela leu um livro.",
+          "en": "She read a book."
         },
         {
           "pronoun": "nós",
-          "pt": "Nós lemos uma história.",
-          "en": "We read a story."
+          "pt": "Nós lemos um livro.",
+          "en": "We read a book."
         },
         {
           "pronoun": "vocês",
@@ -5792,8 +5792,8 @@
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles leram um artigo.",
-          "en": "They read an article."
+          "pt": "Eles leram um livro.",
+          "en": "They read a book."
         }
       ],
       "future-peri": [
@@ -5831,33 +5831,33 @@
       "future-simple": [
         {
           "pronoun": "eu",
-          "pt": "Eu lerei um livro.",
-          "en": "I will read a book."
+          "pt": "Eu lerei um livro",
+          "en": "I will read a book"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu lerás um jornal.",
-          "en": "You will read a newspaper."
+          "pt": "Tu lerás um jornal",
+          "en": "You will read a newspaper"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela lerá uma revista.",
-          "en": "She will read a magazine."
+          "pt": "Ela lerá uma revista",
+          "en": "She will read a magazine"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós leremos livros.",
-          "en": "We will read books."
+          "pt": "Nós leremos livros",
+          "en": "We will read books"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês lerão isso.",
-          "en": "You will read this."
+          "pt": "Vocês lerão notícias",
+          "en": "You will read news"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles lerão tudo.",
-          "en": "They will read everything."
+          "pt": "Eles lerão artigos",
+          "en": "They will read articles"
         }
       ]
     },
