@@ -10031,7 +10031,45 @@
     "notes": "",
     "examples": [],
     "addedAt": "11/05/2026",
-    "generatingExample": true,
-    "assessingFreq": true
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "essential",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu posso ajudar.",
+          "en": "I can help."
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu podes correr.",
+          "en": "You can run."
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela pode falar.",
+          "en": "She can speak."
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós podemos ir.",
+          "en": "We can go."
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês podem comer.",
+          "en": "You can eat."
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles podem jogar.",
+          "en": "They can play."
+        }
+      ],
+      "past": [],
+      "future-peri": [],
+      "future-simple": []
+    }
   }
 ]
