@@ -44,13 +44,13 @@
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu quero uma maçã",
-          "en": "I want an apple"
+          "pt": "Eu quero um bolo",
+          "en": "I want a cake"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu queres um bolo",
-          "en": "You want a cake"
+          "pt": "Tu queres uma maçã",
+          "en": "You want an apple"
         },
         {
           "pronoun": "ele/ela",
@@ -96,13 +96,13 @@
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês quiseram jogar",
-          "en": "You wanted to play"
+          "pt": "Vocês quiseram ajudar",
+          "en": "You wanted to help"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles quiseram estudar",
-          "en": "They wanted to study"
+          "pt": "Eles quiseram jogar",
+          "en": "They wanted to play"
         }
       ],
       "future": [],
@@ -146,28 +146,28 @@
         },
         {
           "pronoun": "tu",
-          "pt": "Tu quererás um café",
-          "en": "You will want a coffee"
+          "pt": "Tu quererás um carro",
+          "en": "You will want a car"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela quererá um chá",
-          "en": "She will want a tea"
+          "pt": "Ela quererá um livro",
+          "en": "She will want a book"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós quereremos frutas",
-          "en": "We will want fruits"
+          "pt": "Nós quereremos um apartamento",
+          "en": "We will want an apartment"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês quererão carne",
-          "en": "You will want meat"
+          "pt": "Vocês quererão um telefone",
+          "en": "You will want a phone"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles quererão peixe",
-          "en": "They will want fish"
+          "pt": "Eles quererão um computador",
+          "en": "They will want a computer"
         }
       ]
     },
