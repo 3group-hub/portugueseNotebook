@@ -9982,7 +9982,45 @@
     "notes": "",
     "examples": [],
     "addedAt": "11/05/2026",
-    "generatingExample": true,
-    "assessingFreq": true
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "essential",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu passo na escola.",
+          "en": "I pass by the school."
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu passas pelo parque.",
+          "en": "You pass by the park."
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela passa pela rua.",
+          "en": "She passes by the street."
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós passamos pela cidade.",
+          "en": "We pass by the city."
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês passam pelo jardim.",
+          "en": "You pass by the garden."
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles passam pela praça.",
+          "en": "They pass by the square."
+        }
+      ],
+      "past": [],
+      "future-peri": [],
+      "future-simple": []
+    }
   }
 ]
