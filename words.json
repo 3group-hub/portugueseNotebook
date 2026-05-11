@@ -343,23 +343,23 @@
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela ouve TV",
+          "pt": "Ela ouve televisão",
           "en": "She listens to TV"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós ouvimos tudo",
-          "en": "We listen to everything"
+          "pt": "Nós ouvimos música",
+          "en": "We listen to music"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês ouvem música",
-          "en": "You listen to music"
+          "pt": "Vocês ouvem rádio",
+          "en": "You listen to the radio"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles ouvem rádio",
-          "en": "They listen to the radio"
+          "pt": "Eles ouvem televisão",
+          "en": "They listen to TV"
         }
       ],
       "past": [
@@ -429,13 +429,13 @@
       "future-peri": [
         {
           "pronoun": "eu",
-          "pt": "Eu vou ouvir",
-          "en": "I will listen"
+          "pt": "Eu vou ouvir música",
+          "en": "I will listen to music"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu vais ouvir",
-          "en": "You will listen"
+          "pt": "Tu vais ouvir isso",
+          "en": "You will listen to this"
         },
         {
           "pronoun": "ele/ela",
@@ -471,23 +471,23 @@
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela ouvirá a rádio",
-          "en": "She will listen to the radio"
+          "pt": "Ela ouvirá a voz",
+          "en": "She will hear the voice"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós ouviremos um disco",
-          "en": "We will listen to a record"
+          "pt": "Nós ouviremos o professor",
+          "en": "We will listen to the teacher"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês ouvirão notícias",
-          "en": "You will hear news"
+          "pt": "Vocês ouvirão a notícia",
+          "en": "You will hear the news"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles ouvirão um professor",
-          "en": "They will listen to a teacher"
+          "pt": "Eles ouvirão o rádio",
+          "en": "They will listen to the radio"
         }
       ]
     },
