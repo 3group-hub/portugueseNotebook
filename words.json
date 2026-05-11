@@ -2747,33 +2747,33 @@
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu faço exercício.",
-          "en": "I do exercise."
+          "pt": "Eu faço o jantar.",
+          "en": "I make dinner."
         },
         {
           "pronoun": "tu",
-          "pt": "Tu fazes um bolo.",
-          "en": "You make a cake."
+          "pt": "Tu fazes o trabalho.",
+          "en": "You do the work."
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela faz compras.",
-          "en": "She does shopping."
+          "pt": "Ela faz o bolo.",
+          "en": "She makes the cake."
         },
         {
           "pronoun": "nós",
-          "pt": "Nós fazemos um piquenique.",
-          "en": "We have a picnic."
+          "pt": "Nós fazemos exercício.",
+          "en": "We do exercise."
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês fazem um teste.",
-          "en": "You do a test."
+          "pt": "Vocês fazem o que querem.",
+          "en": "You do what you want."
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles fazem esporte.",
-          "en": "They do sport."
+          "pt": "Eles fazem o projeto.",
+          "en": "They do the project."
         }
       ],
       "past": [
@@ -2875,8 +2875,8 @@
       "future-simple": [
         {
           "pronoun": "eu",
-          "pt": "Eu farei uma salada",
-          "en": "I will make a salad"
+          "pt": "Eu farei um bolo",
+          "en": "I will make a cake"
         },
         {
           "pronoun": "tu",
@@ -2885,23 +2885,23 @@
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela fará um café",
-          "en": "She will make a coffee"
+          "pt": "Ela fará um bolo",
+          "en": "She will make a cake"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós faremos um jantar",
-          "en": "We will make dinner"
+          "pt": "Nós faremos um bolo",
+          "en": "We will make a cake"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês farão um chá",
-          "en": "You will make a tea"
+          "pt": "Vocês farão um bolo",
+          "en": "You will make a cake"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles farão um lanche",
-          "en": "They will make a snack"
+          "pt": "Eles farão um bolo",
+          "en": "They will make a cake"
         }
       ]
     },
