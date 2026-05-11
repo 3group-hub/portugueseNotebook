@@ -10220,5 +10220,16 @@
     "generatingExample": false,
     "assessingFreq": false,
     "freq": "common"
+  },
+  {
+    "id": 1778510137728,
+    "word": "convosco",
+    "translation": "with you",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "11/05/2026",
+    "generatingExample": true,
+    "assessingFreq": true
   }
 ]
