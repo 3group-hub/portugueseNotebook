@@ -9963,9 +9963,15 @@
     "translation": "flu",
     "category": "Noun",
     "notes": "",
-    "examples": [],
+    "examples": [
+      {
+        "pt": "Tenho gripe e estou muito cansado",
+        "en": "I have the flu and I'm very tired"
+      }
+    ],
     "addedAt": "11/05/2026",
-    "generatingExample": true,
-    "assessingFreq": true
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common"
   }
 ]
