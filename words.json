@@ -9804,7 +9804,45 @@
     "notes": "",
     "examples": [],
     "addedAt": "11/05/2026",
-    "generatingExample": true,
-    "assessingFreq": true
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu compito em corridas",
+          "en": "I compete in races"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu competes bem",
+          "en": "You compete well"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela compete comigo",
+          "en": "She competes with me"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós competimos juntos",
+          "en": "We compete together"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês competem em equipe",
+          "en": "You compete in teams"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles competem com habilidade",
+          "en": "They compete with skill"
+        }
+      ],
+      "past": [],
+      "future-peri": [],
+      "future-simple": []
+    }
   }
 ]
