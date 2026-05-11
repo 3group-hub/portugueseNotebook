@@ -9624,9 +9624,15 @@
     "translation": "pencil",
     "category": "Noun",
     "notes": "",
-    "examples": [],
+    "examples": [
+      {
+        "pt": "Preciso de um lápis para a prova",
+        "en": "I need a pencil for the test"
+      }
+    ],
     "addedAt": "11/05/2026",
-    "generatingExample": true,
-    "assessingFreq": true
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common"
   }
 ]
