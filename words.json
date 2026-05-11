@@ -9607,10 +9607,26 @@
     "translation": "meal",
     "category": "Noun",
     "notes": "",
+    "examples": [
+      {
+        "pt": "A refeição estava pronta",
+        "en": "The meal was ready"
+      }
+    ],
+    "addedAt": "11/05/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common"
+  },
+  {
+    "id": 1778508781536,
+    "word": "lápis",
+    "translation": "pencil",
+    "category": "Noun",
+    "notes": "",
     "examples": [],
     "addedAt": "11/05/2026",
     "generatingExample": true,
-    "assessingFreq": false,
-    "freq": "common"
+    "assessingFreq": true
   }
 ]
