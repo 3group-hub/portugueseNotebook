@@ -5313,8 +5313,8 @@
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela traz um presente",
-          "en": "She brings a gift"
+          "pt": "Ela traz um cadeado",
+          "en": "She brings a lock"
         },
         {
           "pronoun": "nós",
@@ -5323,8 +5323,8 @@
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês trazem dinheiro",
-          "en": "You bring money"
+          "pt": "Vocês trazem presentes",
+          "en": "You bring gifts"
         },
         {
           "pronoun": "eles/elas",
@@ -5335,33 +5335,33 @@
       "past": [
         {
           "pronoun": "eu",
-          "pt": "Eu trouxe um livro",
-          "en": "I brought a book"
+          "pt": "Eu trouxe livro.",
+          "en": "I brought a book."
         },
         {
           "pronoun": "tu",
-          "pt": "Tu trouxeste um amigo",
-          "en": "You brought a friend"
+          "pt": "Tu trouxeste chave.",
+          "en": "You brought a key."
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela trouxe um cadeado",
-          "en": "She brought a lock"
+          "pt": "Ela trouxe comida.",
+          "en": "She brought food."
         },
         {
           "pronoun": "nós",
-          "pt": "Nós trouxemos comida",
-          "en": "We brought food"
+          "pt": "Nós trouxemos água.",
+          "en": "We brought water."
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês trouxeram flores",
-          "en": "You brought flowers"
+          "pt": "Vocês trouxeram bolos.",
+          "en": "You brought cakes."
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles trouxeram um regalo",
-          "en": "They brought a gift"
+          "pt": "Eles trouxeram frutas.",
+          "en": "They brought fruits."
         }
       ],
       "future-peri": [
@@ -5399,33 +5399,33 @@
       "future-simple": [
         {
           "pronoun": "eu",
-          "pt": "Eu trarei um livro.",
+          "pt": "Eu trarei livro.",
           "en": "I will bring a book."
         },
         {
           "pronoun": "tu",
-          "pt": "Tu trarás um amigo.",
-          "en": "You will bring a friend."
-        },
-        {
-          "pronoun": "ele/ela",
-          "pt": "Ela trará um presente.",
-          "en": "She will bring a gift."
-        },
-        {
-          "pronoun": "nós",
-          "pt": "Nós traremos comida.",
-          "en": "We will bring food."
-        },
-        {
-          "pronoun": "vocês",
-          "pt": "Vocês trarão água.",
+          "pt": "Tu trarás água.",
           "en": "You will bring water."
         },
         {
+          "pronoun": "ele/ela",
+          "pt": "Ela trará comida.",
+          "en": "She will bring food."
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós traremos bolo.",
+          "en": "We will bring cake."
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês trarão vinho.",
+          "en": "You will bring wine."
+        },
+        {
           "pronoun": "eles/elas",
-          "pt": "Eles trarão cadeiras.",
-          "en": "They will bring chairs."
+          "pt": "Eles trarão flores.",
+          "en": "They will bring flowers."
         }
       ]
     },
