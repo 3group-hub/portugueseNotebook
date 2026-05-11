@@ -10118,5 +10118,16 @@
     "generatingExample": false,
     "assessingFreq": false,
     "freq": "common"
+  },
+  {
+    "id": 1778509825680,
+    "word": "comboio",
+    "translation": "train",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "11/05/2026",
+    "generatingExample": true,
+    "assessingFreq": true
   }
 ]
