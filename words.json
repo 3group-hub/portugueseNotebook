@@ -10078,9 +10078,15 @@
     "translation": "dizziness",
     "category": "Noun",
     "notes": "",
-    "examples": [],
+    "examples": [
+      {
+        "pt": "Sinto enxaquenca quando me levanto demasiado rápido",
+        "en": "I feel dizzy when I get up too fast"
+      }
+    ],
     "addedAt": "11/05/2026",
-    "generatingExample": true,
-    "assessingFreq": true
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common"
   }
 ]
