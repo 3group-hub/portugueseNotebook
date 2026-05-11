@@ -10108,9 +10108,15 @@
     "translation": "bus",
     "category": "Noun",
     "notes": "",
-    "examples": [],
+    "examples": [
+      {
+        "pt": "Pego o autocarro para ir ao trabalho",
+        "en": "I catch the bus to go to work"
+      }
+    ],
     "addedAt": "11/05/2026",
-    "generatingExample": true,
-    "assessingFreq": true
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common"
   }
 ]
