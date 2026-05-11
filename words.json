@@ -10193,9 +10193,15 @@
     "translation": "with you",
     "category": "Phrase",
     "notes": "",
-    "examples": [],
+    "examples": [
+      {
+        "pt": "Vou ao cinema contsigo",
+        "en": "I'm going to the cinema with you"
+      }
+    ],
     "addedAt": "11/05/2026",
-    "generatingExample": true,
-    "assessingFreq": true
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common"
   }
 ]
