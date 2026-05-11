@@ -6015,8 +6015,8 @@
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela é minha amiga",
-          "en": "She is my friend"
+          "pt": "Ela é alta",
+          "en": "She is tall"
         },
         {
           "pronoun": "nós",
@@ -6026,12 +6026,12 @@
         {
           "pronoun": "vocês",
           "pt": "Vocês são simpáticos",
-          "en": "You are kind"
+          "en": "You are nice"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles são meus irmãos",
-          "en": "They are my brothers"
+          "pt": "Eles são bons",
+          "en": "They are good"
         }
       ],
       "past": [
@@ -6057,8 +6057,8 @@
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês foram legais",
-          "en": "You were cool"
+          "pt": "Vocês foram gentis",
+          "en": "You were kind"
         },
         {
           "pronoun": "eles/elas",
@@ -6089,8 +6089,8 @@
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês vão ser pais",
-          "en": "You will be parents"
+          "pt": "Vocês vão ser felizes",
+          "en": "You will be happy"
         },
         {
           "pronoun": "eles/elas",
@@ -6126,8 +6126,8 @@
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles serão professores",
-          "en": "They will be teachers"
+          "pt": "Eles serão alunos",
+          "en": "They will be students"
         }
       ]
     },
