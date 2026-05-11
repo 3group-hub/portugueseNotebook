@@ -10176,9 +10176,15 @@
     "translation": "with it",
     "category": "Noun",
     "notes": "",
-    "examples": [],
+    "examples": [
+      {
+        "pt": "Levo o guarda-chuva consigo",
+        "en": "I take the umbrella with me"
+      }
+    ],
     "addedAt": "11/05/2026",
-    "generatingExample": true,
-    "assessingFreq": true
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common"
   }
 ]
