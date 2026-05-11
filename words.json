@@ -10227,9 +10227,15 @@
     "translation": "with you",
     "category": "Noun",
     "notes": "",
-    "examples": [],
+    "examples": [
+      {
+        "pt": "Vou ao cinema convosco",
+        "en": "I'm going to the movies with you"
+      }
+    ],
     "addedAt": "11/05/2026",
-    "generatingExample": true,
-    "assessingFreq": true
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common"
   }
 ]
