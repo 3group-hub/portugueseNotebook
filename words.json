@@ -10169,5 +10169,16 @@
     "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential"
+  },
+  {
+    "id": 1778510035260,
+    "word": "consigo",
+    "translation": "with it",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "11/05/2026",
+    "generatingExample": true,
+    "assessingFreq": true
   }
 ]
