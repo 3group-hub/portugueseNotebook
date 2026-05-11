@@ -9643,7 +9643,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "11/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "common",
     "tenses": {
@@ -9743,9 +9743,51 @@
           "en": "They will draw"
         }
       ],
-      "future-simple": []
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu desenharei um quadro",
+          "en": "I will draw a picture"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu desenharás um retrato",
+          "en": "You will draw a portrait"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela desenhará uma paisagem",
+          "en": "She will draw a landscape"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós desenharemos juntos",
+          "en": "We will draw together"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês desenharão um cartaz",
+          "en": "You will draw a poster"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles desenharão um mapa",
+          "en": "They will draw a map"
+        }
+      ]
     },
     "_activeTense": "future-simple",
-    "_generatingTense": "future-simple"
+    "_generatingTense": null
+  },
+  {
+    "id": 1778508876953,
+    "word": "atleta",
+    "translation": "athlete",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "11/05/2026",
+    "generatingExample": true,
+    "assessingFreq": true
   }
 ]
