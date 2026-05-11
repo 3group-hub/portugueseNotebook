@@ -9840,11 +9840,42 @@
           "en": "They compete with skill"
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu compiti bem",
+          "en": "I competed well"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu competiste mal",
+          "en": "You competed poorly"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela competiu forte",
+          "en": "She competed strong"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós competimos todos",
+          "en": "We all competed"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês competiram bem",
+          "en": "You competed well"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles competiram forte",
+          "en": "They competed strong"
+        }
+      ],
       "future-peri": [],
       "future-simple": []
     },
-    "_activeTense": "past",
-    "_generatingTense": "past"
+    "_activeTense": "future-peri",
+    "_generatingTense": "future-peri"
   }
 ]
