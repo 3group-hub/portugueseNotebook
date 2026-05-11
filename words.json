@@ -10152,5 +10152,16 @@
     "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential"
+  },
+  {
+    "id": 1778510027394,
+    "word": "contigo",
+    "translation": "with you",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "11/05/2026",
+    "generatingExample": true,
+    "assessingFreq": true
   }
 ]
