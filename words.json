@@ -3147,33 +3147,33 @@
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu sei o meu nome",
-          "en": "I know my name"
+          "pt": "Eu sei",
+          "en": "I know"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu sabes a resposta",
-          "en": "You know the answer"
+          "pt": "Tu sabes",
+          "en": "You know"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela sabe o caminho",
-          "en": "She knows the way"
+          "pt": "Ela sabe",
+          "en": "She knows"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós sabemos a verdade",
-          "en": "We know the truth"
+          "pt": "Nós sabemos",
+          "en": "We know"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês sabem o que querem",
-          "en": "You know what you want"
+          "pt": "Vocês sabem",
+          "en": "You know"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles sabem o que fazem",
-          "en": "They know what they do"
+          "pt": "Eles sabem",
+          "en": "They know"
         }
       ],
       "past": [
@@ -3275,33 +3275,33 @@
       "future-simple": [
         {
           "pronoun": "eu",
-          "pt": "Eu saberei",
-          "en": "I will know"
+          "pt": "Eu saberei tudo.",
+          "en": "I will know everything."
         },
         {
           "pronoun": "tu",
-          "pt": "Tu saberás",
-          "en": "You will know"
+          "pt": "Tu saberás mais.",
+          "en": "You will know more."
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela saberá",
-          "en": "She will know"
+          "pt": "Ela saberá logo.",
+          "en": "She will know soon."
         },
         {
           "pronoun": "nós",
-          "pt": "Nós saberemos",
-          "en": "We will know"
+          "pt": "Nós saberemos amanhã.",
+          "en": "We will know tomorrow."
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês saberão",
-          "en": "You will know"
+          "pt": "Vocês saberão hoje.",
+          "en": "You will know today."
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles saberão",
-          "en": "They will know"
+          "pt": "Eles saberão depois.",
+          "en": "They will know later."
         }
       ]
     },
