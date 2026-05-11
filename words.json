@@ -10142,9 +10142,15 @@
     "translation": "with me",
     "category": "Noun",
     "notes": "",
-    "examples": [],
+    "examples": [
+      {
+        "pt": "Vem comigo ao parque",
+        "en": "Come with me to the park"
+      }
+    ],
     "addedAt": "11/05/2026",
-    "generatingExample": true,
-    "assessingFreq": true
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "essential"
   }
 ]
