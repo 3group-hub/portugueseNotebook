@@ -6215,5 +6215,3356 @@
     },
     "_generatingTense": null,
     "_activeTense": "present"
+  },
+  {
+    "id": 1778486539190,
+    "word": "gostar",
+    "translation": "to like",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "11/05/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "essential",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu gosto de frutas",
+          "en": "I like fruits"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu gostas de chocolates",
+          "en": "You like chocolates"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela gosta de animais",
+          "en": "She likes animals"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós gostamos de jogar",
+          "en": "We like playing"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês gostam de futebol",
+          "en": "You like soccer"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles gostam de musica",
+          "en": "They like music"
+        }
+      ],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu gostei",
+          "en": "I liked"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu gostaste",
+          "en": "You liked"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela gostou",
+          "en": "She liked"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós gostámos",
+          "en": "We liked"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês gostaram",
+          "en": "You liked"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles gostaram",
+          "en": "They liked"
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou gostar",
+          "en": "I will like"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais gostar",
+          "en": "You will like"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai gostar",
+          "en": "She will like"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos gostar",
+          "en": "We will like"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão gostar",
+          "en": "You will like"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão gostar",
+          "en": "They will like"
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu gostarei",
+          "en": "I will like"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu gostarás",
+          "en": "You will like"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela gostará",
+          "en": "She will like"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós gostaremos",
+          "en": "We will like"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês gostarão",
+          "en": "You will like"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles gostarão",
+          "en": "They will like"
+        }
+      ]
+    },
+    "_activeTense": "future-simple",
+    "_generatingTense": null
+  },
+  {
+    "id": 1778486615388,
+    "word": "viagar",
+    "translation": "to travel",
+    "category": "Noun",
+    "notes": "",
+    "examples": [
+      {
+        "pt": "Gosto de viagar pelo mundo.",
+        "en": "I like to travel around the world."
+      }
+    ],
+    "addedAt": "11/05/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common"
+  },
+  {
+    "id": 1778486669494,
+    "word": "viagar",
+    "translation": "to travel",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "11/05/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu viajo todos os anos",
+          "en": "I travel every year"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu viajas muito",
+          "en": "You travel a lot"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela viaja sozinha",
+          "en": "She travels alone"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós viajamos juntos",
+          "en": "We travel together"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês viajam de avião",
+          "en": "You travel by plane"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles viajam por prazer",
+          "en": "They travel for pleasure"
+        }
+      ],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu viajei ontem",
+          "en": "I traveled yesterday"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu viajaste muito",
+          "en": "You traveled a lot"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela viajou sozinha",
+          "en": "She traveled alone"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós viajámos juntos",
+          "en": "We traveled together"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês viajaram longe",
+          "en": "You traveled far"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles viajaram pouco",
+          "en": "They traveled little"
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou viajar",
+          "en": "I am going to travel"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais viajar",
+          "en": "You are going to travel"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai viajar",
+          "en": "She is going to travel"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos viajar",
+          "en": "We are going to travel"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão viajar",
+          "en": "You are going to travel"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão viajar",
+          "en": "They are going to travel"
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu viajarei muito.",
+          "en": "I will travel a lot."
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu viajarás mais.",
+          "en": "You will travel more."
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela viajará sozinha.",
+          "en": "She will travel alone."
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós viajaremos juntos.",
+          "en": "We will travel together."
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês viajarão amanhã.",
+          "en": "You will travel tomorrow."
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles viajarão logo.",
+          "en": "They will travel soon."
+        }
+      ]
+    },
+    "_activeTense": "future-simple",
+    "_generatingTense": null
+  },
+  {
+    "id": 1778486803534,
+    "word": "beber",
+    "translation": "drink",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "11/05/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "essential",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu bebo água.",
+          "en": "I drink water."
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu bebes sumo.",
+          "en": "You drink juice."
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela bebe chá.",
+          "en": "She drinks tea."
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós bebemos café.",
+          "en": "We drink coffee."
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês bebem refrigerante.",
+          "en": "You drink soda."
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles bebem leite.",
+          "en": "They drink milk."
+        }
+      ],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu bebi água.",
+          "en": "I drank water."
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu bebeste água.",
+          "en": "You drank water."
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela bebeu água.",
+          "en": "She drank water."
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós bebemos água.",
+          "en": "We drank water."
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês beberam água.",
+          "en": "You drank water."
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles beberam água.",
+          "en": "They drank water."
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou beber",
+          "en": "I will drink"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais beber",
+          "en": "You will drink"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai beber",
+          "en": "She will drink"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos beber",
+          "en": "We will drink"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão beber",
+          "en": "You will drink"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão beber",
+          "en": "They will drink"
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu beberei água",
+          "en": "I will drink water"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu beberás sumo",
+          "en": "You will drink juice"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela beberá café",
+          "en": "She will drink coffee"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós beberemos chá",
+          "en": "We will drink tea"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês beberão leite",
+          "en": "You will drink milk"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles beberão vinho",
+          "en": "They will drink wine"
+        }
+      ]
+    },
+    "_activeTense": "present",
+    "_generatingTense": null
+  },
+  {
+    "id": 1778486846934,
+    "word": "vender",
+    "translation": "to sell",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "11/05/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vendo livros",
+          "en": "I sell books"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vendes carros",
+          "en": "You sell cars"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vende roupas",
+          "en": "She sells clothes"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vendemos bicicletas",
+          "en": "We sell bicycles"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vendem imóveis",
+          "en": "You sell real estate"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vendem tecnologia",
+          "en": "They sell technology"
+        }
+      ],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vendi um carro.",
+          "en": "I sold a car."
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vendeste um livro.",
+          "en": "You sold a book."
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vendeu um apartamento.",
+          "en": "She sold an apartment."
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vendemos uma casa.",
+          "en": "We sold a house."
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês venderam um barco.",
+          "en": "You sold a boat."
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles venderam um terreno.",
+          "en": "They sold a plot of land."
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou vender",
+          "en": "I will sell"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais vender",
+          "en": "You will sell"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele vai vender",
+          "en": "He/She will sell"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos vender",
+          "en": "We will sell"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão vender",
+          "en": "You will sell"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão vender",
+          "en": "They will sell"
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu venderEI um carro",
+          "en": "I will sell a car"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu venderÁS um carro",
+          "en": "You will sell a car"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela venderÁ um carro",
+          "en": "She will sell a car"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós venderEMOS um carro",
+          "en": "We will sell a car"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês venderÃO um carro",
+          "en": "You will sell a car"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles venderÃO um carro",
+          "en": "They will sell a car"
+        }
+      ]
+    },
+    "_activeTense": "future-simple",
+    "_generatingTense": null
+  },
+  {
+    "id": 1778486948486,
+    "word": "correr",
+    "translation": "to run",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "11/05/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu corro todos os dias.",
+          "en": "I run every day."
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu corres muito rápido.",
+          "en": "You run very fast."
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela corre no parque.",
+          "en": "She runs in the park."
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós corremos juntos.",
+          "en": "We run together."
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês correm muito bem.",
+          "en": "You run very well."
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles correm em equipe.",
+          "en": "They run as a team."
+        }
+      ],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu corri muito",
+          "en": "I ran a lot"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu correste rápido",
+          "en": "You ran fast"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela correu ontem",
+          "en": "She ran yesterday"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós corremos juntos",
+          "en": "We ran together"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês correram rápido",
+          "en": "You ran fast"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles correram muito",
+          "en": "They ran a lot"
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou correr",
+          "en": "I will run"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais correr",
+          "en": "You will run"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai correr",
+          "en": "She will run"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos correr",
+          "en": "We will run"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão correr",
+          "en": "You will run"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão correr",
+          "en": "They will run"
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu correrrei muito",
+          "en": "I will run a lot"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu correrás rápido",
+          "en": "You will run fast"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela correrá longe",
+          "en": "She will run far"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós correremos juntos",
+          "en": "We will run together"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês correrão forte",
+          "en": "You will run strong"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles correrão rápido",
+          "en": "They will run fast"
+        }
+      ]
+    },
+    "_activeTense": "future-simple",
+    "_generatingTense": null
+  },
+  {
+    "id": 1778487016599,
+    "word": "entender",
+    "translation": "to understand",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "11/05/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "essential",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu entendo",
+          "en": "I understand"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu entendes",
+          "en": "You understand"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela entende",
+          "en": "She understands"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós entendemos",
+          "en": "We understand"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês entendem",
+          "en": "You understand"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles entendem",
+          "en": "They understand"
+        }
+      ],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu entendi",
+          "en": "I understood"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu entendeste",
+          "en": "You understood"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela entendeu",
+          "en": "She understood"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós entendemos",
+          "en": "We understood"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês entenderam",
+          "en": "You understood"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles entenderam",
+          "en": "They understood"
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou entender",
+          "en": "I will understand"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais entender",
+          "en": "You will understand"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele vai entender",
+          "en": "He/She will understand"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos entender",
+          "en": "We will understand"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão entender",
+          "en": "You will understand"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão entender",
+          "en": "They will understand"
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu entenderei",
+          "en": "I will understand"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu entenderás",
+          "en": "You will understand"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela entenderá",
+          "en": "She will understand"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós entenderemos",
+          "en": "We will understand"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês entenderão",
+          "en": "You will understand"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles entenderão",
+          "en": "They will understand"
+        }
+      ]
+    },
+    "_activeTense": "future-simple",
+    "_generatingTense": null
+  },
+  {
+    "id": 1778487093017,
+    "word": "aprender",
+    "translation": "to learn",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "11/05/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu aprendo rápido.",
+          "en": "I learn quickly."
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu aprendes fácil.",
+          "en": "You learn easily."
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela aprende bem.",
+          "en": "She learns well."
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós aprendemos juntos.",
+          "en": "We learn together."
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês aprendem depressa.",
+          "en": "You learn quickly."
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles aprendem rápido.",
+          "en": "They learn quickly."
+        }
+      ],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu aprendi rápido",
+          "en": "I learned quickly"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu aprendeste tudo",
+          "en": "You learned everything"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela aprendeu bem",
+          "en": "She learned well"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós aprendemos muito",
+          "en": "We learned a lot"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês aprenderam depressa",
+          "en": "You learned quickly"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles aprenderam tudo",
+          "en": "They learned everything"
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou aprender",
+          "en": "I will learn"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais aprender",
+          "en": "You will learn"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele vai aprender",
+          "en": "He/She will learn"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos aprender",
+          "en": "We will learn"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão aprender",
+          "en": "You will learn"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão aprender",
+          "en": "They will learn"
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu aprenderei",
+          "en": "I will learn"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu aprenderás",
+          "en": "You will learn"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela aprenderá",
+          "en": "She will learn"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós aprenderemos",
+          "en": "We will learn"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês aprenderão",
+          "en": "You will learn"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles aprenderão",
+          "en": "They will learn"
+        }
+      ]
+    },
+    "_activeTense": "future-simple",
+    "_generatingTense": null
+  },
+  {
+    "id": 1778487157202,
+    "word": "responder",
+    "translation": "answer",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "11/05/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu respondo às perguntas",
+          "en": "I answer the questions"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu respondes ao telefone",
+          "en": "You answer the phone"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela responde com um sorriso",
+          "en": "She answers with a smile"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós respondemos juntos",
+          "en": "We answer together"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês respondem à carta",
+          "en": "You answer the letter"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles respondem às dúvidas",
+          "en": "They answer the doubts"
+        }
+      ],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu respondi ao telefone.",
+          "en": "I answered the phone."
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu respondeste à pergunta.",
+          "en": "You answered the question."
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela respondeu ao e-mail.",
+          "en": "She answered the email."
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós respondemos juntos.",
+          "en": "We answered together."
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês responderam mal.",
+          "en": "You answered badly."
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles responderam bem.",
+          "en": "They answered well."
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou responder",
+          "en": "I will answer"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais responder",
+          "en": "You will answer"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai responder",
+          "en": "She will answer"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos responder",
+          "en": "We will answer"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão responder",
+          "en": "You will answer"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão responder",
+          "en": "They will answer"
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu responderei",
+          "en": "I will answer"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu responderás",
+          "en": "You will answer"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela responderá",
+          "en": "She will answer"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós responderemos",
+          "en": "We will answer"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês responderão",
+          "en": "You will answer"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles responderão",
+          "en": "They will answer"
+        }
+      ]
+    },
+    "_activeTense": "future-simple",
+    "_generatingTense": null
+  },
+  {
+    "id": 1778487260985,
+    "word": "conhecer",
+    "translation": "to know",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "11/05/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "essential",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu conheço minha família.",
+          "en": "I know my family."
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu conheces o meu irmão.",
+          "en": "You know my brother."
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela conhece o meu nome.",
+          "en": "She knows my name."
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós conhecemos os nossos vizinhos.",
+          "en": "We know our neighbors."
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês conhecem a cidade.",
+          "en": "You know the city."
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles conhecem o caminho.",
+          "en": "They know the way."
+        }
+      ],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu conheci João.",
+          "en": "I knew John."
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu conheceste o meu irmão.",
+          "en": "You knew my brother."
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela conheceu o professor.",
+          "en": "She knew the teacher."
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós conhecemos a cidade.",
+          "en": "We knew the city."
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês conheceram o meu amigo.",
+          "en": "You knew my friend."
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles conheceram a minha família.",
+          "en": "They knew my family."
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou conhecer",
+          "en": "I will know"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais conhecer",
+          "en": "You will know"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele/Ela vai conhecer",
+          "en": "He/She will know"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos conhecer",
+          "en": "We will know"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão conhecer",
+          "en": "You will know"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles/Elas vão conhecer",
+          "en": "They will know"
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu conhecerei",
+          "en": "I will know"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu conhecerás",
+          "en": "You will know"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela conhecerá",
+          "en": "She will know"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós conheceremos",
+          "en": "We will know"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês conhecerão",
+          "en": "You will know"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles conhecerão",
+          "en": "They will know"
+        }
+      ]
+    },
+    "_activeTense": "future-simple",
+    "_generatingTense": null
+  },
+  {
+    "id": 1778487356817,
+    "word": "aparecer",
+    "translation": "appear",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "11/05/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu apareço na foto",
+          "en": "I appear in the photo"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu apareces na notícia",
+          "en": "You appear in the news"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela aparece na TV",
+          "en": "She appears on TV"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós aparecemos juntos",
+          "en": "We appear together"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês aparecem felizes",
+          "en": "You appear happy"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles aparecem cansados",
+          "en": "They appear tired"
+        }
+      ],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu apareci na festa",
+          "en": "I appeared at the party"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu apareceste tarde",
+          "en": "You appeared late"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela apareceu na TV",
+          "en": "She appeared on TV"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós aparecemos juntos",
+          "en": "We appeared together"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês apareceram cedo",
+          "en": "You appeared early"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles apareceram ontem",
+          "en": "They appeared yesterday"
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou aparecer",
+          "en": "I will appear"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais aparecer",
+          "en": "You will appear"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai aparecer",
+          "en": "She will appear"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos aparecer",
+          "en": "We will appear"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão aparecer",
+          "en": "You will appear"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão aparecer",
+          "en": "They will appear"
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu aparecerei",
+          "en": "I will appear"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu aparecerás",
+          "en": "You will appear"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela aparecerá",
+          "en": "She will appear"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós apareceremos",
+          "en": "We will appear"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês aparecerão",
+          "en": "You will appear"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles aparecerão",
+          "en": "They will appear"
+        }
+      ]
+    },
+    "_activeTense": "future-simple",
+    "_generatingTense": null
+  },
+  {
+    "id": 1778487412339,
+    "word": "parecer",
+    "translation": "to seem",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "11/05/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu pareço cansado",
+          "en": "I seem tired"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu pareces feliz",
+          "en": "You seem happy"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela parece doente",
+          "en": "She seems ill"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós parecemos nervosos",
+          "en": "We seem nervous"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês parecem cansados",
+          "en": "You seem tired"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles parecem satisfeitos",
+          "en": "They seem satisfied"
+        }
+      ],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu pareci cansado",
+          "en": "I seemed tired"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu parecestes feliz",
+          "en": "You seemed happy"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela pareceu triste",
+          "en": "She seemed sad"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós parecemos perdidos",
+          "en": "We seemed lost"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês pareceram nervosos",
+          "en": "You seemed nervous"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles pareceram cansados",
+          "en": "They seemed tired"
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou parecer",
+          "en": "I will seem"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais parecer",
+          "en": "You will seem"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai parecer",
+          "en": "She/He/It will seem"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos parecer",
+          "en": "We will seem"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão parecer",
+          "en": "You will seem"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão parecer",
+          "en": "They will seem"
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu parecerei",
+          "en": "I will seem"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu parecerás",
+          "en": "You will seem"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela parecerá",
+          "en": "She will seem"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós pareceremos",
+          "en": "We will seem"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês parecerão",
+          "en": "You will seem"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles parecerão",
+          "en": "They will seem"
+        }
+      ]
+    },
+    "_activeTense": "future-simple",
+    "_generatingTense": null
+  },
+  {
+    "id": 1778487475808,
+    "word": "receber",
+    "translation": "to receive",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "11/05/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu recebo uma carta todos os dias",
+          "en": "I receive a letter every day"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu recebes muitas mensagens",
+          "en": "You receive many messages"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela recebe um prémio hoje",
+          "en": "She receives an award today"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós recebemos visitas à noite",
+          "en": "We receive visitors at night"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês recebem notícias boas",
+          "en": "You receive good news"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles recebem ordens directas",
+          "en": "They receive direct orders"
+        }
+      ],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu recebi uma carta",
+          "en": "I received a letter"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu recebeste um prémio",
+          "en": "You received a prize"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela recebeu um telefonema",
+          "en": "She received a phone call"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós recebemos visitas",
+          "en": "We received visitors"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês receberam um convite",
+          "en": "You received an invitation"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles receberam uma herança",
+          "en": "They received an inheritance"
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou receber",
+          "en": "I will receive"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais receber",
+          "en": "You will receive"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele/Elas vai receber",
+          "en": "He/She will receive"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos receber",
+          "en": "We will receive"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão receber",
+          "en": "You will receive"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles/Elas vão receber",
+          "en": "They will receive"
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu receberei um prêmio",
+          "en": "I will receive an award"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu receberás uma surpresa",
+          "en": "You will receive a surprise"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela receberá uma carta",
+          "en": "She will receive a letter"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós receberemos ajuda",
+          "en": "We will receive help"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês receberão notícias",
+          "en": "You will receive news"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles receberão um convite",
+          "en": "They will receive an invitation"
+        }
+      ]
+    },
+    "_activeTense": "future-simple",
+    "_generatingTense": null
+  },
+  {
+    "id": 1778487521498,
+    "word": "escolher",
+    "translation": "to choose",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "11/05/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu escolho um livro",
+          "en": "I choose a book"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu escolhes um filme",
+          "en": "You choose a film"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela escolhe um prato",
+          "en": "She chooses a dish"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós escolhemos um hotel",
+          "en": "We choose a hotel"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês escolhem um restaurante",
+          "en": "You choose a restaurant"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles escolhem um carro",
+          "en": "They choose a car"
+        }
+      ],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu escolhi um livro.",
+          "en": "I chose a book."
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu escolheste um filme.",
+          "en": "You chose a movie."
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela escolheu um presente.",
+          "en": "She chose a gift."
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós escolhemos um restaurante.",
+          "en": "We chose a restaurant."
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês escolheram um hotel.",
+          "en": "You chose a hotel."
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles escolheram um carro.",
+          "en": "They chose a car."
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou escolher",
+          "en": "I will choose"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais escolher",
+          "en": "You will choose"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai escolher",
+          "en": "She will choose"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos escolher",
+          "en": "We will choose"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão escolher",
+          "en": "You will choose"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão escolher",
+          "en": "They will choose"
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu escolherei uma camisa",
+          "en": "I will choose a shirt"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu escolherás um carro",
+          "en": "You will choose a car"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela escolherá um livro",
+          "en": "She will choose a book"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós escolheremos um restaurante",
+          "en": "We will choose a restaurant"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês escolherão um hotel",
+          "en": "You will choose a hotel"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles escolherão um destino",
+          "en": "They will choose a destination"
+        }
+      ]
+    },
+    "_activeTense": "future-simple",
+    "_generatingTense": null
+  },
+  {
+    "id": 1778487573999,
+    "word": "esquecer",
+    "translation": "forget",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "11/05/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu esqueço as chaves",
+          "en": "I forget the keys"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu esqueces as coisas",
+          "en": "You forget things"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela esquece o nome",
+          "en": "She forgets the name"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós esquecemos tudo",
+          "en": "We forget everything"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês esquecem nada",
+          "en": "You forget nothing"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles esquecem sempre",
+          "en": "They always forget"
+        }
+      ],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu esqueci as chaves",
+          "en": "I forgot the keys"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu esqueceste a senha",
+          "en": "You forgot the password"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela esqueceu o livro",
+          "en": "She forgot the book"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós esquecemos o telefone",
+          "en": "We forgot the phone"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês esqueceram a data",
+          "en": "You forgot the date"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles esqueceram a regra",
+          "en": "They forgot the rule"
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou esquecer",
+          "en": "I will forget"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais esquecer",
+          "en": "You will forget"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai esquecer",
+          "en": "She will forget"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos esquecer",
+          "en": "We will forget"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão esquecer",
+          "en": "You will forget"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão esquecer",
+          "en": "They will forget"
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu esquecerei",
+          "en": "I will forget"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu esquecerás",
+          "en": "You will forget"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela esquecerá",
+          "en": "She will forget"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós esqueceremos",
+          "en": "We will forget"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês esquecerão",
+          "en": "You will forget"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles esquecerão",
+          "en": "They will forget"
+        }
+      ]
+    },
+    "_activeTense": "future-simple",
+    "_generatingTense": null
+  },
+  {
+    "id": 1778487633516,
+    "word": "encher",
+    "translation": "to fill",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "11/05/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu encho o copo.",
+          "en": "I fill the glass."
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu enches o teu copo.",
+          "en": "You fill your glass."
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela enche o balde.",
+          "en": "She fills the bucket."
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós enchemos a piscina.",
+          "en": "We fill the pool."
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês enchem os sacos.",
+          "en": "You fill the bags."
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles enchem o depósito.",
+          "en": "They fill the tank."
+        }
+      ],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu enchi o copo.",
+          "en": "I filled the glass."
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu encheste a garrafa.",
+          "en": "You filled the bottle."
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela encheu o saco.",
+          "en": "She filled the bag."
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós enchemos a piscina.",
+          "en": "We filled the pool."
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês encheram o depósito.",
+          "en": "You filled the tank."
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles encheram a sala.",
+          "en": "They filled the room."
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou encher",
+          "en": "I will fill"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais encher",
+          "en": "You will fill"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai encher",
+          "en": "She will fill"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos encher",
+          "en": "We will fill"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão encher",
+          "en": "You will fill"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão encher",
+          "en": "They will fill"
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu encherei o tanque",
+          "en": "I will fill the tank"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu encherás o copo",
+          "en": "You will fill the glass"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela encherá a garrafa",
+          "en": "She will fill the bottle"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós encherei o reservatório",
+          "en": "We will not fill, Nós encheremos o reservatório is correct: Nós encheremos o reservatório"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós encheremos o reservatório",
+          "en": "We will fill the reservoir"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês encherão o balde",
+          "en": "You will fill the bucket"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles encherão a piscina",
+          "en": "They will fill the pool"
+        }
+      ]
+    },
+    "_activeTense": "future-simple",
+    "_generatingTense": null
+  },
+  {
+    "id": 1778487753470,
+    "word": "abrir",
+    "translation": "open",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "11/05/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "essential",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu abro a porta",
+          "en": "I open the door"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu abres a janela",
+          "en": "You open the window"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela abre o livro",
+          "en": "She opens the book"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós abrimos a casa",
+          "en": "We open the house"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês abrem a loja",
+          "en": "You open the shop"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles abrem a caixa",
+          "en": "They open the box"
+        }
+      ],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu abri a porta.",
+          "en": "I opened the door."
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu abriste a janela.",
+          "en": "You opened the window."
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela abriu a caixa.",
+          "en": "She opened the box."
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós abrimos a porta.",
+          "en": "We opened the door."
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês abriram a janela.",
+          "en": "You opened the window."
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles abriram a caixa.",
+          "en": "They opened the box."
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou abrir",
+          "en": "I will open"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais abrir",
+          "en": "You will open"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele/ela vai abrir",
+          "en": "He/She will open"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos abrir",
+          "en": "We will open"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão abrir",
+          "en": "You will open"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles/elas vão abrir",
+          "en": "They will open"
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu abrirei a porta",
+          "en": "I will open the door"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu abrirás a janela",
+          "en": "You will open the window"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela abrirá a caixa",
+          "en": "She will open the box"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós abriremos a loja",
+          "en": "We will open the shop"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês abrirão a porta",
+          "en": "You will open the door"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles abrirão a garagem",
+          "en": "They will open the garage"
+        }
+      ]
+    },
+    "_activeTense": "future-simple",
+    "_generatingTense": null
+  },
+  {
+    "id": 1778487793415,
+    "word": "Dividir",
+    "translation": "To divide",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "11/05/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu divido as contas.",
+          "en": "I divide the bills."
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu divides o bolo.",
+          "en": "You divide the cake."
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela divide a herança.",
+          "en": "She divides the inheritance."
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós dividimos as tarefas.",
+          "en": "We divide the tasks."
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês dividem os prémios.",
+          "en": "You divide the prizes."
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles dividem o poder.",
+          "en": "They divide the power."
+        }
+      ],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu dividi o bolo",
+          "en": "I divided the cake"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu dividiste o quarto",
+          "en": "You divided the room"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela dividiu a conta",
+          "en": "She divided the bill"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós dividimos a tarefa",
+          "en": "We divided the task"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês dividiram o prémio",
+          "en": "You divided the prize"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles dividiram o poder",
+          "en": "They divided the power"
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou dividir",
+          "en": "I will divide"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais dividir",
+          "en": "You will divide"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele vai dividir",
+          "en": "He/She will divide"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos dividir",
+          "en": "We will divide"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão dividir",
+          "en": "You will divide"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão dividir",
+          "en": "They will divide"
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu dividirei o bolo",
+          "en": "I will divide the cake"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu dividirás o quarto",
+          "en": "You will divide the room"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela dividirá a herança",
+          "en": "She will divide the inheritance"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós dividiremos as tarefas",
+          "en": "We will divide the tasks"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês dividirão o lucro",
+          "en": "You will divide the profit"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles dividirão a responsabilidade",
+          "en": "They will divide the responsibility"
+        }
+      ]
+    },
+    "_activeTense": "future-simple",
+    "_generatingTense": null
+  },
+  {
+    "id": 1778487860889,
+    "word": "Partir",
+    "translation": "To leave",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "11/05/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "essential",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu parto cedo",
+          "en": "I leave early"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu partes agora",
+          "en": "You leave now"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela parte logo",
+          "en": "She leaves soon"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós partimos juntos",
+          "en": "We leave together"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês partem tarde",
+          "en": "You leave late"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles partem amanhã",
+          "en": "They leave tomorrow"
+        }
+      ],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu parti",
+          "en": "I left"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu partiste",
+          "en": "You left"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela partiu",
+          "en": "She left"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós partimos",
+          "en": "We left"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês partiram",
+          "en": "You left"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles partiram",
+          "en": "They left"
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou partir",
+          "en": "I am going to leave"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais partir",
+          "en": "You are going to leave"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai partir",
+          "en": "She is going to leave"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos partir",
+          "en": "We are going to leave"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão partir",
+          "en": "You are going to leave"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão partir",
+          "en": "They are going to leave"
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu partirei amanhã",
+          "en": "I will leave tomorrow"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu partirás cedo",
+          "en": "You will leave early"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela partirá tarde",
+          "en": "She will leave late"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós partiremos juntos",
+          "en": "We will leave together"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês partirão hoje",
+          "en": "You will leave today"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles partirão amanhã",
+          "en": "They will leave tomorrow"
+        }
+      ]
+    },
+    "_activeTense": "future-simple",
+    "_generatingTense": null
+  },
+  {
+    "id": 1778487950582,
+    "word": "existir",
+    "translation": "to exist",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "11/05/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu existo como artista.",
+          "en": "I exist as an artist."
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu existes para mim.",
+          "en": "You exist for me."
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela existe em minha mente.",
+          "en": "She exists in my mind."
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós existimos como comunidade.",
+          "en": "We exist as a community."
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês existem como equipe.",
+          "en": "You exist as a team."
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles existem em outro mundo.",
+          "en": "They exist in another world."
+        }
+      ],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu existi",
+          "en": "I existed"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu exististe",
+          "en": "You existed"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela existiu",
+          "en": "She existed"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós existimos",
+          "en": "We existed"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês existiram",
+          "en": "You existed"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles existiram",
+          "en": "They existed"
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou existir",
+          "en": "I will exist"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais existir",
+          "en": "You will exist"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai existir",
+          "en": "She will exist"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos existir",
+          "en": "We will exist"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão existir",
+          "en": "You will exist"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão existir",
+          "en": "They will exist"
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu existirei",
+          "en": "I will exist"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu existirás",
+          "en": "You will exist"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela existirá",
+          "en": "She will exist"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós existiremos",
+          "en": "We will exist"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês existirão",
+          "en": "You will exist"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles existirão",
+          "en": "They will exist"
+        }
+      ]
+    },
+    "_activeTense": "future-simple",
+    "_generatingTense": null
+  },
+  {
+    "id": 1778488012763,
+    "word": "produzir",
+    "translation": "to produce",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "11/05/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu produzo música",
+          "en": "I produce music"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu produzes vídeos",
+          "en": "You produce videos"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela produz arte",
+          "en": "She produces art"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós produzimos conteúdo",
+          "en": "We produce content"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês produzem filmes",
+          "en": "You produce films"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles produzem tecnologia",
+          "en": "They produce technology"
+        }
+      ],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu produzi um vídeo.",
+          "en": "I produced a video."
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu produziste um álbum.",
+          "en": "You produced an album."
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela produziu um filme.",
+          "en": "She produced a film."
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós produzimos uma série.",
+          "en": "We produced a series."
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês produziram um documentário.",
+          "en": "You produced a documentary."
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles produziram um programa.",
+          "en": "They produced a program."
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou produzir",
+          "en": "I will produce"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais produzir",
+          "en": "You will produce"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele/Elas vai produzir",
+          "en": "He/She will produce"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos produzir",
+          "en": "We will produce"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão produzir",
+          "en": "You will produce"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles/Elas vão produzir",
+          "en": "They will produce"
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu produzirei pouco",
+          "en": "I will produce little"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu produzirás mais",
+          "en": "You will produce more"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela produzirá melhor",
+          "en": "She will produce better"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós produziremos tudo",
+          "en": "We will produce everything"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês produzirão muito",
+          "en": "You will produce a lot"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles produzirão mais tarde",
+          "en": "They will produce later"
+        }
+      ]
+    },
+    "_activeTense": "future-simple",
+    "_generatingTense": null
+  },
+  {
+    "id": 1778488055383,
+    "word": "desistir",
+    "translation": "give up",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "11/05/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu desisto facilmente.",
+          "en": "I give up easily."
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu desistes cedo.",
+          "en": "You give up early."
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela desiste sempre.",
+          "en": "She always gives up."
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós desistimos rápido.",
+          "en": "We give up quickly."
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês desistem agora.",
+          "en": "You give up now."
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles desistem tarde.",
+          "en": "They give up late."
+        }
+      ],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu desisti do plano.",
+          "en": "I gave up the plan."
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu desististe do curso.",
+          "en": "You gave up the course."
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela desistiu do emprego.",
+          "en": "She gave up the job."
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós desistimos do projecto.",
+          "en": "We gave up the project."
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês desistiram do jogo.",
+          "en": "You gave up the game."
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles desistiram da ideia.",
+          "en": "They gave up the idea."
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou desistir",
+          "en": "I will give up"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais desistir",
+          "en": "You will give up"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele vai desistir",
+          "en": "He/She will give up"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos desistir",
+          "en": "We will give up"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão desistir",
+          "en": "You will give up"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão desistir",
+          "en": "They will give up"
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu desistirei",
+          "en": "I will give up"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu desistirás",
+          "en": "You will give up"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela desistirá",
+          "en": "She will give up"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós desistiremos",
+          "en": "We will give up"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês desistirão",
+          "en": "You will give up"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles desistirão",
+          "en": "They will give up"
+        }
+      ]
+    },
+    "_activeTense": "future-simple",
+    "_generatingTense": null
+  },
+  {
+    "id": 1778488108525,
+    "word": "decidir",
+    "translation": "to decide",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "11/05/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu decido amanhã",
+          "en": "I decide tomorrow"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu decides rápido",
+          "en": "You decide quickly"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela decide sozinha",
+          "en": "She decides alone"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós decidimos juntos",
+          "en": "We decide together"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês decidem agora",
+          "en": "You decide now"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles decidem tudo",
+          "en": "They decide everything"
+        }
+      ],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu decidi ir.",
+          "en": "I decided to go."
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu decidiste estudar.",
+          "en": "You decided to study."
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela decidiu viajar.",
+          "en": "She decided to travel."
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós decidimos ficar.",
+          "en": "We decided to stay."
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês decidiram ajudar.",
+          "en": "You decided to help."
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles decidiram mudar.",
+          "en": "They decided to move."
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou decidir",
+          "en": "I will decide"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais decidir",
+          "en": "You will decide"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele vai decidir",
+          "en": "He/She will decide"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos decidir",
+          "en": "We will decide"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão decidir",
+          "en": "You will decide"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão decidir",
+          "en": "They will decide"
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu decidirei",
+          "en": "I will decide"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu decidirás",
+          "en": "You will decide"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela decidirá",
+          "en": "She will decide"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós decidiremos",
+          "en": "We will decide"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês decidirão",
+          "en": "You will decide"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles decidirão",
+          "en": "They will decide"
+        }
+      ]
+    },
+    "_activeTense": "future-simple",
+    "_generatingTense": null
+  },
+  {
+    "id": 1778488155469,
+    "word": "mentir",
+    "translation": "to lie",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "11/05/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu minto muito.",
+          "en": "I lie a lot."
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu mentes sempre.",
+          "en": "You lie always."
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela mente constantemente.",
+          "en": "She lies constantly."
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós mentimos ontem.",
+          "en": "We lied yesterday."
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês mentem sobre isso.",
+          "en": "You lie about this."
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles mentem sempre.",
+          "en": "They lie always."
+        }
+      ],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu menti na entrevista.",
+          "en": "I lied in the interview."
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu mentiste ontem.",
+          "en": "You lied yesterday."
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela mentiu sobre a idade.",
+          "en": "She lied about her age."
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós mentimos ao pai.",
+          "en": "We lied to dad."
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês mentiram novamente.",
+          "en": "You lied again."
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles mentiram à polícia.",
+          "en": "They lied to the police."
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou mentir",
+          "en": "I will lie"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais mentir",
+          "en": "You will lie"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai mentir",
+          "en": "She will lie"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos mentir",
+          "en": "We will lie"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão mentir",
+          "en": "You will lie"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão mentir",
+          "en": "They will lie"
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu mentirei muito",
+          "en": "I will lie a lot"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu mentirás sobre isso",
+          "en": "You will lie about this"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela mentirá novamente",
+          "en": "She will lie again"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós mentiremos juntos",
+          "en": "We will lie together"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês mentirão mais",
+          "en": "You will lie more"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles mentirão sempre",
+          "en": "They will always lie"
+        }
+      ]
+    },
+    "_activeTense": "future-simple",
+    "_generatingTense": null
+  },
+  {
+    "id": 1778488538447,
+    "word": "possivel",
+    "translation": "possible",
+    "category": "Noun",
+    "notes": "",
+    "examples": [
+      {
+        "pt": "É um resultado possivel",
+        "en": "It's a possible outcome"
+      }
+    ],
+    "addedAt": "11/05/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common"
   }
 ]
