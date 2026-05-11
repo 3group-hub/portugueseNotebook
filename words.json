@@ -9573,9 +9573,15 @@
     "translation": "picture",
     "category": "Noun",
     "notes": "",
-    "examples": [],
+    "examples": [
+      {
+        "pt": "O quadro está na parede",
+        "en": "The picture is on the wall"
+      }
+    ],
     "addedAt": "11/05/2026",
-    "generatingExample": true,
-    "assessingFreq": true
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common"
   }
 ]
