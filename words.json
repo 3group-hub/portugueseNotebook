@@ -9804,7 +9804,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "11/05/2026",
-    "generatingExample": false,
+    "generatingExample": true,
     "assessingFreq": false,
     "freq": "common",
     "tenses": {
@@ -9843,6 +9843,8 @@
       "past": [],
       "future-peri": [],
       "future-simple": []
-    }
+    },
+    "_activeTense": "past",
+    "_generatingTense": "past"
   }
 ]
