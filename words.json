@@ -9946,9 +9946,15 @@
     "translation": "confidence",
     "category": "Noun",
     "notes": "",
-    "examples": [],
+    "examples": [
+      {
+        "pt": "Ela tem confiança nos seus colegas",
+        "en": "She has confidence in her colleagues"
+      }
+    ],
     "addedAt": "11/05/2026",
-    "generatingExample": true,
-    "assessingFreq": true
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common"
   }
 ]
