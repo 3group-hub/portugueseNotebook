@@ -10125,9 +10125,15 @@
     "translation": "train",
     "category": "Noun",
     "notes": "",
-    "examples": [],
+    "examples": [
+      {
+        "pt": "Vou viajar de comboio para Lisboa",
+        "en": "I'm going to travel by train to Lisbon"
+      }
+    ],
     "addedAt": "11/05/2026",
-    "generatingExample": true,
-    "assessingFreq": true
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common"
   }
 ]
