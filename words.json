@@ -9711,10 +9711,41 @@
           "en": "They drew a ship."
         }
       ],
-      "future-peri": [],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou desenhar",
+          "en": "I will draw"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais desenhar",
+          "en": "You will draw"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele vai desenhar",
+          "en": "He/She will draw"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos desenhar",
+          "en": "We will draw"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão desenhar",
+          "en": "You will draw"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão desenhar",
+          "en": "They will draw"
+        }
+      ],
       "future-simple": []
     },
-    "_activeTense": "future-peri",
-    "_generatingTense": "future-peri"
+    "_activeTense": "future-simple",
+    "_generatingTense": "future-simple"
   }
 ]
