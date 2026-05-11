@@ -10070,7 +10070,8 @@
       "past": [],
       "future-peri": [],
       "future-simple": []
-    }
+    },
+    "_activeTense": "present"
   },
   {
     "id": 1778509453360,
@@ -10082,11 +10083,34 @@
       {
         "pt": "Sinto enxaquenca quando me levanto demasiado rápido",
         "en": "I feel dizzy when I get up too fast"
+      },
+      {
+        "pt": "A enxaquenca é comum após uma longa viagem",
+        "en": "Dizziness is common after a long trip"
+      },
+      {
+        "pt": "Sinto enxaquenca ao me levantar da cama",
+        "en": "I feel dizzy when I get out of bed"
+      },
+      {
+        "pt": "A enxaquenca pode ser um sintoma grave",
+        "en": "Dizziness can be a serious symptom"
       }
     ],
     "addedAt": "11/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "common"
+  },
+  {
+    "id": 1778509793179,
+    "word": "autocarro",
+    "translation": "bus",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "11/05/2026",
+    "generatingExample": true,
+    "assessingFreq": true
   }
 ]
