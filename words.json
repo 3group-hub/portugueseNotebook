@@ -9643,7 +9643,45 @@
     "notes": "",
     "examples": [],
     "addedAt": "11/05/2026",
-    "generatingExample": true,
-    "assessingFreq": true
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu desenho bem",
+          "en": "I draw well"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu desenhas rápido",
+          "en": "You draw fast"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela desenha todos os dias",
+          "en": "She draws every day"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós desenhamos juntos",
+          "en": "We draw together"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês desenham muito bem",
+          "en": "You draw very well"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles desenham em silêncio",
+          "en": "They draw in silence"
+        }
+      ],
+      "past": [],
+      "future-peri": [],
+      "future-simple": []
+    }
   }
 ]
