@@ -5472,40 +5472,40 @@
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles vêm depois.",
-          "en": "They come later."
+          "pt": "Eles vêm amanhã.",
+          "en": "They come tomorrow."
         }
       ],
       "past": [
         {
           "pronoun": "eu",
-          "pt": "Eu vim",
-          "en": "I came"
+          "pt": "Eu vim ontem.",
+          "en": "I came yesterday."
         },
         {
           "pronoun": "tu",
-          "pt": "Tu vieste",
-          "en": "You came"
+          "pt": "Tu vieste.",
+          "en": "You came."
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela veio",
-          "en": "She came"
+          "pt": "Ela veio.",
+          "en": "She came."
         },
         {
           "pronoun": "nós",
-          "pt": "Nós viemos",
-          "en": "We came"
+          "pt": "Nós viemos.",
+          "en": "We came."
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês vieram",
-          "en": "You came"
+          "pt": "Vocês vieram.",
+          "en": "You came."
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles vieram",
-          "en": "They came"
+          "pt": "Eles vieram.",
+          "en": "They came."
         }
       ],
       "future-peri": [
@@ -5521,8 +5521,8 @@
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ele vai vir",
-          "en": "He/She is going to come"
+          "pt": "Ela vai vir",
+          "en": "She is going to come"
         },
         {
           "pronoun": "nós",
@@ -5548,13 +5548,13 @@
         },
         {
           "pronoun": "tu",
-          "pt": "Tu virás cá",
-          "en": "You will come here"
+          "pt": "Tu virás cedo",
+          "en": "You will come early"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela virá logo",
-          "en": "She will come soon"
+          "pt": "Ela virá tarde",
+          "en": "She will come late"
         },
         {
           "pronoun": "nós",
@@ -5563,13 +5563,13 @@
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês virão também",
-          "en": "You will come too"
+          "pt": "Vocês virão logo",
+          "en": "You will come soon"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles virão depois",
-          "en": "They will come later"
+          "pt": "Eles virão também",
+          "en": "They will come too"
         }
       ]
     },
