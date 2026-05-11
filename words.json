@@ -9804,7 +9804,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "11/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "common",
     "tenses": {
@@ -9904,9 +9904,51 @@
           "en": "They will compete"
         }
       ],
-      "future-simple": []
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu competirei amanhã",
+          "en": "I will compete tomorrow"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu competirás melhor",
+          "en": "You will compete better"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela competirá forte",
+          "en": "She will compete strong"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós competiremos juntos",
+          "en": "We will compete together"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês competirão lá",
+          "en": "You will compete there"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles competirão bem",
+          "en": "They will compete well"
+        }
+      ]
     },
-    "_activeTense": "future-simple",
-    "_generatingTense": "future-simple"
+    "_activeTense": "past",
+    "_generatingTense": null
+  },
+  {
+    "id": 1778509221580,
+    "word": "confiança",
+    "translation": "confidence",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "11/05/2026",
+    "generatingExample": true,
+    "assessingFreq": true
   }
 ]
