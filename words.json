@@ -10022,5 +10022,16 @@
       "future-peri": [],
       "future-simple": []
     }
+  },
+  {
+    "id": 1778509408427,
+    "word": "posso",
+    "translation": "I can",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "11/05/2026",
+    "generatingExample": true,
+    "assessingFreq": true
   }
 ]
