@@ -9603,18 +9603,13 @@
   },
   {
     "id": 1778508267219,
-    "word": "refeicao",
+    "word": "refeição",
     "translation": "meal",
     "category": "Noun",
     "notes": "",
-    "examples": [
-      {
-        "pt": "A refeição está pronta",
-        "en": "The meal is ready"
-      }
-    ],
+    "examples": [],
     "addedAt": "11/05/2026",
-    "generatingExample": false,
+    "generatingExample": true,
     "assessingFreq": false,
     "freq": "common"
   }
