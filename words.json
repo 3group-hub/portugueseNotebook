@@ -9956,5 +9956,16 @@
     "generatingExample": false,
     "assessingFreq": false,
     "freq": "common"
+  },
+  {
+    "id": 1778509325772,
+    "word": "gripe",
+    "translation": "flu",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "11/05/2026",
+    "generatingExample": true,
+    "assessingFreq": true
   }
 ]
