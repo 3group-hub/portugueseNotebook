@@ -9872,10 +9872,41 @@
           "en": "They competed strong"
         }
       ],
-      "future-peri": [],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou competir",
+          "en": "I will compete"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais competir",
+          "en": "You will compete"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai competir",
+          "en": "She will compete"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos competir",
+          "en": "We will compete"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão competir",
+          "en": "You will compete"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão competir",
+          "en": "They will compete"
+        }
+      ],
       "future-simple": []
     },
-    "_activeTense": "future-peri",
-    "_generatingTense": "future-peri"
+    "_activeTense": "future-simple",
+    "_generatingTense": "future-simple"
   }
 ]
