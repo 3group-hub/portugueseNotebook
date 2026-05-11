@@ -2576,13 +2576,13 @@
         },
         {
           "pronoun": "tu",
-          "pt": "Tu vais à escola",
-          "en": "You go to school"
+          "pt": "Tu vais ao cinema",
+          "en": "You go to the cinema"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela vai ao cinema",
-          "en": "She goes to the movies"
+          "pt": "Ela vai à escola",
+          "en": "She goes to school"
         },
         {
           "pronoun": "nós",
@@ -2596,8 +2596,8 @@
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles vão ao estádio",
-          "en": "They go to the stadium"
+          "pt": "Eles vão ao futebol",
+          "en": "They go to soccer"
         }
       ],
       "past": [
@@ -2608,13 +2608,13 @@
         },
         {
           "pronoun": "tu",
-          "pt": "Tu foste à escola",
-          "en": "You went to school"
+          "pt": "Tu foste ao cinema",
+          "en": "You went to the movies"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela foi ao cinema",
-          "en": "She went to the movies"
+          "pt": "Ela foi à escola",
+          "en": "She went to school"
         },
         {
           "pronoun": "nós",
@@ -2628,8 +2628,8 @@
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles foram ao estádio",
-          "en": "They went to the stadium"
+          "pt": "Eles foram ao jogo",
+          "en": "They went to the game"
         }
       ],
       "future": [
@@ -2667,65 +2667,65 @@
       "future-peri": [
         {
           "pronoun": "eu",
-          "pt": "Eu vou ir ao cinema",
-          "en": "I am going to the movies"
+          "pt": "Eu vou ir ao parque",
+          "en": "I'm going to the park"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu vais ir ao parque",
-          "en": "You are going to the park"
+          "pt": "Tu vais ir ao cinema",
+          "en": "You're going to the movies"
         },
         {
           "pronoun": "ele/ela",
           "pt": "Ela vai ir à escola",
-          "en": "She is going to school"
+          "en": "She's going to school"
         },
         {
           "pronoun": "nós",
           "pt": "Nós vamos ir à praia",
-          "en": "We are going to the beach"
+          "en": "We're going to the beach"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês vão ir ao shopping",
-          "en": "You are going to the mall"
+          "pt": "Vocês vão ir ao restaurante",
+          "en": "You're going to the restaurant"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles vão ir ao estádio",
-          "en": "They are going to the stadium"
+          "pt": "Eles vão ir ao jogo",
+          "en": "They're going to the game"
         }
       ],
       "future-simple": [
         {
           "pronoun": "eu",
-          "pt": "Eu irei casa.",
-          "en": "I will go home."
+          "pt": "Eu irei ao parque",
+          "en": "I will go to the park"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu irás ao parque.",
-          "en": "You will go to the park."
+          "pt": "Tu irás ao cinema",
+          "en": "You will go to the movies"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela irá ao cinema.",
-          "en": "She will go to the movies."
+          "pt": "Ela irá à escola",
+          "en": "She will go to school"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós iremos à praia.",
-          "en": "We will go to the beach."
+          "pt": "Nós iremos à praia",
+          "en": "We will go to the beach"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês irão jantar.",
-          "en": "You will go to dinner."
+          "pt": "Vocês irão ao restaurante",
+          "en": "You will go to the restaurant"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles irão ao estádio.",
-          "en": "They will go to the stadium."
+          "pt": "Eles irão ao estádio",
+          "en": "They will go to the stadium"
         }
       ]
     },
