@@ -9679,11 +9679,42 @@
           "en": "They draw in silence"
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu desenhei um quadro.",
+          "en": "I drew a picture."
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu desenhas-te mal.",
+          "en": "You drew yourself poorly."
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela desenhou um gato.",
+          "en": "She drew a cat."
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós desenhamos um mapa.",
+          "en": "We drew a map."
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês desenharam um carro.",
+          "en": "You drew a car."
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles desenharam um navio.",
+          "en": "They drew a ship."
+        }
+      ],
       "future-peri": [],
       "future-simple": []
     },
-    "_activeTense": "past",
-    "_generatingTense": "past"
+    "_activeTense": "future-peri",
+    "_generatingTense": "future-peri"
   }
 ]
