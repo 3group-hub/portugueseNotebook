@@ -9583,5 +9583,16 @@
     "generatingExample": false,
     "assessingFreq": false,
     "freq": "common"
+  },
+  {
+    "id": 1778508247401,
+    "word": "flores",
+    "translation": "flowers",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "11/05/2026",
+    "generatingExample": true,
+    "assessingFreq": true
   }
 ]
