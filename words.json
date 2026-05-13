@@ -10163,10 +10163,22 @@
       {
         "pt": "Quero ir ao cinema contigo",
         "en": "I want to go to the movies with you"
+      },
+      {
+        "pt": "Vou ao parque contigo",
+        "en": "I'm going to the park with you"
+      },
+      {
+        "pt": "Quero estar contigo",
+        "en": "I want to be with you"
+      },
+      {
+        "pt": "Vem jantar contigo",
+        "en": "Come have dinner with you"
       }
     ],
     "addedAt": "11/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential"
   },
