@@ -258,18 +258,39 @@
         },
         {
           "pronoun": "tu",
-          "pt": "Tu desejuste um carro",
-          "en": "You wanted a car"
+          "pt": "Tu desajuste um carro",
+          "en": "You wanted a car",
+          "_grammarFixes": [
+            {
+              "orig": "desejuste",
+              "best": "desajuste",
+              "rule": "Possível erro ortográfico"
+            }
+          ]
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela deseitou um emprego",
-          "en": "She wanted a job"
+          "pt": "Ela desertou um emprego",
+          "en": "She wanted a job",
+          "_grammarFixes": [
+            {
+              "orig": "deseitou",
+              "best": "desertou",
+              "rule": "Possível erro ortográfico"
+            }
+          ]
         },
         {
           "pronoun": "nós",
-          "pt": "Nós deseámos um filho",
-          "en": "We wanted a child"
+          "pt": "Nós desejamos um filho",
+          "en": "We wanted a child",
+          "_grammarFixes": [
+            {
+              "orig": "deseámos",
+              "best": "desejamos",
+              "rule": "Possível erro ortográfico"
+            }
+          ]
         },
         {
           "pronoun": "vocês",
@@ -697,8 +718,15 @@
     "examples": [
       {
         "pronoun": "eu",
-        "pt": "Eu irradia alegria",
-        "en": "I radiate joy"
+        "pt": "Eu irradio alegria",
+        "en": "I radiate joy",
+        "_grammarFixes": [
+          {
+            "orig": "Eu irradia",
+            "best": "Eu irradio",
+            "rule": "Concordância Verbal: Geral"
+          }
+        ]
       },
       {
         "pronoun": "tu",
@@ -734,8 +762,15 @@
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu irradia confiança",
-          "en": "I radiate confidence"
+          "pt": "Eu irradio confiança",
+          "en": "I radiate confidence",
+          "_grammarFixes": [
+            {
+              "orig": "Eu irradia",
+              "best": "Eu irradio",
+              "rule": "Concordância Verbal: Geral"
+            }
+          ]
         },
         {
           "pronoun": "tu",
@@ -1239,8 +1274,15 @@
     "notes": "",
     "examples": [
       {
-        "pt": "A algema prendia o seu pulso",
-        "en": "The shackle held his wrist"
+        "pt": "A algemas prendia o seu pulso",
+        "en": "The shackle held his wrist",
+        "_grammarFixes": [
+          {
+            "orig": "algema",
+            "best": "algemas",
+            "rule": "🇵🇹 Substantivos invariáveis"
+          }
+        ]
       }
     ],
     "addedAt": "28/04/2026",
@@ -1274,8 +1316,15 @@
     "examples": [
       {
         "pronoun": "eu",
-        "pt": "Eu renasco todos os dias.",
-        "en": "I am reborn every day."
+        "pt": "Eu renasço todos os dias.",
+        "en": "I am reborn every day.",
+        "_grammarFixes": [
+          {
+            "orig": "renasco",
+            "best": "renasço",
+            "rule": "Possível erro ortográfico"
+          }
+        ]
       },
       {
         "pronoun": "tu",
@@ -1312,13 +1361,27 @@
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu renasco em cada amanhecer",
-          "en": "I am reborn with each dawn"
+          "pt": "Eu renasço em cada amanhecer",
+          "en": "I am reborn with each dawn",
+          "_grammarFixes": [
+            {
+              "orig": "renasco",
+              "best": "renasço",
+              "rule": "Possível erro ortográfico"
+            }
+          ]
         },
         {
           "pronoun": "tu",
-          "pt": "Tu renascem em cada desafio",
-          "en": "You are reborn with each challenge"
+          "pt": "Tu renasces em cada desafio",
+          "en": "You are reborn with each challenge",
+          "_grammarFixes": [
+            {
+              "orig": "Tu renascem",
+              "best": "Tu renasces",
+              "rule": "🇵🇹 Erro de concordância verbal"
+            }
+          ]
         },
         {
           "pronoun": "ele/ela",
@@ -1349,8 +1412,15 @@
         },
         {
           "pronoun": "tu",
-          "pt": "Tu renaceste novamente",
-          "en": "You were reborn again"
+          "pt": "Tu renasceste novamente",
+          "en": "You were reborn again",
+          "_grammarFixes": [
+            {
+              "orig": "renaceste",
+              "best": "renasceste",
+              "rule": "Possível erro ortográfico"
+            }
+          ]
         },
         {
           "pronoun": "ele/ela",
@@ -1359,13 +1429,27 @@
         },
         {
           "pronoun": "nós",
-          "pt": "Nós renacemos juntos",
-          "en": "We were reborn together"
+          "pt": "Nós renascemos juntos",
+          "en": "We were reborn together",
+          "_grammarFixes": [
+            {
+              "orig": "renacemos",
+              "best": "renascemos",
+              "rule": "Possível erro ortográfico"
+            }
+          ]
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês reneceram livremente",
-          "en": "You were reborn freely"
+          "pt": "Vocês feneceram livremente",
+          "en": "You were reborn freely",
+          "_grammarFixes": [
+            {
+              "orig": "reneceram",
+              "best": "feneceram",
+              "rule": "Possível erro ortográfico"
+            }
+          ]
         },
         {
           "pronoun": "eles/elas",
@@ -1434,8 +1518,15 @@
     "examples": [
       {
         "pronoun": "eu",
-        "pt": "Eu erra frequentemente.",
-        "en": "I make mistakes frequently."
+        "pt": "Eu erro frequentemente.",
+        "en": "I make mistakes frequently.",
+        "_grammarFixes": [
+          {
+            "orig": "Eu erra",
+            "best": "Eu erro",
+            "rule": "Concordância Verbal: Geral"
+          }
+        ]
       },
       {
         "pronoun": "tu",
@@ -1832,8 +1923,15 @@
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela seduziu o actor.",
-          "en": "She seduced the actor."
+          "pt": "Ela seduziu o ator.",
+          "en": "She seduced the actor.",
+          "_grammarFixes": [
+            {
+              "orig": "actor",
+              "best": "ator",
+              "rule": "Palavras alteradas pelo Acordo Ortográfico de 90"
+            }
+          ]
         },
         {
           "pronoun": "nós",
@@ -2029,8 +2127,15 @@
       "past": [
         {
           "pronoun": "eu",
-          "pt": "Eu irradieie uma luz suave.",
-          "en": "I radiated a soft light."
+          "pt": "Eu irradiei uma luz suave.",
+          "en": "I radiated a soft light.",
+          "_grammarFixes": [
+            {
+              "orig": "irradieie",
+              "best": "irradiei",
+              "rule": "Possível erro ortográfico"
+            }
+          ]
         },
         {
           "pronoun": "tu",
@@ -2049,8 +2154,15 @@
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês irradiaram alegria contagiante.",
-          "en": "You radiated contagious joy."
+          "pt": "Vocês irradiaram alegria.",
+          "en": "You radiated contagious joy.",
+          "_grammarFixes": [
+            {
+              "orig": "alegria contagiante",
+              "best": "alegria",
+              "rule": "Frases-feitas e expressões idiomáticas: alegria contagiante"
+            }
+          ]
         },
         {
           "pronoun": "eles/elas",
@@ -2170,8 +2282,15 @@
       "past": [
         {
           "pronoun": "eu",
-          "pt": "Eu erri no teste.",
-          "en": "I made mistakes on the test."
+          "pt": "Eu erro no teste.",
+          "en": "I made mistakes on the test.",
+          "_grammarFixes": [
+            {
+              "orig": "erri",
+              "best": "erro",
+              "rule": "Possível erro ortográfico"
+            }
+          ]
         },
         {
           "pronoun": "tu",
@@ -2371,8 +2490,15 @@
     "notes": "",
     "examples": [
       {
-        "pt": "A conjugacao influencia a sintaxe",
-        "en": "Conjugation influences syntax"
+        "pt": "A conjugação influencia a sintaxe",
+        "en": "Conjugation influences syntax",
+        "_grammarFixes": [
+          {
+            "orig": "conjugacao",
+            "best": "conjugação",
+            "rule": "Possível erro ortográfico"
+          }
+        ]
       }
     ],
     "addedAt": "02/05/2026",
@@ -2591,8 +2717,15 @@
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês vão ao shopping",
-          "en": "You go to the mall"
+          "pt": "Vocês vão ao ‘shopping’",
+          "en": "You go to the mall",
+          "_grammarFixes": [
+            {
+              "orig": "shopping",
+              "best": "‘shopping’",
+              "rule": "🇵🇹🎓 Estrangeirismos específicos pt_PT"
+            }
+          ]
         },
         {
           "pronoun": "eles/elas",
@@ -2623,8 +2756,15 @@
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês foram ao shopping",
-          "en": "You went to the mall"
+          "pt": "Vocês foram ao ‘shopping’",
+          "en": "You went to the mall",
+          "_grammarFixes": [
+            {
+              "orig": "shopping",
+              "best": "‘shopping’",
+              "rule": "🇵🇹🎓 Estrangeirismos específicos pt_PT"
+            }
+          ]
         },
         {
           "pronoun": "eles/elas",
@@ -2772,8 +2912,15 @@
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles fazem o projeto.",
-          "en": "They do the project."
+          "pt": "Eles delineiam o projeto.",
+          "en": "They do the project.",
+          "_grammarFixes": [
+            {
+              "orig": "fazem",
+              "best": "delineiam",
+              "rule": "Fazer/traçar → delinear/elaborar"
+            }
+          ]
         }
       ],
       "past": [
@@ -2933,8 +3080,15 @@
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela diz oui",
-          "en": "She says yes"
+          "pt": "Ela diz ou",
+          "en": "She says yes",
+          "_grammarFixes": [
+            {
+              "orig": "oui",
+              "best": "ou",
+              "rule": "Possível erro ortográfico"
+            }
+          ]
         },
         {
           "pronoun": "nós",
@@ -3926,8 +4080,15 @@
     "notes": "",
     "examples": [
       {
-        "pt": "A água está frio",
-        "en": "The water is cold"
+        "pt": "A água está fria",
+        "en": "The water is cold",
+        "_grammarFixes": [
+          {
+            "orig": "frio",
+            "best": "fria",
+            "rule": "Ligação ECG"
+          }
+        ]
       }
     ],
     "addedAt": "04/05/2026",
@@ -4135,8 +4296,15 @@
         },
         {
           "pronoun": "tu",
-          "pt": "Tu escreves um email.",
-          "en": "You write an email."
+          "pt": "Tu escreves um endereço eletrónico.",
+          "en": "You write an email.",
+          "_grammarFixes": [
+            {
+              "orig": "email",
+              "best": "endereço eletrónico",
+              "rule": "Palavras de origem estrangeira evitáveis: email"
+            }
+          ]
         },
         {
           "pronoun": "ele/ela",
@@ -4259,8 +4427,15 @@
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu amo minha família.",
-          "en": "I love my family."
+          "pt": "Eu amo a minha família.",
+          "en": "I love my family.",
+          "_grammarFixes": [
+            {
+              "orig": "amo minha",
+              "best": "amo a minha",
+              "rule": "🇵🇹 Determinante possessivo sem artigo"
+            }
+          ]
         },
         {
           "pronoun": "tu",
@@ -4509,8 +4684,15 @@
     "notes": "",
     "examples": [
       {
-        "pt": "Vou comencar o projeto amanhã",
-        "en": "I'm going to begin the project tomorrow"
+        "pt": "Vou começar o projeto amanhã",
+        "en": "I'm going to begin the project tomorrow",
+        "_grammarFixes": [
+          {
+            "orig": "comencar",
+            "best": "começar",
+            "rule": "Possível erro ortográfico"
+          }
+        ]
       }
     ],
     "addedAt": "04/05/2026",
@@ -4553,8 +4735,15 @@
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês utilizam a internet",
-          "en": "You use the internet"
+          "pt": "Vocês utilizam a ‘internet’",
+          "en": "You use the internet",
+          "_grammarFixes": [
+            {
+              "orig": "internet",
+              "best": "‘internet’",
+              "rule": "🇵🇹🎓 Estrangeirismos específicos pt_PT"
+            }
+          ]
         },
         {
           "pronoun": "eles/elas",
@@ -4580,8 +4769,15 @@
         },
         {
           "pronoun": "nós",
-          "pt": "Nós utilizamos o software",
-          "en": "We used the software"
+          "pt": "Nós utilizamos o ‘software’",
+          "en": "We used the software",
+          "_grammarFixes": [
+            {
+              "orig": "software",
+              "best": "‘software’",
+              "rule": "🇵🇹🎓 Estrangeirismos específicos pt_PT"
+            }
+          ]
         },
         {
           "pronoun": "vocês",
@@ -4645,8 +4841,15 @@
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu obto resultados",
-          "en": "I obtain results"
+          "pt": "Eu óbito resultados",
+          "en": "I obtain results",
+          "_grammarFixes": [
+            {
+              "orig": "obto",
+              "best": "óbito",
+              "rule": "Possível erro ortográfico"
+            }
+          ]
         },
         {
           "pronoun": "tu",
@@ -5516,13 +5719,27 @@
         },
         {
           "pronoun": "tu",
-          "pt": "Tu vais vir",
-          "en": "You are going to come"
+          "pt": "Tu vens",
+          "en": "You are going to come",
+          "_grammarFixes": [
+            {
+              "orig": "vais vir",
+              "best": "vens",
+              "rule": "2. Expressões prolixas: vais vir"
+            }
+          ]
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela vai vir",
-          "en": "She is going to come"
+          "pt": "Ela vem",
+          "en": "She is going to come",
+          "_grammarFixes": [
+            {
+              "orig": "vai vir",
+              "best": "vem",
+              "rule": "2. Expressões prolixas: vai vir"
+            }
+          ]
         },
         {
           "pronoun": "nós",
@@ -5531,13 +5748,27 @@
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês vão vir",
-          "en": "You are going to come"
+          "pt": "Vocês vêm",
+          "en": "You are going to come",
+          "_grammarFixes": [
+            {
+              "orig": "vão vir",
+              "best": "vêm",
+              "rule": "2. Expressões prolixas: vão vir"
+            }
+          ]
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles vão vir",
-          "en": "They are going to come"
+          "pt": "Eles vêm",
+          "en": "They are going to come",
+          "_grammarFixes": [
+            {
+              "orig": "vão vir",
+              "best": "vêm",
+              "rule": "2. Expressões prolixas: vão vir"
+            }
+          ]
         }
       ],
       "future-simple": [
@@ -5935,20 +6166,48 @@
     "notes": "",
     "examples": [
       {
-        "pt": "O meu apélido é Silva",
-        "en": "My last name is Silva"
+        "pt": "O meu apelido é Silva",
+        "en": "My last name is Silva",
+        "_grammarFixes": [
+          {
+            "orig": "apélido",
+            "best": "apelido",
+            "rule": "Possível erro ortográfico"
+          }
+        ]
       },
       {
-        "pt": "O apélido da minha mãe é Santos",
-        "en": "My mother's last name is Santos"
+        "pt": "O apelido da minha mãe é Santos",
+        "en": "My mother's last name is Santos",
+        "_grammarFixes": [
+          {
+            "orig": "apélido",
+            "best": "apelido",
+            "rule": "Possível erro ortográfico"
+          }
+        ]
       },
       {
-        "pt": "Esqueci o apélido do professor",
-        "en": "I forgot the teacher's last name"
+        "pt": "Esqueci o apelido do professor",
+        "en": "I forgot the teacher's last name",
+        "_grammarFixes": [
+          {
+            "orig": "apélido",
+            "best": "apelido",
+            "rule": "Possível erro ortográfico"
+          }
+        ]
       },
       {
-        "pt": "O apélido do meu pai é Costa",
-        "en": "My father's last name is Costa"
+        "pt": "O apelido do meu pai é Costa",
+        "en": "My father's last name is Costa",
+        "_grammarFixes": [
+          {
+            "orig": "apélido",
+            "best": "apelido",
+            "rule": "Possível erro ortográfico"
+          }
+        ]
       }
     ],
     "addedAt": "06/05/2026",
@@ -6148,8 +6407,15 @@
       },
       {
         "pronoun": "tu",
-        "pt": "Tu cres que é verdade",
-        "en": "You believe it's true"
+        "pt": "Tu crês que é verdade",
+        "en": "You believe it's true",
+        "_grammarFixes": [
+          {
+            "orig": "cres",
+            "best": "crês",
+            "rule": "Possível erro ortográfico"
+          }
+        ]
       },
       {
         "pronoun": "ele/ela",
@@ -6190,8 +6456,15 @@
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela creio que não.",
-          "en": "She doesn't believe."
+          "pt": "Ela crê que não.",
+          "en": "She doesn't believe.",
+          "_grammarFixes": [
+            {
+              "orig": "Ela creio",
+              "best": "Ela crê",
+              "rule": "Concordância Verbal: Geral"
+            }
+          ]
         },
         {
           "pronoun": "nós",
@@ -6256,8 +6529,15 @@
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles gostam de musica",
-          "en": "They like music"
+          "pt": "Eles gostam de música",
+          "en": "They like music",
+          "_grammarFixes": [
+            {
+              "orig": "de musica",
+              "best": "de música",
+              "rule": "Parónimo: musica"
+            }
+          ]
         }
       ],
       "past": [
@@ -6368,8 +6648,15 @@
     "notes": "",
     "examples": [
       {
-        "pt": "Gosto de viagar pelo mundo.",
-        "en": "I like to travel around the world."
+        "pt": "Gosto de viajar pelo mundo.",
+        "en": "I like to travel around the world.",
+        "_grammarFixes": [
+          {
+            "orig": "viagar",
+            "best": "viajar",
+            "rule": "Possível erro ortográfico"
+          }
+        ]
       }
     ],
     "addedAt": "11/05/2026",
@@ -6776,33 +7063,75 @@
       "future-simple": [
         {
           "pronoun": "eu",
-          "pt": "Eu venderEI um carro",
-          "en": "I will sell a car"
+          "pt": "Eu venderei um carro",
+          "en": "I will sell a car",
+          "_grammarFixes": [
+            {
+              "orig": "venderEI",
+              "best": "venderei",
+              "rule": "Possível erro ortográfico"
+            }
+          ]
         },
         {
           "pronoun": "tu",
-          "pt": "Tu venderÁS um carro",
-          "en": "You will sell a car"
+          "pt": "Tu venderás um carro",
+          "en": "You will sell a car",
+          "_grammarFixes": [
+            {
+              "orig": "venderÁS",
+              "best": "venderás",
+              "rule": "Possível erro ortográfico"
+            }
+          ]
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela venderÁ um carro",
-          "en": "She will sell a car"
+          "pt": "Ela vendera um carro",
+          "en": "She will sell a car",
+          "_grammarFixes": [
+            {
+              "orig": "venderÁ",
+              "best": "vendera",
+              "rule": "Possível erro ortográfico"
+            }
+          ]
         },
         {
           "pronoun": "nós",
-          "pt": "Nós venderEMOS um carro",
-          "en": "We will sell a car"
+          "pt": "Nós venderemos um carro",
+          "en": "We will sell a car",
+          "_grammarFixes": [
+            {
+              "orig": "venderEMOS",
+              "best": "venderemos",
+              "rule": "Possível erro ortográfico"
+            }
+          ]
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês venderÃO um carro",
-          "en": "You will sell a car"
+          "pt": "Vocês venderão um carro",
+          "en": "You will sell a car",
+          "_grammarFixes": [
+            {
+              "orig": "venderÃO",
+              "best": "venderão",
+              "rule": "Possível erro ortográfico"
+            }
+          ]
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles venderÃO um carro",
-          "en": "They will sell a car"
+          "pt": "Eles venderão um carro",
+          "en": "They will sell a car",
+          "_grammarFixes": [
+            {
+              "orig": "venderÃO",
+              "best": "venderão",
+              "rule": "Possível erro ortográfico"
+            }
+          ]
         }
       ]
     },
@@ -6849,8 +7178,15 @@
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles correm em equipe.",
-          "en": "They run as a team."
+          "pt": "Eles correm em equipa.",
+          "en": "They run as a team.",
+          "_grammarFixes": [
+            {
+              "orig": "equipe",
+              "best": "equipa",
+              "rule": "🇵🇹🇧🇷 equipes → equipas"
+            }
+          ]
         }
       ],
       "past": [
@@ -6920,8 +7256,15 @@
       "future-simple": [
         {
           "pronoun": "eu",
-          "pt": "Eu correrrei muito",
-          "en": "I will run a lot"
+          "pt": "Eu correrei muito",
+          "en": "I will run a lot",
+          "_grammarFixes": [
+            {
+              "orig": "correrrei",
+              "best": "correrei",
+              "rule": "Possível erro ortográfico"
+            }
+          ]
         },
         {
           "pronoun": "tu",
@@ -7298,8 +7641,15 @@
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela respondeu ao e-mail.",
-          "en": "She answered the email."
+          "pt": "Ela respondeu ao endereço eletrónico.",
+          "en": "She answered the email.",
+          "_grammarFixes": [
+            {
+              "orig": "e-mail",
+              "best": "endereço eletrónico",
+              "rule": "Palavras de origem estrangeira evitáveis: e-mail"
+            }
+          ]
         },
         {
           "pronoun": "nós",
@@ -7400,8 +7750,15 @@
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu conheço minha família.",
-          "en": "I know my family."
+          "pt": "Eu conheço a minha família.",
+          "en": "I know my family.",
+          "_grammarFixes": [
+            {
+              "orig": "conheço minha",
+              "best": "conheço a minha",
+              "rule": "🇵🇹 Determinante possessivo sem artigo"
+            }
+          ]
         },
         {
           "pronoun": "tu",
@@ -7725,8 +8082,15 @@
         },
         {
           "pronoun": "tu",
-          "pt": "Tu parecestes feliz",
-          "en": "You seemed happy"
+          "pt": "Tu pareceste feliz",
+          "en": "You seemed happy",
+          "_grammarFixes": [
+            {
+              "orig": "Tu parecestes",
+              "best": "Tu pareceste",
+              "rule": "🇵🇹 Erro de concordância verbal"
+            }
+          ]
         },
         {
           "pronoun": "ele/ela",
@@ -7857,8 +8221,15 @@
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles recebem ordens directas",
-          "en": "They receive direct orders"
+          "pt": "Eles recebem ordens diretas",
+          "en": "They receive direct orders",
+          "_grammarFixes": [
+            {
+              "orig": "directas",
+              "best": "diretas",
+              "rule": "Palavras alteradas pelo Acordo Ortográfico de 90"
+            }
+          ]
         }
       ],
       "past": [
@@ -7906,8 +8277,15 @@
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ele/Elas vai receber",
-          "en": "He/She will receive"
+          "pt": "Ele/Elas vão receber",
+          "en": "He/She will receive",
+          "_grammarFixes": [
+            {
+              "orig": "Elas vai",
+              "best": "Elas vão",
+              "rule": "Concordância Verbal: Geral"
+            }
+          ]
         },
         {
           "pronoun": "nós",
@@ -7928,8 +8306,15 @@
       "future-simple": [
         {
           "pronoun": "eu",
-          "pt": "Eu receberei um prêmio",
-          "en": "I will receive an award"
+          "pt": "Eu receberei um prémio",
+          "en": "I will receive an award",
+          "_grammarFixes": [
+            {
+              "orig": "prêmio",
+              "best": "prémio",
+              "rule": "Possível erro ortográfico"
+            }
+          ]
         },
         {
           "pronoun": "tu",
@@ -8375,8 +8760,15 @@
         },
         {
           "pronoun": "nós",
-          "pt": "Nós encherei o reservatório",
-          "en": "We will not fill, Nós encheremos o reservatório is correct: Nós encheremos o reservatório"
+          "pt": "Nós encheremos o reservatório",
+          "en": "We will not fill, Nós encheremos o reservatório is correct: Nós encheremos o reservatório",
+          "_grammarFixes": [
+            {
+              "orig": "Nós encherei",
+              "best": "Nós encheremos",
+              "rule": "Concordância Verbal: Geral"
+            }
+          ]
         },
         {
           "pronoun": "nós",
@@ -8855,8 +9247,15 @@
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela existe em minha mente.",
-          "en": "She exists in my mind."
+          "pt": "Ela existe na minha mente.",
+          "en": "She exists in my mind.",
+          "_grammarFixes": [
+            {
+              "orig": "em minha",
+              "best": "na minha",
+              "rule": "🇵🇹 Determinante possessivo sem artigo"
+            }
+          ]
         },
         {
           "pronoun": "nós",
@@ -9063,8 +9462,15 @@
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ele/Elas vai produzir",
-          "en": "He/She will produce"
+          "pt": "Ele/Elas vão produzir",
+          "en": "He/She will produce",
+          "_grammarFixes": [
+            {
+              "orig": "Elas vai",
+              "best": "Elas vão",
+              "rule": "Concordância Verbal: Geral"
+            }
+          ]
         },
         {
           "pronoun": "nós",
@@ -9180,8 +9586,15 @@
         },
         {
           "pronoun": "nós",
-          "pt": "Nós desistimos do projecto.",
-          "en": "We gave up the project."
+          "pt": "Nós desistimos do projeto.",
+          "en": "We gave up the project.",
+          "_grammarFixes": [
+            {
+              "orig": "projecto",
+              "best": "projeto",
+              "rule": "Palavras alteradas pelo Acordo Ortográfico de 90"
+            }
+          ]
         },
         {
           "pronoun": "vocês",
@@ -9558,8 +9971,15 @@
     "notes": "",
     "examples": [
       {
-        "pt": "É um resultado possivel",
-        "en": "It's a possible outcome"
+        "pt": "É um resultado possível",
+        "en": "It's a possible outcome",
+        "_grammarFixes": [
+          {
+            "orig": "possivel",
+            "best": "possível",
+            "rule": "Possível erro ortográfico"
+          }
+        ]
       }
     ],
     "addedAt": "11/05/2026",
@@ -9831,8 +10251,15 @@
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês competem em equipe",
-          "en": "You compete in teams"
+          "pt": "Vocês competem em equipa",
+          "en": "You compete in teams",
+          "_grammarFixes": [
+            {
+              "orig": "equipe",
+              "best": "equipa",
+              "rule": "[pt-PT][Brasileirismo] equipes → equipas"
+            }
+          ]
         },
         {
           "pronoun": "eles/elas",
@@ -9843,8 +10270,15 @@
       "past": [
         {
           "pronoun": "eu",
-          "pt": "Eu compiti bem",
-          "en": "I competed well"
+          "pt": "Eu competi bem",
+          "en": "I competed well",
+          "_grammarFixes": [
+            {
+              "orig": "compiti",
+              "best": "competi",
+              "rule": "Possível erro ortográfico"
+            }
+          ]
         },
         {
           "pronoun": "tu",
@@ -10081,20 +10515,53 @@
     "notes": "",
     "examples": [
       {
-        "pt": "Sinto enxaquenca quando me levanto demasiado rápido",
-        "en": "I feel dizzy when I get up too fast"
+        "pt": "Sinto enxaqueca quando me levanto demasiado rápido",
+        "en": "I feel dizzy when I get up too fast",
+        "_grammarFixes": [
+          {
+            "orig": "enxaquenca",
+            "best": "enxaqueca",
+            "rule": "Possível erro ortográfico"
+          }
+        ]
       },
       {
-        "pt": "A enxaquenca é comum após uma longa viagem",
-        "en": "Dizziness is common after a long trip"
+        "pt": "A enxaqueca é comum após uma longa viagem",
+        "en": "Dizziness is common after a long trip",
+        "_grammarFixes": [
+          {
+            "orig": "enxaquenca",
+            "best": "enxaqueca",
+            "rule": "Possível erro ortográfico"
+          }
+        ]
       },
       {
-        "pt": "Sinto enxaquenca ao me levantar da cama",
-        "en": "I feel dizzy when I get out of bed"
+        "pt": "Sinto enxaqueca ao levantar-me da cama",
+        "en": "I feel dizzy when I get out of bed",
+        "_grammarFixes": [
+          {
+            "orig": "me levantar",
+            "best": "levantar-me",
+            "rule": "🇵🇹 Colocações pronominais dois termos"
+          },
+          {
+            "orig": "enxaquenca",
+            "best": "enxaqueca",
+            "rule": "Possível erro ortográfico"
+          }
+        ]
       },
       {
-        "pt": "A enxaquenca pode ser um sintoma grave",
-        "en": "Dizziness can be a serious symptom"
+        "pt": "A enxaqueca pode ser um sintoma grave",
+        "en": "Dizziness can be a serious symptom",
+        "_grammarFixes": [
+          {
+            "orig": "enxaquenca",
+            "best": "enxaqueca",
+            "rule": "Possível erro ortográfico"
+          }
+        ]
       }
     ],
     "addedAt": "11/05/2026",
@@ -10207,8 +10674,15 @@
     "notes": "",
     "examples": [
       {
-        "pt": "Vou ao cinema contsigo",
-        "en": "I'm going to the cinema with you"
+        "pt": "Vou ao cinema consigo",
+        "en": "I'm going to the cinema with you",
+        "_grammarFixes": [
+          {
+            "orig": "contsigo",
+            "best": "consigo",
+            "rule": "Possível erro ortográfico"
+          }
+        ]
       }
     ],
     "addedAt": "11/05/2026",
@@ -10224,8 +10698,15 @@
     "notes": "",
     "examples": [
       {
-        "pt": "Vamos jantar connsco hoje à noite",
-        "en": "Let's have dinner with us tonight"
+        "pt": "Vamos jantar connosco hoje à noite",
+        "en": "Let's have dinner with us tonight",
+        "_grammarFixes": [
+          {
+            "orig": "connsco",
+            "best": "connosco",
+            "rule": "Possível erro ortográfico"
+          }
+        ]
       }
     ],
     "addedAt": "11/05/2026",
