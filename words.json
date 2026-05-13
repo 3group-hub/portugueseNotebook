@@ -4123,10 +4123,22 @@
       {
         "pt": "Estou com fome",
         "en": "I am hungry"
+      },
+      {
+        "pt": "Eu estou com fome",
+        "en": "I am hungry"
+      },
+      {
+        "pt": "Ele vai comer com fome",
+        "en": "He will eat hungry"
+      },
+      {
+        "pt": "Ela chega com fome",
+        "en": "She arrives hungry"
       }
     ],
     "addedAt": "04/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential"
   },
