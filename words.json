@@ -10608,10 +10608,22 @@
       {
         "pt": "Vou viajar de comboio para Lisboa",
         "en": "I'm going to travel by train to Lisbon"
+      },
+      {
+        "pt": "Pegamos o comboio em Coimbra",
+        "en": "We catch the train in Coimbra"
+      },
+      {
+        "pt": "O comboio atrasou mais uma vez",
+        "en": "The train is late again"
+      },
+      {
+        "pt": "Viajo sempre de comboio para trabalho",
+        "en": "I always travel to work by train"
       }
     ],
     "addedAt": "11/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "common"
   },
