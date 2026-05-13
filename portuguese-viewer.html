@@ -135,6 +135,7 @@
       <button class="tab-btn active" data-tab="vocab">📚 Vocabulary</button>
       <button class="tab-btn" data-tab="situations">🗺️ Situations</button>
       <button class="tab-btn" data-tab="nations">🌍 Nations</button>
+      <button class="tab-btn" data-tab="professions">💼 Professions</button>
       <button class="tab-btn" data-tab="alphabet">🔤 Alphabet</button>
       <button class="tab-btn" data-tab="numbers">🔢 Numbers</button>
       <button onclick="toggleEditPanel()" style="padding:5px 10px;border-radius:14px;border:1px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.1);color:#a8c4d8;cursor:pointer;font-size:12px;font-family:inherit;">✏️ Edit access</button>
@@ -198,6 +199,31 @@
       </div>
     </div>
     <div id="nationsGrid" style="margin-top:12px;display:flex;flex-direction:column;gap:4px;"></div>
+  </div>
+
+  <!-- ═══ PROFESSIONS TAB ═══ -->
+  <div id="tab-professions" class="hidden">
+    <div class="card" style="border-left:4px solid #1a6b3c;margin-top:16px;">
+      <h2 style="margin:0 0 4px;">💼 Professions</h2>
+      <p style="font-size:12px;color:#aaa;margin-bottom:12px;">European Portuguese · masculine & feminine titles · field of study</p>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;">
+        <input id="profSearch" class="search-inp" placeholder="🔍 Search…" oninput="renderProfessions()" style="max-width:200px;" />
+        <select id="profCategory" onchange="renderProfessions()" style="padding:5px 10px;border-radius:7px;border:1px solid #e8e0d8;font-size:13px;font-family:inherit;background:#fafafa;">
+          <option value="">All categories</option>
+          <option value="Health">🏥 Health</option>
+          <option value="Law & Justice">⚖️ Law & Justice</option>
+          <option value="Education">📚 Education</option>
+          <option value="Engineering & Tech">🔧 Engineering & Tech</option>
+          <option value="Business & Finance">💰 Business & Finance</option>
+          <option value="Arts & Culture">🎨 Arts & Culture</option>
+          <option value="Science">🔬 Science</option>
+          <option value="Services">🛎️ Services</option>
+          <option value="Public & Safety">🚒 Public & Safety</option>
+          <option value="Trades">🔨 Trades</option>
+        </select>
+      </div>
+    </div>
+    <div id="professionsGrid" style="margin-top:12px;display:flex;flex-direction:column;gap:4px;"></div>
   </div>
 
   <!-- ═══ ALPHABET TAB ═══ -->
@@ -1173,6 +1199,119 @@ function renderNations(){
 function toggleNationExpand(key){ expandedNation=expandedNation===key?null:key; renderNations(); }
 function toggleNationReveal(key){ nationsQuizRevealed.has(key)?nationsQuizRevealed.delete(key):nationsQuizRevealed.add(key); renderNations(); }
 
+// ═══ PROFESSIONS ═════════════════════════════════════════════════════════
+const PROFESSIONS=[
+  {emoji:'👨‍⚕️',en:'Doctor',masc:'médico',fem:'médica',category:'Health',studies:'Medicina'},
+  {emoji:'🦷',en:'Dentist',masc:'dentista',fem:'dentista',category:'Health',studies:'Medicina Dentária'},
+  {emoji:'💊',en:'Pharmacist',masc:'farmacêutico',fem:'farmacêutica',category:'Health',studies:'Farmácia'},
+  {emoji:'🩺',en:'Nurse',masc:'enfermeiro',fem:'enfermeira',category:'Health',studies:'Enfermagem'},
+  {emoji:'🧠',en:'Psychologist',masc:'psicólogo',fem:'psicóloga',category:'Health',studies:'Psicologia'},
+  {emoji:'🏥',en:'Surgeon',masc:'cirurgião',fem:'cirurgiã',category:'Health',studies:'Medicina'},
+  {emoji:'🧘',en:'Physiotherapist',masc:'fisioterapeuta',fem:'fisioterapeuta',category:'Health',studies:'Fisioterapia'},
+  {emoji:'🚑',en:'Paramedic',masc:'paramédico',fem:'paramédica',category:'Health'},
+  {emoji:'🧪',en:'Nutritionist',masc:'nutricionista',fem:'nutricionista',category:'Health',studies:'Nutrição'},
+  {emoji:'🐾',en:'Veterinarian',masc:'veterinário',fem:'veterinária',category:'Health',studies:'Medicina Veterinária'},
+  {emoji:'⚖️',en:'Lawyer',masc:'advogado',fem:'advogada',category:'Law & Justice',studies:'Direito'},
+  {emoji:'👨‍⚖️',en:'Judge',masc:'juiz',fem:'juíza',category:'Law & Justice',studies:'Direito'},
+  {emoji:'📋',en:'Notary',masc:'notário',fem:'notária',category:'Law & Justice',studies:'Direito'},
+  {emoji:'🔍',en:'Prosecutor',masc:'procurador',fem:'procuradora',category:'Law & Justice',studies:'Direito'},
+  {emoji:'👮',en:'Police Officer',masc:'polícia',fem:'polícia',category:'Law & Justice'},
+  {emoji:'👨‍🏫',en:'Teacher',masc:'professor',fem:'professora',category:'Education',studies:'Ciências da Educação'},
+  {emoji:'🎓',en:'University Professor',masc:'professor universitário',fem:'professora universitária',category:'Education'},
+  {emoji:'📚',en:'Librarian',masc:'bibliotecário',fem:'bibliotecária',category:'Education',studies:'Ciências da Informação'},
+  {emoji:'👷',en:'Civil Engineer',masc:'engenheiro civil',fem:'engenheira civil',category:'Engineering & Tech',studies:'Engenharia Civil'},
+  {emoji:'⚡',en:'Electrical Engineer',masc:'engenheiro eletrotécnico',fem:'engenheira eletrotécnica',category:'Engineering & Tech',studies:'Engenharia Eletrotécnica'},
+  {emoji:'💻',en:'Software Engineer',masc:'engenheiro de software',fem:'engenheira de software',category:'Engineering & Tech',studies:'Engenharia Informática'},
+  {emoji:'📱',en:'Programmer',masc:'programador',fem:'programadora',category:'Engineering & Tech',studies:'Informática'},
+  {emoji:'🏗️',en:'Architect',masc:'arquiteto',fem:'arquiteta',category:'Engineering & Tech',studies:'Arquitetura'},
+  {emoji:'💼',en:'Manager',masc:'gestor',fem:'gestora',category:'Business & Finance',studies:'Gestão'},
+  {emoji:'📊',en:'Accountant',masc:'contabilista',fem:'contabilista',category:'Business & Finance',studies:'Contabilidade'},
+  {emoji:'🏦',en:'Banker',masc:'banqueiro',fem:'banqueira',category:'Business & Finance',studies:'Economia'},
+  {emoji:'📈',en:'Financial Analyst',masc:'analista financeiro',fem:'analista financeira',category:'Business & Finance',studies:'Finanças'},
+  {emoji:'🤝',en:'Consultant',masc:'consultor',fem:'consultora',category:'Business & Finance'},
+  {emoji:'🌍',en:'Economist',masc:'economista',fem:'economista',category:'Business & Finance',studies:'Economia'},
+  {emoji:'🎨',en:'Artist / Painter',masc:'pintor',fem:'pintora',category:'Arts & Culture',studies:'Belas-Artes'},
+  {emoji:'📸',en:'Photographer',masc:'fotógrafo',fem:'fotógrafa',category:'Arts & Culture',studies:'Fotografia'},
+  {emoji:'🎭',en:'Actor',masc:'ator',fem:'atriz',category:'Arts & Culture'},
+  {emoji:'🎵',en:'Musician',masc:'músico',fem:'música',category:'Arts & Culture',studies:'Música'},
+  {emoji:'✍️',en:'Writer',masc:'escritor',fem:'escritora',category:'Arts & Culture',studies:'Literatura'},
+  {emoji:'📰',en:'Journalist',masc:'jornalista',fem:'jornalista',category:'Arts & Culture',studies:'Jornalismo'},
+  {emoji:'🎤',en:'Singer',masc:'cantor',fem:'cantora',category:'Arts & Culture'},
+  {emoji:'🖥️',en:'Graphic Designer',masc:'designer gráfico',fem:'designer gráfica',category:'Arts & Culture',studies:'Design Gráfico'},
+  {emoji:'🔭',en:'Astronomer',masc:'astrónomo',fem:'astrónoma',category:'Science',studies:'Astronomia'},
+  {emoji:'🧫',en:'Biologist',masc:'biólogo',fem:'bióloga',category:'Science',studies:'Biologia'},
+  {emoji:'⚗️',en:'Chemist',masc:'químico',fem:'química',category:'Science',studies:'Química'},
+  {emoji:'🔢',en:'Mathematician',masc:'matemático',fem:'matemática',category:'Science',studies:'Matemática'},
+  {emoji:'⚛️',en:'Physicist',masc:'físico',fem:'física',category:'Science',studies:'Física'},
+  {emoji:'🌡️',en:'Meteorologist',masc:'meteorologista',fem:'meteorologista',category:'Science',studies:'Meteorologia'},
+  {emoji:'🍳',en:'Chef / Cook',masc:'cozinheiro',fem:'cozinheira',category:'Services'},
+  {emoji:'✂️',en:'Hairdresser',masc:'cabeleireiro',fem:'cabeleireira',category:'Services'},
+  {emoji:'🛎️',en:'Waiter / Waitress',masc:'empregado de mesa',fem:'empregada de mesa',category:'Services'},
+  {emoji:'✈️',en:'Pilot',masc:'piloto',fem:'piloto',category:'Services',studies:'Aviação'},
+  {emoji:'🧳',en:'Flight Attendant',masc:'comissário de bordo',fem:'comissária de bordo',category:'Services'},
+  {emoji:'🏋️',en:'Personal Trainer',masc:'personal trainer',fem:'personal trainer',category:'Services',studies:'Educação Física'},
+  {emoji:'🚒',en:'Firefighter',masc:'bombeiro',fem:'bombeira',category:'Public & Safety'},
+  {emoji:'🏛️',en:'Politician',masc:'político',fem:'política',category:'Public & Safety',studies:'Ciências Políticas'},
+  {emoji:'🌐',en:'Diplomat',masc:'diplomata',fem:'diplomata',category:'Public & Safety',studies:'Relações Internacionais'},
+  {emoji:'📮',en:'Postal Worker',masc:'carteiro',fem:'carteira',category:'Public & Safety'},
+  {emoji:'🧑‍🔬',en:'Social Worker',masc:'assistente social',fem:'assistente social',category:'Public & Safety',studies:'Serviço Social'},
+  {emoji:'🔌',en:'Electrician',masc:'eletricista',fem:'eletricista',category:'Trades'},
+  {emoji:'🪠',en:'Plumber',masc:'canalizador',fem:'canalizadora',category:'Trades'},
+  {emoji:'🧱',en:'Bricklayer',masc:'pedreiro',fem:'pedreira',category:'Trades'},
+  {emoji:'🪚',en:'Carpenter',masc:'carpinteiro',fem:'carpinteira',category:'Trades'},
+  {emoji:'🌿',en:'Gardener',masc:'jardineiro',fem:'jardineira',category:'Trades'},
+  {emoji:'👩‍🌾',en:'Farmer',masc:'agricultor',fem:'agricultora',category:'Trades'},
+  {emoji:'🐟',en:'Fisherman',masc:'pescador',fem:'pescadora',category:'Trades'},
+];
+const PROF_CATEGORY_COLORS={'Health':'#c1440e','Law & Justice':'#2c5f8a','Education':'#1a6b3c','Engineering & Tech':'#7b4ea0','Business & Finance':'#b5830a','Arts & Culture':'#8a3a5c','Science':'#1a3a5c','Services':'#1a6b3c','Public & Safety':'#2c5f8a','Trades':'#b5830a'};
+let expandedProfession=null;
+
+function renderProfessions(){
+  const q=(document.getElementById('profSearch')?.value||'').toLowerCase();
+  const cat=document.getElementById('profCategory')?.value||'';
+  const filtered=PROFESSIONS.filter(p=>(!cat||p.category===cat)&&(!q||p.en.toLowerCase().includes(q)||p.masc.toLowerCase().includes(q)||p.fem.toLowerCase().includes(q)));
+  const el=document.getElementById('professionsGrid'); if(!el) return;
+  if(!filtered.length){ el.innerHTML='<p style="color:#bbb;font-size:13px;padding:16px;">No professions match.</p>'; return; }
+  el.innerHTML=filtered.map(p=>{
+    const color=PROF_CATEGORY_COLORS[p.category]||'#1a3a5c';
+    const isExpanded=expandedProfession===p.en;
+    const detailBlock=`<div style="padding:12px 16px;background:#f8f9fc;border-top:1px solid #eef0f8;">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;${p.studies?'margin-bottom:10px;':''}">
+        <div style="background:#fff;border-radius:8px;padding:8px 10px;border-left:3px solid #2c5f8a;">
+          <div style="font-size:9px;color:#aaa;text-transform:uppercase;font-weight:700;margin-bottom:3px;">Masculino</div>
+          <div style="font-size:14px;font-weight:700;color:var(--navy);">o ${p.masc}</div>
+          <button class="speak-btn" style="margin-top:3px;" onclick="speakText('o ${escQ(p.masc)}','pt-PT',this);event.stopPropagation();">🔊</button>
+        </div>
+        <div style="background:#fff;border-radius:8px;padding:8px 10px;border-left:3px solid #8a3a5c;">
+          <div style="font-size:9px;color:#aaa;text-transform:uppercase;font-weight:700;margin-bottom:3px;">Feminino</div>
+          <div style="font-size:14px;font-weight:700;color:var(--navy);">a ${p.fem}</div>
+          <button class="speak-btn" style="margin-top:3px;" onclick="speakText('a ${escQ(p.fem)}','pt-PT',this);event.stopPropagation();">🔊</button>
+        </div>
+      </div>
+      ${p.studies?`<div style="background:#fff;border-radius:8px;padding:8px 10px;border-left:3px solid ${color};">
+        <div style="font-size:9px;color:#aaa;text-transform:uppercase;font-weight:700;margin-bottom:3px;">Estuda / Estudou</div>
+        <div style="display:flex;align-items:center;gap:8px;">
+          <span style="font-size:13px;color:var(--navy);font-style:italic;">${p.studies}</span>
+          <button class="speak-btn" onclick="speakText('${escQ(p.studies)}','pt-PT',this);event.stopPropagation();">🔊</button>
+        </div>
+      </div>`:''}
+    </div>`;
+    return `<div style="background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,0.07);border:1px solid ${isExpanded?color+'66':'#f0ebe4'};transition:border-color 0.15s;">
+      <div onclick="toggleProfession('${escQ(p.en)}')" style="display:flex;align-items:center;gap:12px;padding:11px 14px;cursor:pointer;user-select:none;">
+        <span style="font-size:24px;flex-shrink:0;line-height:1;">${p.emoji}</span>
+        <div style="flex:1;min-width:0;">
+          <div style="font-size:14px;font-weight:700;color:${color};line-height:1.3;">${p.masc} / ${p.fem}</div>
+          <div style="font-size:11px;color:#aaa;margin-top:1px;">${p.en}${p.studies?` · <em>${p.studies}</em>`:''}</div>
+        </div>
+        <button class="speak-btn" onclick="speakText('${escQ(p.masc)}','pt-PT',this);event.stopPropagation();">🔊</button>
+        <span style="font-size:12px;color:#ccc;display:inline-block;transition:transform 0.2s;${isExpanded?'transform:rotate(180deg)':''}">▼</span>
+      </div>
+      ${isExpanded?detailBlock:''}
+    </div>`;
+  }).join('');
+}
+function toggleProfession(key){ expandedProfession=expandedProfession===key?null:key; renderProfessions(); }
+
 function showToast(msg){
   const t=document.getElementById('toast');
   t.textContent=msg; t.classList.add('show');
@@ -1360,10 +1499,11 @@ document.querySelectorAll('.tab-btn').forEach(btn=>{
     document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
     btn.classList.add('active');
     activeTab = btn.dataset.tab;
-    ['vocab','situations','nations','alphabet','numbers'].forEach(t=>document.getElementById('tab-'+t).classList.add('hidden'));
+    ['vocab','situations','nations','professions','alphabet','numbers'].forEach(t=>document.getElementById('tab-'+t).classList.add('hidden'));
     document.getElementById('tab-'+activeTab).classList.remove('hidden');
     if(activeTab==='situations'){ allSitPacks=[]; openSitPack=null; loadSituations(); }
     if(activeTab==='nations') renderNations();
+    if(activeTab==='professions') renderProfessions();
   });
 });
 loadFromGitHub();
