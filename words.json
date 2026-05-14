@@ -11945,7 +11945,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "14/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -12019,9 +12019,40 @@
         }
       ],
       "future-peri": [],
-      "future-simple": []
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu ficarei em casa",
+          "en": "I will stay home"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu ficarás aqui",
+          "en": "You will stay here"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela ficará sozinha",
+          "en": "She will stay alone"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós ficaremos juntos",
+          "en": "We will stay together"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês ficarão aqui",
+          "en": "You will stay here"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles ficarão fora",
+          "en": "They will stay out"
+        }
+      ]
     },
-    "_generatingTense": "future-simple",
+    "_generatingTense": null,
     "_activeTense": "future-simple"
   }
 ]
