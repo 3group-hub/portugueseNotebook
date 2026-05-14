@@ -10893,11 +10893,42 @@
     "notes": "",
     "examples": [],
     "addedAt": "14/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "common",
     "tenses": {
-      "present": [],
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu levanto cedo.",
+          "en": "I get up early."
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu levantas cedo.",
+          "en": "You get up early."
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela levanta tarde.",
+          "en": "She gets up late."
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós levantamos cedo.",
+          "en": "We get up early."
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês levantam cedo.",
+          "en": "You get up early."
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles levantam tarde.",
+          "en": "They get up late."
+        }
+      ],
       "past": [],
       "future-peri": [],
       "future-simple": []
