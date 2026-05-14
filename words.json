@@ -11013,11 +11013,42 @@
     "notes": "",
     "examples": [],
     "addedAt": "14/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
-      "present": [],
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu lavo as mãos",
+          "en": "I wash my hands"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu lavas o carro",
+          "en": "You wash the car"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela lava a louça",
+          "en": "She washes the dishes"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós lavamos os pratos",
+          "en": "We wash the plates"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês lavam as roupas",
+          "en": "You wash the clothes"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles lavam o chão",
+          "en": "They wash the floor"
+        }
+      ],
       "past": [],
       "future-peri": [],
       "future-simple": []
