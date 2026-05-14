@@ -12183,40 +12183,40 @@
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu janto cedo",
-          "en": "I dine early"
+          "pt": "Eu janto às 20h",
+          "en": "I have dinner at 8pm"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu jantas tarde",
-          "en": "You dine late"
+          "pt": "Tu jantas cedo",
+          "en": "You have dinner early"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela janta bem",
-          "en": "She dines well"
+          "pt": "Ela janta sozinha",
+          "en": "She has dinner alone"
         },
         {
           "pronoun": "nós",
           "pt": "Nós jantamos juntos",
-          "en": "We dine together"
+          "en": "We have dinner together"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês jantam fora",
-          "en": "You dine out"
+          "pt": "Vocês jantam às 21h",
+          "en": "You have dinner at 9pm"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles jantam tarde",
-          "en": "They dine late"
+          "pt": "Eles jantam fora",
+          "en": "They have dinner out"
         }
       ],
       "past": [],
       "future-peri": [],
       "future-simple": []
     },
-    "_generatingTense": "present",
+    "_generatingTense": null,
     "_activeTense": "present"
   }
 ]
