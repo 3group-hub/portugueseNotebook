@@ -10905,13 +10905,20 @@
         },
         {
           "pronoun": "tu",
-          "pt": "Tu levantas cedo.",
-          "en": "You get up early."
+          "pt": "Tu levantas tardiamente.",
+          "en": "You get up very late.",
+          "_grammarFixes": [
+            {
+              "orig": "muito tarde",
+              "best": "tardiamente",
+              "rule": "2. Expressões prolixas: muito tarde"
+            }
+          ]
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela levanta tarde.",
-          "en": "She gets up late."
+          "pt": "Ela levanta o braço.",
+          "en": "She raises her arm."
         },
         {
           "pronoun": "nós",
@@ -10920,20 +10927,20 @@
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês levantam cedo.",
-          "en": "You get up early."
+          "pt": "Vocês levantam muito cedo.",
+          "en": "You get up very early."
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles levantam tarde.",
-          "en": "They get up late."
+          "pt": "Eles levantam a voz.",
+          "en": "They raise their voices."
         }
       ],
       "past": [],
       "future-peri": [],
       "future-simple": []
     },
-    "_generatingTense": "present",
+    "_generatingTense": null,
     "_activeTense": "present"
   }
 ]
