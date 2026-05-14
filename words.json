@@ -11480,7 +11480,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "14/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "common",
     "tenses": {
@@ -11523,12 +11523,43 @@
           "en": "They connect the wires"
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu liguei o telefone.",
+          "en": "I connected the phone."
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu ligaste ao serviço.",
+          "en": "You connected to the service."
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela ligou o computador.",
+          "en": "She connected the computer."
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós ligámos a tv.",
+          "en": "We connected the tv."
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês ligaram já?",
+          "en": "Have you connected already?"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles ligaram ontem.",
+          "en": "They connected yesterday."
+        }
+      ],
       "future-peri": [],
       "future-simple": []
     },
     "_activeTense": "past",
-    "_generatingTense": "past"
+    "_generatingTense": null
   },
   {
     "id": 1778747914459,
