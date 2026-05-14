@@ -11367,11 +11367,42 @@
     "notes": "",
     "examples": [],
     "addedAt": "14/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
-      "present": [],
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu chego cedo",
+          "en": "I arrive early"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu chegas tarde",
+          "en": "You arrive late"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela chega agora",
+          "en": "She arrives now"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós chegamos juntos",
+          "en": "We arrive together"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês chegam hoje",
+          "en": "You arrive today"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles chegam amanhã",
+          "en": "They arrive tomorrow"
+        }
+      ],
       "past": [],
       "future-peri": [],
       "future-simple": []
