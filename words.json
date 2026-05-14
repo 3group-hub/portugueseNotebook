@@ -11285,11 +11285,42 @@
     "notes": "",
     "examples": [],
     "addedAt": "14/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "common",
     "tenses": {
-      "present": [],
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu preparo o pequeno-almoço",
+          "en": "I prepare breakfast"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu preparas o jantar",
+          "en": "You prepare dinner"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela prepara a refeição",
+          "en": "She prepares the meal"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós preparámos a comida",
+          "en": "We prepared the food"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês preparam o lanche",
+          "en": "You prepare the snack"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles preparam o jantar",
+          "en": "They prepare dinner"
+        }
+      ],
       "past": [],
       "future-peri": [],
       "future-simple": []
