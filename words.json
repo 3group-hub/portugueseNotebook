@@ -10780,7 +10780,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "14/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -10816,11 +10816,42 @@
           "en": "They drink water."
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu tomei um café.",
+          "en": "I took a coffee."
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu tomaste um bolo.",
+          "en": "You took a cake."
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela tomou um chá.",
+          "en": "She took a tea."
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós tomámos um lanche.",
+          "en": "We took a snack."
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês tomaram um refresco.",
+          "en": "You took a soft drink."
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles tomaram água.",
+          "en": "They took water."
+        }
+      ],
       "future-peri": [],
       "future-simple": []
     },
-    "_generatingTense": "past",
+    "_generatingTense": null,
     "_activeTense": "past"
   }
 ]
