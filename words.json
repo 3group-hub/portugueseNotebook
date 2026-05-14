@@ -11172,7 +11172,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "14/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -11208,11 +11208,42 @@
           "en": "They wear a coat."
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vesti um casaco.",
+          "en": "I wore a coat."
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vestiste um chapéu.",
+          "en": "You wore a hat."
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vestiu um vestido.",
+          "en": "She wore a dress."
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vestimos calças.",
+          "en": "We wore trousers."
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vestiram camisolas.",
+          "en": "You wore shirts."
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vestiram fato.",
+          "en": "They wore suits."
+        }
+      ],
       "future-peri": [],
       "future-simple": []
     },
-    "_generatingTense": "past",
+    "_generatingTense": null,
     "_activeTense": "past"
   }
 ]
