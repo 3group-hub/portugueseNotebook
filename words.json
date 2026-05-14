@@ -11367,7 +11367,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "14/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -11436,9 +11436,40 @@
         }
       ],
       "future-peri": [],
-      "future-simple": []
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu chegarei",
+          "en": "I will arrive"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu chegarás",
+          "en": "You will arrive"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela chegará",
+          "en": "She will arrive"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós chegaremos",
+          "en": "We will arrive"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês chegarão",
+          "en": "You will arrive"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles chegarão",
+          "en": "They will arrive"
+        }
+      ]
     },
-    "_generatingTense": "future-simple",
+    "_generatingTense": null,
     "_activeTense": "future-simple"
   }
 ]
