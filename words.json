@@ -11822,6 +11822,17 @@
       ]
     },
     "_generatingTense": null,
-    "_activeTense": "future-simple"
+    "_activeTense": "past"
+  },
+  {
+    "id": 1778748608102,
+    "word": "apanhar",
+    "translation": "to catch",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "14/05/2026",
+    "generatingExample": true,
+    "assessingFreq": true
   }
 ]
