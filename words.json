@@ -11004,5 +11004,16 @@
     },
     "_generatingTense": null,
     "_activeTense": "future-simple"
+  },
+  {
+    "id": 1778746607947,
+    "word": "Lava",
+    "translation": "Wash",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "14/05/2026",
+    "generatingExample": true,
+    "assessingFreq": true
   }
 ]
