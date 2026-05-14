@@ -11374,40 +11374,40 @@
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu chego cedo",
-          "en": "I arrive early"
+          "pt": "Eu chego cedo.",
+          "en": "I arrive early."
         },
         {
           "pronoun": "tu",
-          "pt": "Tu chegas tarde",
-          "en": "You arrive late"
+          "pt": "Tu chegas tarde.",
+          "en": "You arrive late."
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela chega agora",
-          "en": "She arrives now"
+          "pt": "Ela chega agora.",
+          "en": "She arrives now."
         },
         {
           "pronoun": "nós",
-          "pt": "Nós chegamos juntos",
-          "en": "We arrive together"
+          "pt": "Nós chegamos juntos.",
+          "en": "We arrive together."
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês chegam hoje",
-          "en": "You arrive today"
+          "pt": "Vocês chegam hoje.",
+          "en": "You arrive today."
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles chegam amanhã",
-          "en": "They arrive tomorrow"
+          "pt": "Eles chegam amanhã.",
+          "en": "They arrive tomorrow."
         }
       ],
       "past": [],
       "future-peri": [],
       "future-simple": []
     },
-    "_generatingTense": "present",
+    "_generatingTense": null,
     "_activeTense": "present"
   }
 ]
