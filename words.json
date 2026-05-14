@@ -12176,7 +12176,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "14/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -12245,9 +12245,40 @@
         }
       ],
       "future-peri": [],
-      "future-simple": []
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu jantarei",
+          "en": "I will have dinner"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu jantarás",
+          "en": "You will have dinner"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela jantará",
+          "en": "She will have dinner"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós jantaremos",
+          "en": "We will have dinner"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês jantarão",
+          "en": "You will have dinner"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles jantarão",
+          "en": "They will have dinner"
+        }
+      ]
     },
-    "_generatingTense": "future-simple",
+    "_generatingTense": null,
     "_activeTense": "future-simple"
   }
 ]
