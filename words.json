@@ -11832,7 +11832,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "14/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "common",
     "tenses": {
@@ -11868,11 +11868,42 @@
           "en": "They catch the taxi"
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu apanhei a bola",
+          "en": "I caught the ball"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu apanhaste a bola",
+          "en": "You caught the ball"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela apanhou a bola",
+          "en": "She caught the ball"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós apanhámos a bola",
+          "en": "We caught the ball"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês apanharam a bola",
+          "en": "You caught the ball"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles apanharam a bola",
+          "en": "They caught the ball"
+        }
+      ],
       "future-peri": [],
       "future-simple": []
     },
-    "_generatingTense": "past",
+    "_generatingTense": null,
     "_activeTense": "past"
   }
 ]
