@@ -11832,7 +11832,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "14/05/2026",
-    "generatingExample": false,
+    "generatingExample": true,
     "assessingFreq": false,
     "freq": "common",
     "tenses": {
@@ -11934,7 +11934,7 @@
         }
       ]
     },
-    "_generatingTense": null,
+    "_generatingTense": "future-simple",
     "_activeTense": "future-simple"
   }
 ]
