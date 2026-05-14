@@ -10894,6 +10894,15 @@
     "examples": [],
     "addedAt": "14/05/2026",
     "generatingExample": true,
-    "assessingFreq": true
+    "assessingFreq": false,
+    "freq": "common",
+    "tenses": {
+      "present": [],
+      "past": [],
+      "future-peri": [],
+      "future-simple": []
+    },
+    "_generatingTense": "present",
+    "_activeTense": "present"
   }
 ]
