@@ -193,6 +193,7 @@
     <p id="subtitle">European Portuguese · 0 words saved</p>
     <div class="tabs">
       <button class="tab-btn active" data-tab="vocab">📚 Vocabulary</button>
+      <button class="tab-btn" data-tab="flashcards">🃏 Flashcards</button>
       <button class="tab-btn" data-tab="textimport">📄 Text Import</button>
       <button class="tab-btn" data-tab="alphabet">🔤 Alphabet</button>
       <button class="tab-btn" data-tab="numbers">🔢 Numbers</button>
@@ -531,6 +532,84 @@
       <p style="margin-top:8px;font-size:13px;color:#888;">Thinking in Portuguese…</p>
     </div>
     <div id="sentResults" style="margin-top:16px;"></div>
+  </div>
+
+  <!-- ═══ FLASHCARDS TAB ═══ -->
+  <div id="tab-flashcards" class="hidden">
+    <div id="fc-setup" style="margin-top:16px;">
+      <div class="card" style="border-left:4px solid #1a6b3c;">
+        <h2 style="margin:0 0 4px;">🃏 Flashcards</h2>
+        <p style="font-size:13px;color:#888;margin-bottom:14px;">Spaced repetition — words due for review are shown first. Rate each card and the app schedules your next review automatically.</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px;">
+          <button onclick="startFlashcards('due')" class="btn-primary" style="background:#1a6b3c;">
+            🔔 Review due (<span id="fc-due-count">0</span>)
+          </button>
+          <button onclick="startFlashcards('all')" class="btn-ghost">
+            📚 Review all words
+          </button>
+          <button onclick="startFlashcards('new')" class="btn-ghost">
+            ✨ New words only
+          </button>
+        </div>
+        <!-- Stats -->
+        <div id="fc-stats" style="display:flex;gap:16px;flex-wrap:wrap;font-size:12px;color:#aaa;padding-top:10px;border-top:1px solid #f5efe6;"></div>
+      </div>
+    </div>
+
+    <!-- Active flashcard session -->
+    <div id="fc-session" class="hidden" style="margin-top:16px;">
+      <!-- Progress bar -->
+      <div style="background:#f0ebe4;border-radius:4px;height:6px;margin-bottom:16px;overflow:hidden;">
+        <div id="fc-progress" style="height:100%;background:var(--green);border-radius:4px;transition:width 0.3s;width:0%;"></div>
+      </div>
+      <div id="fc-counter" style="text-align:center;font-size:12px;color:#aaa;margin-bottom:12px;"></div>
+
+      <!-- Card -->
+      <div id="fc-card" style="background:#fff;border-radius:16px;box-shadow:0 4px 20px rgba(0,0,0,0.1);overflow:hidden;min-height:220px;cursor:pointer;" onclick="fcReveal()">
+        <div id="fc-front" style="padding:32px 24px;text-align:center;">
+          <div id="fc-direction" style="font-size:10px;color:#ccc;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:16px;"></div>
+          <div id="fc-question" style="font-size:28px;font-weight:700;color:#1a3a5c;margin-bottom:8px;"></div>
+          <div id="fc-category" style="font-size:11px;color:#aaa;margin-bottom:20px;"></div>
+          <div style="font-size:12px;color:#ddd;">tap to reveal →</div>
+        </div>
+        <div id="fc-back" class="hidden" style="padding:24px;">
+          <div style="text-align:center;margin-bottom:16px;">
+            <div id="fc-answer" style="font-size:24px;font-weight:700;color:#1a6b3c;margin-bottom:4px;"></div>
+            <button id="fc-speak-btn" class="speak-btn" style="font-size:16px;margin-top:4px;">🔊</button>
+          </div>
+          <!-- Example sentence if available -->
+          <div id="fc-example" style="background:#fdfaf7;border-radius:8px;padding:10px 12px;margin-bottom:16px;font-size:13px;display:none;">
+            <div id="fc-example-pt" style="color:#1a3a5c;font-style:italic;margin-bottom:3px;"></div>
+            <div id="fc-example-en" style="color:#aaa;font-size:12px;"></div>
+          </div>
+          <!-- Rating buttons -->
+          <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:8px;">
+            <button onclick="fcRate(1)" style="padding:10px 4px;border-radius:8px;border:none;background:#fee2e2;color:#c1440e;cursor:pointer;font-size:12px;font-family:inherit;font-weight:700;">
+              ❌<br><span style="font-size:10px;">Again</span>
+            </button>
+            <button onclick="fcRate(2)" style="padding:10px 4px;border-radius:8px;border:none;background:#fef3c7;color:#b5830a;cursor:pointer;font-size:12px;font-family:inherit;font-weight:700;">
+              😓<br><span style="font-size:10px;">Hard</span>
+            </button>
+            <button onclick="fcRate(3)" style="padding:10px 4px;border-radius:8px;border:none;background:#d1fae5;color:#1a6b3c;cursor:pointer;font-size:12px;font-family:inherit;font-weight:700;">
+              ✅<br><span style="font-size:10px;">Good</span>
+            </button>
+            <button onclick="fcRate(4)" style="padding:10px 4px;border-radius:8px;border:none;background:#dbeafe;color:#2c5f8a;cursor:pointer;font-size:12px;font-family:inherit;font-weight:700;">
+              🌟<br><span style="font-size:10px;">Easy</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <button onclick="endFlashcards()" style="margin-top:14px;width:100%;padding:10px;border-radius:8px;border:1px solid #ddd;background:#fff;cursor:pointer;font-size:13px;font-family:inherit;color:#888;">End session</button>
+    </div>
+
+    <!-- Session complete -->
+    <div id="fc-complete" class="hidden" style="margin-top:16px;text-align:center;padding:40px 20px;">
+      <div style="font-size:48px;margin-bottom:12px;">🎉</div>
+      <div style="font-size:20px;font-weight:700;color:#1a3a5c;margin-bottom:8px;">Session complete!</div>
+      <div id="fc-complete-msg" style="font-size:14px;color:#888;margin-bottom:20px;"></div>
+      <button onclick="initFlashcards()" class="btn-primary" style="background:#1a6b3c;">Back to Flashcards</button>
+    </div>
   </div>
 
   <!-- ═══ TEXT IMPORT TAB ═══ -->
@@ -979,12 +1058,13 @@ document.querySelectorAll('.tab-btn').forEach(btn=>{
     document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
     btn.classList.add('active');
     activeTab=btn.dataset.tab;
-    ['vocab','textimport','alphabet','numbers','situations','nations','professions','sentences'].forEach(t=>document.getElementById('tab-'+t).classList.add('hidden'));
+    ['vocab','flashcards','textimport','alphabet','numbers','situations','nations','professions','sentences'].forEach(t=>document.getElementById('tab-'+t).classList.add('hidden'));
     document.getElementById('tab-'+activeTab).classList.remove('hidden');
     if(activeTab==='sentences') updateSentWordCount();
     if(activeTab==='situations') initSituationsTab();
     if(activeTab==='nations') renderNations();
     if(activeTab==='professions') renderProfessions();
+    if(activeTab==='flashcards') initFlashcards();
   });
 });
 
@@ -1480,29 +1560,38 @@ async function grammarCheckSentences(sentences, showProgress=false){
   const results = [];
   for(let i=0; i<sentences.length; i++){
     const s = sentences[i];
+    // Skip if already checked
+    if(s._grammarChecked){
+      results.push(s);
+      continue;
+    }
     if(showProgress && i > 0 && i % 3 === 0)
       showToast(`🔍 Grammar checking ${i}/${sentences.length}…`);
     const matches = await checkGrammar(s.pt, 'pt-PT');
     if(matches.length){
       const { fixed, changes } = applyGrammarFixes(s.pt, matches);
-      results.push({ ...s, pt: fixed, _grammarFixes: changes });
+      results.push({ ...s, pt: fixed, _grammarFixes: changes, _grammarChecked: true });
     } else {
-      results.push(s);
+      results.push({ ...s, _grammarChecked: true });
     }
   }
   return results;
 }
 
-// Grammar-check verb conjugation rows [{pronoun, pt, en}]
 async function grammarCheckRows(rows){
   const results = [];
   for(const row of rows){
+    // Skip if already checked
+    if(row._grammarChecked){
+      results.push(row);
+      continue;
+    }
     const matches = await checkGrammar(row.pt, 'pt-PT');
     if(matches.length){
       const { fixed, changes } = applyGrammarFixes(row.pt, matches);
-      results.push({ ...row, pt: fixed, _grammarFixes: changes });
+      results.push({ ...row, pt: fixed, _grammarFixes: changes, _grammarChecked: true });
     } else {
-      results.push(row);
+      results.push({ ...row, _grammarChecked: true });
     }
   }
   return results;
@@ -1747,11 +1836,13 @@ async function grammarCheckAll(){
       // Also check dialogue lines
       for(const dialogue of pack.dialogues||[]){
         for(const line of dialogue.lines||[]){
+          if(line._grammarChecked){ totalChecked++; continue; }
           const matches = await checkGrammar(line.pt, 'pt-PT');
           if(matches.length){
             const {fixed, changes} = applyGrammarFixes(line.pt, matches);
             if(changes.length){ line.pt = fixed; line._grammarFixes = changes; sitFixed++; totalFixed++; }
           }
+          line._grammarChecked = true;
           totalChecked++;
         }
       }
@@ -2071,9 +2162,11 @@ function renderWords(){
           return b.id-a.id;
         });
       if(!weekWords.length) return;
+      const dueInWeek = weekWords.filter(w=>srsIsDue(w)).length;
       html += renderGroup(key, weekWords, '#1a3a5c',
         `<span style="font-size:20px;">${icon}</span>
          <span style="font-size:14px;font-weight:700;color:#1a3a5c;">${label}</span>
+         ${dueInWeek?`<span style="font-size:10px;background:#c1440e;color:#fff;padding:2px 7px;border-radius:10px;font-weight:700;cursor:pointer;" onclick="event.stopPropagation();setActiveTab('flashcards')">🔔 ${dueInWeek} due</span>`:''}
          <span style="font-size:11px;color:#aaa;font-style:italic;">${sub}</span>`,
         collapsedGroups.has(key));
     });
@@ -2417,7 +2510,219 @@ function doImport(){
   }catch(e){showToast('Invalid data — copy the full exported text.');}
 }
 
-// ═══ PROFESSIONS TAB ════════════════════════════════════════════════════
+function setActiveTab(tab){
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.toggle('active', b.dataset.tab===tab));
+  ['vocab','flashcards','textimport','alphabet','numbers','situations','nations','professions','sentences'].forEach(t=>document.getElementById('tab-'+t).classList.add('hidden'));
+  document.getElementById('tab-'+tab)?.classList.remove('hidden');
+  activeTab = tab;
+  if(tab==='flashcards') initFlashcards();
+}
+// srs field on each word: { interval, ease, reps, nextReview, lastRating }
+// interval = days until next review
+// ease = difficulty factor (starts at 2.5)
+// reps = consecutive correct answers
+
+function srsUpdate(word, rating){
+  // rating: 1=Again, 2=Hard, 3=Good, 4=Easy
+  if(!word.srs) word.srs = { interval:1, ease:2.5, reps:0, nextReview:0 };
+  const s = word.srs;
+
+  if(rating === 1){
+    // Again — reset
+    s.reps = 0;
+    s.interval = 1;
+    s.ease = Math.max(1.3, s.ease - 0.2);
+  } else if(rating === 2){
+    // Hard
+    s.reps++;
+    s.interval = Math.max(1, Math.round(s.interval * 1.2));
+    s.ease = Math.max(1.3, s.ease - 0.15);
+  } else if(rating === 3){
+    // Good
+    s.reps++;
+    if(s.reps === 1) s.interval = 1;
+    else if(s.reps === 2) s.interval = 4;
+    else s.interval = Math.round(s.interval * s.ease);
+    // ease stays the same
+  } else {
+    // Easy
+    s.reps++;
+    if(s.reps === 1) s.interval = 4;
+    else s.interval = Math.round(s.interval * s.ease * 1.3);
+    s.ease = Math.min(4.0, s.ease + 0.15);
+  }
+
+  // Schedule next review
+  const nextDate = new Date();
+  nextDate.setDate(nextDate.getDate() + s.interval);
+  s.nextReview = nextDate.getTime();
+  s.lastRating = rating;
+  s.lastReviewDate = Date.now();
+}
+
+function srsIsDue(word){
+  if(!word.srs) return true; // never reviewed = due
+  return word.srs.nextReview <= Date.now();
+}
+
+function srsDueCount(){
+  return words.filter(w => srsIsDue(w)).length;
+}
+
+// ── Flashcard session state ───────────────────────────────────────────────
+let fcQueue = [];
+let fcIndex = 0;
+let fcSessionStats = { again:0, hard:0, good:0, easy:0 };
+let fcShowPT = true; // direction: PT→EN or EN→PT
+let fcReviewMode = 'due';
+
+function initFlashcards(){
+  document.getElementById('fc-setup').classList.remove('hidden');
+  document.getElementById('fc-session').classList.add('hidden');
+  document.getElementById('fc-complete').classList.add('hidden');
+
+  // Update due count
+  const due = srsDueCount();
+  document.getElementById('fc-due-count').textContent = due;
+
+  // Stats
+  const reviewed = words.filter(w=>w.srs?.lastReviewDate).length;
+  const mastered = words.filter(w=>w.srs?.interval>=21).length;
+  const avgEase = words.filter(w=>w.srs).reduce((s,w)=>s+w.srs.ease,0) / (words.filter(w=>w.srs).length||1);
+  document.getElementById('fc-stats').innerHTML = `
+    <span>📊 <strong>${reviewed}</strong> reviewed</span>
+    <span>🌟 <strong>${mastered}</strong> mastered (21+ days)</span>
+    <span>📅 <strong>${due}</strong> due today</span>
+    <span>⚖️ Avg ease: <strong>${avgEase.toFixed(1)}</strong></span>
+  `;
+}
+
+function startFlashcards(mode){
+  fcReviewMode = mode;
+  fcSessionStats = { again:0, hard:0, good:0, easy:0 };
+
+  let pool;
+  if(mode === 'due') pool = words.filter(w=>srsIsDue(w));
+  else if(mode === 'new') pool = words.filter(w=>!w.srs);
+  else pool = [...words];
+
+  if(!pool.length){
+    showToast(mode==='due'?'No words due for review today! 🎉':'No words to review.');
+    return;
+  }
+
+  // Shuffle
+  fcQueue = pool.sort(()=>Math.random()-0.5);
+  fcIndex = 0;
+
+  document.getElementById('fc-setup').classList.add('hidden');
+  document.getElementById('fc-complete').classList.add('hidden');
+  document.getElementById('fc-session').classList.remove('hidden');
+
+  showFCCard();
+}
+
+function showFCCard(){
+  const w = fcQueue[fcIndex];
+  if(!w){ endFlashcards(); return; }
+
+  // Alternate direction: 70% PT→EN, 30% EN→PT
+  fcShowPT = Math.random() > 0.3;
+
+  // Progress
+  const pct = Math.round((fcIndex / fcQueue.length) * 100);
+  document.getElementById('fc-progress').style.width = pct + '%';
+  document.getElementById('fc-counter').textContent = `${fcIndex + 1} / ${fcQueue.length}`;
+
+  // Front
+  document.getElementById('fc-direction').textContent = fcShowPT ? 'What does this mean?' : 'How do you say this in Portuguese?';
+  document.getElementById('fc-question').textContent = fcShowPT ? w.word : w.translation;
+  const color = CAT_COLORS[w.category]||'#555';
+  document.getElementById('fc-category').innerHTML = `
+    <span style="background:${color}20;color:${color};padding:2px 8px;border-radius:8px;font-size:11px;">${w.category}</span>
+    ${w.freq ? `<span style="margin-left:6px;color:${FREQ_TIERS[w.freq]?.color||'#aaa'};font-size:11px;">${FREQ_TIERS[w.freq]?.cefrShort||''}</span>` : ''}
+  `;
+
+  // Reset card
+  document.getElementById('fc-front').classList.remove('hidden');
+  document.getElementById('fc-back').classList.add('hidden');
+}
+
+function fcReveal(){
+  const w = fcQueue[fcIndex];
+  if(!w) return;
+
+  const answer = fcShowPT ? w.translation : w.word;
+  document.getElementById('fc-answer').textContent = answer;
+
+  // Speak button
+  const speakBtn = document.getElementById('fc-speak-btn');
+  speakBtn.onclick = ()=> speakText(fcShowPT ? w.translation : w.word, fcShowPT ? 'en-GB' : 'pt-PT', speakBtn);
+
+  // Example sentence
+  const exDiv = document.getElementById('fc-example');
+  const examples = w.examples || (w.example ? [w.example] : []);
+  if(examples.length){
+    const ex = examples[0];
+    document.getElementById('fc-example-pt').textContent = '«' + ex.pt + '»';
+    document.getElementById('fc-example-en').textContent = ex.en;
+    exDiv.style.display = 'block';
+  } else {
+    exDiv.style.display = 'none';
+  }
+
+  document.getElementById('fc-front').classList.add('hidden');
+  document.getElementById('fc-back').classList.remove('hidden');
+
+  // Auto-speak Portuguese
+  if(!fcShowPT) speakText(w.word, 'pt-PT', null);
+}
+
+function fcRate(rating){
+  const w = fcQueue[fcIndex];
+  if(!w) return;
+
+  srsUpdate(w, rating);
+  if(rating===1) fcSessionStats.again++;
+  else if(rating===2) fcSessionStats.hard++;
+  else if(rating===3) fcSessionStats.good++;
+  else fcSessionStats.easy++;
+
+  // "Again" cards go back into queue ~5 cards later
+  if(rating === 1 && fcIndex + 5 < fcQueue.length){
+    fcQueue.splice(fcIndex + 5, 0, w);
+  }
+
+  fcIndex++;
+  saveWords(); // save SRS data
+
+  if(fcIndex >= fcQueue.length){
+    showSessionComplete();
+  } else {
+    showFCCard();
+  }
+}
+
+function showSessionComplete(){
+  document.getElementById('fc-session').classList.add('hidden');
+  document.getElementById('fc-complete').classList.remove('hidden');
+  const s = fcSessionStats;
+  const total = s.again+s.hard+s.good+s.easy;
+  const score = Math.round(((s.good+s.easy)/total)*100);
+  document.getElementById('fc-complete-msg').innerHTML = `
+    You reviewed <strong>${total}</strong> cards · Score: <strong>${score}%</strong><br>
+    <span style="color:#c1440e;">❌ ${s.again} again</span> ·
+    <span style="color:#b5830a;">😓 ${s.hard} hard</span> ·
+    <span style="color:#1a6b3c;">✅ ${s.good} good</span> ·
+    <span style="color:#2c5f8a;">🌟 ${s.easy} easy</span><br>
+    <span style="font-size:12px;color:#aaa;margin-top:4px;display:block;">Next review scheduled automatically.</span>
+  `;
+}
+
+function endFlashcards(){
+  document.getElementById('fc-session').classList.add('hidden');
+  initFlashcards();
+}
 const PROFESSIONS = [
   // Health
   {emoji:'👨‍⚕️',en:'Doctor',masc:'médico',fem:'médica',category:'Health',studies:'Medicina'},
@@ -3561,6 +3866,8 @@ renderNumGroups();
 renderNumGrid();
 renderAlphaGrid();
 updateSentWordCount();
+// Init flashcards after words load (deferred)
+setTimeout(()=>{ if(typeof initFlashcards==='function') initFlashcards(); }, 1000);
 </script>
 </body>
 </html>
