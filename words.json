@@ -11292,40 +11292,40 @@
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu preparo o pequeno-almoço",
-          "en": "I prepare breakfast"
+          "pt": "Eu preparo o pequeno-almoço.",
+          "en": "I prepare breakfast."
         },
         {
           "pronoun": "tu",
-          "pt": "Tu preparas o jantar",
-          "en": "You prepare dinner"
+          "pt": "Tu preparas o jantar.",
+          "en": "You prepare dinner."
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela prepara a refeição",
-          "en": "She prepares the meal"
+          "pt": "Ela prepara a refeição.",
+          "en": "She prepares the meal."
         },
         {
           "pronoun": "nós",
-          "pt": "Nós preparámos a comida",
-          "en": "We prepared the food"
+          "pt": "Nós preparamos o lanche.",
+          "en": "We prepare the snack."
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês preparam o lanche",
-          "en": "You prepare the snack"
+          "pt": "Vocês preparam a ceia.",
+          "en": "You prepare the supper."
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles preparam o jantar",
-          "en": "They prepare dinner"
+          "pt": "Eles preparam o almoço.",
+          "en": "They prepare lunch."
         }
       ],
       "past": [],
       "future-peri": [],
       "future-simple": []
     },
-    "_generatingTense": "present",
+    "_generatingTense": null,
     "_activeTense": "present"
   }
 ]
