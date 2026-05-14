@@ -11603,7 +11603,7 @@
         }
       ]
     },
-    "_activeTense": "future-simple",
+    "_activeTense": "present",
     "_generatingTense": null
   },
   {
@@ -11654,5 +11654,16 @@
       "future-peri": [],
       "future-simple": []
     }
+  },
+  {
+    "id": 1778748267445,
+    "word": "Volar",
+    "translation": "To fly",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "14/05/2026",
+    "generatingExample": true,
+    "assessingFreq": true
   }
 ]
