@@ -12054,5 +12054,16 @@
     },
     "_generatingTense": null,
     "_activeTense": "future-simple"
+  },
+  {
+    "id": 1778749176102,
+    "word": "Deitar",
+    "translation": "To lie down",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "14/05/2026",
+    "generatingExample": true,
+    "assessingFreq": true
   }
 ]
