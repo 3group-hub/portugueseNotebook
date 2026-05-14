@@ -11719,7 +11719,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "14/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -11788,9 +11788,40 @@
         }
       ],
       "future-peri": [],
-      "future-simple": []
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu voltarei",
+          "en": "I will return"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu voltarás",
+          "en": "You will return"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela voltará",
+          "en": "She will return"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós voltaremos",
+          "en": "We will return"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês voltarão",
+          "en": "You will return"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles voltarão",
+          "en": "They will return"
+        }
+      ]
     },
-    "_generatingTense": "future-simple",
+    "_generatingTense": null,
     "_activeTense": "future-simple"
   }
 ]
