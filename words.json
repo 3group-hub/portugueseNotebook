@@ -11173,6 +11173,15 @@
     "examples": [],
     "addedAt": "14/05/2026",
     "generatingExample": true,
-    "assessingFreq": true
+    "assessingFreq": false,
+    "freq": "essential",
+    "tenses": {
+      "present": [],
+      "past": [],
+      "future-peri": [],
+      "future-simple": []
+    },
+    "_generatingTense": "present",
+    "_activeTense": "present"
   }
 ]
