@@ -11726,40 +11726,40 @@
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu volto hoje",
-          "en": "I return today"
+          "pt": "Eu volto casa",
+          "en": "I return home"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu voltas cedo",
-          "en": "You return early"
+          "pt": "Tu voltas casa",
+          "en": "You return home"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela volta tarde",
-          "en": "She returns late"
+          "pt": "Ela volta casa",
+          "en": "She returns home"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós voltamos juntos",
-          "en": "We return together"
+          "pt": "Nós voltamos casa",
+          "en": "We return home"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês voltam amanhã",
-          "en": "You return tomorrow"
+          "pt": "Vocês voltam casa",
+          "en": "You return home"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles voltam logo",
-          "en": "They return soon"
+          "pt": "Eles voltam casa",
+          "en": "They return home"
         }
       ],
       "past": [],
       "future-peri": [],
       "future-simple": []
     },
-    "_generatingTense": "present",
+    "_generatingTense": null,
     "_activeTense": "present"
   }
 ]
