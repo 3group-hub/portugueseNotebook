@@ -11839,13 +11839,13 @@
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu apanho o comboio",
-          "en": "I catch the train"
+          "pt": "Eu apanho o autocarro",
+          "en": "I catch the bus"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu apanhas o autocarro",
-          "en": "You catch the bus"
+          "pt": "Tu apanhas o comboio",
+          "en": "You catch the train"
         },
         {
           "pronoun": "ele/ela",
@@ -11854,8 +11854,8 @@
         },
         {
           "pronoun": "nós",
-          "pt": "Nós apanhamos o táxi",
-          "en": "We catch the taxi"
+          "pt": "Nós apanhamos o barco",
+          "en": "We catch the boat"
         },
         {
           "pronoun": "vocês",
@@ -11864,15 +11864,15 @@
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles apanham o barco",
-          "en": "They catch the boat"
+          "pt": "Eles apanham o táxi",
+          "en": "They catch the taxi"
         }
       ],
       "past": [],
       "future-peri": [],
       "future-simple": []
     },
-    "_generatingTense": "present",
+    "_generatingTense": null,
     "_activeTense": "present"
   }
 ]
