@@ -3756,7 +3756,15 @@
       ]
     },
     "_activeTense": "present",
-    "_generatingTense": null
+    "_generatingTense": null,
+    "srs": {
+      "interval": 1,
+      "ease": 2.35,
+      "reps": 1,
+      "nextReview": 1778846454432,
+      "lastRating": 2,
+      "lastReviewDate": 1778760054432
+    }
   },
   {
     "id": 1777897469362,
