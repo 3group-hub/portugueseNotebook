@@ -11358,5 +11358,16 @@
     },
     "_generatingTense": null,
     "_activeTense": "past"
+  },
+  {
+    "id": 1778747399969,
+    "word": "Chegar",
+    "translation": "Arrive",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "14/05/2026",
+    "generatingExample": true,
+    "assessingFreq": true
   }
 ]
