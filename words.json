@@ -1490,7 +1490,15 @@
         }
       ]
     },
-    "_generatingTense": null
+    "_generatingTense": null,
+    "srs": {
+      "interval": 1,
+      "ease": 2.35,
+      "reps": 1,
+      "nextReview": 1778846468097,
+      "lastRating": 2,
+      "lastReviewDate": 1778760068097
+    }
   },
   {
     "id": 1777373855441,
