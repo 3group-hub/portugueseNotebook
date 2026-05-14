@@ -11172,11 +11172,42 @@
     "notes": "",
     "examples": [],
     "addedAt": "14/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
-      "present": [],
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu visto uma camisa.",
+          "en": "I wear a shirt."
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vestes uma camisola.",
+          "en": "You wear a sweater."
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela veste um casaco.",
+          "en": "She wears a coat."
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vestimos calças.",
+          "en": "We wear pants."
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vestem fato.",
+          "en": "You wear a suit."
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vestem camisas.",
+          "en": "They wear shirts."
+        }
+      ],
       "past": [],
       "future-peri": [],
       "future-simple": []
