@@ -12063,7 +12063,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "14/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "common",
     "tenses": {
@@ -12099,11 +12099,42 @@
           "en": "They go to bed early"
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu deitei cedo",
+          "en": "I lay down early"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu deitaste tarde",
+          "en": "You lay down late"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela deitou-se",
+          "en": "She lay down"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós deitámos cedo",
+          "en": "We lay down early"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês deitaram-se tarde",
+          "en": "You lay down late"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles deitaram-se",
+          "en": "They lay down"
+        }
+      ],
       "future-peri": [],
       "future-simple": []
     },
     "_activeTense": "past",
-    "_generatingTense": "past"
+    "_generatingTense": null
   }
 ]
