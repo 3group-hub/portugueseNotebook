@@ -10893,11 +10893,42 @@
     "notes": "",
     "examples": [],
     "addedAt": "14/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "common",
     "tenses": {
-      "present": [],
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu levanto cedo",
+          "en": "I wake up early"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu levantas a mão",
+          "en": "You raise your hand"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela levanta o telefone",
+          "en": "She picks up the phone"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós levantamos cedo",
+          "en": "We wake up early"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês levantam a voz",
+          "en": "You raise your voice"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles levantam os braços",
+          "en": "They raise their arms"
+        }
+      ],
       "past": [],
       "future-peri": [],
       "future-simple": []
