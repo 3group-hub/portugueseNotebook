@@ -12176,11 +12176,42 @@
     "notes": "",
     "examples": [],
     "addedAt": "14/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
-      "present": [],
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu janto cedo",
+          "en": "I dine early"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu jantas tarde",
+          "en": "You dine late"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela janta bem",
+          "en": "She dines well"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós jantamos juntos",
+          "en": "We dine together"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês jantam fora",
+          "en": "You dine out"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles jantam tarde",
+          "en": "They dine late"
+        }
+      ],
       "past": [],
       "future-peri": [],
       "future-simple": []
