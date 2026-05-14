@@ -10780,11 +10780,42 @@
     "notes": "",
     "examples": [],
     "addedAt": "14/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
-      "present": [],
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu tomo água",
+          "en": "I take water"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu tomas café",
+          "en": "You take coffee"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela toma chá",
+          "en": "She takes tea"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós tomamos suco",
+          "en": "We take juice"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês tomam leite",
+          "en": "You take milk"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles tomam sumo",
+          "en": "They take juice"
+        }
+      ],
       "past": [],
       "future-peri": [],
       "future-simple": []
