@@ -11832,7 +11832,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "14/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "common",
     "tenses": {
@@ -11909,23 +11909,23 @@
         },
         {
           "pronoun": "tu",
-          "pt": "Tu apanharás a bola",
-          "en": "You will catch the ball"
+          "pt": "Tu apanharás o erro",
+          "en": "You will catch the mistake"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela apanhará a bola",
-          "en": "She will catch the ball"
+          "pt": "Ela apanhará o comboio",
+          "en": "She will catch the train"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós apanharemos a bola",
-          "en": "We will catch the ball"
+          "pt": "Nós apanharemos o avião",
+          "en": "We will catch the plane"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês apanharão a bola",
-          "en": "You will catch the ball"
+          "pt": "Vocês apanharão o autocarro",
+          "en": "You will catch the bus"
         },
         {
           "pronoun": "eles/elas",
@@ -11934,7 +11934,7 @@
         }
       ]
     },
-    "_generatingTense": "future-simple",
+    "_generatingTense": null,
     "_activeTense": "future-simple"
   }
 ]
