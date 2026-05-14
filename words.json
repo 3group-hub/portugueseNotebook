@@ -10780,7 +10780,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "14/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -10849,9 +10849,40 @@
         }
       ],
       "future-peri": [],
-      "future-simple": []
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu tomarei água",
+          "en": "I will take water"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu tomarás café",
+          "en": "You will take coffee"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela tomará chá",
+          "en": "She will take tea"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós tomaremos sumo",
+          "en": "We will take juice"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês tomarão leite",
+          "en": "You will take milk"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles tomarão vinho",
+          "en": "They will take wine"
+        }
+      ]
     },
-    "_generatingTense": "future-simple",
+    "_generatingTense": null,
     "_activeTense": "future-simple"
   }
 ]
