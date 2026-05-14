@@ -10883,6 +10883,17 @@
       ]
     },
     "_generatingTense": null,
-    "_activeTense": "future-simple"
+    "_activeTense": "present"
+  },
+  {
+    "id": 1778746337157,
+    "word": "Levantar",
+    "translation": "To raise",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "14/05/2026",
+    "generatingExample": true,
+    "assessingFreq": true
   }
 ]
