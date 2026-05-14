@@ -258,13 +258,13 @@
         },
         {
           "pronoun": "tu",
-          "pt": "Tu desajuste um carro",
+          "pt": "Tu desajustes um carro",
           "en": "You wanted a car",
           "_grammarFixes": [
             {
-              "orig": "desejuste",
-              "best": "desajuste",
-              "rule": "Possível erro ortográfico"
+              "orig": "Tu desajuste",
+              "best": "Tu desajustes",
+              "rule": "🇵🇹 Erro de concordância verbal"
             }
           ]
         },
@@ -1274,13 +1274,13 @@
     "notes": "",
     "examples": [
       {
-        "pt": "A algemas prendia o seu pulso",
+        "pt": "A algema prendia o seu pulso",
         "en": "The shackle held his wrist",
         "_grammarFixes": [
           {
-            "orig": "algema",
-            "best": "algemas",
-            "rule": "🇵🇹 Substantivos invariáveis"
+            "orig": "A algemas",
+            "best": "A algema",
+            "rule": "Concordância de Número: Geral"
           }
         ]
       }
