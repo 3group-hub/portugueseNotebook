@@ -11025,18 +11025,18 @@
         },
         {
           "pronoun": "tu",
-          "pt": "Tu lavas o carro",
-          "en": "You wash the car"
+          "pt": "Tu lavas o rosto",
+          "en": "You wash your face"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela lava a louça",
-          "en": "She washes the dishes"
+          "pt": "Ela lava o carro",
+          "en": "She washes the car"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós lavamos os pratos",
-          "en": "We wash the plates"
+          "pt": "Nós lavamos a louça",
+          "en": "We wash the dishes"
         },
         {
           "pronoun": "vocês",
@@ -11045,15 +11045,15 @@
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles lavam o chão",
-          "en": "They wash the floor"
+          "pt": "Eles lavam os pratos",
+          "en": "They wash the plates"
         }
       ],
       "past": [],
       "future-peri": [],
       "future-simple": []
     },
-    "_generatingTense": "present",
+    "_generatingTense": null,
     "_activeTense": "present"
   }
 ]
