@@ -11285,7 +11285,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "14/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "common",
     "tenses": {
@@ -11321,11 +11321,42 @@
           "en": "They prepare lunch."
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu preparei o jantar",
+          "en": "I prepared dinner"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu preparaste o bolo",
+          "en": "You prepared the cake"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela preparou a refeição",
+          "en": "She prepared the meal"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós preparamos o café",
+          "en": "We prepared coffee"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês prepararam a salada",
+          "en": "You prepared the salad"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles prepararam o almoço",
+          "en": "They prepared lunch"
+        }
+      ],
       "future-peri": [],
       "future-simple": []
     },
-    "_generatingTense": "past",
+    "_generatingTense": null,
     "_activeTense": "past"
   }
 ]
