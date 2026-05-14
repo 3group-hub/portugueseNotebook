@@ -1409,5 +1409,148 @@
     "level": "essential",
     "cefrShort": "A1/A2",
     "updatedAt": "06/05/2026"
+  },
+  "being with Laura making humus ": {
+    "label": "being with Laura making humus ",
+    "emoji": "🗺️",
+    "sentences": [
+      {
+        "pt": "Eu quero comer húmus.",
+        "en": "I want to eat hummus.",
+        "uses": [
+          "querer"
+        ],
+        "_grammarFixes": [
+          {
+            "orig": "humus",
+            "best": "húmus",
+            "rule": "Possível erro ortográfico"
+          }
+        ],
+        "_grammarChecked": true
+      },
+      {
+        "pt": "Vou fazer húmus com Laura.",
+        "en": "I'm going to make hummus with Laura.",
+        "uses": [
+          "fazer"
+        ],
+        "_grammarFixes": [
+          {
+            "orig": "humus",
+            "best": "húmus",
+            "rule": "Possível erro ortográfico"
+          }
+        ],
+        "_grammarChecked": true
+      },
+      {
+        "pt": "Laura está feliz.",
+        "en": "Laura is happy.",
+        "uses": [
+          "feliz"
+        ],
+        "_grammarChecked": true
+      },
+      {
+        "pt": "Eu estou com fome.",
+        "en": "I'm hungry.",
+        "uses": [
+          "com fome"
+        ],
+        "_grammarChecked": true
+      },
+      {
+        "pt": "Vamos começar a preparar o húmus.",
+        "en": "Let's start preparing the hummus.",
+        "uses": [
+          "preparar",
+          "comencar"
+        ],
+        "_grammarFixes": [
+          {
+            "orig": "humus",
+            "best": "húmus",
+            "rule": "Possível erro ortográfico"
+          }
+        ],
+        "_grammarChecked": true
+      }
+    ],
+    "dialogues": [
+      {
+        "title": "Preparando Humus",
+        "lines": [
+          {
+            "speaker": "Eu",
+            "role": "Aluno",
+            "pt": "Bom dia, Laura. Quero fazer humus.",
+            "en": "Good morning, Laura. I want to make hummus.",
+            "uses": [
+              "Bom dia",
+              "querer",
+              "fazer"
+            ]
+          },
+          {
+            "speaker": "Laura",
+            "role": "Amiga",
+            "pt": "Eu também quero. Vamos começar.",
+            "en": "I do too. Let's start.",
+            "uses": [
+              "querer",
+              "comencar"
+            ]
+          },
+          {
+            "speaker": "Eu",
+            "role": "Aluno",
+            "pt": "O que precisamos?",
+            "en": "What do we need?",
+            "uses": []
+          },
+          {
+            "speaker": "Laura",
+            "role": "Amiga",
+            "pt": "Precisamos de grão de bico e limão.",
+            "en": "We need chickpeas and lemon.",
+            "uses": []
+          },
+          {
+            "speaker": "Eu",
+            "role": "Aluno",
+            "pt": "Eu estou com fome. Vamos preparar rápido.",
+            "en": "I'm hungry. Let's prepare it quickly.",
+            "uses": [
+              "com fome",
+              "preparar"
+            ]
+          },
+          {
+            "speaker": "Laura",
+            "role": "Amiga",
+            "pt": "Sim, vamos começar a preparar o humus.",
+            "en": "Yes, let's start preparing the hummus.",
+            "uses": [
+              "comencar",
+              "preparar"
+            ]
+          },
+          {
+            "speaker": "Eu",
+            "role": "Aluno",
+            "pt": "Estou feliz por fazer humus com você.",
+            "en": "I'm happy to make hummus with you.",
+            "uses": [
+              "feliz",
+              "fazer"
+            ]
+          }
+        ]
+      }
+    ],
+    "level": "essential",
+    "cefrShort": "A1/A2",
+    "updatedAt": "14/05/2026"
   }
 }
