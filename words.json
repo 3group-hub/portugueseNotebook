@@ -11470,7 +11470,7 @@
       ]
     },
     "_generatingTense": null,
-    "_activeTense": "future-simple"
+    "_activeTense": "present"
   },
   {
     "id": 1778747863298,
@@ -11719,11 +11719,42 @@
     "notes": "",
     "examples": [],
     "addedAt": "14/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
-      "present": [],
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu volto hoje",
+          "en": "I return today"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu voltas cedo",
+          "en": "You return early"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela volta tarde",
+          "en": "She returns late"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós voltamos juntos",
+          "en": "We return together"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês voltam amanhã",
+          "en": "You return tomorrow"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles voltam logo",
+          "en": "They return soon"
+        }
+      ],
       "past": [],
       "future-peri": [],
       "future-simple": []
