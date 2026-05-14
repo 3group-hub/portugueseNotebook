@@ -11719,7 +11719,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "14/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -11755,11 +11755,42 @@
           "en": "They return home"
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu voltei à casa",
+          "en": "I returned home"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu voltaste à escola",
+          "en": "You returned to school"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela voltou ao trabalho",
+          "en": "She returned to work"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós voltámos à cidade",
+          "en": "We returned to the city"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês voltaram à praia",
+          "en": "You returned to the beach"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles voltaram ao hotel",
+          "en": "They returned to the hotel"
+        }
+      ],
       "future-peri": [],
       "future-simple": []
     },
-    "_generatingTense": "past",
+    "_generatingTense": null,
     "_activeTense": "past"
   }
 ]
