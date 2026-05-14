@@ -10893,7 +10893,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "14/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "common",
     "tenses": {
@@ -10936,11 +10936,42 @@
           "en": "They raise their voices."
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu levantei a malta.",
+          "en": "I raised the flag."
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu levantaste o braço.",
+          "en": "You raised your arm."
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela levantou a voz.",
+          "en": "She raised her voice."
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós levantámos o edifício.",
+          "en": "We raised the building."
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês levantaram o troféu.",
+          "en": "You raised the trophy."
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles levantaram a taça.",
+          "en": "They raised the cup."
+        }
+      ],
       "future-peri": [],
       "future-simple": []
     },
-    "_generatingTense": "past",
+    "_generatingTense": null,
     "_activeTense": "past"
   }
 ]
