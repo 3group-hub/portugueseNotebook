@@ -11832,11 +11832,42 @@
     "notes": "",
     "examples": [],
     "addedAt": "14/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "common",
     "tenses": {
-      "present": [],
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu apanho o comboio",
+          "en": "I catch the train"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu apanhas o autocarro",
+          "en": "You catch the bus"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela apanha o avião",
+          "en": "She catches the plane"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós apanhamos o táxi",
+          "en": "We catch the taxi"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês apanham o metro",
+          "en": "You catch the metro"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles apanham o barco",
+          "en": "They catch the boat"
+        }
+      ],
       "past": [],
       "future-peri": [],
       "future-simple": []
