@@ -11276,5 +11276,16 @@
     },
     "_generatingTense": null,
     "_activeTense": "future-simple"
+  },
+  {
+    "id": 1778747088174,
+    "word": "preparar",
+    "translation": "prepare",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "14/05/2026",
+    "generatingExample": true,
+    "assessingFreq": true
   }
 ]
