@@ -11663,7 +11663,52 @@
     "notes": "",
     "examples": [],
     "addedAt": "14/05/2026",
-    "generatingExample": true,
-    "assessingFreq": true
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu bolo todos os dias.",
+          "en": "I fly every day.",
+          "_grammarFixes": [
+            {
+              "orig": "volo",
+              "best": "bolo",
+              "rule": "Possível erro ortográfico"
+            }
+          ]
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu voas muito bem.",
+          "en": "You fly very well."
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela voa para Londres.",
+          "en": "She flies to London."
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós voamos juntos.",
+          "en": "We fly together."
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês voam hoje.",
+          "en": "You fly today."
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles voam muito alto.",
+          "en": "They fly very high."
+        }
+      ],
+      "past": [],
+      "future-peri": [],
+      "future-simple": []
+    }
   }
 ]
