@@ -10900,40 +10900,47 @@
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu levanto cedo",
-          "en": "I wake up early"
+          "pt": "Eu levanto cedo.",
+          "en": "I get up early."
         },
         {
           "pronoun": "tu",
-          "pt": "Tu levantas a mão",
-          "en": "You raise your hand"
+          "pt": "Tu levantas o braço.",
+          "en": "You raise your arm."
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela levanta o telefone",
-          "en": "She picks up the phone"
+          "pt": "Ela levanta o filho.",
+          "en": "She raises her son."
         },
         {
           "pronoun": "nós",
-          "pt": "Nós levantamos cedo",
-          "en": "We wake up early"
+          "pt": "Nós levantamos cedo.",
+          "en": "We get up early."
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês levantam a voz",
-          "en": "You raise your voice"
+          "pt": "Vocês levantam a voz.",
+          "en": "You raise your voice."
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles levantam os braços",
-          "en": "They raise their arms"
+          "pt": "Eles levantam os prémios.",
+          "en": "They raise the prizes.",
+          "_grammarFixes": [
+            {
+              "orig": "prêmios",
+              "best": "prémios",
+              "rule": "Possível erro ortográfico"
+            }
+          ]
         }
       ],
       "past": [],
       "future-peri": [],
       "future-simple": []
     },
-    "_generatingTense": "present",
-    "_activeTense": "present"
+    "_generatingTense": null,
+    "_activeTense": "past"
   }
 ]
