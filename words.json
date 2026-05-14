@@ -11186,6 +11186,14 @@
       "past": [],
       "future-peri": [],
       "future-simple": []
+    },
+    "srs": {
+      "interval": 1,
+      "ease": 2.5,
+      "reps": 1,
+      "nextReview": 1778846501230,
+      "lastRating": 3,
+      "lastReviewDate": 1778760101230
     }
   },
   {
