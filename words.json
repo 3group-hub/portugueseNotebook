@@ -11957,35 +11957,40 @@
         },
         {
           "pronoun": "tu",
-          "pt": "Tu ficas aqui",
-          "en": "You stay here"
+          "pt": "Tu ficarás",
+          "en": "You will stay"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu ficas",
+          "en": "You stay"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela fica triste",
-          "en": "She stays sad"
+          "pt": "Ela fica aqui",
+          "en": "She stays here"
         },
         {
           "pronoun": "nós",
-          "pt": "Nós ficamos juntos",
-          "en": "We stay together"
+          "pt": "Nós ficamos",
+          "en": "We stay"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês ficam aqui",
-          "en": "You stay here"
+          "pt": "Vocês ficam",
+          "en": "You stay"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles ficam felizes",
-          "en": "They stay happy"
+          "pt": "Eles ficam lá",
+          "en": "They stay there"
         }
       ],
       "past": [],
       "future-peri": [],
       "future-simple": []
     },
-    "_generatingTense": "present",
+    "_generatingTense": null,
     "_activeTense": "present"
   }
 ]
