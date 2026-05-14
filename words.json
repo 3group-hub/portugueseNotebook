@@ -11179,13 +11179,13 @@
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu visto uma camisa.",
-          "en": "I wear a shirt."
+          "pt": "Eu visto um casaco.",
+          "en": "I wear a coat."
         },
         {
           "pronoun": "tu",
-          "pt": "Tu vestes uma camisola.",
-          "en": "You wear a sweater."
+          "pt": "Tu vestes um casaco.",
+          "en": "You wear a coat."
         },
         {
           "pronoun": "ele/ela",
@@ -11194,25 +11194,25 @@
         },
         {
           "pronoun": "nós",
-          "pt": "Nós vestimos calças.",
-          "en": "We wear pants."
+          "pt": "Nós vestimos um casaco.",
+          "en": "We wear a coat."
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês vestem fato.",
-          "en": "You wear a suit."
+          "pt": "Vocês vestem um casaco.",
+          "en": "You wear a coat."
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles vestem camisas.",
-          "en": "They wear shirts."
+          "pt": "Eles vestem um casaco.",
+          "en": "They wear a coat."
         }
       ],
       "past": [],
       "future-peri": [],
       "future-simple": []
     },
-    "_generatingTense": "present",
+    "_generatingTense": null,
     "_activeTense": "present"
   }
 ]
