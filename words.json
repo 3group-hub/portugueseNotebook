@@ -11536,7 +11536,45 @@
     "notes": "",
     "examples": [],
     "addedAt": "14/05/2026",
-    "generatingExample": true,
-    "assessingFreq": true
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "advanced",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu lego uma herança preciosa.",
+          "en": "I bequeath a precious legacy."
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu legas uma fortuna aos filhos.",
+          "en": "You bequeath a fortune to the children."
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela lega propriedades ao Estado.",
+          "en": "She bequeaths properties to the State."
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós legamos valores éticos.",
+          "en": "We bequeath ethical values."
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês legam riqueza cultural.",
+          "en": "You bequeath cultural wealth."
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles legam tradições familiares.",
+          "en": "They bequeath family traditions."
+        }
+      ],
+      "past": [],
+      "future-peri": [],
+      "future-simple": []
+    }
   }
 ]
