@@ -12063,7 +12063,45 @@
     "notes": "",
     "examples": [],
     "addedAt": "14/05/2026",
-    "generatingExample": true,
-    "assessingFreq": true
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu deito cedo",
+          "en": "I go to bed early"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu deitas tarde",
+          "en": "You go to bed late"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela deita sempre cedo",
+          "en": "She goes to bed early"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós deitamos cedo",
+          "en": "We go to bed early"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês deitam tarde",
+          "en": "You go to bed late"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles deitam cedo",
+          "en": "They go to bed early"
+        }
+      ],
+      "past": [],
+      "future-peri": [],
+      "future-simple": []
+    }
   }
 ]
