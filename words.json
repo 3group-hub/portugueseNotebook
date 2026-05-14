@@ -12063,7 +12063,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "14/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "common",
     "tenses": {
@@ -12132,9 +12132,40 @@
         }
       ],
       "future-peri": [],
-      "future-simple": []
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu deitarei cedo",
+          "en": "I will lie down early"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu deitarás tarde",
+          "en": "You will lie down late"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela deitará cedo",
+          "en": "She will lie down early"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós deitaremos juntos",
+          "en": "We will lie down together"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês deitarão tarde",
+          "en": "You will lie down late"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles deitarão cedo",
+          "en": "They will lie down early"
+        }
+      ]
     },
     "_activeTense": "future-simple",
-    "_generatingTense": "future-simple"
+    "_generatingTense": null
   }
 ]
