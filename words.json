@@ -12167,5 +12167,16 @@
     },
     "_activeTense": "future-simple",
     "_generatingTense": null
+  },
+  {
+    "id": 1778749393893,
+    "word": "Jantar",
+    "translation": "Dinner",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "14/05/2026",
+    "generatingExample": true,
+    "assessingFreq": true
   }
 ]
