@@ -10893,7 +10893,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "14/05/2026",
-    "generatingExample": false,
+    "generatingExample": true,
     "assessingFreq": false,
     "freq": "common",
     "tenses": {
@@ -10971,7 +10971,7 @@
       "future-peri": [],
       "future-simple": []
     },
-    "_generatingTense": null,
-    "_activeTense": "past"
+    "_generatingTense": "future-simple",
+    "_activeTense": "future-simple"
   }
 ]
