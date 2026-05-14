@@ -10936,7 +10936,38 @@
           ]
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu levantei a mala.",
+          "en": "I raised the suitcase."
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu levantaste o telemóvel.",
+          "en": "You raised the phone."
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela levantou a voz.",
+          "en": "She raised her voice."
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós levantámos a tenda.",
+          "en": "We raised the tent."
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês levantaram a hipótese.",
+          "en": "You raised the hypothesis."
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles levantaram a taça.",
+          "en": "They raised the cup."
+        }
+      ],
       "future-peri": [],
       "future-simple": []
     },
