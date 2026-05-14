@@ -11081,7 +11081,87 @@
     "notes": "",
     "examples": [],
     "addedAt": "14/05/2026",
-    "generatingExample": true,
-    "assessingFreq": true
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "advanced",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu pântano frequentemente.",
+          "en": "I often pant.",
+          "_grammarFixes": [
+            {
+              "orig": "pantano",
+              "best": "pântano",
+              "rule": "Possível erro ortográfico"
+            }
+          ]
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu plantas após correr.",
+          "en": "You pant after running.",
+          "_grammarFixes": [
+            {
+              "orig": "pantas",
+              "best": "plantas",
+              "rule": "Possível erro ortográfico"
+            }
+          ]
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela planta devido ao calor.",
+          "en": "She pants due to the heat.",
+          "_grammarFixes": [
+            {
+              "orig": "panta",
+              "best": "planta",
+              "rule": "Possível erro ortográfico"
+            }
+          ]
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós pântanos subindo escadas.",
+          "en": "We pant climbing stairs.",
+          "_grammarFixes": [
+            {
+              "orig": "pantamos",
+              "best": "pântanos",
+              "rule": "Possível erro ortográfico"
+            }
+          ]
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês cantam muito rapidamente.",
+          "en": "You pant very quickly.",
+          "_grammarFixes": [
+            {
+              "orig": "pantam",
+              "best": "cantam",
+              "rule": "Possível erro ortográfico"
+            }
+          ]
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles cantam após o treino.",
+          "en": "They pant after training.",
+          "_grammarFixes": [
+            {
+              "orig": "pantam",
+              "best": "cantam",
+              "rule": "Possível erro ortográfico"
+            }
+          ]
+        }
+      ],
+      "past": [],
+      "future-peri": [],
+      "future-simple": []
+    }
   }
 ]
