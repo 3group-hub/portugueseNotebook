@@ -11945,11 +11945,42 @@
     "notes": "",
     "examples": [],
     "addedAt": "14/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
-      "present": [],
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu fico em casa",
+          "en": "I stay home"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu ficas aqui",
+          "en": "You stay here"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela fica triste",
+          "en": "She stays sad"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós ficamos juntos",
+          "en": "We stay together"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês ficam aqui",
+          "en": "You stay here"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles ficam felizes",
+          "en": "They stay happy"
+        }
+      ],
       "past": [],
       "future-peri": [],
       "future-simple": []
