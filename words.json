@@ -10787,40 +10787,40 @@
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu tomo água",
-          "en": "I take water"
+          "pt": "Eu tomo água.",
+          "en": "I drink water."
         },
         {
           "pronoun": "tu",
-          "pt": "Tu tomas café",
-          "en": "You take coffee"
+          "pt": "Tu tomas chá.",
+          "en": "You drink tea."
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela toma chá",
-          "en": "She takes tea"
+          "pt": "Ela toma café.",
+          "en": "She drinks coffee."
         },
         {
           "pronoun": "nós",
-          "pt": "Nós tomamos suco",
-          "en": "We take juice"
+          "pt": "Nós tomamos leite.",
+          "en": "We drink milk."
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês tomam leite",
-          "en": "You take milk"
+          "pt": "Vocês tomam sumo.",
+          "en": "You drink juice."
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles tomam sumo",
-          "en": "They take juice"
+          "pt": "Eles tomam água.",
+          "en": "They drink water."
         }
       ],
       "past": [],
       "future-peri": [],
       "future-simple": []
     },
-    "_generatingTense": "present",
+    "_generatingTense": null,
     "_activeTense": "present"
   }
 ]
