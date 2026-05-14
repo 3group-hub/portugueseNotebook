@@ -11480,7 +11480,52 @@
     "notes": "",
     "examples": [],
     "addedAt": "14/05/2026",
-    "generatingExample": true,
-    "assessingFreq": true
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu ligo o computador",
+          "en": "I connect the computer"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu ligas ao servidor",
+          "en": "You connect to the server"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela liga o telemóvel",
+          "en": "She connects the mobile phone"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós ligamos à ‘internet’",
+          "en": "We connect to the internet",
+          "_grammarFixes": [
+            {
+              "orig": "internet",
+              "best": "‘internet’",
+              "rule": "🇵🇹🎓 Estrangeirismos específicos pt_PT"
+            }
+          ]
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês ligam o jogo",
+          "en": "You connect the game"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles ligam os fios",
+          "en": "They connect the wires"
+        }
+      ],
+      "past": [],
+      "future-peri": [],
+      "future-simple": []
+    }
   }
 ]
