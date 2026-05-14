@@ -11480,7 +11480,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "14/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "common",
     "tenses": {
@@ -11556,10 +11556,55 @@
         }
       ],
       "future-peri": [],
-      "future-simple": []
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu ligarei o computador",
+          "en": "I will connect the computer"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu ligarás o telefone",
+          "en": "You will connect the phone"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela ligará a TV",
+          "en": "She will connect the TV"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós ligaremos o encaminhador",
+          "en": "We will connect the router",
+          "_grammarFixes": [
+            {
+              "orig": "router",
+              "best": "encaminhador",
+              "rule": "Palavras de origem estrangeira evitáveis: router"
+            }
+          ]
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês ligarão o som",
+          "en": "You will connect the sound"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles ligarão a ‘internet’",
+          "en": "They will connect the internet",
+          "_grammarFixes": [
+            {
+              "orig": "internet",
+              "best": "‘internet’",
+              "rule": "🇵🇹🎓 Estrangeirismos específicos pt_PT"
+            }
+          ]
+        }
+      ]
     },
     "_activeTense": "future-simple",
-    "_generatingTense": "future-simple"
+    "_generatingTense": null
   },
   {
     "id": 1778747914459,
