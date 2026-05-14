@@ -12176,7 +12176,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "14/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -12212,11 +12212,42 @@
           "en": "They have dinner out"
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu jantei",
+          "en": "I had dinner"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu jantaste",
+          "en": "You had dinner"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela jantou",
+          "en": "She had dinner"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós jantámos",
+          "en": "We had dinner"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês jantaram",
+          "en": "You had dinner"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles jantaram",
+          "en": "They had dinner"
+        }
+      ],
       "future-peri": [],
       "future-simple": []
     },
-    "_generatingTense": "past",
+    "_generatingTense": null,
     "_activeTense": "past"
   }
 ]
