@@ -11936,5 +11936,16 @@
     },
     "_generatingTense": null,
     "_activeTense": "future-simple"
+  },
+  {
+    "id": 1778748951204,
+    "word": "ficar",
+    "translation": "to stay",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "14/05/2026",
+    "generatingExample": true,
+    "assessingFreq": true
   }
 ]
