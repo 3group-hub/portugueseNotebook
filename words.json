@@ -10893,7 +10893,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "14/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "common",
     "tenses": {
@@ -10969,9 +10969,40 @@
         }
       ],
       "future-peri": [],
-      "future-simple": []
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu levantarei cedo",
+          "en": "I will get up early"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu levantarás o braço",
+          "en": "You will raise your arm"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela levantará a voz",
+          "en": "She will raise her voice"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós levantaremos o prédio",
+          "en": "We will raise the building"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês levantarão o troféu",
+          "en": "You will raise the trophy"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles levantarão a bandeira",
+          "en": "They will raise the flag"
+        }
+      ]
     },
-    "_generatingTense": "future-simple",
+    "_generatingTense": null,
     "_activeTense": "future-simple"
   }
 ]
