@@ -11945,7 +11945,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "14/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -11986,11 +11986,42 @@
           "en": "They stay there"
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu fiquei",
+          "en": "I stayed"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu ficaste",
+          "en": "You stayed"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela ficou",
+          "en": "She stayed"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós ficámos",
+          "en": "We stayed"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês ficaram",
+          "en": "You stayed"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles ficaram",
+          "en": "They stayed"
+        }
+      ],
       "future-peri": [],
       "future-simple": []
     },
-    "_generatingTense": "past",
+    "_generatingTense": null,
     "_activeTense": "past"
   }
 ]
