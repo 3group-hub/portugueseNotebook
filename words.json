@@ -11367,7 +11367,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "14/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -11403,11 +11403,42 @@
           "en": "They arrive tomorrow."
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu cheguei",
+          "en": "I arrived"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu chegaste",
+          "en": "You arrived"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela chegou",
+          "en": "She arrived"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós chegamos",
+          "en": "We arrived"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês chegaram",
+          "en": "You arrived"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles chegaram",
+          "en": "They arrived"
+        }
+      ],
       "future-peri": [],
       "future-simple": []
     },
-    "_generatingTense": "past",
+    "_generatingTense": null,
     "_activeTense": "past"
   }
 ]
