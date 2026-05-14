@@ -11832,7 +11832,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "14/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "common",
     "tenses": {
@@ -11901,9 +11901,40 @@
         }
       ],
       "future-peri": [],
-      "future-simple": []
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu apanharei a bola",
+          "en": "I will catch the ball"
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu apanharás a bola",
+          "en": "You will catch the ball"
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela apanhará a bola",
+          "en": "She will catch the ball"
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós apanharemos a bola",
+          "en": "We will catch the ball"
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês apanharão a bola",
+          "en": "You will catch the ball"
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles apanharão a bola",
+          "en": "They will catch the ball"
+        }
+      ]
     },
-    "_generatingTense": "future-simple",
+    "_generatingTense": null,
     "_activeTense": "future-simple"
   }
 ]
