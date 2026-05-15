@@ -257,16 +257,17 @@
     <div id="fc-setup" style="margin-top:16px;">
       <div class="card" style="border-left:4px solid #1a6b3c;">
         <h2 style="margin:0 0 4px;">🃏 Flashcards</h2>
-        <p style="font-size:13px;color:#888;margin-bottom:14px;">Spaced repetition — your progress is saved on this device. Rate each card and the app schedules your next review automatically.</p>
+        <p style="font-size:13px;color:#888;margin-bottom:4px;">Hear the Portuguese sentence · try to say it · then reveal the English meaning.</p>
+        <p style="font-size:11px;color:#aaa;margin-bottom:14px;">Uses real sentences and verb conjugations (present, past, future). Progress saved on this device.</p>
         <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px;">
-          <button onclick="startFlashcards('due')" class="btn-small" style="color:#1a6b3c;border-color:rgba(26,107,60,0.4);font-size:13px;padding:8px 16px;">
+          <button onclick="startFlashcards('due')" style="padding:9px 18px;border-radius:8px;border:none;background:#1a6b3c;color:#fff;cursor:pointer;font-family:inherit;font-size:13px;font-weight:600;">
             🔔 Review due (<span id="fc-due-count">0</span>)
           </button>
-          <button onclick="startFlashcards('all')" class="btn-small" style="color:#1a3a5c;border-color:rgba(26,58,92,0.3);font-size:13px;padding:8px 16px;">
-            📚 Review all
+          <button onclick="startFlashcards('all')" style="padding:9px 18px;border-radius:8px;border:1px solid #ddd;background:#fff;cursor:pointer;font-family:inherit;font-size:13px;color:#555;">
+            📚 All words
           </button>
-          <button onclick="startFlashcards('new')" class="btn-small" style="color:#b5830a;border-color:rgba(181,131,10,0.3);font-size:13px;padding:8px 16px;">
-            ✨ New words only
+          <button onclick="startFlashcards('new')" style="padding:9px 18px;border-radius:8px;border:1px solid #ddd;background:#fff;cursor:pointer;font-family:inherit;font-size:13px;color:#555;">
+            ✨ New only
           </button>
         </div>
         <div id="fc-stats" style="display:flex;gap:16px;flex-wrap:wrap;font-size:12px;color:#aaa;padding-top:10px;border-top:1px solid #f5efe6;"></div>
@@ -275,44 +276,78 @@
 
     <!-- Active session -->
     <div id="fc-session" class="hidden" style="margin-top:16px;">
-      <div style="background:#f0ebe4;border-radius:4px;height:6px;margin-bottom:16px;overflow:hidden;">
-        <div id="fc-progress" style="height:100%;background:var(--green);border-radius:4px;transition:width 0.3s;width:0%;"></div>
-      </div>
-      <div id="fc-counter" style="text-align:center;font-size:12px;color:#aaa;margin-bottom:12px;"></div>
-
-      <div id="fc-card" style="background:#fff;border-radius:16px;box-shadow:0 4px 20px rgba(0,0,0,0.1);overflow:hidden;min-height:220px;cursor:pointer;" onclick="fcReveal()">
-        <div id="fc-front" style="padding:32px 24px;text-align:center;">
-          <div id="fc-direction" style="font-size:10px;color:#ccc;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:16px;"></div>
-          <div id="fc-question" style="font-size:28px;font-weight:700;color:var(--navy);margin-bottom:8px;"></div>
-          <div id="fc-category" style="font-size:11px;color:#aaa;margin-bottom:20px;"></div>
-          <div style="font-size:12px;color:#ddd;">tap to reveal →</div>
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
+        <div style="flex:1;background:#f0ebe4;border-radius:4px;height:6px;overflow:hidden;">
+          <div id="fc-progress" style="height:100%;background:var(--green);border-radius:4px;transition:width 0.3s;width:0%;"></div>
         </div>
-        <div id="fc-back" class="hidden" style="padding:24px;">
-          <div style="text-align:center;margin-bottom:16px;">
-            <div id="fc-answer" style="font-size:24px;font-weight:700;color:var(--green);margin-bottom:4px;"></div>
-            <button id="fc-speak-btn" class="speak-btn" style="font-size:16px;margin-top:4px;">🔊</button>
+        <span id="fc-counter" style="font-size:12px;color:#aaa;white-space:nowrap;"></span>
+      </div>
+
+      <div id="fc-card" style="background:#fff;border-radius:16px;box-shadow:0 4px 24px rgba(0,0,0,0.1);overflow:hidden;">
+
+        <!-- Word header — always visible -->
+        <div style="padding:16px 20px 12px;border-bottom:1px solid #f5efe6;display:flex;align-items:center;gap:10px;">
+          <div style="flex:1;">
+            <div id="fc-word-pt" style="font-size:20px;font-weight:700;color:var(--navy);"></div>
+            <div id="fc-word-meta" style="font-size:11px;color:#aaa;margin-top:2px;"></div>
           </div>
-          <div id="fc-example" style="background:#fdfaf7;border-radius:8px;padding:10px 12px;margin-bottom:16px;font-size:13px;display:none;">
-            <div id="fc-example-pt" style="color:var(--navy);font-style:italic;margin-bottom:3px;"></div>
-            <div id="fc-example-en" style="color:#aaa;font-size:12px;"></div>
+          <button id="fc-speak-word" class="speak-btn" style="font-size:20px;" onclick="fcSpeakWord()">🔊</button>
+        </div>
+
+        <!-- Front: sentence + mic -->
+        <div id="fc-front" style="padding:20px;">
+          <div style="font-size:10px;color:#aaa;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:8px;">Portuguese sentence</div>
+          <div style="display:flex;align-items:flex-start;gap:8px;margin-bottom:16px;">
+            <div id="fc-sentence-pt" style="font-size:16px;color:var(--navy);font-style:italic;flex:1;line-height:1.5;"></div>
+            <button id="fc-speak-sent" class="speak-btn" style="font-size:18px;flex-shrink:0;" onclick="fcSpeakSentence()">🔊</button>
           </div>
+
+          <!-- Voice practice box -->
+          <div style="background:#f0faf4;border-radius:10px;padding:12px 14px;margin-bottom:16px;border:1px solid rgba(26,107,60,0.2);">
+            <div style="font-size:10px;color:#1a6b3c;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:8px;font-weight:700;">🎤 Speak the sentence</div>
+            <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+              <button id="fc-mic-btn" onclick="fcToggleMic()" style="padding:8px 18px;border-radius:8px;border:none;background:#1a6b3c;color:#fff;cursor:pointer;font-family:inherit;font-size:13px;font-weight:600;">🎤 Speak it</button>
+              <span id="fc-mic-status" style="font-size:12px;color:#888;font-style:italic;"></span>
+            </div>
+            <div id="fc-voice-result" style="display:none;">
+              <div style="font-size:10px;color:#aaa;margin-bottom:3px;">You said:</div>
+              <div id="fc-voice-text" style="font-size:14px;color:#555;font-style:italic;line-height:1.5;margin-bottom:6px;"></div>
+              <div id="fc-voice-score"></div>
+            </div>
+          </div>
+
+          <button onclick="fcReveal()" style="width:100%;padding:13px;border-radius:10px;border:none;background:var(--navy);color:#fff;cursor:pointer;font-family:inherit;font-size:14px;font-weight:600;">
+            Reveal English meaning →
+          </button>
+        </div>
+
+        <!-- Back: English answer + ratings -->
+        <div id="fc-back" class="hidden" style="padding:20px;">
+          <div style="font-size:10px;color:#aaa;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:6px;">English meaning</div>
+          <div id="fc-word-en" style="font-size:22px;font-weight:700;color:var(--green);margin-bottom:4px;"></div>
+          <div style="display:flex;align-items:flex-start;gap:8px;margin-bottom:12px;">
+            <div id="fc-sentence-en" style="font-size:14px;color:#888;font-style:italic;flex:1;line-height:1.5;"></div>
+            <button id="fc-speak-en" class="speak-btn" style="flex-shrink:0;" onclick="fcSpeakEn()">🔊</button>
+          </div>
+          <div id="fc-tense-label" style="display:none;margin-bottom:14px;padding:6px 12px;background:#fef3c7;border-radius:6px;font-size:12px;color:#b5830a;font-weight:600;"></div>
+          <div style="font-size:11px;color:#aaa;text-align:center;margin-bottom:10px;">How well did you know this?</div>
           <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:8px;">
-            <button onclick="fcRate(1)" style="padding:10px 4px;border-radius:8px;border:none;background:#fee2e2;color:#c1440e;cursor:pointer;font-size:12px;font-family:inherit;font-weight:700;">❌<br><span style="font-size:10px;">Again</span></button>
-            <button onclick="fcRate(2)" style="padding:10px 4px;border-radius:8px;border:none;background:#fef3c7;color:#b5830a;cursor:pointer;font-size:12px;font-family:inherit;font-weight:700;">😓<br><span style="font-size:10px;">Hard</span></button>
-            <button onclick="fcRate(3)" style="padding:10px 4px;border-radius:8px;border:none;background:#d1fae5;color:#1a6b3c;cursor:pointer;font-size:12px;font-family:inherit;font-weight:700;">✅<br><span style="font-size:10px;">Good</span></button>
-            <button onclick="fcRate(4)" style="padding:10px 4px;border-radius:8px;border:none;background:#dbeafe;color:#2c5f8a;cursor:pointer;font-size:12px;font-family:inherit;font-weight:700;">🌟<br><span style="font-size:10px;">Easy</span></button>
+            <button onclick="fcRate(1)" style="padding:12px 4px;border-radius:10px;border:none;background:#fee2e2;color:#c1440e;cursor:pointer;font-size:13px;font-family:inherit;font-weight:700;line-height:1.4;">❌<br><span style="font-size:10px;">Again</span></button>
+            <button onclick="fcRate(2)" style="padding:12px 4px;border-radius:10px;border:none;background:#fef3c7;color:#b5830a;cursor:pointer;font-size:13px;font-family:inherit;font-weight:700;line-height:1.4;">😓<br><span style="font-size:10px;">Hard</span></button>
+            <button onclick="fcRate(3)" style="padding:12px 4px;border-radius:10px;border:none;background:#d1fae5;color:#1a6b3c;cursor:pointer;font-size:13px;font-family:inherit;font-weight:700;line-height:1.4;">✅<br><span style="font-size:10px;">Good</span></button>
+            <button onclick="fcRate(4)" style="padding:12px 4px;border-radius:10px;border:none;background:#dbeafe;color:#2c5f8a;cursor:pointer;font-size:13px;font-family:inherit;font-weight:700;line-height:1.4;">🌟<br><span style="font-size:10px;">Easy</span></button>
           </div>
         </div>
       </div>
       <button onclick="endFlashcards()" style="margin-top:14px;width:100%;padding:10px;border-radius:8px;border:1px solid #ddd;background:#fff;cursor:pointer;font-size:13px;font-family:inherit;color:#888;">End session</button>
     </div>
 
-    <!-- Session complete -->
+    <!-- Complete -->
     <div id="fc-complete" class="hidden" style="margin-top:16px;text-align:center;padding:40px 20px;">
-      <div style="font-size:48px;margin-bottom:12px;">🎉</div>
+      <div style="font-size:52px;margin-bottom:12px;">🎉</div>
       <div style="font-size:20px;font-weight:700;color:var(--navy);margin-bottom:8px;">Session complete!</div>
-      <div id="fc-complete-msg" style="font-size:14px;color:#888;margin-bottom:20px;"></div>
-      <button onclick="initFlashcards()" class="btn-small" style="color:#1a6b3c;border-color:rgba(26,107,60,0.4);font-size:13px;padding:8px 16px;">Back to Flashcards</button>
+      <div id="fc-complete-msg" style="font-size:14px;color:#888;margin-bottom:20px;line-height:1.8;"></div>
+      <button onclick="initFlashcards()" style="padding:10px 24px;border-radius:8px;border:none;background:#1a6b3c;color:#fff;cursor:pointer;font-family:inherit;font-size:14px;font-weight:600;">Back to Flashcards</button>
     </div>
   </div>
 
@@ -1070,40 +1105,63 @@ async function applyTranslation(){
   renderWords();
   if(activeTab==='situations') renderViewerPacks();
 }
-// ═══ SPACED REPETITION — VIEWER (progress saved in localStorage) ══════════
-// SRS data stored separately from words.json so it doesn't affect the main app
-// Format: { wordId: { interval, ease, reps, nextReview, lastRating } }
-
+// ═══ SPACED REPETITION — VIEWER ══════════════════════════════════════════
 const SRS_KEY = 'pt-ro-srs';
 function loadSRSData(){ return JSON.parse(localStorage.getItem(SRS_KEY)||'{}'); }
 function saveSRSData(d){ localStorage.setItem(SRS_KEY, JSON.stringify(d)); }
 
 function srsUpdate(wordId, rating){
-  const data = loadSRSData();
-  if(!data[wordId]) data[wordId] = { interval:1, ease:2.5, reps:0, nextReview:0 };
-  const s = data[wordId];
-  if(rating===1){ s.reps=0; s.interval=1; s.ease=Math.max(1.3,s.ease-0.2); }
-  else if(rating===2){ s.reps++; s.interval=Math.max(1,Math.round(s.interval*1.2)); s.ease=Math.max(1.3,s.ease-0.15); }
-  else if(rating===3){ s.reps++; if(s.reps===1)s.interval=1; else if(s.reps===2)s.interval=4; else s.interval=Math.round(s.interval*s.ease); }
-  else { s.reps++; if(s.reps===1)s.interval=4; else s.interval=Math.round(s.interval*s.ease*1.3); s.ease=Math.min(4.0,s.ease+0.15); }
-  const next=new Date(); next.setDate(next.getDate()+s.interval);
-  s.nextReview=next.getTime(); s.lastRating=rating; s.lastReviewDate=Date.now();
+  const data=loadSRSData();
+  if(!data[wordId]) data[wordId]={interval:1,ease:2.5,reps:0,nextReview:0};
+  const s=data[wordId];
+  if(rating===1){s.reps=0;s.interval=1;s.ease=Math.max(1.3,s.ease-0.2);}
+  else if(rating===2){s.reps++;s.interval=Math.max(1,Math.round(s.interval*1.2));s.ease=Math.max(1.3,s.ease-0.15);}
+  else if(rating===3){s.reps++;if(s.reps===1)s.interval=1;else if(s.reps===2)s.interval=4;else s.interval=Math.round(s.interval*s.ease);}
+  else{s.reps++;s.interval=s.reps===1?4:Math.round(s.interval*s.ease*1.3);s.ease=Math.min(4.0,s.ease+0.15);}
+  const next=new Date();next.setDate(next.getDate()+s.interval);
+  s.nextReview=next.getTime();s.lastRating=rating;s.lastReviewDate=Date.now();
   saveSRSData(data);
 }
+function srsIsDue(wordId){const d=loadSRSData();return !d[wordId]||d[wordId].nextReview<=Date.now();}
+function srsDueCount(){return words.filter(w=>srsIsDue(w.id)).length;}
 
-function srsIsDue(wordId){
-  const d=loadSRSData();
-  return !d[wordId] || d[wordId].nextReview <= Date.now();
+// ── Build card from word — picks a sentence or conjugation row ──────────────
+function buildCard(w){
+  const tenseNames={
+    'present':'Presente do Indicativo',
+    'past':'Pretérito Perfeito Simples',
+    'future-peri':'Futuro Perifrástico',
+    'future-simple':'Futuro Simples'
+  };
+  // Verbs: randomly pick tense + row
+  if(w.category==='Verb' && w.tenses){
+    const avail=Object.entries(w.tenses).filter(([,rows])=>rows?.length>0);
+    if(avail.length){
+      const [tense,rows]=avail[Math.floor(Math.random()*avail.length)];
+      const row=rows[Math.floor(Math.random()*rows.length)];
+      return {wordId:w.id,word:w.word,translation:w.translation,category:w.category,
+              freq:w.freq,sentencePt:row.pt,sentenceEn:row.en,
+              tenseLabel:row.pronoun+' · '+(tenseNames[tense]||tense)};
+    }
+  }
+  // Regular word: pick an example sentence
+  const exs=w.examples||(w.example?[w.example]:[]);
+  if(exs.length){
+    const ex=exs[Math.floor(Math.random()*exs.length)];
+    return {wordId:w.id,word:w.word,translation:w.translation,category:w.category,
+            freq:w.freq,sentencePt:ex.pt,sentenceEn:ex.en,tenseLabel:null};
+  }
+  // Fallback bare word
+  return {wordId:w.id,word:w.word,translation:w.translation,category:w.category,
+          freq:w.freq,sentencePt:w.word,sentenceEn:w.translation,tenseLabel:null};
 }
 
-function srsDueCount(){ return words.filter(w=>srsIsDue(w.id)).length; }
-
-// ── Session state ──────────────────────────────────────────────────────────
-let fcQueue=[], fcIndex=0, fcStats={again:0,hard:0,good:0,easy:0};
-let fcShowPT=true;
+// ── Session state ─────────────────────────────────────────────────────────
+let fcQueue=[],fcIndex=0,fcStats={again:0,hard:0,good:0,easy:0};
+let fcCurrentCard=null,fcMicActive=false,fcRecognition=null;
 
 function initFlashcards(){
-  if(!words.length){ setTimeout(initFlashcards, 800); return; } // wait for words to load
+  if(!words.length){setTimeout(initFlashcards,800);return;}
   document.getElementById('fc-setup').classList.remove('hidden');
   document.getElementById('fc-session').classList.add('hidden');
   document.getElementById('fc-complete').classList.add('hidden');
@@ -1122,13 +1180,13 @@ function initFlashcards(){
 
 function startFlashcards(mode){
   fcStats={again:0,hard:0,good:0,easy:0};
-  let pool;
   const data=loadSRSData();
+  let pool;
   if(mode==='due') pool=words.filter(w=>srsIsDue(w.id));
   else if(mode==='new') pool=words.filter(w=>!data[w.id]);
   else pool=[...words];
-  if(!pool.length){ showToast(mode==='due'?'No words due today! 🎉':'No words available.'); return; }
-  fcQueue=pool.sort(()=>Math.random()-0.5);
+  if(!pool.length){showToast(mode==='due'?'No words due today! 🎉':'No words available.');return;}
+  fcQueue=pool.sort(()=>Math.random()-0.5).map(buildCard);
   fcIndex=0;
   document.getElementById('fc-setup').classList.add('hidden');
   document.getElementById('fc-complete').classList.add('hidden');
@@ -1137,72 +1195,151 @@ function startFlashcards(mode){
 }
 
 function showFCCard(){
-  const w=fcQueue[fcIndex]; if(!w){ showComplete(); return; }
-  fcShowPT=Math.random()>0.3;
+  const card=fcQueue[fcIndex];
+  if(!card){showComplete();return;}
+  fcCurrentCard=card;
   const pct=Math.round((fcIndex/fcQueue.length)*100);
   document.getElementById('fc-progress').style.width=pct+'%';
-  document.getElementById('fc-counter').textContent=`${fcIndex+1} / ${fcQueue.length}`;
-  document.getElementById('fc-direction').textContent=fcShowPT?'What does this mean?':'How do you say this in Portuguese?';
-  document.getElementById('fc-question').textContent=fcShowPT?w.word:w.translation;
-  const color=CAT_COLORS[w.category]||'#555';
-  document.getElementById('fc-category').innerHTML=`
-    <span style="background:${color}20;color:${color};padding:2px 8px;border-radius:8px;font-size:11px;">${w.category}</span>
-    ${w.freq?`<span style="margin-left:6px;color:${FREQ_TIERS[w.freq]?.color||'#aaa'};font-size:11px;">${FREQ_TIERS[w.freq]?.cefrShort||''}</span>`:''}
-  `;
+  document.getElementById('fc-counter').textContent=(fcIndex+1)+' / '+fcQueue.length;
+  // Word header
+  document.getElementById('fc-word-pt').textContent=card.word;
+  const color=CAT_COLORS[card.category]||'#555';
+  const ft=FREQ_TIERS[card.freq];
+  document.getElementById('fc-word-meta').innerHTML=
+    '<span style="background:'+color+'20;color:'+color+';padding:1px 7px;border-radius:8px;font-size:10px;">'+card.category+'</span>'+
+    (ft?'<span style="color:'+ft.color+';font-size:10px;margin-left:6px;">'+ft.cefrShort+'</span>':'');
+  // Sentence
+  document.getElementById('fc-sentence-pt').textContent=card.sentencePt;
+  // Reset mic UI
+  document.getElementById('fc-voice-result').style.display='none';
+  document.getElementById('fc-mic-status').textContent='';
+  const mb=document.getElementById('fc-mic-btn');
+  mb.textContent='🎤 Speak it'; mb.style.background='#1a6b3c';
+  // Show front hide back
   document.getElementById('fc-front').classList.remove('hidden');
   document.getElementById('fc-back').classList.add('hidden');
+  // Auto-play Portuguese sentence
+  setTimeout(()=>speakText(card.sentencePt,'pt-PT',null),400);
+}
+
+function fcSpeakWord(){if(fcCurrentCard)speakText(fcCurrentCard.word,'pt-PT',document.getElementById('fc-speak-word'));}
+function fcSpeakSentence(){if(fcCurrentCard)speakText(fcCurrentCard.sentencePt,'pt-PT',document.getElementById('fc-speak-sent'));}
+function fcSpeakEn(){if(fcCurrentCard)speakText(fcCurrentCard.sentenceEn,'en-GB',document.getElementById('fc-speak-en'));}
+
+// ── Mic / voice comparison ────────────────────────────────────────────────
+function fcToggleMic(){
+  if(fcMicActive){fcStopMic();return;}
+  if(!('webkitSpeechRecognition' in window||'SpeechRecognition' in window)){
+    showToast('🎤 Speech recognition not available — try Chrome.');return;
+  }
+  speechSynthesis.cancel();
+  fcStartMic();
+}
+
+function fcStartMic(){
+  const Rec=window.SpeechRecognition||window.webkitSpeechRecognition;
+  fcRecognition=new Rec();
+  fcRecognition.lang='pt-PT';
+  fcRecognition.continuous=false;
+  fcRecognition.interimResults=true;
+  fcMicActive=true;
+  const btn=document.getElementById('fc-mic-btn');
+  btn.textContent='⏹ Stop'; btn.style.background='#c1440e';
+  document.getElementById('fc-mic-status').textContent='Listening… say the sentence above';
+  fcRecognition.onresult=(e)=>{
+    const t=[...e.results].map(r=>r[0].transcript).join('');
+    document.getElementById('fc-voice-text').textContent=t;
+    document.getElementById('fc-voice-result').style.display='block';
+    if(e.results[e.results.length-1].isFinal){
+      showVoiceScore(fcCompare(t,fcCurrentCard?.sentencePt||''),t,fcCurrentCard?.sentencePt||'');
+    }
+  };
+  fcRecognition.onerror=()=>{fcStopMic();document.getElementById('fc-mic-status').textContent='Could not hear — try again';};
+  fcRecognition.onend=()=>fcStopMic();
+  fcRecognition.start();
+}
+
+function fcStopMic(){
+  fcMicActive=false;
+  if(fcRecognition){try{fcRecognition.stop();}catch(e){}fcRecognition=null;}
+  const btn=document.getElementById('fc-mic-btn');
+  btn.textContent='🎤 Speak it'; btn.style.background='#1a6b3c';
+  document.getElementById('fc-mic-status').textContent='';
+}
+
+function fcCompare(spoken,target){
+  const clean=s=>s.toLowerCase().replace(/[.,!?;:«»]/g,'').trim();
+  const sw=clean(spoken).split(/\s+/);
+  const tw=clean(target).split(/\s+/);
+  const matches=sw.filter(w=>tw.includes(w)).length;
+  return Math.round((matches/Math.max(tw.length,1))*100);
+}
+
+function showVoiceScore(score,spoken,target){
+  const el=document.getElementById('fc-voice-score');
+  const clean=s=>s.toLowerCase().replace(/[.,!?;:«»]/g,'').trim();
+  const sw=clean(spoken).split(/\s+/);
+  const highlighted=target.split(/\s+/).map(w=>{
+    const m=sw.includes(clean(w));
+    return '<span style="background:'+(m?'#d1fae5':'#fee2e2')+';border-radius:3px;padding:0 2px;">'+w+'</span>';
+  }).join(' ');
+  el.innerHTML=
+    '<div style="font-size:12px;font-weight:700;color:'+(score>=80?'#1a6b3c':score>=50?'#b5830a':'#c1440e')+';">'+
+    (score>=80?'🌟 Excellent!':score>=60?'✅ Good try!':score>=40?'😓 Keep practising':'❌ Try again')+
+    ' — '+score+'% match</div>'+
+    '<div style="font-size:11px;color:#888;margin-top:4px;">Target: '+highlighted+'</div>';
+  document.getElementById('fc-voice-result').style.display='block';
 }
 
 function fcReveal(){
-  const w=fcQueue[fcIndex]; if(!w) return;
-  const answer=fcShowPT?w.translation:w.word;
-  document.getElementById('fc-answer').textContent=answer;
-  const sb=document.getElementById('fc-speak-btn');
-  sb.onclick=()=>speakText(fcShowPT?w.translation:w.word, fcShowPT?'en-GB':'pt-PT', sb);
-  const examples=w.examples||(w.example?[w.example]:[]);
-  const exDiv=document.getElementById('fc-example');
-  if(examples.length){
-    document.getElementById('fc-example-pt').textContent='«'+examples[0].pt+'»';
-    document.getElementById('fc-example-en').textContent=examples[0].en;
-    exDiv.style.display='block';
-  } else { exDiv.style.display='none'; }
+  if(!fcCurrentCard)return;
+  fcStopMic();
+  document.getElementById('fc-word-en').textContent=fcCurrentCard.translation;
+  document.getElementById('fc-sentence-en').textContent=fcCurrentCard.sentenceEn;
+  const tl=document.getElementById('fc-tense-label');
+  if(fcCurrentCard.tenseLabel){tl.textContent=fcCurrentCard.tenseLabel;tl.style.display='block';}
+  else tl.style.display='none';
   document.getElementById('fc-front').classList.add('hidden');
   document.getElementById('fc-back').classList.remove('hidden');
-  if(!fcShowPT) speakText(w.word,'pt-PT',null);
+  setTimeout(()=>speakText(fcCurrentCard.sentenceEn,'en-GB',null),300);
 }
 
 function fcRate(rating){
-  const w=fcQueue[fcIndex]; if(!w) return;
-  srsUpdate(w.id, rating);
+  if(!fcCurrentCard)return;
+  srsUpdate(fcCurrentCard.wordId,rating);
   if(rating===1)fcStats.again++;
   else if(rating===2)fcStats.hard++;
   else if(rating===3)fcStats.good++;
   else fcStats.easy++;
-  if(rating===1 && fcIndex+5<fcQueue.length) fcQueue.splice(fcIndex+5,0,w);
+  if(rating===1&&fcIndex+5<fcQueue.length){
+    const w=words.find(x=>x.id===fcCurrentCard.wordId);
+    if(w)fcQueue.splice(fcIndex+5,0,buildCard(w));
+  }
   fcIndex++;
-  if(fcIndex>=fcQueue.length) showComplete();
+  if(fcIndex>=fcQueue.length)showComplete();
   else showFCCard();
 }
 
 function showComplete(){
   document.getElementById('fc-session').classList.add('hidden');
   document.getElementById('fc-complete').classList.remove('hidden');
-  const s=fcStats, total=s.again+s.hard+s.good+s.easy;
+  const s=fcStats,total=s.again+s.hard+s.good+s.easy;
   const score=total?Math.round(((s.good+s.easy)/total)*100):0;
-  document.getElementById('fc-complete-msg').innerHTML=`
-    You reviewed <strong>${total}</strong> cards · Score: <strong>${score}%</strong><br>
-    <span style="color:#c1440e;">❌ ${s.again} again</span> ·
-    <span style="color:#b5830a;">😓 ${s.hard} hard</span> ·
-    <span style="color:#1a6b3c;">✅ ${s.good} good</span> ·
-    <span style="color:#2c5f8a;">🌟 ${s.easy} easy</span><br>
-    <span style="font-size:12px;color:#aaa;margin-top:4px;display:block;">Next review scheduled automatically.</span>
-  `;
+  document.getElementById('fc-complete-msg').innerHTML=
+    'You reviewed <strong>'+total+'</strong> cards · Score: <strong>'+score+'%</strong><br>'+
+    '<span style="color:#c1440e;">❌ '+s.again+' again</span> · '+
+    '<span style="color:#b5830a;">😓 '+s.hard+' hard</span> · '+
+    '<span style="color:#1a6b3c;">✅ '+s.good+' good</span> · '+
+    '<span style="color:#2c5f8a;">🌟 '+s.easy+' easy</span><br>'+
+    '<span style="font-size:12px;color:#aaa;margin-top:4px;display:block;">Next review scheduled automatically.</span>';
 }
 
 function endFlashcards(){
+  fcStopMic();
   document.getElementById('fc-session').classList.add('hidden');
   initFlashcards();
 }
+
 function countryGrammar(name, gender, plural=false){
   const art = gender==='none' ? '' : plural ? (gender==='m'?'os':'as') : (gender==='m'?'o':'a');
   const artDef = art ? art+' ' : '';
