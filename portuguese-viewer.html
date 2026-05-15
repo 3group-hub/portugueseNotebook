@@ -296,7 +296,9 @@
 
         <!-- Front: sentence + mic -->
         <div id="fc-front" style="padding:20px;">
-          <div style="font-size:10px;color:#aaa;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:8px;">Portuguese sentence</div>
+          <div style="font-size:10px;color:#aaa;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:8px;">
+            Portuguese sentence · <span id="fc-card-mode" style="color:#2c5f8a;font-weight:700;"></span>
+          </div>
           <div style="display:flex;align-items:flex-start;gap:8px;margin-bottom:16px;">
             <div id="fc-sentence-pt" style="font-size:16px;color:var(--navy);font-style:italic;flex:1;line-height:1.5;"></div>
             <button id="fc-speak-sent" class="speak-btn" style="font-size:18px;flex-shrink:0;" onclick="fcSpeakSentence()">🔊</button>
@@ -321,15 +323,33 @@
           </button>
         </div>
 
-        <!-- Back: English answer + ratings -->
+        <!-- Back: answer + ratings -->
         <div id="fc-back" class="hidden" style="padding:20px;">
-          <div style="font-size:10px;color:#aaa;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:6px;">English meaning</div>
-          <div id="fc-word-en" style="font-size:22px;font-weight:700;color:var(--green);margin-bottom:4px;"></div>
-          <div style="display:flex;align-items:flex-start;gap:8px;margin-bottom:12px;">
-            <div id="fc-sentence-en" style="font-size:14px;color:#888;font-style:italic;flex:1;line-height:1.5;"></div>
-            <button id="fc-speak-en" class="speak-btn" style="flex-shrink:0;" onclick="fcSpeakEn()">🔊</button>
+
+          <!-- Full PT sentence revealed (highlighted) -->
+          <div style="background:#f0faf4;border-radius:8px;padding:10px 12px;margin-bottom:12px;">
+            <div style="display:flex;align-items:flex-start;gap:8px;">
+              <div style="flex:1;">
+                <div style="font-size:10px;color:#1a6b3c;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:4px;font-weight:700;">Portuguese</div>
+                <div id="fc-sentence-pt-revealed" style="font-size:15px;color:var(--navy);line-height:1.5;font-style:italic;"></div>
+              </div>
+              <button class="speak-btn" style="font-size:18px;flex-shrink:0;" onclick="speakText(fcCurrentCard.sentencePt,'pt-PT',this)">🔊</button>
+            </div>
           </div>
-          <div id="fc-tense-label" style="display:none;margin-bottom:14px;padding:6px 12px;background:#fef3c7;border-radius:6px;font-size:12px;color:#b5830a;font-weight:600;"></div>
+
+          <!-- English answer -->
+          <div style="background:#f8f8ff;border-radius:8px;padding:10px 12px;margin-bottom:12px;">
+            <div style="display:flex;align-items:flex-start;gap:8px;">
+              <div style="flex:1;">
+                <div style="font-size:10px;color:#2c5f8a;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:4px;font-weight:700;">English · <span id="fc-word-en" style="font-size:13px;font-weight:700;color:var(--green);"></span></div>
+                <div id="fc-sentence-en" style="font-size:14px;color:#555;font-style:italic;line-height:1.5;"></div>
+              </div>
+              <button id="fc-speak-en" class="speak-btn" style="flex-shrink:0;" onclick="fcSpeakEn()">🔊</button>
+            </div>
+          </div>
+
+          <div id="fc-tense-label" style="display:none;margin-bottom:12px;padding:6px 12px;background:#fef3c7;border-radius:6px;font-size:12px;color:#b5830a;font-weight:600;text-align:center;"></div>
+
           <div style="font-size:11px;color:#aaa;text-align:center;margin-bottom:10px;">How well did you know this?</div>
           <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:8px;">
             <button onclick="fcRate(1)" style="padding:12px 4px;border-radius:10px;border:none;background:#fee2e2;color:#c1440e;cursor:pointer;font-size:13px;font-family:inherit;font-weight:700;line-height:1.4;">❌<br><span style="font-size:10px;">Again</span></button>
@@ -1125,35 +1145,76 @@ function srsUpdate(wordId, rating){
 function srsIsDue(wordId){const d=loadSRSData();return !d[wordId]||d[wordId].nextReview<=Date.now();}
 function srsDueCount(){return words.filter(w=>srsIsDue(w.id)).length;}
 
-// ── Build card from word — picks a sentence or conjugation row ──────────────
+// ── Build card from word ─────────────────────────────────────────────────────
+// fillBlank: 50% chance the target word is replaced with ___
 function buildCard(w){
   const tenseNames={
     'present':'Presente do Indicativo',
     'past':'Pretérito Perfeito Simples',
-    'future-peri':'Futuro Perifrástico',
+    'future-peri':'Futuro Perifrástico (ir + inf.)',
     'future-simple':'Futuro Simples'
   };
-  // Verbs: randomly pick tense + row
+  let sentencePt='', sentenceEn='', tenseLabel=null, targetWord=w.word;
+
+  // Verbs: pick random tense + pronoun row
   if(w.category==='Verb' && w.tenses){
     const avail=Object.entries(w.tenses).filter(([,rows])=>rows?.length>0);
     if(avail.length){
       const [tense,rows]=avail[Math.floor(Math.random()*avail.length)];
       const row=rows[Math.floor(Math.random()*rows.length)];
-      return {wordId:w.id,word:w.word,translation:w.translation,category:w.category,
-              freq:w.freq,sentencePt:row.pt,sentenceEn:row.en,
-              tenseLabel:row.pronoun+' · '+(tenseNames[tense]||tense)};
+      sentencePt=row.pt; sentenceEn=row.en;
+      // For verbs, the target is the conjugated form found in the sentence
+      // Try to find which word in sentence matches a conjugation form
+      const allForms=[...Object.values(w.tenses||{})].flat().map(r=>r?.pt?.split(' ')||[]).flat();
+      const sentWords=row.pt.split(' ');
+      targetWord = sentWords.find(sw=> allForms.some(f=>f.toLowerCase()===sw.toLowerCase().replace(/[.,!?]/g,''))) || w.word;
+      tenseLabel=row.pronoun+' · '+(tenseNames[tense]||tense);
     }
   }
-  // Regular word: pick an example sentence
-  const exs=w.examples||(w.example?[w.example]:[]);
-  if(exs.length){
-    const ex=exs[Math.floor(Math.random()*exs.length)];
-    return {wordId:w.id,word:w.word,translation:w.translation,category:w.category,
-            freq:w.freq,sentencePt:ex.pt,sentenceEn:ex.en,tenseLabel:null};
+
+  // Regular word or fallback: pick example sentence
+  if(!sentencePt){
+    const exs=w.examples||(w.example?[w.example]:[]);
+    if(exs.length){
+      const ex=exs[Math.floor(Math.random()*exs.length)];
+      sentencePt=ex.pt; sentenceEn=ex.en;
+      // Find the word (or its plural/conjugated form) in the sentence
+      const sentLower=sentencePt.toLowerCase();
+      const base=w.word.toLowerCase();
+      const sentWords=sentencePt.split(/\s+/);
+      targetWord=sentWords.find(sw=>sw.toLowerCase().replace(/[.,!?;:«»]/g,'').startsWith(base.slice(0,4)))||w.word;
+    } else {
+      sentencePt=w.word; sentenceEn=w.translation;
+      targetWord=w.word;
+    }
   }
-  // Fallback bare word
-  return {wordId:w.id,word:w.word,translation:w.translation,category:w.category,
-          freq:w.freq,sentencePt:w.word,sentenceEn:w.translation,tenseLabel:null};
+
+  // 50% chance: fill-in-the-blank (replace target word with ___)
+  const fillBlank = Math.random() > 0.5 && sentencePt !== w.word;
+
+  return {
+    wordId:w.id, word:w.word, translation:w.translation,
+    category:w.category, freq:w.freq,
+    sentencePt, sentenceEn, tenseLabel,
+    targetWord, fillBlank
+  };
+}
+
+// Highlight targetWord in sentence HTML
+function highlightWord(sentence, target, color='#c1440e'){
+  if(!target||!sentence) return sentence;
+  const escaped=target.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+  return sentence.replace(new RegExp('('+escaped+')', 'i'),
+    '<strong style="color:'+color+';text-decoration:underline;font-style:normal;">$1</strong>');
+}
+
+// Build blank sentence (replace target with ___) 
+function blankSentence(sentence, target){
+  if(!target||!sentence) return sentence;
+  const escaped=target.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+  const blanks='_'.repeat(Math.max(3,target.length));
+  return sentence.replace(new RegExp('('+escaped+')', 'i'),
+    '<strong style="color:#2c5f8a;background:#e8f0fb;padding:0 4px;border-radius:3px;font-style:normal;">'+blanks+'</strong>');
 }
 
 // ── Session state ─────────────────────────────────────────────────────────
@@ -1209,7 +1270,16 @@ function showFCCard(){
     '<span style="background:'+color+'20;color:'+color+';padding:1px 7px;border-radius:8px;font-size:10px;">'+card.category+'</span>'+
     (ft?'<span style="color:'+ft.color+';font-size:10px;margin-left:6px;">'+ft.cefrShort+'</span>':'');
   // Sentence
-  document.getElementById('fc-sentence-pt').textContent=card.sentencePt;
+  // Show sentence — blanked or highlighted depending on mode
+  const sentEl=document.getElementById('fc-sentence-pt');
+  const modeEl=document.getElementById('fc-card-mode');
+  if(card.fillBlank){
+    modeEl.textContent='fill in the blank';
+    sentEl.innerHTML=blankSentence(card.sentencePt,card.targetWord);
+  } else {
+    modeEl.textContent='word highlighted';
+    sentEl.innerHTML=highlightWord(card.sentencePt,card.targetWord,'#c1440e');
+  }
   // Reset mic UI
   document.getElementById('fc-voice-result').style.display='none';
   document.getElementById('fc-mic-status').textContent='';
@@ -1294,14 +1364,19 @@ function showVoiceScore(score,spoken,target){
 function fcReveal(){
   if(!fcCurrentCard)return;
   fcStopMic();
+  // Show the full highlighted Portuguese sentence (answer to blank if fill-in mode)
+  const ptRevEl=document.getElementById('fc-sentence-pt-revealed');
+  if(ptRevEl) ptRevEl.innerHTML=highlightWord(fcCurrentCard.sentencePt,fcCurrentCard.targetWord,'#1a6b3c');
   document.getElementById('fc-word-en').textContent=fcCurrentCard.translation;
-  document.getElementById('fc-sentence-en').textContent=fcCurrentCard.sentenceEn;
+  document.getElementById('fc-sentence-en').innerHTML=fcCurrentCard.sentenceEn;
   const tl=document.getElementById('fc-tense-label');
   if(fcCurrentCard.tenseLabel){tl.textContent=fcCurrentCard.tenseLabel;tl.style.display='block';}
   else tl.style.display='none';
   document.getElementById('fc-front').classList.add('hidden');
   document.getElementById('fc-back').classList.remove('hidden');
-  setTimeout(()=>speakText(fcCurrentCard.sentenceEn,'en-GB',null),300);
+  // Play PT sentence first, then EN after a pause
+  speakText(fcCurrentCard.sentencePt,'pt-PT',null);
+  setTimeout(()=>speakText(fcCurrentCard.sentenceEn,'en-GB',null),2800);
 }
 
 function fcRate(rating){
