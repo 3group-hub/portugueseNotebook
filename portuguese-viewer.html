@@ -138,6 +138,7 @@
       <button class="tab-btn" data-tab="situations">🗺️ Situations</button>
       <button class="tab-btn" data-tab="nations">🌍 Nations</button>
       <button class="tab-btn" data-tab="professions">💼 Professions</button>
+      <button class="tab-btn" data-tab="patterns">🔤 Patterns</button>
       <button class="tab-btn" data-tab="alphabet">🔤 Alphabet</button>
       <button class="tab-btn" data-tab="numbers">🔢 Numbers</button>
       <button onclick="toggleEditPanel()" style="padding:5px 10px;border-radius:14px;border:1px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.1);color:#a8c4d8;cursor:pointer;font-size:12px;font-family:inherit;">✏️ Edit access</button>
@@ -226,6 +227,24 @@
       </div>
     </div>
     <div id="professionsGrid" style="margin-top:12px;display:flex;flex-direction:column;gap:4px;"></div>
+  </div>
+
+  <!-- ═══ PATTERNS TAB ═══ -->
+  <div id="tab-patterns" class="hidden">
+    <div class="card" style="border-left:4px solid #7b4ea0;margin-top:16px;">
+      <h2 style="margin:0 0 4px;">🔤 Word Patterns</h2>
+      <p style="font-size:12px;color:#aaa;margin-bottom:12px;">Portuguese endings that mirror English/Latin · sorted by level · your vocab highlighted in purple</p>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;">
+        <input id="patternSearch" class="search-inp" placeholder="🔍 Search…" oninput="renderPatterns()" style="max-width:200px;" />
+        <select id="patternLevel" onchange="renderPatterns()" style="padding:5px 10px;border-radius:7px;border:1px solid #e8e0d8;font-size:13px;font-family:inherit;background:#fafafa;">
+          <option value="">All levels</option>
+          <option value="A1">A1</option><option value="A2">A2</option>
+          <option value="B1">B1</option><option value="B2">B2</option>
+          <option value="C1">C1</option><option value="C2">C2</option>
+        </select>
+      </div>
+    </div>
+    <div id="patternsGrid" style="margin-top:12px;display:flex;flex-direction:column;gap:6px;"></div>
   </div>
 
   <!-- ═══ ALPHABET TAB ═══ -->
@@ -1796,6 +1815,100 @@ function toggleViewerNote(id){
   renderViewerNotes();
 }
 
+
+// ═══ WORD PATTERNS ════════════════════════════════════════════════════════
+const WORD_PATTERNS=[
+  {id:'ao',level:'A1',freq:1,pattern:'-ão',rule:'One of the most common Portuguese endings — covers masculine nouns and borrowed Latin words.',english:'No single English equivalent. Plural: -ões or -ães.',tip:'⚠️ Not a cognate but essential — almost always masculine.',color:'#c1440e',
+    words:[{pt:'cão',en:'dog',cefr:'A1'},{pt:'pão',en:'bread',cefr:'A1'},{pt:'mão',en:'hand',cefr:'A1'},{pt:'irmão',en:'brother',cefr:'A1'},{pt:'coração',en:'heart',cefr:'A1'},{pt:'avião',en:'aeroplane',cefr:'A1'},{pt:'botão',en:'button',cefr:'A2'},{pt:'leão',en:'lion',cefr:'A2'},{pt:'balcão',en:'counter',cefr:'B1'},{pt:'sermão',en:'sermon',cefr:'B2'}]},
+  {id:'al',level:'A1',freq:2,pattern:'-al',rule:'Directly mirrors English -al. Nearly always means the same thing in both languages.',english:'-al → -al (natural→natural, cultural→cultural)',tip:'✅ True cognate — almost always safe to guess!',color:'#1a6b3c',
+    words:[{pt:'natural',en:'natural',cefr:'A1'},{pt:'normal',en:'normal',cefr:'A1'},{pt:'final',en:'final',cefr:'A1'},{pt:'local',en:'local',cefr:'A1'},{pt:'nacional',en:'national',cefr:'A2'},{pt:'especial',en:'special',cefr:'A2'},{pt:'social',en:'social',cefr:'B1'},{pt:'formal',en:'formal',cefr:'B1'},{pt:'digital',en:'digital',cefr:'B1'},{pt:'cultural',en:'cultural',cefr:'B1'},{pt:'fundamental',en:'fundamental',cefr:'B2'}]},
+  {id:'cao',level:'A2',freq:1,pattern:'-ção / -são',rule:'The most productive pattern in Portuguese. From Latin -tio / -sio.',english:'-tion/-sion → -ção/-são (education→educação, situation→situação)',tip:'✅ If you know the English -tion word, you know the Portuguese!',color:'#2c5f8a',
+    words:[{pt:'nação',en:'nation',cefr:'A2'},{pt:'estação',en:'station/season',cefr:'A1'},{pt:'informação',en:'information',cefr:'A1'},{pt:'situação',en:'situation',cefr:'A2'},{pt:'educação',en:'education',cefr:'A2'},{pt:'comunicação',en:'communication',cefr:'B1'},{pt:'organização',en:'organisation',cefr:'B1'},{pt:'televisão',en:'television',cefr:'A1'},{pt:'decisão',en:'decision',cefr:'B1'},{pt:'tradição',en:'tradition',cefr:'B1'},{pt:'habitação',en:'housing',cefr:'B2'},{pt:'investigação',en:'investigation',cefr:'B2'}]},
+  {id:'mente',level:'A2',freq:2,pattern:'-mente',rule:'Turns adjectives into adverbs. Exactly like English -ly.',english:'-ly → -mente (exactly→exatamente, normally→normalmente)',tip:'✅ Add -mente to any adjective to get the adverb.',color:'#1a6b3c',
+    words:[{pt:'exatamente',en:'exactly',cefr:'A2'},{pt:'normalmente',en:'normally',cefr:'A2'},{pt:'rapidamente',en:'rapidly',cefr:'A2'},{pt:'geralmente',en:'generally',cefr:'B1'},{pt:'certamente',en:'certainly',cefr:'B1'},{pt:'provavelmente',en:'probably',cefr:'B1'},{pt:'simplesmente',en:'simply',cefr:'B1'},{pt:'absolutamente',en:'absolutely',cefr:'B2'},{pt:'especialmente',en:'especially',cefr:'B1'},{pt:'frequentemente',en:'frequently',cefr:'B2'}]},
+  {id:'dade',level:'A2',freq:3,pattern:'-dade / -tade',rule:'Forms abstract feminine nouns. From Latin -tas / -tatis.',english:'-ty/-ity → -dade (city→cidade, liberty→liberdade)',tip:'✅ Strong cognate — always feminine.',color:'#b5830a',
+    words:[{pt:'cidade',en:'city',cefr:'A1'},{pt:'verdade',en:'truth',cefr:'A2'},{pt:'liberdade',en:'freedom',cefr:'B1'},{pt:'universidade',en:'university',cefr:'A2'},{pt:'qualidade',en:'quality',cefr:'B1'},{pt:'realidade',en:'reality',cefr:'B1'},{pt:'sociedade',en:'society',cefr:'B2'},{pt:'identidade',en:'identity',cefr:'B2'},{pt:'vontade',en:'will/desire',cefr:'B1'},{pt:'capacidade',en:'capacity',cefr:'B2'}]},
+  {id:'ista',level:'A2',freq:4,pattern:'-ista',rule:'Refers to a person who does or believes in something. Identical to English -ist.',english:'-ist → -ista (tourist→turista, artist→artista)',tip:'✅ Same for masculine and feminine — just change the article.',color:'#8a3a5c',
+    words:[{pt:'turista',en:'tourist',cefr:'A1'},{pt:'artista',en:'artist',cefr:'A2'},{pt:'jornalista',en:'journalist',cefr:'B1'},{pt:'dentista',en:'dentist',cefr:'A1'},{pt:'realista',en:'realistic',cefr:'B2'},{pt:'especialista',en:'specialist',cefr:'B2'},{pt:'economista',en:'economist',cefr:'B2'},{pt:'optimista',en:'optimist',cefr:'B1'},{pt:'pessimista',en:'pessimist',cefr:'B1'}]},
+  {id:'oso',level:'B1',freq:1,pattern:'-oso / -osa',rule:'Forms adjectives meaning "full of". Like English -ous.',english:'-ous → -oso/a (famous→famoso, generous→generoso)',tip:'✅ Masculine -oso, feminine -osa.',color:'#1a6b3c',
+    words:[{pt:'famoso',en:'famous',cefr:'A2'},{pt:'perigoso',en:'dangerous',cefr:'B1'},{pt:'generoso',en:'generous',cefr:'B1'},{pt:'delicioso',en:'delicious',cefr:'A2'},{pt:'nervoso',en:'nervous',cefr:'B1'},{pt:'curioso',en:'curious',cefr:'B1'},{pt:'misterioso',en:'mysterious',cefr:'B2'},{pt:'ambicioso',en:'ambitious',cefr:'B2'},{pt:'religioso',en:'religious',cefr:'B2'}]},
+  {id:'avel',level:'B1',freq:2,pattern:'-ável / -ível',rule:'Forms adjectives meaning "capable of being". Mirrors English -able / -ible.',english:'-able/-ible → -ável/-ível (possible→possível, responsible→responsável)',tip:'✅ -ável from -ar verbs, -ível from -er/-ir verbs.',color:'#2c5f8a',
+    words:[{pt:'possível',en:'possible',cefr:'A2'},{pt:'impossível',en:'impossible',cefr:'A2'},{pt:'responsável',en:'responsible',cefr:'B1'},{pt:'provável',en:'probable',cefr:'B1'},{pt:'notável',en:'notable',cefr:'B2'},{pt:'razoável',en:'reasonable',cefr:'B2'},{pt:'incrível',en:'incredible',cefr:'B1'},{pt:'terrível',en:'terrible',cefr:'B1'},{pt:'flexível',en:'flexible',cefr:'B2'}]},
+  {id:'encia',level:'B1',freq:3,pattern:'-ência / -ância',rule:'Forms abstract nouns. From Latin -entia / -antia.',english:'-ence/-ance → -ência/-ância (experience→experiência)',tip:'✅ Almost always feminine. Strong Latin cognate.',color:'#7b4ea0',
+    words:[{pt:'experiência',en:'experience',cefr:'B1'},{pt:'importância',en:'importance',cefr:'B1'},{pt:'diferença',en:'difference',cefr:'A2'},{pt:'emergência',en:'emergency',cefr:'B1'},{pt:'independência',en:'independence',cefr:'B1'},{pt:'violência',en:'violence',cefr:'B2'},{pt:'resistência',en:'resistance',cefr:'B2'},{pt:'paciência',en:'patience',cefr:'B1'},{pt:'eficiência',en:'efficiency',cefr:'C1'}]},
+  {id:'ario',level:'B2',freq:1,pattern:'-ário / -ária',rule:'Forms nouns for places, persons, adjectives. Like English -ary.',english:'-ary → -ário/a (vocabulary→vocabulário)',tip:'⚠️ biblioteca (library) is a false friend.',color:'#b5830a',
+    words:[{pt:'vocabulário',en:'vocabulary',cefr:'A2'},{pt:'secretária',en:'secretary/desk',cefr:'B1'},{pt:'necessário',en:'necessary',cefr:'B1'},{pt:'ordinário',en:'ordinary',cefr:'B2'},{pt:'voluntário',en:'volunteer',cefr:'B2'},{pt:'extraordinário',en:'extraordinary',cefr:'B2'},{pt:'veterinário',en:'veterinarian',cefr:'B1'},{pt:'itinerário',en:'itinerary',cefr:'C1'}]},
+  {id:'ismo',level:'B2',freq:2,pattern:'-ismo',rule:'Forms nouns for doctrines, movements, practices. Identical to English -ism.',english:'-ism → -ismo (tourism→turismo, realism→realismo)',tip:'✅ Perfect cognate — always masculine.',color:'#1a3a5c',
+    words:[{pt:'turismo',en:'tourism',cefr:'A2'},{pt:'realismo',en:'realism',cefr:'B2'},{pt:'jornalismo',en:'journalism',cefr:'B1'},{pt:'modernismo',en:'modernism',cefr:'C1'},{pt:'racismo',en:'racism',cefr:'B2'},{pt:'feminismo',en:'feminism',cefr:'B2'},{pt:'romantismo',en:'romanticism',cefr:'C1'}]},
+  {id:'ura',level:'B2',freq:3,pattern:'-ura',rule:'Forms abstract or concrete nouns. From Latin -ura. Always feminine.',english:'-ure → -ura (culture→cultura, literature→literatura)',tip:'✅ Good cognate — always feminine.',color:'#8a3a5c',
+    words:[{pt:'cultura',en:'culture',cefr:'B1'},{pt:'literatura',en:'literature',cefr:'B1'},{pt:'temperatura',en:'temperature',cefr:'A2'},{pt:'estrutura',en:'structure',cefr:'B2'},{pt:'arquitetura',en:'architecture',cefr:'B1'},{pt:'aventura',en:'adventure',cefr:'B1'},{pt:'leitura',en:'reading',cefr:'B1'},{pt:'escultura',en:'sculpture',cefr:'B2'}]},
+  {id:'ivo',level:'C1',freq:1,pattern:'-ivo / -iva',rule:'Forms adjectives meaning "tending to". From Latin -ivus.',english:'-ive → -ivo/a (active→ativo, creative→criativo)',tip:'✅ Masculine -ivo, feminine -iva.',color:'#7b4ea0',
+    words:[{pt:'ativo',en:'active',cefr:'B1'},{pt:'criativo',en:'creative',cefr:'B1'},{pt:'positivo',en:'positive',cefr:'B1'},{pt:'negativo',en:'negative',cefr:'B1'},{pt:'objetivo',en:'objective',cefr:'B2'},{pt:'executivo',en:'executive',cefr:'B2'},{pt:'definitivo',en:'definitive',cefr:'C1'},{pt:'progressivo',en:'progressive',cefr:'C1'}]},
+  {id:'tico',level:'C1',freq:2,pattern:'-tico / -tica',rule:'Forms adjectives related to a field. Like English -tic/-tical.',english:'-tic → -tico/a (dramatic→dramático, fantastic→fantástico)',tip:'✅ Very common in academic language.',color:'#2c5f8a',
+    words:[{pt:'fantástico',en:'fantastic',cefr:'A2'},{pt:'dramático',en:'dramatic',cefr:'B2'},{pt:'prático',en:'practical',cefr:'B1'},{pt:'político',en:'political',cefr:'B1'},{pt:'automático',en:'automatic',cefr:'B2'},{pt:'sistemático',en:'systematic',cefr:'C1'},{pt:'democrático',en:'democratic',cefr:'B2'},{pt:'simbólico',en:'symbolic',cefr:'C1'}]},
+  {id:'false',level:'C1',freq:3,pattern:'⚠️ False friends',rule:'Words that look like English cognates but mean something different.',english:'⚠️ These are traps for English speakers',tip:'❌ Do not guess — memorise each one.',color:'#c1440e',
+    words:[{pt:'condução',en:'driving (not conduction)',cefr:'B2'},{pt:'realização',en:'achievement (not realisation)',cefr:'B2'},{pt:'reunião',en:'meeting (not reunion)',cefr:'B1'},{pt:'borracha',en:'rubber/eraser',cefr:'A2'},{pt:'polvo',en:'octopus',cefr:'B1'},{pt:'sensível',en:'sensitive (not sensible)',cefr:'B2'},{pt:'parente',en:'relative (not parent)',cefr:'B1'}]},
+  {id:'ude',level:'C2',freq:1,pattern:'-ude / -idão',rule:'Forms abstract nouns from adjectives. From Latin -udo/-udinis.',english:'-ude → similar (attitude→atitude, solitude→solidão)',tip:'✅ Reliable cognate for high-level abstract nouns.',color:'#1a3a5c',
+    words:[{pt:'atitude',en:'attitude',cefr:'B2'},{pt:'solidão',en:'solitude',cefr:'B2'},{pt:'gratidão',en:'gratitude',cefr:'B2'},{pt:'altitude',en:'altitude',cefr:'B2'},{pt:'magnitude',en:'magnitude',cefr:'C1'},{pt:'consciência',en:'conscience',cefr:'C1'}]},
+];
+const CEFR_COLORS={'A1':'#1a6b3c','A2':'#2c5f8a','B1':'#b5830a','B2':'#7b4ea0','C1':'#c1440e','C2':'#1a3a5c'};
+let expandedPattern=null;
+
+function renderPatterns(){
+  const q=(document.getElementById('patternSearch')?.value||'').toLowerCase();
+  const lvl=document.getElementById('patternLevel')?.value||'';
+  const el=document.getElementById('patternsGrid'); if(!el) return;
+  const userWords=new Set(words.map(w=>w.word.toLowerCase()));
+  const filtered=WORD_PATTERNS.filter(p=>(!lvl||p.level===lvl)&&(!q||p.pattern.toLowerCase().includes(q)||p.words.some(w=>(w.pt||'').toLowerCase().includes(q)||(w.en||'').toLowerCase().includes(q))));
+  if(!filtered.length){el.innerHTML='<p style="color:#bbb;font-size:13px;padding:16px;">No patterns match.</p>';return;}
+  const byLevel={};
+  filtered.forEach(p=>{if(!byLevel[p.level])byLevel[p.level]=[];byLevel[p.level].push(p);});
+  el.innerHTML=['A1','A2','B1','B2','C1','C2'].filter(l=>byLevel[l]).map(level=>{
+    const lc=CEFR_COLORS[level];
+    return `<div style="margin-bottom:4px;">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;">
+        <span style="background:${lc};color:#fff;font-size:11px;font-weight:800;padding:3px 12px;border-radius:8px;">${level}</span>
+        <span style="font-size:11px;color:#aaa;">${byLevel[level].length} pattern${byLevel[level].length!==1?'s':''}</span>
+      </div>
+      ${byLevel[level].map(p=>{
+        const isExp=expandedPattern===p.id;
+        const um=p.words.filter(w=>userWords.has((w.pt||'').toLowerCase()));
+        return `<div style="background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 1px 5px rgba(0,0,0,0.07);border:2px solid ${isExp?p.color+'55':'transparent'};margin-bottom:6px;">
+          <div onclick="togglePattern('${p.id}')" style="display:flex;align-items:center;gap:12px;padding:13px 16px;cursor:pointer;user-select:none;border-left:4px solid ${p.color};">
+            <div style="flex:1;min-width:0;">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:3px;">
+                <span style="font-size:17px;font-weight:800;color:${p.color};font-family:monospace;">${p.pattern}</span>
+                <span style="font-size:10px;color:#fff;background:${lc};padding:1px 8px;border-radius:6px;font-weight:700;">${level}</span>
+                ${um.length?`<span style="font-size:10px;color:#7b4ea0;background:#7b4ea015;padding:1px 7px;border-radius:6px;border:1px solid #7b4ea025;">📖 ${um.length} in your vocab</span>`:''}
+              </div>
+              <div style="font-size:12px;color:#888;">${p.english}</div>
+            </div>
+            <span style="font-size:12px;color:#ccc;display:inline-block;${isExp?'transform:rotate(180deg)':''}">▼</span>
+          </div>
+          ${isExp?`<div style="border-top:1px solid #f5f5f5;padding:14px 16px;">
+            <div style="background:#f8f9fc;border-radius:8px;padding:10px 12px;margin-bottom:12px;">
+              <div style="font-size:12px;color:#555;line-height:1.6;margin-bottom:4px;">${p.rule}</div>
+              <div style="font-size:12px;font-weight:700;color:${p.color};">${p.tip}</div>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:4px;">
+              ${p.words.map(w=>{
+                const iv=userWords.has((w.pt||'').toLowerCase());
+                return `<div style="display:flex;align-items:center;gap:10px;padding:8px 10px;border-radius:8px;background:${iv?'#f3f0ff':'#fafafa'};border:1px solid ${iv?'#7b4ea030':'#f0ebe4'};">
+                  <span style="font-size:13px;font-weight:700;color:${iv?'#7b4ea0':'var(--navy)'};flex:1;">${w.pt}${iv?' 📖':''}</span>
+                  <button class="speak-btn" onclick="speakText('${escQ(w.pt)}','pt-PT',this)">🔊</button>
+                  <span style="font-size:12px;color:#888;flex:1;">${w.en}</span>
+                  <span style="font-size:10px;font-weight:700;color:${CEFR_COLORS[w.cefr]||'#aaa'};background:${CEFR_COLORS[w.cefr]||'#aaa'}15;padding:1px 6px;border-radius:5px;text-align:center;">${w.cefr}</span>
+                </div>`;
+              }).join('')}
+            </div>
+          </div>`:''}
+        </div>`;
+      }).join('')}
+    </div>`;
+  }).join('');
+}
+function togglePattern(id){expandedPattern=expandedPattern===id?null:id;renderPatterns();}
+
 function showToast(msg){
   const t=document.getElementById('toast');
   t.textContent=msg; t.classList.add('show');
@@ -1983,13 +2096,14 @@ document.querySelectorAll('.tab-btn').forEach(btn=>{
     document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
     btn.classList.add('active');
     activeTab = btn.dataset.tab;
-    ['vocab','flashcards','notes','situations','nations','professions','alphabet','numbers'].forEach(t=>document.getElementById('tab-'+t).classList.add('hidden'));
+    ['vocab','flashcards','notes','situations','nations','professions','patterns','alphabet','numbers'].forEach(t=>document.getElementById('tab-'+t).classList.add('hidden'));
     document.getElementById('tab-'+activeTab).classList.remove('hidden');
     if(activeTab==='situations'){ allSitPacks=[]; openSitPack=null; loadSituations(); }
     if(activeTab==='nations') renderNations();
     if(activeTab==='professions') renderProfessions();
     if(activeTab==='flashcards') initFlashcards();
     if(activeTab==='notes') initViewerNotes();
+    if(activeTab==='patterns') renderPatterns();
   });
 });
 loadFromGitHub();
