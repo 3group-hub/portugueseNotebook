@@ -12546,7 +12546,65 @@
     "notes": "",
     "examples": [],
     "addedAt": "19/05/2026",
-    "generatingExample": true,
-    "assessingFreq": true
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu penteou o cabelo todos os dias.",
+          "en": "I comb my hair every day.",
+          "_grammarFixes": [
+            {
+              "orig": "penteo",
+              "best": "penteou",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu penteias o teu cabelo sozinho.",
+          "en": "You comb your hair alone.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela penteia o cabelo da filha.",
+          "en": "She combs her daughter's hair.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós penteamos o cabelo juntos.",
+          "en": "We comb our hair together.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês penteiam o cabelo reciprocamente.",
+          "en": "You comb each other's hair.",
+          "_grammarFixes": [
+            {
+              "orig": "um ao outro",
+              "best": "reciprocamente",
+              "rule": "2. Expressões prolixas: um ao outro"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles penteiam o cabelo dos filhos.",
+          "en": "They comb their children's hair.",
+          "_grammarChecked": true
+        }
+      ],
+      "past": [],
+      "future-peri": [],
+      "future-simple": []
+    }
   }
 ]
