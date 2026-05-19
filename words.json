@@ -12483,9 +12483,16 @@
     "translation": "So much to do",
     "category": "Noun",
     "notes": "",
-    "examples": [],
+    "examples": [
+      {
+        "pt": "Há tanto para fazer hoje",
+        "en": "There's so much to do today",
+        "_grammarChecked": true
+      }
+    ],
     "addedAt": "19/05/2026",
-    "generatingExample": true,
-    "assessingFreq": true
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common"
   }
 ]
