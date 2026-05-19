@@ -12327,9 +12327,23 @@
     "translation": "Daily life",
     "category": "Noun",
     "notes": "",
-    "examples": [],
+    "examples": [
+      {
+        "pt": "A vida diária é muito ocupada",
+        "en": "Daily life is very busy",
+        "_grammarFixes": [
+          {
+            "orig": "diaria",
+            "best": "diária",
+            "rule": "Possível erro ortográfico"
+          }
+        ],
+        "_grammarChecked": true
+      }
+    ],
     "addedAt": "19/05/2026",
-    "generatingExample": true,
-    "assessingFreq": true
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common"
   }
 ]
