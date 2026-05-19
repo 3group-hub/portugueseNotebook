@@ -12354,45 +12354,45 @@
     "notes": "",
     "examples": [],
     "addedAt": "19/05/2026",
-    "generatingExample": false,
+    "generatingExample": true,
     "assessingFreq": false,
     "freq": "common",
     "tenses": {
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu descrevo o que vejo",
-          "en": "I describe what I see",
+          "pt": "Eu descrevo o meu dia.",
+          "en": "I describe my day.",
           "_grammarChecked": true
         },
         {
           "pronoun": "tu",
-          "pt": "Tu descreves bem",
-          "en": "You describe well",
+          "pt": "Tu descreves o teu projeto.",
+          "en": "You describe your project.",
           "_grammarChecked": true
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela descreve com detalhes",
-          "en": "She describes with details",
+          "pt": "Ela descreve a sua ideia.",
+          "en": "She describes her idea.",
           "_grammarChecked": true
         },
         {
           "pronoun": "nós",
-          "pt": "Nós descrevemos o projeto",
-          "en": "We describe the project",
+          "pt": "Nós descrevemos o nosso trabalho.",
+          "en": "We describe our work.",
           "_grammarChecked": true
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês descrevem tudo",
-          "en": "You describe everything",
+          "pt": "Vocês descrevem a vossa equipa.",
+          "en": "You describe your team.",
           "_grammarChecked": true
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles descrevem o que sabem",
-          "en": "They describe what they know",
+          "pt": "Eles descrevem o seu sucesso.",
+          "en": "They describe their success.",
           "_grammarChecked": true
         }
       ],
@@ -12400,7 +12400,7 @@
       "future-peri": [],
       "future-simple": []
     },
-    "_generatingTense": "present",
-    "_activeTense": "present"
+    "_generatingTense": "future-simple",
+    "_activeTense": "future-simple"
   }
 ]
