@@ -12345,5 +12345,16 @@
     "generatingExample": false,
     "assessingFreq": false,
     "freq": "common"
+  },
+  {
+    "id": 1779180006468,
+    "word": "descrever",
+    "translation": "describe",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/05/2026",
+    "generatingExample": true,
+    "assessingFreq": true
   }
 ]
