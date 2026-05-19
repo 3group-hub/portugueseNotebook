@@ -12648,23 +12648,6 @@
     "notes": "",
     "examples": [
       {
-        "pt": "Eu não mel avento tarde",
-        "en": "I don't get up late",
-        "_grammarFixes": [
-          {
-            "orig": "me lavento",
-            "best": "mel avento",
-            "rule": "Possível erro ortográfico"
-          },
-          {
-            "orig": "nao",
-            "best": "não",
-            "rule": "Possível erro ortográfico"
-          }
-        ],
-        "_grammarChecked": true
-      },
-      {
         "pt": "Eu não me levanto tarde todos os dias",
         "en": "I don't get up late every day",
         "_grammarChecked": true
