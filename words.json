@@ -12639,5 +12639,16 @@
     "generatingExample": false,
     "assessingFreq": false,
     "freq": "common"
+  },
+  {
+    "id": 1779181129395,
+    "word": "Eu nao me lavento tarde",
+    "translation": "I don't get up late",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/05/2026",
+    "generatingExample": true,
+    "assessingFreq": true
   }
 ]
