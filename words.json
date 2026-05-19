@@ -12618,10 +12618,25 @@
         "pt": "Eu levanto-me sempre cedo",
         "en": "I always get up early",
         "_grammarChecked": true
+      },
+      {
+        "pt": "Eu levanto-me sempre cedo para trabalhar",
+        "en": "I always get up early to work",
+        "_grammarChecked": true
+      },
+      {
+        "pt": "Eu levanto-me sempre cedo para correr",
+        "en": "I always get up early to run",
+        "_grammarChecked": true
+      },
+      {
+        "pt": "Eu levanto-me sempre cedo para estudar",
+        "en": "I always get up early to study",
+        "_grammarChecked": true
       }
     ],
     "addedAt": "19/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "common"
   }
