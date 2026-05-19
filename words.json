@@ -12621,7 +12621,7 @@
       }
     ],
     "addedAt": "19/05/2026",
-    "generatingExample": false,
+    "generatingExample": true,
     "assessingFreq": false,
     "freq": "common"
   }
