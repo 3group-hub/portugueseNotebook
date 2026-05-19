@@ -12354,7 +12354,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "19/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "common",
     "tenses": {
@@ -12398,9 +12398,46 @@
       ],
       "past": [],
       "future-peri": [],
-      "future-simple": []
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu descreverei o projeto",
+          "en": "I will describe the project",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu descreverás o erro",
+          "en": "You will describe the mistake",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela descreverá o problema",
+          "en": "She will describe the problem",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós descreveremos o plano",
+          "en": "We will describe the plan",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês descreverão o tema",
+          "en": "You will describe the topic",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles descreverão o produto",
+          "en": "They will describe the product",
+          "_grammarChecked": true
+        }
+      ]
     },
-    "_generatingTense": "future-simple",
+    "_generatingTense": null,
     "_activeTense": "future-simple"
   }
 ]
