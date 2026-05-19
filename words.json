@@ -12519,9 +12519,23 @@
     "translation": "does exercise on the weekend",
     "category": "Noun",
     "notes": "",
-    "examples": [],
+    "examples": [
+      {
+        "pt": "Ela faz exército ao fim de semana",
+        "en": "She does exercise on the weekend",
+        "_grammarFixes": [
+          {
+            "orig": "exercico",
+            "best": "exército",
+            "rule": "Possível erro ortográfico"
+          }
+        ],
+        "_grammarChecked": true
+      }
+    ],
     "addedAt": "19/05/2026",
-    "generatingExample": true,
-    "assessingFreq": true
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common"
   }
 ]
