@@ -12512,5 +12512,16 @@
     "generatingExample": false,
     "assessingFreq": false,
     "freq": "common"
+  },
+  {
+    "id": 1779180511168,
+    "word": "faz exercico ao fim de semana",
+    "translation": "does exercise on the weekend",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/05/2026",
+    "generatingExample": true,
+    "assessingFreq": true
   }
 ]
