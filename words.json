@@ -12646,9 +12646,28 @@
     "translation": "I don't get up late",
     "category": "Noun",
     "notes": "",
-    "examples": [],
+    "examples": [
+      {
+        "pt": "Eu não mel avento tarde",
+        "en": "I don't get up late",
+        "_grammarFixes": [
+          {
+            "orig": "me lavento",
+            "best": "mel avento",
+            "rule": "Possível erro ortográfico"
+          },
+          {
+            "orig": "nao",
+            "best": "não",
+            "rule": "Possível erro ortográfico"
+          }
+        ],
+        "_grammarChecked": true
+      }
+    ],
     "addedAt": "19/05/2026",
-    "generatingExample": true,
-    "assessingFreq": true
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common"
   }
 ]
