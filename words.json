@@ -12613,9 +12613,16 @@
     "translation": "I always get up early",
     "category": "Noun",
     "notes": "",
-    "examples": [],
+    "examples": [
+      {
+        "pt": "Eu levanto-me sempre cedo",
+        "en": "I always get up early",
+        "_grammarChecked": true
+      }
+    ],
     "addedAt": "19/05/2026",
-    "generatingExample": true,
-    "assessingFreq": true
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common"
   }
 ]
