@@ -12501,9 +12501,16 @@
     "translation": "parties",
     "category": "Noun",
     "notes": "",
-    "examples": [],
+    "examples": [
+      {
+        "pt": "Gosto de ir a festas com amigos",
+        "en": "I like going to parties with friends",
+        "_grammarChecked": true
+      }
+    ],
     "addedAt": "19/05/2026",
-    "generatingExample": true,
-    "assessingFreq": true
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common"
   }
 ]
