@@ -12354,7 +12354,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "19/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "common",
     "tenses": {
@@ -12396,7 +12396,44 @@
           "_grammarChecked": true
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu descrevi o quadro.",
+          "en": "I described the picture.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu descreveste o livro.",
+          "en": "You described the book.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela descreveu a paisagem.",
+          "en": "She described the landscape.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós descrevemos a cidade.",
+          "en": "We described the city.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês descreveram o filme.",
+          "en": "You described the movie.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles descreveram o acidente.",
+          "en": "They described the accident.",
+          "_grammarChecked": true
+        }
+      ],
       "future-peri": [],
       "future-simple": [
         {
@@ -12437,7 +12474,7 @@
         }
       ]
     },
-    "_generatingTense": "past",
+    "_generatingTense": null,
     "_activeTense": "past"
   }
 ]
