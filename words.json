@@ -12476,5 +12476,16 @@
     },
     "_generatingTense": null,
     "_activeTense": "past"
+  },
+  {
+    "id": 1779180281722,
+    "word": "Tanto para fazer",
+    "translation": "So much to do",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/05/2026",
+    "generatingExample": true,
+    "assessingFreq": true
   }
 ]
