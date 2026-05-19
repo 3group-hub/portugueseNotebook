@@ -12354,11 +12354,48 @@
     "notes": "",
     "examples": [],
     "addedAt": "19/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "common",
     "tenses": {
-      "present": [],
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu descrevo o que vejo",
+          "en": "I describe what I see",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu descreves bem",
+          "en": "You describe well",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela descreve com detalhes",
+          "en": "She describes with details",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós descrevemos o projeto",
+          "en": "We describe the project",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês descrevem tudo",
+          "en": "You describe everything",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles descrevem o que sabem",
+          "en": "They describe what they know",
+          "_grammarChecked": true
+        }
+      ],
       "past": [],
       "future-peri": [],
       "future-simple": []
