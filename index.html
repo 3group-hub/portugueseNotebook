@@ -3091,23 +3091,109 @@ const VERB_PREP_PAIRS = [
 ];
 
 const PREP_QUIZ = [
-  {sentence:'Vivo ___ Lisboa.',blank:'em',options:['em','de','para','com'],answer:'em',hint:'Use em for location'},
-  {sentence:'Gosto ___ música portuguesa.',blank:'de',options:['de','em','para','por'],answer:'de',hint:'gostar + de'},
-  {sentence:'Vou ___ supermercado.',blank:'ao',options:['ao','para','pelo','na'],answer:'ao',hint:'ir + a → ao (a + o)'},
-  {sentence:'Este livro é ___ ti.',blank:'para',options:['para','por','de','a'],answer:'para',hint:'para = for (recipient)'},
-  {sentence:'O livro está ___ a mesa.',blank:'sobre',options:['sobre','em','de','por'],answer:'sobre',hint:'sobre = on top of'},
-  {sentence:'Café ___ leite, por favor.',blank:'com',options:['com','de','para','sem'],answer:'com',hint:'com = with'},
-  {sentence:'Penso ___ ti todos os dias.',blank:'em',options:['em','de','com','para'],answer:'em',hint:'pensar + em'},
-  {sentence:'Fico aqui ___ as cinco horas.',blank:'até',options:['até','para','por','desde'],answer:'até',hint:'até = until'},
-  {sentence:'Saí ___ casaco hoje.',blank:'sem',options:['sem','com','de','por'],answer:'sem',hint:'sem = without'},
-  {sentence:'Espero ___ ti.',blank:'por',options:['por','de','para','com'],answer:'por',hint:'esperar + por'},
-  {sentence:'Passei ___ parque.',blank:'pelo',options:['pelo','no','ao','para'],answer:'pelo',hint:'por + o → pelo'},
-  {sentence:'Sonhei ___ ti ontem.',blank:'contigo',options:['contigo','comigo','de ti','em ti'],answer:'contigo',hint:'com + ti → contigo'},
+  // em — location
+  {sentence:'Vivo ___ Lisboa.',answer:'em',options:['em','de','para','com'],hint:'em = in/at (location)'},
+  {sentence:'Estou ___ casa.',answer:'em',options:['em','de','para','por'],hint:'em + a = na, but em casa has no article'},
+  {sentence:'O livro está ___ cima da mesa.',answer:'em',options:['em','sobre','de','por'],hint:'em cima de = on top of'},
+  {sentence:'Nasci ___ março.',answer:'em',options:['em','de','a','para'],hint:'em = in (months)'},
+  {sentence:'Trabalhamos ___ silêncio.',answer:'em',options:['em','com','de','por'],hint:'em silêncio = in silence'},
+  {sentence:'Estás ___ escola agora?',answer:'na',options:['na','da','para','pela'],hint:'em + a = na'},
+  {sentence:'O gato está ___ jardim.',answer:'no',options:['no','do','ao','pelo'],hint:'em + o = no'},
+  {sentence:'Pus o dinheiro ___ bolsa.',answer:'na',options:['na','da','à','pela'],hint:'em + a = na'},
+  // de — origin/possession/material
+  {sentence:'Sou ___ Portugal.',answer:'de',options:['de','em','para','a'],hint:'de = from (origin)'},
+  {sentence:'Este é o carro ___ professor.',answer:'do',options:['do','ao','pelo','no'],hint:'de + o = do (possession)'},
+  {sentence:'Quero uma chávena ___ café.',answer:'de',options:['de','com','para','por'],hint:'de = of (content)'},
+  {sentence:'Preciso ___ ajuda.',answer:'de',options:['de','em','com','para'],hint:'precisar + de'},
+  {sentence:'Gosto ___ música portuguesa.',answer:'de',options:['de','em','para','por'],hint:'gostar + de'},
+  {sentence:'A mesa é feita ___ madeira.',answer:'de',options:['de','em','com','por'],hint:'feita de = made of'},
+  {sentence:'Venho ___ reunião.',answer:'de',options:['de','em','da','para'],hint:'de = from (coming from somewhere)'},
+  {sentence:'Lembro-me ___ ti.',answer:'de',options:['de','em','a','por'],hint:'lembrar-se + de'},
+  // a — direction/time/verbs
+  {sentence:'Vou ___ supermercado.',answer:'ao',options:['ao','para','no','pelo'],hint:'ir + a → ao (a + o)'},
+  {sentence:'Cheguei ___ Lisboa ontem.',answer:'a',options:['a','em','para','de'],hint:'chegar + a (arrival)'},
+  {sentence:'Começo ___ trabalhar às nove.',answer:'a',options:['a','de','em','para'],hint:'começar + a + infinitive'},
+  {sentence:'Ela ajudou-me ___ estudar.',answer:'a',options:['a','de','em','para'],hint:'ajudar + a + infinitive'},
+  {sentence:'Respondeu ___ email.',answer:'ao',options:['ao','para o','pelo','no'],hint:'responder + a → ao (a + o)'},
+  {sentence:'Chegamos ___ oito da manhã.',answer:'às',options:['às','nas','pelas','das'],hint:'a + as = às (time)'},
+  {sentence:'Assisto ___ aula todos os dias.',answer:'à',options:['à','da','para a','pela'],hint:'assistir + a → à (a + a)'},
+  // para — purpose/destination/recipient
+  {sentence:'Este presente é ___ ti.',answer:'para',options:['para','por','de','a'],hint:'para = for (recipient)'},
+  {sentence:'Ele foi ___ casa.',answer:'para',options:['para','a','em','de'],hint:'para = permanent/final destination'},
+  {sentence:'Estudo ___ aprender.',answer:'para',options:['para','por','de','a'],hint:'para + infinitive = in order to'},
+  {sentence:'Tenho trabalho ___ amanhã.',answer:'para',options:['para','por','até','de'],hint:'para = deadline (for/by)'},
+  {sentence:'Ela partiu ___ França.',answer:'para',options:['para','a','em','de'],hint:'para = going to (one-way/permanent)'},
+  {sentence:'Fiz isto ___ te ajudar.',answer:'para',options:['para','por','de','com'],hint:'para = in order to (purpose)'},
+  // por — cause/agent/exchange/duration
+  {sentence:'Espero ___ ti.',answer:'por',options:['por','de','para','com'],hint:'esperar + por'},
+  {sentence:'Pago dois euros ___ dia.',answer:'por',options:['por','de','em','para'],hint:'por = per'},
+  {sentence:'Andei ___ parque.',answer:'pelo',options:['pelo','no','ao','para o'],hint:'por + o = pelo (through)'},
+  {sentence:'Foi escrito ___ professora.',answer:'pela',options:['pela','da','para a','na'],hint:'por + a = pela (agent in passive)'},
+  {sentence:'Perguntou ___ mim.',answer:'por',options:['por','de','a','em'],hint:'perguntar por = to ask about'},
+  {sentence:'Ficou ___ uma hora.',answer:'por',options:['por','de','em','durante'],hint:'por = duration'},
+  {sentence:'Paguei cinquenta euros ___ livro.',answer:'pelo',options:['pelo','ao','do','para o'],hint:'por + o = pelo (exchange)'},
+  // com — with/ingredient
+  {sentence:'Vem ___ !',answer:'comigo',options:['comigo','contigo','com mim','com eu'],hint:'com + mim = comigo'},
+  {sentence:'Ela saiu ___ amigos.',answer:'com',options:['com','de','para','entre'],hint:'com = with (company)'},
+  {sentence:'Café ___ leite, por favor.',answer:'com',options:['com','de','e','sem'],hint:'com = with (ingredient)'},
+  {sentence:'Sonhei ___ ontem.',answer:'contigo',options:['contigo','comigo','com ti','de ti'],hint:'com + ti = contigo'},
+  {sentence:'Conto ___ a tua ajuda.',answer:'com',options:['com','de','em','para'],hint:'contar com = to count on'},
+  {sentence:'Casou ___ ela.',answer:'com',options:['com','de','a','para'],hint:'casar com = to marry'},
+  // sem — without
+  {sentence:'Saí ___ casaco.',answer:'sem',options:['sem','com','de','por'],hint:'sem = without'},
+  {sentence:'Café ___ açúcar, por favor.',answer:'sem',options:['sem','com','de','por'],hint:'sem = without'},
+  // entre/sobre/até
+  {sentence:'A cidade fica ___ Lisboa e Porto.',answer:'entre',options:['entre','de','por','a'],hint:'entre = between'},
+  {sentence:'Fico aqui ___ as cinco.',answer:'até',options:['até','para','por','a'],hint:'até = until'},
+  {sentence:'Caminhei ___ ao rio.',answer:'até',options:['até','para','por','de'],hint:'até = as far as'},
+  {sentence:'Fala ___ o problema.',answer:'sobre',options:['sobre','de','em','por'],hint:'falar sobre = to talk about'},
+  // contractions test
+  {sentence:'Vou ___ médico amanhã.',answer:'ao',options:['ao','para o','no','do'],hint:'a + o = ao'},
+  {sentence:'Venho ___ mercado.',answer:'do',options:['do','ao','no','pelo'],hint:'de + o = do'},
+  {sentence:'Ela vive ___ cidade.',answer:'na',options:['na','da','à','pela'],hint:'em + a = na'},
+  {sentence:'Já falei ___ diretor.',answer:'com o',options:['com o','ao','pelo','do'],hint:'com has no contraction with o'},
 ];
 
-let prepSection = 'core';
-let quizIndex = 0, quizScore = 0, quizAnswered = false;
+// ── Smart quiz state with mistake tracking ─────────────────────────────────
+let quizQueue = [];       // current ordered queue of question indices
+let quizQueuePos = 0;     // position in queue
+let quizScore = 0;
+let quizTotal = 0;        // total answered
+let quizMistakes = {};    // { index: count } — how many times wrong per question
 let expandedPrep = null;
+
+function initQuizQueue(){
+  // Shuffle all questions
+  quizQueue = [...Array(PREP_QUIZ.length).keys()].sort(()=>Math.random()-0.5);
+  quizQueuePos = 0;
+  quizScore = 0;
+  quizTotal = 0;
+  quizMistakes = {};
+}
+
+function currentQuizQuestion(){
+  if(!quizQueue.length) initQuizQueue();
+  return PREP_QUIZ[quizQueue[quizQueuePos % quizQueue.length]];
+}
+
+function advanceQuiz(wasWrong){
+  const idx = quizQueue[quizQueuePos % quizQueue.length];
+  if(wasWrong){
+    // Insert this question again 2–4 positions ahead
+    const insertAt = quizQueuePos + 2 + Math.floor(Math.random()*3);
+    quizQueue.splice(insertAt, 0, idx);
+    quizMistakes[idx] = (quizMistakes[idx]||0) + 1;
+  }
+  quizQueuePos++;
+  // Reshuffle and extend queue when near the end
+  if(quizQueuePos >= quizQueue.length - 3){
+    const fresh = [...Array(PREP_QUIZ.length).keys()].sort(()=>Math.random()-0.5);
+    quizQueue = [...quizQueue, ...fresh];
+  }
+}
+
+let prepSection = 'core';
+let quizAnswered = false;
 
 function showPrepSection(sec){
   prepSection = sec;
@@ -3240,56 +3326,66 @@ function renderVerbPairs(){
   </div>`;
 }
 
-let quizAnswered2 = false;
 function renderQuiz(){
-  const q = PREP_QUIZ[quizIndex % PREP_QUIZ.length];
+  if(!quizQueue.length) initQuizQueue();
+  const q = currentQuizQuestion();
   const parts = q.sentence.split('___');
+  const mistakeCount = quizMistakes[quizQueue[quizQueuePos % quizQueue.length]] || 0;
   return `
   <div style="background:#fff;border-radius:12px;padding:16px;box-shadow:0 1px 5px rgba(0,0,0,0.07);">
-    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
-      <span style="font-size:12px;color:#aaa;">Question ${(quizIndex%PREP_QUIZ.length)+1} of ${PREP_QUIZ.length}</span>
-      <span style="font-size:12px;font-weight:700;color:#1a6b3c;">Score: ${quizScore}</span>
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;">
+      <span style="font-size:12px;color:#aaa;">Question ${quizTotal+1} · ${PREP_QUIZ.length} unique questions</span>
+      <span style="font-size:12px;font-weight:700;color:#1a6b3c;">✅ ${quizScore} / ${quizTotal}</span>
     </div>
-    <div style="font-size:18px;color:#1a3a5c;line-height:1.8;margin-bottom:20px;text-align:center;">
-      ${parts[0]}<span style="background:#f0f7ff;border:2px dashed #2c5f8a;border-radius:6px;padding:2px 12px;color:#2c5f8a;font-weight:700;" id="quizBlank">___</span>${parts[1]||''}
+    ${mistakeCount>0?`<div style="font-size:11px;color:#c1440e;margin-bottom:10px;">🔁 Repeating — you've missed this ${mistakeCount} time${mistakeCount>1?'s':''}</div>`:'<div style="margin-bottom:10px;"></div>'}
+    <div style="font-size:20px;color:#1a3a5c;line-height:1.8;margin-bottom:20px;text-align:center;font-weight:500;">
+      ${parts[0]}<span style="background:#f0f7ff;border:2px dashed #2c5f8a;border-radius:6px;padding:2px 14px;color:#2c5f8a;font-weight:700;" id="quizBlank">___</span>${parts[1]||''}
     </div>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:14px;" id="quizOptions">
       ${q.options.map(opt=>`<button onclick="prepQuizAnswer('${escQ(opt)}','${escQ(q.answer)}')"
-        style="padding:12px;border-radius:10px;border:2px solid #f0ebe4;background:#fafafa;cursor:pointer;font-family:inherit;font-size:14px;font-weight:700;color:#1a3a5c;transition:all 0.15s;">
-        ${opt}
-      </button>`).join('')}
+        style="padding:13px 8px;border-radius:10px;border:2px solid #f0ebe4;background:#fafafa;cursor:pointer;font-family:inherit;font-size:15px;font-weight:700;color:#1a3a5c;transition:all 0.15s;">${opt}</button>`).join('')}
     </div>
-    <div id="quizFeedback" style="display:none;padding:10px 12px;border-radius:8px;font-size:13px;margin-bottom:12px;"></div>
+    <div id="quizFeedback" style="display:none;padding:10px 12px;border-radius:8px;font-size:13px;margin-bottom:10px;"></div>
     <div style="font-size:12px;color:#aaa;text-align:center;font-style:italic;">💡 ${q.hint}</div>
-    <button id="quizNextBtn" onclick="quizIndex++;renderPrepositions();" style="display:none;margin-top:12px;width:100%;padding:10px;border-radius:8px;border:none;background:#1a6b3c;color:#fff;cursor:pointer;font-family:inherit;font-size:13px;font-weight:600;">
+    <button id="quizNextBtn" onclick="prepQuizNext()" style="display:none;margin-top:12px;width:100%;padding:11px;border-radius:8px;border:none;background:#1a6b3c;color:#fff;cursor:pointer;font-family:inherit;font-size:13px;font-weight:600;">
       Next question →
+    </button>
+    <button onclick="initQuizQueue();renderPrepositions();" style="margin-top:8px;width:100%;padding:8px;border-radius:8px;border:1px solid #ddd;background:#fff;cursor:pointer;font-family:inherit;font-size:12px;color:#aaa;">
+      🔀 Restart &amp; shuffle
     </button>
   </div>`;
 }
 
+function prepQuizNext(){
+  renderPrepositions();
+}
+
 function prepQuizAnswer(chosen, correct){
-  const fb = document.getElementById('quizFeedback');
+  const fb   = document.getElementById('quizFeedback');
   const blank = document.getElementById('quizBlank');
-  const nextBtn = document.getElementById('quizNextBtn');
-  const btns = document.querySelectorAll('#quizOptions button');
+  const next  = document.getElementById('quizNextBtn');
+  const btns  = document.querySelectorAll('#quizOptions button');
   btns.forEach(b=>b.disabled=true);
-  if(chosen===correct){
+  quizTotal++;
+  const correct2 = chosen === correct;
+  if(correct2){
     quizScore++;
     blank.textContent=correct; blank.style.background='#d1fae5'; blank.style.color='#1a6b3c'; blank.style.borderColor='#1a6b3c';
     fb.style.background='#d1fae5'; fb.style.color='#1a6b3c';
-    fb.innerHTML='✅ Correct! <strong>'+correct+'</strong> is right.';
+    fb.innerHTML='✅ Correct! <strong>'+correct+'</strong>';
     btns.forEach(b=>{ if(b.textContent.trim()===correct){b.style.background='#d1fae5';b.style.borderColor='#1a6b3c';} });
   } else {
     blank.textContent=chosen; blank.style.background='#fee2e2'; blank.style.color='#c1440e'; blank.style.borderColor='#c1440e';
     fb.style.background='#fee2e2'; fb.style.color='#c1440e';
-    fb.innerHTML='❌ Not quite. The answer is <strong>'+correct+'</strong>.';
-    btns.forEach(b=>{ 
+    fb.innerHTML='❌ The answer is <strong>'+correct+'</strong>. This will come back again!';
+    btns.forEach(b=>{
       if(b.textContent.trim()===chosen){b.style.background='#fee2e2';b.style.borderColor='#c1440e';}
       if(b.textContent.trim()===correct){b.style.background='#d1fae5';b.style.borderColor='#1a6b3c';}
     });
   }
   fb.style.display='block';
-  nextBtn.style.display='block';
+  next.style.display='block';
+  advanceQuiz(!correct2);
 }
 
 // ═══ TEXT READER ══════════════════════════════════════════════════════════
