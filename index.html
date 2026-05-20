@@ -3456,28 +3456,41 @@ function readerGo(dir){
 }
 
 function readerSpeak(){
+  speechSynthesis.cancel();
   const sent = readerSentences[readerIndex]; if(!sent) return;
+
+  const u = new SpeechSynthesisUtterance(sent);
+  // Use selected voice if available, otherwise find best pt-PT
+  if(typeof selectedVoice !== 'undefined' && selectedVoice){
+    u.voice = selectedVoice; u.lang = selectedVoice.lang;
+  } else {
+    const v = speechSynthesis.getVoices().find(v=>v.lang==='pt-PT') ||
+              speechSynthesis.getVoices().find(v=>/portugal/i.test(v.name)) ||
+              speechSynthesis.getVoices().find(v=>v.lang.startsWith('pt'));
+    if(v){ u.voice=v; u.lang=v.lang; } else { u.lang='pt-PT'; }
+  }
+  u.rate  = typeof speechRate  !== 'undefined' ? speechRate  : 0.75;
+  u.pitch = typeof speechPitch !== 'undefined' ? speechPitch : 1.0;
+
   if(readerAutoPlaying){
-    // Need onend callback — use SpeechSynthesisUtterance directly
-    speechSynthesis.cancel();
-    const u = new SpeechSynthesisUtterance(sent);
-    u.lang = 'pt-PT';
-    u.rate = speechRate;
-    u.pitch = typeof speechPitch !== 'undefined' ? speechPitch : 1.0;
-    const voices = speechSynthesis.getVoices();
-    const v = voices.find(v=>v.lang==='pt-PT') || voices.find(v=>v.lang.startsWith('pt'));
-    if(v) u.voice = v;
     u.onend = ()=>{
-      const pause = parseInt(document.getElementById('readerPause').value)||2000;
+      clearTimeout(readerAutoTimer);
+      const pause = parseInt(document.getElementById('readerPause')?.value)||2000;
       readerAutoTimer = setTimeout(()=>{
-        if(readerIndex < readerSentences.length-1){ readerIndex++; updateReaderDisplay(); readerSpeak(); }
-        else readerToggleAuto();
+        if(readerIndex < readerSentences.length-1){
+          readerIndex++; updateReaderDisplay(); readerSpeak();
+        } else {
+          readerToggleAuto();
+        }
       }, pause);
     };
-    speechSynthesis.speak(u);
+  }
+
+  // Chrome bug workaround: voices sometimes not loaded yet
+  if(speechSynthesis.getVoices().length === 0){
+    speechSynthesis.onvoiceschanged = ()=>{ speechSynthesis.onvoiceschanged=null; speechSynthesis.speak(u); };
   } else {
-    // Use the app's existing speakText function
-    speakText(sent, 'pt-PT', null);
+    speechSynthesis.speak(u);
   }
 }
 
