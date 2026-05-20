@@ -268,14 +268,22 @@
   <div id="tab-reader" class="hidden">
     <div class="card" style="border-left:4px solid #2c5f8a;margin-top:16px;">
       <h2 style="margin:0 0 4px;">📖 Text Reader</h2>
-      <p style="font-size:12px;color:#aaa;margin-bottom:12px;">Paste Portuguese text · read sentence by sentence · practice pronunciation</p>
-      <textarea id="readerInput" rows="5" placeholder="Paste Portuguese text here…" style="width:100%;box-sizing:border-box;padding:10px 12px;border-radius:8px;border:1px solid #ddd;font-size:13px;font-family:inherit;line-height:1.6;resize:vertical;"></textarea>
-      <div style="display:flex;gap:8px;margin-top:8px;">
-        <button onclick="startReader()" style="padding:8px 20px;border-radius:8px;border:none;background:#2c5f8a;color:#fff;cursor:pointer;font-family:inherit;font-size:13px;font-weight:600;">▶ Start reading</button>
-        <button onclick="clearReader()" style="padding:8px 14px;border-radius:8px;border:1px solid #ddd;background:#fff;cursor:pointer;font-family:inherit;font-size:13px;color:#888;">Clear</button>
+      <p style="font-size:12px;color:#aaa;margin-bottom:12px;">Listen to texts from your teacher · or paste your own to try</p>
+      <!-- Saved texts from teacher -->
+      <div id="viewerSavedTexts" style="margin-bottom:14px;"></div>
+      <!-- Personal tryout area -->
+      <div style="background:#f8f9fc;border-radius:10px;padding:14px;border:1px solid #e8edf5;">
+        <div style="font-size:12px;font-weight:700;color:#555;margin-bottom:8px;">✏️ Try your own text (not saved)</div>
+        <textarea id="readerInput" rows="4" placeholder="Paste any Portuguese text here to practice…" style="width:100%;box-sizing:border-box;padding:10px 12px;border-radius:8px;border:1px solid #ddd;font-size:13px;font-family:inherit;line-height:1.6;resize:vertical;"></textarea>
+        <div style="display:flex;gap:8px;margin-top:8px;">
+          <button onclick="startReader(document.getElementById('readerInput').value)" style="padding:8px 20px;border-radius:8px;border:none;background:#2c5f8a;color:#fff;cursor:pointer;font-family:inherit;font-size:13px;font-weight:600;">▶ Try it</button>
+          <button onclick="document.getElementById('readerInput').value='';" style="padding:8px 14px;border-radius:8px;border:1px solid #ddd;background:#fff;cursor:pointer;font-family:inherit;font-size:13px;color:#888;">Clear</button>
+        </div>
       </div>
     </div>
+    <!-- Reader player -->
     <div id="readerPlayer" class="hidden" style="margin-top:12px;">
+      <div id="readerTitleBar" style="text-align:center;font-size:13px;font-weight:700;color:#2c5f8a;margin-bottom:10px;"></div>
       <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
         <div style="flex:1;background:#f0ebe4;border-radius:4px;height:6px;overflow:hidden;">
           <div id="readerProgress" style="height:100%;background:#2c5f8a;border-radius:4px;transition:width 0.3s;width:0%;"></div>
@@ -286,29 +294,25 @@
         <div id="readerPrev" style="padding:10px 16px;font-size:13px;color:#ccc;font-style:italic;border-bottom:1px solid #f5f5f5;min-height:36px;line-height:1.6;"></div>
         <div style="padding:18px 16px;background:#f0f7ff;">
           <div id="readerCurrent" style="font-size:18px;color:var(--navy);line-height:1.6;font-weight:500;"></div>
-          <div style="display:flex;align-items:center;gap:8px;margin-top:10px;flex-wrap:wrap;">
+          <div style="margin-top:10px;">
             <button onclick="readerSpeak()" style="padding:7px 16px;border-radius:8px;border:none;background:#2c5f8a;color:#fff;cursor:pointer;font-family:inherit;font-size:13px;font-weight:600;">🔊 Listen</button>
-            <button onclick="readerMic()" id="readerMicBtn" style="padding:7px 16px;border-radius:8px;border:1px solid #1a6b3c;background:#fff;color:#1a6b3c;cursor:pointer;font-family:inherit;font-size:13px;font-weight:600;">🎤 Speak it</button>
-            <span id="readerMicStatus" style="font-size:12px;color:#aaa;font-style:italic;"></span>
-          </div>
-          <div id="readerVoiceResult" style="display:none;margin-top:8px;padding:8px 10px;background:#fff;border-radius:8px;border:1px solid #f0ebe4;">
-            <div id="readerVoiceScore" style="font-size:12px;"></div>
           </div>
         </div>
         <div id="readerNext" style="padding:10px 16px;font-size:13px;color:#ccc;font-style:italic;border-top:1px solid #f5f5f5;min-height:36px;line-height:1.6;"></div>
       </div>
-      <div style="display:flex;justify-content:center;align-items:center;gap:12px;flex-wrap:wrap;">
-        <button onclick="readerGo(-1)" style="padding:10px 20px;border-radius:10px;border:1px solid #ddd;background:#fff;cursor:pointer;font-size:18px;">⬅</button>
+      <div style="display:flex;justify-content:center;align-items:center;gap:12px;">
+        <button onclick="readerGo(-1)" style="padding:10px 28px;border-radius:10px;border:1px solid #ddd;background:#fff;cursor:pointer;font-size:22px;">⬅</button>
         <button onclick="readerToggleAuto()" id="readerAutoBtn" style="padding:10px 24px;border-radius:10px;border:none;background:#2c5f8a;color:#fff;cursor:pointer;font-family:inherit;font-size:13px;font-weight:600;">▶ Auto-play</button>
-        <button onclick="readerGo(1)" style="padding:10px 20px;border-radius:10px;border:1px solid #ddd;background:#fff;cursor:pointer;font-size:18px;">➡</button>
+        <button onclick="readerGo(1)" style="padding:10px 28px;border-radius:10px;border:1px solid #ddd;background:#fff;cursor:pointer;font-size:22px;">➡</button>
       </div>
       <div style="display:flex;align-items:center;gap:10px;justify-content:center;margin-top:12px;">
         <label style="font-size:11px;color:#aaa;">Pause:</label>
         <select id="readerPause" style="padding:4px 10px;border-radius:6px;border:1px solid #ddd;font-size:12px;font-family:inherit;">
-          <option value="1000">1s</option><option value="2000" selected>2s</option><option value="3000">3s</option><option value="5000">5s</option>
+          <option value="1000">1s</option><option value="2000" selected>2s</option>
+          <option value="3000">3s</option><option value="5000">5s</option>
         </select>
       </div>
-      <button onclick="stopReader()" style="margin-top:12px;width:100%;padding:9px;border-radius:8px;border:1px solid #ddd;background:#fff;cursor:pointer;font-size:13px;font-family:inherit;color:#888;">Stop & edit text</button>
+      <button onclick="stopReader()" style="margin-top:12px;width:100%;padding:9px;border-radius:8px;border:1px solid #ddd;background:#fff;cursor:pointer;font-size:13px;font-family:inherit;color:#888;">Stop</button>
     </div>
   </div>
 
@@ -2107,34 +2111,58 @@ function prepQuizAnswer(chosen,correct){
 }
 
 // ═══ TEXT READER ══════════════════════════════════════════════════════════
-let readerSentences=[],readerIndex=0,readerAutoTimer=null,readerAutoPlaying=false,readerMicActive=false,readerRecognition=null;
 
-function initReader(){ /* nothing needed on init */ }
 
-function splitSentences(text){
-  return text.replace(/\n+/g,' ').split(/(?<=[.!?…])\s+(?=[A-ZÁÉÍÓÚÀÂÊÔÃÕÇ])/u).map(s=>s.trim()).filter(s=>s.length>2);
+// ═══ TEXT READER ══════════════════════════════════════════════════════════
+let viewerSavedTexts = [];
+let readerSentences = [], readerIndex = 0, readerAutoTimer = null, readerAutoPlaying = false;
+
+async function initReader(){
+  const el = document.getElementById('viewerSavedTexts'); if(!el) return;
+  el.innerHTML = '<p style="font-size:12px;color:#aaa;">Loading teacher texts…</p>';
+  try{
+    const url = `https://raw.githubusercontent.com/${GH_USER}/${GH_REPO}/main/texts.json?t=${Date.now()}`;
+    const res = await fetch(url);
+    if(!res.ok){ el.innerHTML=''; return; }
+    viewerSavedTexts = await res.json();
+    if(!Array.isArray(viewerSavedTexts)) viewerSavedTexts=[];
+  }catch(e){ viewerSavedTexts=[]; }
+  if(!viewerSavedTexts.length){ el.innerHTML=''; return; }
+  el.innerHTML = `<div style="font-size:11px;color:#aaa;font-weight:700;text-transform:uppercase;margin-bottom:6px;">📚 Texts from your teacher</div>`+
+    viewerSavedTexts.map((t,i)=>`
+    <div style="display:flex;align-items:center;gap:10px;padding:9px 12px;background:#fff;border-radius:8px;margin-bottom:5px;border:1px solid #f0ebe4;">
+      <div style="flex:1;min-width:0;">
+        <div style="font-size:13px;font-weight:700;color:#2c5f8a;">${t.title}</div>
+        <div style="font-size:11px;color:#aaa;">${t.date}${t.level?' · '+t.level:''} · ${t.sentences} sentences</div>
+      </div>
+      <button onclick="startReader(viewerSavedTexts[${i}].text,'${escQ(t.title)}')" style="padding:5px 14px;border-radius:6px;border:none;background:#2c5f8a;color:#fff;cursor:pointer;font-size:12px;font-family:inherit;">▶ Read</button>
+    </div>`).join('');
 }
 
-function startReader(){
-  const text=document.getElementById('readerInput').value.trim();
+function splitSentences(text){
+  return text.replace(/[\n\r]+/g,' ')
+    .split(/(?<=[.!?…])\s+(?=[A-ZÁÉÍÓÚÀÂÊÔÃÕÇ«"'])/u)
+    .map(s=>s.trim()).filter(s=>s.length>2);
+}
+
+function startReader(text, title=''){
+  if(!text||typeof text!=='string') text=document.getElementById('readerInput').value.trim();
   if(!text){showToast('Please paste some text first');return;}
   readerSentences=splitSentences(text);
   if(!readerSentences.length){showToast('No sentences found');return;}
   readerIndex=0;
+  const tb=document.getElementById('readerTitleBar');
+  if(tb) tb.textContent=title||'';
   document.getElementById('readerPlayer').classList.remove('hidden');
   updateReaderDisplay(); readerSpeak();
 }
 
 function stopReader(){
-  speechSynthesis.cancel(); clearTimeout(readerAutoTimer);
-  readerAutoPlaying=false; readerMicActive=false;
-  if(readerRecognition){try{readerRecognition.stop();}catch(e){}readerRecognition=null;}
+  speechSynthesis.cancel(); clearTimeout(readerAutoTimer); readerAutoPlaying=false;
   document.getElementById('readerPlayer').classList.add('hidden');
-  document.getElementById('readerAutoBtn').textContent='▶ Auto-play';
-  document.getElementById('readerAutoBtn').style.background='#2c5f8a';
+  const btn=document.getElementById('readerAutoBtn');
+  if(btn){btn.textContent='▶ Auto-play';btn.style.background='#2c5f8a';}
 }
-
-function clearReader(){stopReader();document.getElementById('readerInput').value='';}
 
 function updateReaderDisplay(){
   const i=readerIndex,total=readerSentences.length;
@@ -2143,31 +2171,26 @@ function updateReaderDisplay(){
   document.getElementById('readerPrev').textContent=i>0?readerSentences[i-1]:'';
   document.getElementById('readerCurrent').textContent=readerSentences[i]||'';
   document.getElementById('readerNext').textContent=i<total-1?readerSentences[i+1]:'';
-  document.getElementById('readerVoiceResult').style.display='none';
-  document.getElementById('readerMicStatus').textContent='';
-  const mb=document.getElementById('readerMicBtn');
-  mb.textContent='🎤 Speak it';mb.style.borderColor='#1a6b3c';mb.style.color='#1a6b3c';
 }
 
 function readerGo(dir){
   speechSynthesis.cancel(); clearTimeout(readerAutoTimer);
   readerIndex=Math.max(0,Math.min(readerSentences.length-1,readerIndex+dir));
-  updateReaderDisplay();
-  if(readerAutoPlaying) readerSpeak();
+  updateReaderDisplay(); readerSpeak();
 }
 
 function readerSpeak(){
   speechSynthesis.cancel();
   const sent=readerSentences[readerIndex]; if(!sent) return;
   const u=new SpeechSynthesisUtterance(sent);
-  u.lang='pt-PT';u.rate=speechRate;u.pitch=speechPitch;
-  const v=getBestPtVoice();if(v)u.voice=v;
+  u.lang='pt-PT'; u.rate=speechRate; u.pitch=speechPitch||1.0;
+  const v=getBestPtVoice(); if(v) u.voice=v;
   if(readerAutoPlaying){
     u.onend=()=>{
       const pause=parseInt(document.getElementById('readerPause').value)||2000;
       readerAutoTimer=setTimeout(()=>{
         if(readerIndex<readerSentences.length-1){readerIndex++;updateReaderDisplay();readerSpeak();}
-        else{readerToggleAuto();}
+        else readerToggleAuto();
       },pause);
     };
   }
@@ -2179,47 +2202,6 @@ function readerToggleAuto(){
   const btn=document.getElementById('readerAutoBtn');
   if(readerAutoPlaying){btn.textContent='⏸ Pause';btn.style.background='#c1440e';readerSpeak();}
   else{btn.textContent='▶ Auto-play';btn.style.background='#2c5f8a';speechSynthesis.cancel();clearTimeout(readerAutoTimer);}
-}
-
-function readerMic(){
-  if(readerMicActive){readerStopMic();return;}
-  if(!('webkitSpeechRecognition' in window||'SpeechRecognition' in window)){showToast('Speech recognition not available — try Chrome');return;}
-  speechSynthesis.cancel();clearTimeout(readerAutoTimer);
-  const Rec=window.SpeechRecognition||window.webkitSpeechRecognition;
-  readerRecognition=new Rec();
-  readerRecognition.lang='pt-PT';readerRecognition.continuous=false;readerRecognition.interimResults=true;
-  readerMicActive=true;
-  const btn=document.getElementById('readerMicBtn');
-  btn.textContent='⏹ Stop';btn.style.borderColor='#c1440e';btn.style.color='#c1440e';
-  document.getElementById('readerMicStatus').textContent='Listening…';
-  readerRecognition.onresult=(e)=>{
-    const t=[...e.results].map(r=>r[0].transcript).join('');
-    if(e.results[e.results.length-1].isFinal){
-      const target=readerSentences[readerIndex]||'';
-      const score=fcCompare(t,target);
-      const clean=s=>s.toLowerCase().replace(/[.,!?;:«»]/g,'').trim();
-      const sw=clean(t).split(/\s+/);
-      const highlighted=target.split(/\s+/).map(w=>`<span style="background:${sw.includes(clean(w))?'#d1fae5':'#fee2e2'};border-radius:3px;padding:0 2px;">${w}</span>`).join(' ');
-      document.getElementById('readerVoiceScore').innerHTML=
-        `<div style="font-size:12px;font-weight:700;color:${score>=80?'#1a6b3c':score>=50?'#b5830a':'#c1440e'};margin-bottom:4px;">`+
-        (score>=80?'🌟 Excellent!':score>=60?'✅ Good!':score>=40?'😓 Keep practising':'❌ Try again')+' — '+score+'% match</div>'+
-        `<div style="font-size:11px;color:#888;">You said: <em>${t}</em></div>`+
-        `<div style="font-size:11px;color:#888;margin-top:3px;">Target: ${highlighted}</div>`;
-      document.getElementById('readerVoiceResult').style.display='block';
-      readerStopMic();
-    }
-  };
-  readerRecognition.onerror=()=>readerStopMic();
-  readerRecognition.onend=()=>readerStopMic();
-  readerRecognition.start();
-}
-
-function readerStopMic(){
-  readerMicActive=false;
-  if(readerRecognition){try{readerRecognition.stop();}catch(e){}readerRecognition=null;}
-  const btn=document.getElementById('readerMicBtn');
-  btn.textContent='🎤 Speak it';btn.style.borderColor='#1a6b3c';btn.style.color='#1a6b3c';
-  document.getElementById('readerMicStatus').textContent='';
 }
 
 // ═══ WORD PATTERNS ════════════════════════════════════════════════════════
