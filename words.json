@@ -11013,7 +11013,15 @@
     "addedAt": "11/05/2026",
     "generatingExample": false,
     "assessingFreq": false,
-    "freq": "common"
+    "freq": "common",
+    "srs": {
+      "interval": 1,
+      "ease": 2.3,
+      "reps": 0,
+      "nextReview": 1779372317334,
+      "lastRating": 1,
+      "lastReviewDate": 1779285917334
+    }
   },
   {
     "id": 1778510137728,
