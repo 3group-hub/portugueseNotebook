@@ -3456,12 +3456,17 @@ function readerGo(dir){
 }
 
 function readerSpeak(){
-  speechSynthesis.cancel();
   const sent = readerSentences[readerIndex]; if(!sent) return;
-  const u = new SpeechSynthesisUtterance(sent);
-  u.lang='pt-PT'; u.rate=speechRate; u.pitch=typeof speechPitch!=='undefined'?speechPitch:1.0;
-  const v=getBestPtVoice ? getBestPtVoice() : null; if(v) u.voice=v;
   if(readerAutoPlaying){
+    // Need onend callback — use SpeechSynthesisUtterance directly
+    speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(sent);
+    u.lang = 'pt-PT';
+    u.rate = speechRate;
+    u.pitch = typeof speechPitch !== 'undefined' ? speechPitch : 1.0;
+    const voices = speechSynthesis.getVoices();
+    const v = voices.find(v=>v.lang==='pt-PT') || voices.find(v=>v.lang.startsWith('pt'));
+    if(v) u.voice = v;
     u.onend = ()=>{
       const pause = parseInt(document.getElementById('readerPause').value)||2000;
       readerAutoTimer = setTimeout(()=>{
@@ -3469,8 +3474,11 @@ function readerSpeak(){
         else readerToggleAuto();
       }, pause);
     };
+    speechSynthesis.speak(u);
+  } else {
+    // Use the app's existing speakText function
+    speakText(sent, 'pt-PT', null);
   }
-  speechSynthesis.speak(u);
 }
 
 function readerToggleAuto(){
