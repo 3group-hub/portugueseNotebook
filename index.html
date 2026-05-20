@@ -202,6 +202,8 @@
       <button class="tab-btn" data-tab="professions">💼 Professions</button>
       <button class="tab-btn" data-tab="notes">📄 Class Notes</button>
       <button class="tab-btn" data-tab="patterns">🔤 Patterns</button>
+      <button class="tab-btn" data-tab="prepositions">🔗 Prepositions</button>
+      <button class="tab-btn" data-tab="reader">📖 Text Reader</button>
       <button class="tab-btn" data-tab="sentences">✍️ Sentences</button>
     </div>
   </div>
@@ -578,6 +580,82 @@
       </div>
     </div>
     <div id="patternsGrid" style="margin-top:12px;display:flex;flex-direction:column;gap:6px;"></div>
+  </div>
+
+  <!-- ═══ PREPOSITIONS TAB ═══ -->
+  <div id="tab-prepositions" class="hidden">
+    <div class="card" style="margin-top:16px;border-left:4px solid #1a6b3c;">
+      <h2 style="margin:0 0 4px;">🔗 Prepositions</h2>
+      <p style="font-size:12px;color:#aaa;margin-bottom:12px;">Core prepositions · contractions · verb pairs · fill-in-the-blank quiz</p>
+      <div style="display:flex;gap:6px;flex-wrap:wrap;" id="prep-section-btns">
+        <button onclick="showPrepSection('core')" class="prep-sec-btn active" style="padding:6px 14px;border-radius:20px;border:1px solid #1a6b3c;background:#1a6b3c;color:#fff;font-size:12px;font-family:inherit;cursor:pointer;">Core</button>
+        <button onclick="showPrepSection('contractions')" class="prep-sec-btn" style="padding:6px 14px;border-radius:20px;border:1px solid #ddd;background:#fff;color:#555;font-size:12px;font-family:inherit;cursor:pointer;">Contractions</button>
+        <button onclick="showPrepSection('verbs')" class="prep-sec-btn" style="padding:6px 14px;border-radius:20px;border:1px solid #ddd;background:#fff;color:#555;font-size:12px;font-family:inherit;cursor:pointer;">Verb pairs</button>
+        <button onclick="showPrepSection('quiz')" class="prep-sec-btn" style="padding:6px 14px;border-radius:20px;border:1px solid #ddd;background:#fff;color:#555;font-size:12px;font-family:inherit;cursor:pointer;">🎯 Quiz</button>
+      </div>
+    </div>
+    <div id="prep-content" style="margin-top:12px;"></div>
+  </div>
+
+  <!-- ═══ TEXT READER TAB ═══ -->
+  <div id="tab-reader" class="hidden">
+    <div class="card" style="margin-top:16px;border-left:4px solid #2c5f8a;">
+      <h2 style="margin:0 0 4px;">📖 Text Reader</h2>
+      <p style="font-size:12px;color:#aaa;margin-bottom:12px;">Paste Portuguese text · read sentence by sentence · control speed · practice pronunciation</p>
+      <textarea id="readerInput" rows="5" placeholder="Paste Portuguese text here…&#10;&#10;Example: O João foi ao mercado. Comprou pão e leite. Depois voltou para casa." style="width:100%;box-sizing:border-box;padding:10px 12px;border-radius:8px;border:1px solid #ddd;font-size:13px;font-family:inherit;line-height:1.6;resize:vertical;"></textarea>
+      <div style="display:flex;gap:8px;margin-top:8px;flex-wrap:wrap;">
+        <button onclick="startReader()" style="padding:8px 20px;border-radius:8px;border:none;background:#2c5f8a;color:#fff;cursor:pointer;font-family:inherit;font-size:13px;font-weight:600;">▶ Start reading</button>
+        <button onclick="clearReader()" style="padding:8px 14px;border-radius:8px;border:1px solid #ddd;background:#fff;cursor:pointer;font-family:inherit;font-size:13px;color:#888;">Clear</button>
+      </div>
+    </div>
+
+    <!-- Reader player -->
+    <div id="readerPlayer" class="hidden" style="margin-top:12px;">
+      <!-- Progress -->
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+        <div style="flex:1;background:#f0ebe4;border-radius:4px;height:6px;overflow:hidden;">
+          <div id="readerProgress" style="height:100%;background:#2c5f8a;border-radius:4px;transition:width 0.3s;width:0%;"></div>
+        </div>
+        <span id="readerCounter" style="font-size:12px;color:#aaa;white-space:nowrap;"></span>
+      </div>
+
+      <!-- Current sentence display -->
+      <div style="background:#fff;border-radius:14px;box-shadow:0 3px 16px rgba(0,0,0,0.1);overflow:hidden;margin-bottom:12px;">
+        <!-- Previous sentence (context) -->
+        <div id="readerPrev" style="padding:10px 16px;font-size:13px;color:#ccc;font-style:italic;border-bottom:1px solid #f5f5f5;min-height:36px;line-height:1.6;"></div>
+        <!-- Current sentence (highlighted) -->
+        <div style="padding:18px 16px;background:#f0f7ff;">
+          <div id="readerCurrent" style="font-size:18px;color:#1a3a5c;line-height:1.6;font-weight:500;"></div>
+          <div style="display:flex;align-items:center;gap:8px;margin-top:10px;">
+            <button onclick="readerSpeak()" id="readerSpeakBtn" style="padding:7px 16px;border-radius:8px;border:none;background:#2c5f8a;color:#fff;cursor:pointer;font-family:inherit;font-size:13px;font-weight:600;">🔊 Listen</button>
+            <button onclick="readerMic()" id="readerMicBtn" style="padding:7px 16px;border-radius:8px;border:1px solid #1a6b3c;background:#fff;color:#1a6b3c;cursor:pointer;font-family:inherit;font-size:13px;font-weight:600;">🎤 Speak it</button>
+            <span id="readerMicStatus" style="font-size:12px;color:#aaa;font-style:italic;"></span>
+          </div>
+          <div id="readerVoiceResult" style="display:none;margin-top:8px;padding:8px 10px;background:#fff;border-radius:8px;border:1px solid #f0ebe4;">
+            <div id="readerVoiceScore" style="font-size:12px;"></div>
+          </div>
+        </div>
+        <!-- Next sentence (preview) -->
+        <div id="readerNext" style="padding:10px 16px;font-size:13px;color:#ccc;font-style:italic;border-top:1px solid #f5f5f5;min-height:36px;line-height:1.6;"></div>
+      </div>
+
+      <!-- Controls -->
+      <div style="display:flex;justify-content:center;align-items:center;gap:12px;flex-wrap:wrap;">
+        <button onclick="readerGo(-1)" style="padding:10px 20px;border-radius:10px;border:1px solid #ddd;background:#fff;cursor:pointer;font-size:18px;">⬅</button>
+        <button onclick="readerToggleAuto()" id="readerAutoBtn" style="padding:10px 24px;border-radius:10px;border:none;background:#2c5f8a;color:#fff;cursor:pointer;font-family:inherit;font-size:13px;font-weight:600;">▶ Auto-play</button>
+        <button onclick="readerGo(1)" style="padding:10px 20px;border-radius:10px;border:1px solid #ddd;background:#fff;cursor:pointer;font-size:18px;">➡</button>
+      </div>
+      <div style="display:flex;align-items:center;gap:10px;justify-content:center;margin-top:12px;">
+        <label style="font-size:11px;color:#aaa;">Pause between sentences:</label>
+        <select id="readerPause" style="padding:4px 10px;border-radius:6px;border:1px solid #ddd;font-size:12px;font-family:inherit;">
+          <option value="1000">1 sec</option>
+          <option value="2000" selected>2 sec</option>
+          <option value="3000">3 sec</option>
+          <option value="5000">5 sec</option>
+        </select>
+      </div>
+      <button onclick="stopReader()" style="margin-top:12px;width:100%;padding:9px;border-radius:8px;border:1px solid #ddd;background:#fff;cursor:pointer;font-size:13px;font-family:inherit;color:#888;">Stop & edit text</button>
+    </div>
   </div>
 
   <!-- ═══ SENTENCES TAB ═══ -->
@@ -1119,7 +1197,7 @@ document.querySelectorAll('.tab-btn').forEach(btn=>{
     document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
     btn.classList.add('active');
     activeTab=btn.dataset.tab;
-    ['vocab','flashcards','textimport','alphabet','numbers','situations','nations','professions','notes','patterns','sentences'].forEach(t=>document.getElementById('tab-'+t).classList.add('hidden'));
+    ['vocab','flashcards','textimport','alphabet','numbers','situations','nations','professions','notes','patterns','prepositions','reader','sentences'].forEach(t=>document.getElementById('tab-'+t).classList.add('hidden'));
     document.getElementById('tab-'+activeTab).classList.remove('hidden');
     if(activeTab==='sentences') updateSentWordCount();
     if(activeTab==='situations') initSituationsTab();
@@ -1127,6 +1205,8 @@ document.querySelectorAll('.tab-btn').forEach(btn=>{
     if(activeTab==='professions') renderProfessions();
     if(activeTab==='notes') initNotesTab();
     if(activeTab==='patterns') renderPatterns();
+    if(activeTab==='prepositions') renderPrepositions();
+    if(activeTab==='reader') initReader();
     if(activeTab==='flashcards') initFlashcards();
   });
 });
@@ -2943,6 +3023,420 @@ async function deleteNote(idx){
   showToast('Note deleted.');
 }
 
+
+
+// ═══ PREPOSITIONS TAB ════════════════════════════════════════════════════
+const CORE_PREPS = [
+  { prep:'em', en:'in / at / on', color:'#2c5f8a',
+    meanings:['Location: estou em Lisboa (I am in Lisbon)','Time: em janeiro (in January)','State: em silêncio (in silence)'],
+    contractions:[{art:'o',result:'no'},{art:'a',result:'na'},{art:'os',result:'nos'},{art:'as',result:'nas'},{art:'um',result:'num'},{art:'uma',result:'numa'}],
+    examples:[{pt:'Vivo em Portugal.',en:'I live in Portugal.'},{pt:'Estou no mercado.',en:'I am at the market.'},{pt:'Nasci em março.',en:'I was born in March.'}]},
+  { prep:'de', en:'of / from / about', color:'#1a6b3c',
+    meanings:['Origin: sou de Lisboa (I am from Lisbon)','Possession: o carro do João (João\'s car)','Material: feito de madeira (made of wood)','Topic: falo de trabalho (I talk about work)'],
+    contractions:[{art:'o',result:'do'},{art:'a',result:'da'},{art:'os',result:'dos'},{art:'as',result:'das'},{art:'um',result:'dum'},{art:'uma',result:'duma'}],
+    examples:[{pt:'Sou de Portugal.',en:'I am from Portugal.'},{pt:'O livro do professor.',en:'The teacher\'s book.'},{pt:'Uma chávena de café.',en:'A cup of coffee.'}]},
+  { prep:'a', en:'to / at / by (time)', color:'#b5830a',
+    meanings:['Direction: vou a Lisboa (I go to Lisbon)','Time: às três horas (at three o\'clock)','Distance: a 5km (5km away)','After certain verbs: começar a, ajudar a'],
+    contractions:[{art:'o',result:'ao'},{art:'a',result:'à'},{art:'os',result:'aos'},{art:'as',result:'às'}],
+    examples:[{pt:'Vou ao supermercado.',en:'I go to the supermarket.'},{pt:'Chegamos às oito.',en:'We arrive at eight.'},{pt:'Começo a trabalhar.',en:'I start to work.'}]},
+  { prep:'para', en:'for / to / in order to', color:'#7b4ea0',
+    meanings:['Purpose: estudo para aprender (I study to learn)','Destination (permanent): vou para Lisboa (I\'m going to/moving to Lisbon)','Recipient: isto é para ti (this is for you)','Deadline: para amanhã (for tomorrow)'],
+    contractions:[],
+    examples:[{pt:'Este presente é para ti.',en:'This gift is for you.'},{pt:'Vou para casa.',en:'I\'m going home.'},{pt:'Estudo para aprender.',en:'I study to learn.'}]},
+  { prep:'por', en:'for / by / through / per', color:'#c1440e',
+    meanings:['Duration: por uma hora (for an hour)','Exchange: pago por isso (I pay for it)','Agent: escrito por Saramago (written by Saramago)','Through: passo por Lisboa (I pass through Lisbon)','Per: €5 por dia (€5 per day)'],
+    contractions:[{art:'o',result:'pelo'},{art:'a',result:'pela'},{art:'os',result:'pelos'},{art:'as',result:'pelas'}],
+    examples:[{pt:'Andei pelo parque.',en:'I walked through the park.'},{pt:'Pago dois euros por dia.',en:'I pay two euros per day.'},{pt:'Foi escrito pela professora.',en:'It was written by the teacher.'}]},
+  { prep:'com', en:'with', color:'#1a3a5c',
+    meanings:['Company: vou com ela (I go with her)','Ingredient: café com leite (coffee with milk)','Manner: falo com cuidado (I speak with care)'],
+    contractions:[{art:'mim',result:'comigo'},{art:'ti',result:'contigo'},{art:'ele/ela',result:'com ele/ela'},{art:'nós',result:'connosco'},{art:'vós',result:'convosco'}],
+    examples:[{pt:'Vem comigo!',en:'Come with me!'},{pt:'Café com leite, por favor.',en:'Coffee with milk, please.'},{pt:'Fala com cuidado.',en:'Speak carefully.'}]},
+  { prep:'sem', en:'without', color:'#8a3a5c',
+    meanings:['Absence: sem dinheiro (without money)','Condition: sem problema (no problem / without a problem)'],
+    contractions:[],
+    examples:[{pt:'Saí sem casaco.',en:'I left without a coat.'},{pt:'Sem problema!',en:'No problem!'},{pt:'Café sem açúcar.',en:'Coffee without sugar.'}]},
+  { prep:'sobre', en:'about / on top of / over', color:'#2c5f8a',
+    meanings:['Topic: falo sobre viagens (I talk about travel)','Position: o livro está sobre a mesa (the book is on the table)'],
+    contractions:[],
+    examples:[{pt:'Um livro sobre Portugal.',en:'A book about Portugal.'},{pt:'O gato está sobre a cadeira.',en:'The cat is on the chair.'}]},
+  { prep:'entre', en:'between / among', color:'#1a6b3c',
+    meanings:['Position: entre Lisboa e Porto (between Lisbon and Porto)','Group: entre amigos (among friends)'],
+    contractions:[],
+    examples:[{pt:'Entre as duas cidades.',en:'Between the two cities.'},{pt:'Dividimos entre nós.',en:'We divided it among ourselves.'}]},
+  { prep:'até', en:'until / up to / even', color:'#b5830a',
+    meanings:['Time: até amanhã (until tomorrow)','Place: até Lisboa (as far as Lisbon)','Even: até o professor errou (even the teacher made a mistake)'],
+    contractions:[],
+    examples:[{pt:'Fico até às cinco.',en:'I stay until five.'},{pt:'Caminhei até ao rio.',en:'I walked to the river.'},{pt:'Até eu sei isso!',en:'Even I know that!'}]},
+];
+
+const VERB_PREP_PAIRS = [
+  {verb:'gostar',en:'to like',prep:'de',example:'Gosto de música.',exen:'I like music.'},
+  {verb:'precisar',en:'to need',prep:'de',example:'Preciso de ajuda.',exen:'I need help.'},
+  {verb:'lembrar',en:'to remember',prep:'de',example:'Lembro-me de ti.',exen:'I remember you.'},
+  {verb:'esquecer',en:'to forget',prep:'de',example:'Esqueci-me do livro.',exen:'I forgot the book.'},
+  {verb:'depender',en:'to depend',prep:'de',example:'Depende de ti.',exen:'It depends on you.'},
+  {verb:'pensar',en:'to think about',prep:'em',example:'Penso em ti.',exen:'I think about you.'},
+  {verb:'acreditar',en:'to believe in',prep:'em',example:'Acredito em ti.',exen:'I believe in you.'},
+  {verb:'entrar',en:'to enter',prep:'em',example:'Entrou na sala.',exen:'He/she entered the room.'},
+  {verb:'sonhar',en:'to dream about',prep:'com',example:'Sonhei contigo.',exen:'I dreamed about you.'},
+  {verb:'contar',en:'to count on',prep:'com',example:'Conto com a tua ajuda.',exen:'I count on your help.'},
+  {verb:'casar',en:'to marry',prep:'com',example:'Casou com ela.',exen:'He married her.'},
+  {verb:'começar',en:'to start',prep:'a',example:'Começo a trabalhar.',exen:'I start to work.'},
+  {verb:'ajudar',en:'to help',prep:'a',example:'Ajuda-me a estudar.',exen:'Help me to study.'},
+  {verb:'ir',en:'to go',prep:'a/para',example:'Vou ao mercado. / Vou para casa.',exen:'I go to the market. / I go home.'},
+  {verb:'chegar',en:'to arrive',prep:'a',example:'Chegamos a Lisboa.',exen:'We arrived in Lisbon.'},
+  {verb:'assistir',en:'to watch/attend',prep:'a',example:'Assisto a um filme.',exen:'I watch a film.'},
+  {verb:'responder',en:'to reply',prep:'a',example:'Respondi ao email.',exen:'I replied to the email.'},
+  {verb:'esperar',en:'to wait for',prep:'por',example:'Espero por ti.',exen:'I wait for you.'},
+  {verb:'pagar',en:'to pay for',prep:'por',example:'Pago pelo jantar.',exen:'I pay for dinner.'},
+  {verb:'perguntar',en:'to ask',prep:'por',example:'Perguntou por mim.',exen:'He/she asked about me.'},
+];
+
+const PREP_QUIZ = [
+  {sentence:'Vivo ___ Lisboa.',blank:'em',options:['em','de','para','com'],answer:'em',hint:'Use em for location'},
+  {sentence:'Gosto ___ música portuguesa.',blank:'de',options:['de','em','para','por'],answer:'de',hint:'gostar + de'},
+  {sentence:'Vou ___ supermercado.',blank:'ao',options:['ao','para','pelo','na'],answer:'ao',hint:'ir + a → ao (a + o)'},
+  {sentence:'Este livro é ___ ti.',blank:'para',options:['para','por','de','a'],answer:'para',hint:'para = for (recipient)'},
+  {sentence:'O livro está ___ a mesa.',blank:'sobre',options:['sobre','em','de','por'],answer:'sobre',hint:'sobre = on top of'},
+  {sentence:'Café ___ leite, por favor.',blank:'com',options:['com','de','para','sem'],answer:'com',hint:'com = with'},
+  {sentence:'Penso ___ ti todos os dias.',blank:'em',options:['em','de','com','para'],answer:'em',hint:'pensar + em'},
+  {sentence:'Fico aqui ___ as cinco horas.',blank:'até',options:['até','para','por','desde'],answer:'até',hint:'até = until'},
+  {sentence:'Saí ___ casaco hoje.',blank:'sem',options:['sem','com','de','por'],answer:'sem',hint:'sem = without'},
+  {sentence:'Espero ___ ti.',blank:'por',options:['por','de','para','com'],answer:'por',hint:'esperar + por'},
+  {sentence:'Passei ___ parque.',blank:'pelo',options:['pelo','no','ao','para'],answer:'pelo',hint:'por + o → pelo'},
+  {sentence:'Sonhei ___ ti ontem.',blank:'contigo',options:['contigo','comigo','de ti','em ti'],answer:'contigo',hint:'com + ti → contigo'},
+];
+
+let prepSection = 'core';
+let quizIndex = 0, quizScore = 0, quizAnswered = false;
+let expandedPrep = null;
+
+function showPrepSection(sec){
+  prepSection = sec;
+  document.querySelectorAll('.prep-sec-btn').forEach(b=>{
+    const active = b.textContent.toLowerCase().includes(sec) ||
+                   (sec==='core'&&b.textContent==='Core') ||
+                   (sec==='contractions'&&b.textContent==='Contractions') ||
+                   (sec==='verbs'&&b.textContent==='Verb pairs') ||
+                   (sec==='quiz'&&b.textContent.includes('Quiz'));
+    b.style.background = active?'#1a6b3c':'#fff';
+    b.style.color = active?'#fff':'#555';
+    b.style.borderColor = active?'#1a6b3c':'#ddd';
+  });
+  renderPrepositions();
+}
+
+function renderPrepositions(){
+  const el = document.getElementById('prep-content'); if(!el) return;
+  if(prepSection==='core') el.innerHTML = renderCorePreps();
+  else if(prepSection==='contractions') el.innerHTML = renderContractions();
+  else if(prepSection==='verbs') el.innerHTML = renderVerbPairs();
+  else el.innerHTML = renderQuiz();
+}
+
+function renderCorePreps(){
+  return CORE_PREPS.map(p=>{
+    const isExp = expandedPrep===p.prep;
+    return `<div style="background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 1px 5px rgba(0,0,0,0.07);border:2px solid ${isExp?p.color+'55':'transparent'};margin-bottom:6px;">
+      <div onclick="expandedPrep=expandedPrep==='${p.prep}'?null:'${p.prep}';renderPrepositions();" style="display:flex;align-items:center;gap:12px;padding:13px 16px;cursor:pointer;user-select:none;border-left:4px solid ${p.color};">
+        <div style="flex:1;">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:2px;">
+            <span style="font-size:20px;font-weight:800;color:${p.color};font-family:monospace;">${p.prep}</span>
+            <button class="speak-btn" onclick="speakText('${p.prep}','pt-PT',this);event.stopPropagation();">🔊</button>
+            <span style="font-size:13px;color:#888;">${p.en}</span>
+          </div>
+          ${p.contractions.length?`<div style="font-size:11px;color:#aaa;">${p.contractions.slice(0,4).map(c=>`<span style="background:#f5f5f5;padding:1px 6px;border-radius:4px;margin-right:4px;font-weight:600;color:#555;">${c.result}</span>`).join('')}${p.contractions.length>4?'…':''}</div>`:''}
+        </div>
+        <span style="font-size:12px;color:#ccc;${isExp?'transform:rotate(180deg);display:inline-block':''}">▼</span>
+      </div>
+      ${isExp?`<div style="border-top:1px solid #f5f5f5;padding:14px 16px;">
+        <div style="font-size:11px;color:#aaa;text-transform:uppercase;font-weight:700;margin-bottom:8px;">Meanings &amp; uses</div>
+        <ul style="margin:0 0 12px;padding-left:18px;display:flex;flex-direction:column;gap:4px;">
+          ${p.meanings.map(m=>`<li style="font-size:13px;color:#555;line-height:1.5;">${m}</li>`).join('')}
+        </ul>
+        ${p.contractions.length?`
+        <div style="font-size:11px;color:#aaa;text-transform:uppercase;font-weight:700;margin-bottom:8px;">Contractions</div>
+        <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px;">
+          ${p.contractions.map(c=>`<div style="background:#f8f9fc;border-radius:8px;padding:6px 12px;text-align:center;">
+            <div style="font-size:10px;color:#aaa;">${p.prep} + ${c.art}</div>
+            <div style="font-size:15px;font-weight:700;color:${p.color};">${c.result}</div>
+            <button class="speak-btn" style="font-size:11px;" onclick="speakText('${c.result}','pt-PT',this)">🔊</button>
+          </div>`).join('')}
+        </div>`:''}
+        <div style="font-size:11px;color:#aaa;text-transform:uppercase;font-weight:700;margin-bottom:8px;">Examples</div>
+        ${p.examples.map(ex=>`<div style="padding:8px 10px;background:#fafafa;border-radius:8px;margin-bottom:5px;">
+          <div style="display:flex;align-items:center;gap:6px;margin-bottom:2px;">
+            <span style="font-size:13px;color:#1a3a5c;">${ex.pt.replace(new RegExp('\\\\b'+p.prep+'\\\\b','gi'),`<strong style="color:${p.color};">$&</strong>`)}</span>
+            <button class="speak-btn" onclick="speakText('${escQ(ex.pt)}','pt-PT',this)">🔊</button>
+          </div>
+          <div style="font-size:12px;color:#aaa;font-style:italic;">${ex.en}</div>
+        </div>`).join('')}
+      </div>`:''}
+    </div>`;
+  }).join('');
+}
+
+function renderContractions(){
+  const preps = [
+    {prep:'em',  arts:['o','a','os','as','um','uma'], results:['no','na','nos','nas','num','numa']},
+    {prep:'de',  arts:['o','a','os','as','um','uma'], results:['do','da','dos','das','dum','duma']},
+    {prep:'a',   arts:['o','a','os','as'],            results:['ao','à','aos','às']},
+    {prep:'por', arts:['o','a','os','as'],            results:['pelo','pela','pelos','pelas']},
+  ];
+  const colors = {em:'#2c5f8a',de:'#1a6b3c',a:'#b5830a',por:'#c1440e'};
+  return `
+  <div style="background:#fff;border-radius:12px;padding:16px;box-shadow:0 1px 5px rgba(0,0,0,0.07);margin-bottom:10px;">
+    <p style="font-size:13px;color:#555;margin:0 0 14px;line-height:1.6;">In Portuguese, prepositions <strong>must contract</strong> with the definite article that follows them. These contractions are not optional — they are mandatory.</p>
+    ${preps.map(p=>`
+      <div style="margin-bottom:16px;">
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
+          <span style="font-size:16px;font-weight:800;color:${colors[p.prep]};font-family:monospace;">${p.prep} +</span>
+          <button class="speak-btn" onclick="speakText('${p.prep}','pt-PT',this)">🔊</button>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:6px;">
+          ${p.arts.map((art,i)=>`<div style="background:#f8f9fc;border:1px solid ${colors[p.prep]}22;border-radius:10px;padding:8px 12px;text-align:center;min-width:60px;">
+            <div style="font-size:10px;color:#aaa;margin-bottom:3px;">${p.prep} + ${art}</div>
+            <div style="font-size:16px;font-weight:800;color:${colors[p.prep]};">${p.results[i]}</div>
+            <button class="speak-btn" style="font-size:11px;margin-top:2px;" onclick="speakText('${p.results[i]}','pt-PT',this)">🔊</button>
+          </div>`).join('')}
+        </div>
+      </div>`).join('')}
+    <div style="background:#fff8f0;border-radius:10px;padding:12px 14px;border-left:3px solid #b5830a;">
+      <div style="font-size:12px;font-weight:700;color:#b5830a;margin-bottom:6px;">💡 Special pronoun contractions</div>
+      <div style="display:flex;flex-wrap:wrap;gap:8px;font-size:13px;">
+        ${[['com + mim','comigo'],['com + ti','contigo'],['com + nós','connosco'],['com + vós','convosco']].map(([from,to])=>`
+          <div style="background:#fff;border-radius:8px;padding:6px 12px;border:1px solid #f0ebe4;">
+            <div style="font-size:10px;color:#aaa;">${from}</div>
+            <div style="font-size:14px;font-weight:700;color:#b5830a;">${to}</div>
+            <button class="speak-btn" style="font-size:10px;" onclick="speakText('${to}','pt-PT',this)">🔊</button>
+          </div>`).join('')}
+      </div>
+    </div>
+  </div>`;
+}
+
+function renderVerbPairs(){
+  return `
+  <div style="background:#fff;border-radius:12px;padding:14px 16px;box-shadow:0 1px 5px rgba(0,0,0,0.07);margin-bottom:10px;">
+    <p style="font-size:13px;color:#555;margin:0 0 12px;line-height:1.6;">These verb+preposition pairs must be memorised. The preposition is <strong>fixed</strong> — it doesn't change based on context.</p>
+    ${['de','em','com','a','por'].map(prep=>{
+      const pairs = VERB_PREP_PAIRS.filter(v=>v.prep===prep||v.prep.startsWith(prep));
+      if(!pairs.length) return '';
+      const colors2={de:'#1a6b3c',em:'#2c5f8a',com:'#1a3a5c',a:'#b5830a',por:'#c1440e'};
+      const c=colors2[prep]||'#555';
+      return `<div style="margin-bottom:14px;">
+        <div style="font-size:11px;color:#fff;background:${c};display:inline-block;padding:2px 10px;border-radius:8px;font-weight:700;margin-bottom:8px;">+ ${prep}</div>
+        ${pairs.map(v=>`<div style="padding:8px 10px;background:#fafafa;border-radius:8px;margin-bottom:5px;border-left:3px solid ${c}33;">
+          <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:3px;">
+            <span style="font-size:13px;font-weight:700;color:#1a3a5c;">${v.verb} <span style="color:${c};">${v.prep}</span></span>
+            <span style="font-size:12px;color:#aaa;">— ${v.en}</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:6px;">
+            <span style="font-size:13px;color:#555;font-style:italic;">${v.example}</span>
+            <button class="speak-btn" onclick="speakText('${escQ(v.example)}','pt-PT',this)">🔊</button>
+          </div>
+          <div style="font-size:12px;color:#aaa;">${v.exen}</div>
+        </div>`).join('')}
+      </div>`;
+    }).join('')}
+  </div>`;
+}
+
+let quizAnswered2 = false;
+function renderQuiz(){
+  const q = PREP_QUIZ[quizIndex % PREP_QUIZ.length];
+  const parts = q.sentence.split('___');
+  return `
+  <div style="background:#fff;border-radius:12px;padding:16px;box-shadow:0 1px 5px rgba(0,0,0,0.07);">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
+      <span style="font-size:12px;color:#aaa;">Question ${(quizIndex%PREP_QUIZ.length)+1} of ${PREP_QUIZ.length}</span>
+      <span style="font-size:12px;font-weight:700;color:#1a6b3c;">Score: ${quizScore}</span>
+    </div>
+    <div style="font-size:18px;color:#1a3a5c;line-height:1.8;margin-bottom:20px;text-align:center;">
+      ${parts[0]}<span style="background:#f0f7ff;border:2px dashed #2c5f8a;border-radius:6px;padding:2px 12px;color:#2c5f8a;font-weight:700;" id="quizBlank">___</span>${parts[1]||''}
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:14px;" id="quizOptions">
+      ${q.options.map(opt=>`<button onclick="prepQuizAnswer('${escQ(opt)}','${escQ(q.answer)}')"
+        style="padding:12px;border-radius:10px;border:2px solid #f0ebe4;background:#fafafa;cursor:pointer;font-family:inherit;font-size:14px;font-weight:700;color:#1a3a5c;transition:all 0.15s;">
+        ${opt}
+      </button>`).join('')}
+    </div>
+    <div id="quizFeedback" style="display:none;padding:10px 12px;border-radius:8px;font-size:13px;margin-bottom:12px;"></div>
+    <div style="font-size:12px;color:#aaa;text-align:center;font-style:italic;">💡 ${q.hint}</div>
+    <button id="quizNextBtn" onclick="quizIndex++;renderPrepositions();" style="display:none;margin-top:12px;width:100%;padding:10px;border-radius:8px;border:none;background:#1a6b3c;color:#fff;cursor:pointer;font-family:inherit;font-size:13px;font-weight:600;">
+      Next question →
+    </button>
+  </div>`;
+}
+
+function prepQuizAnswer(chosen, correct){
+  const fb = document.getElementById('quizFeedback');
+  const blank = document.getElementById('quizBlank');
+  const nextBtn = document.getElementById('quizNextBtn');
+  const btns = document.querySelectorAll('#quizOptions button');
+  btns.forEach(b=>b.disabled=true);
+  if(chosen===correct){
+    quizScore++;
+    blank.textContent=correct; blank.style.background='#d1fae5'; blank.style.color='#1a6b3c'; blank.style.borderColor='#1a6b3c';
+    fb.style.background='#d1fae5'; fb.style.color='#1a6b3c';
+    fb.innerHTML='✅ Correct! <strong>'+correct+'</strong> is right.';
+    btns.forEach(b=>{ if(b.textContent.trim()===correct){b.style.background='#d1fae5';b.style.borderColor='#1a6b3c';} });
+  } else {
+    blank.textContent=chosen; blank.style.background='#fee2e2'; blank.style.color='#c1440e'; blank.style.borderColor='#c1440e';
+    fb.style.background='#fee2e2'; fb.style.color='#c1440e';
+    fb.innerHTML='❌ Not quite. The answer is <strong>'+correct+'</strong>.';
+    btns.forEach(b=>{ 
+      if(b.textContent.trim()===chosen){b.style.background='#fee2e2';b.style.borderColor='#c1440e';}
+      if(b.textContent.trim()===correct){b.style.background='#d1fae5';b.style.borderColor='#1a6b3c';}
+    });
+  }
+  fb.style.display='block';
+  nextBtn.style.display='block';
+}
+
+// ═══ TEXT READER ══════════════════════════════════════════════════════════
+let readerSentences = [];
+let readerIndex = 0;
+let readerAutoTimer = null;
+let readerAutoPlaying = false;
+let readerMicActive = false;
+let readerRecognition = null;
+
+function splitSentences(text){
+  // Split on . ! ? followed by space or end, keeping abbreviations together
+  return text
+    .replace(/\n+/g,' ')
+    .split(/(?<=[.!?…])\s+(?=[A-ZÁÉÍÓÚÀÂÊÔÃÕÇ])/u)
+    .map(s=>s.trim())
+    .filter(s=>s.length>2);
+}
+
+function startReader(){
+  const text = document.getElementById('readerInput').value.trim();
+  if(!text){ showToast('Please paste some text first'); return; }
+  readerSentences = splitSentences(text);
+  if(!readerSentences.length){ showToast('No sentences found'); return; }
+  readerIndex = 0;
+  document.getElementById('readerPlayer').classList.remove('hidden');
+  updateReaderDisplay();
+  readerSpeak();
+}
+
+function stopReader(){
+  speechSynthesis.cancel();
+  clearTimeout(readerAutoTimer);
+  readerAutoPlaying = false;
+  readerMicActive = false;
+  if(readerRecognition){ try{readerRecognition.stop();}catch(e){} readerRecognition=null; }
+  document.getElementById('readerPlayer').classList.add('hidden');
+  document.getElementById('readerAutoBtn').textContent='▶ Auto-play';
+  document.getElementById('readerAutoBtn').style.background='#2c5f8a';
+}
+
+function clearReader(){
+  stopReader();
+  document.getElementById('readerInput').value='';
+}
+
+function updateReaderDisplay(){
+  const total = readerSentences.length;
+  const i = readerIndex;
+  const pct = Math.round(((i+1)/total)*100);
+  document.getElementById('readerProgress').style.width = pct+'%';
+  document.getElementById('readerCounter').textContent = (i+1)+' / '+total;
+  document.getElementById('readerPrev').textContent = i>0 ? readerSentences[i-1] : '';
+  document.getElementById('readerCurrent').textContent = readerSentences[i]||'';
+  document.getElementById('readerNext').textContent = i<total-1 ? readerSentences[i+1] : '';
+  document.getElementById('readerVoiceResult').style.display='none';
+  document.getElementById('readerMicStatus').textContent='';
+  const mb=document.getElementById('readerMicBtn');
+  mb.textContent='🎤 Speak it'; mb.style.borderColor='#1a6b3c'; mb.style.color='#1a6b3c';
+}
+
+function readerGo(dir){
+  speechSynthesis.cancel();
+  clearTimeout(readerAutoTimer);
+  const newIdx = Math.max(0, Math.min(readerSentences.length-1, readerIndex+dir));
+  if(newIdx===readerIndex && dir<0) return;
+  readerIndex = newIdx;
+  updateReaderDisplay();
+  if(readerAutoPlaying) readerSpeak();
+}
+
+function readerSpeak(){
+  speechSynthesis.cancel();
+  const sent = readerSentences[readerIndex]; if(!sent) return;
+  const u = new SpeechSynthesisUtterance(sent);
+  u.lang='pt-PT'; u.rate=speechRate; u.pitch=speechPitch;
+  const v=getBestPtVoice(); if(v) u.voice=v;
+  if(readerAutoPlaying){
+    u.onend=()=>{
+      clearTimeout(readerAutoTimer);
+      const pause = parseInt(document.getElementById('readerPause').value)||2000;
+      readerAutoTimer = setTimeout(()=>{
+        if(readerIndex<readerSentences.length-1){ readerIndex++; updateReaderDisplay(); readerSpeak(); }
+        else { readerToggleAuto(); }
+      }, pause);
+    };
+  }
+  speechSynthesis.speak(u);
+}
+
+function readerToggleAuto(){
+  readerAutoPlaying = !readerAutoPlaying;
+  const btn = document.getElementById('readerAutoBtn');
+  if(readerAutoPlaying){
+    btn.textContent='⏸ Pause'; btn.style.background='#c1440e';
+    readerSpeak();
+  } else {
+    btn.textContent='▶ Auto-play'; btn.style.background='#2c5f8a';
+    speechSynthesis.cancel(); clearTimeout(readerAutoTimer);
+  }
+}
+
+function readerMic(){
+  if(readerMicActive){ readerStopMic(); return; }
+  if(!('webkitSpeechRecognition' in window||'SpeechRecognition' in window)){
+    showToast('Speech recognition not available — try Chrome'); return;
+  }
+  speechSynthesis.cancel(); clearTimeout(readerAutoTimer);
+  const Rec=window.SpeechRecognition||window.webkitSpeechRecognition;
+  readerRecognition=new Rec();
+  readerRecognition.lang='pt-PT'; readerRecognition.continuous=false; readerRecognition.interimResults=true;
+  readerMicActive=true;
+  const btn=document.getElementById('readerMicBtn');
+  btn.textContent='⏹ Stop'; btn.style.borderColor='#c1440e'; btn.style.color='#c1440e';
+  document.getElementById('readerMicStatus').textContent='Listening…';
+  readerRecognition.onresult=(e)=>{
+    const t=[...e.results].map(r=>r[0].transcript).join('');
+    if(e.results[e.results.length-1].isFinal){
+      const target=readerSentences[readerIndex]||'';
+      const score=fcCompare(t,target);
+      const clean=s=>s.toLowerCase().replace(/[.,!?;:«»]/g,'').trim();
+      const sw=clean(t).split(/\s+/);
+      const highlighted=target.split(/\s+/).map(w=>`<span style="background:${sw.includes(clean(w))?'#d1fae5':'#fee2e2'};border-radius:3px;padding:0 2px;">${w}</span>`).join(' ');
+      const vr=document.getElementById('readerVoiceResult');
+      document.getElementById('readerVoiceScore').innerHTML=
+        `<div style="font-size:12px;font-weight:700;color:${score>=80?'#1a6b3c':score>=50?'#b5830a':'#c1440e'};margin-bottom:4px;">`+
+        (score>=80?'🌟 Excellent!':score>=60?'✅ Good!':score>=40?'😓 Keep practising':'❌ Try again')+' — '+score+'% match</div>'+
+        `<div style="font-size:11px;color:#888;">You said: <em>${t}</em></div>`+
+        `<div style="font-size:11px;color:#888;margin-top:3px;">Target: ${highlighted}</div>`;
+      vr.style.display='block';
+      readerStopMic();
+    }
+  };
+  readerRecognition.onerror=()=>readerStopMic();
+  readerRecognition.onend=()=>readerStopMic();
+  readerRecognition.start();
+}
+
+function readerStopMic(){
+  readerMicActive=false;
+  if(readerRecognition){try{readerRecognition.stop();}catch(e){}readerRecognition=null;}
+  const btn=document.getElementById('readerMicBtn');
+  btn.textContent='🎤 Speak it'; btn.style.borderColor='#1a6b3c'; btn.style.color='#1a6b3c';
+  document.getElementById('readerMicStatus').textContent='';
+}
 
 // ═══ WORD PATTERNS ════════════════════════════════════════════════════════
 const WORD_PATTERNS = [
