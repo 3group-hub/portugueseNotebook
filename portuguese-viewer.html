@@ -294,6 +294,7 @@
         <div id="readerPrev" style="padding:10px 16px;font-size:13px;color:#ccc;font-style:italic;border-bottom:1px solid #f5f5f5;min-height:36px;line-height:1.6;"></div>
         <div style="padding:18px 16px;background:#f0f7ff;">
           <div id="readerCurrent" style="font-size:18px;color:var(--navy);line-height:1.6;font-weight:500;"></div>
+          <div id="readerTranslation" style="font-size:13px;color:#888;font-style:italic;margin-top:6px;line-height:1.5;min-height:18px;"></div>
           <div style="margin-top:10px;">
             <button onclick="readerSpeak()" style="padding:7px 16px;border-radius:8px;border:none;background:#2c5f8a;color:#fff;cursor:pointer;font-family:inherit;font-size:13px;font-weight:600;">🔊 Listen</button>
           </div>
@@ -2115,7 +2116,7 @@ function prepQuizAnswer(chosen,correct){
 
 // ═══ TEXT READER ══════════════════════════════════════════════════════════
 let viewerSavedTexts = [];
-let readerSentences = [], readerIndex = 0, readerAutoTimer = null, readerAutoPlaying = false;
+let readerSentences = [], readerPairs = [], readerIndex = 0, readerAutoTimer = null, readerAutoPlaying = false;
 
 async function initReader(){
   const el = document.getElementById('viewerSavedTexts'); if(!el) return;
@@ -2135,7 +2136,7 @@ async function initReader(){
         <div style="font-size:13px;font-weight:700;color:#2c5f8a;">${t.title}</div>
         <div style="font-size:11px;color:#aaa;">${t.date}${t.level?' · '+t.level:''} · ${t.sentences} sentences</div>
       </div>
-      <button onclick="startReader(viewerSavedTexts[${i}].text,'${escQ(t.title)}')" style="padding:5px 14px;border-radius:6px;border:none;background:#2c5f8a;color:#fff;cursor:pointer;font-size:12px;font-family:inherit;">▶ Read</button>
+      <button onclick="startReader(viewerSavedTexts[${i}].text,'${escQ(t.title)}',viewerSavedTexts[${i}].sentencePairs)" style="padding:5px 14px;border-radius:6px;border:none;background:#2c5f8a;color:#fff;cursor:pointer;font-size:12px;font-family:inherit;">▶ Read</button>
     </div>`).join('');
 }
 
@@ -2145,10 +2146,11 @@ function splitSentences(text){
     .map(s=>s.trim()).filter(s=>s.length>2);
 }
 
-function startReader(text, title=''){
+function startReader(text, title='', pairs=null){
   if(!text||typeof text!=='string') text=document.getElementById('readerInput').value.trim();
   if(!text){showToast('Please paste some text first');return;}
   readerSentences=splitSentences(text);
+  readerPairs = pairs || readerSentences.map(pt=>({pt,en:''}));
   if(!readerSentences.length){showToast('No sentences found');return;}
   readerIndex=0;
   const tb=document.getElementById('readerTitleBar');
@@ -2170,6 +2172,8 @@ function updateReaderDisplay(){
   document.getElementById('readerCounter').textContent=(i+1)+' / '+total;
   document.getElementById('readerPrev').textContent=i>0?readerSentences[i-1]:'';
   document.getElementById('readerCurrent').textContent=readerSentences[i]||'';
+  const enEl=document.getElementById('readerTranslation');
+  if(enEl) enEl.textContent=readerPairs[i]?.en||'';
   document.getElementById('readerNext').textContent=i<total-1?readerSentences[i+1]:'';
 }
 
