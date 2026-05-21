@@ -275,8 +275,9 @@
       <div style="background:#f8f9fc;border-radius:10px;padding:14px;border:1px solid #e8edf5;">
         <div style="font-size:12px;font-weight:700;color:#555;margin-bottom:8px;">✏️ Try your own text (not saved)</div>
         <textarea id="readerInput" rows="4" placeholder="Paste any Portuguese text here to practice…" style="width:100%;box-sizing:border-box;padding:10px 12px;border-radius:8px;border:1px solid #ddd;font-size:13px;font-family:inherit;line-height:1.6;resize:vertical;"></textarea>
-        <div style="display:flex;gap:8px;margin-top:8px;">
+        <div style="display:flex;gap:8px;margin-top:8px;flex-wrap:wrap;">
           <button onclick="startReader(document.getElementById('readerInput').value)" style="padding:8px 20px;border-radius:8px;border:none;background:#2c5f8a;color:#fff;cursor:pointer;font-family:inherit;font-size:13px;font-weight:600;">▶ Try it</button>
+          <button onclick="showPatternExtractor(document.getElementById('readerInput').value,'My text')" style="padding:8px 16px;border-radius:8px;border:none;background:#7b4ea0;color:#fff;cursor:pointer;font-family:inherit;font-size:13px;font-weight:600;">🔍 Extract patterns</button>
           <button onclick="document.getElementById('readerInput').value='';" style="padding:8px 14px;border-radius:8px;border:1px solid #ddd;background:#fff;cursor:pointer;font-family:inherit;font-size:13px;color:#888;">Clear</button>
         </div>
       </div>
@@ -2195,6 +2196,7 @@ async function initReader(){
         <div style="font-size:11px;color:#aaa;">${t.date}${t.level?' · '+t.level:''} · ${t.sentences} sentences</div>
       </div>
       <button onclick="startReader(viewerSavedTexts[${i}].text,'${escQ(t.title)}',viewerSavedTexts[${i}].sentencePairs)" style="padding:5px 14px;border-radius:6px;border:none;background:#2c5f8a;color:#fff;cursor:pointer;font-size:12px;font-family:inherit;">▶ Read</button>
+      <button onclick="showPatternExtractor(viewerSavedTexts[${i}].text,'${escQ(t.title)}')" style="padding:5px 10px;border-radius:6px;border:none;background:#7b4ea0;color:#fff;cursor:pointer;font-size:12px;font-family:inherit;">🔍</button>
     </div>`).join('');
 }
 
@@ -2358,6 +2360,121 @@ function renderPatterns(){
   }).join('');
 }
 function togglePattern(id){expandedPattern=expandedPattern===id?null:id;renderPatterns();}
+
+// ═══ PATTERN EXTRACTOR ════════════════════════════════════════════════════
+const PATTERN_ENDINGS=[
+  {id:'cao',    endings:[/ção$/i,/são$/i,/xão$/i]},
+  {id:'mente',  endings:[/mente$/i]},
+  {id:'dade',   endings:[/dade$/i,/tade$/i]},
+  {id:'ista',   endings:[/ista$/i]},
+  {id:'oso',    endings:[/oso$/i,/osa$/i]},
+  {id:'avel',   endings:[/ável$/i,/ível$/i,/avel$/i,/ivel$/i]},
+  {id:'encia',  endings:[/ência$/i,/ância$/i,/ença$/i,/ança$/i]},
+  {id:'ario',   endings:[/ário$/i,/ária$/i]},
+  {id:'ismo',   endings:[/ismo$/i]},
+  {id:'ura',    endings:[/ura$/i]},
+  {id:'ivo',    endings:[/ivo$/i,/iva$/i]},
+  {id:'tico',   endings:[/tico$/i,/tica$/i]},
+  {id:'ude',    endings:[/ude$/i,/idão$/i]},
+  {id:'al',     endings:[/[^ç]al$/i]},
+  {id:'ao',     endings:[/ão$/i,/ões$/i,/ães$/i]},
+];
+
+function cleanWord(w){ return w.replace(/[.,!?;:«»"'()\[\]{}…—–\-]/g,'').trim().toLowerCase(); }
+
+function extractPatternsFromText(text){
+  if(!text) return {matched:{},newPatterns:[]};
+  const uniqueWords=[...new Set(text.split(/\s+/).map(cleanWord).filter(w=>w.length>3))];
+  const matched={};
+  const unmatched=[];
+  uniqueWords.forEach(word=>{
+    let found=false;
+    for(const pe of PATTERN_ENDINGS){
+      if(pe.endings.some(re=>re.test(word))){
+        if(!matched[pe.id]) matched[pe.id]=new Set();
+        matched[pe.id].add(word); found=true; break;
+      }
+    }
+    if(!found&&word.length>=5) unmatched.push(word);
+  });
+  const endingMap={};
+  unmatched.forEach(w=>{
+    for(let len=3;len<=Math.min(6,w.length-2);len++){
+      const ending=w.slice(-len);
+      if(!/^[aeiouáéíóúàâêôãõ]/i.test(ending)){
+        if(!endingMap[ending]) endingMap[ending]=[];
+        endingMap[ending].push(w);
+      }
+    }
+  });
+  const newPatterns=Object.entries(endingMap).filter(([,ws])=>ws.length>=3)
+    .sort((a,b)=>b[1].length-a[1].length).slice(0,8)
+    .map(([ending,ws])=>({ending,words:[...new Set(ws)].slice(0,10)}));
+  return {matched,newPatterns};
+}
+
+let extractionResult=null, extractionSource='';
+
+function showPatternExtractor(text, sourceLabel){
+  extractionSource=sourceLabel;
+  extractionResult=extractPatternsFromText(text);
+  const modal=document.getElementById('patternExtractModal');
+  if(!modal) return;
+  renderExtractionResults();
+  modal.style.display='flex';
+}
+
+function closeExtractor(){ document.getElementById('patternExtractModal').style.display='none'; }
+
+function renderExtractionResults(){
+  const el=document.getElementById('patternExtractBody');
+  if(!el||!extractionResult) return;
+  const {matched,newPatterns}=extractionResult;
+  const userWordSet=new Set(words.map(w=>w.word.toLowerCase()));
+  const patternMap=Object.fromEntries(WORD_PATTERNS.map(p=>[p.id,p]));
+  const matchedKeys=Object.keys(matched).filter(k=>matched[k].size>0);
+  let html=`<div style="font-size:13px;color:#555;margin-bottom:14px;">Source: <strong>${extractionSource}</strong> · Found <strong>${matchedKeys.length}</strong> known pattern${matchedKeys.length!==1?'s':''}${newPatterns.length?` + <strong>${newPatterns.length}</strong> new cluster${newPatterns.length!==1?'s':''}`:''}</div>`;
+  if(matchedKeys.length){
+    html+=`<div style="font-size:11px;color:#aaa;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:8px;">✅ Known patterns in text</div>`;
+    matchedKeys.forEach(id=>{
+      const p=patternMap[id]; if(!p) return;
+      const wordList=[...matched[id]].sort();
+      html+=`<div style="background:#fff;border-radius:10px;padding:12px 14px;margin-bottom:8px;border-left:4px solid ${p.color};">
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap;">
+          <span style="font-size:15px;font-weight:800;color:${p.color};font-family:monospace;">${p.pattern}</span>
+          <span style="font-size:11px;color:#fff;background:${CEFR_COLORS[p.level]||'#aaa'};padding:1px 8px;border-radius:6px;font-weight:700;">${p.level}</span>
+          <span style="font-size:12px;color:#888;">${p.english}</span>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:6px;">
+          ${wordList.map(w=>{
+            const inVocab=userWordSet.has(w);
+            return `<div style="display:flex;align-items:center;gap:4px;padding:5px 10px;border-radius:20px;background:${inVocab?'#f3f0ff':'#f5f5f5'};border:1px solid ${inVocab?'#7b4ea030':'#e8e0d8'};">
+              <span style="font-size:13px;font-weight:600;color:${inVocab?'#7b4ea0':'var(--navy)'};">${w}${inVocab?' 📖':''}</span>
+              <button class="speak-btn" style="font-size:11px;" onclick="speakText('${escQ(w)}','pt-PT',this)">🔊</button>
+            </div>`;
+          }).join('')}
+        </div>
+      </div>`;
+    });
+  }
+  if(newPatterns.length){
+    html+=`<div style="font-size:11px;color:#aaa;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;margin:14px 0 8px;">🔍 New clusters detected</div>
+    <p style="font-size:12px;color:#888;margin-bottom:10px;">These endings appear 3+ times but aren't in the patterns library.</p>`;
+    newPatterns.forEach(({ending,words:ws})=>{
+      html+=`<div style="background:#fff;border-radius:10px;padding:12px 14px;margin-bottom:8px;border-left:4px solid #b5830a;">
+        <div style="font-size:15px;font-weight:800;color:#b5830a;font-family:monospace;margin-bottom:8px;">-${ending} <span style="font-size:11px;font-weight:400;color:#aaa;">(${ws.length} words)</span></div>
+        <div style="display:flex;flex-wrap:wrap;gap:6px;">
+          ${ws.map(w=>`<div style="display:flex;align-items:center;gap:4px;padding:5px 10px;border-radius:20px;background:#fef3e2;border:1px solid #b5830a22;">
+            <span style="font-size:13px;font-weight:600;color:var(--navy);">${w}</span>
+            <button class="speak-btn" style="font-size:11px;" onclick="speakText('${escQ(w)}','pt-PT',this)">🔊</button>
+          </div>`).join('')}
+        </div>
+      </div>`;
+    });
+  }
+  if(!matchedKeys.length&&!newPatterns.length) html+=`<p style="color:#bbb;text-align:center;padding:20px;">No pattern clusters found.</p>`;
+  el.innerHTML=html;
+}
 
 function showToast(msg){
   const t=document.getElementById('toast');
@@ -2564,5 +2681,18 @@ renderNumGrid();
 renderAlphaGrid();
 updateSortBtns();
 </script>
+<!-- ═══ PATTERN EXTRACTOR MODAL ═══ -->
+<div id="patternExtractModal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:1000;align-items:flex-start;justify-content:center;padding:20px;overflow-y:auto;">
+  <div style="background:#f5f0eb;border-radius:16px;width:100%;max-width:600px;max-height:90vh;overflow-y:auto;box-shadow:0 8px 40px rgba(0,0,0,0.3);">
+    <div style="background:#1a3a5c;color:#fff;padding:16px 20px;border-radius:16px 16px 0 0;display:flex;align-items:center;justify-content:space-between;">
+      <div>
+        <div style="font-size:16px;font-weight:700;">🔍 Pattern Extractor</div>
+        <div style="font-size:11px;color:#a8c4d8;margin-top:2px;">Words matched to known Portuguese patterns</div>
+      </div>
+      <button onclick="closeExtractor()" style="background:rgba(255,255,255,0.15);border:none;color:#fff;border-radius:8px;padding:6px 12px;cursor:pointer;font-size:18px;line-height:1;">✕</button>
+    </div>
+    <div id="patternExtractBody" style="padding:16px;"></div>
+  </div>
+</div>
 </body>
 </html>
