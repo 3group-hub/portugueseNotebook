@@ -14553,5 +14553,16 @@
       "future-peri": [],
       "future-simple": []
     }
+  },
+  {
+    "id": 1779439950855,
+    "word": "Ver",
+    "translation": "See",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "22/05/2026",
+    "generatingExample": true,
+    "assessingFreq": true
   }
 ]
