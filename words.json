@@ -12950,5 +12950,131 @@
     "generatingExample": false,
     "assessingFreq": false,
     "freq": "common"
+  },
+  {
+    "id": 1779434969772,
+    "word": "milhão",
+    "translation": "million",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "22/05/2026"
+  },
+  {
+    "id": 1779434969773,
+    "word": "cartão",
+    "translation": "card",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "22/05/2026"
+  },
+  {
+    "id": 1779434969774,
+    "word": "cidadão",
+    "translation": "citizen",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "22/05/2026"
+  },
+  {
+    "id": 1779434969775,
+    "word": "conclusão",
+    "translation": "conclusion",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "22/05/2026"
+  },
+  {
+    "id": 1779434969776,
+    "word": "identificação",
+    "translation": "identification",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "22/05/2026"
+  },
+  {
+    "id": 1779434969777,
+    "word": "condução",
+    "translation": "driving",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "22/05/2026"
+  },
+  {
+    "id": 1779434969778,
+    "word": "fiscal",
+    "translation": "fiscal",
+    "category": "Adjective",
+    "notes": "",
+    "examples": [],
+    "addedAt": "22/05/2026"
+  },
+  {
+    "id": 1779434969779,
+    "word": "social",
+    "translation": "social",
+    "category": "Adjective",
+    "notes": "",
+    "examples": [],
+    "addedAt": "22/05/2026"
+  },
+  {
+    "id": 1779434969780,
+    "word": "portugal",
+    "translation": "portugal",
+    "category": "Adjective",
+    "notes": "",
+    "examples": [],
+    "addedAt": "22/05/2026"
+  },
+  {
+    "id": 1779434969781,
+    "word": "igual",
+    "translation": "equal",
+    "category": "Adjective",
+    "notes": "",
+    "examples": [],
+    "addedAt": "22/05/2026"
+  },
+  {
+    "id": 1779434969782,
+    "word": "validade",
+    "translation": "validity",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "22/05/2026"
+  },
+  {
+    "id": 1779434969783,
+    "word": "bancária",
+    "translation": "banking",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "22/05/2026"
+  },
+  {
+    "id": 1779434969784,
+    "word": "segurança",
+    "translation": "security",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "22/05/2026"
+  },
+  {
+    "id": 1779434969785,
+    "word": "residência",
+    "translation": "residence",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "22/05/2026"
   }
 ]
