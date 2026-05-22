@@ -13193,5 +13193,32 @@
     "notes": "",
     "examples": [],
     "addedAt": "22/05/2026"
+  },
+  {
+    "id": 1779434992859,
+    "word": "vinte",
+    "translation": "twenty",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "22/05/2026"
+  },
+  {
+    "id": 1779434992860,
+    "word": "contribuinte",
+    "translation": "taxpayer",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "22/05/2026"
+  },
+  {
+    "id": 1779434992861,
+    "word": "utente",
+    "translation": "user",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "22/05/2026"
   }
 ]
