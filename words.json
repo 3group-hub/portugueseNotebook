@@ -14228,5 +14228,77 @@
     "notes": "",
     "examples": [],
     "addedAt": "22/05/2026"
+  },
+  {
+    "id": 1779435063672,
+    "word": "semelhante",
+    "translation": "similar",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "22/05/2026"
+  },
+  {
+    "id": 1779435063673,
+    "word": "elegante",
+    "translation": "elegant",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "22/05/2026"
+  },
+  {
+    "id": 1779435063674,
+    "word": "importante",
+    "translation": "important",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "22/05/2026"
+  },
+  {
+    "id": 1779435063675,
+    "word": "cliente",
+    "translation": "client",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "22/05/2026"
+  },
+  {
+    "id": 1779435063676,
+    "word": "frente",
+    "translation": "front",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "22/05/2026"
+  },
+  {
+    "id": 1779435063677,
+    "word": "excelente",
+    "translation": "",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "22/05/2026"
+  },
+  {
+    "id": 1779435063678,
+    "word": "xlente",
+    "translation": "unknown",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "22/05/2026"
+  },
+  {
+    "id": 1779435063679,
+    "word": "diferente",
+    "translation": "different",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "22/05/2026"
   }
 ]
