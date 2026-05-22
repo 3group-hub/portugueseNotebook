@@ -13076,5 +13076,86 @@
     "notes": "",
     "examples": [],
     "addedAt": "22/05/2026"
+  },
+  {
+    "id": 1779434985548,
+    "word": "duzentos",
+    "translation": "two hundred",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "22/05/2026"
+  },
+  {
+    "id": 1779434985549,
+    "word": "trezentos",
+    "translation": "three hundred",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "22/05/2026"
+  },
+  {
+    "id": 1779434985550,
+    "word": "quatrocentos",
+    "translation": "four hundred",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "22/05/2026"
+  },
+  {
+    "id": 1779434985551,
+    "word": "quinhentos",
+    "translation": "five hundred",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "22/05/2026"
+  },
+  {
+    "id": 1779434985552,
+    "word": "seiscentos",
+    "translation": "six hundred",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "22/05/2026"
+  },
+  {
+    "id": 1779434985553,
+    "word": "setecentos",
+    "translation": "seven hundred",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "22/05/2026"
+  },
+  {
+    "id": 1779434985554,
+    "word": "oitocentos",
+    "translation": "eight hundred",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "22/05/2026"
+  },
+  {
+    "id": 1779434985555,
+    "word": "novecentos",
+    "translation": "nine hundred",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "22/05/2026"
+  },
+  {
+    "id": 1779434985556,
+    "word": "centos",
+    "translation": "hundreds",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "22/05/2026"
   }
 ]
