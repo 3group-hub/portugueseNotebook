@@ -3805,12 +3805,20 @@ function renderExtractionResults(){
   const patternMap = Object.fromEntries(WORD_PATTERNS.map(p=>[p.id,p]));
 
   const matchedKeys = Object.keys(matched).filter(k=>matched[k].size>0);
+  const allNewWords = [...new Set(matchedKeys.flatMap(k=>[...matched[k]]).filter(w=>!userWordSet.has(w)))];
 
-  let html = `<div style="font-size:13px;color:#555;margin-bottom:14px;">
+  let html = `<div style="font-size:13px;color:#555;margin-bottom:10px;">
     Source: <strong>${extractionSource}</strong> · 
-    Found <strong>${matchedKeys.length}</strong> known pattern${matchedKeys.length!==1?'s':''} 
+    Found <strong>${matchedKeys.length}</strong> known pattern${matchedKeys.length!==1?'s':''}
     ${newPatterns.length?`+ <strong>${newPatterns.length}</strong> new cluster${newPatterns.length!==1?'s':''}`:''}.
   </div>`;
+
+  if(allNewWords.length){
+    html += `<div style="background:#f0faf4;border-radius:10px;padding:10px 14px;margin-bottom:14px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;border:1px solid rgba(26,107,60,0.2);">
+      <span style="font-size:13px;color:#1a6b3c;font-weight:600;">✨ ${allNewWords.length} new word${allNewWords.length!==1?'s':''} found not yet in your vocab</span>
+      <button onclick="addAllWords(${JSON.stringify(allNewWords)})" style="padding:6px 16px;border-radius:8px;border:none;background:#1a6b3c;color:#fff;cursor:pointer;font-family:inherit;font-size:13px;font-weight:600;">+ Add all new</button>
+    </div>`;
+  }
 
   if(matchedKeys.length){
     html += `<div style="font-size:11px;color:#aaa;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:8px;">✅ Known patterns found in text</div>`;
@@ -3822,6 +3830,9 @@ function renderExtractionResults(){
           <span style="font-size:15px;font-weight:800;color:${p.color};font-family:monospace;">${p.pattern}</span>
           <span style="font-size:11px;color:#fff;background:${CEFR_COLORS[p.level]||'#aaa'};padding:1px 8px;border-radius:6px;font-weight:700;">${p.level}</span>
           <span style="font-size:12px;color:#888;">${p.english}</span>
+          ${wordList.filter(w=>!userWordSet.has(w)).length>1
+            ? `<button onclick="addAllWords(${JSON.stringify(wordList.filter(w=>!userWordSet.has(w)))})" style="font-size:10px;padding:2px 8px;border-radius:5px;border:none;background:#1a6b3c;color:#fff;cursor:pointer;font-family:inherit;margin-left:auto;">+ Add all new</button>`
+            : ''}
         </div>
         <div style="display:flex;flex-wrap:wrap;gap:6px;">
           ${wordList.map(w=>{
@@ -3844,7 +3855,12 @@ function renderExtractionResults(){
     <p style="font-size:12px;color:#888;margin-bottom:10px;">These endings appear 3+ times but aren't in the patterns library. They may be worth learning as a group.</p>`;
     newPatterns.forEach(({ending, words:ws})=>{
       html += `<div style="background:#fff;border-radius:10px;padding:12px 14px;margin-bottom:8px;border-left:4px solid #b5830a;">
-        <div style="font-size:15px;font-weight:800;color:#b5830a;font-family:monospace;margin-bottom:8px;">-${ending} <span style="font-size:11px;font-weight:400;color:#aaa;">(${ws.length} words)</span></div>
+        <div style="font-size:15px;font-weight:800;color:#b5830a;font-family:monospace;margin-bottom:8px;display:flex;align-items:center;gap:8px;">
+          -${ending} <span style="font-size:11px;font-weight:400;color:#aaa;">(${ws.length} words)</span>
+          ${ws.filter(w=>!userWordSet.has(w)).length>1
+            ? `<button onclick="addAllWords(${JSON.stringify(ws.filter(w=>!userWordSet.has(w)))})" style="font-size:10px;padding:2px 8px;border-radius:5px;border:none;background:#b5830a;color:#fff;cursor:pointer;font-family:inherit;margin-left:auto;">+ Add all new</button>`
+            : ''}
+        </div>
         <div style="display:flex;flex-wrap:wrap;gap:6px;">
           ${ws.map(w=>{
             const inVocab=userWordSet.has(w);
@@ -3868,27 +3884,65 @@ function renderExtractionResults(){
   el.innerHTML = html;
 }
 
-function quickAddWord(ptWord){
-  // Check duplicate first
+async function quickAddWord(ptWord){
+  // Check duplicate
   const existing = words.find(w=>w.word.toLowerCase()===ptWord.toLowerCase());
   if(existing){
     showToast(`⚠️ "${ptWord}" is already in your notebook`);
-    closeExtractor();
-    return;
+    return; // stay in modal
   }
-  // Pre-fill the add word form and switch to vocab tab
-  const ptInp = document.getElementById('ptInp');
-  const enInp = document.getElementById('enInp');
-  if(ptInp){ ptInp.value = ptWord; }
-  if(enInp){ enInp.value = ''; enInp.focus(); }
-  closeExtractor();
-  // Switch to vocab tab
-  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.toggle('active', b.dataset.tab==='vocab'));
-  ['vocab','flashcards','textimport','alphabet','numbers','situations','nations','professions','notes','patterns','prepositions','reader','sentences'].forEach(t=>{
-    const el=document.getElementById('tab-'+t); if(el) el.classList.add('hidden');
+  // Add with placeholder translation — user can edit later
+  // Ask for translation inline via a small prompt
+  const en = window.prompt(`English translation for "${ptWord}":`, '');
+  if(en === null) return; // cancelled
+  if(!en.trim()){ showToast('Please enter a translation'); return; }
+
+  const category = guessCategory(ptWord);
+  words.push({
+    id: Date.now(), word: ptWord, translation: en.trim(),
+    category, notes:'', examples:[],
+    addedAt: new Date().toLocaleDateString('pt-PT')
   });
-  document.getElementById('tab-vocab').classList.remove('hidden');
-  showToast(`"${ptWord}" pre-filled — add the English translation and click Add`);
+  await saveWords();
+  showToast(`✅ "${ptWord}" added!`);
+
+  // Generate example in background
+  const newWord = words[words.length-1];
+  if(newWord) generateAndAttach(newWord.id);
+
+  // Stay in modal — just refresh the results to show 📖 saved
+  renderExtractionResults();
+}
+
+async function addAllWords(wordList){
+  if(!wordList?.length) return;
+  const newWords = wordList.filter(w=>!words.find(x=>x.word.toLowerCase()===w.toLowerCase()));
+  if(!newWords.length){ showToast('All words are already in your notebook!'); return; }
+  if(!confirm(`Add ${newWords.length} new word${newWords.length!==1?'s':''} to your notebook? You can add translations afterwards by editing each word.`)) return;
+
+  let added = 0;
+  for(const ptWord of newWords){
+    const category = guessCategory(ptWord);
+    words.push({
+      id: Date.now() + added, word: ptWord, translation: '(translate me)',
+      category, notes:'', examples:[],
+      addedAt: new Date().toLocaleDateString('pt-PT')
+    });
+    added++;
+    await new Promise(r=>setTimeout(r,10)); // ensure unique IDs
+  }
+  await saveWords();
+  showToast(`✅ Added ${added} word${added!==1?'s':''}! Edit each one to add the translation.`);
+  renderExtractionResults();
+}
+
+function guessCategory(word){
+  // Guess category from pattern
+  if(/ção$|são$|dade$|tade$|ura$|ismo$|ência$|ância$|ença$|ança$|ude$|idão$/i.test(word)) return 'Noun';
+  if(/mente$/i.test(word)) return 'Adverb';
+  if(/oso$|osa$|ável$|ível$|ivo$|iva$|tico$|tica$|al$/i.test(word)) return 'Adjective';
+  if(/ar$|er$|ir$/i.test(word)) return 'Verb';
+  return 'Noun';
 }
 
 
