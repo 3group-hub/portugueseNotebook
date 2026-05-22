@@ -14562,7 +14562,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "22/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -14606,9 +14606,60 @@
       ],
       "past": [],
       "future-peri": [],
-      "future-simple": []
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu verei o filme",
+          "en": "I will see the movie",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu verás o jogo",
+          "en": "You will see the game",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela verá o mar",
+          "en": "She will see the sea",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós veremos tv.",
+          "en": "We will watch TV",
+          "_grammarFixes": [
+            {
+              "orig": "tv",
+              "best": "tv.",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês verão isso",
+          "en": "You will see this",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles verão o ‘show’",
+          "en": "They will see the show",
+          "_grammarFixes": [
+            {
+              "orig": "show",
+              "best": "‘show’",
+              "rule": "🇵🇹🎓 Estrangeirismos específicos pt_PT"
+            }
+          ],
+          "_grammarChecked": true
+        }
+      ]
     },
-    "_generatingTense": "future-simple",
+    "_generatingTense": null,
     "_activeTense": "future-simple"
   }
 ]
