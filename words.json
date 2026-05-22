@@ -14122,15 +14122,6 @@
     "addedAt": "22/05/2026"
   },
   {
-    "id": 1779435019373,
-    "word": "real",
-    "translation": "",
-    "category": "Adjective",
-    "notes": "",
-    "examples": [],
-    "addedAt": "22/05/2026"
-  },
-  {
     "id": 1779435019374,
     "word": "nasal",
     "translation": "",
@@ -14561,7 +14552,51 @@
     "notes": "",
     "examples": [],
     "addedAt": "22/05/2026",
-    "generatingExample": true,
-    "assessingFreq": true
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu colho fruta",
+          "en": "I pick fruit",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu colhes salada",
+          "en": "You pick salad",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela colhe flores",
+          "en": "She picks flowers",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós colhemos legumes",
+          "en": "We pick vegetables",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês colhem ervas",
+          "en": "You pick herbs",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles colhem frutos",
+          "en": "They pick fruits",
+          "_grammarChecked": true
+        }
+      ],
+      "past": [],
+      "future-peri": [],
+      "future-simple": []
+    }
   }
 ]
