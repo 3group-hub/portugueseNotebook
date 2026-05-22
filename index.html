@@ -3836,13 +3836,23 @@ function renderExtractionResults(){
         </div>
         <div style="display:flex;flex-wrap:wrap;gap:6px;">
           ${wordList.map(w=>{
-            const inVocab = userWordSet.has(w);
-            return `<div style="display:flex;align-items:center;gap:4px;padding:5px 10px;border-radius:20px;background:${inVocab?'#f3f0ff':'#f5f5f5'};border:1px solid ${inVocab?'#7b4ea030':'#e8e0d8'};">
-              <span style="font-size:13px;font-weight:600;color:${inVocab?'#7b4ea0':'#1a3a5c'};">${w}</span>
+            const inVocab=userWordSet.has(w);
+            const isAdding=addingWord===w;
+            if(inVocab) return `<div style="display:flex;align-items:center;gap:4px;padding:5px 10px;border-radius:20px;background:#f3f0ff;border:1px solid #7b4ea030;">
+              <span style="font-size:13px;font-weight:600;color:#7b4ea0;">${w}</span>
               <button class="speak-btn" style="font-size:11px;" onclick="speakText('${escQ(w)}','pt-PT',this)">🔊</button>
-              ${inVocab
-                ? `<span style="font-size:10px;color:#7b4ea0;font-weight:700;">📖 saved</span>`
-                : `<button onclick="quickAddWord('${escQ(w)}')" style="font-size:10px;padding:1px 6px;border-radius:4px;border:none;background:#1a6b3c;color:#fff;cursor:pointer;font-family:inherit;">+ Add</button>`}
+              <span style="font-size:10px;color:#7b4ea0;font-weight:700;">📖 saved</span>
+            </div>`;
+            if(isAdding) return `<div style="display:flex;align-items:center;gap:5px;padding:5px 10px;border-radius:20px;background:#f0faf4;border:2px solid #1a6b3c;flex-wrap:wrap;">
+              <span style="font-size:13px;font-weight:700;color:#1a3a5c;">${w}</span>
+              <input id="addWordInput_${w.replace(/[^a-zA-Z]/g,'_')}" placeholder="English…" onkeydown="if(event.key==='Enter')confirmAddWord('${escQ(w)}')" style="padding:3px 8px;border-radius:6px;border:1px solid #1a6b3c;font-size:12px;font-family:inherit;width:110px;outline:none;" />
+              <button onclick="confirmAddWord('${escQ(w)}')" style="padding:3px 10px;border-radius:6px;border:none;background:#1a6b3c;color:#fff;cursor:pointer;font-size:12px;font-family:inherit;font-weight:700;">✓ Save</button>
+              <button onclick="addingWord=null;renderExtractionResults()" style="padding:3px 7px;border-radius:6px;border:1px solid #ddd;background:#fff;cursor:pointer;font-size:12px;color:#aaa;">✕</button>
+            </div>`;
+            return `<div style="display:flex;align-items:center;gap:4px;padding:5px 10px;border-radius:20px;background:#f5f5f5;border:1px solid #e8e0d8;">
+              <span style="font-size:13px;font-weight:600;color:#1a3a5c;">${w}</span>
+              <button class="speak-btn" style="font-size:11px;" onclick="speakText('${escQ(w)}','pt-PT',this)">🔊</button>
+              <button onclick="quickAddWord('${escQ(w)}')" style="font-size:10px;padding:2px 8px;border-radius:5px;border:none;background:#1a6b3c;color:#fff;cursor:pointer;font-family:inherit;font-weight:600;">+ Add</button>
             </div>`;
           }).join('')}
         </div>
@@ -3864,12 +3874,22 @@ function renderExtractionResults(){
         <div style="display:flex;flex-wrap:wrap;gap:6px;">
           ${ws.map(w=>{
             const inVocab=userWordSet.has(w);
-            return `<div style="display:flex;align-items:center;gap:4px;padding:5px 10px;border-radius:20px;background:${inVocab?'#f3f0ff':'#fef3e2'};border:1px solid ${inVocab?'#7b4ea030':'#b5830a22'};">
-              <span style="font-size:13px;font-weight:600;color:${inVocab?'#7b4ea0':'#1a3a5c'};">${w}</span>
+            const isAdding=addingWord===w;
+            if(inVocab) return `<div style="display:flex;align-items:center;gap:4px;padding:5px 10px;border-radius:20px;background:#f3f0ff;border:1px solid #7b4ea030;">
+              <span style="font-size:13px;font-weight:600;color:#7b4ea0;">${w}</span>
               <button class="speak-btn" style="font-size:11px;" onclick="speakText('${escQ(w)}','pt-PT',this)">🔊</button>
-              ${inVocab
-                ? `<span style="font-size:10px;color:#7b4ea0;font-weight:700;">📖 saved</span>`
-                : `<button onclick="quickAddWord('${escQ(w)}')" style="font-size:10px;padding:1px 6px;border-radius:4px;border:none;background:#b5830a;color:#fff;cursor:pointer;font-family:inherit;">+ Add</button>`}
+              <span style="font-size:10px;color:#7b4ea0;font-weight:700;">📖 saved</span>
+            </div>`;
+            if(isAdding) return `<div style="display:flex;align-items:center;gap:5px;padding:5px 10px;border-radius:20px;background:#fff8f0;border:2px solid #b5830a;flex-wrap:wrap;">
+              <span style="font-size:13px;font-weight:700;color:#1a3a5c;">${w}</span>
+              <input id="addWordInput_${w.replace(/[^a-zA-Z]/g,'_')}" placeholder="English…" onkeydown="if(event.key==='Enter')confirmAddWord('${escQ(w)}')" style="padding:3px 8px;border-radius:6px;border:1px solid #b5830a;font-size:12px;font-family:inherit;width:110px;outline:none;" />
+              <button onclick="confirmAddWord('${escQ(w)}')" style="padding:3px 10px;border-radius:6px;border:none;background:#b5830a;color:#fff;cursor:pointer;font-size:12px;font-family:inherit;font-weight:700;">✓ Save</button>
+              <button onclick="addingWord=null;renderExtractionResults()" style="padding:3px 7px;border-radius:6px;border:1px solid #ddd;background:#fff;cursor:pointer;font-size:12px;color:#aaa;">✕</button>
+            </div>`;
+            return `<div style="display:flex;align-items:center;gap:4px;padding:5px 10px;border-radius:20px;background:#fef3e2;border:1px solid #b5830a22;">
+              <span style="font-size:13px;font-weight:600;color:#1a3a5c;">${w}</span>
+              <button class="speak-btn" style="font-size:11px;" onclick="speakText('${escQ(w)}','pt-PT',this)">🔊</button>
+              <button onclick="quickAddWord('${escQ(w)}')" style="font-size:10px;padding:2px 8px;border-radius:5px;border:none;background:#b5830a;color:#fff;cursor:pointer;font-family:inherit;font-weight:600;">+ Add</button>
             </div>`;
           }).join('')}
         </div>
@@ -3884,60 +3904,60 @@ function renderExtractionResults(){
   el.innerHTML = html;
 }
 
-async function quickAddWord(ptWord){
+// Inline add state — tracks which word is currently showing an input field
+let addingWord = null;
+
+function quickAddWord(ptWord){
   // Check duplicate
-  const existing = words.find(w=>w.word.toLowerCase()===ptWord.toLowerCase());
-  if(existing){
+  if(words.find(w=>w.word.toLowerCase()===ptWord.toLowerCase())){
     showToast(`⚠️ "${ptWord}" is already in your notebook`);
-    return; // stay in modal
+    return;
   }
-  // Add with placeholder translation — user can edit later
-  // Ask for translation inline via a small prompt
-  const en = window.prompt(`English translation for "${ptWord}":`, '');
-  if(en === null) return; // cancelled
-  if(!en.trim()){ showToast('Please enter a translation'); return; }
+  // Toggle inline input for this word
+  addingWord = addingWord === ptWord ? null : ptWord;
+  renderExtractionResults();
+  // Focus the input after render
+  if(addingWord){
+    setTimeout(()=>{
+      const inp = document.getElementById('addWordInput_'+CSS.escape(ptWord));
+      if(inp) inp.focus();
+    }, 50);
+  }
+}
 
+async function confirmAddWord(ptWord){
+  const safeId = ptWord.replace(/[^a-zA-Z]/g,'_');
+  const inp = document.getElementById('addWordInput_'+safeId);
+  const en = inp ? inp.value.trim() : '';
+  if(!en){ showToast('Please enter an English translation'); if(inp) inp.focus(); return; }
+  if(words.find(w=>w.word.toLowerCase()===ptWord.toLowerCase())){
+    showToast(`⚠️ "${ptWord}" already in notebook`); addingWord=null; renderExtractionResults(); return;
+  }
   const category = guessCategory(ptWord);
-  words.push({
-    id: Date.now(), word: ptWord, translation: en.trim(),
-    category, notes:'', examples:[],
-    addedAt: new Date().toLocaleDateString('pt-PT')
-  });
-  await saveWords();
-  showToast(`✅ "${ptWord}" added!`);
-
-  // Generate example in background
+  words.push({ id:Date.now(), word:ptWord, translation:en, category, notes:'', examples:[], addedAt:new Date().toLocaleDateString('pt-PT') });
+  saveWords();
   const newWord = words[words.length-1];
   if(newWord) generateAndAttach(newWord.id);
-
-  // Stay in modal — just refresh the results to show 📖 saved
+  showToast(`✅ "${ptWord}" added!`);
+  addingWord = null;
   renderExtractionResults();
 }
 
 async function addAllWords(wordList){
   if(!wordList?.length) return;
   const newWords = wordList.filter(w=>!words.find(x=>x.word.toLowerCase()===w.toLowerCase()));
-  if(!newWords.length){ showToast('All words are already in your notebook!'); return; }
-  if(!confirm(`Add ${newWords.length} new word${newWords.length!==1?'s':''} to your notebook? You can add translations afterwards by editing each word.`)) return;
-
-  let added = 0;
+  if(!newWords.length){ showToast('All words already in your notebook!'); return; }
+  let ts = Date.now();
   for(const ptWord of newWords){
-    const category = guessCategory(ptWord);
-    words.push({
-      id: Date.now() + added, word: ptWord, translation: '(translate me)',
-      category, notes:'', examples:[],
-      addedAt: new Date().toLocaleDateString('pt-PT')
-    });
-    added++;
-    await new Promise(r=>setTimeout(r,10)); // ensure unique IDs
+    words.push({ id:ts++, word:ptWord, translation:'', category:guessCategory(ptWord), notes:'', examples:[], addedAt:new Date().toLocaleDateString('pt-PT') });
   }
-  await saveWords();
-  showToast(`✅ Added ${added} word${added!==1?'s':''}! Edit each one to add the translation.`);
+  saveWords(); // save all at once
+  showToast(`✅ Added ${newWords.length} word${newWords.length!==1?'s':''}. Open each to add translations.`);
+  addingWord = null;
   renderExtractionResults();
 }
 
 function guessCategory(word){
-  // Guess category from pattern
   if(/ção$|são$|dade$|tade$|ura$|ismo$|ência$|ância$|ença$|ança$|ude$|idão$/i.test(word)) return 'Noun';
   if(/mente$/i.test(word)) return 'Adverb';
   if(/oso$|osa$|ável$|ível$|ivo$|iva$|tico$|tica$|al$/i.test(word)) return 'Adjective';
