@@ -14444,5 +14444,59 @@
     "notes": "",
     "examples": [],
     "addedAt": "22/05/2026"
+  },
+  {
+    "id": 1779435086932,
+    "word": "assento",
+    "translation": "seat",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "22/05/2026"
+  },
+  {
+    "id": 1779435086933,
+    "word": "instrumento",
+    "translation": "instrument",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "22/05/2026"
+  },
+  {
+    "id": 1779435086934,
+    "word": "cinto",
+    "translation": "belt",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "22/05/2026"
+  },
+  {
+    "id": 1779435086935,
+    "word": "sinto",
+    "translation": "feel",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "22/05/2026"
+  },
+  {
+    "id": 1779435086936,
+    "word": "acento",
+    "translation": "accent",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "22/05/2026"
+  },
+  {
+    "id": 1779435086937,
+    "word": "conjunto",
+    "translation": "set",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "22/05/2026"
   }
 ]
