@@ -14548,7 +14548,7 @@
     "id": 1779435108235,
     "word": "mulher",
     "translation": "woman",
-    "category": "Verb",
+    "category": "Noun",
     "notes": "",
     "examples": [],
     "addedAt": "22/05/2026"
@@ -14560,6 +14560,8 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "22/05/2026"
+    "addedAt": "22/05/2026",
+    "generatingExample": true,
+    "assessingFreq": true
   }
 ]
