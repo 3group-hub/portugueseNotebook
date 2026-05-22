@@ -14569,8 +14569,8 @@
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu vejo o livro",
-          "en": "I see the book",
+          "pt": "Eu vejo a TV",
+          "en": "I watch TV",
           "_grammarChecked": true
         },
         {
@@ -14581,26 +14581,26 @@
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela vê o menino",
-          "en": "She sees the boy",
+          "pt": "Ela vê o livro",
+          "en": "She sees the book",
           "_grammarChecked": true
         },
         {
           "pronoun": "nós",
-          "pt": "Nós vemos a TV",
-          "en": "We see the TV",
+          "pt": "Nós vemos um gato",
+          "en": "We see a cat",
           "_grammarChecked": true
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês veem o jogo",
-          "en": "You see the game",
+          "pt": "Vocês veem o mar",
+          "en": "You see the sea",
           "_grammarChecked": true
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles veem o mar",
-          "en": "They see the sea",
+          "pt": "Eles veem um carro",
+          "en": "They see a car",
           "_grammarChecked": true
         }
       ],
@@ -14608,7 +14608,7 @@
       "future-peri": [],
       "future-simple": []
     },
-    "_generatingTense": "present",
+    "_generatingTense": null,
     "_activeTense": "present"
   }
 ]
