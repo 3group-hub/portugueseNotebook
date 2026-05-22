@@ -14498,5 +14498,50 @@
     "notes": "",
     "examples": [],
     "addedAt": "22/05/2026"
+  },
+  {
+    "id": 1779435100429,
+    "word": "semelhantes",
+    "translation": "similar",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "22/05/2026"
+  },
+  {
+    "id": 1779435100430,
+    "word": "parentes",
+    "translation": "relatives",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "22/05/2026"
+  },
+  {
+    "id": 1779435100431,
+    "word": "tristes",
+    "translation": "sad",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "22/05/2026"
+  },
+  {
+    "id": 1779435100432,
+    "word": "importantes",
+    "translation": "important",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "22/05/2026"
+  },
+  {
+    "id": 1779435100433,
+    "word": "diferentes",
+    "translation": "different",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "22/05/2026"
   }
 ]
