@@ -203,6 +203,7 @@
       <button class="tab-btn" data-tab="notes">📄 Class Notes</button>
       <button class="tab-btn" data-tab="patterns">🔤 Patterns</button>
       <button class="tab-btn" data-tab="prepositions">🔗 Prepositions</button>
+      <button class="tab-btn" data-tab="possessives">🔑 Possessives</button>
       <button class="tab-btn" data-tab="reader">📖 Text Reader</button>
       <button class="tab-btn" data-tab="sentences">✍️ Sentences</button>
     </div>
@@ -595,6 +596,22 @@
       </div>
     </div>
     <div id="prep-content" style="margin-top:12px;"></div>
+  </div>
+
+  <!-- ═══ POSSESSIVES TAB ═══ -->
+  <div id="tab-possessives" class="hidden">
+    <div class="card" style="margin-top:16px;border-left:4px solid #8a3a5c;">
+      <h2 style="margin:0 0 4px;">🔑 Possessives</h2>
+      <p style="font-size:12px;color:#aaa;margin-bottom:12px;">Pronomes Possessivos — my, your, his, her, our, their · with examples and pronunciation</p>
+      <div style="display:flex;gap:6px;flex-wrap:wrap;" id="poss-section-btns">
+        <button onclick="showPossSection('table')"   class="poss-sec-btn active"  style="padding:6px 14px;border-radius:20px;border:1px solid #8a3a5c;background:#8a3a5c;color:#fff;font-size:12px;font-family:inherit;cursor:pointer;">📊 Table</button>
+        <button onclick="showPossSection('rules')"   class="poss-sec-btn"         style="padding:6px 14px;border-radius:20px;border:1px solid #ddd;background:#fff;color:#555;font-size:12px;font-family:inherit;cursor:pointer;">📖 Rules</button>
+        <button onclick="showPossSection('dele')"    class="poss-sec-btn"         style="padding:6px 14px;border-radius:20px;border:1px solid #ddd;background:#fff;color:#555;font-size:12px;font-family:inherit;cursor:pointer;">dele / dela</button>
+        <button onclick="showPossSection('examples')" class="poss-sec-btn"        style="padding:6px 14px;border-radius:20px;border:1px solid #ddd;background:#fff;color:#555;font-size:12px;font-family:inherit;cursor:pointer;">💬 Examples</button>
+        <button onclick="showPossSection('quiz')"    class="poss-sec-btn"         style="padding:6px 14px;border-radius:20px;border:1px solid #ddd;background:#fff;color:#555;font-size:12px;font-family:inherit;cursor:pointer;">🎯 Quiz</button>
+      </div>
+    </div>
+    <div id="poss-content" style="margin-top:12px;"></div>
   </div>
 
   <!-- ═══ TEXT READER TAB ═══ -->
@@ -1196,7 +1213,7 @@ document.querySelectorAll('.tab-btn').forEach(btn=>{
     document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
     btn.classList.add('active');
     activeTab=btn.dataset.tab;
-    ['vocab','flashcards','textimport','alphabet','numbers','situations','nations','professions','notes','patterns','prepositions','reader','sentences'].forEach(t=>document.getElementById('tab-'+t).classList.add('hidden'));
+    ['vocab','flashcards','textimport','alphabet','numbers','situations','nations','professions','notes','patterns','prepositions','possessives','reader','sentences'].forEach(t=>document.getElementById('tab-'+t).classList.add('hidden'));
     document.getElementById('tab-'+activeTab).classList.remove('hidden');
     if(activeTab==='sentences') updateSentWordCount();
     if(activeTab==='situations') initSituationsTab();
@@ -1205,6 +1222,7 @@ document.querySelectorAll('.tab-btn').forEach(btn=>{
     if(activeTab==='notes') initNotesTab();
     if(activeTab==='patterns') renderPatterns();
     if(activeTab==='prepositions') renderPrepositions();
+    if(activeTab==='possessives') renderPossessives();
     if(activeTab==='reader') initReader();
     if(activeTab==='flashcards') initFlashcards();
   });
@@ -3397,7 +3415,349 @@ function prepQuizAnswer(chosen, correct){
   advanceQuiz(!correct2);
 }
 
-// ═══ TEXT READER ══════════════════════════════════════════════════════════
+
+// ═══ POSSESSIVES TAB ═════════════════════════════════════════════════════
+const POSSESSIVES = [
+  {
+    owner:'eu', en:'my', color:'#2c5f8a',
+    rule:'Agrees with the THING owned, not the owner. Always used with a definite article in EP: o meu, a minha.',
+    forms:[
+      {pt:'meu',   gender:'m',number:'sg', example:'O meu livro é novo.',        exen:'My book is new.'},
+      {pt:'minha', gender:'f',number:'sg', example:'A minha casa é grande.',      exen:'My house is big.'},
+      {pt:'meus',  gender:'m',number:'pl', example:'Os meus amigos são simpáticos.',exen:'My friends are nice.'},
+      {pt:'minhas',gender:'f',number:'pl', example:'As minhas chaves estão aqui.', exen:'My keys are here.'},
+    ]
+  },
+  {
+    owner:'tu', en:'your (singular, informal)', color:'#1a6b3c',
+    rule:'Used with close friends, family, children. Informal. Same agreement rule as meu/minha.',
+    forms:[
+      {pt:'teu',   gender:'m',number:'sg', example:'O teu carro é rápido.',       exen:'Your car is fast.'},
+      {pt:'tua',   gender:'f',number:'sg', example:'A tua mãe é simpática.',      exen:'Your mother is nice.'},
+      {pt:'teus',  gender:'m',number:'pl', example:'Os teus livros são interessantes.',exen:'Your books are interesting.'},
+      {pt:'tuas',  gender:'f',number:'pl', example:'As tuas notas são boas.',      exen:'Your grades are good.'},
+    ]
+  },
+  {
+    owner:'ele / ela', en:'his / her', color:'#c1440e',
+    rule:'⚠️ seu/sua can mean his, her, your (formal) or their — causing ambiguity. In everyday EP, speakers prefer dele/dela instead. See the dele/dela section.',
+    forms:[
+      {pt:'seu',   gender:'m',number:'sg', example:'O seu nome é João.',          exen:'His/her name is João.'},
+      {pt:'sua',   gender:'f',number:'sg', example:'A sua casa é bonita.',        exen:'His/her house is beautiful.'},
+      {pt:'seus',  gender:'m',number:'pl', example:'Os seus livros estão aqui.',  exen:'His/her books are here.'},
+      {pt:'suas',  gender:'f',number:'pl', example:'As suas ideias são ótimas.',  exen:'His/her ideas are great.'},
+    ]
+  },
+  {
+    owner:'nós', en:'our', color:'#7b4ea0',
+    rule:'Fully agrees with the noun: nosso/nossa/nossos/nossas. Very regular and predictable.',
+    forms:[
+      {pt:'nosso',  gender:'m',number:'sg', example:'O nosso professor é excelente.', exen:'Our teacher is excellent.'},
+      {pt:'nossa',  gender:'f',number:'sg', example:'A nossa cidade é linda.',        exen:'Our city is beautiful.'},
+      {pt:'nossos', gender:'m',number:'pl', example:'Os nossos filhos estão bem.',    exen:'Our children are well.'},
+      {pt:'nossas', gender:'f',number:'pl', example:'As nossas férias foram ótimas.', exen:'Our holidays were great.'},
+    ]
+  },
+  {
+    owner:'vocês', en:'your (plural)', color:'#b5830a',
+    rule:'Used for groups. In formal writing vosso/vossa is used, but in everyday speech seu/sua is more common for plural "your".',
+    forms:[
+      {pt:'vosso',  gender:'m',number:'sg', example:'O vosso projeto está pronto.',    exen:'Your project is ready.'},
+      {pt:'vossa',  gender:'f',number:'sg', example:'A vossa opinião é importante.',   exen:'Your opinion is important.'},
+      {pt:'vossos', gender:'m',number:'pl', example:'Os vossos resultados são bons.',  exen:'Your results are good.'},
+      {pt:'vossas', gender:'f',number:'pl', example:'As vossas perguntas são válidas.',exen:'Your questions are valid.'},
+    ]
+  },
+  {
+    owner:'eles / elas', en:'their', color:'#1a3a5c',
+    rule:'⚠️ seu/sua is also used for "their" — same ambiguity as his/her. In everyday EP, deles/delas is preferred for clarity.',
+    forms:[
+      {pt:'seu',   gender:'m',number:'sg', example:'O seu carro é novo.',         exen:'Their car is new.'},
+      {pt:'sua',   gender:'f',number:'sg', example:'A sua empresa cresceu.',      exen:'Their company grew.'},
+      {pt:'seus',  gender:'m',number:'pl', example:'Os seus filhos estudam bem.', exen:'Their children study well.'},
+      {pt:'suas',  gender:'f',number:'pl', example:'As suas casas são grandes.',  exen:'Their houses are big.'},
+    ]
+  },
+];
+
+const DELE_FORMS = [
+  { pt:'dele',  en:"his",        base:'de + ele',  example:'O carro dele é vermelho.',      exen:"His car is red.",             note:'Replaces seu/sua when referring to a male person'},
+  { pt:'dela',  en:"her",        base:'de + ela',  example:'A casa dela é enorme.',         exen:"Her house is huge.",           note:'Replaces seu/sua when referring to a female person'},
+  { pt:'deles', en:"their (m.)", base:'de + eles', example:'Os filhos deles são simpáticos.',exen:"Their children are nice.",    note:'Used when the owners are male or mixed gender'},
+  { pt:'delas', en:"their (f.)", base:'de + elas', example:'As ideias delas são excelentes.',exen:"Their ideas are excellent.",  note:'Used when all owners are female'},
+];
+
+const POSS_QUIZ = [
+  {sentence:'___ livro é muito interessante.',answer:'O meu',options:['O meu','A minha','Os meus','As minhas'],hint:'livro is masculine singular → o meu'},
+  {sentence:'___ casa é muito bonita.',answer:'A minha',options:['O meu','A minha','Os meus','As minhas'],hint:'casa is feminine singular → a minha'},
+  {sentence:'___ amigos são muito simpáticos.',answer:'Os meus',options:['O meu','A minha','Os meus','As minhas'],hint:'amigos is masculine plural → os meus'},
+  {sentence:'___ carro é novo.',answer:'O teu',options:['O teu','A tua','Os teus','As tuas'],hint:'carro is masculine singular → o teu'},
+  {sentence:'___ mãe é muito simpática.',answer:'A tua',options:['O teu','A tua','Os teus','As tuas'],hint:'mãe is feminine singular → a tua'},
+  {sentence:'___ cidade é linda.',answer:'A nossa',options:['O nosso','A nossa','Os nossos','As nossas'],hint:'cidade is feminine → a nossa'},
+  {sentence:'___ professor é excelente.',answer:'O nosso',options:['O nosso','A nossa','Os nossos','As nossas'],hint:'professor is masculine → o nosso'},
+  {sentence:'O carro ___ é vermelho.',answer:'dele',options:['dele','dela','deles','seu'],hint:'dele = his (unambiguous)'},
+  {sentence:'A casa ___ é enorme.',answer:'dela',options:['dele','dela','delas','sua'],hint:'dela = her (unambiguous)'},
+  {sentence:'Os filhos ___ são simpáticos.',answer:'deles',options:['dele','deles','delas','seus'],hint:'deles = their (masc./mixed)'},
+  {sentence:'___ ideias são excelentes.',answer:'As suas',options:['O seu','A sua','Os seus','As suas'],hint:'ideias is feminine plural → as suas'},
+  {sentence:'___ projeto está pronto.',answer:'O vosso',options:['O vosso','A vossa','Os vossos','As vossas'],hint:'projeto is masculine → o vosso'},
+];
+
+let possSection = 'table';
+let possQuizQueue=[], possQuizPos=0, possQuizScore=0, possQuizTotal=0, possQuizMistakes={};
+
+function initPossQuiz(){
+  possQuizQueue=[...Array(POSS_QUIZ.length).keys()].sort(()=>Math.random()-0.5);
+  possQuizPos=0; possQuizScore=0; possQuizTotal=0; possQuizMistakes={};
+}
+function currentPossQ(){ if(!possQuizQueue.length)initPossQuiz(); return POSS_QUIZ[possQuizQueue[possQuizPos%possQuizQueue.length]]; }
+function advancePossQuiz(wrong){
+  const idx=possQuizQueue[possQuizPos%possQuizQueue.length];
+  if(wrong){ possQuizQueue.splice(possQuizPos+2+Math.floor(Math.random()*3),0,idx); possQuizMistakes[idx]=(possQuizMistakes[idx]||0)+1; }
+  possQuizPos++;
+  if(possQuizPos>=possQuizQueue.length-3) possQuizQueue=[...possQuizQueue,...[...Array(POSS_QUIZ.length).keys()].sort(()=>Math.random()-0.5)];
+}
+
+function showPossSection(sec){
+  possSection=sec;
+  document.querySelectorAll('.poss-sec-btn').forEach(b=>{
+    const active=(sec==='table'&&b.textContent.includes('Table'))||(sec==='rules'&&b.textContent.includes('Rules'))||
+                 (sec==='dele'&&b.textContent.includes('dele'))||(sec==='examples'&&b.textContent.includes('Examples'))||
+                 (sec==='quiz'&&b.textContent.includes('Quiz'));
+    b.style.background=active?'#8a3a5c':'#fff'; b.style.color=active?'#fff':'#555'; b.style.borderColor=active?'#8a3a5c':'#ddd';
+  });
+  renderPossessives();
+}
+
+function renderPossessives(){
+  const el=document.getElementById('poss-content'); if(!el) return;
+  if(possSection==='table')    el.innerHTML=renderPossTable();
+  else if(possSection==='rules')   el.innerHTML=renderPossRules();
+  else if(possSection==='dele')    el.innerHTML=renderPossDele();
+  else if(possSection==='examples') el.innerHTML=renderPossExamples();
+  else el.innerHTML=renderPossQuiz();
+}
+
+function formCard(f,color){
+  return `<div style="background:#fff;border-radius:8px;padding:10px 12px;border-left:3px solid ${color};">
+    <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px;flex-wrap:wrap;">
+      <span style="font-size:18px;font-weight:800;color:${color};">${f.pt}</span>
+      <span style="font-size:10px;color:#aaa;background:#f5f5f5;padding:1px 6px;border-radius:4px;">${f.gender==='m'?'masc':'fem'} ${f.number==='sg'?'sg':'pl'}</span>
+      <button class="speak-btn" onclick="speakText('${escQ(f.pt)}','pt-PT',this)">🔊</button>
+    </div>
+    <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:3px;">
+      <span style="font-size:13px;color:#1a3a5c;font-style:italic;">${f.example}</span>
+      <button class="speak-btn" onclick="speakText('${escQ(f.example)}','pt-PT',this)">🔊</button>
+    </div>
+    <div style="font-size:12px;color:#aaa;">${f.exen}</div>
+  </div>`;
+}
+
+function renderPossTable(){
+  return `
+  <div style="background:#fff;border-radius:12px;padding:14px 16px;box-shadow:0 1px 5px rgba(0,0,0,0.07);overflow-x:auto;">
+    <p style="font-size:13px;color:#555;margin:0 0 12px;line-height:1.7;">
+      🔑 <strong>Key rule:</strong> Possessives agree with the <strong>thing owned</strong>, not the person who owns it.<br>
+      In European Portuguese, they are almost always used <strong>with the definite article</strong>: <em>o meu, a minha, os nossos…</em>
+    </p>
+    <table style="width:100%;border-collapse:collapse;font-size:13px;">
+      <thead>
+        <tr style="background:#8a3a5c;color:#fff;">
+          <th style="padding:8px 10px;text-align:left;border-radius:6px 0 0 0;">Owner</th>
+          <th style="padding:8px 10px;text-align:center;">masc. sg</th>
+          <th style="padding:8px 10px;text-align:center;">fem. sg</th>
+          <th style="padding:8px 10px;text-align:center;">masc. pl</th>
+          <th style="padding:8px 10px;text-align:center;border-radius:0 6px 0 0;">fem. pl</th>
+        </tr>
+      </thead>
+      <tbody>
+        ${POSSESSIVES.map((p,i)=>`
+        <tr style="background:${i%2===0?'#fdfaf7':'#fff'};">
+          <td style="padding:8px 10px;border-bottom:1px solid #f0ebe4;">
+            <div style="font-weight:700;color:${p.color};">${p.owner}</div>
+            <div style="font-size:11px;color:#aaa;">${p.en}</div>
+          </td>
+          ${p.forms.map(f=>`<td style="padding:8px 10px;text-align:center;border-bottom:1px solid #f0ebe4;">
+            <div style="font-size:15px;font-weight:700;color:${p.color};">${f.pt}</div>
+            <button class="speak-btn" style="font-size:11px;" onclick="speakText('${escQ(f.pt)}','pt-PT',this)">🔊</button>
+          </td>`).join('')}
+        </tr>`).join('')}
+      </tbody>
+    </table>
+    <div style="margin-top:14px;padding:10px 12px;background:#fff8f0;border-radius:8px;border-left:3px solid #c1440e;">
+      <div style="font-size:12px;font-weight:700;color:#c1440e;margin-bottom:4px;">⚠️ Important: seu/sua is ambiguous</div>
+      <div style="font-size:12px;color:#555;line-height:1.6;">
+        <em>Seu/sua</em> can mean <strong>his, her, your (formal)</strong> or <strong>their</strong>.
+        In everyday conversation, Portuguese speakers use <strong>dele/dela/deles/delas</strong> instead to be clear.
+        Go to the <strong>dele/dela</strong> section to learn more.
+      </div>
+    </div>
+  </div>`;
+}
+
+function renderPossRules(){
+  const rules=[
+    {title:'Possessives agree with the THING owned, not the owner',color:'#2c5f8a',icon:'📌',
+     body:'This is the most important rule. In English "his/her" tells you the gender of the owner. In Portuguese, the ending tells you the gender of the thing owned.',
+     examples:[
+       {pt:'o meu livro',en:'my book',note:'livro = masculine → meu'},
+       {pt:'a minha casa',en:'my house',note:'casa = feminine → minha'},
+       {pt:'a tua mochila',en:'your backpack',note:'mochila = feminine → tua, even if owner is male'},
+     ]},
+    {title:'Always use the definite article before possessives in EP',color:'#1a6b3c',icon:'📌',
+     body:'In European Portuguese you almost always say "o meu" not just "meu". The article and possessive together. (Brazilian Portuguese often drops the article.)',
+     examples:[
+       {pt:'o meu carro',en:'my car',note:'NOT just "meu carro" in EP'},
+       {pt:'a nossa casa',en:'our house',note:'Article + possessive is standard EP'},
+       {pt:'os teus livros',en:'your books',note:'Article agrees with noun gender'},
+     ]},
+    {title:'Possessives come BEFORE the noun in EP',color:'#b5830a',icon:'📌',
+     body:'The possessive adjective goes between the article and the noun.',
+     examples:[
+       {pt:'o meu amigo',en:'my friend',note:'article + possessive + noun'},
+       {pt:'a nossa professora',en:'our teacher',note:'article + possessive + noun'},
+     ]},
+    {title:'Without article: addressing people directly',color:'#7b4ea0',icon:'📌',
+     body:'When used as a title or addressing someone directly (vocative), the article is sometimes dropped.',
+     examples:[
+       {pt:'Minha querida!',en:'My dear!',note:'Direct address — no article'},
+       {pt:'Meu Deus!',en:'My God!',note:'Exclamation — no article'},
+     ]},
+  ];
+  return rules.map(r=>`
+  <div style="background:#fff;border-radius:12px;padding:14px 16px;box-shadow:0 1px 5px rgba(0,0,0,0.07);margin-bottom:10px;border-left:4px solid ${r.color};">
+    <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
+      <span style="font-size:18px;">${r.icon}</span>
+      <span style="font-size:14px;font-weight:700;color:${r.color};">${r.title}</span>
+    </div>
+    <p style="font-size:13px;color:#555;margin:0 0 12px;line-height:1.6;">${r.body}</p>
+    <div style="display:flex;flex-direction:column;gap:6px;">
+      ${r.examples.map(ex=>`<div style="padding:8px 10px;background:#fafafa;border-radius:8px;">
+        <div style="display:flex;align-items:center;gap:6px;margin-bottom:2px;flex-wrap:wrap;">
+          <span style="font-size:14px;color:#1a3a5c;font-weight:600;">${ex.pt}</span>
+          <button class="speak-btn" onclick="speakText('${escQ(ex.pt)}','pt-PT',this)">🔊</button>
+          <span style="font-size:12px;color:#aaa;">${ex.note}</span>
+        </div>
+        <div style="font-size:12px;color:#888;font-style:italic;">${ex.en}</div>
+      </div>`).join('')}
+    </div>
+  </div>`).join('');
+}
+
+function renderPossDele(){
+  return `
+  <div style="background:#fff;border-radius:12px;padding:14px 16px;box-shadow:0 1px 5px rgba(0,0,0,0.07);margin-bottom:12px;">
+    <h3 style="margin:0 0 8px;color:#c1440e;font-size:15px;">Why dele/dela instead of seu/sua?</h3>
+    <p style="font-size:13px;color:#555;line-height:1.7;margin-bottom:12px;">
+      <strong>seu/sua</strong> is ambiguous — it can mean <em>his, her, your (formal)</em> or <em>their</em> all at once.
+      To avoid confusion, European Portuguese speakers in everyday speech prefer <strong>de + pronoun</strong> forms.
+    </p>
+    <div style="background:#fff8f0;border-radius:8px;padding:10px 12px;margin-bottom:14px;border-left:3px solid #c1440e;">
+      <div style="font-size:12px;color:#c1440e;font-weight:700;margin-bottom:6px;">⚠️ Ambiguous</div>
+      <div style="font-size:14px;color:#1a3a5c;font-style:italic;margin-bottom:4px;">O seu carro é vermelho.</div>
+      <div style="font-size:12px;color:#888;">Could mean: <em>His car is red / Her car is red / Your car is red / Their car is red</em></div>
+    </div>
+    <div style="background:#f0faf4;border-radius:8px;padding:10px 12px;margin-bottom:14px;border-left:3px solid #1a6b3c;">
+      <div style="font-size:12px;color:#1a6b3c;font-weight:700;margin-bottom:6px;">✅ Unambiguous with dele/dela</div>
+      <div style="display:flex;flex-direction:column;gap:4px;">
+        ${['O carro dele é vermelho. → His car is red.','O carro dela é vermelho. → Her car is red.','O carro deles é vermelho. → Their (m.) car is red.','O carro delas é vermelho. → Their (f.) car is red.'].map(s=>`<div style="font-size:13px;color:#1a3a5c;">${s.replace(' → ','</div><div style="font-size:12px;color:#888;font-style:italic;margin-top:1px;">→ ')}</div>`).join('')}
+      </div>
+    </div>
+  </div>
+  <div style="display:flex;flex-direction:column;gap:8px;">
+    ${DELE_FORMS.map(d=>`
+    <div style="background:#fff;border-radius:12px;padding:14px 16px;box-shadow:0 1px 5px rgba(0,0,0,0.07);border-left:4px solid #c1440e;">
+      <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:6px;">
+        <span style="font-size:20px;font-weight:800;color:#c1440e;font-family:monospace;">${d.pt}</span>
+        <span style="font-size:12px;color:#888;">${d.en}</span>
+        <span style="font-size:11px;color:#aaa;background:#f5f5f5;padding:1px 8px;border-radius:6px;">${d.base}</span>
+        <button class="speak-btn" onclick="speakText('${escQ(d.pt)}','pt-PT',this)">🔊</button>
+      </div>
+      <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:3px;">
+        <span style="font-size:13px;color:#1a3a5c;font-style:italic;">${d.example}</span>
+        <button class="speak-btn" onclick="speakText('${escQ(d.example)}','pt-PT',this)">🔊</button>
+      </div>
+      <div style="font-size:12px;color:#888;margin-bottom:4px;">${d.exen}</div>
+      <div style="font-size:11px;color:#aaa;font-style:italic;">💡 ${d.note}</div>
+    </div>`).join('')}
+  </div>
+  <div style="background:#fff;border-radius:12px;padding:14px 16px;box-shadow:0 1px 5px rgba(0,0,0,0.07);margin-top:10px;">
+    <h3 style="margin:0 0 10px;color:#1a3a5c;font-size:14px;">Position: dele/dela comes AFTER the noun</h3>
+    <p style="font-size:13px;color:#555;line-height:1.6;margin-bottom:10px;">Unlike meu/teu/nosso which go before the noun, dele/dela always come after:</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+      ${[['o carro dele','his car','after noun'],['a mãe dela','her mother','after noun'],['os amigos deles',"their friends",'after noun'],['as filhas delas',"their daughters",'after noun']].map(([pt,en,note])=>`
+      <div style="padding:8px 10px;background:#f8f9fc;border-radius:8px;">
+        <div style="display:flex;align-items:center;gap:5px;margin-bottom:2px;">
+          <span style="font-size:13px;font-weight:600;color:#1a3a5c;">${pt}</span>
+          <button class="speak-btn" style="font-size:11px;" onclick="speakText('${escQ(pt)}','pt-PT',this)">🔊</button>
+        </div>
+        <div style="font-size:12px;color:#888;">${en}</div>
+      </div>`).join('')}
+    </div>
+  </div>`;
+}
+
+function renderPossExamples(){
+  return POSSESSIVES.map(p=>`
+  <div style="background:#fff;border-radius:12px;padding:14px 16px;box-shadow:0 1px 5px rgba(0,0,0,0.07);margin-bottom:8px;border-left:4px solid ${p.color};">
+    <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;">
+      <span style="font-size:15px;font-weight:800;color:${p.color};">${p.owner}</span>
+      <span style="font-size:13px;color:#aaa;">→ ${p.en}</span>
+    </div>
+    <p style="font-size:12px;color:#888;font-style:italic;margin:0 0 10px;line-height:1.6;">${p.rule}</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;">
+      ${p.forms.map(f=>formCard(f,p.color)).join('')}
+    </div>
+  </div>`).join('');
+}
+
+function renderPossQuiz(){
+  if(!possQuizQueue.length) initPossQuiz();
+  const q=currentPossQ();
+  const parts=q.sentence.split('___');
+  const mc=possQuizMistakes[possQuizQueue[possQuizPos%possQuizQueue.length]]||0;
+  return `<div style="background:#fff;border-radius:12px;padding:16px;box-shadow:0 1px 5px rgba(0,0,0,0.07);">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;">
+      <span style="font-size:12px;color:#aaa;">Q${possQuizTotal+1} · ${POSS_QUIZ.length} questions</span>
+      <span style="font-size:12px;font-weight:700;color:#8a3a5c;">✅ ${possQuizScore} / ${possQuizTotal}</span>
+    </div>
+    ${mc>0?`<div style="font-size:11px;color:#c1440e;margin-bottom:10px;">🔁 Repeating — missed ${mc} time${mc>1?'s':''}</div>`:'<div style="margin-bottom:10px;"></div>'}
+    <div style="font-size:20px;color:#1a3a5c;line-height:1.8;margin-bottom:20px;text-align:center;font-weight:500;">
+      ${parts[0]}<span id="possBlank" style="background:#f8f0ff;border:2px dashed #8a3a5c;border-radius:6px;padding:2px 14px;color:#8a3a5c;font-weight:700;">___</span>${parts[1]||''}
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:14px;" id="possOptions">
+      ${q.options.map(opt=>`<button onclick="possQuizAnswer('${escQ(opt)}','${escQ(q.answer)}')"
+        style="padding:12px 8px;border-radius:10px;border:2px solid #f0ebe4;background:#fafafa;cursor:pointer;font-family:inherit;font-size:14px;font-weight:700;color:#1a3a5c;">${opt}</button>`).join('')}
+    </div>
+    <div id="possFeedback" style="display:none;padding:10px 12px;border-radius:8px;font-size:13px;margin-bottom:10px;"></div>
+    <div style="font-size:12px;color:#aaa;text-align:center;font-style:italic;">💡 ${q.hint}</div>
+    <button id="possNextBtn" onclick="renderPossessives();" style="display:none;margin-top:12px;width:100%;padding:11px;border-radius:8px;border:none;background:#8a3a5c;color:#fff;cursor:pointer;font-family:inherit;font-size:13px;font-weight:600;">Next →</button>
+    <button onclick="initPossQuiz();renderPossessives();" style="margin-top:8px;width:100%;padding:8px;border-radius:8px;border:1px solid #ddd;background:#fff;cursor:pointer;font-family:inherit;font-size:12px;color:#aaa;">🔀 Restart</button>
+  </div>`;
+}
+
+function possQuizAnswer(chosen, correct){
+  const fb=document.getElementById('possFeedback');
+  const blank=document.getElementById('possBlank');
+  const next=document.getElementById('possNextBtn');
+  document.querySelectorAll('#possOptions button').forEach(b=>{
+    b.disabled=true;
+    if(b.textContent.trim()===correct){b.style.background='#fce7f3';b.style.borderColor='#8a3a5c';}
+    if(b.textContent.trim()===chosen&&chosen!==correct){b.style.background='#fee2e2';b.style.borderColor='#c1440e';}
+  });
+  possQuizTotal++;
+  const ok=chosen===correct;
+  if(ok){
+    possQuizScore++;
+    blank.textContent=correct;blank.style.background='#fce7f3';blank.style.color='#8a3a5c';blank.style.borderColor='#8a3a5c';
+    fb.style.background='#fce7f3';fb.style.color='#8a3a5c';fb.innerHTML='✅ Correct! <strong>'+correct+'</strong>';
+  } else {
+    blank.textContent=chosen;blank.style.background='#fee2e2';blank.style.color='#c1440e';blank.style.borderColor='#c1440e';
+    fb.style.background='#fee2e2';fb.style.color='#c1440e';fb.innerHTML='❌ Answer: <strong>'+correct+'</strong> — coming back!';
+  }
+  fb.style.display='block'; next.style.display='block';
+  advancePossQuiz(!ok);
+}
+
 // ═══ TEXT READER ══════════════════════════════════════════════════════════
 const TEXTS_FILE = 'texts.json';
 let savedTexts = [];
