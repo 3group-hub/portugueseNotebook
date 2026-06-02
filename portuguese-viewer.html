@@ -141,6 +141,8 @@
       <button class="tab-btn" data-tab="patterns">🔤 Patterns</button>
       <button class="tab-btn" data-tab="prepositions">🔗 Prepositions</button>
       <button class="tab-btn" data-tab="possessives">🔑 Possessives</button>
+      <button class="tab-btn" data-tab="family">👨‍👩‍👧 Family</button>
+      <button class="tab-btn" data-tab="food">🥦 Food</button>
       <button class="tab-btn" data-tab="reader">📖 Text Reader</button>
       <button class="tab-btn" data-tab="alphabet">🔤 Alphabet</button>
       <button class="tab-btn" data-tab="numbers">🔢 Numbers</button>
@@ -280,6 +282,12 @@
     </div>
     <div id="poss-content" style="margin-top:12px;"></div>
   </div>
+
+  <!-- ═══ FAMILY TAB ═══ -->
+  <div id="tab-family" class="hidden"></div>
+
+  <!-- ═══ FOOD TAB ═══ -->
+  <div id="tab-food" class="hidden"></div>
 
   <!-- ═══ TEXT READER TAB ═══ -->
   <div id="tab-reader" class="hidden">
@@ -2776,6 +2784,239 @@ function possQuizAnswer(chosen,correct){
   advancePossQuiz(!ok);
 }
 
+
+// ═══ FAMILY TAB ══════════════════════════════════════════════════════════
+const FAMILY_DATA=[
+  {group:'Immediate Family',emoji:'👨‍👩‍👧',members:[
+    {pt:'pai',en:'father',emoji:'👨',note:'informal; formal: o pai'},
+    {pt:'mãe',en:'mother',emoji:'👩',note:'informal; formal: a mãe'},
+    {pt:'filho',en:'son',emoji:'👦',note:'filha = daughter'},
+    {pt:'filha',en:'daughter',emoji:'👧',note:'filho = son'},
+    {pt:'irmão',en:'brother',emoji:'🧑',note:'irmã = sister'},
+    {pt:'irmã',en:'sister',emoji:'👧',note:'irmão = brother'},
+    {pt:'marido',en:'husband',emoji:'💍',note:'also: esposo'},
+    {pt:'mulher',en:'wife',emoji:'💍',note:'also: esposa'},
+    {pt:'pais',en:'parents',emoji:'👨‍👩‍👦',note:'plural of pai, but means parents'},
+    {pt:'filhos',en:'children',emoji:'👧👦',note:'sons/children (mixed)'},
+  ]},
+  {group:'Grandparents & Grandchildren',emoji:'👴👵',members:[
+    {pt:'avô',en:'grandfather',emoji:'👴',note:'avós = grandparents'},
+    {pt:'avó',en:'grandmother',emoji:'👵',note:'avós = grandparents'},
+    {pt:'avós',en:'grandparents',emoji:'👴👵',note:'avô + avó'},
+    {pt:'neto',en:'grandson',emoji:'👦',note:'neta = granddaughter'},
+    {pt:'neta',en:'granddaughter',emoji:'👧',note:'neto = grandson'},
+    {pt:'bisavô',en:'great-grandfather',emoji:'👴',note:'bis = great-'},
+    {pt:'bisavó',en:'great-grandmother',emoji:'👵',note:'bis = great-'},
+  ]},
+  {group:'Aunts, Uncles & Cousins',emoji:'👪',members:[
+    {pt:'tio',en:'uncle',emoji:'🧑',note:'tia = aunt'},
+    {pt:'tia',en:'aunt',emoji:'👩',note:'tio = uncle'},
+    {pt:'primo',en:'male cousin',emoji:'🧑',note:'prima = female cousin'},
+    {pt:'prima',en:'female cousin',emoji:'👩',note:'primo = male cousin'},
+    {pt:'sobrinho',en:'nephew',emoji:'👦',note:'sobrinha = niece'},
+    {pt:'sobrinha',en:'niece',emoji:'👧',note:'sobrinho = nephew'},
+  ]},
+  {group:'In-laws',emoji:'🤝',members:[
+    {pt:'sogro',en:'father-in-law',emoji:'👨',note:'sogra = mother-in-law'},
+    {pt:'sogra',en:'mother-in-law',emoji:'👩',note:'sogro = father-in-law'},
+    {pt:'genro',en:'son-in-law',emoji:'🧑',note:'nora = daughter-in-law'},
+    {pt:'nora',en:'daughter-in-law',emoji:'👩',note:'genro = son-in-law'},
+    {pt:'cunhado',en:'brother-in-law',emoji:'🧑',note:'cunhada = sister-in-law'},
+    {pt:'cunhada',en:'sister-in-law',emoji:'👩',note:'cunhado = brother-in-law'},
+  ]},
+  {group:'Step & Half Family',emoji:'👨‍👩‍👧‍👦',members:[
+    {pt:'padrasto',en:'stepfather',emoji:'👨',note:'madrasta = stepmother'},
+    {pt:'madrasta',en:'stepmother',emoji:'👩',note:'padrasto = stepfather'},
+    {pt:'enteado',en:'stepson',emoji:'👦',note:'enteada = stepdaughter'},
+    {pt:'enteada',en:'stepdaughter',emoji:'👧',note:'enteado = stepson'},
+    {pt:'meio-irmão',en:'half-brother',emoji:'🧑',note:'meio-irmã = half-sister'},
+  ]},
+  {group:'Other Family Terms',emoji:'🏠',members:[
+    {pt:'família',en:'family',emoji:'👨‍👩‍👧',note:'a família'},
+    {pt:'parente',en:'relative',emoji:'🤝',note:'⚠️ false friend — not "parent"!'},
+    {pt:'gémeos',en:'twins',emoji:'👯',note:'gémeo/gémea'},
+    {pt:'viúvo',en:'widower',emoji:'🖤',note:'viúva = widow'},
+    {pt:'viúva',en:'widow',emoji:'🖤',note:'viúvo = widower'},
+    {pt:'padrinho',en:'godfather',emoji:'⛪',note:'madrinha = godmother'},
+    {pt:'madrinha',en:'godmother',emoji:'⛪',note:'padrinho = godfather'},
+    {pt:'afilhado',en:'godson',emoji:'👦',note:'afilhada = goddaughter'},
+  ]},
+];
+
+let familySearch='', familyGroup='';
+
+function renderFamily(){
+  const el=document.getElementById('tab-family'); if(!el) return;
+  const q=familySearch.toLowerCase();
+  const userWordSet=new Set(words.map(w=>w.word.toLowerCase()));
+  let html=`<div class="card" style="border-left:4px solid #e07b39;margin-top:16px;">
+    <h2 style="margin:0 0 4px;">👨‍👩‍👧 Family Members</h2>
+    <p style="font-size:12px;color:#aaa;margin-bottom:12px;">A família — immediate and extended family with pronunciation</p>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;">
+      <input id="familySearch" class="search-inp" placeholder="🔍 Search…" oninput="familySearch=this.value;renderFamily()" style="max-width:200px;" />
+      <select id="familyGroupFilter" onchange="familyGroup=this.value;renderFamily()" style="padding:5px 10px;border-radius:7px;border:1px solid #e8e0d8;font-size:13px;font-family:inherit;background:#fafafa;">
+        <option value="">All groups</option>
+        ${FAMILY_DATA.map(g=>`<option value="${g.group}">${g.emoji} ${g.group}</option>`).join('')}
+      </select>
+    </div>
+  </div><div style="margin-top:12px;display:flex;flex-direction:column;gap:10px;">`;
+
+  FAMILY_DATA.filter(g=>!familyGroup||g.group===familyGroup).forEach(g=>{
+    const filtered=g.members.filter(m=>!q||m.pt.toLowerCase().includes(q)||m.en.toLowerCase().includes(q));
+    if(!filtered.length) return;
+    html+=`<div style="background:#fff;border-radius:12px;padding:14px 16px;box-shadow:0 1px 5px rgba(0,0,0,0.07);border-left:4px solid #e07b39;">
+      <div style="font-size:13px;font-weight:700;color:#e07b39;margin-bottom:12px;">${g.emoji} ${g.group}</div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px;">
+        ${filtered.map(m=>{
+          const iv=userWordSet.has(m.pt.toLowerCase());
+          return `<div style="background:${iv?'#f3f0ff':'#fafafa'};border-radius:10px;padding:10px 12px;border:1px solid ${iv?'#7b4ea030':'#f0ebe4'};">
+            <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px;">
+              <span style="font-size:22px;">${m.emoji}</span>
+              <div style="flex:1;min-width:0;">
+                <div style="font-size:15px;font-weight:700;color:${iv?'#7b4ea0':'var(--navy)'};">${m.pt}${iv?' 📖':''}</div>
+                <div style="font-size:12px;color:#888;">${m.en}</div>
+              </div>
+              <button class="speak-btn" onclick="speakText('${escQ(m.pt)}','pt-PT',this)" style="font-size:16px;">🔊</button>
+            </div>
+            ${m.note?`<div style="font-size:10px;color:#aaa;font-style:italic;border-top:1px solid #f0ebe4;padding-top:4px;margin-top:4px;">💡 ${m.note}</div>`:''}
+          </div>`;
+        }).join('')}
+      </div>
+    </div>`;
+  });
+  html+='</div>';
+  el.innerHTML=html;
+}
+
+// ═══ FOOD TAB ════════════════════════════════════════════════════════════
+const FOOD_DATA={
+  vegetables:[
+    {pt:'cenoura',en:'carrot',emoji:'🥕'},{pt:'batata',en:'potato',emoji:'🥔'},
+    {pt:'tomate',en:'tomato',emoji:'🍅'},{pt:'cebola',en:'onion',emoji:'🧅'},
+    {pt:'alho',en:'garlic',emoji:'🧄'},{pt:'alface',en:'lettuce',emoji:'🥬'},
+    {pt:'couve',en:'cabbage/kale',emoji:'🥦'},{pt:'brócolos',en:'broccoli',emoji:'🥦'},
+    {pt:'espinafres',en:'spinach',emoji:'🌿'},{pt:'pepino',en:'cucumber',emoji:'🥒'},
+    {pt:'pimento',en:'pepper',emoji:'🫑'},{pt:'courgette',en:'courgette',emoji:'🥒'},
+    {pt:'beringela',en:'aubergine',emoji:'🍆'},{pt:'abóbora',en:'pumpkin',emoji:'🎃'},
+    {pt:'milho',en:'corn',emoji:'🌽'},{pt:'ervilhas',en:'peas',emoji:'🫛'},
+    {pt:'feijão',en:'beans',emoji:'🫘'},{pt:'grão-de-bico',en:'chickpeas',emoji:'🫘'},
+    {pt:'lentilhas',en:'lentils',emoji:'🫘'},{pt:'cogumelos',en:'mushrooms',emoji:'🍄'},
+    {pt:'couve-flor',en:'cauliflower',emoji:'🥦'},{pt:'nabo',en:'turnip',emoji:'🥕'},
+    {pt:'beterraba',en:'beetroot',emoji:'🔴'},{pt:'espargos',en:'asparagus',emoji:'🌿'},
+    {pt:'alcachofra',en:'artichoke',emoji:'🌿'},{pt:'rabanete',en:'radish',emoji:'🔴'},
+    {pt:'alho-porro',en:'leek',emoji:'🌿'},{pt:'agrião',en:'watercress',emoji:'🌿'},
+    {pt:'aipo',en:'celery',emoji:'🌿'},{pt:'alho-francês',en:'leek',emoji:'🌿'},
+  ],
+  fruits:[
+    {pt:'maçã',en:'apple',emoji:'🍎'},{pt:'pêra',en:'pear',emoji:'🍐'},
+    {pt:'laranja',en:'orange',emoji:'🍊'},{pt:'limão',en:'lemon',emoji:'🍋'},
+    {pt:'banana',en:'banana',emoji:'🍌'},{pt:'uvas',en:'grapes',emoji:'🍇'},
+    {pt:'morango',en:'strawberry',emoji:'🍓'},{pt:'melancia',en:'watermelon',emoji:'🍉'},
+    {pt:'melão',en:'melon',emoji:'🍈'},{pt:'ananás',en:'pineapple',emoji:'🍍'},
+    {pt:'manga',en:'mango',emoji:'🥭'},{pt:'pêssego',en:'peach',emoji:'🍑'},
+    {pt:'cereja',en:'cherry',emoji:'🍒'},{pt:'ameixa',en:'plum',emoji:'🟣'},
+    {pt:'framboesa',en:'raspberry',emoji:'🍓'},{pt:'mirtilo',en:'blueberry',emoji:'🫐'},
+    {pt:'kiwi',en:'kiwi',emoji:'🥝'},{pt:'abacate',en:'avocado',emoji:'🥑'},
+    {pt:'coco',en:'coconut',emoji:'🥥'},{pt:'figo',en:'fig',emoji:'🟤'},
+    {pt:'romã',en:'pomegranate',emoji:'🔴'},{pt:'tangerina',en:'tangerine',emoji:'🍊'},
+    {pt:'papaia',en:'papaya',emoji:'🟠'},{pt:'lima',en:'lime',emoji:'🍋'},
+    {pt:'damasco',en:'apricot',emoji:'🍑'},{pt:'nectarina',en:'nectarine',emoji:'🍑'},
+    {pt:'groselha',en:'currant',emoji:'🔴'},{pt:'tamaras',en:'dates',emoji:'🟤'},
+    {pt:'castanhas',en:'chestnuts',emoji:'🌰'},{pt:'lichia',en:'lychee',emoji:'🔴'},
+  ],
+  meat:[
+    {pt:'carne de vaca',en:'beef',emoji:'🥩'},{pt:'frango',en:'chicken',emoji:'🍗'},
+    {pt:'porco',en:'pork',emoji:'🐷'},{pt:'borrego',en:'lamb',emoji:'🐑'},
+    {pt:'vitela',en:'veal',emoji:'🥩'},{pt:'peru',en:'turkey',emoji:'🦃'},
+    {pt:'pato',en:'duck',emoji:'🦆'},{pt:'coelho',en:'rabbit',emoji:'🐰'},
+    {pt:'veado',en:'venison',emoji:'🦌'},{pt:'javali',en:'wild boar',emoji:'🐗'},
+    {pt:'cabrito',en:'kid goat',emoji:'🐐'},{pt:'entremeada',en:'pork belly/streaky bacon',emoji:'🥓'},
+    {pt:'toucinho',en:'bacon/lard',emoji:'🥓'},{pt:'presunto',en:'cured ham',emoji:'🍖'},
+    {pt:'fiambre',en:'cooked ham',emoji:'🍖'},{pt:'chouriço',en:'chorizo',emoji:'🌶️'},
+    {pt:'linguiça',en:'smoked sausage',emoji:'🌭'},{pt:'salsicha',en:'sausage',emoji:'🌭'},
+    {pt:'morcela',en:'blood sausage',emoji:'⚫'},{pt:'fígado',en:'liver',emoji:'🫀'},
+    {pt:'rim',en:'kidney',emoji:'🫘'},{pt:'coração',en:'heart',emoji:'❤️'},
+    {pt:'tripas',en:'tripe',emoji:'🍲'},{pt:'bife',en:'steak',emoji:'🥩'},
+    {pt:'costeleta',en:'chop/cutlet',emoji:'🍖'},{pt:'peito',en:'chicken breast',emoji:'🍗'},
+    {pt:'coxa',en:'chicken thigh',emoji:'🍗'},{pt:'asa',en:'chicken wing',emoji:'🍗'},
+  ],
+  seafood:[
+    {pt:'bacalhau',en:'salt cod (national dish)',emoji:'🐟'},{pt:'sardinha',en:'sardine',emoji:'🐟'},
+    {pt:'atum',en:'tuna',emoji:'🐟'},{pt:'salmão',en:'salmon',emoji:'🐟'},
+    {pt:'dourada',en:'sea bream',emoji:'🐟'},{pt:'robalo',en:'sea bass',emoji:'🐟'},
+    {pt:'pargo',en:'red snapper',emoji:'🐟'},{pt:'linguado',en:'sole',emoji:'🐟'},
+    {pt:'pregado',en:'turbot',emoji:'🐟'},{pt:'cavala',en:'mackerel',emoji:'🐟'},
+    {pt:'truta',en:'trout',emoji:'🐟'},{pt:'carapau',en:'horse mackerel',emoji:'🐟'},
+    {pt:'camarão',en:'prawn/shrimp',emoji:'🍤'},{pt:'gambas',en:'large prawns',emoji:'🦐'},
+    {pt:'lagosta',en:'lobster',emoji:'🦞'},{pt:'sapateira',en:'crab (large)',emoji:'🦀'},
+    {pt:'caranguejo',en:'crab',emoji:'🦀'},{pt:'percebes',en:'goose barnacles',emoji:'🦪'},
+    {pt:'amêijoas',en:'clams',emoji:'🦪'},{pt:'mexilhões',en:'mussels',emoji:'🦪'},
+    {pt:'ostras',en:'oysters',emoji:'🦪'},{pt:'berbigão',en:'cockles',emoji:'🦪'},
+    {pt:'polvo',en:'octopus',emoji:'🐙'},{pt:'lula',en:'squid',emoji:'🦑'},
+    {pt:'choco',en:'cuttlefish',emoji:'🦑'},{pt:'lingueirão',en:'razor clam',emoji:'🦪'},
+    {pt:'lavagante',en:'clawed lobster',emoji:'🦞'},{pt:'lagostim',en:'langoustine',emoji:'🦐'},
+    {pt:'enguia',en:'eel',emoji:'🐍'},{pt:'raia',en:'ray/skate',emoji:'🐟'},
+  ],
+  spices:[
+    {pt:'sal',en:'salt',emoji:'🧂'},{pt:'pimenta',en:'pepper',emoji:'⚫'},
+    {pt:'pimenta-caiena',en:'cayenne pepper',emoji:'🌶️'},{pt:'colorau',en:'paprika',emoji:'🔴'},
+    {pt:'açafrão',en:'saffron',emoji:'🟡'},{pt:'cominhos',en:'cumin',emoji:'🟤'},
+    {pt:'coentros',en:'coriander',emoji:'🌿'},{pt:'salsa',en:'parsley',emoji:'🌿'},
+    {pt:'orégão',en:'oregano',emoji:'🌿'},{pt:'tomilho',en:'thyme',emoji:'🌿'},
+    {pt:'louro',en:'bay leaf',emoji:'🍃'},{pt:'alecrim',en:'rosemary',emoji:'🌿'},
+    {pt:'manjericão',en:'basil',emoji:'🌿'},{pt:'hortelã',en:'mint',emoji:'🌿'},
+    {pt:'estragão',en:'tarragon',emoji:'🌿'},{pt:'endro',en:'dill',emoji:'🌿'},
+    {pt:'erva-doce',en:'fennel/anise',emoji:'🌿'},{pt:'caril',en:'curry',emoji:'🟡'},
+    {pt:'cúrcuma',en:'turmeric',emoji:'🟡'},{pt:'gengibre',en:'ginger',emoji:'🫚'},
+    {pt:'canela',en:'cinnamon',emoji:'🟤'},{pt:'cravo',en:'clove',emoji:'🟤'},
+    {pt:'noz-moscada',en:'nutmeg',emoji:'🟤'},{pt:'piri-piri',en:"piri-piri/bird's eye chilli",emoji:'🌶️'},
+    {pt:'malagueta',en:'chilli pepper',emoji:'🌶️'},{pt:'vinagre',en:'vinegar',emoji:'🫙'},
+    {pt:'azeite',en:'olive oil',emoji:'🫒'},{pt:'açúcar',en:'sugar',emoji:'🍬'},
+    {pt:'mel',en:'honey',emoji:'🍯'},{pt:'mostarda',en:'mustard',emoji:'🟡'},
+  ],
+};
+
+const FOOD_TABS=[
+  {key:'vegetables',label:'🥦 Veg',   color:'#1a6b3c'},
+  {key:'fruits',    label:'🍎 Fruits', color:'#e07b39'},
+  {key:'meat',      label:'🥩 Meat',   color:'#c1440e'},
+  {key:'seafood',   label:'🐟 Seafood',color:'#2c5f8a'},
+  {key:'spices',    label:'🌿 Spices', color:'#7b4ea0'},
+];
+
+let foodTab='vegetables', foodSearch='';
+
+function renderFood(){
+  const el=document.getElementById('tab-food'); if(!el) return;
+  const q=foodSearch.toLowerCase();
+  const userWordSet=new Set(words.map(w=>w.word.toLowerCase()));
+  const ti=FOOD_TABS.find(t=>t.key===foodTab)||FOOD_TABS[0];
+  const items=FOOD_DATA[foodTab].filter(i=>!q||i.pt.toLowerCase().includes(q)||i.en.toLowerCase().includes(q));
+  el.innerHTML=`<div class="card" style="border-left:4px solid ${ti.color};margin-top:16px;">
+    <h2 style="margin:0 0 4px;">${ti.label}</h2>
+    <p style="font-size:12px;color:#aaa;margin-bottom:10px;">English &amp; Portuguese with pronunciation · 📖 = in your vocabulary</p>
+    <div style="display:flex;gap:5px;flex-wrap:wrap;margin-bottom:10px;">
+      ${FOOD_TABS.map(t=>`<button onclick="foodTab='${t.key}';foodSearch='';renderFood()"
+        style="padding:5px 12px;border-radius:20px;border:1px solid ${foodTab===t.key?t.color:'#ddd'};background:${foodTab===t.key?t.color:'#fff'};color:${foodTab===t.key?'#fff':'#555'};cursor:pointer;font-size:11px;font-family:inherit;font-weight:600;">${t.label}</button>`).join('')}
+    </div>
+    <input class="search-inp" placeholder="🔍 Search…" value="${foodSearch}" oninput="foodSearch=this.value;renderFood()" style="max-width:180px;" />
+  </div>
+  <div style="margin-top:12px;background:#fff;border-radius:12px;padding:14px 16px;box-shadow:0 1px 5px rgba(0,0,0,0.07);">
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:8px;">
+      ${items.map(item=>{
+        const iv=userWordSet.has(item.pt.toLowerCase());
+        return `<div style="background:${iv?'#f3f0ff':'#fafafa'};border-radius:10px;padding:10px 8px;border:1px solid ${iv?'#7b4ea030':'#f0ebe4'};display:flex;flex-direction:column;align-items:center;text-align:center;gap:4px;">
+          <span style="font-size:28px;">${item.emoji}</span>
+          <div style="font-size:13px;font-weight:700;color:${iv?'#7b4ea0':'var(--navy)'};line-height:1.3;">${item.pt}${iv?' 📖':''}</div>
+          <div style="font-size:11px;color:#888;line-height:1.3;">${item.en}</div>
+          <button class="speak-btn" onclick="speakText('${escQ(item.pt)}','pt-PT',this)" style="font-size:18px;margin-top:2px;">🔊</button>
+        </div>`;
+      }).join('')}
+    </div>
+    ${items.length===0?'<p style="color:#bbb;text-align:center;padding:20px;">No results</p>':''}
+  </div>`;
+}
+
 function showToast(msg){
   const t=document.getElementById('toast');
   t.textContent=msg; t.classList.add('show');
@@ -2963,7 +3204,7 @@ document.querySelectorAll('.tab-btn').forEach(btn=>{
     document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
     btn.classList.add('active');
     activeTab = btn.dataset.tab;
-    ['vocab','flashcards','notes','situations','nations','professions','patterns','prepositions','possessives','reader','alphabet','numbers'].forEach(t=>document.getElementById('tab-'+t).classList.add('hidden'));
+    ['vocab','flashcards','notes','situations','nations','professions','patterns','prepositions','possessives','family','food','reader','alphabet','numbers'].forEach(t=>document.getElementById('tab-'+t).classList.add('hidden'));
     document.getElementById('tab-'+activeTab).classList.remove('hidden');
     if(activeTab==='situations'){ allSitPacks=[]; openSitPack=null; loadSituations(); }
     if(activeTab==='nations') renderNations();
@@ -2973,6 +3214,8 @@ document.querySelectorAll('.tab-btn').forEach(btn=>{
     if(activeTab==='patterns') renderPatterns();
     if(activeTab==='prepositions') renderPrepositions();
     if(activeTab==='possessives') renderPossessives();
+    if(activeTab==='family') renderFamily();
+    if(activeTab==='food') renderFood();
     if(activeTab==='reader') initReader();
   });
 });
