@@ -14840,7 +14840,79 @@
     "notes": "",
     "examples": [],
     "addedAt": "02/06/2026",
-    "generatingExample": true,
-    "assessingFreq": true
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu divórcio-me",
+          "en": "I get divorced",
+          "_grammarFixes": [
+            {
+              "orig": "divorço",
+              "best": "divórcio",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu divorcias-te",
+          "en": "You get divorced",
+          "_grammarFixes": [
+            {
+              "orig": "divorças",
+              "best": "divorcias",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela divorcia-se",
+          "en": "She gets divorced",
+          "_grammarFixes": [
+            {
+              "orig": "divorça",
+              "best": "divorcia",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós divórcio-nos",
+          "en": "We get divorced",
+          "_grammarFixes": [
+            {
+              "orig": "divorçamo",
+              "best": "divórcio",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês divorciam-se",
+          "en": "You get divorced",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles divorciam-se",
+          "en": "They get divorced",
+          "_grammarChecked": true
+        }
+      ],
+      "past": [],
+      "future-peri": [],
+      "future-simple": []
+    }
   }
 ]
