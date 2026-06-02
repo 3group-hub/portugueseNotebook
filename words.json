@@ -14670,9 +14670,94 @@
     "notes": "",
     "examples": [],
     "addedAt": "02/06/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
-    "freq": "common"
+    "freq": "common",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vincamos pouco.",
+          "en": "I chat little.",
+          "_grammarFixes": [
+            {
+              "orig": "bincamos",
+              "best": "vincamos",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vincas comigo.",
+          "en": "You chat with me.",
+          "_grammarFixes": [
+            {
+              "orig": "bincas",
+              "best": "vincas",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vincava ontem.",
+          "en": "She was chatting yesterday.",
+          "_grammarFixes": [
+            {
+              "orig": "bincava",
+              "best": "vincava",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vincamos à noite.",
+          "en": "We chat at night.",
+          "_grammarFixes": [
+            {
+              "orig": "bincamos",
+              "best": "vincamos",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vincam muito.",
+          "en": "You chat a lot.",
+          "_grammarFixes": [
+            {
+              "orig": "bincam",
+              "best": "vincam",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vincam sempre.",
+          "en": "They always chat.",
+          "_grammarFixes": [
+            {
+              "orig": "bincam",
+              "best": "vincam",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        }
+      ],
+      "past": [],
+      "future-peri": [],
+      "future-simple": []
+    }
   },
   {
     "id": 1780404075952,
@@ -14682,7 +14767,51 @@
     "notes": "",
     "examples": [],
     "addedAt": "02/06/2026",
-    "generatingExample": true,
-    "assessingFreq": true
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "essential",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu brinco",
+          "en": "I play",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu brincas",
+          "en": "You play",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela brinca",
+          "en": "She plays",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós brincamos",
+          "en": "We play",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês brincam",
+          "en": "You play",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles brincam",
+          "en": "They play",
+          "_grammarChecked": true
+        }
+      ],
+      "past": [],
+      "future-peri": [],
+      "future-simple": []
+    }
   }
 ]
