@@ -143,6 +143,7 @@
       <button class="tab-btn" data-tab="possessives">🔑 Possessives</button>
       <button class="tab-btn" data-tab="family">👨‍👩‍👧 Family</button>
       <button class="tab-btn" data-tab="food">🥦 Food</button>
+      <button class="tab-btn" data-tab="appearance">🧍 Appearance</button>
       <button class="tab-btn" data-tab="reader">📖 Text Reader</button>
       <button class="tab-btn" data-tab="alphabet">🔤 Alphabet</button>
       <button class="tab-btn" data-tab="numbers">🔢 Numbers</button>
@@ -288,6 +289,9 @@
 
   <!-- ═══ FOOD TAB ═══ -->
   <div id="tab-food" class="hidden"></div>
+
+  <!-- ═══ APPEARANCE TAB ═══ -->
+  <div id="tab-appearance" class="hidden"></div>
 
   <!-- ═══ TEXT READER TAB ═══ -->
   <div id="tab-reader" class="hidden">
@@ -3017,6 +3021,195 @@ function renderFood(){
   </div>`;
 }
 
+
+// ═══ APPEARANCE TAB ══════════════════════════════════════════════════════
+const APPEARANCE_ZONES={
+  hair:{label:'Cabelo',labelEn:'Hair',color:'#8B4513',icon:'💇',words:[
+    {pt:'loiro/loira',en:'blonde',note:''},{pt:'castanho/castanha',en:'brown (hair)',note:''},
+    {pt:'preto/preta',en:'black',note:''},{pt:'ruivo/ruiva',en:'red/ginger',note:''},
+    {pt:'grisalho/grisalha',en:'grey/salt & pepper',note:''},{pt:'branco/branca',en:'white',note:''},
+    {pt:'liso',en:'straight',note:''},{pt:'encaracolado',en:'curly',note:''},
+    {pt:'ondulado',en:'wavy',note:''},{pt:'curto',en:'short',note:''},
+    {pt:'comprido',en:'long',note:''},{pt:'careca',en:'bald',note:''},
+    {pt:'rabo-de-cavalo',en:'ponytail',note:''},{pt:'tranças',en:'braids',note:''},
+    {pt:'franja',en:'fringe/bangs',note:''},
+  ]},
+  eyes:{label:'Olhos',labelEn:'Eyes',color:'#2c5f8a',icon:'👁️',words:[
+    {pt:'olhos azuis',en:'blue eyes',note:''},{pt:'olhos verdes',en:'green eyes',note:''},
+    {pt:'olhos castanhos',en:'brown eyes',note:''},{pt:'olhos pretos',en:'black eyes',note:''},
+    {pt:'olhos cinzentos',en:'grey eyes',note:''},{pt:'olhos de avelã',en:'hazel eyes',note:''},
+    {pt:'olhos amendoados',en:'almond-shaped',note:''},{pt:'olhos grandes',en:'big eyes',note:''},
+    {pt:'sobrancelhas',en:'eyebrows',note:''},{pt:'pestanas',en:'eyelashes',note:''},
+    {pt:'míope',en:'short-sighted',note:''},{pt:'óculos',en:'glasses',note:''},
+  ]},
+  face:{label:'Rosto',labelEn:'Face & Features',color:'#c1440e',icon:'😊',words:[
+    {pt:'rosto oval',en:'oval face',note:''},{pt:'rosto redondo',en:'round face',note:''},
+    {pt:'rosto quadrado',en:'square face',note:''},{pt:'nariz grande',en:'big nose',note:''},
+    {pt:'nariz arrebitado',en:'upturned nose',note:''},{pt:'boca grande',en:'wide mouth',note:''},
+    {pt:'lábios finos',en:'thin lips',note:''},{pt:'lábios grossos',en:'full lips',note:''},
+    {pt:'covinha',en:'dimple',note:''},{pt:'sardas',en:'freckles',note:''},
+    {pt:'rugas',en:'wrinkles',note:''},{pt:'barba',en:'beard',note:'masculino'},
+    {pt:'bigode',en:'moustache',note:'masculino'},{pt:'cavanhaque',en:'goatee',note:'masculino'},
+  ]},
+  skin:{label:'Pele',labelEn:'Skin',color:'#b5830a',icon:'🌿',words:[
+    {pt:'pele clara',en:'fair/light skin',note:''},{pt:'pele morena',en:'olive/tan skin',note:''},
+    {pt:'pele negra',en:'dark/black skin',note:''},{pt:'pele bronzeada',en:'tanned skin',note:''},
+    {pt:'pele sardenta',en:'freckled skin',note:''},{pt:'pele oleosa',en:'oily skin',note:''},
+    {pt:'pele seca',en:'dry skin',note:''},{pt:'pele sensível',en:'sensitive skin',note:''},
+    {pt:'tatuagem',en:'tattoo',note:''},{pt:'cicatriz',en:'scar',note:''},
+    {pt:'sinal',en:'birthmark/mole',note:''},
+  ]},
+  figure:{label:'Figura',labelEn:'Build & Figure',color:'#7b4ea0',icon:'🧍',words:[
+    {pt:'alto/alta',en:'tall',note:'m/f'},{pt:'baixo/baixa',en:'short',note:'m/f'},
+    {pt:'de estatura média',en:'average height',note:''},{pt:'magro/magra',en:'slim/thin',note:'m/f'},
+    {pt:'robusto/robusta',en:'stocky/sturdy',note:'m/f'},{pt:'musculado/musculada',en:'muscular',note:'m/f'},
+    {pt:'curvilíneo/curvilínea',en:'curvy',note:'m/f'},{pt:'esguio/esguia',en:'slender',note:'m/f'},
+    {pt:'atlético/atlética',en:'athletic',note:'m/f'},{pt:'delgado/delgada',en:'slim',note:'m/f'},
+    {pt:'corpulento/corpulenta',en:'heavyset',note:'m/f'},
+  ]},
+  age:{label:'Idade',labelEn:'Age & Life Stage',color:'#1a6b3c',icon:'🕰️',words:[
+    {pt:'bebé',en:'baby',note:'0–1 ano'},{pt:'criança',en:'child',note:'2–12 anos'},
+    {pt:'adolescente',en:'teenager',note:'13–17 anos'},{pt:'jovem',en:'young person',note:'18–30 anos'},
+    {pt:'adulto/adulta',en:'adult',note:''},{pt:'de meia-idade',en:'middle-aged',note:'40–60 anos'},
+    {pt:'idoso/idosa',en:'elderly',note:''},{pt:'velho/velha',en:'old',note:'informal'},
+    {pt:'novo/nova',en:'young',note:''},{pt:'mais velho/velha',en:'older',note:''},
+  ]},
+  personality:{label:'Personalidade',labelEn:'Personality & Character',color:'#e07b39',icon:'❤️',
+    pairs:[
+      {pos:'simpático/simpática',  neg:'antipático/antipática',   en_pos:'friendly/nice',        en_neg:'unfriendly/unpleasant'},
+      {pos:'alegre',               neg:'triste',                   en_pos:'cheerful/happy',       en_neg:'sad/gloomy'},
+      {pos:'divertido/divertida',  neg:'aborrecido/aborrecida',    en_pos:'fun/entertaining',     en_neg:'boring'},
+      {pos:'extrovertido/extrovertida',neg:'introvertido/introvertida',en_pos:'extroverted',      en_neg:'introverted'},
+      {pos:'generoso/generosa',    neg:'egoísta',                  en_pos:'generous',             en_neg:'selfish'},
+      {pos:'honesto/honesta',      neg:'desonesto/desonesta',      en_pos:'honest',               en_neg:'dishonest'},
+      {pos:'corajoso/corajosa',    neg:'covarde',                  en_pos:'brave',                en_neg:'cowardly'},
+      {pos:'paciente',             neg:'impaciente',               en_pos:'patient',              en_neg:'impatient'},
+      {pos:'calmo/calma',          neg:'nervoso/nervosa',          en_pos:'calm',                 en_neg:'nervous'},
+      {pos:'trabalhador/trabalhadora',neg:'preguiçoso/preguiçosa', en_pos:'hardworking',          en_neg:'lazy'},
+      {pos:'organizado/organizada',neg:'desorganizado/desorganizada',en_pos:'organised',          en_neg:'disorganised'},
+      {pos:'criativo/criativa',    neg:'sem criatividade',         en_pos:'creative',             en_neg:'uncreative'},
+      {pos:'inteligente',          neg:'ignorante',                en_pos:'intelligent',          en_neg:'ignorant'},
+      {pos:'humilde',              neg:'arrogante',                en_pos:'humble',               en_neg:'arrogant'},
+      {pos:'carinhoso/carinhosa',  neg:'frio/fria',                en_pos:'affectionate/warm',    en_neg:'cold/distant'},
+      {pos:'responsável',          neg:'irresponsável',            en_pos:'responsible',          en_neg:'irresponsible'},
+      {pos:'otimista',             neg:'pessimista',               en_pos:'optimistic',           en_neg:'pessimistic'},
+      {pos:'confiante',            neg:'inseguro/insegura',        en_pos:'confident',            en_neg:'insecure'},
+      {pos:'tolerante',            neg:'intolerante',              en_pos:'tolerant',             en_neg:'intolerant'},
+      {pos:'sensível',             neg:'insensível',               en_pos:'sensitive',            en_neg:'insensitive'},
+      {pos:'sincero/sincera',      neg:'falso/falsa',              en_pos:'sincere',              en_neg:'fake/false'},
+      {pos:'maduro/madura',        neg:'imaturo/imatura',          en_pos:'mature',               en_neg:'immature'},
+      {pos:'sociável',             neg:'tímido/tímida',            en_pos:'sociable',             en_neg:'shy/timid'},
+    ],
+    words:[]
+  },
+  general:{label:'Geral',labelEn:'General Description',color:'#1a3a5c',icon:'💬',words:[
+    {pt:'bonito/bonita',en:'beautiful/handsome',note:'m/f'},{pt:'feio/feia',en:'ugly',note:'m/f'},
+    {pt:'atraente',en:'attractive',note:''},{pt:'elegante',en:'elegant',note:''},
+    {pt:'parecido com',en:'looks like',note:''},{pt:'parece',en:'looks like (verb)',note:''},
+    {pt:'tem olhos azuis',en:'has blue eyes',note:''},{pt:'é alto e magro',en:'he is tall and slim',note:''},
+    {pt:'ela é morena',en:'she has dark hair/skin',note:'morena = dark hair OR skin'},
+    {pt:'de óculos',en:'with glasses',note:''},{pt:'com barba',en:'with a beard',note:''},
+  ]},
+};
+
+let activeZone='hair';
+
+function renderAppearance(){
+  const el=document.getElementById('tab-appearance'); if(!el) return;
+  const userWordSet=new Set(words.map(w=>w.word.toLowerCase()));
+
+  el.innerHTML=`<div style="margin-top:16px;">
+    <div class="card" style="border-left:4px solid #1a3a5c;margin-bottom:12px;">
+      <h2 style="margin:0 0 4px;">🧍 Human Appearance</h2>
+      <p style="font-size:12px;color:#aaa;">Tap a zone on the figure to see vocabulary · 🔊 on every word</p>
+    </div>
+    <div style="display:flex;gap:12px;align-items:flex-start;">
+      <!-- SVG figure -->
+      <div style="flex-shrink:0;background:#fff;border-radius:16px;padding:12px;box-shadow:0 2px 10px rgba(0,0,0,0.08);position:sticky;top:70px;">
+        <svg width="130" height="320" viewBox="0 0 130 320" xmlns="http://www.w3.org/2000/svg" style="display:block;">
+          <rect x="42" y="120" width="46" height="80" rx="10" fill="#f5ede3" stroke="#ddd" stroke-width="1"/>
+          <rect x="22" y="120" width="20" height="70" rx="10" fill="#f5ede3" stroke="#ddd" stroke-width="1"/>
+          <rect x="88" y="120" width="20" height="70" rx="10" fill="#f5ede3" stroke="#ddd" stroke-width="1"/>
+          <rect x="44" y="196" width="18" height="90" rx="9" fill="#f5ede3" stroke="#ddd" stroke-width="1"/>
+          <rect x="68" y="196" width="18" height="90" rx="9" fill="#f5ede3" stroke="#ddd" stroke-width="1"/>
+          <rect x="57" y="100" width="16" height="24" rx="6" fill="#f5ede3" stroke="#ddd" stroke-width="1"/>
+          <ellipse cx="65" cy="72" rx="28" ry="32" fill="#f5ede3" stroke="#ddd" stroke-width="1"/>
+          <!-- Hotspots -->
+          <ellipse cx="65" cy="50" rx="30" ry="20" fill="${activeZone==='hair'?'#8B451366':'#8B451322'}" stroke="${activeZone==='hair'?'#8B4513':'transparent'}" stroke-width="2" style="cursor:pointer;" onclick="activeZone='hair';renderAppearance()"/>
+          <text x="65" y="54" text-anchor="middle" font-size="9" fill="${activeZone==='hair'?'#8B4513':'#aaa'}" style="pointer-events:none;">cabelo</text>
+          <rect x="44" y="68" width="42" height="16" rx="8" fill="${activeZone==='eyes'?'#2c5f8a66':'#2c5f8a22'}" stroke="${activeZone==='eyes'?'#2c5f8a':'transparent'}" stroke-width="2" style="cursor:pointer;" onclick="activeZone='eyes';renderAppearance()"/>
+          <text x="65" y="79" text-anchor="middle" font-size="9" fill="${activeZone==='eyes'?'#2c5f8a':'#aaa'}" style="pointer-events:none;">olhos</text>
+          <ellipse cx="65" cy="90" rx="22" ry="14" fill="${activeZone==='face'?'#c1440e55':'#c1440e22'}" stroke="${activeZone==='face'?'#c1440e':'transparent'}" stroke-width="2" style="cursor:pointer;" onclick="activeZone='face';renderAppearance()"/>
+          <text x="65" y="93" text-anchor="middle" font-size="9" fill="${activeZone==='face'?'#c1440e':'#aaa'}" style="pointer-events:none;">rosto</text>
+          <rect x="43" y="121" width="44" height="44" rx="8" fill="${activeZone==='skin'?'#b5830a55':'#b5830a22'}" stroke="${activeZone==='skin'?'#b5830a':'transparent'}" stroke-width="2" style="cursor:pointer;" onclick="activeZone='skin';renderAppearance()"/>
+          <text x="65" y="147" text-anchor="middle" font-size="9" fill="${activeZone==='skin'?'#b5830a':'#aaa'}" style="pointer-events:none;">pele</text>
+          <rect x="43" y="162" width="44" height="50" rx="8" fill="${activeZone==='figure'?'#7b4ea055':'#7b4ea022'}" stroke="${activeZone==='figure'?'#7b4ea0':'transparent'}" stroke-width="2" style="cursor:pointer;" onclick="activeZone='figure';renderAppearance()"/>
+          <text x="65" y="191" text-anchor="middle" font-size="9" fill="${activeZone==='figure'?'#7b4ea0':'#aaa'}" style="pointer-events:none;">figura</text>
+          <rect x="43" y="210" width="44" height="72" rx="8" fill="${activeZone==='age'?'#1a6b3c55':'#1a6b3c22'}" stroke="${activeZone==='age'?'#1a6b3c':'transparent'}" stroke-width="2" style="cursor:pointer;" onclick="activeZone='age';renderAppearance()"/>
+          <text x="65" y="250" text-anchor="middle" font-size="9" fill="${activeZone==='age'?'#1a6b3c':'#aaa'}" style="pointer-events:none;">idade</text>
+          <ellipse cx="110" cy="72" rx="16" ry="14" fill="${activeZone==='general'?'#1a3a5c55':'#1a3a5c22'}" stroke="${activeZone==='general'?'#1a3a5c':'transparent'}" stroke-width="2" style="cursor:pointer;" onclick="activeZone='general';renderAppearance()"/>
+          <text x="110" y="70" text-anchor="middle" font-size="7" fill="${activeZone==='general'?'#1a3a5c':'#aaa'}" style="pointer-events:none;">geral</text>
+          <text x="110" y="79" text-anchor="middle" font-size="7" fill="${activeZone==='general'?'#1a3a5c':'#aaa'}" style="pointer-events:none;">💬</text>
+          <!-- PERSONALITY heart zone -->
+          <ellipse cx="18" cy="145" rx="15" ry="14" fill="${activeZone==='personality'?'#e07b3966':'#e07b3922'}" stroke="${activeZone==='personality'?'#e07b39':'transparent'}" stroke-width="2" style="cursor:pointer;" onclick="activeZone='personality';renderAppearance()"/>
+          <text x="18" y="143" text-anchor="middle" font-size="6.5" fill="${activeZone==='personality'?'#e07b39':'#aaa'}" style="pointer-events:none;">carácter</text>
+          <text x="18" y="153" text-anchor="middle" font-size="9" fill="${activeZone==='personality'?'#e07b39':'#ccc'}" style="pointer-events:none;">❤️</text>
+          <circle cx="55" cy="74" r="3" fill="${activeZone==='eyes'?'#2c5f8a':'#bbb'}" style="pointer-events:none;"/>
+          <circle cx="75" cy="74" r="3" fill="${activeZone==='eyes'?'#2c5f8a':'#bbb'}" style="pointer-events:none;"/>
+          <path d="M58 88 Q65 94 72 88" stroke="${activeZone==='face'?'#c1440e':'#bbb'}" stroke-width="1.5" fill="none" style="pointer-events:none;"/>
+        </svg>
+        <div style="display:flex;flex-direction:column;gap:4px;margin-top:8px;">
+          ${Object.entries(APPEARANCE_ZONES).map(([key,z])=>`<button onclick="activeZone='${key}';renderAppearance()" style="padding:4px 8px;border-radius:8px;border:none;background:${activeZone===key?z.color:'#f5f5f5'};color:${activeZone===key?'#fff':'#555'};cursor:pointer;font-size:10px;font-family:inherit;font-weight:700;text-align:left;">${z.icon} ${z.label}</button>`).join('')}
+        </div>
+      </div>
+      <!-- Vocab panel -->
+      <div style="flex:1;min-width:0;">${(()=>{
+        const z=APPEARANCE_ZONES[activeZone];
+        return `<div style="background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.08);">
+          <div style="background:${z.color};color:#fff;padding:14px 16px;">
+            <div style="font-size:18px;font-weight:800;">${z.icon} ${z.label}</div>
+            <div style="font-size:12px;opacity:0.85;margin-top:2px;">${z.labelEn}</div>
+          </div>
+          <div style="padding:12px;display:flex;flex-direction:column;gap:6px;">
+            ${z.pairs && z.pairs.length ? `
+            <div style="font-size:11px;color:#aaa;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:4px;display:grid;grid-template-columns:1fr 1fr;gap:4px;padding:0 4px;">
+              <span style="color:#1a6b3c;font-weight:700;">✅ Positive</span>
+              <span style="color:#c1440e;font-weight:700;">❌ Opposite</span>
+            </div>
+            ${z.pairs.map(p=>`
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:2px;">
+              <div style="padding:8px 8px;border-radius:10px;background:#f0faf4;border:1px solid rgba(26,107,60,0.15);">
+                <div style="display:flex;align-items:center;gap:4px;margin-bottom:2px;">
+                  <span style="font-size:12px;font-weight:700;color:#1a6b3c;flex:1;line-height:1.3;">${p.pos}</span>
+                  <button class="speak-btn" style="font-size:12px;" onclick="speakText('${escQ(p.pos.split('/')[0].trim())}','pt-PT',this)">🔊</button>
+                </div>
+                <div style="font-size:10px;color:#888;">${p.en_pos}</div>
+              </div>
+              <div style="padding:8px 8px;border-radius:10px;background:#fff8f7;border:1px solid rgba(193,68,14,0.15);">
+                <div style="display:flex;align-items:center;gap:4px;margin-bottom:2px;">
+                  <span style="font-size:12px;font-weight:700;color:#c1440e;flex:1;line-height:1.3;">${p.neg}</span>
+                  <button class="speak-btn" style="font-size:12px;" onclick="speakText('${escQ(p.neg.split('/')[0].trim())}','pt-PT',this)">🔊</button>
+                </div>
+                <div style="font-size:10px;color:#888;">${p.en_neg}</div>
+              </div>
+            </div>`).join('')}` :
+            z.words.map(w=>{
+              const iv=userWordSet.has(w.pt.toLowerCase().split('/')[0].trim());
+              return `<div style="display:flex;align-items:center;gap:8px;padding:8px 10px;border-radius:10px;background:${iv?'#f3f0ff':'#fafafa'};border:1px solid ${iv?'#7b4ea030':'#f0ebe4'};">
+                <div style="flex:1;min-width:0;">
+                  <div style="font-size:14px;font-weight:700;color:${iv?'#7b4ea0':'var(--navy)'};">${w.pt}${iv?' 📖':''}</div>
+                  <div style="font-size:12px;color:#888;">${w.en}${w.note?` · <em style="color:#aaa;">${w.note}</em>`:''}</div>
+                </div>
+                <button class="speak-btn" onclick="speakText('${escQ(w.pt.split('/')[0].trim())}','pt-PT',this)" style="font-size:16px;">🔊</button>
+              </div>`;
+            }).join('')}
+          </div>
+        </div>`;
+      })()}</div>
+    </div>
+  </div>`;
+}
+
 function showToast(msg){
   const t=document.getElementById('toast');
   t.textContent=msg; t.classList.add('show');
@@ -3204,7 +3397,7 @@ document.querySelectorAll('.tab-btn').forEach(btn=>{
     document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
     btn.classList.add('active');
     activeTab = btn.dataset.tab;
-    ['vocab','flashcards','notes','situations','nations','professions','patterns','prepositions','possessives','family','food','reader','alphabet','numbers'].forEach(t=>document.getElementById('tab-'+t).classList.add('hidden'));
+    ['vocab','flashcards','notes','situations','nations','professions','patterns','prepositions','possessives','family','food','appearance','reader','alphabet','numbers'].forEach(t=>document.getElementById('tab-'+t).classList.add('hidden'));
     document.getElementById('tab-'+activeTab).classList.remove('hidden');
     if(activeTab==='situations'){ allSitPacks=[]; openSitPack=null; loadSituations(); }
     if(activeTab==='nations') renderNations();
@@ -3216,6 +3409,7 @@ document.querySelectorAll('.tab-btn').forEach(btn=>{
     if(activeTab==='possessives') renderPossessives();
     if(activeTab==='family') renderFamily();
     if(activeTab==='food') renderFood();
+    if(activeTab==='appearance') renderAppearance();
     if(activeTab==='reader') initReader();
   });
 });
