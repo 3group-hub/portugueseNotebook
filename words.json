@@ -14820,9 +14820,16 @@
     "translation": "to separate",
     "category": "Noun",
     "notes": "",
-    "examples": [],
+    "examples": [
+      {
+        "pt": "Vou separar a roupa suja",
+        "en": "I'll separate the dirty laundry",
+        "_grammarChecked": true
+      }
+    ],
     "addedAt": "02/06/2026",
-    "generatingExample": true,
-    "assessingFreq": true
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common"
   }
 ]
