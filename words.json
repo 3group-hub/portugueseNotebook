@@ -14671,6 +14671,18 @@
     "examples": [],
     "addedAt": "02/06/2026",
     "generatingExample": true,
+    "assessingFreq": false,
+    "freq": "common"
+  },
+  {
+    "id": 1780404075952,
+    "word": "brincar",
+    "translation": "to play",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "02/06/2026",
+    "generatingExample": true,
     "assessingFreq": true
   }
 ]
