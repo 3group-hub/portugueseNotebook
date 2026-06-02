@@ -14661,5 +14661,16 @@
     },
     "_generatingTense": null,
     "_activeTense": "present"
+  },
+  {
+    "id": 1780404058778,
+    "word": "bincar",
+    "translation": "to chat",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "02/06/2026",
+    "generatingExample": true,
+    "assessingFreq": true
   }
 ]
