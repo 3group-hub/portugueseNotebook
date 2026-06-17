@@ -3758,7 +3758,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "02/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -3874,7 +3874,7 @@
       ]
     },
     "_activeTense": "imperative",
-    "_generatingTense": "imperative"
+    "_generatingTense": null
   },
   {
     "id": 1777729040487,
