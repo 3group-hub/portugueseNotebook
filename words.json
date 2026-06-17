@@ -6673,7 +6673,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "07/05/2026",
-    "generatingExample": false,
+    "generatingExample": true,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -6830,8 +6830,8 @@
         }
       ]
     },
-    "_activeTense": "present",
-    "_generatingTense": null,
+    "_activeTense": "imperative",
+    "_generatingTense": "imperative",
     "srs": {
       "interval": 1,
       "ease": 2.5,
