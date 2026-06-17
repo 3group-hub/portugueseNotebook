@@ -3683,33 +3683,39 @@
       "future-simple": [
         {
           "pronoun": "eu",
-          "pt": "Eu saberei tudo.",
-          "en": "I will know everything."
+          "pt": "Eu saberei",
+          "en": "I will know",
+          "_grammarChecked": true
         },
         {
           "pronoun": "tu",
-          "pt": "Tu saberás mais.",
-          "en": "You will know more."
+          "pt": "Tu saberás",
+          "en": "You will know",
+          "_grammarChecked": true
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela saberá logo.",
-          "en": "She will know soon."
+          "pt": "Ela saberá",
+          "en": "She will know",
+          "_grammarChecked": true
         },
         {
           "pronoun": "nós",
-          "pt": "Nós saberemos amanhã.",
-          "en": "We will know tomorrow."
+          "pt": "Nós saberemos",
+          "en": "We will know",
+          "_grammarChecked": true
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês saberão hoje.",
-          "en": "You will know today."
+          "pt": "Vocês saberão",
+          "en": "You will know",
+          "_grammarChecked": true
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles saberão depois.",
-          "en": "They will know later."
+          "pt": "Eles saberão",
+          "en": "They will know",
+          "_grammarChecked": true
         }
       ]
     },
