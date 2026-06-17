@@ -6021,7 +6021,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "06/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -6204,10 +6204,24 @@
           "en": "They will come later",
           "_grammarChecked": true
         }
+      ],
+      "imperative": [
+        {
+          "pronoun": "tu (informal)",
+          "pt": "Vem cá por favor",
+          "en": "Come here please",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "você (formal)",
+          "pt": "Venha por favor",
+          "en": "Come please",
+          "_grammarChecked": true
+        }
       ]
     },
     "_activeTense": "imperative",
-    "_generatingTense": "imperative"
+    "_generatingTense": null
   },
   {
     "id": 1778076608740,
