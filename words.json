@@ -3114,32 +3114,38 @@
         {
           "pronoun": "eu",
           "pt": "Eu fiz",
-          "en": "I did"
+          "en": "I did",
+          "_grammarChecked": true
         },
         {
           "pronoun": "tu",
           "pt": "Tu fizeste",
-          "en": "You did"
+          "en": "You did",
+          "_grammarChecked": true
         },
         {
-          "pronoun": "ele/ela",
+          "pronoun": "ela",
           "pt": "Ela fez",
-          "en": "She did"
+          "en": "She did",
+          "_grammarChecked": true
         },
         {
           "pronoun": "nós",
           "pt": "Nós fizemos",
-          "en": "We did"
+          "en": "We did",
+          "_grammarChecked": true
         },
         {
           "pronoun": "vocês",
           "pt": "Vocês fizeram",
-          "en": "You did"
+          "en": "You did",
+          "_grammarChecked": true
         },
         {
-          "pronoun": "eles/elas",
+          "pronoun": "eles",
           "pt": "Eles fizeram",
-          "en": "They did"
+          "en": "They did",
+          "_grammarChecked": true
         }
       ],
       "future": [
@@ -3178,64 +3184,76 @@
         {
           "pronoun": "eu",
           "pt": "Eu vou fazer",
-          "en": "I will do"
+          "en": "I will do",
+          "_grammarChecked": true
         },
         {
           "pronoun": "tu",
           "pt": "Tu vais fazer",
-          "en": "You will do"
+          "en": "You will do",
+          "_grammarChecked": true
         },
         {
           "pronoun": "ele/ela",
           "pt": "Ela vai fazer",
-          "en": "She will do"
+          "en": "She will do",
+          "_grammarChecked": true
         },
         {
           "pronoun": "nós",
           "pt": "Nós vamos fazer",
-          "en": "We will do"
+          "en": "We will do",
+          "_grammarChecked": true
         },
         {
           "pronoun": "vocês",
           "pt": "Vocês vão fazer",
-          "en": "You will do"
+          "en": "You will do",
+          "_grammarChecked": true
         },
         {
           "pronoun": "eles/elas",
           "pt": "Eles vão fazer",
-          "en": "They will do"
+          "en": "They will do",
+          "_grammarChecked": true
         }
       ],
       "future-simple": [
         {
           "pronoun": "eu",
-          "pt": "Eu farei um bolo",
-          "en": "I will make a cake"
+          "pt": "Eu farei isso",
+          "en": "I will do this",
+          "_grammarChecked": true
         },
         {
           "pronoun": "tu",
-          "pt": "Tu farás um bolo",
-          "en": "You will make a cake"
+          "pt": "Tu farás bem",
+          "en": "You will do well",
+          "_grammarChecked": true
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela fará um bolo",
-          "en": "She will make a cake"
+          "pt": "Ela fará tudo",
+          "en": "She will do everything",
+          "_grammarChecked": true
         },
         {
           "pronoun": "nós",
-          "pt": "Nós faremos um bolo",
-          "en": "We will make a cake"
+          "pt": "Nós faremos mais",
+          "en": "We will do more",
+          "_grammarChecked": true
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês farão um bolo",
-          "en": "You will make a cake"
+          "pt": "Vocês farão melhor",
+          "en": "You will do better",
+          "_grammarChecked": true
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles farão um bolo",
-          "en": "They will make a cake"
+          "pt": "Eles farão tudo",
+          "en": "They will do everything",
+          "_grammarChecked": true
         }
       ]
     },
