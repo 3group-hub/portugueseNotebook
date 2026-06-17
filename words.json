@@ -4621,7 +4621,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "04/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -4733,10 +4733,24 @@
           "pt": "Eles/Elas vão escrever",
           "en": "They will write"
         }
+      ],
+      "imperative": [
+        {
+          "pronoun": "tu (informal)",
+          "pt": "Escreve o teu nome",
+          "en": "Write your name",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "você (formal)",
+          "pt": "Escreva por favor",
+          "en": "Write please",
+          "_grammarChecked": true
+        }
       ]
     },
     "_activeTense": "imperative",
-    "_generatingTense": "imperative"
+    "_generatingTense": null
   },
   {
     "id": 1777898155068,
