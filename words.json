@@ -9050,7 +9050,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "11/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -9154,37 +9154,43 @@
         {
           "pronoun": "eu",
           "pt": "Eu abrirei a porta",
-          "en": "I will open the door"
+          "en": "I will open the door",
+          "_grammarChecked": true
         },
         {
           "pronoun": "tu",
           "pt": "Tu abrirás a janela",
-          "en": "You will open the window"
+          "en": "You will open the window",
+          "_grammarChecked": true
         },
         {
           "pronoun": "ele/ela",
           "pt": "Ela abrirá a caixa",
-          "en": "She will open the box"
+          "en": "She will open the box",
+          "_grammarChecked": true
         },
         {
           "pronoun": "nós",
-          "pt": "Nós abriremos a loja",
-          "en": "We will open the shop"
+          "pt": "Nós abriremos a porta",
+          "en": "We will open the door",
+          "_grammarChecked": true
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês abrirão a porta",
-          "en": "You will open the door"
+          "pt": "Vocês abrirão a loja",
+          "en": "You will open the store",
+          "_grammarChecked": true
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles abrirão a garagem",
-          "en": "They will open the garage"
+          "pt": "Eles abrirão a caixa",
+          "en": "They will open the box",
+          "_grammarChecked": true
         }
       ]
     },
     "_activeTense": "future-simple",
-    "_generatingTense": "future-simple"
+    "_generatingTense": null
   },
   {
     "id": 1778487793415,
