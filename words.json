@@ -160,32 +160,38 @@
         {
           "pronoun": "eu",
           "pt": "Eu quererei um bolo",
-          "en": "I will want a cake"
+          "en": "I will want a cake",
+          "_grammarChecked": true
         },
         {
           "pronoun": "tu",
           "pt": "Tu quererás um carro",
-          "en": "You will want a car"
+          "en": "You will want a car",
+          "_grammarChecked": true
         },
         {
           "pronoun": "ele/ela",
           "pt": "Ela quererá um livro",
-          "en": "She will want a book"
+          "en": "She will want a book",
+          "_grammarChecked": true
         },
         {
           "pronoun": "nós",
-          "pt": "Nós quereremos um apartamento",
-          "en": "We will want an apartment"
+          "pt": "Nós quereremos ir",
+          "en": "We will want to go",
+          "_grammarChecked": true
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês quererão um telefone",
-          "en": "You will want a phone"
+          "pt": "Vocês quererão jogar",
+          "en": "You will want to play",
+          "_grammarChecked": true
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles quererão um computador",
-          "en": "They will want a computer"
+          "pt": "Eles quererão comer",
+          "en": "They will want to eat",
+          "_grammarChecked": true
         }
       ]
     },
