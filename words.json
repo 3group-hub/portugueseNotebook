@@ -3758,7 +3758,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "02/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -3857,10 +3857,24 @@
           "pt": "Eles vão falar.",
           "en": "They will speak."
         }
+      ],
+      "imperative": [
+        {
+          "pronoun": "tu (informal)",
+          "pt": "Fala mais alto",
+          "en": "Speak louder",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "você (formal)",
+          "pt": "Fale por favor",
+          "en": "Speak please",
+          "_grammarChecked": true
+        }
       ]
     },
     "_activeTense": "imperative",
-    "_generatingTense": "imperative"
+    "_generatingTense": null
   },
   {
     "id": 1777729040487,
