@@ -44,65 +44,77 @@
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu quero um bolo",
-          "en": "I want a cake"
+          "pt": "Eu quero comer",
+          "en": "I want to eat",
+          "_grammarChecked": true
         },
         {
           "pronoun": "tu",
-          "pt": "Tu queres uma maçã",
-          "en": "You want an apple"
+          "pt": "Tu queres dormir",
+          "en": "You want to sleep",
+          "_grammarChecked": true
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela quer um carro",
-          "en": "She wants a car"
+          "pt": "Ela quer ler",
+          "en": "She wants to read",
+          "_grammarChecked": true
         },
         {
           "pronoun": "nós",
-          "pt": "Nós queremos ir",
-          "en": "We want to go"
+          "pt": "Nós queremos jogar",
+          "en": "We want to play",
+          "_grammarChecked": true
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês querem jogar",
-          "en": "You want to play"
+          "pt": "Vocês querem ir",
+          "en": "You want to go",
+          "_grammarChecked": true
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles querem futebol",
-          "en": "They want football"
+          "pt": "Eles querem estudar",
+          "en": "They want to study",
+          "_grammarChecked": true
         }
       ],
       "past": [
         {
           "pronoun": "eu",
           "pt": "Eu quis um bolo",
-          "en": "I wanted a cake"
+          "en": "I wanted a cake",
+          "_grammarChecked": true
         },
         {
           "pronoun": "tu",
           "pt": "Tu quiseste um carro",
-          "en": "You wanted a car"
+          "en": "You wanted a car",
+          "_grammarChecked": true
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela quis um livro",
-          "en": "She wanted a book"
+          "pt": "Ela quis um gato",
+          "en": "She wanted a cat",
+          "_grammarChecked": true
         },
         {
           "pronoun": "nós",
           "pt": "Nós quisemos ir",
-          "en": "We wanted to go"
+          "en": "We wanted to go",
+          "_grammarChecked": true
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês quiseram ajudar",
-          "en": "You wanted to help"
+          "pt": "Vocês quiseram jogar",
+          "en": "You wanted to play",
+          "_grammarChecked": true
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles quiseram jogar",
-          "en": "They wanted to play"
+          "pt": "Eles quiseram comer",
+          "en": "They wanted to eat",
+          "_grammarChecked": true
         }
       ],
       "future": [],
@@ -110,32 +122,38 @@
         {
           "pronoun": "eu",
           "pt": "Eu vou querer",
-          "en": "I will want"
+          "en": "I will want",
+          "_grammarChecked": true
         },
         {
           "pronoun": "tu",
           "pt": "Tu vais querer",
-          "en": "You will want"
+          "en": "You will want",
+          "_grammarChecked": true
         },
         {
           "pronoun": "ele/ela",
           "pt": "Ela vai querer",
-          "en": "She will want"
+          "en": "She will want",
+          "_grammarChecked": true
         },
         {
           "pronoun": "nós",
           "pt": "Nós vamos querer",
-          "en": "We will want"
+          "en": "We will want",
+          "_grammarChecked": true
         },
         {
           "pronoun": "vocês",
           "pt": "Vocês vão querer",
-          "en": "You will want"
+          "en": "You will want",
+          "_grammarChecked": true
         },
         {
           "pronoun": "eles/elas",
           "pt": "Eles vão querer",
-          "en": "They will want"
+          "en": "They will want",
+          "_grammarChecked": true
         }
       ],
       "future-simple": [
@@ -4536,7 +4554,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "04/05/2026",
-    "generatingExample": false,
+    "generatingExample": true,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -4650,8 +4668,8 @@
         }
       ]
     },
-    "_activeTense": "present",
-    "_generatingTense": null
+    "_activeTense": "imperative",
+    "_generatingTense": "imperative"
   },
   {
     "id": 1777898458608,
