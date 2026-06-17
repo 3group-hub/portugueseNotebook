@@ -4554,7 +4554,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "04/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -4666,10 +4666,24 @@
           "pt": "Eles vão amar",
           "en": "They will love"
         }
+      ],
+      "imperative": [
+        {
+          "pronoun": "tu (informal)",
+          "pt": "Ama a tua família",
+          "en": "Love your family",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "você (formal)",
+          "pt": "Ame os seus pais",
+          "en": "Love your parents",
+          "_grammarChecked": true
+        }
       ]
     },
     "_activeTense": "imperative",
-    "_generatingTense": "imperative"
+    "_generatingTense": null
   },
   {
     "id": 1777898458608,
