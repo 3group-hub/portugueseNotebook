@@ -2794,32 +2794,38 @@
         {
           "pronoun": "eu",
           "pt": "Eu terei um carro",
-          "en": "I will have a car"
+          "en": "I will have a car",
+          "_grammarChecked": true
         },
         {
           "pronoun": "tu",
           "pt": "Tu terás um amigo",
-          "en": "You will have a friend"
+          "en": "You will have a friend",
+          "_grammarChecked": true
         },
         {
           "pronoun": "ele/ela",
           "pt": "Ela terá um livro",
-          "en": "She will have a book"
+          "en": "She will have a book",
+          "_grammarChecked": true
         },
         {
           "pronoun": "nós",
           "pt": "Nós teremos uma casa",
-          "en": "We will have a house"
+          "en": "We will have a house",
+          "_grammarChecked": true
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês terão um filho",
-          "en": "You will have a son"
+          "pt": "Vocês terão um jantar",
+          "en": "You will have dinner",
+          "_grammarChecked": true
         },
         {
           "pronoun": "eles/elas",
           "pt": "Eles terão um computador",
-          "en": "They will have a computer"
+          "en": "They will have a computer",
+          "_grammarChecked": true
         }
       ]
     },
