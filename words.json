@@ -3519,7 +3519,7 @@
         }
       ]
     },
-    "_activeTense": "present",
+    "_activeTense": "future-peri",
     "_generatingTense": null
   },
   {
@@ -3537,65 +3537,77 @@
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu sei",
-          "en": "I know"
+          "pt": "Eu sei nadar",
+          "en": "I know how to swim",
+          "_grammarChecked": true
         },
         {
           "pronoun": "tu",
-          "pt": "Tu sabes",
-          "en": "You know"
+          "pt": "Tu sabes inglês",
+          "en": "You know English",
+          "_grammarChecked": true
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela sabe",
-          "en": "She knows"
+          "pt": "Ela sabe cozinhar",
+          "en": "She knows how to cook",
+          "_grammarChecked": true
         },
         {
           "pronoun": "nós",
-          "pt": "Nós sabemos",
-          "en": "We know"
+          "pt": "Nós sabemos ler",
+          "en": "We know how to read",
+          "_grammarChecked": true
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês sabem",
-          "en": "You know"
+          "pt": "Vocês sabem português",
+          "en": "You know Portuguese",
+          "_grammarChecked": true
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles sabem",
-          "en": "They know"
+          "pt": "Eles sabem jogar",
+          "en": "They know how to play",
+          "_grammarChecked": true
         }
       ],
       "past": [
         {
           "pronoun": "eu",
           "pt": "Eu soube",
-          "en": "I knew"
+          "en": "I knew",
+          "_grammarChecked": true
         },
         {
           "pronoun": "tu",
           "pt": "Tu soubeste",
-          "en": "You knew"
+          "en": "You knew",
+          "_grammarChecked": true
         },
         {
           "pronoun": "ele/ela",
           "pt": "Ela soube",
-          "en": "She knew"
+          "en": "She knew",
+          "_grammarChecked": true
         },
         {
           "pronoun": "nós",
           "pt": "Nós soubemos",
-          "en": "We knew"
+          "en": "We knew",
+          "_grammarChecked": true
         },
         {
           "pronoun": "vocês",
           "pt": "Vocês souberam",
-          "en": "You knew"
+          "en": "You knew",
+          "_grammarChecked": true
         },
         {
           "pronoun": "eles/elas",
           "pt": "Eles souberam",
-          "en": "They knew"
+          "en": "They knew",
+          "_grammarChecked": true
         }
       ],
       "future": [
@@ -3807,7 +3819,7 @@
         }
       ]
     },
-    "_activeTense": "future",
+    "_activeTense": "future-simple",
     "_generatingTense": null
   },
   {
@@ -12403,7 +12415,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "14/05/2026",
-    "generatingExample": false,
+    "generatingExample": true,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -12510,8 +12522,8 @@
         }
       ]
     },
-    "_generatingTense": null,
-    "_activeTense": "future-simple"
+    "_generatingTense": "imperative",
+    "_activeTense": "imperative"
   },
   {
     "id": 1778749176102,
