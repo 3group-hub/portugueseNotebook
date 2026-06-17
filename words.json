@@ -4244,7 +4244,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "04/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -4343,10 +4343,24 @@
           "pt": "Eles vão comer",
           "en": "They will eat"
         }
+      ],
+      "imperative": [
+        {
+          "pronoun": "tu (informal)",
+          "pt": "Come qualquer coisa",
+          "en": "Eat something",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "você (formal)",
+          "pt": "Coma por favor",
+          "en": "Eat please",
+          "_grammarChecked": true
+        }
       ]
     },
     "_activeTense": "imperative",
-    "_generatingTense": "imperative"
+    "_generatingTense": null
   },
   {
     "id": 1777897636633,
