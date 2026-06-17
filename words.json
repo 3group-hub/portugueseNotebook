@@ -2854,7 +2854,7 @@
         {
           "pronoun": "tu",
           "pt": "Tu vais ao cinema",
-          "en": "You go to the cinema",
+          "en": "You go to the movies",
           "_grammarChecked": true
         },
         {
@@ -2884,8 +2884,8 @@
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles vão ao futebol",
-          "en": "They go to soccer",
+          "pt": "Eles vão ao estádio",
+          "en": "They go to the stadium",
           "_grammarChecked": true
         }
       ],
@@ -2929,8 +2929,8 @@
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles foram ao jogo",
-          "en": "They went to the game",
+          "pt": "Eles foram ao estádio",
+          "en": "They went to the stadium",
           "_grammarChecked": true
         }
       ],
@@ -2970,64 +2970,83 @@
         {
           "pronoun": "eu",
           "pt": "Eu vou ir ao parque",
-          "en": "I'm going to the park"
+          "en": "I'm going to the park",
+          "_grammarChecked": true
         },
         {
           "pronoun": "tu",
           "pt": "Tu vais ir ao cinema",
-          "en": "You're going to the movies"
+          "en": "You're going to the movies",
+          "_grammarChecked": true
         },
         {
           "pronoun": "ele/ela",
           "pt": "Ela vai ir à escola",
-          "en": "She's going to school"
+          "en": "She's going to school",
+          "_grammarChecked": true
         },
         {
           "pronoun": "nós",
           "pt": "Nós vamos ir à praia",
-          "en": "We're going to the beach"
+          "en": "We're going to the beach",
+          "_grammarChecked": true
         },
         {
           "pronoun": "vocês",
           "pt": "Vocês vão ir ao restaurante",
-          "en": "You're going to the restaurant"
+          "en": "You're going to the restaurant",
+          "_grammarChecked": true
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles vão ir ao jogo",
-          "en": "They're going to the game"
+          "pt": "Eles vão ir ao estádio",
+          "en": "They're going to the stadium",
+          "_grammarChecked": true
         }
       ],
       "future-simple": [
         {
           "pronoun": "eu",
           "pt": "Eu irei ao parque",
-          "en": "I will go to the park"
+          "en": "I will go to the park",
+          "_grammarChecked": true
         },
         {
           "pronoun": "tu",
           "pt": "Tu irás ao cinema",
-          "en": "You will go to the movies"
+          "en": "You will go to the movies",
+          "_grammarChecked": true
         },
         {
           "pronoun": "ele/ela",
           "pt": "Ela irá à escola",
-          "en": "She will go to school"
+          "en": "She will go to school",
+          "_grammarChecked": true
         },
         {
           "pronoun": "nós",
           "pt": "Nós iremos à praia",
-          "en": "We will go to the beach"
+          "en": "We will go to the beach",
+          "_grammarChecked": true
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês irão ao restaurante",
-          "en": "You will go to the restaurant"
+          "pt": "Vocês irão ao ‘shopping’",
+          "en": "You will go to the mall",
+          "_grammarFixes": [
+            {
+              "orig": "shopping",
+              "best": "‘shopping’",
+              "rule": "🇵🇹🎓 Estrangeirismos específicos pt_PT"
+            }
+          ],
+          "_grammarChecked": true
         },
         {
           "pronoun": "eles/elas",
           "pt": "Eles irão ao estádio",
-          "en": "They will go to the stadium"
+          "en": "They will go to the stadium",
+          "_grammarChecked": true
         }
       ]
     },
@@ -14872,7 +14891,8 @@
       "past": [],
       "future-peri": [],
       "future-simple": []
-    }
+    },
+    "_activeTense": "imperative"
   },
   {
     "id": 1780404118335,
