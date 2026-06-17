@@ -3287,33 +3287,26 @@
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela diz ou",
-          "en": "She says yes",
-          "_grammarFixes": [
-            {
-              "orig": "oui",
-              "best": "ou",
-              "rule": "Possível erro ortográfico"
-            }
-          ],
+          "pt": "Ela diz isso",
+          "en": "She says that",
           "_grammarChecked": true
         },
         {
           "pronoun": "nós",
-          "pt": "Nós dizemos não",
-          "en": "We say no",
+          "pt": "Nós dizemos tudo",
+          "en": "We say everything",
           "_grammarChecked": true
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês dizem sim",
-          "en": "You say yes",
+          "pt": "Vocês dizem nada",
+          "en": "You say nothing",
           "_grammarChecked": true
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles dizem não",
-          "en": "They say no",
+          "pt": "Eles dizem sim",
+          "en": "They say yes",
           "_grammarChecked": true
         }
       ],
@@ -3321,32 +3314,38 @@
         {
           "pronoun": "eu",
           "pt": "Eu disse",
-          "en": "I said"
+          "en": "I said",
+          "_grammarChecked": true
         },
         {
           "pronoun": "tu",
           "pt": "Tu disseste",
-          "en": "You said"
+          "en": "You said",
+          "_grammarChecked": true
         },
         {
           "pronoun": "ele/ela",
           "pt": "Ela disse",
-          "en": "She said"
+          "en": "She said",
+          "_grammarChecked": true
         },
         {
           "pronoun": "nós",
           "pt": "Nós dissemos",
-          "en": "We said"
+          "en": "We said",
+          "_grammarChecked": true
         },
         {
           "pronoun": "vocês",
           "pt": "Vocês disseram",
-          "en": "You said"
+          "en": "You said",
+          "_grammarChecked": true
         },
         {
           "pronoun": "eles/elas",
           "pt": "Eles disseram",
-          "en": "They said"
+          "en": "They said",
+          "_grammarChecked": true
         }
       ],
       "future": [
