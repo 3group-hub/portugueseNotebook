@@ -204,6 +204,7 @@
       <button class="tab-btn" data-tab="patterns">🔤 Patterns</button>
       <button class="tab-btn" data-tab="prepositions">🔗 Prepositions</button>
       <button class="tab-btn" data-tab="possessives">🔑 Possessives</button>
+      <button class="tab-btn" data-tab="conjunctions">🔗 Conjunções</button>
       <button class="tab-btn" data-tab="family">👨‍👩‍👧 Family</button>
       <button class="tab-btn" data-tab="food">🥦 Food</button>
       <button class="tab-btn" data-tab="appearance">🧍 Appearance</button>
@@ -616,6 +617,9 @@
     </div>
     <div id="poss-content" style="margin-top:12px;"></div>
   </div>
+
+  <!-- ═══ CONJUNCTIONS TAB ═══ -->
+  <div id="tab-conjunctions" class="hidden"></div>
 
   <!-- ═══ FAMILY TAB ═══ -->
   <div id="tab-family" class="hidden"></div>
@@ -1225,7 +1229,7 @@ document.querySelectorAll('.tab-btn').forEach(btn=>{
     document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
     btn.classList.add('active');
     activeTab=btn.dataset.tab;
-    ['vocab','flashcards','textimport','alphabet','numbers','situations','nations','professions','notes','patterns','prepositions','possessives','family','food','appearance','reader','sentences'].forEach(t=>document.getElementById('tab-'+t).classList.add('hidden'));
+    ['vocab','flashcards','textimport','alphabet','numbers','situations','nations','professions','notes','patterns','prepositions','possessives','conjunctions','family','food','appearance','reader','sentences'].forEach(t=>document.getElementById('tab-'+t).classList.add('hidden'));
     document.getElementById('tab-'+activeTab).classList.remove('hidden');
     if(activeTab==='sentences') updateSentWordCount();
     if(activeTab==='situations') initSituationsTab();
@@ -1235,6 +1239,7 @@ document.querySelectorAll('.tab-btn').forEach(btn=>{
     if(activeTab==='patterns') renderPatterns();
     if(activeTab==='prepositions') renderPrepositions();
     if(activeTab==='possessives') renderPossessives();
+    if(activeTab==='conjunctions') renderConjunctions();
     if(activeTab==='family') renderFamily();
     if(activeTab==='food') renderFood();
     if(activeTab==='appearance') renderAppearance();
@@ -1674,7 +1679,7 @@ async function generateAndAttach(wordId){
     // Then generate examples
     if(w.category==='Verb'){
       const present = await genVerbExamples(w.word, w.translation, 'present', w.freq||'common');
-      w.tenses = { present, past:[], 'future-peri':[], 'future-simple':[] };
+      w.tenses = { present, past:[], 'future-peri':[], 'future-simple':[], imperative:[] };
       w.examples = [];
     } else {
       w.examples = await genRegularExamples(w.word, w.translation, w.category, 1, [], w.freq||'common');
@@ -1929,6 +1934,112 @@ function getIrregularConjugations(verb, tense){
   return EP_IRREGULAR_VERBS[v]?.[tense] || null;
 }
 
+// ═══ IMPERATIVO ═════════════════════════════════════════════════════════
+// Format: [tu (informal), você (formal)]
+const IMPERATIVE_IRREGULARS = {
+  'ser':    ['sê','seja'],
+  'estar':  ['está','esteja'],
+  'ter':    ['tem','tenha'],
+  'ir':     ['vai','vá'],
+  'fazer':  ['faz','faça'],
+  'poder':  ['pode','possa'],
+  'querer': ['quer','queira'],
+  'vir':    ['vem','venha'],
+  'dizer':  ['diz','diga'],
+  'saber':  ['sabe','saiba'],
+  'pôr':    ['põe','ponha'],
+  'trazer': ['traz','traga'],
+  'ver':    ['vê','veja'],
+  'dar':    ['dá','dê'],
+  'haver':  ['há','haja'],
+  'ler':    ['lê','leia'],
+  'caber':  ['cabe','caiba'],
+  'ouvir':  ['ouve','ouça'],
+  'pedir':  ['pede','peça'],
+  'seguir': ['segue','siga'],
+};
+
+// Compute [tu, você] imperative forms for any verb using the teacher's rule:
+//  Tu = presente do indicativo (ele/ela) | Você = swap ending a↔e
+// with standard orthographic adjustments for -car/-çar/-gar verbs.
+function computeImperative(infinitive){
+  const v = (infinitive||'').toLowerCase().trim();
+  if(IMPERATIVE_IRREGULARS[v]) return IMPERATIVE_IRREGULARS[v];
+
+  if(v.endsWith('car')){
+    const stem = v.slice(0,-3);
+    return [stem+'ca', stem+'que'];
+  }
+  if(v.endsWith('çar')){
+    const stem = v.slice(0,-3);
+    return [stem+'ça', stem+'ce'];
+  }
+  if(v.endsWith('gar')){
+    const stem = v.slice(0,-3);
+    return [stem+'ga', stem+'gue'];
+  }
+  if(v.endsWith('ar')){
+    const stem = v.slice(0,-2);
+    return [stem+'a', stem+'e'];
+  }
+  if(v.endsWith('er')){
+    const stem = v.slice(0,-2);
+    return [stem+'e', stem+'a'];
+  }
+  if(v.endsWith('ir')){
+    const stem = v.slice(0,-2);
+    return [stem+'e', stem+'a'];
+  }
+  // Fallback — unknown ending, return infinitive unchanged rather than crash
+  return [v, v];
+}
+
+// Verify/repair imperative sentences against the computed correct forms
+function applyImperativeCorrections(forms, rows){
+  return rows.map((row,i)=>{
+    const correctForm = forms[i];
+    if(!correctForm || !row?.pt) return row;
+    if(!row.pt.toLowerCase().includes(correctForm.toLowerCase())){
+      // Try swapping the other form if Groq used it by mistake
+      let fixed = row.pt;
+      forms.forEach((f,j)=>{
+        if(j!==i && f && row.pt.toLowerCase().includes(f.toLowerCase())){
+          fixed = row.pt.replace(new RegExp(f,'i'), correctForm);
+        }
+      });
+      if(!fixed.toLowerCase().includes(correctForm.toLowerCase())){
+        const capitalized = correctForm.charAt(0).toUpperCase()+correctForm.slice(1);
+        fixed = fixed.replace(/^(\S+)/, capitalized);
+      }
+      return {...row, pt:fixed, _corrected:true};
+    }
+    return row;
+  });
+}
+
+async function genImperativeExamples(verb, translation, freq){
+  const forms = computeImperative(verb);
+  const level = FREQ_CEFR[freq] || FREQ_CEFR.common;
+  const hint = `\nCRITICAL — use EXACTLY these imperative forms, no exceptions:\n  tu (informal): "${forms[0]}"\n  você (formal): "${forms[1]}"\n`;
+
+  const result = await claudeCall(
+    `You are a European Portuguese tutor creating IMPERATIVE MOOD (Imperativo) examples for a ${level.cefr} level verb.
+For the verb "${verb}" (${translation}), write ONE short command/request/advice sentence for EACH of these two registers:
+1. "tu (informal)" — addressing a friend, child or family member informally.
+2. "você (formal)" — addressing a stranger, boss, client, or elder formally (could also say "o senhor"/"a senhora").
+Rules:
+- ONLY European Portuguese (Portugal, not Brazilian).
+- CEFR level: ${level.cefr}. ${level.vocab}
+- 4-8 words per sentence, natural-sounding commands/requests (e.g. ending in "por favor" sometimes).
+${hint}
+Return ONLY valid JSON, no markdown: [{"pronoun":"tu (informal)","pt":"...","en":"..."},{"pronoun":"você (formal)","pt":"...","en":"..."}]`, 400);
+
+  const p = JSON.parse(result.replace(/```json|```/g,'').trim());
+  const rows = Array.isArray(p) ? p : [];
+  const corrected = applyImperativeCorrections(forms, rows);
+  return await grammarCheckRows(corrected);
+}
+
 // Build a conjugation hint to inject into the Groq prompt
 function buildConjugationHint(verb, tense){
   const conj = getIrregularConjugations(verb, tense);
@@ -1988,7 +2099,7 @@ async function grammarCheckAll(){
   // ── 2. Verb conjugations ──────────────────────────────────────────────
   const verbs = words.filter(w => w.category==='Verb' && w.tenses);
   for(const w of verbs){
-    for(const tense of ['present','past','future-peri','future-simple']){
+    for(const tense of ['present','past','future-peri','future-simple','imperative']){
       const rows = w.tenses[tense];
       if(!rows?.length) continue;
       const checked = await grammarCheckRows(rows);
@@ -2063,7 +2174,7 @@ async function fixAllVerbConjugations(){
 
     if(isIrregular){
       // For known irregular verbs: regenerate all tenses with the table
-      if(!w.tenses) w.tenses = {present:[],past:[],'future-peri':[],'future-simple':[]};
+      if(!w.tenses) w.tenses = {present:[],past:[],'future-peri':[],'future-simple':[],imperative:[]};
       for(const tense of tenses){
         const rows = w.tenses[tense] || [];
         if(rows.length > 0){
@@ -2474,12 +2585,13 @@ async function assessAllLevels(){
 function escQ(s){ return (s||'').replace(/\\/g,'\\\\').replace(/'/g,"\\'"); }
 
 function renderVerbTenses(w, color){
-  const tenses = w.tenses || { present:[], past:[], 'future-peri':[], 'future-simple':[] };
+  const tenses = w.tenses || { present:[], past:[], 'future-peri':[], 'future-simple':[], imperative:[] };
   const tabs = [
     { key:'present',       label:'Present',        ptName:'Presente'            },
     { key:'past',          label:'Past',            ptName:'Pret. Perfeito'      },
     { key:'future-peri',   label:'Fut. Perifrástico', ptName:'ir + inf.'         },
     { key:'future-simple', label:'Fut. Simples',    ptName:'Futuro Simples'      },
+    { key:'imperative',    label:'Imperativo',      ptName:'Imperativo'          },
   ];
   const activeKey = w._activeTense || 'present';
 
@@ -2488,6 +2600,19 @@ function renderVerbTenses(w, color){
       style="padding:5px 13px;border:none;font-family:inherit;font-size:12px;cursor:pointer;border-bottom:2px solid ${activeKey===t.key?color:'transparent'};background:transparent;color:${activeKey===t.key?color:'#aaa'};font-weight:${activeKey===t.key?'700':'400'};transition:all 0.15s;">
       ${t.label}
     </button>`).join('');
+
+  // Imperativo gets a compact rules box explaining formation, since it differs structurally from other tenses
+  const imperativeRulesBox = activeKey==='imperative' ? (()=>{
+    const forms = computeImperative(w.word);
+    return `
+    <div style="padding:10px 14px;background:#fff8f0;border-bottom:1px solid #f0ebe4;font-size:11.5px;color:#666;line-height:1.6;">
+      <strong style="color:#b5830a;">📌 Imperativo</strong> — used for orders, advice and requests.
+      <strong>Tu</strong> (informal) = presente do indicativo "ele/ela" form. <strong>Você</strong> (formal) swaps the ending: -ar (a→e), -er/-ir (e→a).
+      ${EP_IRREGULAR_VERBS[w.word.toLowerCase().trim()]||IMPERATIVE_IRREGULARS[w.word.toLowerCase().trim()]
+        ? `<br><span style="color:#c1440e;">⚠️ "${w.word}" is irregular →</span> tu: <strong>${forms[0]}</strong> · você: <strong>${forms[1]}</strong>`
+        : `<br>For "${w.word}" →</span> tu: <strong>${forms[0]}</strong> · você: <strong>${forms[1]}</strong>`}
+    </div>`;
+  })() : '';
 
   const rows = tenses[activeKey] || [];
   const isGenerating = w.generatingExample && w._generatingTense === activeKey;
@@ -2510,22 +2635,24 @@ function renderVerbTenses(w, color){
       </div>
     </div>`).join('');
 
-  const allCovered = rows.length >= EP_PRONOUNS.length;
+  const expectedCount = activeKey==='imperative' ? 2 : EP_PRONOUNS.length;
+  const allCovered = rows.length >= expectedCount;
   const footerContent = isGenerating
-    ? `<span style="font-size:12px;color:#bbb;"><span class="spin">⏳</span> Generating ${activeKey} tense…</span>`
+    ? `<span style="font-size:12px;color:#bbb;"><span class="spin">⏳</span> Generating ${activeKey==='imperative'?'imperativo':activeKey} tense…</span>`
     : `<button onclick="generateTense(${w.id},'${activeKey}')" style="padding:4px 12px;border-radius:6px;border:1px solid ${color}44;background:${color}0e;color:${color};cursor:pointer;font-size:12px;font-family:inherit;">
-        <span style="font-size:14px;">+</span> ${rows.length===0?`Generate ${activeKey}`:'Regenerate'}
+        <span style="font-size:14px;">+</span> ${rows.length===0?`Generate ${activeKey==='imperative'?'imperativo':activeKey}`:'Regenerate'}
        </button>
-       <span class="count-label">${rows.length>0?`${rows.length}/${EP_PRONOUNS.length} pronouns`:''}</span>`;
+       <span class="count-label">${rows.length>0?`${rows.length}/${expectedCount} ${activeKey==='imperative'?'forms':'pronouns'}`:''}</span>`;
 
   return `
-    <div style="border-bottom:1px solid #f5efe6;padding:0 14px;display:flex;gap:2px;background:#fafaf8;">
+    <div style="border-bottom:1px solid #f5efe6;padding:0 14px;display:flex;gap:2px;background:#fafaf8;overflow-x:auto;">
       ${tabsHTML}
     </div>
+    ${imperativeRulesBox}
     <div class="examples-section" style="background:#fdfaf7;">
       ${isGenerating && rows.length===0 ? `<div class="generating-msg"><span class="spin">⏳</span> Generating ${activeKey} conjugations…</div>` : ''}
       ${rowsHTML}
-      ${rows.length===0 && !isGenerating ? `<div class="no-examples">No ${activeKey} conjugations yet</div>` : ''}
+      ${rows.length===0 && !isGenerating ? `<div class="no-examples">No ${activeKey==='imperative'?'imperativo':activeKey} conjugations yet</div>` : ''}
       <div class="examples-footer${rows.length>0?' examples-footer-border':''}" style="display:flex;align-items:center;gap:8px;">
         ${footerContent}
       </div>
@@ -2611,13 +2738,15 @@ function setVerbTense(wordId, tense){
 
 async function generateTense(wordId, tense){
   const w = words.find(x=>x.id===wordId); if(!w)return;
-  if(!w.tenses) w.tenses = { present:[], past:[], 'future-peri':[], 'future-simple':[] };
+  if(!w.tenses) w.tenses = { present:[], past:[], 'future-peri':[], 'future-simple':[], imperative:[] };
   w.generatingExample = true;
   w._generatingTense = tense;
   w._activeTense = tense;
   saveWords(); renderWords();
   try{
-    const rows = await genVerbExamples(w.word, w.translation, tense, w.freq||'common');
+    const rows = tense==='imperative'
+      ? await genImperativeExamples(w.word, w.translation, w.freq||'common')
+      : await genVerbExamples(w.word, w.translation, tense, w.freq||'common');
     w.tenses[tense] = rows;
   }catch(e){ showToast('Generation failed — check API key.'); }
   w.generatingExample = false;
@@ -3773,6 +3902,127 @@ function possQuizAnswer(chosen, correct){
   advancePossQuiz(!ok);
 }
 
+
+
+// ═══ CONJUNÇÕES E LOCUÇÕES TAB ═══════════════════════════════════════════
+const CONJUNCTIONS = [
+  {
+    id:'e', word:'e', en:'and', category:'Adição', categoryEn:'Addition', color:'#2c5f8a', icon:'➕',
+    rule:'Used to add information, list items, or join two similar/parallel ideas together.',
+    examples:[
+      {pt:'Gosto de café e chá.', en:'I like coffee and tea.'},
+      {pt:'Ela é simpática e inteligente.', en:'She is nice and intelligent.'},
+      {pt:'Fui ao mercado e comprei fruta.', en:'I went to the market and bought fruit.'},
+    ]
+  },
+  {
+    id:'porque', word:'porque', en:'because', category:'Causa', categoryEn:'Cause', color:'#c1440e', icon:'❓',
+    rule:'Introduces the REASON or CAUSE for something. It usually comes after the main clause, answering "why?".',
+    examples:[
+      {pt:'O Marco vai ao médico porque não se sente bem.', en:'Marco is going to the doctor because he doesn\u2019t feel well.'},
+      {pt:'Não saí porque estava a chover.', en:'I didn\u2019t go out because it was raining.'},
+      {pt:'Estudo muito porque quero passar o exame.', en:'I study a lot because I want to pass the exam.'},
+    ]
+  },
+  {
+    id:'por isso', word:'por isso', en:'so / therefore', category:'Consequência', categoryEn:'Consequence', color:'#1a6b3c', icon:'➡️',
+    rule:'Introduces the RESULT or CONSEQUENCE of what was just said. Usually placed at the start of the second clause, after a comma.',
+    examples:[
+      {pt:'O Rui tem um teste amanhã, por isso não pode ir ao cinema hoje.', en:'Rui has a test tomorrow, so he can\u2019t go to the cinema today.'},
+      {pt:'Estava cansado, por isso fui dormir cedo.', en:'I was tired, so I went to sleep early.'},
+      {pt:'Choveu muito, por isso a rua ficou alagada.', en:'It rained a lot, so the street flooded.'},
+    ]
+  },
+  {
+    id:'mas', word:'mas', en:'but', category:'Oposição', categoryEn:'Opposition', color:'#7b4ea0', icon:'🔄',
+    rule:'Introduces a CONTRAST or CONTRADICTION between two ideas.',
+    examples:[
+      {pt:'A Rita adora viajar, mas não gosta de andar de avião.', en:'Rita loves to travel, but she doesn\u2019t like flying.'},
+      {pt:'Gosto daquele carro, mas é muito caro.', en:'I like that car, but it\u2019s very expensive.'},
+      {pt:'O restaurante é caro, mas a comida não tem qualidade.', en:'The restaurant is expensive, but the food isn\u2019t good quality.'},
+    ]
+  },
+];
+
+const CONJ_EXERCISES = [
+  {a:'O Rui tem um teste amanhã.', b:'O Rui não pode ir ao cinema hoje.', connector:'por isso',
+   answer:'O Rui tem um teste amanhã, por isso não pode ir ao cinema hoje.', answerEn:'Rui has a test tomorrow, so he can\u2019t go to the cinema today.'},
+  {a:'A Rita adora viajar.', b:'A Rita não gosta de andar de avião.', connector:'mas',
+   answer:'A Rita adora viajar, mas não gosta de andar de avião.', answerEn:'Rita loves to travel, but she doesn\u2019t like flying.'},
+  {a:'Gosto daquele carro.', b:'Aquele carro é muito caro.', connector:'mas',
+   answer:'Gosto daquele carro, mas é muito caro.', answerEn:'I like that car, but it\u2019s very expensive.'},
+  {a:'O Marco vai ao médico.', b:'O Marco não se sente bem.', connector:'porque',
+   answer:'O Marco vai ao médico porque não se sente bem.', answerEn:'Marco is going to the doctor because he doesn\u2019t feel well.'},
+  {a:'O restaurante é caro.', b:'A comida lá não tem qualidade.', connector:'mas',
+   answer:'O restaurante é caro, mas a comida não tem qualidade.', answerEn:'The restaurant is expensive, but the food isn\u2019t good quality.'},
+];
+
+let conjRevealed = {};
+
+function renderConjunctions(){
+  const el = document.getElementById('tab-conjunctions'); if(!el) return;
+
+  el.innerHTML = `
+  <div class="card" style="margin-top:16px;border-left:4px solid #8a3a5c;">
+    <h2 style="margin:0 0 4px;">🔗 Conjunções e Locuções</h2>
+    <p style="font-size:12px;color:#aaa;margin-bottom:4px;">Connecting words for addition, cause, consequence and opposition</p>
+    <p style="font-size:12px;color:#666;line-height:1.6;">These small words link two ideas together and are essential for sounding natural in Portuguese — instead of two short sentences, you connect them into one fluent sentence.</p>
+  </div>
+
+  <div style="margin-top:12px;display:flex;flex-direction:column;gap:10px;">
+    ${CONJUNCTIONS.map(c=>`
+    <div style="background:#fff;border-radius:12px;padding:14px 16px;box-shadow:0 1px 5px rgba(0,0,0,0.07);border-left:4px solid ${c.color};">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap;">
+        <span style="font-size:20px;">${c.icon}</span>
+        <span style="font-size:18px;font-weight:800;color:${c.color};">${c.word}</span>
+        <button class="speak-btn" onclick="speakText('${escQ(c.word)}','pt-PT',this)">🔊</button>
+        <span style="font-size:13px;color:#888;">= ${c.en}</span>
+        <span style="font-size:11px;color:#fff;background:${c.color};padding:2px 10px;border-radius:8px;font-weight:700;margin-left:auto;">${c.icon} ${c.category} <span style="opacity:0.85;">(${c.categoryEn})</span></span>
+      </div>
+      <p style="font-size:13px;color:#555;line-height:1.6;margin:0 0 10px;">${c.rule}</p>
+      <div style="display:flex;flex-direction:column;gap:6px;">
+        ${c.examples.map(ex=>`
+        <div style="padding:8px 10px;background:#fafafa;border-radius:8px;">
+          <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:2px;">
+            <span style="font-size:13px;color:#1a3a5c;font-style:italic;">${ex.pt}</span>
+            <button class="speak-btn" onclick="speakText('${escQ(ex.pt)}','pt-PT',this)">🔊</button>
+          </div>
+          <div style="font-size:12px;color:#888;">${ex.en}</div>
+        </div>`).join('')}
+      </div>
+    </div>`).join('')}
+  </div>
+
+  <div class="card" style="margin-top:16px;border-left:4px solid #1a3a5c;">
+    <h3 style="margin:0 0 4px;">✏️ Practice: Join the sentences</h3>
+    <p style="font-size:12px;color:#aaa;margin-bottom:0;">From your teacher's exercise — combine each pair using e, porque, por isso or mas</p>
+  </div>
+  <div style="margin-top:10px;display:flex;flex-direction:column;gap:8px;">
+    ${CONJ_EXERCISES.map((ex,i)=>{
+      const revealed = !!conjRevealed[i];
+      const connColor = CONJUNCTIONS.find(c=>c.id===ex.connector)?.color || '#8a3a5c';
+      return `
+      <div style="background:#fff;border-radius:12px;padding:14px 16px;box-shadow:0 1px 5px rgba(0,0,0,0.07);">
+        <div style="font-size:11px;color:#aaa;font-weight:700;margin-bottom:6px;">EXERCÍCIO ${i+1}</div>
+        <div style="font-size:13px;color:#1a3a5c;margin-bottom:3px;">${i===0?'a':i===1?'b':i===2?'c':i===3?'d':'e'}. ${ex.a}</div>
+        <div style="font-size:13px;color:#1a3a5c;margin-bottom:10px;">${ex.b}</div>
+        ${revealed ? `
+        <div style="padding:10px 12px;background:#f0faf4;border-radius:8px;border-left:3px solid ${connColor};">
+          <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:3px;">
+            <span style="font-size:14px;color:#1a6b3c;font-weight:600;">${ex.answer}</span>
+            <button class="speak-btn" onclick="speakText('${escQ(ex.answer)}','pt-PT',this)">🔊</button>
+          </div>
+          <div style="font-size:12px;color:#888;">${ex.answerEn}</div>
+          <div style="font-size:10px;color:${connColor};font-weight:700;margin-top:4px;">used: ${ex.connector}</div>
+        </div>
+        <button onclick="conjRevealed[${i}]=false;renderConjunctions()" style="margin-top:8px;padding:4px 12px;border-radius:6px;border:1px solid #ddd;background:#fff;cursor:pointer;font-size:11px;color:#aaa;font-family:inherit;">Hide answer</button>
+        ` : `
+        <button onclick="conjRevealed[${i}]=true;renderConjunctions()" style="padding:6px 16px;border-radius:8px;border:none;background:#8a3a5c;color:#fff;cursor:pointer;font-size:12px;font-family:inherit;font-weight:600;">👁️ Show model answer</button>
+        `}
+      </div>`;
+    }).join('')}
+  </div>`;
+}
 
 // ═══ FAMILY TAB ══════════════════════════════════════════════════════════
 const FAMILY_DATA = [
