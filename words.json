@@ -6667,128 +6667,152 @@
         {
           "pronoun": "eu",
           "pt": "Eu sou feliz",
-          "en": "I am happy"
+          "en": "I am happy",
+          "_grammarChecked": true
         },
         {
           "pronoun": "tu",
           "pt": "Tu és bom",
-          "en": "You are good"
+          "en": "You are good",
+          "_grammarChecked": true
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela é alta",
-          "en": "She is tall"
+          "pt": "Ela é minha amiga",
+          "en": "She is my friend",
+          "_grammarChecked": true
         },
         {
           "pronoun": "nós",
           "pt": "Nós somos amigos",
-          "en": "We are friends"
+          "en": "We are friends",
+          "_grammarChecked": true
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês são simpáticos",
-          "en": "You are nice"
+          "pt": "Vocês são alunos",
+          "en": "You are students",
+          "_grammarChecked": true
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles são bons",
-          "en": "They are good"
+          "pt": "Eles são meus irmãos",
+          "en": "They are my brothers",
+          "_grammarChecked": true
         }
       ],
       "past": [
         {
           "pronoun": "eu",
           "pt": "Eu fui feliz",
-          "en": "I was happy"
+          "en": "I was happy",
+          "_grammarChecked": true
         },
         {
           "pronoun": "tu",
           "pt": "Tu foste bom",
-          "en": "You were good"
+          "en": "You were good",
+          "_grammarChecked": true
         },
         {
           "pronoun": "ele/ela",
           "pt": "Ela foi boa",
-          "en": "She was good"
+          "en": "She was good",
+          "_grammarChecked": true
         },
         {
           "pronoun": "nós",
           "pt": "Nós fomos amigos",
-          "en": "We were friends"
+          "en": "We were friends",
+          "_grammarChecked": true
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês foram gentis",
-          "en": "You were kind"
+          "pt": "Vocês foram legais",
+          "en": "You were cool",
+          "_grammarChecked": true
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles foram bons",
-          "en": "They were good"
+          "pt": "Eles foram amigos",
+          "en": "They were friends",
+          "_grammarChecked": true
         }
       ],
       "future-peri": [
         {
           "pronoun": "eu",
           "pt": "Eu vou ser feliz",
-          "en": "I will be happy"
+          "en": "I will be happy",
+          "_grammarChecked": true
         },
         {
           "pronoun": "tu",
           "pt": "Tu vais ser rico",
-          "en": "You will be rich"
+          "en": "You will be rich",
+          "_grammarChecked": true
         },
         {
           "pronoun": "ele/ela",
           "pt": "Ela vai ser médica",
-          "en": "She will be a doctor"
+          "en": "She will be a doctor",
+          "_grammarChecked": true
         },
         {
           "pronoun": "nós",
           "pt": "Nós vamos ser amigos",
-          "en": "We will be friends"
+          "en": "We will be friends",
+          "_grammarChecked": true
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês vão ser felizes",
-          "en": "You will be happy"
+          "pt": "Vocês vão ser pais",
+          "en": "You will be parents",
+          "_grammarChecked": true
         },
         {
           "pronoun": "eles/elas",
           "pt": "Eles vão ser professores",
-          "en": "They will be teachers"
+          "en": "They will be teachers",
+          "_grammarChecked": true
         }
       ],
       "future-simple": [
         {
           "pronoun": "eu",
           "pt": "Eu serei feliz",
-          "en": "I will be happy"
+          "en": "I will be happy",
+          "_grammarChecked": true
         },
         {
           "pronoun": "tu",
           "pt": "Tu serás rico",
-          "en": "You will be rich"
+          "en": "You will be rich",
+          "_grammarChecked": true
         },
         {
           "pronoun": "ele/ela",
           "pt": "Ela será médica",
-          "en": "She will be a doctor"
+          "en": "She will be a doctor",
+          "_grammarChecked": true
         },
         {
           "pronoun": "nós",
           "pt": "Nós seremos amigos",
-          "en": "We will be friends"
+          "en": "We will be friends",
+          "_grammarChecked": true
         },
         {
           "pronoun": "vocês",
           "pt": "Vocês serão felizes",
-          "en": "You will be happy"
+          "en": "You will be happy",
+          "_grammarChecked": true
         },
         {
           "pronoun": "eles/elas",
           "pt": "Eles serão alunos",
-          "en": "They will be students"
+          "en": "They will be students",
+          "_grammarChecked": true
         }
       ]
     },
