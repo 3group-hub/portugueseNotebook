@@ -11711,7 +11711,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "14/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -11811,9 +11811,24 @@
           "pt": "Eles chegarão",
           "en": "They will arrive"
         }
+      ],
+      "imperative": [
+        {
+          "pronoun": "tu (informal)",
+          "pt": "Chega aqui",
+          "en": "Arrive here",
+          "_corrected": true,
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "você (formal)",
+          "pt": "Chegue à hora certa",
+          "en": "Arrive on time",
+          "_grammarChecked": true
+        }
       ]
     },
-    "_generatingTense": "imperative",
+    "_generatingTense": null,
     "_activeTense": "imperative"
   },
   {
