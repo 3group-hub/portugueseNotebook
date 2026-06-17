@@ -3646,32 +3646,38 @@
         {
           "pronoun": "eu",
           "pt": "Eu vou saber",
-          "en": "I will know"
+          "en": "I will know",
+          "_grammarChecked": true
         },
         {
           "pronoun": "tu",
           "pt": "Tu vais saber",
-          "en": "You will know"
+          "en": "You will know",
+          "_grammarChecked": true
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ele vai saber",
-          "en": "He/She will know"
+          "pt": "Ela vai saber",
+          "en": "She will know",
+          "_grammarChecked": true
         },
         {
           "pronoun": "nós",
           "pt": "Nós vamos saber",
-          "en": "We will know"
+          "en": "We will know",
+          "_grammarChecked": true
         },
         {
           "pronoun": "vocês",
           "pt": "Vocês vão saber",
-          "en": "You will know"
+          "en": "You will know",
+          "_grammarChecked": true
         },
         {
           "pronoun": "eles/elas",
           "pt": "Eles vão saber",
-          "en": "They will know"
+          "en": "They will know",
+          "_grammarChecked": true
         }
       ],
       "future-simple": [
@@ -12415,7 +12421,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "14/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -12520,9 +12526,23 @@
           "pt": "Eles ficarão fora",
           "en": "They will stay out"
         }
+      ],
+      "imperative": [
+        {
+          "pronoun": "tu (informal)",
+          "pt": "Fica aqui",
+          "en": "Stay here",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "você (formal)",
+          "pt": "Fique por favor",
+          "en": "Please stay",
+          "_grammarChecked": true
+        }
       ]
     },
-    "_generatingTense": "imperative",
+    "_generatingTense": null,
     "_activeTense": "imperative"
   },
   {
