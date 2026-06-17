@@ -6673,7 +6673,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "07/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -6828,10 +6828,24 @@
           "en": "They will be students",
           "_grammarChecked": true
         }
+      ],
+      "imperative": [
+        {
+          "pronoun": "tu (informal)",
+          "pt": "Sê honesto",
+          "en": "Be honest",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "você (formal)",
+          "pt": "Seja paciente por favor",
+          "en": "Be patient please",
+          "_grammarChecked": true
+        }
       ]
     },
     "_activeTense": "imperative",
-    "_generatingTense": "imperative",
+    "_generatingTense": null,
     "srs": {
       "interval": 1,
       "ease": 2.5,
