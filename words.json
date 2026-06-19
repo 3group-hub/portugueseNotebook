@@ -3083,13 +3083,13 @@
         {
           "pronoun": "eu",
           "pt": "Eu faço o jantar",
-          "en": "I do dinner",
+          "en": "I cook dinner",
           "_grammarChecked": true
         },
         {
           "pronoun": "tu",
           "pt": "Tu fazes um bolo",
-          "en": "You do a cake",
+          "en": "You make a cake",
           "_grammarChecked": true
         },
         {
@@ -3100,20 +3100,20 @@
         },
         {
           "pronoun": "nós",
-          "pt": "Nós fazemos um teste",
-          "en": "We do a test",
+          "pt": "Nós fazemos exercício",
+          "en": "We do exercise",
           "_grammarChecked": true
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês fazem um jogo",
-          "en": "You do a game",
+          "pt": "Vocês fazem um teste",
+          "en": "You take a test",
           "_grammarChecked": true
         },
         {
           "pronoun": "eles/elas",
           "pt": "Eles fazem um espetáculo",
-          "en": "They do a show",
+          "en": "They put on a show",
           "_grammarChecked": true
         }
       ],
@@ -3202,8 +3202,8 @@
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela vai fazer",
-          "en": "She will do",
+          "pt": "Ele vai fazer",
+          "en": "He/She will do",
           "_grammarChecked": true
         },
         {
@@ -3228,38 +3228,38 @@
       "future-simple": [
         {
           "pronoun": "eu",
-          "pt": "Eu farei um bolo",
-          "en": "I will make a cake",
+          "pt": "Eu farei isso",
+          "en": "I will do this",
           "_grammarChecked": true
         },
         {
           "pronoun": "tu",
-          "pt": "Tu farás um bolo",
-          "en": "You will make a cake",
+          "pt": "Tu farás isso",
+          "en": "You will do this",
           "_grammarChecked": true
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela fará um bolo",
-          "en": "She will make a cake",
+          "pt": "Ela fará isso",
+          "en": "She will do this",
           "_grammarChecked": true
         },
         {
           "pronoun": "nós",
-          "pt": "Nós faremos um bolo",
-          "en": "We will make a cake",
+          "pt": "Nós faremos isso",
+          "en": "We will do this",
           "_grammarChecked": true
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês farão um bolo",
-          "en": "You will make a cake",
+          "pt": "Vocês farão isso",
+          "en": "You will do this",
           "_grammarChecked": true
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles farão um bolo",
-          "en": "They will make a cake",
+          "pt": "Eles farão isso",
+          "en": "They will do this",
           "_grammarChecked": true
         }
       ],
