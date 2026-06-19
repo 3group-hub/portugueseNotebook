@@ -13843,7 +13843,86 @@
           "_grammarChecked": true
         }
       ],
-      "future-simple": []
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu cantarei",
+          "en": "I will pant",
+          "_grammarFixes": [
+            {
+              "orig": "pantarei",
+              "best": "cantarei",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu panteras",
+          "en": "You will pant",
+          "_grammarFixes": [
+            {
+              "orig": "pantarás",
+              "best": "panteras",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela pantera",
+          "en": "She will pant",
+          "_grammarFixes": [
+            {
+              "orig": "pantará",
+              "best": "pantera",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós cantaremos",
+          "en": "We will pant",
+          "_grammarFixes": [
+            {
+              "orig": "pantaremos",
+              "best": "cantaremos",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês cantarão",
+          "en": "You will pant",
+          "_grammarFixes": [
+            {
+              "orig": "pantarão",
+              "best": "cantarão",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles cantarão",
+          "en": "They will pant",
+          "_grammarFixes": [
+            {
+              "orig": "pantarão",
+              "best": "cantarão",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        }
+      ]
     },
     "srs": {
       "interval": 1,
@@ -13930,7 +14009,79 @@
           "en": "They wore suits."
         }
       ],
-      "future-peri": [],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou estar",
+          "en": "I will wear",
+          "_grammarFixes": [
+            {
+              "orig": "vestar",
+              "best": "estar",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais estar",
+          "en": "You will wear",
+          "_grammarFixes": [
+            {
+              "orig": "vestar",
+              "best": "estar",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele/Ela vai estar",
+          "en": "He/She will wear",
+          "_grammarFixes": [
+            {
+              "orig": "vestar",
+              "best": "estar",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos estar",
+          "en": "We will wear",
+          "_grammarFixes": [
+            {
+              "orig": "vestar",
+              "best": "estar",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão vestar",
+          "en": "You will wear",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles/Elas vão estar",
+          "en": "They will wear",
+          "_grammarFixes": [
+            {
+              "orig": "vestar",
+              "best": "estar",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        }
+      ],
       "future-simple": [
         {
           "pronoun": "eu",
@@ -14043,8 +14194,82 @@
           "en": "They prepared lunch"
         }
       ],
-      "future-peri": [],
-      "future-simple": []
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou preparar",
+          "en": "I will prepare",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais preparar",
+          "en": "You will prepare",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele/ela vai preparar",
+          "en": "He/She will prepare",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos preparar",
+          "en": "We will prepare",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão preparar",
+          "en": "You will prepare",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles/elas vão preparar",
+          "en": "They will prepare",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu prepararei o jantar",
+          "en": "I will prepare dinner",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu prepararás o café",
+          "en": "You will prepare coffee",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela preparará a refeição",
+          "en": "She will prepare the meal",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós prepararemos o lanche",
+          "en": "We will prepare the snack",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês prepararão o almoço",
+          "en": "You will prepare lunch",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles prepararão a ceia",
+          "en": "They will prepare supper",
+          "_grammarChecked": true
+        }
+      ]
     },
     "_generatingTense": null,
     "_activeTense": "past"
@@ -14125,7 +14350,44 @@
           "en": "They arrived"
         }
       ],
-      "future-peri": [],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou chegar",
+          "en": "I will arrive",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais chegar",
+          "en": "You will arrive",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai chegar",
+          "en": "She will arrive",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos chegar",
+          "en": "We will arrive",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão chegar",
+          "en": "You will arrive",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão chegar",
+          "en": "They will arrive",
+          "_grammarChecked": true
+        }
+      ],
       "future-simple": [
         {
           "pronoun": "eu",
@@ -14266,7 +14528,44 @@
           "en": "They connected yesterday."
         }
       ],
-      "future-peri": [],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou ligar",
+          "en": "I will connect",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais ligar",
+          "en": "You will connect",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele/ela vai ligar",
+          "en": "He/She will connect",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos ligar",
+          "en": "We will connect",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão ligar",
+          "en": "You will connect",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles/elas vão ligar",
+          "en": "They will connect",
+          "_grammarChecked": true
+        }
+      ],
       "future-simple": [
         {
           "pronoun": "eu",
@@ -14367,8 +14666,82 @@
           "en": "They bequeath family traditions."
         }
       ],
-      "past": [],
-      "future-peri": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu leguei uma herança",
+          "en": "I bequeathed an inheritance",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu legaste um bem",
+          "en": "You bequeathed a property",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela legou uma fortuna",
+          "en": "She bequeathed a fortune",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós legámos um património",
+          "en": "We bequeathed a heritage",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês legaram um espólio",
+          "en": "You bequeathed an estate",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles legaram uma riqueza",
+          "en": "They bequeathed a wealth",
+          "_grammarChecked": true
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou legar tudo",
+          "en": "I will bequeath everything",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais legar riqueza",
+          "en": "You will bequeath wealth",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai legar propriedade",
+          "en": "She will bequeath property",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos legar herança",
+          "en": "We will bequeath inheritance",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão legar fortuna",
+          "en": "You will bequeath fortune",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão legar património",
+          "en": "They will bequeath heritage",
+          "_grammarChecked": true
+        }
+      ],
       "future-simple": []
     }
   },
