@@ -3083,45 +3083,32 @@
         {
           "pronoun": "eu",
           "pt": "Eu faço o jantar",
-          "en": "I do dinner",
-          "_grammarChecked": true
+          "en": "I do dinner"
         },
         {
           "pronoun": "tu",
           "pt": "Tu fazes um bolo",
-          "en": "You do a cake",
-          "_grammarChecked": true
+          "en": "You do a cake"
         },
         {
           "pronoun": "ele/ela",
           "pt": "Ela faz o trabalho",
-          "en": "She does the work",
-          "_grammarChecked": true
+          "en": "She does the work"
         },
         {
           "pronoun": "nós",
           "pt": "Nós fazemos um teste",
-          "en": "We do a test",
-          "_grammarChecked": true
+          "en": "We do a test"
         },
         {
           "pronoun": "vocês",
           "pt": "Vocês fazem um curso",
-          "en": "You do a course",
-          "_grammarChecked": true
+          "en": "You do a course"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles praticam desporto",
-          "en": "They do sports",
-          "_grammarFixes": [
-            {
-              "orig": "fazem esporte",
-              "best": "praticam desporto",
-              "rule": "🇵🇹👔 'Fazer' desporto → Praticar"
-            }
-          ],
-          "_grammarChecked": true
+          "pt": "fazem praticam desporto",
+          "en": "They do sports"
         }
       ],
       "past": [
@@ -6147,66 +6134,32 @@
         {
           "pronoun": "eu",
           "pt": "Eu vou vir",
-          "en": "I am going to come",
-          "_grammarChecked": true
+          "en": "I am going to come"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu vens",
-          "en": "You are going to come",
-          "_grammarFixes": [
-            {
-              "orig": "vais vir",
-              "best": "vens",
-              "rule": "2. Expressões prolixas: vais vir"
-            }
-          ],
-          "_grammarChecked": true
+          "pt": "vais vir vens",
+          "en": "You are going to come"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ele vem",
-          "en": "He/She is going to come",
-          "_grammarFixes": [
-            {
-              "orig": "vai vir",
-              "best": "vem",
-              "rule": "2. Expressões prolixas: vai vir"
-            }
-          ],
-          "_grammarChecked": true
+          "pt": "vai vir vem",
+          "en": "He/She is going to come"
         },
         {
           "pronoun": "nós",
           "pt": "Nós vamos vir",
-          "en": "We are going to come",
-          "_grammarChecked": true
+          "en": "We are going to come"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês vêm",
-          "en": "You are going to come",
-          "_grammarFixes": [
-            {
-              "orig": "vão vir",
-              "best": "vêm",
-              "rule": "2. Expressões prolixas: vão vir"
-            }
-          ],
-          "_grammarChecked": true
+          "pt": "vão virês vêm",
+          "en": "You are going to come"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles vêm",
-          "en": "They are going to come",
-          "_grammarFixes": [
-            {
-              "orig": "vão vir",
-              "best": "vêm",
-              "rule": "2. Expressões prolixas: vão vir"
-            }
-          ],
-          "_grammarChecked": true
+          "pt": "vão vir vêm",
+          "en": "They are going to come"
         }
       ],
       "future-simple": [
