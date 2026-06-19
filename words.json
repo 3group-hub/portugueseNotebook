@@ -3427,38 +3427,38 @@
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu dou um livro",
-          "en": "I give a book",
+          "pt": "Eu dou um livro.",
+          "en": "I give a book.",
           "_grammarChecked": true
         },
         {
           "pronoun": "tu",
-          "pt": "Tu dás um presente",
-          "en": "You give a gift",
+          "pt": "Tu dás um presente.",
+          "en": "You give a gift.",
           "_grammarChecked": true
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela dá um beijo",
-          "en": "She gives a kiss",
+          "pt": "Ela dá um sorriso.",
+          "en": "She gives a smile.",
           "_grammarChecked": true
         },
         {
           "pronoun": "nós",
-          "pt": "Nós damos ajuda",
-          "en": "We give help",
+          "pt": "Nós damos ajuda.",
+          "en": "We give help.",
           "_grammarChecked": true
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês dão dinheiro",
-          "en": "You give money",
+          "pt": "Vocês dão exemplo.",
+          "en": "You give an example.",
           "_grammarChecked": true
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles dão comida",
-          "en": "They give food",
+          "pt": "Eles dão apoio.",
+          "en": "They give support.",
           "_grammarChecked": true
         }
       ],
@@ -3471,8 +3471,8 @@
         },
         {
           "pronoun": "tu",
-          "pt": "Tu deste um brinquedo.",
-          "en": "You gave a toy.",
+          "pt": "Tu deste um presente.",
+          "en": "You gave a gift.",
           "_grammarChecked": true
         },
         {
@@ -3489,14 +3489,26 @@
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês deram um presente.",
-          "en": "You gave a gift.",
+          "pt": "Vocês deram um apoio.",
+          "en": "You gave support.",
           "_grammarChecked": true
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles deram comida.",
-          "en": "They gave food.",
+          "pt": "Eles atribuíram um prémio.",
+          "en": "They gave a prize.",
+          "_grammarFixes": [
+            {
+              "orig": "prêmio",
+              "best": "prémio",
+              "rule": "Possível erro ortográfico"
+            },
+            {
+              "orig": "deram",
+              "best": "atribuíram",
+              "rule": "🎓🔬 dar → conferir"
+            }
+          ],
           "_grammarChecked": true
         }
       ],
