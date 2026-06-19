@@ -3321,14 +3321,14 @@
         },
         {
           "pronoun": "nós",
-          "pt": "Nós dizemos não",
-          "en": "We say no",
+          "pt": "Nós dizemos tudo",
+          "en": "We say everything",
           "_grammarChecked": true
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês dizem sim",
-          "en": "You say yes",
+          "pt": "Vocês dizem isso",
+          "en": "You say that",
           "_grammarChecked": true
         },
         {
