@@ -3466,50 +3466,32 @@
         {
           "pronoun": "eu",
           "pt": "Eu dei um livro.",
-          "en": "I gave a book.",
-          "_grammarChecked": true
+          "en": "I gave a book."
         },
         {
           "pronoun": "tu",
           "pt": "Tu deste um presente.",
-          "en": "You gave a gift.",
-          "_grammarChecked": true
+          "en": "You gave a gift."
         },
         {
           "pronoun": "ele/ela",
           "pt": "Ela deu um abraço.",
-          "en": "She gave a hug.",
-          "_grammarChecked": true
+          "en": "She gave a hug."
         },
         {
           "pronoun": "nós",
           "pt": "Nós demos uma mão.",
-          "en": "We gave a hand.",
-          "_grammarChecked": true
+          "en": "We gave a hand."
         },
         {
           "pronoun": "vocês",
           "pt": "Vocês deram um apoio.",
-          "en": "You gave support.",
-          "_grammarChecked": true
+          "en": "You gave support."
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles atribuíram um prémio.",
-          "en": "They gave a prize.",
-          "_grammarFixes": [
-            {
-              "orig": "prêmio",
-              "best": "prémio",
-              "rule": "Possível erro ortográfico"
-            },
-            {
-              "orig": "deram",
-              "best": "atribuíram",
-              "rule": "🎓🔬 dar → conferir"
-            }
-          ],
-          "_grammarChecked": true
+          "pt": "deram atribuíram um prémio.",
+          "en": "They gave a prize."
         }
       ],
       "future": [
@@ -6159,66 +6141,32 @@
         {
           "pronoun": "eu",
           "pt": "Eu vou vir",
-          "en": "I'm going to come",
-          "_grammarChecked": true
+          "en": "I'm going to come"
         },
         {
           "pronoun": "tu",
-          "pt": "Tu vens",
-          "en": "You're going to come",
-          "_grammarFixes": [
-            {
-              "orig": "vais vir",
-              "best": "vens",
-              "rule": "2. Expressões prolixas: vais vir"
-            }
-          ],
-          "_grammarChecked": true
+          "pt": "vais vir vens",
+          "en": "You're going to come"
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ele vem",
-          "en": "He/She's going to come",
-          "_grammarFixes": [
-            {
-              "orig": "vai vir",
-              "best": "vem",
-              "rule": "2. Expressões prolixas: vai vir"
-            }
-          ],
-          "_grammarChecked": true
+          "pt": "vai vir vem",
+          "en": "He/She's going to come"
         },
         {
           "pronoun": "nós",
           "pt": "Nós vamos vir",
-          "en": "We're going to come",
-          "_grammarChecked": true
+          "en": "We're going to come"
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês vêm",
-          "en": "You're going to come",
-          "_grammarFixes": [
-            {
-              "orig": "vão vir",
-              "best": "vêm",
-              "rule": "2. Expressões prolixas: vão vir"
-            }
-          ],
-          "_grammarChecked": true
+          "pt": "vão virês vêm",
+          "en": "You're going to come"
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles vêm",
-          "en": "They're going to come",
-          "_grammarFixes": [
-            {
-              "orig": "vão vir",
-              "best": "vêm",
-              "rule": "2. Expressões prolixas: vão vir"
-            }
-          ],
-          "_grammarChecked": true
+          "pt": "vão vir vêm",
+          "en": "They're going to come"
         }
       ],
       "future-simple": [
@@ -15255,7 +15203,13 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [],
+      "past": [],
+      "future-peri": [],
+      "future-simple": []
+    }
   },
   {
     "id": 1781879155535,
@@ -15264,7 +15218,13 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [],
+      "past": [],
+      "future-peri": [],
+      "future-simple": []
+    }
   },
   {
     "id": 1781879155536,
@@ -15273,7 +15233,13 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [],
+      "past": [],
+      "future-peri": [],
+      "future-simple": []
+    }
   },
   {
     "id": 1781879155537,
@@ -15282,7 +15248,13 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [],
+      "past": [],
+      "future-peri": [],
+      "future-simple": []
+    }
   },
   {
     "id": 1781879155538,
@@ -16182,7 +16154,13 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [],
+      "past": [],
+      "future-peri": [],
+      "future-simple": []
+    }
   },
   {
     "id": 1781879155638,
@@ -16569,7 +16547,13 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [],
+      "past": [],
+      "future-peri": [],
+      "future-simple": []
+    }
   },
   {
     "id": 1781879155681,
@@ -16884,7 +16868,13 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [],
+      "past": [],
+      "future-peri": [],
+      "future-simple": []
+    }
   },
   {
     "id": 1781879155716,
