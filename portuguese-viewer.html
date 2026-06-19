@@ -916,7 +916,6 @@ function renderWordCard(w, showDivider=false){
     const tabs=[
       {key:'present',       label:'Present'},
       {key:'past',          label:'Past'},
-      {key:'future-peri',   label:'Fut. Perifrástico'},
       {key:'future-simple', label:'Fut. Simples'},
       {key:'imperative',    label:'Imperativo'},
     ];
@@ -1424,7 +1423,7 @@ function buildCard(w){
 
   // Verbs: pick random tense + pronoun row
   if(w.category==='Verb' && w.tenses){
-    const avail=Object.entries(w.tenses).filter(([,rows])=>rows?.length>0);
+    const avail=Object.entries(w.tenses).filter(([key,rows])=>key!=='future-peri' && rows?.length>0);
     if(avail.length){
       const [tense,rows]=avail[Math.floor(Math.random()*avail.length)];
       const row=rows[Math.floor(Math.random()*rows.length)];
