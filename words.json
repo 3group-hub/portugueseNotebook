@@ -14742,7 +14742,44 @@
           "_grammarChecked": true
         }
       ],
-      "future-simple": []
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu legarei tudo",
+          "en": "I will bequeath everything",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu legarás pouco",
+          "en": "You will bequeath little",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela legará riqueza",
+          "en": "She will bequeath wealth",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós legaremos propriedade",
+          "en": "We will bequeath property",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês legarão herança",
+          "en": "You will bequeath inheritance",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles legarão fortuna",
+          "en": "They will bequeath fortune",
+          "_grammarChecked": true
+        }
+      ]
     }
   },
   {
@@ -14802,9 +14839,120 @@
           "_grammarChecked": true
         }
       ],
-      "past": [],
-      "future-peri": [],
-      "future-simple": []
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu voei muito alto",
+          "en": "I flew very high",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu voaste sobre a cidade",
+          "en": "You flew over the city",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela voou com um pássaro",
+          "en": "She flew with a bird",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós voámos juntos",
+          "en": "We flew together",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês voaram muito longe",
+          "en": "You flew very far",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles voaram em formações",
+          "en": "They flew in formations",
+          "_grammarChecked": true
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou voar",
+          "en": "I will fly",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais voar",
+          "en": "You will fly",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai voar",
+          "en": "She will fly",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos voar",
+          "en": "We will fly",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão voar",
+          "en": "You will fly",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão voar",
+          "en": "They will fly",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu voarei amanhã",
+          "en": "I will fly tomorrow",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu voarás cedo",
+          "en": "You will fly early",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela voará alto",
+          "en": "She will fly high",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós voaremos juntos",
+          "en": "We will fly together",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês voarão longe",
+          "en": "You will fly far",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles voarão rápido",
+          "en": "They will fly fast",
+          "_grammarChecked": true
+        }
+      ]
     }
   },
   {
@@ -14883,7 +15031,44 @@
           "en": "They returned to the hotel"
         }
       ],
-      "future-peri": [],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou voltar",
+          "en": "I will return",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais voltar",
+          "en": "You will return",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele/Ela vai voltar",
+          "en": "He/She will return",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos voltar",
+          "en": "We will return",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão voltar",
+          "en": "You will return",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles/Elas vão voltar",
+          "en": "They will return",
+          "_grammarChecked": true
+        }
+      ],
       "future-simple": [
         {
           "pronoun": "eu",
@@ -14996,7 +15181,44 @@
           "en": "They caught the ball"
         }
       ],
-      "future-peri": [],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou apanhar",
+          "en": "I will catch",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais apanhar",
+          "en": "You will catch",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai apanhar",
+          "en": "She will catch",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos apanhar",
+          "en": "We will catch",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão apanhar",
+          "en": "You will catch",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão apanhar",
+          "en": "They will catch",
+          "_grammarChecked": true
+        }
+      ],
       "future-simple": [
         {
           "pronoun": "eu",
@@ -15114,7 +15336,44 @@
           "en": "They stayed"
         }
       ],
-      "future-peri": [],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou ficar",
+          "en": "I will stay",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais ficar",
+          "en": "You will stay",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele vai ficar",
+          "en": "He/She will stay",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos ficar",
+          "en": "We will stay",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão ficar",
+          "en": "You will stay",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão ficar",
+          "en": "They will stay",
+          "_grammarChecked": true
+        }
+      ],
       "future-simple": [
         {
           "pronoun": "eu",
@@ -15241,7 +15500,44 @@
           "en": "They lay down"
         }
       ],
-      "future-peri": [],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou deitar",
+          "en": "I will lie down",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais deitar",
+          "en": "You will lie down",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele vai deitar",
+          "en": "He/She will lie down",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos deitar",
+          "en": "We will lie down",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão deitar",
+          "en": "You will lie down",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão deitar",
+          "en": "They will lie down",
+          "_grammarChecked": true
+        }
+      ],
       "future-simple": [
         {
           "pronoun": "eu",
