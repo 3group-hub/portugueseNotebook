@@ -3427,38 +3427,38 @@
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu dou um livro.",
-          "en": "I give a book.",
+          "pt": "Eu dou um livro",
+          "en": "I give a book",
           "_grammarChecked": true
         },
         {
           "pronoun": "tu",
-          "pt": "Tu dás um presente.",
-          "en": "You give a gift.",
+          "pt": "Tu dás um presente",
+          "en": "You give a gift",
           "_grammarChecked": true
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela dá um sorriso.",
-          "en": "She gives a smile.",
+          "pt": "Ela dá um beijo",
+          "en": "She gives a kiss",
           "_grammarChecked": true
         },
         {
           "pronoun": "nós",
-          "pt": "Nós damos ajuda.",
-          "en": "We give help.",
+          "pt": "Nós damos ajuda",
+          "en": "We give help",
           "_grammarChecked": true
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês dão exemplo.",
-          "en": "You give an example.",
+          "pt": "Vocês dão dinheiro",
+          "en": "You give money",
           "_grammarChecked": true
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles dão apoio.",
-          "en": "They give support.",
+          "pt": "Eles dão comida",
+          "en": "They give food",
           "_grammarChecked": true
         }
       ],
@@ -3466,32 +3466,38 @@
         {
           "pronoun": "eu",
           "pt": "Eu dei um livro.",
-          "en": "I gave a book."
+          "en": "I gave a book.",
+          "_grammarChecked": true
         },
         {
           "pronoun": "tu",
           "pt": "Tu deste um presente.",
-          "en": "You gave a gift."
+          "en": "You gave a gift.",
+          "_grammarChecked": true
         },
         {
           "pronoun": "ele/ela",
           "pt": "Ela deu um abraço.",
-          "en": "She gave a hug."
+          "en": "She gave a hug.",
+          "_grammarChecked": true
         },
         {
           "pronoun": "nós",
-          "pt": "Nós demos uma mão.",
-          "en": "We gave a hand."
+          "pt": "Nós demos um beijo.",
+          "en": "We gave a kiss.",
+          "_grammarChecked": true
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês deram um apoio.",
-          "en": "You gave support."
+          "pt": "Vocês deram um sorriso.",
+          "en": "You gave a smile.",
+          "_grammarChecked": true
         },
         {
           "pronoun": "eles/elas",
-          "pt": "deram atribuíram um prémio.",
-          "en": "They gave a prize."
+          "pt": "Eles deram uma mão.",
+          "en": "They gave a hand.",
+          "_grammarChecked": true
         }
       ],
       "future": [
