@@ -18032,8 +18032,82 @@
           "_grammarChecked": true
         }
       ],
-      "past": [],
-      "future-peri": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vi o gato",
+          "en": "I saw the cat",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu viste o filme",
+          "en": "You saw the movie",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela viu o menino",
+          "en": "She saw the boy",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vimos o sol",
+          "en": "We saw the sun",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês viram o mar",
+          "en": "You saw the sea",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles viram o avião",
+          "en": "They saw the plane",
+          "_grammarChecked": true
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou ver",
+          "en": "I will see",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais ver",
+          "en": "You will see",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai ver",
+          "en": "She will see",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos ver",
+          "en": "We will see",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão ver",
+          "en": "You will see",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão ver",
+          "en": "They will see",
+          "_grammarChecked": true
+        }
+      ],
       "future-simple": [
         {
           "pronoun": "eu",
@@ -18133,9 +18207,120 @@
           "_grammarChecked": true
         }
       ],
-      "past": [],
-      "future-peri": [],
-      "future-simple": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu brinquei",
+          "en": "I played",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu brincaste",
+          "en": "You played",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela brincou",
+          "en": "She played",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós brincámos",
+          "en": "We played",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês brincaram",
+          "en": "You played",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles brincaram",
+          "en": "They played",
+          "_grammarChecked": true
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou brincar",
+          "en": "I will play",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais brincar",
+          "en": "You will play",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai brincar",
+          "en": "She will play",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos brincar",
+          "en": "We will play",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão brincar",
+          "en": "You will play",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão brincar",
+          "en": "They will play",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu brincarei",
+          "en": "I will play",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu brincarás",
+          "en": "You will play",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela brincará",
+          "en": "She will play",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós brincaremos",
+          "en": "We will play",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês brincarão",
+          "en": "You will play",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles brincarão",
+          "en": "They will play",
+          "_grammarChecked": true
+        }
+      ],
       "imperative": [
         {
           "pronoun": "tu (informal)",
@@ -18250,9 +18435,183 @@
           "_grammarChecked": true
         }
       ],
-      "past": [],
-      "future-peri": [],
-      "future-simple": []
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu divórcio-me",
+          "en": "I got divorced",
+          "_grammarFixes": [
+            {
+              "orig": "divoci",
+              "best": "divórcio",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu dividiste-te",
+          "en": "You got divorced",
+          "_grammarFixes": [
+            {
+              "orig": "divociste",
+              "best": "dividiste",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela divorciou-se",
+          "en": "She got divorced",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós divorciámo-nos",
+          "en": "We got divorced",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês divorciaram-se",
+          "en": "You got divorced",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles divorciaram-se",
+          "en": "They got divorced",
+          "_grammarChecked": true
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou divorciar",
+          "en": "I am going to divorce",
+          "_grammarFixes": [
+            {
+              "orig": "divorcar",
+              "best": "divorciar",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais divorciar",
+          "en": "You are going to divorce",
+          "_grammarFixes": [
+            {
+              "orig": "divorcar",
+              "best": "divorciar",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele vai divorciar",
+          "en": "He/She is going to divorce",
+          "_grammarFixes": [
+            {
+              "orig": "divorcar",
+              "best": "divorciar",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos divorciar",
+          "en": "We are going to divorce",
+          "_grammarFixes": [
+            {
+              "orig": "divorcar",
+              "best": "divorciar",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão divorciar",
+          "en": "You are going to divorce",
+          "_grammarFixes": [
+            {
+              "orig": "divorcar",
+              "best": "divorciar",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão divorciar",
+          "en": "They are going to divorce",
+          "_grammarFixes": [
+            {
+              "orig": "divorcar",
+              "best": "divorciar",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu divorciarei",
+          "en": "I will divorce",
+          "_grammarFixes": [
+            {
+              "orig": "divorcarei",
+              "best": "divorciarei",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu divorciarás",
+          "en": "You will divorce",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela divorciará",
+          "en": "She will divorce",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós divorciaremos",
+          "en": "We will divorce",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês divorciarão",
+          "en": "You will divorce",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles divorciarão",
+          "en": "They will divorce",
+          "_grammarChecked": true
+        }
+      ]
     }
   },
   {
