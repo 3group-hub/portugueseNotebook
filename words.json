@@ -2654,76 +2654,76 @@
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu tenho um gato",
-          "en": "I have a cat",
+          "pt": "Eu tenho um livro.",
+          "en": "I have a book.",
           "_grammarChecked": true
         },
         {
           "pronoun": "tu",
-          "pt": "Tu tens um livro",
-          "en": "You have a book",
+          "pt": "Tu tens um carro.",
+          "en": "You have a car.",
           "_grammarChecked": true
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela tem um carro",
-          "en": "She has a car",
+          "pt": "Ela tem um gato.",
+          "en": "She has a cat.",
           "_grammarChecked": true
         },
         {
           "pronoun": "nós",
-          "pt": "Nós temos um filho",
-          "en": "We have a son",
+          "pt": "Nós temos um computador.",
+          "en": "We have a computer.",
           "_grammarChecked": true
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês têm uma casa",
-          "en": "You have a house",
+          "pt": "Vocês têm um telefone.",
+          "en": "You have a phone.",
           "_grammarChecked": true
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles têm um jardim",
-          "en": "They have a garden",
+          "pt": "Eles têm um jardim.",
+          "en": "They have a garden.",
           "_grammarChecked": true
         }
       ],
       "past": [
         {
           "pronoun": "eu",
-          "pt": "Eu tive um cão",
-          "en": "I had a dog",
+          "pt": "Eu tive um cão.",
+          "en": "I had a dog.",
           "_grammarChecked": true
         },
         {
           "pronoun": "tu",
-          "pt": "Tu tiveste um carro",
-          "en": "You had a car",
+          "pt": "Tu tiveste um gato.",
+          "en": "You had a cat.",
           "_grammarChecked": true
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela teve um gato",
-          "en": "She had a cat",
+          "pt": "Ela teve um livro.",
+          "en": "She had a book.",
           "_grammarChecked": true
         },
         {
           "pronoun": "nós",
-          "pt": "Nós tivemos um filho",
-          "en": "We had a son",
+          "pt": "Nós tivemos fome.",
+          "en": "We were hungry.",
           "_grammarChecked": true
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês tiveram um problema",
-          "en": "You had a problem",
+          "pt": "Vocês tiveram um carro.",
+          "en": "You had a car.",
           "_grammarChecked": true
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles tiveram fome",
-          "en": "They were hungry",
+          "pt": "Eles tiveram um filho.",
+          "en": "They had a son.",
           "_grammarChecked": true
         }
       ],
@@ -2762,8 +2762,8 @@
       "future-peri": [
         {
           "pronoun": "eu",
-          "pt": "Eu vou ter dinheiro",
-          "en": "I will have money",
+          "pt": "Eu vou ter uma casa",
+          "en": "I will have a house",
           "_grammarChecked": true
         },
         {
@@ -2780,20 +2780,20 @@
         },
         {
           "pronoun": "nós",
-          "pt": "Nós vamos ter fome",
-          "en": "We will be hungry",
+          "pt": "Nós vamos ter um cão",
+          "en": "We will have a dog",
           "_grammarChecked": true
         },
         {
           "pronoun": "vocês",
           "pt": "Vocês vão ter sucesso",
-          "en": "You will be successful",
+          "en": "You will have success",
           "_grammarChecked": true
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles vão ter um problema",
-          "en": "They will have a problem",
+          "pt": "Eles vão ter fome",
+          "en": "They will have hunger",
           "_grammarChecked": true
         }
       ],
