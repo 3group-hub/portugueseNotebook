@@ -5914,76 +5914,76 @@
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu trago um livro",
-          "en": "I bring a book",
+          "pt": "Eu trago comida.",
+          "en": "I bring food.",
           "_grammarChecked": true
         },
         {
           "pronoun": "tu",
-          "pt": "Tu trazes um caderno",
-          "en": "You bring a notebook",
+          "pt": "Tu trazes um livro.",
+          "en": "You bring a book.",
           "_grammarChecked": true
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela traz um presente",
-          "en": "She brings a gift",
+          "pt": "Ela traz um caderno.",
+          "en": "She brings a notebook.",
           "_grammarChecked": true
         },
         {
           "pronoun": "nós",
-          "pt": "Nós trazemos comida",
-          "en": "We bring food",
+          "pt": "Nós trazemos água.",
+          "en": "We bring water.",
           "_grammarChecked": true
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês trazem água",
-          "en": "You bring water",
+          "pt": "Vocês trazem bolas.",
+          "en": "You bring balls.",
           "_grammarChecked": true
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles trazem bolas",
-          "en": "They bring balls",
+          "pt": "Eles trazem presentes.",
+          "en": "They bring gifts.",
           "_grammarChecked": true
         }
       ],
       "past": [
         {
           "pronoun": "eu",
-          "pt": "Eu trouxe um livro",
-          "en": "I brought a book",
+          "pt": "Eu trouxe um livro.",
+          "en": "I brought a book.",
           "_grammarChecked": true
         },
         {
           "pronoun": "tu",
-          "pt": "Tu trouxeste um bolo",
-          "en": "You brought a cake",
+          "pt": "Tu trouxeste um amigo.",
+          "en": "You brought a friend.",
           "_grammarChecked": true
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela trouxe um amigo",
-          "en": "She brought a friend",
+          "pt": "Ela trouxe um cadeado.",
+          "en": "She brought a lock.",
           "_grammarChecked": true
         },
         {
           "pronoun": "nós",
-          "pt": "Nós trouxemos frutas",
-          "en": "We brought fruits",
+          "pt": "Nós trouxemos comida.",
+          "en": "We brought food.",
           "_grammarChecked": true
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês trouxeram flores",
-          "en": "You brought flowers",
+          "pt": "Vocês trouxeram flores.",
+          "en": "You brought flowers.",
           "_grammarChecked": true
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles trouxeram livros",
-          "en": "They brought books",
+          "pt": "Eles trouxeram um mapa.",
+          "en": "They brought a map.",
           "_grammarChecked": true
         }
       ],
@@ -6002,8 +6002,8 @@
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela vai trazer",
-          "en": "She will bring",
+          "pt": "Ele vai trazer",
+          "en": "He/She will bring",
           "_grammarChecked": true
         },
         {
@@ -6028,38 +6028,38 @@
       "future-simple": [
         {
           "pronoun": "eu",
-          "pt": "Eu trarei um livro.",
-          "en": "I will bring a book.",
+          "pt": "Eu trarei comida",
+          "en": "I will bring food",
           "_grammarChecked": true
         },
         {
           "pronoun": "tu",
-          "pt": "Tu trarás um presente.",
-          "en": "You will bring a gift.",
+          "pt": "Tu trarás água",
+          "en": "You will bring water",
           "_grammarChecked": true
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela trará um bolo.",
-          "en": "She will bring a cake.",
+          "pt": "Ela trará um livro",
+          "en": "She will bring a book",
           "_grammarChecked": true
         },
         {
           "pronoun": "nós",
-          "pt": "Nós traremos água.",
-          "en": "We will bring water.",
+          "pt": "Nós traremos frutas",
+          "en": "We will bring fruits",
           "_grammarChecked": true
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês trarão frutas.",
-          "en": "You will bring fruits.",
+          "pt": "Vocês trarão flores",
+          "en": "You will bring flowers",
           "_grammarChecked": true
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles trarão bolos.",
-          "en": "They will bring cakes.",
+          "pt": "Eles trarão bolos",
+          "en": "They will bring cakes",
           "_grammarChecked": true
         }
       ]
