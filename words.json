@@ -19570,7 +19570,57 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu calço os sapatos.",
+          "en": "I put on my shoes.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu calças os sapatos.",
+          "en": "You put on your shoes.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela calças os sapatos.",
+          "en": "She puts on her shoes.",
+          "_grammarFixes": [
+            {
+              "orig": "calça",
+              "best": "calças",
+              "rule": "🇵🇹 Substantivos invariáveis"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós calçamos os sapatos.",
+          "en": "We put on our shoes.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês calçam os sapatos.",
+          "en": "You put on your shoes.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles calçam os sapatos.",
+          "en": "They put on their shoes.",
+          "_grammarChecked": true
+        }
+      ],
+      "past": [],
+      "future-peri": [],
+      "future-simple": []
+    }
   },
   {
     "id": 1781879155554,
