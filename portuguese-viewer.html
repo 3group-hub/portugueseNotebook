@@ -699,23 +699,107 @@ function verbTypeLabel(t){ return{
   'regular-or':'Regular -or','irregular':'Irregular'}[t]||t; }
 
 // ═══ IMPERATIVO (read-only display logic) ═════════════════════════════════
-const IMPERATIVE_IRREGULARS={
-  'ser':['sê','seja'],'estar':['está','esteja'],'ter':['tem','tenha'],'ir':['vai','vá'],
-  'fazer':['faz','faça'],'poder':['pode','possa'],'querer':['quer','queira'],'vir':['vem','venha'],
-  'dizer':['diz','diga'],'saber':['sabe','saiba'],'pôr':['põe','ponha'],'trazer':['traz','traga'],
-  'ver':['vê','veja'],'dar':['dá','dê'],'haver':['há','haja'],'ler':['lê','leia'],
-  'caber':['cabe','caiba'],'ouvir':['ouve','ouça'],'pedir':['pede','peça'],'seguir':['segue','siga'],
+const IMPERATIVE_FULL_IRREGULARS={
+  'ser':    {tu:{aff:'sê',neg:'não sejas'},     voce:{aff:'seja',neg:'não seja'},     nos:{aff:'sejamos',neg:'não sejamos'},     voces:{aff:'sejam',neg:'não sejam'}},
+  'estar':  {tu:{aff:'está',neg:'não estejas'}, voce:{aff:'esteja',neg:'não esteja'}, nos:{aff:'estejamos',neg:'não estejamos'}, voces:{aff:'estejam',neg:'não estejam'}},
+  'ter':    {tu:{aff:'tem',neg:'não tenhas'},   voce:{aff:'tenha',neg:'não tenha'},   nos:{aff:'tenhamos',neg:'não tenhamos'},   voces:{aff:'tenham',neg:'não tenham'}},
+  'ir':     {tu:{aff:'vai',neg:'não vás'},      voce:{aff:'vá',neg:'não vá'},         nos:{aff:'vamos',neg:'não vamos'},         voces:{aff:'vão',neg:'não vão'}},
+  'fazer':  {tu:{aff:'faz',neg:'não faças'},    voce:{aff:'faça',neg:'não faça'},     nos:{aff:'façamos',neg:'não façamos'},     voces:{aff:'façam',neg:'não façam'}},
+  'poder':  {tu:{aff:'pode',neg:'não possas'},  voce:{aff:'possa',neg:'não possa'},   nos:{aff:'possamos',neg:'não possamos'},   voces:{aff:'possam',neg:'não possam'}},
+  'querer': {tu:{aff:'quer',neg:'não queiras'}, voce:{aff:'queira',neg:'não queira'}, nos:{aff:'queiramos',neg:'não queiramos'}, voces:{aff:'queiram',neg:'não queiram'}},
+  'vir':    {tu:{aff:'vem',neg:'não venhas'},   voce:{aff:'venha',neg:'não venha'},   nos:{aff:'venhamos',neg:'não venhamos'},   voces:{aff:'venham',neg:'não venham'}},
+  'dizer':  {tu:{aff:'diz',neg:'não digas'},    voce:{aff:'diga',neg:'não diga'},     nos:{aff:'digamos',neg:'não digamos'},     voces:{aff:'digam',neg:'não digam'}},
+  'saber':  {tu:{aff:'sabe',neg:'não saibas'},  voce:{aff:'saiba',neg:'não saiba'},   nos:{aff:'saibamos',neg:'não saibamos'},   voces:{aff:'saibam',neg:'não saibam'}},
+  'pôr':    {tu:{aff:'põe',neg:'não ponhas'},   voce:{aff:'ponha',neg:'não ponha'},   nos:{aff:'ponhamos',neg:'não ponhamos'},   voces:{aff:'ponham',neg:'não ponham'}},
+  'trazer': {tu:{aff:'traz',neg:'não tragas'},  voce:{aff:'traga',neg:'não traga'},   nos:{aff:'tragamos',neg:'não tragamos'},   voces:{aff:'tragam',neg:'não tragam'}},
+  'ver':    {tu:{aff:'vê',neg:'não vejas'},     voce:{aff:'veja',neg:'não veja'},     nos:{aff:'vejamos',neg:'não vejamos'},     voces:{aff:'vejam',neg:'não vejam'}},
+  'dar':    {tu:{aff:'dá',neg:'não dês'},       voce:{aff:'dê',neg:'não dê'},         nos:{aff:'dêmos',neg:'não dêmos'},         voces:{aff:'deem',neg:'não deem'}},
+  'haver':  {tu:{aff:'há',neg:'não hajas'},     voce:{aff:'haja',neg:'não haja'},     nos:{aff:'hajamos',neg:'não hajamos'},     voces:{aff:'hajam',neg:'não hajam'}},
+  'ler':    {tu:{aff:'lê',neg:'não leias'},     voce:{aff:'leia',neg:'não leia'},     nos:{aff:'leiamos',neg:'não leiamos'},     voces:{aff:'leiam',neg:'não leiam'}},
+  'caber':  {tu:{aff:'cabe',neg:'não caibas'},  voce:{aff:'caiba',neg:'não caiba'},   nos:{aff:'caibamos',neg:'não caibamos'},   voces:{aff:'caibam',neg:'não caibam'}},
+  'ouvir':  {tu:{aff:'ouve',neg:'não ouças'},   voce:{aff:'ouça',neg:'não ouça'},     nos:{aff:'ouçamos',neg:'não ouçamos'},     voces:{aff:'ouçam',neg:'não ouçam'}},
+  'pedir':  {tu:{aff:'pede',neg:'não peças'},   voce:{aff:'peça',neg:'não peça'},     nos:{aff:'peçamos',neg:'não peçamos'},     voces:{aff:'peçam',neg:'não peçam'}},
+  'seguir': {tu:{aff:'segue',neg:'não sigas'},  voce:{aff:'siga',neg:'não siga'},     nos:{aff:'sigamos',neg:'não sigamos'},     voces:{aff:'sigam',neg:'não sigam'}},
 };
-function computeImperative(infinitive){
+function computeImperativeFull(infinitive){
   const v=(infinitive||'').toLowerCase().trim();
-  if(IMPERATIVE_IRREGULARS[v]) return IMPERATIVE_IRREGULARS[v];
-  if(v.endsWith('car')){const s=v.slice(0,-3);return[s+'ca',s+'que'];}
-  if(v.endsWith('çar')){const s=v.slice(0,-3);return[s+'ça',s+'ce'];}
-  if(v.endsWith('gar')){const s=v.slice(0,-3);return[s+'ga',s+'gue'];}
-  if(v.endsWith('ar')){const s=v.slice(0,-2);return[s+'a',s+'e'];}
-  if(v.endsWith('er')){const s=v.slice(0,-2);return[s+'e',s+'a'];}
-  if(v.endsWith('ir')){const s=v.slice(0,-2);return[s+'e',s+'a'];}
-  return[v,v];
+  if(IMPERATIVE_FULL_IRREGULARS[v]) return IMPERATIVE_FULL_IRREGULARS[v];
+  let stem,tuAff,tuNeg,voce,nos,voces;
+  if(v.endsWith('car')){stem=v.slice(0,-3);tuAff=stem+'ca';tuNeg=stem+'ques';voce=stem+'que';nos=stem+'quemos';voces=stem+'quem';}
+  else if(v.endsWith('çar')){stem=v.slice(0,-3);tuAff=stem+'ça';tuNeg=stem+'ces';voce=stem+'ce';nos=stem+'cemos';voces=stem+'cem';}
+  else if(v.endsWith('gar')){stem=v.slice(0,-3);tuAff=stem+'ga';tuNeg=stem+'gues';voce=stem+'gue';nos=stem+'guemos';voces=stem+'guem';}
+  else if(v.endsWith('ar')){stem=v.slice(0,-2);tuAff=stem+'a';tuNeg=stem+'es';voce=stem+'e';nos=stem+'emos';voces=stem+'em';}
+  else if(v.endsWith('er')){stem=v.slice(0,-2);tuAff=stem+'e';tuNeg=stem+'as';voce=stem+'a';nos=stem+'amos';voces=stem+'am';}
+  else if(v.endsWith('ir')){stem=v.slice(0,-2);tuAff=stem+'e';tuNeg=stem+'as';voce=stem+'a';nos=stem+'amos';voces=stem+'am';}
+  else{tuAff=v;tuNeg=v;voce=v;nos=v;voces=v;}
+  return{
+    tu:{aff:tuAff,neg:'não '+tuNeg}, voce:{aff:voce,neg:'não '+voce},
+    nos:{aff:nos,neg:'não '+nos}, voces:{aff:voces,neg:'não '+voces},
+  };
+}
+function imperativeEnglish(translation, slot, mode){
+  const base=(translation||'').replace(/^to\s+/i,'').trim()||'do';
+  if(slot==='tu')    return mode==='aff'?`${base}!`:`don't ${base}!`;
+  if(slot==='voce')  return mode==='aff'?`${base}, please (formal)`:`please don't ${base} (formal)`;
+  if(slot==='nos')   return mode==='aff'?`let's ${base}!`:`let's not ${base}!`;
+  if(slot==='voces') return mode==='aff'?`${base}! (you all)`:`don't ${base}! (you all)`;
+  return '';
+}
+
+let impMode={};
+function setImpMode(wordId,mode){ impMode[wordId]=mode; renderWords(); }
+
+function renderImperativeTableViewer(w,color){
+  const mode = impMode[w.id]||'aff';
+  const forms = computeImperativeFull(w.word);
+  const isIrregular = !!IMPERATIVE_FULL_IRREGULARS[w.word.toLowerCase().trim()];
+
+  const rulesBox = `<div style="padding:10px 14px;background:#fff8f0;border-bottom:1px solid #f0ebe4;font-size:11.5px;color:#666;line-height:1.7;">
+    <strong style="color:#b5830a;">📌 Imperativo</strong> — used for orders, advice and requests.
+    Only <strong>tu, você, nós, vocês</strong> have imperative forms.
+    <strong>Tu</strong> affirmative = presente indicativo "ele/ela"; everything else (and tu negative) = presente do conjuntivo.
+    ${isIrregular?`<br><span style="color:#c1440e;">⚠️ "${w.word}" is irregular — using verified forms.</span>`:''}
+  </div>`;
+
+  const toggleHTML = `<div style="display:flex;gap:6px;padding:10px 14px;background:#fdfaf7;border-bottom:1px solid #f0ebe4;">
+    <button onclick="setImpMode(${w.id},'aff')" style="padding:5px 14px;border-radius:20px;border:1px solid ${mode==='aff'?'#1a6b3c':'#ddd'};background:${mode==='aff'?'#1a6b3c':'#fff'};color:${mode==='aff'?'#fff':'#888'};cursor:pointer;font-size:12px;font-family:inherit;font-weight:600;">✅ Afirmativo</button>
+    <button onclick="setImpMode(${w.id},'neg')" style="padding:5px 14px;border-radius:20px;border:1px solid ${mode==='neg'?'#c1440e':'#ddd'};background:${mode==='neg'?'#c1440e':'#fff'};color:${mode==='neg'?'#fff':'#888'};cursor:pointer;font-size:12px;font-family:inherit;font-weight:600;">❌ Negativo</button>
+  </div>`;
+
+  const rowDef=[
+    {slot:null,   label:'eu',           na:true},
+    {slot:'tu',   label:'tu',           na:false},
+    {slot:'voce', label:'ele/ela/você', na:false},
+    {slot:'nos',  label:'nós',          na:false},
+    {slot:'voces',label:'vocês',        na:false},
+    {slot:null,   label:'eles/elas',    na:true},
+  ];
+
+  const rowsHTML = rowDef.map(r=>{
+    if(r.na){
+      return `<div class="example-row">
+        <span class="pronoun-badge" style="background:#f0f0f0;color:#bbb;">${r.label}</span>
+        <div style="font-size:12px;color:#bbb;font-style:italic;margin-top:4px;">— no imperative form (can't command ${r.label==='eu'?'yourself':'an absent person'}) —</div>
+      </div>`;
+    }
+    const form = forms[r.slot][mode];
+    const en = imperativeEnglish(w.translation, r.slot, mode);
+    return `<div class="example-row">
+      <span class="pronoun-badge" style="background:${color}20;color:${color};">${r.label}</span>
+      <div style="display:flex;align-items:center;gap:5px;flex-wrap:wrap;margin-top:2px;">
+        <span class="example-pt" style="font-size:16px;font-weight:700;">«${form}!»</span>
+        <button class="speak-btn" onclick="speakText('${escQ(form)}','pt-PT',this)">🔊</button>
+      </div>
+      <div style="display:flex;align-items:center;gap:5px;margin-top:2px;">
+        <span class="example-en">${getTranslation(en)}</span>
+        <button class="speak-btn" onclick="speakText('${escQ(en)}','en-GB',this)" style="font-size:11px;">🔊</button>
+      </div>
+    </div>`;
+  }).join('');
+
+  return `${rulesBox}${toggleHTML}<div class="examples-section">${rowsHTML}
+    <div style="padding:8px 14px;font-size:11px;color:#bbb;font-style:italic;">⚡ Computed instantly via grammar rules.</div>
+  </div>`;
 }
 
 function freqBadge(w){
@@ -818,41 +902,36 @@ function renderWordCard(w, showDivider=false){
       <button class="tense-tab${activeTense===t.key?' active':''}" onclick="setTense(${w.id},'${t.key}')">
         ${t.label}
       </button>`).join('');
-    const imperativeRulesBox = activeTense==='imperative' ? (()=>{
-      const forms = computeImperative(w.word);
-      const isIrregular = !!IMPERATIVE_IRREGULARS[w.word.toLowerCase().trim()];
-      return `<div style="padding:10px 14px;background:#fff8f0;border-bottom:1px solid #f0ebe4;font-size:11.5px;color:#666;line-height:1.6;">
-        <strong style="color:#b5830a;">📌 Imperativo</strong> — used for orders, advice and requests.
-        <strong>Tu</strong> (informal) = presente do indicativo "ele/ela" form. <strong>Você</strong> (formal) swaps the ending: -ar (a→e), -er/-ir (e→a).
-        ${isIrregular?`<br><span style="color:#c1440e;">⚠️ "${w.word}" is irregular →</span>`:`<br>For "${w.word}" →`} tu: <strong>${forms[0]}</strong> · você: <strong>${forms[1]}</strong>
-      </div>`;
-    })() : '';
-    const rows=tenses[activeTense]||[];
-    const rowsHTML=rows.map((ex,i)=>{
-      const isEditingRow = editingCell?.wordId===w.id && editingCell?.tense===activeTense && editingCell?.rowIndex===i;
-      return `<div class="example-row" style="${i<rows.length-1?'border-bottom:1px solid #f0ebe4;':''}">
-        <span class="pronoun-badge" style="background:${color}20;color:${color};">${ex.pronoun}</span>
-        <div style="display:flex;align-items:center;gap:5px;flex-wrap:wrap;margin-top:2px;">
-          ${isEditingRow
-            ? `<input id="editCell_${w.id}_${activeTense}_${i}" value="${escQ(ex.pt)}" style="flex:1;min-width:140px;padding:4px 8px;border-radius:6px;border:1px solid #1a6b3c;font-size:13px;font-family:inherit;font-style:italic;" />
-               <button onclick="saveCellEdit(${w.id},'${activeTense}',${i})" style="padding:3px 10px;border-radius:5px;border:none;background:#1a6b3c;color:#fff;cursor:pointer;font-size:11px;font-family:inherit;">Save</button>
-               <button onclick="startEditCell(${w.id},'${activeTense}',${i})" style="padding:3px 8px;border-radius:5px;border:1px solid #ddd;background:#fff;cursor:pointer;font-size:11px;color:#888;">✕</button>`
-            : `<span class="example-pt">«${ex.pt}»</span>
-               <button class="speak-btn" onclick="speakText('${escQ(ex.pt)}','pt-PT',this)">🔊</button>
-               ${canEdit?`<button onclick="startEditCell(${w.id},'${activeTense}',${i})" style="padding:1px 5px;border-radius:4px;border:1px solid #ddd;background:transparent;cursor:pointer;font-size:10px;color:#ccc;">✏️</button>`:''}`}
-        </div>
-        <div style="display:flex;align-items:center;gap:5px;margin-top:2px;">
-          <span class="example-en">${getTranslation(ex.en)}</span>
-          <button class="speak-btn" onclick="speakText('${escQ(ex.en)}','en-GB',this)" style="font-size:11px;">🔊</button>
-        </div>
-      </div>`;
-    }).join('');
-    examplesHTML=`
-      <div class="tense-tabs">${tabsHTML}</div>
-      ${imperativeRulesBox}
-      <div class="examples-section">
-        ${rows.length===0?`<div style="padding:10px 14px;font-size:12px;color:#ccc;font-style:italic;">No conjugations yet for this tense</div>`:rowsHTML}
-      </div>`;
+
+    if(activeTense==='imperative'){
+      examplesHTML=`<div class="tense-tabs">${tabsHTML}</div>${renderImperativeTableViewer(w,color)}`;
+    } else {
+      const rows=tenses[activeTense]||[];
+      const rowsHTML=rows.map((ex,i)=>{
+        const isEditingRow = editingCell?.wordId===w.id && editingCell?.tense===activeTense && editingCell?.rowIndex===i;
+        return `<div class="example-row" style="${i<rows.length-1?'border-bottom:1px solid #f0ebe4;':''}">
+          <span class="pronoun-badge" style="background:${color}20;color:${color};">${ex.pronoun}</span>
+          <div style="display:flex;align-items:center;gap:5px;flex-wrap:wrap;margin-top:2px;">
+            ${isEditingRow
+              ? `<input id="editCell_${w.id}_${activeTense}_${i}" value="${escQ(ex.pt)}" style="flex:1;min-width:140px;padding:4px 8px;border-radius:6px;border:1px solid #1a6b3c;font-size:13px;font-family:inherit;font-style:italic;" />
+                 <button onclick="saveCellEdit(${w.id},'${activeTense}',${i})" style="padding:3px 10px;border-radius:5px;border:none;background:#1a6b3c;color:#fff;cursor:pointer;font-size:11px;font-family:inherit;">Save</button>
+                 <button onclick="startEditCell(${w.id},'${activeTense}',${i})" style="padding:3px 8px;border-radius:5px;border:1px solid #ddd;background:#fff;cursor:pointer;font-size:11px;color:#888;">✕</button>`
+              : `<span class="example-pt">«${ex.pt}»</span>
+                 <button class="speak-btn" onclick="speakText('${escQ(ex.pt)}','pt-PT',this)">🔊</button>
+                 ${canEdit?`<button onclick="startEditCell(${w.id},'${activeTense}',${i})" style="padding:1px 5px;border-radius:4px;border:1px solid #ddd;background:transparent;cursor:pointer;font-size:10px;color:#ccc;">✏️</button>`:''}`}
+          </div>
+          <div style="display:flex;align-items:center;gap:5px;margin-top:2px;">
+            <span class="example-en">${getTranslation(ex.en)}</span>
+            <button class="speak-btn" onclick="speakText('${escQ(ex.en)}','en-GB',this)" style="font-size:11px;">🔊</button>
+          </div>
+        </div>`;
+      }).join('');
+      examplesHTML=`
+        <div class="tense-tabs">${tabsHTML}</div>
+        <div class="examples-section">
+          ${rows.length===0?`<div style="padding:10px 14px;font-size:12px;color:#ccc;font-style:italic;">No conjugations yet for this tense</div>`:rowsHTML}
+        </div>`;
+    }
   } else {
     const rowsHTML=examples.map((ex,i)=>`
       <div class="example-row" style="${i<examples.length-1?'border-bottom:1px solid #f0ebe4;':''}">
