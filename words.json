@@ -2665,8 +2665,8 @@
         },
         {
           "pronoun": "nós",
-          "pt": "Nós temos um computador.",
-          "en": "We have a computer.",
+          "pt": "Nós temos uma casa.",
+          "en": "We have a house.",
           "_grammarChecked": true
         },
         {
@@ -2677,46 +2677,46 @@
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles têm um jardim.",
-          "en": "They have a garden.",
+          "pt": "Eles têm um computador.",
+          "en": "They have a computer.",
           "_grammarChecked": true
         }
       ],
       "past": [
         {
           "pronoun": "eu",
-          "pt": "Eu tive um cão.",
-          "en": "I had a dog.",
+          "pt": "Eu tive um livro",
+          "en": "I had a book",
           "_grammarChecked": true
         },
         {
           "pronoun": "tu",
-          "pt": "Tu tiveste um gato.",
-          "en": "You had a cat.",
+          "pt": "Tu tiveste um carro",
+          "en": "You had a car",
           "_grammarChecked": true
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela teve um livro.",
-          "en": "She had a book.",
+          "pt": "Ela teve um gato",
+          "en": "She had a cat",
           "_grammarChecked": true
         },
         {
           "pronoun": "nós",
-          "pt": "Nós tivemos fome.",
-          "en": "We were hungry.",
+          "pt": "Nós tivemos fome",
+          "en": "We were hungry",
           "_grammarChecked": true
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês tiveram um carro.",
-          "en": "You had a car.",
+          "pt": "Vocês tiveram dinheiro",
+          "en": "You had money",
           "_grammarChecked": true
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles tiveram um filho.",
-          "en": "They had a son.",
+          "pt": "Eles tiveram um filho",
+          "en": "They had a son",
           "_grammarChecked": true
         }
       ],
@@ -2755,14 +2755,14 @@
       "future-peri": [
         {
           "pronoun": "eu",
-          "pt": "Eu vou ter uma casa",
-          "en": "I will have a house",
+          "pt": "Eu vou ter um carro",
+          "en": "I will have a car",
           "_grammarChecked": true
         },
         {
           "pronoun": "tu",
-          "pt": "Tu vais ter um carro",
-          "en": "You will have a car",
+          "pt": "Tu vais ter um amigo",
+          "en": "You will have a friend",
           "_grammarChecked": true
         },
         {
@@ -2779,52 +2779,52 @@
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês vão ter sucesso",
-          "en": "You will have success",
+          "pt": "Vocês vão ter um apartamento",
+          "en": "You will have an apartment",
           "_grammarChecked": true
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles vão ter fome",
-          "en": "They will have hunger",
+          "pt": "Eles vão ter um jardim",
+          "en": "They will have a garden",
           "_grammarChecked": true
         }
       ],
       "future-simple": [
         {
           "pronoun": "eu",
-          "pt": "Eu terei dinheiro.",
-          "en": "I will have money.",
+          "pt": "Eu terei um carro",
+          "en": "I will have a car",
           "_grammarChecked": true
         },
         {
           "pronoun": "tu",
-          "pt": "Tu terás um carro.",
-          "en": "You will have a car.",
+          "pt": "Tu terás dinheiro",
+          "en": "You will have money",
           "_grammarChecked": true
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela terá um filho.",
-          "en": "She will have a child.",
+          "pt": "Ela terá um filho",
+          "en": "She will have a child",
           "_grammarChecked": true
         },
         {
           "pronoun": "nós",
-          "pt": "Nós teremos uma casa.",
-          "en": "We will have a house.",
+          "pt": "Nós teremos uma casa",
+          "en": "We will have a house",
           "_grammarChecked": true
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês terão sucesso.",
-          "en": "You will have success.",
+          "pt": "Vocês terão sucesso",
+          "en": "You will have success",
           "_grammarChecked": true
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles terão fome.",
-          "en": "They will be hungry.",
+          "pt": "Eles terão fome",
+          "en": "They will have hunger",
           "_grammarChecked": true
         }
       ]
