@@ -11128,7 +11128,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "11/05/2026",
-    "generatingExample": false,
+    "generatingExample": true,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -11168,7 +11168,8 @@
       "future-peri": [],
       "future-simple": []
     },
-    "_activeTense": "present"
+    "_activeTense": "present",
+    "_generatingTense": "present"
   },
   {
     "id": 1778509453360,
