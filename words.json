@@ -333,7 +333,110 @@
           "_grammarChecked": true
         }
       ],
-      "future": []
+      "future": [],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou desejar",
+          "en": "I will want",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais desejar",
+          "en": "You will want",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele vai desejar",
+          "en": "He/She will want",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos desejar",
+          "en": "We will want",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão desejar",
+          "en": "You will want",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão desejar",
+          "en": "They will want",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu descarei",
+          "en": "I will want",
+          "_grammarFixes": [
+            {
+              "orig": "desearei",
+              "best": "descarei",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu desejarás",
+          "en": "You will want",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela desejará",
+          "en": "She will want",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós desejáramos",
+          "en": "Incorrect - Nós desejarámos -> Nós desejararemos",
+          "_grammarFixes": [
+            {
+              "orig": "desejarámos",
+              "best": "desejáramos",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós desejar aremos",
+          "en": "We will want",
+          "_grammarFixes": [
+            {
+              "orig": "desejararemos",
+              "best": "desejar aremos",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês desejarão",
+          "en": "You will want",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles desejarão",
+          "en": "They will want",
+          "_grammarChecked": true
+        }
+      ]
     },
     "_generatingTense": null,
     "_activeTense": "present"
@@ -723,6 +826,82 @@
           "pronoun": "eles/elas",
           "pt": "Eles vão encerrar a fábrica",
           "en": "They will close the factory"
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou encerrar",
+          "en": "I'm going to enclose",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais encerrar",
+          "en": "You're going to enclose",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai encerrar",
+          "en": "She's going to enclose",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos encerrar",
+          "en": "We're going to enclose",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão encerrar",
+          "en": "You're going to enclose",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão encerrar",
+          "en": "They're going to enclose",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu encerrarei a porta",
+          "en": "I will enclose the door",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu encerrarás o jardim",
+          "en": "You will enclose the garden",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela encerrará o quarto",
+          "en": "She will enclose the room",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós encerraremos a varanda",
+          "en": "We will enclose the porch",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês encerrarão a área",
+          "en": "You will enclose the area",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles encerrarão o parque",
+          "en": "They will enclose the park",
+          "_grammarChecked": true
         }
       ]
     },
@@ -1327,7 +1506,45 @@
           "en": "They illuminated the stadium."
         }
       ],
-      "future": []
+      "future": [],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou iluminar",
+          "en": "I will illuminate",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais iluminar",
+          "en": "You will illuminate",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai iluminar",
+          "en": "She will illuminate",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos iluminar",
+          "en": "We will illuminate",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão iluminar",
+          "en": "You will illuminate",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão iluminar",
+          "en": "They will illuminate",
+          "_grammarChecked": true
+        }
+      ]
     },
     "_generatingTense": null,
     "_activeTense": "past"
@@ -1572,6 +1789,82 @@
           "pronoun": "eles/elas",
           "pt": "Eles vão renascer em nova forma",
           "en": "They will be reborn in a new form"
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou renascer",
+          "en": "I will be reborn",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais renascer",
+          "en": "You will be reborn",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai renascer",
+          "en": "She will be reborn",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos renascer",
+          "en": "We will be reborn",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão renascer",
+          "en": "You will be reborn",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão renascer",
+          "en": "They will be reborn",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu renascerei livre",
+          "en": "I will be reborn free",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu renascerás forte",
+          "en": "You will be reborn strong",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela renascerá serena",
+          "en": "She will be reborn serene",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós renasceremos juntos",
+          "en": "We will be reborn together",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês renascerão novos",
+          "en": "You will be reborn new",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles renascerão mudados",
+          "en": "They will be reborn changed",
+          "_grammarChecked": true
         }
       ]
     },
