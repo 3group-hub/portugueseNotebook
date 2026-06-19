@@ -44,38 +44,38 @@
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu quero comer",
-          "en": "I want to eat",
+          "pt": "Eu quero um bolo",
+          "en": "I want a cake",
           "_grammarChecked": true
         },
         {
           "pronoun": "tu",
-          "pt": "Tu queres dormir",
-          "en": "You want to sleep",
+          "pt": "Tu queres um café",
+          "en": "You want a coffee",
           "_grammarChecked": true
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela quer estudar",
-          "en": "She wants to study",
+          "pt": "Ela quer um chá",
+          "en": "She wants a tea",
           "_grammarChecked": true
         },
         {
           "pronoun": "nós",
-          "pt": "Nós queremos jogar",
-          "en": "We want to play",
+          "pt": "Nós queremos comida",
+          "en": "We want food",
           "_grammarChecked": true
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês querem ajudar",
-          "en": "You want to help",
+          "pt": "Vocês querem água",
+          "en": "You want water",
           "_grammarChecked": true
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles querem correr",
-          "en": "They want to run",
+          "pt": "Eles querem jogar",
+          "en": "They want to play",
           "_grammarChecked": true
         }
       ],
@@ -88,15 +88,8 @@
         },
         {
           "pronoun": "tu",
-          "pt": "Tu quiseste um gelado",
-          "en": "You wanted an ice cream",
-          "_grammarFixes": [
-            {
-              "orig": "sorvete",
-              "best": "gelado",
-              "rule": "Brasileirismo: 1. palavras confundidas com as de Portugal"
-            }
-          ],
+          "pt": "Tu quiseste um carro",
+          "en": "You wanted a car",
           "_grammarChecked": true
         },
         {
@@ -119,8 +112,8 @@
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles quiseram dormir",
-          "en": "They wanted to sleep",
+          "pt": "Eles quiseram comer",
+          "en": "They wanted to eat",
           "_grammarChecked": true
         }
       ],
@@ -184,20 +177,27 @@
         },
         {
           "pronoun": "nós",
-          "pt": "Nós quereremos ir",
-          "en": "We will want to go",
+          "pt": "Nós quereremos uma casa",
+          "en": "We will want a house",
+          "_grammarFixes": [
+            {
+              "orig": "um casa",
+              "best": "uma casa",
+              "rule": "Concordância: Geral"
+            }
+          ],
           "_grammarChecked": true
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês quererão jogar",
-          "en": "You will want to play",
+          "pt": "Vocês quererão um telefone",
+          "en": "You will want a phone",
           "_grammarChecked": true
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles quererão comer",
-          "en": "They will want to eat",
+          "pt": "Eles quererão um computador",
+          "en": "They will want a computer",
           "_grammarChecked": true
         }
       ]
@@ -4893,13 +4893,13 @@
         },
         {
           "pronoun": "você (formal)",
-          "pt": "Ame os outros por favor",
-          "en": "Love others, please",
+          "pt": "Ame os seus pais",
+          "en": "Love your parents",
           "_grammarChecked": true
         }
       ]
     },
-    "_activeTense": "present",
+    "_activeTense": "imperative",
     "_generatingTense": null
   },
   {
@@ -12116,16 +12116,15 @@
       "imperative": [
         {
           "pronoun": "tu (informal)",
-          "pt": "Chega aqui por favor",
-          "en": "Arrive here please",
+          "pt": "Chega aqui",
+          "en": "Arrive here",
           "_corrected": true,
           "_grammarChecked": true
         },
         {
           "pronoun": "você (formal)",
-          "pt": "Chegue ao ponto",
-          "en": "Arrive at the point",
-          "_corrected": true,
+          "pt": "Chegue à hora certa",
+          "en": "Arrive on time",
           "_grammarChecked": true
         }
       ]
