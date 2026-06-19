@@ -2976,20 +2976,20 @@
       "future-peri": [
         {
           "pronoun": "eu",
-          "pt": "Eu vou ir ao parque",
-          "en": "I'm going to the park",
+          "pt": "Eu vou ir ao cinema",
+          "en": "I'm going to the movies",
           "_grammarChecked": true
         },
         {
           "pronoun": "tu",
-          "pt": "Tu vais ir ao cinema",
-          "en": "You're going to the movies",
+          "pt": "Tu vais ir à escola",
+          "en": "You're going to school",
           "_grammarChecked": true
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela vai ir à escola",
-          "en": "She's going to school",
+          "pt": "Ela vai ir ao parque",
+          "en": "She's going to the park",
           "_grammarChecked": true
         },
         {
@@ -3014,14 +3014,14 @@
       "future-simple": [
         {
           "pronoun": "eu",
-          "pt": "Eu irei ao parque",
-          "en": "I will go to the park",
+          "pt": "Eu irei ao cinema",
+          "en": "I will go to the movies",
           "_grammarChecked": true
         },
         {
           "pronoun": "tu",
-          "pt": "Tu irás ao cinema",
-          "en": "You will go to the movies",
+          "pt": "Tu irás ao parque",
+          "en": "You will go to the park",
           "_grammarChecked": true
         },
         {
