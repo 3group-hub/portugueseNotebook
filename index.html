@@ -1679,7 +1679,7 @@ async function generateAndAttach(wordId){
     // Then generate examples
     if(w.category==='Verb'){
       const present = await genVerbExamples(w.word, w.translation, 'present', w.freq||'common');
-      w.tenses = { present, past:[], 'future-peri':[], 'future-simple':[], imperative:[] };
+      w.tenses = { present, past:[], 'future-peri':[], 'future-simple':[] };
       w.examples = [];
     } else {
       w.examples = await genRegularExamples(w.word, w.translation, w.category, 1, [], w.freq||'common');
@@ -1935,112 +1935,81 @@ function getIrregularConjugations(verb, tense){
 }
 
 // ═══ IMPERATIVO ═════════════════════════════════════════════════════════
-// Format: [tu (informal), você (formal)]
-const IMPERATIVE_IRREGULARS = {
-  'ser':    ['sê','seja'],
-  'estar':  ['está','esteja'],
-  'ter':    ['tem','tenha'],
-  'ir':     ['vai','vá'],
-  'fazer':  ['faz','faça'],
-  'poder':  ['pode','possa'],
-  'querer': ['quer','queira'],
-  'vir':    ['vem','venha'],
-  'dizer':  ['diz','diga'],
-  'saber':  ['sabe','saiba'],
-  'pôr':    ['põe','ponha'],
-  'trazer': ['traz','traga'],
-  'ver':    ['vê','veja'],
-  'dar':    ['dá','dê'],
-  'haver':  ['há','haja'],
-  'ler':    ['lê','leia'],
-  'caber':  ['cabe','caiba'],
-  'ouvir':  ['ouve','ouça'],
-  'pedir':  ['pede','peça'],
-  'seguir': ['segue','siga'],
+// Real Portuguese grammar: imperative only exists for tu / você / nós / vocês.
+// "eu" and "eles/elas" have no imperative (you can't command yourself or an
+// absent third party). Negative tu uses a DIFFERENT form than affirmative tu
+// (presente do conjuntivo), so they're computed and stored separately.
+const IMPERATIVE_FULL_IRREGULARS = {
+  'ser':    {tu:{aff:'sê',neg:'não sejas'},     voce:{aff:'seja',neg:'não seja'},     nos:{aff:'sejamos',neg:'não sejamos'},     voces:{aff:'sejam',neg:'não sejam'}},
+  'estar':  {tu:{aff:'está',neg:'não estejas'}, voce:{aff:'esteja',neg:'não esteja'}, nos:{aff:'estejamos',neg:'não estejamos'}, voces:{aff:'estejam',neg:'não estejam'}},
+  'ter':    {tu:{aff:'tem',neg:'não tenhas'},   voce:{aff:'tenha',neg:'não tenha'},   nos:{aff:'tenhamos',neg:'não tenhamos'},   voces:{aff:'tenham',neg:'não tenham'}},
+  'ir':     {tu:{aff:'vai',neg:'não vás'},      voce:{aff:'vá',neg:'não vá'},         nos:{aff:'vamos',neg:'não vamos'},         voces:{aff:'vão',neg:'não vão'}},
+  'fazer':  {tu:{aff:'faz',neg:'não faças'},    voce:{aff:'faça',neg:'não faça'},     nos:{aff:'façamos',neg:'não façamos'},     voces:{aff:'façam',neg:'não façam'}},
+  'poder':  {tu:{aff:'pode',neg:'não possas'},  voce:{aff:'possa',neg:'não possa'},   nos:{aff:'possamos',neg:'não possamos'},   voces:{aff:'possam',neg:'não possam'}},
+  'querer': {tu:{aff:'quer',neg:'não queiras'}, voce:{aff:'queira',neg:'não queira'}, nos:{aff:'queiramos',neg:'não queiramos'}, voces:{aff:'queiram',neg:'não queiram'}},
+  'vir':    {tu:{aff:'vem',neg:'não venhas'},   voce:{aff:'venha',neg:'não venha'},   nos:{aff:'venhamos',neg:'não venhamos'},   voces:{aff:'venham',neg:'não venham'}},
+  'dizer':  {tu:{aff:'diz',neg:'não digas'},    voce:{aff:'diga',neg:'não diga'},     nos:{aff:'digamos',neg:'não digamos'},     voces:{aff:'digam',neg:'não digam'}},
+  'saber':  {tu:{aff:'sabe',neg:'não saibas'},  voce:{aff:'saiba',neg:'não saiba'},   nos:{aff:'saibamos',neg:'não saibamos'},   voces:{aff:'saibam',neg:'não saibam'}},
+  'pôr':    {tu:{aff:'põe',neg:'não ponhas'},   voce:{aff:'ponha',neg:'não ponha'},   nos:{aff:'ponhamos',neg:'não ponhamos'},   voces:{aff:'ponham',neg:'não ponham'}},
+  'trazer': {tu:{aff:'traz',neg:'não tragas'},  voce:{aff:'traga',neg:'não traga'},   nos:{aff:'tragamos',neg:'não tragamos'},   voces:{aff:'tragam',neg:'não tragam'}},
+  'ver':    {tu:{aff:'vê',neg:'não vejas'},     voce:{aff:'veja',neg:'não veja'},     nos:{aff:'vejamos',neg:'não vejamos'},     voces:{aff:'vejam',neg:'não vejam'}},
+  'dar':    {tu:{aff:'dá',neg:'não dês'},       voce:{aff:'dê',neg:'não dê'},         nos:{aff:'dêmos',neg:'não dêmos'},         voces:{aff:'deem',neg:'não deem'}},
+  'haver':  {tu:{aff:'há',neg:'não hajas'},     voce:{aff:'haja',neg:'não haja'},     nos:{aff:'hajamos',neg:'não hajamos'},     voces:{aff:'hajam',neg:'não hajam'}},
+  'ler':    {tu:{aff:'lê',neg:'não leias'},     voce:{aff:'leia',neg:'não leia'},     nos:{aff:'leiamos',neg:'não leiamos'},     voces:{aff:'leiam',neg:'não leiam'}},
+  'caber':  {tu:{aff:'cabe',neg:'não caibas'},  voce:{aff:'caiba',neg:'não caiba'},   nos:{aff:'caibamos',neg:'não caibamos'},   voces:{aff:'caibam',neg:'não caibam'}},
+  'ouvir':  {tu:{aff:'ouve',neg:'não ouças'},   voce:{aff:'ouça',neg:'não ouça'},     nos:{aff:'ouçamos',neg:'não ouçamos'},     voces:{aff:'ouçam',neg:'não ouçam'}},
+  'pedir':  {tu:{aff:'pede',neg:'não peças'},   voce:{aff:'peça',neg:'não peça'},     nos:{aff:'peçamos',neg:'não peçamos'},     voces:{aff:'peçam',neg:'não peçam'}},
+  'seguir': {tu:{aff:'segue',neg:'não sigas'},  voce:{aff:'siga',neg:'não siga'},     nos:{aff:'sigamos',neg:'não sigamos'},     voces:{aff:'sigam',neg:'não sigam'}},
 };
 
-// Compute [tu, você] imperative forms for any verb using the teacher's rule:
-//  Tu = presente do indicativo (ele/ela) | Você = swap ending a↔e
-// with standard orthographic adjustments for -car/-çar/-gar verbs.
-function computeImperative(infinitive){
+// Returns the full paradigm: {tu:{aff,neg}, voce:{aff,neg}, nos:{aff,neg}, voces:{aff,neg}}
+// Rule: tu affirmative = presente indicativo (ele/ela); everything else = presente do conjuntivo.
+function computeImperativeFull(infinitive){
   const v = (infinitive||'').toLowerCase().trim();
-  if(IMPERATIVE_IRREGULARS[v]) return IMPERATIVE_IRREGULARS[v];
+  if(IMPERATIVE_FULL_IRREGULARS[v]) return IMPERATIVE_FULL_IRREGULARS[v];
 
+  let stem, tuAff, tuNeg, voce, nos, voces;
   if(v.endsWith('car')){
-    const stem = v.slice(0,-3);
-    return [stem+'ca', stem+'que'];
+    stem = v.slice(0,-3);
+    tuAff = stem+'ca'; tuNeg = stem+'ques'; voce = stem+'que'; nos = stem+'quemos'; voces = stem+'quem';
+  } else if(v.endsWith('çar')){
+    stem = v.slice(0,-3);
+    tuAff = stem+'ça'; tuNeg = stem+'ces'; voce = stem+'ce'; nos = stem+'cemos'; voces = stem+'cem';
+  } else if(v.endsWith('gar')){
+    stem = v.slice(0,-3);
+    tuAff = stem+'ga'; tuNeg = stem+'gues'; voce = stem+'gue'; nos = stem+'guemos'; voces = stem+'guem';
+  } else if(v.endsWith('ar')){
+    stem = v.slice(0,-2);
+    tuAff = stem+'a'; tuNeg = stem+'es'; voce = stem+'e'; nos = stem+'emos'; voces = stem+'em';
+  } else if(v.endsWith('er')){
+    stem = v.slice(0,-2);
+    tuAff = stem+'e'; tuNeg = stem+'as'; voce = stem+'a'; nos = stem+'amos'; voces = stem+'am';
+  } else if(v.endsWith('ir')){
+    stem = v.slice(0,-2);
+    tuAff = stem+'e'; tuNeg = stem+'as'; voce = stem+'a'; nos = stem+'amos'; voces = stem+'am';
+  } else {
+    tuAff=v; tuNeg=v; voce=v; nos=v; voces=v; // unknown ending — fallback, won't crash
   }
-  if(v.endsWith('çar')){
-    const stem = v.slice(0,-3);
-    return [stem+'ça', stem+'ce'];
-  }
-  if(v.endsWith('gar')){
-    const stem = v.slice(0,-3);
-    return [stem+'ga', stem+'gue'];
-  }
-  if(v.endsWith('ar')){
-    const stem = v.slice(0,-2);
-    return [stem+'a', stem+'e'];
-  }
-  if(v.endsWith('er')){
-    const stem = v.slice(0,-2);
-    return [stem+'e', stem+'a'];
-  }
-  if(v.endsWith('ir')){
-    const stem = v.slice(0,-2);
-    return [stem+'e', stem+'a'];
-  }
-  // Fallback — unknown ending, return infinitive unchanged rather than crash
-  return [v, v];
+  return {
+    tu:    { aff: tuAff, neg: 'não '+tuNeg },
+    voce:  { aff: voce,  neg: 'não '+voce  },
+    nos:   { aff: nos,   neg: 'não '+nos   },
+    voces: { aff: voces, neg: 'não '+voces },
+  };
 }
 
-// Verify/repair imperative sentences against the computed correct forms
-function applyImperativeCorrections(forms, rows){
-  return rows.map((row,i)=>{
-    const correctForm = forms[i];
-    if(!correctForm || !row?.pt) return row;
-    if(!row.pt.toLowerCase().includes(correctForm.toLowerCase())){
-      // Try swapping the other form if Groq used it by mistake
-      let fixed = row.pt;
-      forms.forEach((f,j)=>{
-        if(j!==i && f && row.pt.toLowerCase().includes(f.toLowerCase())){
-          fixed = row.pt.replace(new RegExp(f,'i'), correctForm);
-        }
-      });
-      if(!fixed.toLowerCase().includes(correctForm.toLowerCase())){
-        const capitalized = correctForm.charAt(0).toUpperCase()+correctForm.slice(1);
-        fixed = fixed.replace(/^(\S+)/, capitalized);
-      }
-      return {...row, pt:fixed, _corrected:true};
-    }
-    return row;
-  });
-}
-
-async function genImperativeExamples(verb, translation, freq){
-  const forms = computeImperative(verb);
-  const level = FREQ_CEFR[freq] || FREQ_CEFR.common;
-  const hint = `\nCRITICAL — use EXACTLY these imperative forms, no exceptions:\n  tu (informal): "${forms[0]}"\n  você (formal): "${forms[1]}"\n`;
-
-  const result = await claudeCall(
-    `You are a European Portuguese tutor creating IMPERATIVE MOOD (Imperativo) examples for a ${level.cefr} level verb.
-For the verb "${verb}" (${translation}), write ONE short command/request/advice sentence for EACH of these two registers:
-1. "tu (informal)" — addressing a friend, child or family member informally.
-2. "você (formal)" — addressing a stranger, boss, client, or elder formally (could also say "o senhor"/"a senhora").
-Rules:
-- ONLY European Portuguese (Portugal, not Brazilian).
-- CEFR level: ${level.cefr}. ${level.vocab}
-- 4-8 words per sentence, natural-sounding commands/requests (e.g. ending in "por favor" sometimes).
-${hint}
-Return ONLY valid JSON, no markdown: [{"pronoun":"tu (informal)","pt":"...","en":"..."},{"pronoun":"você (formal)","pt":"...","en":"..."}]`, 400);
-
-  const p = JSON.parse(result.replace(/```json|```/g,'').trim());
-  const rows = Array.isArray(p) ? p : [];
-  const corrected = applyImperativeCorrections(forms, rows);
-  return await grammarCheckRows(corrected);
+// Simple mechanical English gloss — no API needed, instant for every verb
+function imperativeEnglish(translation, slot, mode){
+  const base = (translation||'').replace(/^to\s+/i,'').trim() || 'do';
+  if(slot==='tu')    return mode==='aff' ? `${base}!` : `don't ${base}!`;
+  if(slot==='voce')  return mode==='aff' ? `${base}, please (formal)` : `please don't ${base} (formal)`;
+  if(slot==='nos')   return mode==='aff' ? `let's ${base}!` : `let's not ${base}!`;
+  if(slot==='voces') return mode==='aff' ? `${base}! (you all)` : `don't ${base}! (you all)`;
+  return '';
 }
 
 // Build a conjugation hint to inject into the Groq prompt
+
 function buildConjugationHint(verb, tense){
   const conj = getIrregularConjugations(verb, tense);
   if(!conj) return '';
@@ -2099,7 +2068,7 @@ async function grammarCheckAll(){
   // ── 2. Verb conjugations ──────────────────────────────────────────────
   const verbs = words.filter(w => w.category==='Verb' && w.tenses);
   for(const w of verbs){
-    for(const tense of ['present','past','future-peri','future-simple','imperative']){
+    for(const tense of ['present','past','future-peri','future-simple']){
       const rows = w.tenses[tense];
       if(!rows?.length) continue;
       const checked = await grammarCheckRows(rows);
@@ -2174,7 +2143,7 @@ async function fixAllVerbConjugations(){
 
     if(isIrregular){
       // For known irregular verbs: regenerate all tenses with the table
-      if(!w.tenses) w.tenses = {present:[],past:[],'future-peri':[],'future-simple':[],imperative:[]};
+      if(!w.tenses) w.tenses = {present:[],past:[],'future-peri':[],'future-simple':[]};
       for(const tense of tenses){
         const rows = w.tenses[tense] || [];
         if(rows.length > 0){
@@ -2584,8 +2553,80 @@ async function assessAllLevels(){
 
 function escQ(s){ return (s||'').replace(/\\/g,'\\\\').replace(/'/g,"\\'"); }
 
+let impMode = {}; // wordId -> 'aff' | 'neg'
+function setImpMode(wordId, mode){ impMode[wordId] = mode; renderWords(); }
+
+function renderImperativeTable(w, color){
+  const mode = impMode[w.id] || 'aff';
+  const forms = computeImperativeFull(w.word);
+  const isIrregular = !!IMPERATIVE_FULL_IRREGULARS[w.word.toLowerCase().trim()];
+
+  const rulesBox = `
+    <div style="padding:10px 14px;background:#fff8f0;border-bottom:1px solid #f0ebe4;font-size:11.5px;color:#666;line-height:1.7;">
+      <strong style="color:#b5830a;">📌 Imperativo</strong> — used for orders, advice and requests.
+      Only <strong>tu, você, nós, vocês</strong> have imperative forms (you can't command yourself or someone absent).
+      <strong>Tu</strong> affirmative = presente indicativo "ele/ela"; everything else (and tu negative) = presente do conjuntivo.
+      ${isIrregular ? `<br><span style="color:#c1440e;">⚠️ "${w.word}" is irregular — using verified forms.</span>` : ''}
+    </div>`;
+
+  const toggleHTML = `
+    <div style="display:flex;gap:6px;padding:10px 14px;background:#fdfaf7;border-bottom:1px solid #f0ebe4;">
+      <button onclick="setImpMode(${w.id},'aff')" style="padding:5px 14px;border-radius:20px;border:1px solid ${mode==='aff'?'#1a6b3c':'#ddd'};background:${mode==='aff'?'#1a6b3c':'#fff'};color:${mode==='aff'?'#fff':'#888'};cursor:pointer;font-size:12px;font-family:inherit;font-weight:600;">✅ Afirmativo</button>
+      <button onclick="setImpMode(${w.id},'neg')" style="padding:5px 14px;border-radius:20px;border:1px solid ${mode==='neg'?'#c1440e':'#ddd'};background:${mode==='neg'?'#c1440e':'#fff'};color:${mode==='neg'?'#fff':'#888'};cursor:pointer;font-size:12px;font-family:inherit;font-weight:600;">❌ Negativo</button>
+    </div>`;
+
+  const rowDef = [
+    { slot:null,    label:'eu',           na:true  },
+    { slot:'tu',    label:'tu',           na:false },
+    { slot:'voce',  label:'ele/ela/você', na:false },
+    { slot:'nos',   label:'nós',          na:false },
+    { slot:'voces', label:'vocês',        na:false },
+    { slot:null,    label:'eles/elas',    na:true  },
+  ];
+
+  const rowsHTML = rowDef.map(r=>{
+    if(r.na){
+      return `<div class="example-row">
+        <div class="example-inner">
+          <div style="flex:1;">
+            <span class="pronoun-badge" style="background:#f0f0f0;color:#bbb;">${r.label}</span>
+            <div style="font-size:12px;color:#bbb;font-style:italic;margin-top:4px;">— no imperative form (can't command ${r.label==='eu'?'yourself':'an absent person'}) —</div>
+          </div>
+        </div>
+      </div>`;
+    }
+    const form = forms[r.slot][mode];
+    const en = imperativeEnglish(w.translation, r.slot, mode);
+    return `<div class="example-row">
+      <div class="example-inner">
+        <div style="flex:1;">
+          <span class="pronoun-badge" style="background:${color}20;color:${color};">${r.label}</span>
+          <div style="display:flex;align-items:center;gap:5px;flex-wrap:wrap;margin-top:2px;">
+            <span class="example-pt" style="font-size:16px;font-weight:700;">«${form}!»</span>
+            <button class="speak-btn" onclick="speakText('${escQ(form)}','pt-PT',this)">🔊</button>
+          </div>
+          <div style="display:flex;align-items:center;gap:5px;margin-top:2px;" class="example-en">
+            <span>${en}</span>
+            <button class="speak-btn" onclick="speakText('${escQ(en)}','en-GB',this)" style="font-size:11px;">🔊</button>
+          </div>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+
+  return `
+    ${rulesBox}
+    ${toggleHTML}
+    <div class="examples-section" style="background:#fdfaf7;">
+      ${rowsHTML}
+      <div class="examples-footer" style="display:flex;align-items:center;gap:8px;">
+        <span style="font-size:11px;color:#bbb;font-style:italic;">⚡ Computed instantly via grammar rules — works for every verb in your notebook automatically.</span>
+      </div>
+    </div>`;
+}
+
 function renderVerbTenses(w, color){
-  const tenses = w.tenses || { present:[], past:[], 'future-peri':[], 'future-simple':[], imperative:[] };
+  const tenses = w.tenses || { present:[], past:[], 'future-peri':[], 'future-simple':[] };
   const tabs = [
     { key:'present',       label:'Present',        ptName:'Presente'            },
     { key:'past',          label:'Past',            ptName:'Pret. Perfeito'      },
@@ -2601,18 +2642,14 @@ function renderVerbTenses(w, color){
       ${t.label}
     </button>`).join('');
 
-  // Imperativo gets a compact rules box explaining formation, since it differs structurally from other tenses
-  const imperativeRulesBox = activeKey==='imperative' ? (()=>{
-    const forms = computeImperative(w.word);
+  // Imperativo is structurally different (4 grammatical persons, no Groq needed) — its own renderer
+  if(activeKey === 'imperative'){
     return `
-    <div style="padding:10px 14px;background:#fff8f0;border-bottom:1px solid #f0ebe4;font-size:11.5px;color:#666;line-height:1.6;">
-      <strong style="color:#b5830a;">📌 Imperativo</strong> — used for orders, advice and requests.
-      <strong>Tu</strong> (informal) = presente do indicativo "ele/ela" form. <strong>Você</strong> (formal) swaps the ending: -ar (a→e), -er/-ir (e→a).
-      ${EP_IRREGULAR_VERBS[w.word.toLowerCase().trim()]||IMPERATIVE_IRREGULARS[w.word.toLowerCase().trim()]
-        ? `<br><span style="color:#c1440e;">⚠️ "${w.word}" is irregular →</span> tu: <strong>${forms[0]}</strong> · você: <strong>${forms[1]}</strong>`
-        : `<br>For "${w.word}" →</span> tu: <strong>${forms[0]}</strong> · você: <strong>${forms[1]}</strong>`}
-    </div>`;
-  })() : '';
+      <div style="border-bottom:1px solid #f5efe6;padding:0 14px;display:flex;gap:2px;background:#fafaf8;overflow-x:auto;">
+        ${tabsHTML}
+      </div>
+      ${renderImperativeTable(w, color)}`;
+  }
 
   const rows = tenses[activeKey] || [];
   const isGenerating = w.generatingExample && w._generatingTense === activeKey;
@@ -2635,29 +2672,28 @@ function renderVerbTenses(w, color){
       </div>
     </div>`).join('');
 
-  const expectedCount = activeKey==='imperative' ? 2 : EP_PRONOUNS.length;
-  const allCovered = rows.length >= expectedCount;
+  const allCovered = rows.length >= EP_PRONOUNS.length;
   const footerContent = isGenerating
-    ? `<span style="font-size:12px;color:#bbb;"><span class="spin">⏳</span> Generating ${activeKey==='imperative'?'imperativo':activeKey} tense…</span>`
+    ? `<span style="font-size:12px;color:#bbb;"><span class="spin">⏳</span> Generating ${activeKey} tense…</span>`
     : `<button onclick="generateTense(${w.id},'${activeKey}')" style="padding:4px 12px;border-radius:6px;border:1px solid ${color}44;background:${color}0e;color:${color};cursor:pointer;font-size:12px;font-family:inherit;">
-        <span style="font-size:14px;">+</span> ${rows.length===0?`Generate ${activeKey==='imperative'?'imperativo':activeKey}`:'Regenerate'}
+        <span style="font-size:14px;">+</span> ${rows.length===0?`Generate ${activeKey}`:'Regenerate'}
        </button>
-       <span class="count-label">${rows.length>0?`${rows.length}/${expectedCount} ${activeKey==='imperative'?'forms':'pronouns'}`:''}</span>`;
+       <span class="count-label">${rows.length>0?`${rows.length}/${EP_PRONOUNS.length} pronouns`:''}</span>`;
 
   return `
     <div style="border-bottom:1px solid #f5efe6;padding:0 14px;display:flex;gap:2px;background:#fafaf8;overflow-x:auto;">
       ${tabsHTML}
     </div>
-    ${imperativeRulesBox}
     <div class="examples-section" style="background:#fdfaf7;">
       ${isGenerating && rows.length===0 ? `<div class="generating-msg"><span class="spin">⏳</span> Generating ${activeKey} conjugations…</div>` : ''}
       ${rowsHTML}
-      ${rows.length===0 && !isGenerating ? `<div class="no-examples">No ${activeKey==='imperative'?'imperativo':activeKey} conjugations yet</div>` : ''}
+      ${rows.length===0 && !isGenerating ? `<div class="no-examples">No ${activeKey} conjugations yet</div>` : ''}
       <div class="examples-footer${rows.length>0?' examples-footer-border':''}" style="display:flex;align-items:center;gap:8px;">
         ${footerContent}
       </div>
     </div>`;
 }
+
 
 function renderWordCard(w, showDivider=false){
   const color = CAT_COLORS[w.category]||'#555';
@@ -2738,15 +2774,14 @@ function setVerbTense(wordId, tense){
 
 async function generateTense(wordId, tense){
   const w = words.find(x=>x.id===wordId); if(!w)return;
-  if(!w.tenses) w.tenses = { present:[], past:[], 'future-peri':[], 'future-simple':[], imperative:[] };
+  if(tense === 'imperative') return; // computed instantly, never needs generation
+  if(!w.tenses) w.tenses = { present:[], past:[], 'future-peri':[], 'future-simple':[] };
   w.generatingExample = true;
   w._generatingTense = tense;
   w._activeTense = tense;
   saveWords(); renderWords();
   try{
-    const rows = tense==='imperative'
-      ? await genImperativeExamples(w.word, w.translation, w.freq||'common')
-      : await genVerbExamples(w.word, w.translation, tense, w.freq||'common');
+    const rows = await genVerbExamples(w.word, w.translation, tense, w.freq||'common');
     w.tenses[tense] = rows;
   }catch(e){ showToast('Generation failed — check API key.'); }
   w.generatingExample = false;
