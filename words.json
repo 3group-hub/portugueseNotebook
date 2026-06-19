@@ -4899,7 +4899,7 @@
         }
       ]
     },
-    "_activeTense": "imperative",
+    "_activeTense": "present",
     "_generatingTense": null
   },
   {
@@ -12012,7 +12012,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "14/05/2026",
-    "generatingExample": false,
+    "generatingExample": true,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -12129,7 +12129,7 @@
         }
       ]
     },
-    "_generatingTense": null,
+    "_generatingTense": "imperative",
     "_activeTense": "imperative"
   },
   {
