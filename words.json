@@ -14990,38 +14990,38 @@
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu vejo o livro",
-          "en": "I see the book",
+          "pt": "Eu vejo a TV.",
+          "en": "I watch TV.",
           "_grammarChecked": true
         },
         {
           "pronoun": "tu",
-          "pt": "Tu vês a TV",
-          "en": "You see the TV",
+          "pt": "Tu vês o filme.",
+          "en": "You watch the movie.",
           "_grammarChecked": true
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela vê o gato",
-          "en": "She sees the cat",
+          "pt": "Ela vê o livro.",
+          "en": "She sees the book.",
           "_grammarChecked": true
         },
         {
           "pronoun": "nós",
-          "pt": "Nós vemos o mar",
-          "en": "We see the sea",
+          "pt": "Nós vemos o jogo.",
+          "en": "We watch the game.",
           "_grammarChecked": true
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês veem o filme",
-          "en": "You see the movie",
+          "pt": "Vocês veem o mar.",
+          "en": "You see the sea.",
           "_grammarChecked": true
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles veem o jogo",
-          "en": "They see the game",
+          "pt": "Eles veem a casa.",
+          "en": "They see the house.",
           "_grammarChecked": true
         }
       ],
@@ -15030,38 +15030,45 @@
       "future-simple": [
         {
           "pronoun": "eu",
-          "pt": "Eu verei TV",
-          "en": "I will watch TV",
+          "pt": "Eu verei o filme",
+          "en": "I will see the movie",
           "_grammarChecked": true
         },
         {
           "pronoun": "tu",
-          "pt": "Tu verás um filme",
-          "en": "You will see a movie",
+          "pt": "Tu verás o jogo",
+          "en": "You will see the game",
           "_grammarChecked": true
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela verá o mar",
-          "en": "She will see the sea",
+          "pt": "Ela verá a TV",
+          "en": "She will see the TV",
           "_grammarChecked": true
         },
         {
           "pronoun": "nós",
-          "pt": "Nós veremos um espetáculo",
-          "en": "We will see a show",
+          "pt": "Nós veremos o mar",
+          "en": "We will see the sea",
           "_grammarChecked": true
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês verão um concerto",
-          "en": "You will see a concert",
+          "pt": "Vocês verão o ‘show’",
+          "en": "You will see the show",
+          "_grammarFixes": [
+            {
+              "orig": "show",
+              "best": "‘show’",
+              "rule": "🇵🇹🎓 Estrangeirismos específicos pt_PT"
+            }
+          ],
           "_grammarChecked": true
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles verão um jogo",
-          "en": "They will see a game",
+          "pt": "Eles verão o espetáculo",
+          "en": "They will see the spectacle",
           "_grammarChecked": true
         }
       ]
