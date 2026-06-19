@@ -208,6 +208,7 @@
       <button class="tab-btn" data-tab="family">👨‍👩‍👧 Family</button>
       <button class="tab-btn" data-tab="food">🥦 Food</button>
       <button class="tab-btn" data-tab="appearance">🧍 Appearance</button>
+      <button class="tab-btn" data-tab="feelings">😊 Feelings</button>
       <button class="tab-btn" data-tab="reader">📖 Text Reader</button>
       <button class="tab-btn" data-tab="sentences">✍️ Sentences</button>
     </div>
@@ -629,6 +630,9 @@
 
   <!-- ═══ APPEARANCE TAB ═══ -->
   <div id="tab-appearance" class="hidden"></div>
+
+  <!-- ═══ FEELINGS TAB ═══ -->
+  <div id="tab-feelings" class="hidden"></div>
 
   <!-- ═══ TEXT READER TAB ═══ -->
   <div id="tab-reader" class="hidden">
@@ -1229,7 +1233,7 @@ document.querySelectorAll('.tab-btn').forEach(btn=>{
     document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
     btn.classList.add('active');
     activeTab=btn.dataset.tab;
-    ['vocab','flashcards','textimport','alphabet','numbers','situations','nations','professions','notes','patterns','prepositions','possessives','conjunctions','family','food','appearance','reader','sentences'].forEach(t=>document.getElementById('tab-'+t).classList.add('hidden'));
+    ['vocab','flashcards','textimport','alphabet','numbers','situations','nations','professions','notes','patterns','prepositions','possessives','conjunctions','family','food','appearance','feelings','reader','sentences'].forEach(t=>document.getElementById('tab-'+t).classList.add('hidden'));
     document.getElementById('tab-'+activeTab).classList.remove('hidden');
     if(activeTab==='sentences') updateSentWordCount();
     if(activeTab==='situations') initSituationsTab();
@@ -1243,6 +1247,7 @@ document.querySelectorAll('.tab-btn').forEach(btn=>{
     if(activeTab==='family') renderFamily();
     if(activeTab==='food') renderFood();
     if(activeTab==='appearance') renderAppearance();
+    if(activeTab==='feelings') renderFeelings();
     if(activeTab==='reader') initReader();
     if(activeTab==='flashcards') initFlashcards();
   });
@@ -1964,37 +1969,59 @@ const IMPERATIVE_FULL_IRREGULARS = {
 
 // Returns the full paradigm: {tu:{aff,neg}, voce:{aff,neg}, nos:{aff,neg}, voces:{aff,neg}}
 // Rule: tu affirmative = presente indicativo (ele/ela); everything else = presente do conjuntivo.
+// Handles reflexive verbs (e.g. "vestir-se") by stripping -se, computing the base
+// paradigm, then reattaching the correct clitic pronoun per person (te/se/nos/se),
+// with affirmative hyphenated after the verb and negative placed before it.
 function computeImperativeFull(infinitive){
-  const v = (infinitive||'').toLowerCase().trim();
-  if(IMPERATIVE_FULL_IRREGULARS[v]) return IMPERATIVE_FULL_IRREGULARS[v];
+  const raw = (infinitive||'').toLowerCase().trim();
+  const isReflexive = raw.endsWith('-se');
+  const v = isReflexive ? raw.slice(0,-3) : raw;
 
-  let stem, tuAff, tuNeg, voce, nos, voces;
-  if(v.endsWith('car')){
-    stem = v.slice(0,-3);
-    tuAff = stem+'ca'; tuNeg = stem+'ques'; voce = stem+'que'; nos = stem+'quemos'; voces = stem+'quem';
-  } else if(v.endsWith('çar')){
-    stem = v.slice(0,-3);
-    tuAff = stem+'ça'; tuNeg = stem+'ces'; voce = stem+'ce'; nos = stem+'cemos'; voces = stem+'cem';
-  } else if(v.endsWith('gar')){
-    stem = v.slice(0,-3);
-    tuAff = stem+'ga'; tuNeg = stem+'gues'; voce = stem+'gue'; nos = stem+'guemos'; voces = stem+'guem';
-  } else if(v.endsWith('ar')){
-    stem = v.slice(0,-2);
-    tuAff = stem+'a'; tuNeg = stem+'es'; voce = stem+'e'; nos = stem+'emos'; voces = stem+'em';
-  } else if(v.endsWith('er')){
-    stem = v.slice(0,-2);
-    tuAff = stem+'e'; tuNeg = stem+'as'; voce = stem+'a'; nos = stem+'amos'; voces = stem+'am';
-  } else if(v.endsWith('ir')){
-    stem = v.slice(0,-2);
-    tuAff = stem+'e'; tuNeg = stem+'as'; voce = stem+'a'; nos = stem+'amos'; voces = stem+'am';
+  let base;
+  if(IMPERATIVE_FULL_IRREGULARS[v]){
+    base = IMPERATIVE_FULL_IRREGULARS[v];
   } else {
-    tuAff=v; tuNeg=v; voce=v; nos=v; voces=v; // unknown ending — fallback, won't crash
+    let stem, tuAff, tuNeg, voce, nos, voces;
+    if(v.endsWith('car')){
+      stem = v.slice(0,-3);
+      tuAff = stem+'ca'; tuNeg = stem+'ques'; voce = stem+'que'; nos = stem+'quemos'; voces = stem+'quem';
+    } else if(v.endsWith('çar')){
+      stem = v.slice(0,-3);
+      tuAff = stem+'ça'; tuNeg = stem+'ces'; voce = stem+'ce'; nos = stem+'cemos'; voces = stem+'cem';
+    } else if(v.endsWith('gar')){
+      stem = v.slice(0,-3);
+      tuAff = stem+'ga'; tuNeg = stem+'gues'; voce = stem+'gue'; nos = stem+'guemos'; voces = stem+'guem';
+    } else if(v.endsWith('ar')){
+      stem = v.slice(0,-2);
+      tuAff = stem+'a'; tuNeg = stem+'es'; voce = stem+'e'; nos = stem+'emos'; voces = stem+'em';
+    } else if(v.endsWith('er')){
+      stem = v.slice(0,-2);
+      tuAff = stem+'e'; tuNeg = stem+'as'; voce = stem+'a'; nos = stem+'amos'; voces = stem+'am';
+    } else if(v.endsWith('ir')){
+      stem = v.slice(0,-2);
+      tuAff = stem+'e'; tuNeg = stem+'as'; voce = stem+'a'; nos = stem+'amos'; voces = stem+'am';
+    } else {
+      tuAff=v; tuNeg=v; voce=v; nos=v; voces=v; // unknown ending — fallback, won't crash
+    }
+    base = {
+      tu:    { aff: tuAff, neg: 'não '+tuNeg },
+      voce:  { aff: voce,  neg: 'não '+voce  },
+      nos:   { aff: nos,   neg: 'não '+nos   },
+      voces: { aff: voces, neg: 'não '+voces },
+    };
   }
+
+  if(!isReflexive) return base;
+
+  // Reflexive: attach clitic pronouns (te/se/nos/se). Affirmative hyphenates
+  // after the verb; negative places the pronoun before it (não te vistas, etc.)
+  const stripNao = s => s.replace(/^não\s+/,'');
+  const nosBase = base.nos.aff.endsWith('mos') ? base.nos.aff.slice(0,-1) : base.nos.aff;
   return {
-    tu:    { aff: tuAff, neg: 'não '+tuNeg },
-    voce:  { aff: voce,  neg: 'não '+voce  },
-    nos:   { aff: nos,   neg: 'não '+nos   },
-    voces: { aff: voces, neg: 'não '+voces },
+    tu:    { aff: base.tu.aff+'-te',     neg: 'não te '  +stripNao(base.tu.neg)    },
+    voce:  { aff: base.voce.aff+'-se',   neg: 'não se '  +stripNao(base.voce.neg)  },
+    nos:   { aff: nosBase+'-nos',        neg: 'não nos ' +stripNao(base.nos.neg)   },
+    voces: { aff: base.voces.aff+'-se',  neg: 'não se '  +stripNao(base.voces.neg) },
   };
 }
 
@@ -3065,10 +3092,6 @@ function showSessionComplete(){
   `;
 }
 
-function endFlashcards(){
-  document.getElementById('fc-session').classList.add('hidden');
-  initFlashcards();
-}
 function endFlashcards(){
   document.getElementById('fc-session').classList.add('hidden');
   initFlashcards();
@@ -4708,6 +4731,105 @@ function renderAppearance(){
         })()}
       </div>
     </div>
+  </div>`;
+}
+
+
+// ═══ FEELINGS TAB ════════════════════════════════════════════════════════
+// Portuguese feelings use different verbs depending on type: "ter" (to have)
+// for physical states, "estar" (to be) for emotions/health, "estar com" for
+// many idiomatic states. Showing the FULL sentence is essential since the
+// construction itself is the hard part for learners, not just the word.
+const FEELINGS_DATA = {
+  physical: [
+    {pt:'fome', sentence:'Estou com fome. / Tenho fome.', en:'I am hungry.', note:'ter fome — literally "to have hunger"'},
+    {pt:'sede', sentence:'Estou com sede. / Tenho sede.', en:'I am thirsty.', note:'ter sede — literally "to have thirst"'},
+    {pt:'sono', sentence:'Estou com sono. / Tenho sono.', en:'I am sleepy.', note:'ter sono — literally "to have sleepiness"'},
+    {pt:'frio', sentence:'Estou com frio. / Tenho frio.', en:'I am cold.', note:'ter frio — literally "to have cold"'},
+    {pt:'calor', sentence:'Estou com calor. / Tenho calor.', en:'I am hot.', note:'ter calor — literally "to have heat"'},
+    {pt:'pressa', sentence:'Estou com pressa. / Tenho pressa.', en:'I am in a hurry.', note:'ter pressa — literally "to have hurry"'},
+    {pt:'cansado/cansada', sentence:'Estou cansado. (m) / Estou cansada. (f)', en:'I am tired.', note:'estar + adjective, agrees with gender'},
+    {pt:'exausto/exausta', sentence:'Estou exausto depois do trabalho.', en:'I am exhausted after work.', note:'stronger than cansado'},
+    {pt:'com dor', sentence:'Estou com dor de cabeça.', en:'I have a headache.', note:'estar com dor de + body part'},
+  ],
+  health: [
+    {pt:'doente', sentence:'Estou doente hoje, não posso ir trabalhar.', en:"I'm sick today, I can't go to work.", note:'estar doente = to be sick/ill'},
+    {pt:'constipado/constipada', sentence:'Estou constipado, tenho o nariz entupido.', en:"I have a cold, my nose is blocked.", note:'⚠️ FALSE FRIEND — means "have a cold", NOT "constipated"!'},
+    {pt:'gripado/gripada', sentence:'Estou gripado, tenho febre e dores no corpo.', en:'I have the flu, I have a fever and body aches.', note:'gripe = flu (stronger than constipado)'},
+    {pt:'com febre', sentence:'A criança está com febre.', en:'The child has a fever.', note:'estar com febre'},
+    {pt:'com tosse', sentence:'Estou com tosse há três dias.', en:"I've had a cough for three days.", note:'estar com tosse'},
+    {pt:'com dor de garganta', sentence:'Tenho dor de garganta e não consigo falar bem.', en:"I have a sore throat and can't speak well.", note:'ter/estar com dor de garganta'},
+    {pt:'melhor', sentence:'Já me sinto melhor, obrigado.', en:'I already feel better, thank you.', note:'sentir-se melhor'},
+    {pt:'pior', sentence:'Sinto-me pior do que ontem.', en:'I feel worse than yesterday.', note:'sentir-se pior'},
+  ],
+  emotions: [
+    {pt:'feliz / contente', sentence:'Estou muito feliz com os resultados.', en:'I am very happy with the results.', note:'estar feliz/contente'},
+    {pt:'triste', sentence:'Ele está triste porque o seu cão morreu.', en:'He is sad because his dog died.', note:'estar triste'},
+    {pt:'zangado/zangada', sentence:'A minha mãe está zangada comigo.', en:'My mother is angry with me.', note:'zangado com alguém = angry with someone'},
+    {pt:'nervoso/nervosa', sentence:'Estou nervoso antes do exame.', en:'I am nervous before the exam.', note:'estar nervoso'},
+    {pt:'preocupado/preocupada', sentence:'Estamos preocupados com a situação.', en:'We are worried about the situation.', note:'preocupado com = worried about'},
+    {pt:'surpreendido/surpreendida', sentence:'Fiquei surpreendido com a notícia.', en:'I was surprised by the news.', note:'ficar surpreendido — using "ficar" for a reaction'},
+    {pt:'envergonhado/envergonhada', sentence:'Fiquei envergonhado quando caí na rua.', en:'I was embarrassed when I fell in the street.', note:'ficar envergonhado'},
+    {pt:'orgulhoso/orgulhosa', sentence:'Estou orgulhoso do meu filho.', en:'I am proud of my son.', note:'orgulhoso de = proud of'},
+    {pt:'aliviado/aliviada', sentence:'Fiquei aliviada quando soube que estava tudo bem.', en:'I was relieved when I found out everything was fine.', note:'ficar aliviado'},
+    {pt:'confuso/confusa', sentence:'Estou confuso com estas instruções.', en:'I am confused by these instructions.', note:'confuso com'},
+    {pt:'entediado/entediada', sentence:'Os alunos estão entediados na aula.', en:'The students are bored in class.', note:'estar entediado'},
+    {pt:'assustado/assustada', sentence:'A criança ficou assustada com o trovão.', en:'The child got scared by the thunder.', note:'ficar assustado'},
+  ],
+  expressions: [
+    {pt:'medo (de)', sentence:'Tenho medo de aranhas.', en:'I am afraid of spiders.', note:'ter medo de — literally "to have fear of"'},
+    {pt:'saudades (de)', sentence:'Tenho saudades da minha família.', en:'I miss my family.', note:'a uniquely Portuguese concept — longing/missing someone or something'},
+    {pt:'ciúmes (de)', sentence:'Ele tem ciúmes do irmão.', en:'He is jealous of his brother.', note:'ter ciúmes de'},
+    {pt:'pena (de)', sentence:'Tenho pena dos animais abandonados.', en:'I feel sorry for abandoned animals.', note:'ter pena de = to feel sorry for'},
+    {pt:'vergonha', sentence:'Tenho vergonha de falar em público.', en:'I am ashamed/shy about speaking in public.', note:'ter vergonha de'},
+    {pt:'bom humor', sentence:'Hoje estou de bom humor.', en:'Today I am in a good mood.', note:'estar de bom humor'},
+    {pt:'mau humor', sentence:'O meu chefe está de mau humor hoje.', en:'My boss is in a bad mood today.', note:'estar de mau humor'},
+    {pt:'razão', sentence:'Tens razão, eu estava errado.', en:'You are right, I was wrong.', note:'ter razão — literally "to have reason"'},
+  ],
+};
+
+const FEELINGS_TABS = [
+  {key:'physical',    label:'😴 Physical',  color:'#2c5f8a'},
+  {key:'health',      label:'🤒 Health',    color:'#c1440e'},
+  {key:'emotions',    label:'😊 Emotions',  color:'#1a6b3c'},
+  {key:'expressions', label:'💬 Expressions', color:'#7b4ea0'},
+];
+
+let feelingsTab = 'physical', feelingsSearch = '';
+
+function renderFeelings(){
+  const el = document.getElementById('tab-feelings'); if(!el) return;
+  const q = feelingsSearch.toLowerCase();
+  const ti = FEELINGS_TABS.find(t=>t.key===feelingsTab) || FEELINGS_TABS[0];
+  const items = FEELINGS_DATA[feelingsTab].filter(i=>
+    !q || i.pt.toLowerCase().includes(q) || i.en.toLowerCase().includes(q) || i.sentence.toLowerCase().includes(q));
+
+  el.innerHTML = `
+  <div class="card" style="margin-top:16px;border-left:4px solid ${ti.color};">
+    <h2 style="margin:0 0 4px;">😊 Feelings &amp; States</h2>
+    <p style="font-size:12px;color:#aaa;margin-bottom:10px;">Sentimentos e estados — full sentences showing how each feeling is actually used</p>
+    <div style="display:flex;gap:5px;flex-wrap:wrap;margin-bottom:10px;">
+      ${FEELINGS_TABS.map(t=>`<button onclick="feelingsTab='${t.key}';feelingsSearch='';renderFeelings()"
+        style="padding:5px 12px;border-radius:20px;border:1px solid ${feelingsTab===t.key?t.color:'#ddd'};background:${feelingsTab===t.key?t.color:'#fff'};color:${feelingsTab===t.key?'#fff':'#555'};cursor:pointer;font-size:11px;font-family:inherit;font-weight:600;">${t.label}</button>`).join('')}
+    </div>
+    <input class="search-inp" placeholder="🔍 Search…" value="${feelingsSearch}" oninput="feelingsSearch=this.value;renderFeelings()" style="max-width:200px;" />
+  </div>
+
+  <div style="margin-top:12px;display:flex;flex-direction:column;gap:8px;">
+    ${items.map(item=>`
+    <div style="background:#fff;border-radius:12px;padding:14px 16px;box-shadow:0 1px 5px rgba(0,0,0,0.07);border-left:4px solid ${ti.color};">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap;">
+        <span style="font-size:15px;font-weight:800;color:${ti.color};">${item.pt}</span>
+        ${item.note?.includes('FALSE FRIEND')?`<span style="font-size:10px;color:#fff;background:#c1440e;padding:2px 8px;border-radius:6px;font-weight:700;">⚠️ FALSE FRIEND</span>`:''}
+      </div>
+      <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:4px;">
+        <span style="font-size:14px;color:#1a3a5c;font-style:italic;">${item.sentence}</span>
+        <button class="speak-btn" onclick="speakText('${escQ(item.sentence.split(' / ')[0])}','pt-PT',this)">🔊</button>
+      </div>
+      <div style="font-size:12px;color:#888;margin-bottom:4px;">${item.en}</div>
+      ${item.note?`<div style="font-size:11px;color:#aaa;font-style:italic;border-top:1px solid #f0ebe4;padding-top:5px;margin-top:5px;">💡 ${item.note}</div>`:''}
+    </div>`).join('')}
+    ${items.length===0?'<p style="color:#bbb;text-align:center;padding:20px;">No results</p>':''}
   </div>`;
 }
 
