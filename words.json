@@ -3884,7 +3884,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "02/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -3892,32 +3892,38 @@
         {
           "pronoun": "eu",
           "pt": "Eu trabalho",
-          "en": "I work"
+          "en": "I work",
+          "_grammarChecked": true
         },
         {
           "pronoun": "tu",
           "pt": "Tu trabalhas",
-          "en": "You work"
+          "en": "You work",
+          "_grammarChecked": true
         },
         {
           "pronoun": "ele/ela",
           "pt": "Ela trabalha",
-          "en": "She works"
+          "en": "She works",
+          "_grammarChecked": true
         },
         {
           "pronoun": "nós",
           "pt": "Nós trabalhamos",
-          "en": "We work"
+          "en": "We work",
+          "_grammarChecked": true
         },
         {
           "pronoun": "vocês",
           "pt": "Vocês trabalham",
-          "en": "You work"
+          "en": "You work",
+          "_grammarChecked": true
         },
         {
           "pronoun": "eles/elas",
           "pt": "Eles trabalham",
-          "en": "They work"
+          "en": "They work",
+          "_grammarChecked": true
         }
       ],
       "past": [
@@ -4049,8 +4055,8 @@
         }
       ]
     },
-    "_activeTense": "present",
-    "_generatingTense": "present",
+    "_activeTense": "imperative",
+    "_generatingTense": null,
     "srs": {
       "interval": 1,
       "ease": 2.35,
