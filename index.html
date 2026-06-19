@@ -250,6 +250,7 @@
       <button class="btn-small" id="fixVerbsBtn" style="color:#c1440e;border-color:rgba(193,68,14,0.3);" onclick="fixAllVerbConjugations()" title="Fix irregular verb conjugations using built-in conjugation table">🔧 Fix verb conjugations</button>
       <button class="btn-small" id="grammarCheckAllBtn" style="color:#1a6b3c;border-color:rgba(26,107,60,0.3);" onclick="grammarCheckAll()" title="Grammar check all existing sentences using LanguageTool">📝 Check all grammar</button>
       <button class="btn-small" style="color:#7b4ea0;border-color:rgba(123,78,160,0.3);" onclick="showBatchAddModal()" title="Paste or upload a text file full of words to add them all at once">📋 Batch Add</button>
+      <button class="btn-small" style="color:#c1440e;border-color:rgba(193,68,14,0.3);" onclick="showGenMissingModal()" title="Find every verb missing conjugations and generate them all in one go">🪄 Generate missing tenses</button>
     </div>
 
     <!-- GitHub sync panel -->
@@ -5340,6 +5341,118 @@ rapidamente
   `;
 }
 
+// ═══ GENERATE MISSING TENSES ════════════════════════════════════════════════
+let genMissingQueue = [];
+let genMissingRunning = false;
+let genMissingCancelFlag = false;
+let genMissingDone = 0;
+let genMissingCurrentLabel = '';
+
+function scanMissingTenses(){
+  const tenses = ['present','past','future-peri','future-simple'];
+  const queue = [];
+  words.filter(w=>w.category==='Verb').forEach(w=>{
+    tenses.forEach(t=>{
+      const rows = w.tenses?.[t] || [];
+      if(rows.length < EP_PRONOUNS.length){
+        queue.push({ wordId:w.id, word:w.word, translation:w.translation, freq:w.freq||'common', tense:t });
+      }
+    });
+  });
+  return queue;
+}
+
+function showGenMissingModal(){
+  genMissingQueue = scanMissingTenses();
+  genMissingDone = 0;
+  genMissingRunning = false;
+  genMissingCancelFlag = false;
+  renderGenMissingBody();
+  document.getElementById('genMissingModal').style.display = 'flex';
+}
+
+function closeGenMissingModal(){
+  if(genMissingRunning) genMissingCancelFlag = true;
+  document.getElementById('genMissingModal').style.display = 'none';
+}
+
+const TENSE_LABELS_SHORT = { present:'Present', past:'Past', 'future-peri':'Fut. Perifrástico', 'future-simple':'Fut. Simples' };
+
+async function startGenMissing(){
+  if(!genMissingQueue.length) return;
+  genMissingRunning = true;
+  genMissingCancelFlag = false;
+  renderGenMissingBody();
+
+  for(let i=0; i<genMissingQueue.length; i++){
+    if(genMissingCancelFlag) break;
+    const item = genMissingQueue[i];
+    const w = words.find(x=>x.id===item.wordId);
+    genMissingCurrentLabel = `${item.word} — ${TENSE_LABELS_SHORT[item.tense]}`;
+    renderGenMissingBody();
+
+    if(w){
+      try{
+        const rows = await genVerbExamples(item.word, item.translation, item.tense, item.freq);
+        if(!w.tenses) w.tenses = {present:[],past:[],'future-peri':[],'future-simple':[]};
+        w.tenses[item.tense] = rows;
+      }catch(e){ /* skip this one, continue with the rest */ }
+    }
+    genMissingDone++;
+    if(genMissingDone % 8 === 0) await saveWords(); // periodic save so progress isn't lost
+    renderGenMissingBody();
+  }
+
+  await saveWords();
+  genMissingRunning = false;
+  renderWords();
+  renderGenMissingBody();
+}
+
+function renderGenMissingBody(){
+  const el = document.getElementById('genMissingBody'); if(!el) return;
+  const total = genMissingQueue.length;
+
+  if(total === 0){
+    el.innerHTML = `<p style="text-align:center;color:#1a6b3c;padding:20px;font-weight:600;">✅ All verbs already have complete conjugations!</p>`;
+    return;
+  }
+
+  if(!genMissingRunning && genMissingDone === 0){
+    const verbCount = new Set(genMissingQueue.map(q=>q.wordId)).size;
+    const byTense = {};
+    genMissingQueue.forEach(q=>{ byTense[q.tense] = (byTense[q.tense]||0) + 1; });
+    const estMin = Math.max(1, Math.ceil(total*3/60));
+    el.innerHTML = `
+      <div style="background:#fff8f0;border-radius:8px;padding:12px 14px;margin-bottom:14px;font-size:13px;color:#666;line-height:1.7;">
+        Found <strong>${total}</strong> missing or incomplete tense${total!==1?'s':''} across <strong>${verbCount}</strong> verb${verbCount!==1?'s':''}.
+        <br>${Object.entries(byTense).map(([t,n])=>`${TENSE_LABELS_SHORT[t]}: ${n}`).join(' · ')}
+        <br><span style="color:#c1440e;">⏱ Estimated time: ~${estMin} minute${estMin!==1?'s':''}</span> (you can stop anytime — progress is saved as it goes).
+      </div>
+      <button onclick="startGenMissing()" style="width:100%;padding:11px;border-radius:8px;border:none;background:#c1440e;color:#fff;cursor:pointer;font-family:inherit;font-size:13px;font-weight:600;">
+        🪄 Generate all ${total} missing tense${total!==1?'s':''}
+      </button>
+    `;
+    return;
+  }
+
+  const pct = Math.round((genMissingDone/total)*100);
+  const status = genMissingRunning ? '⏳ Generating…' : (genMissingCancelFlag ? '⏹ Stopped — progress saved' : '✅ Done!');
+  const statusColor = genMissingRunning ? '#c1440e' : (genMissingCancelFlag ? '#888' : '#1a6b3c');
+
+  el.innerHTML = `
+    <div style="margin-bottom:8px;font-size:13px;color:${statusColor};font-weight:600;">${status}</div>
+    ${genMissingRunning ? `<div style="font-size:12px;color:#888;margin-bottom:10px;font-style:italic;">Working on: ${genMissingCurrentLabel}</div>` : ''}
+    <div style="background:#fde8df;border-radius:4px;height:8px;overflow:hidden;margin-bottom:8px;">
+      <div style="height:100%;background:#c1440e;width:${pct}%;transition:width 0.3s;border-radius:4px;"></div>
+    </div>
+    <div style="font-size:12px;color:#888;margin-bottom:14px;">${genMissingDone} / ${total} (${pct}%)</div>
+    ${genMissingRunning
+      ? `<button onclick="genMissingCancelFlag=true" style="width:100%;padding:9px;border-radius:8px;border:1px solid #ddd;background:#fff;cursor:pointer;font-family:inherit;font-size:12px;color:#888;">⏹ Stop</button>`
+      : `<button onclick="closeGenMissingModal()" style="width:100%;padding:9px;border-radius:8px;border:none;background:#1a6b3c;color:#fff;cursor:pointer;font-family:inherit;font-size:13px;font-weight:600;">Close</button>`}
+  `;
+}
+
 // ═══ PATTERN EXTRACTOR ════════════════════════════════════════════════════
 
 // Known endings for each pattern (longest first so we match -ção before -ão)
@@ -6800,6 +6913,19 @@ setTimeout(()=>{ if(typeof initFlashcards==='function') initFlashcards(); }, 100
       <button onclick="closeBatchAddModal()" style="background:rgba(255,255,255,0.15);border:none;color:#fff;border-radius:8px;padding:6px 12px;cursor:pointer;font-size:18px;line-height:1;">✕</button>
     </div>
     <div id="batchAddBody" style="padding:16px;"></div>
+  </div>
+</div>
+<!-- ═══ GENERATE MISSING TENSES MODAL ═══ -->
+<div id="genMissingModal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:1000;align-items:flex-start;justify-content:center;padding:20px;overflow-y:auto;">
+  <div style="background:#f5f0eb;border-radius:16px;width:100%;max-width:520px;max-height:90vh;overflow-y:auto;box-shadow:0 8px 40px rgba(0,0,0,0.3);">
+    <div style="background:#c1440e;color:#fff;padding:16px 20px;border-radius:16px 16px 0 0;display:flex;align-items:center;justify-content:space-between;">
+      <div>
+        <div style="font-size:16px;font-weight:700;">🪄 Generate Missing Tenses</div>
+        <div style="font-size:11px;color:#fde8df;margin-top:2px;">Finds every verb with incomplete conjugations and fills them in</div>
+      </div>
+      <button onclick="closeGenMissingModal()" style="background:rgba(255,255,255,0.15);border:none;color:#fff;border-radius:8px;padding:6px 12px;cursor:pointer;font-size:18px;line-height:1;">✕</button>
+    </div>
+    <div id="genMissingBody" style="padding:16px;"></div>
   </div>
 </div>
 </body>
