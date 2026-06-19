@@ -15247,5 +15247,1859 @@
       "future-peri": [],
       "future-simple": []
     }
+  },
+  {
+    "id": 1781879155534,
+    "word": "estar",
+    "translation": "to be",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155535,
+    "word": "haver",
+    "translation": "to have",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155536,
+    "word": "poder",
+    "translation": "to be able",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155537,
+    "word": "pôr",
+    "translation": "to put",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155538,
+    "word": "dormir",
+    "translation": "to sleep",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155539,
+    "word": "entrar",
+    "translation": "to enter",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155540,
+    "word": "regressar",
+    "translation": "to return",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155541,
+    "word": "andar",
+    "translation": "to walk",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155542,
+    "word": "parar",
+    "translation": "to stop",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155543,
+    "word": "caminhar",
+    "translation": "to walk",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155544,
+    "word": "subir",
+    "translation": "to go up",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155545,
+    "word": "descer",
+    "translation": "to go down",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155546,
+    "word": "levantar-se",
+    "translation": "to get up",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155547,
+    "word": "sentar-se",
+    "translation": "to sit down",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155548,
+    "word": "deitar-se",
+    "translation": "to lie down",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155549,
+    "word": "acordar",
+    "translation": "to wake up",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155550,
+    "word": "despertar",
+    "translation": "to wake up",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155551,
+    "word": "vestir-se",
+    "translation": "to get dressed",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155552,
+    "word": "despir-se",
+    "translation": "to undress",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155553,
+    "word": "calçar",
+    "translation": "to put on shoes",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155554,
+    "word": "lavar-se",
+    "translation": "to wash oneself",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155555,
+    "word": "banhar-se",
+    "translation": "to bathe",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155556,
+    "word": "pentear-se",
+    "translation": "to comb one's hair",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155557,
+    "word": "barbear-se",
+    "translation": "to shave",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155558,
+    "word": "maquilhar-se",
+    "translation": "to put on makeup",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155559,
+    "word": "lavar",
+    "translation": "to wash",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155560,
+    "word": "limpar",
+    "translation": "to clean",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155561,
+    "word": "arrumar",
+    "translation": "to tidy up",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155562,
+    "word": "cozinhar",
+    "translation": "to cook",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155563,
+    "word": "cozer",
+    "translation": "to cook",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155564,
+    "word": "fritar",
+    "translation": "to fry",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155565,
+    "word": "assar",
+    "translation": "to roast",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155566,
+    "word": "cortar",
+    "translation": "to cut",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155567,
+    "word": "picar",
+    "translation": "to chop",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155568,
+    "word": "misturar",
+    "translation": "to mix",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155569,
+    "word": "temperar",
+    "translation": "to season",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155570,
+    "word": "provar",
+    "translation": "to try",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155571,
+    "word": "cheirar",
+    "translation": "to smell",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155572,
+    "word": "comprar",
+    "translation": "to buy",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155573,
+    "word": "pagar",
+    "translation": "to pay",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155574,
+    "word": "gastar",
+    "translation": "to spend",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155575,
+    "word": "ganhar",
+    "translation": "to win",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155576,
+    "word": "poupar",
+    "translation": "to save",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155577,
+    "word": "trabalhar",
+    "translation": "to work",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155578,
+    "word": "ensinar",
+    "translation": "to teach",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155579,
+    "word": "lembrar",
+    "translation": "to remember",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155580,
+    "word": "lembrar-se",
+    "translation": "to remember",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155581,
+    "word": "esquecer-se",
+    "translation": "to forget",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155582,
+    "word": "encontrar",
+    "translation": "to find",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155583,
+    "word": "procurar",
+    "translation": "to look for",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155584,
+    "word": "perder",
+    "translation": "to lose",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155585,
+    "word": "achar",
+    "translation": "to find",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155586,
+    "word": "adorar",
+    "translation": "to adore",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155587,
+    "word": "odiar",
+    "translation": "to hate",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155588,
+    "word": "detestar",
+    "translation": "to detest",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155589,
+    "word": "preferir",
+    "translation": "to prefer",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155590,
+    "word": "precisar",
+    "translation": "to need",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155591,
+    "word": "esperar",
+    "translation": "to wait",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155592,
+    "word": "ajudar",
+    "translation": "to help",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155593,
+    "word": "mostrar",
+    "translation": "to show",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155594,
+    "word": "explicar",
+    "translation": "to explain",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155595,
+    "word": "perguntar",
+    "translation": "to ask",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155596,
+    "word": "contar",
+    "translation": "to tell",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155597,
+    "word": "escutar",
+    "translation": "to listen",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155598,
+    "word": "gritar",
+    "translation": "to shout",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155599,
+    "word": "rir",
+    "translation": "to laugh",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155600,
+    "word": "sorrir",
+    "translation": "to smile",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155601,
+    "word": "chorar",
+    "translation": "to cry",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155602,
+    "word": "cantar",
+    "translation": "to sing",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155603,
+    "word": "dançar",
+    "translation": "to dance",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155604,
+    "word": "jogar",
+    "translation": "to play",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155605,
+    "word": "viajar",
+    "translation": "to travel",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155606,
+    "word": "voar",
+    "translation": "to fly",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155607,
+    "word": "conduzir",
+    "translation": "to drive",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155608,
+    "word": "dirigir",
+    "translation": "to drive",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155609,
+    "word": "nadar",
+    "translation": "to swim",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155610,
+    "word": "fechar",
+    "translation": "to close",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155611,
+    "word": "desligar",
+    "translation": "to turn off",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155612,
+    "word": "começar",
+    "translation": "to start",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155613,
+    "word": "acabar",
+    "translation": "to finish",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155614,
+    "word": "terminar",
+    "translation": "to finish",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155615,
+    "word": "continuar",
+    "translation": "to continue",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155616,
+    "word": "tentar",
+    "translation": "to try",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155617,
+    "word": "conseguir",
+    "translation": "to achieve",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155618,
+    "word": "deixar",
+    "translation": "to leave",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155619,
+    "word": "permitir",
+    "translation": "to allow",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155620,
+    "word": "proibir",
+    "translation": "to prohibit",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155621,
+    "word": "mudar",
+    "translation": "to change",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155622,
+    "word": "crescer",
+    "translation": "to grow",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155623,
+    "word": "nascer",
+    "translation": "to be born",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155624,
+    "word": "morrer",
+    "translation": "to die",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155625,
+    "word": "casar-se",
+    "translation": "to get married",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155626,
+    "word": "separar-se",
+    "translation": "to get separated",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155627,
+    "word": "divorciar-se",
+    "translation": "to get divorced",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155628,
+    "word": "acontecer",
+    "translation": "to happen",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155629,
+    "word": "sentir-se",
+    "translation": "to feel",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155630,
+    "word": "doer",
+    "translation": "to hurt",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155631,
+    "word": "custar",
+    "translation": "to cost",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155632,
+    "word": "valer",
+    "translation": "to be worth",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155633,
+    "word": "servir",
+    "translation": "to serve",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155634,
+    "word": "levar",
+    "translation": "to take",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155635,
+    "word": "enviar",
+    "translation": "to send",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155636,
+    "word": "mandar",
+    "translation": "to send",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155637,
+    "word": "pedir",
+    "translation": "to ask",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155638,
+    "word": "oferecer",
+    "translation": "to offer",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155639,
+    "word": "emprestar",
+    "translation": "to lend",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155640,
+    "word": "devolver",
+    "translation": "to return",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155641,
+    "word": "guardar",
+    "translation": "to keep",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155642,
+    "word": "esconder",
+    "translation": "to hide",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155643,
+    "word": "apontar",
+    "translation": "to point",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155644,
+    "word": "indicar",
+    "translation": "to indicate",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155645,
+    "word": "marcar",
+    "translation": "to mark",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155646,
+    "word": "reservar",
+    "translation": "to reserve",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155647,
+    "word": "cancelar",
+    "translation": "to cancel",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155648,
+    "word": "confirmar",
+    "translation": "to confirm",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155649,
+    "word": "organizar",
+    "translation": "to organize",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155650,
+    "word": "planear",
+    "translation": "to plan",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155651,
+    "word": "imaginar",
+    "translation": "to imagine",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155652,
+    "word": "sonhar",
+    "translation": "to dream",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155653,
+    "word": "acreditar",
+    "translation": "to believe",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155654,
+    "word": "duvidar",
+    "translation": "to doubt",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155655,
+    "word": "confiar",
+    "translation": "to trust",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155656,
+    "word": "desconfiar",
+    "translation": "to distrust",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155657,
+    "word": "suspeitar",
+    "translation": "to suspect",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155658,
+    "word": "concordar",
+    "translation": "to agree",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155659,
+    "word": "discordar",
+    "translation": "to disagree",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155660,
+    "word": "discutir",
+    "translation": "to discuss",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155661,
+    "word": "lutar",
+    "translation": "to fight",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155662,
+    "word": "vencer",
+    "translation": "to win",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155663,
+    "word": "praticar",
+    "translation": "to practice",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155664,
+    "word": "treinar",
+    "translation": "to train",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155665,
+    "word": "descansar",
+    "translation": "to rest",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155666,
+    "word": "relaxar",
+    "translation": "to relax",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155667,
+    "word": "divertir-se",
+    "translation": "to have fun",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155668,
+    "word": "aborrecer-se",
+    "translation": "to get bored",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155669,
+    "word": "preocupar-se",
+    "translation": "to worry",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155670,
+    "word": "assustar-se",
+    "translation": "to get scared",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155671,
+    "word": "surpreender-se",
+    "translation": "to be surprised",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155672,
+    "word": "alegrar-se",
+    "translation": "to be glad",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155673,
+    "word": "entristecer-se",
+    "translation": "to be saddened",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155674,
+    "word": "zangar-se",
+    "translation": "to get angry",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155675,
+    "word": "acalmar-se",
+    "translation": "to calm down",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155676,
+    "word": "irritar",
+    "translation": "to irritate",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155677,
+    "word": "chatear",
+    "translation": "to annoy",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155678,
+    "word": "incomodar",
+    "translation": "to disturb",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155679,
+    "word": "interromper",
+    "translation": "to interrupt",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155680,
+    "word": "seguir",
+    "translation": "to follow",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155681,
+    "word": "atrasar-se",
+    "translation": "to be late",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155682,
+    "word": "apressar-se",
+    "translation": "to hurry",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155683,
+    "word": "visitar",
+    "translation": "to visit",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155684,
+    "word": "apresentar",
+    "translation": "to present",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155685,
+    "word": "cumprimentar",
+    "translation": "to greet",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155686,
+    "word": "despedir-se",
+    "translation": "to say goodbye",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155687,
+    "word": "convidar",
+    "translation": "to invite",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155688,
+    "word": "aceitar",
+    "translation": "to accept",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155689,
+    "word": "recusar",
+    "translation": "to refuse",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155690,
+    "word": "rejeitar",
+    "translation": "to reject",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155691,
+    "word": "propor",
+    "translation": "to propose",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155692,
+    "word": "sugerir",
+    "translation": "to suggest",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155693,
+    "word": "recomendar",
+    "translation": "to recommend",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155694,
+    "word": "avisar",
+    "translation": "to warn",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155695,
+    "word": "informar",
+    "translation": "to inform",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155696,
+    "word": "comunicar",
+    "translation": "to communicate",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155697,
+    "word": "anunciar",
+    "translation": "to announce",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155698,
+    "word": "publicar",
+    "translation": "to publish",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155699,
+    "word": "imprimir",
+    "translation": "to print",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155700,
+    "word": "copiar",
+    "translation": "to copy",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155701,
+    "word": "colar",
+    "translation": "to glue",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155702,
+    "word": "apagar",
+    "translation": "to erase",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155703,
+    "word": "gravar",
+    "translation": "to record",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155704,
+    "word": "filmar",
+    "translation": "to film",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155705,
+    "word": "fotografar",
+    "translation": "to photograph",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155706,
+    "word": "pintar",
+    "translation": "to paint",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155707,
+    "word": "construir",
+    "translation": "to build",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155708,
+    "word": "destruir",
+    "translation": "to destroy",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155709,
+    "word": "reparar",
+    "translation": "to repair",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155710,
+    "word": "arranjar",
+    "translation": "to arrange",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155711,
+    "word": "consertar",
+    "translation": "to repair",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155712,
+    "word": "estragar",
+    "translation": "to spoil",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155713,
+    "word": "quebrar",
+    "translation": "to break",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155714,
+    "word": "cair",
+    "translation": "to fall",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155715,
+    "word": "caber",
+    "translation": "to fit",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155716,
+    "word": "crer",
+    "translation": "to believe",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155717,
+    "word": "medir",
+    "translation": "to measure",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155718,
+    "word": "repetir",
+    "translation": "to repeat",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155719,
+    "word": "vestir",
+    "translation": "to dress",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155720,
+    "word": "ferir",
+    "translation": "to wound",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155721,
+    "word": "fugir",
+    "translation": "to flee",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155722,
+    "word": "descobrir",
+    "translation": "to discover",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155723,
+    "word": "cobrir",
+    "translation": "to cover",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155724,
+    "word": "sofrer",
+    "translation": "to suffer",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155725,
+    "word": "desaparecer",
+    "translation": "to disappear",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155726,
+    "word": "merecer",
+    "translation": "to deserve",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155727,
+    "word": "permanecer",
+    "translation": "to remain",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155728,
+    "word": "pertencer",
+    "translation": "to belong",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155729,
+    "word": "estender",
+    "translation": "to extend",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155730,
+    "word": "perceber",
+    "translation": "to perceive",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155731,
+    "word": "resolver",
+    "translation": "to resolve",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155732,
+    "word": "envolver",
+    "translation": "to involve",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155733,
+    "word": "volver",
+    "translation": "to return",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155734,
+    "word": "mover",
+    "translation": "to move",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155735,
+    "word": "mexer",
+    "translation": "to touch",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155736,
+    "word": "prometer",
+    "translation": "to promise",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155737,
+    "word": "ocorrer",
+    "translation": "to occur",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155738,
+    "word": "percorrer",
+    "translation": "to traverse",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1781879155739,
+    "word": "discorrer",
+    "translation": "to discourse",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "19/06/2026"
   }
 ]
