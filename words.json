@@ -397,70 +397,70 @@
         },
         {
           "pronoun": "tu",
-          "pt": "Tu ouves rádio",
-          "en": "You listen to the radio",
+          "pt": "Tu ouves TV",
+          "en": "You listen to TV",
           "_grammarChecked": true
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela ouve TV",
-          "en": "She listens to TV",
+          "pt": "Ela ouve rádio",
+          "en": "She listens to the radio",
           "_grammarChecked": true
         },
         {
           "pronoun": "nós",
-          "pt": "Nós ouvimos tudo",
-          "en": "We listen to everything",
+          "pt": "Nós ouvimos notícias",
+          "en": "We listen to news",
           "_grammarChecked": true
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês ouvem isso",
-          "en": "You guys listen to this",
+          "pt": "Vocês ouvem música",
+          "en": "You listen to music",
           "_grammarChecked": true
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles ouvem música",
-          "en": "They listen to music",
+          "pt": "Eles ouvem rádio",
+          "en": "They listen to the radio",
           "_grammarChecked": true
         }
       ],
       "past": [
         {
           "pronoun": "eu",
-          "pt": "Eu ouvi música",
-          "en": "I listened to music",
+          "pt": "Eu ouvi",
+          "en": "I listened",
           "_grammarChecked": true
         },
         {
           "pronoun": "tu",
-          "pt": "Tu ouviste o som",
-          "en": "You listened to the sound",
+          "pt": "Tu ouviste",
+          "en": "You listened",
           "_grammarChecked": true
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela ouviu o bebé",
-          "en": "She listened to the baby",
+          "pt": "Ela ouviu",
+          "en": "She listened",
           "_grammarChecked": true
         },
         {
           "pronoun": "nós",
-          "pt": "Nós ouvimos um barulho",
-          "en": "We listened to a noise",
+          "pt": "Nós ouvimos",
+          "en": "We listened",
           "_grammarChecked": true
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês ouviram a notícia",
-          "en": "You listened to the news",
+          "pt": "Vocês ouviram",
+          "en": "You listened",
           "_grammarChecked": true
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles ouviram o professor",
-          "en": "They listened to the teacher",
+          "pt": "Eles ouviram",
+          "en": "They listened",
           "_grammarChecked": true
         }
       ],
@@ -561,14 +561,14 @@
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês ouvirão notícias",
-          "en": "You will hear news",
+          "pt": "Vocês ouvirão a rádio",
+          "en": "You will listen to the radio",
           "_grammarChecked": true
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles ouvirão um aviso",
-          "en": "They will hear a warning",
+          "pt": "Eles ouvirão um concerto",
+          "en": "They will listen to a concert",
           "_grammarChecked": true
         }
       ]
