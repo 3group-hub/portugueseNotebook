@@ -56,8 +56,8 @@
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela quer ler",
-          "en": "She wants to read",
+          "pt": "Ela quer estudar",
+          "en": "She wants to study",
           "_grammarChecked": true
         },
         {
@@ -68,14 +68,14 @@
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês querem ir",
-          "en": "You want to go",
+          "pt": "Vocês querem ajudar",
+          "en": "You want to help",
           "_grammarChecked": true
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles querem estudar",
-          "en": "They want to study",
+          "pt": "Eles querem correr",
+          "en": "They want to run",
           "_grammarChecked": true
         }
       ],
@@ -9363,7 +9363,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "11/05/2026",
-    "generatingExample": false,
+    "generatingExample": true,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -9517,7 +9517,7 @@
       ]
     },
     "_activeTense": "imperative",
-    "_generatingTense": null
+    "_generatingTense": "imperative"
   },
   {
     "id": 1778487793415,
