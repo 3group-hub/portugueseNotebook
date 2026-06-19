@@ -6076,8 +6076,8 @@
         },
         {
           "pronoun": "tu",
-          "pt": "Tu vens também",
-          "en": "You come too",
+          "pt": "Tu vens comigo",
+          "en": "You come with me",
           "_grammarChecked": true
         },
         {
@@ -6119,7 +6119,7 @@
           "_grammarChecked": true
         },
         {
-          "pronoun": "ela",
+          "pronoun": "ele/ela",
           "pt": "Ela veio",
           "en": "She came",
           "_grammarChecked": true
@@ -6137,7 +6137,7 @@
           "_grammarChecked": true
         },
         {
-          "pronoun": "eles",
+          "pronoun": "eles/elas",
           "pt": "Eles vieram",
           "en": "They came",
           "_grammarChecked": true
@@ -6147,32 +6147,66 @@
         {
           "pronoun": "eu",
           "pt": "Eu vou vir",
-          "en": "I'm going to come"
+          "en": "I am going to come",
+          "_grammarChecked": true
         },
         {
           "pronoun": "tu",
-          "pt": "vais vir vens",
-          "en": "You're going to come"
+          "pt": "Tu vens",
+          "en": "You are going to come",
+          "_grammarFixes": [
+            {
+              "orig": "vais vir",
+              "best": "vens",
+              "rule": "2. Expressões prolixas: vais vir"
+            }
+          ],
+          "_grammarChecked": true
         },
         {
           "pronoun": "ele/ela",
-          "pt": "vai vir vem",
-          "en": "He/She's going to come"
+          "pt": "Ela vem",
+          "en": "She is going to come",
+          "_grammarFixes": [
+            {
+              "orig": "vai vir",
+              "best": "vem",
+              "rule": "2. Expressões prolixas: vai vir"
+            }
+          ],
+          "_grammarChecked": true
         },
         {
           "pronoun": "nós",
           "pt": "Nós vamos vir",
-          "en": "We're going to come"
+          "en": "We are going to come",
+          "_grammarChecked": true
         },
         {
           "pronoun": "vocês",
-          "pt": "vão virês vêm",
-          "en": "You're going to come"
+          "pt": "Vocês vêm",
+          "en": "You are going to come",
+          "_grammarFixes": [
+            {
+              "orig": "vão vir",
+              "best": "vêm",
+              "rule": "2. Expressões prolixas: vão vir"
+            }
+          ],
+          "_grammarChecked": true
         },
         {
           "pronoun": "eles/elas",
-          "pt": "vão vir vêm",
-          "en": "They're going to come"
+          "pt": "Eles vêm",
+          "en": "They are going to come",
+          "_grammarFixes": [
+            {
+              "orig": "vão vir",
+              "best": "vêm",
+              "rule": "2. Expressões prolixas: vão vir"
+            }
+          ],
+          "_grammarChecked": true
         }
       ],
       "future-simple": [
@@ -6184,14 +6218,14 @@
         },
         {
           "pronoun": "tu",
-          "pt": "Tu virás logo",
-          "en": "You will come soon",
+          "pt": "Tu virás cedo",
+          "en": "You will come early",
           "_grammarChecked": true
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela virá depois",
-          "en": "She will come later",
+          "pt": "Ela virá tarde",
+          "en": "She will come late",
           "_grammarChecked": true
         },
         {
@@ -6202,14 +6236,14 @@
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês virão também",
-          "en": "You will come too",
+          "pt": "Vocês virão depois",
+          "en": "You will come later",
           "_grammarChecked": true
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles virão mais tarde",
-          "en": "They will come later",
+          "pt": "Eles virão também",
+          "en": "They will come too",
           "_grammarChecked": true
         }
       ],
