@@ -12012,7 +12012,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "14/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -12116,20 +12116,21 @@
       "imperative": [
         {
           "pronoun": "tu (informal)",
-          "pt": "Chega aqui",
-          "en": "Arrive here",
+          "pt": "Chega aqui por favor",
+          "en": "Arrive here please",
           "_corrected": true,
           "_grammarChecked": true
         },
         {
           "pronoun": "você (formal)",
-          "pt": "Chegue à hora certa",
-          "en": "Arrive on time",
+          "pt": "Chegue ao ponto",
+          "en": "Arrive at the point",
+          "_corrected": true,
           "_grammarChecked": true
         }
       ]
     },
-    "_generatingTense": "imperative",
+    "_generatingTense": null,
     "_activeTense": "imperative"
   },
   {
