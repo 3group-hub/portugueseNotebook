@@ -6774,8 +6774,8 @@
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela é bonita",
-          "en": "She is beautiful",
+          "pt": "Ela é alta",
+          "en": "She is tall",
           "_grammarChecked": true
         },
         {
@@ -6786,8 +6786,8 @@
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês são simpáticos",
-          "en": "You are nice",
+          "pt": "Vocês são bons",
+          "en": "You are good",
           "_grammarChecked": true
         },
         {
@@ -6824,14 +6824,14 @@
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês foram simpáticos",
-          "en": "You were nice",
+          "pt": "Vocês foram legais",
+          "en": "You were cool",
           "_grammarChecked": true
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles foram grandes",
-          "en": "They were big",
+          "pt": "Eles foram simpáticos",
+          "en": "They were nice",
           "_grammarChecked": true
         }
       ],
@@ -6862,14 +6862,14 @@
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês vão ser felizes",
-          "en": "You will be happy",
+          "pt": "Vocês vão ser alunos",
+          "en": "You will be students",
           "_grammarChecked": true
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles vão ser pais",
-          "en": "They will be parents",
+          "pt": "Eles vão ser professores",
+          "en": "They will be teachers",
           "_grammarChecked": true
         }
       ],
@@ -6882,14 +6882,14 @@
         },
         {
           "pronoun": "tu",
-          "pt": "Tu serás rico",
-          "en": "You will be rich",
+          "pt": "Tu serás feliz",
+          "en": "You will be happy",
           "_grammarChecked": true
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela será boa",
-          "en": "She will be good",
+          "pt": "Ela será feliz",
+          "en": "She will be happy",
           "_grammarChecked": true
         },
         {
@@ -6906,8 +6906,8 @@
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles serão bons",
-          "en": "They will be good",
+          "pt": "Eles serão felizes",
+          "en": "They will be happy",
           "_grammarChecked": true
         }
       ],
