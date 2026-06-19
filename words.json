@@ -18963,10 +18963,158 @@
     "examples": [],
     "addedAt": "19/06/2026",
     "tenses": {
-      "present": [],
-      "past": [],
-      "future-peri": [],
-      "future-simple": []
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu posso fazer isso",
+          "en": "I can do this",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu podes ajudar",
+          "en": "You can help",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela pode vir",
+          "en": "She can come",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós podemos ir",
+          "en": "We can go",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês podem vir",
+          "en": "You can come",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles podem fazer",
+          "en": "They can do",
+          "_grammarChecked": true
+        }
+      ],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu pude fazer isso",
+          "en": "I was able to do this",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu pudeste responder",
+          "en": "You were able to answer",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela pôde ir embora",
+          "en": "She was able to leave",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós pudemos ajudar",
+          "en": "We were able to help",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês puderam vir",
+          "en": "You were able to come",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles puderam ganhar",
+          "en": "They were able to win",
+          "_grammarChecked": true
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou poder ajudar",
+          "en": "I will be able to help",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais poder fazer",
+          "en": "You will be able to do",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai poder ir",
+          "en": "She will be able to go",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos poder ajudar",
+          "en": "We will be able to help",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão poder fazer",
+          "en": "You will be able to do",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão poder ir",
+          "en": "They will be able to go",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu poderei fazer isso",
+          "en": "I will be able to do this",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu poderás ajudar",
+          "en": "You will be able to help",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela poderá vir",
+          "en": "She will be able to come",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós poderemos ir",
+          "en": "We will be able to go",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês poderão fazer",
+          "en": "You will be able to do",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles poderão ajudar",
+          "en": "They will be able to help",
+          "_grammarChecked": true
+        }
+      ]
     }
   },
   {
@@ -18978,8 +19126,82 @@
     "examples": [],
     "addedAt": "19/06/2026",
     "tenses": {
-      "present": [],
-      "past": [],
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu ponho a mesa.",
+          "en": "I set the table.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu pões a chave aqui.",
+          "en": "You put the key here.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela põe o livro na prateleira.",
+          "en": "She puts the book on the shelf.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós pomos a mesa juntos.",
+          "en": "We set the table together.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês põem as malas no carro.",
+          "en": "You put the suitcases in the car.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles põem os brinquedos na caixa.",
+          "en": "They put the toys in the box.",
+          "_grammarChecked": true
+        }
+      ],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu pus o livro na mesa",
+          "en": "I put the book on the table",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu puseste o telemóvel no bolso",
+          "en": "You put the mobile phone in your pocket",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela pôs a chave na porta",
+          "en": "She put the key in the door",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós pusemos a comida no forno",
+          "en": "We put the food in the oven",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês puseram o carro na garagem",
+          "en": "You put the car in the garage",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles puseram os brinquedos na caixa",
+          "en": "They put the toys in the box",
+          "_grammarChecked": true
+        }
+      ],
       "future-peri": [],
       "future-simple": []
     }
