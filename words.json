@@ -20853,7 +20853,50 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [],
+      "past": [],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou tentar",
+          "en": "I will try",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais tentar",
+          "en": "You will try",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele vai tentar",
+          "en": "He/She will try",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos tentar",
+          "en": "We will try",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão tentar",
+          "en": "You will try",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão tentar",
+          "en": "They will try",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": []
+    }
   },
   {
     "id": 1781879155617,
