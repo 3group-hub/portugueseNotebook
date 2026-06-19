@@ -11128,7 +11128,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "11/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -11136,32 +11136,38 @@
         {
           "pronoun": "eu",
           "pt": "Eu posso ajudar.",
-          "en": "I can help."
+          "en": "I can help.",
+          "_grammarChecked": true
         },
         {
           "pronoun": "tu",
           "pt": "Tu podes correr.",
-          "en": "You can run."
+          "en": "You can run.",
+          "_grammarChecked": true
         },
         {
           "pronoun": "ele/ela",
           "pt": "Ela pode falar.",
-          "en": "She can speak."
+          "en": "She can speak.",
+          "_grammarChecked": true
         },
         {
           "pronoun": "nós",
           "pt": "Nós podemos ir.",
-          "en": "We can go."
+          "en": "We can go.",
+          "_grammarChecked": true
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês podem comer.",
-          "en": "You can eat."
+          "pt": "Vocês podem ajudar.",
+          "en": "You can help.",
+          "_grammarChecked": true
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles podem jogar.",
-          "en": "They can play."
+          "pt": "Eles podem correr.",
+          "en": "They can run.",
+          "_grammarChecked": true
         }
       ],
       "past": [],
@@ -11169,7 +11175,7 @@
       "future-simple": []
     },
     "_activeTense": "future-peri",
-    "_generatingTense": "future-peri"
+    "_generatingTense": null
   },
   {
     "id": 1778509453360,
