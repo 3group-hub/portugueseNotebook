@@ -15650,7 +15650,44 @@
           "en": "They had dinner"
         }
       ],
-      "future-peri": [],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou jantar",
+          "en": "I will have dinner",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais jantar",
+          "en": "You will have dinner",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai jantar",
+          "en": "She will have dinner",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos jantar",
+          "en": "We will have dinner",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão jantar",
+          "en": "You will have dinner",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão jantar",
+          "en": "They will have dinner",
+          "_grammarChecked": true
+        }
+      ],
       "future-simple": [
         {
           "pronoun": "eu",
@@ -15800,7 +15837,44 @@
           "_grammarChecked": true
         }
       ],
-      "future-peri": [],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou descrever",
+          "en": "I will describe",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais descrever",
+          "en": "You will describe",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai descrever",
+          "en": "She will describe",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos descrever",
+          "en": "We will describe",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão descrever",
+          "en": "You will describe",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão descrever",
+          "en": "They will describe",
+          "_grammarChecked": true
+        }
+      ],
       "future-simple": [
         {
           "pronoun": "eu",
@@ -15968,9 +16042,134 @@
           "_grammarChecked": true
         }
       ],
-      "past": [],
-      "future-peri": [],
-      "future-simple": []
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu penteei o cabelo",
+          "en": "I combed my hair",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu penteaste o teu cabelo",
+          "en": "You combed your hair",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela penteou o cabelo",
+          "en": "She combed her hair",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós penteámos o cabelo",
+          "en": "We combed our hair",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês pentearam o cabelo",
+          "en": "You combed your hair",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles pentearam o cabelo",
+          "en": "They combed their hair",
+          "_grammarChecked": true
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou pentear",
+          "en": "I will comb",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais pentear",
+          "en": "You will comb",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai pentear",
+          "en": "She will comb",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos pentear",
+          "en": "We will comb",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão pentear",
+          "en": "You will comb",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão pentear",
+          "en": "They will comb",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu pentearei o meu cabelo",
+          "en": "I will comb my hair",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu pentearas o teu cabelo",
+          "en": "You will comb your hair",
+          "_grammarFixes": [
+            {
+              "orig": "penteiarás",
+              "best": "pentearas",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela penteará o seu cabelo",
+          "en": "She will comb her hair",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós pentearemos o nosso cabelo",
+          "en": "We will comb our hair",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês pentearão o vosso cabelo",
+          "en": "You will comb your hair",
+          "_grammarFixes": [
+            {
+              "orig": "penteiarão",
+              "best": "pentearão",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles pentearão o seu cabelo",
+          "en": "They will comb their hair",
+          "_grammarChecked": true
+        }
+      ]
     }
   },
   {
@@ -17632,9 +17831,155 @@
           "_grammarChecked": true
         }
       ],
-      "past": [],
-      "future-peri": [],
-      "future-simple": []
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu colhi o arroz.",
+          "en": "I spooned the rice.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu colheste o caldo.",
+          "en": "You spooned the broth.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela colheu a sopa.",
+          "en": "She spooned the soup.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós colhemos o feijão.",
+          "en": "We spooned the beans.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês colheram o guisado.",
+          "en": "You spooned the stew.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles colheram a salada.",
+          "en": "They spooned the salad.",
+          "_grammarChecked": true
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou colher",
+          "en": "I'm going to spoon",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais colher",
+          "en": "You're going to spoon",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele vai colher",
+          "en": "He/She's going to spoon",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos colher",
+          "en": "We're going to spoon",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão colher",
+          "en": "You're going to spoon",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão colher",
+          "en": "They're going to spoon",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu bolharei a sopa",
+          "en": "I will spoon the soup",
+          "_grammarFixes": [
+            {
+              "orig": "colharei",
+              "best": "bolharei",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu molharás a sopa",
+          "en": "You will spoon the soup",
+          "_grammarFixes": [
+            {
+              "orig": "colharás",
+              "best": "molharás",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela colará a sopa",
+          "en": "She will spoon the soup",
+          "_grammarFixes": [
+            {
+              "orig": "colhará",
+              "best": "colará",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós colheremos a sopa",
+          "en": "We will spoon the soup",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês olharão a sopa",
+          "en": "You will spoon the soup",
+          "_grammarFixes": [
+            {
+              "orig": "colharão",
+              "best": "olharão",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles olharão a sopa",
+          "en": "They will spoon the soup",
+          "_grammarFixes": [
+            {
+              "orig": "colharão",
+              "best": "olharão",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        }
+      ]
     }
   },
   {
