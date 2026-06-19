@@ -3090,32 +3090,38 @@
         {
           "pronoun": "eu",
           "pt": "Eu faço o jantar",
-          "en": "I do dinner"
+          "en": "I do dinner",
+          "_grammarChecked": true
         },
         {
           "pronoun": "tu",
           "pt": "Tu fazes um bolo",
-          "en": "You do a cake"
+          "en": "You do a cake",
+          "_grammarChecked": true
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela faz o trabalho",
-          "en": "She does the work"
+          "pt": "Ela faz um trabalho",
+          "en": "She does a job",
+          "_grammarChecked": true
         },
         {
           "pronoun": "nós",
           "pt": "Nós fazemos um teste",
-          "en": "We do a test"
+          "en": "We do a test",
+          "_grammarChecked": true
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês fazem um curso",
-          "en": "You do a course"
+          "pt": "Vocês fazem um jogo",
+          "en": "You do a game",
+          "_grammarChecked": true
         },
         {
           "pronoun": "eles/elas",
-          "pt": "fazem praticam desporto",
-          "en": "They do sports"
+          "pt": "Eles fazem um espetáculo",
+          "en": "They do a show",
+          "_grammarChecked": true
         }
       ],
       "past": [
@@ -3132,7 +3138,7 @@
           "_grammarChecked": true
         },
         {
-          "pronoun": "ela",
+          "pronoun": "ele/ela",
           "pt": "Ela fez",
           "en": "She did",
           "_grammarChecked": true
@@ -3150,7 +3156,7 @@
           "_grammarChecked": true
         },
         {
-          "pronoun": "eles",
+          "pronoun": "eles/elas",
           "pt": "Eles fizeram",
           "en": "They did",
           "_grammarChecked": true
@@ -3229,38 +3235,38 @@
       "future-simple": [
         {
           "pronoun": "eu",
-          "pt": "Eu farei isso",
-          "en": "I will do this",
+          "pt": "Eu farei um bolo",
+          "en": "I will make a cake",
           "_grammarChecked": true
         },
         {
           "pronoun": "tu",
-          "pt": "Tu farás bem",
-          "en": "You will do well",
+          "pt": "Tu farás um bolo",
+          "en": "You will make a cake",
           "_grammarChecked": true
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela fará tudo",
-          "en": "She will do everything",
+          "pt": "Ela fará um bolo",
+          "en": "She will make a cake",
           "_grammarChecked": true
         },
         {
           "pronoun": "nós",
-          "pt": "Nós faremos mais",
-          "en": "We will do more",
+          "pt": "Nós faremos um bolo",
+          "en": "We will make a cake",
           "_grammarChecked": true
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês farão melhor",
-          "en": "You will do better",
+          "pt": "Vocês farão um bolo",
+          "en": "You will make a cake",
           "_grammarChecked": true
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles farão tudo",
-          "en": "They will do everything",
+          "pt": "Eles farão um bolo",
+          "en": "They will make a cake",
           "_grammarChecked": true
         }
       ],
