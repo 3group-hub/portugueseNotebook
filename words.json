@@ -3082,38 +3082,38 @@
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu faço o jantar",
-          "en": "I cook dinner",
+          "pt": "Eu faço um bolo",
+          "en": "I make a cake",
           "_grammarChecked": true
         },
         {
           "pronoun": "tu",
-          "pt": "Tu fazes um bolo",
-          "en": "You make a cake",
+          "pt": "Tu fazes um desenho",
+          "en": "You make a drawing",
           "_grammarChecked": true
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela faz um trabalho",
-          "en": "She does a job",
+          "pt": "Ela faz um teste",
+          "en": "She does a test",
           "_grammarChecked": true
         },
         {
           "pronoun": "nós",
-          "pt": "Nós fazemos exercício",
-          "en": "We do exercise",
+          "pt": "Nós fazemos um jogo",
+          "en": "We play a game",
           "_grammarChecked": true
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês fazem um teste",
-          "en": "You take a test",
+          "pt": "Vocês fazem um exercício",
+          "en": "You do an exercise",
           "_grammarChecked": true
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles fazem um espetáculo",
-          "en": "They put on a show",
+          "pt": "Eles fazem um trabalho",
+          "en": "They do a job",
           "_grammarChecked": true
         }
       ],
@@ -3131,7 +3131,7 @@
           "_grammarChecked": true
         },
         {
-          "pronoun": "ele/ela",
+          "pronoun": "ela",
           "pt": "Ela fez",
           "en": "She did",
           "_grammarChecked": true
@@ -3149,7 +3149,7 @@
           "_grammarChecked": true
         },
         {
-          "pronoun": "eles/elas",
+          "pronoun": "eles",
           "pt": "Eles fizeram",
           "en": "They did",
           "_grammarChecked": true
@@ -3202,8 +3202,8 @@
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ele vai fazer",
-          "en": "He/She will do",
+          "pt": "Ela vai fazer",
+          "en": "She will do",
           "_grammarChecked": true
         },
         {
@@ -3228,38 +3228,38 @@
       "future-simple": [
         {
           "pronoun": "eu",
-          "pt": "Eu farei isso",
-          "en": "I will do this",
+          "pt": "Eu farei um bolo",
+          "en": "I will make a cake",
           "_grammarChecked": true
         },
         {
           "pronoun": "tu",
-          "pt": "Tu farás isso",
-          "en": "You will do this",
+          "pt": "Tu farás um bolo",
+          "en": "You will make a cake",
           "_grammarChecked": true
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela fará isso",
-          "en": "She will do this",
+          "pt": "Ela fará um bolo",
+          "en": "She will make a cake",
           "_grammarChecked": true
         },
         {
           "pronoun": "nós",
-          "pt": "Nós faremos isso",
-          "en": "We will do this",
+          "pt": "Nós faremos um bolo",
+          "en": "We will make a cake",
           "_grammarChecked": true
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês farão isso",
-          "en": "You will do this",
+          "pt": "Vocês farão um bolo",
+          "en": "You will make a cake",
           "_grammarChecked": true
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles farão isso",
-          "en": "They will do this",
+          "pt": "Eles farão um bolo",
+          "en": "They will make a cake",
           "_grammarChecked": true
         }
       ],
