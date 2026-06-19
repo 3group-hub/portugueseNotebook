@@ -50,14 +50,21 @@
         },
         {
           "pronoun": "tu",
-          "pt": "Tu queres um café",
-          "en": "You want a coffee",
+          "pt": "Tu queres um gelado",
+          "en": "You want an ice cream",
+          "_grammarFixes": [
+            {
+              "orig": "sorvete",
+              "best": "gelado",
+              "rule": "Brasileirismo: 1. palavras confundidas com as de Portugal"
+            }
+          ],
           "_grammarChecked": true
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela quer um chá",
-          "en": "She wants a tea",
+          "pt": "Ela quer um café",
+          "en": "She wants a coffee",
           "_grammarChecked": true
         },
         {
@@ -88,14 +95,14 @@
         },
         {
           "pronoun": "tu",
-          "pt": "Tu quiseste um carro",
-          "en": "You wanted a car",
+          "pt": "Tu quiseste um café",
+          "en": "You wanted a coffee",
           "_grammarChecked": true
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela quis um livro",
-          "en": "She wanted a book",
+          "pt": "Ela quis um chá",
+          "en": "She wanted a tea",
           "_grammarChecked": true
         },
         {
@@ -112,8 +119,8 @@
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles quiseram comer",
-          "en": "They wanted to eat",
+          "pt": "Eles quiseram dormir",
+          "en": "They wanted to sleep",
           "_grammarChecked": true
         }
       ],
@@ -133,8 +140,8 @@
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela vai querer",
-          "en": "She will want",
+          "pt": "Ele vai querer",
+          "en": "He/She will want",
           "_grammarChecked": true
         },
         {
@@ -177,27 +184,20 @@
         },
         {
           "pronoun": "nós",
-          "pt": "Nós quereremos uma casa",
-          "en": "We will want a house",
-          "_grammarFixes": [
-            {
-              "orig": "um casa",
-              "best": "uma casa",
-              "rule": "Concordância: Geral"
-            }
-          ],
+          "pt": "Nós quereremos ir",
+          "en": "We will want to go",
           "_grammarChecked": true
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês quererão um telefone",
-          "en": "You will want a phone",
+          "pt": "Vocês quererão jogar",
+          "en": "You will want to play",
           "_grammarChecked": true
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles quererão um computador",
-          "en": "They will want a computer",
+          "pt": "Eles quererão comer",
+          "en": "They will want to eat",
           "_grammarChecked": true
         }
       ]
