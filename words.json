@@ -5668,6 +5668,89 @@
           "en": "Write please",
           "_grammarChecked": true
         }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou escrever",
+          "en": "I will write",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais escrever",
+          "en": "You will write",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele/Ela vai escrever",
+          "en": "He/She will write",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos escrever",
+          "en": "We will write",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão escrever",
+          "en": "You will write",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles/Elas vão escrever",
+          "en": "They will write",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu escreverei uma carta.",
+          "en": "I will write a letter.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu escreverás um endereço eletrónico.",
+          "en": "You will write an email.",
+          "_grammarFixes": [
+            {
+              "orig": "email",
+              "best": "endereço eletrónico",
+              "rule": "Palavras de origem estrangeira evitáveis: email"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela escreverá um livro.",
+          "en": "She will write a book.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós escreveremos uma história.",
+          "en": "We will write a story.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês escreverão um artigo.",
+          "en": "You will write an article.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles escreverão um relatório.",
+          "en": "They will write a report.",
+          "_grammarChecked": true
+        }
       ]
     },
     "_activeTense": "imperative",
@@ -5822,6 +5905,82 @@
           "pronoun": "você (formal)",
           "pt": "Ame os seus pais",
           "en": "Love your parents",
+          "_grammarChecked": true
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou amar",
+          "en": "I will love",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais amar",
+          "en": "You will love",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai amar",
+          "en": "She will love",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos amar",
+          "en": "We will love",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão amar",
+          "en": "You will love",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão amar",
+          "en": "They will love",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu amarei",
+          "en": "I will love",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu amarás",
+          "en": "You will love",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela amará",
+          "en": "She will love",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós amaremos",
+          "en": "We will love",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês amarão",
+          "en": "You will love",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles amarão",
+          "en": "They will love",
           "_grammarChecked": true
         }
       ]
@@ -6132,6 +6291,89 @@
           "pt": "Eles vão utilizar um programa.",
           "en": "They will use a program."
         }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou utilizar",
+          "en": "I will use",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais utilizar",
+          "en": "You will use",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele/Ela vai utilizar",
+          "en": "He/She will use",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos utilizar",
+          "en": "We will use",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão utilizar",
+          "en": "You will use",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles/Elas vão utilizar",
+          "en": "They will use",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu utilizarei um ‘software’",
+          "en": "I will use a software",
+          "_grammarFixes": [
+            {
+              "orig": "software",
+              "best": "‘software’",
+              "rule": "🇵🇹🎓 Estrangeirismos específicos pt_PT"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu utilizarás um mapa",
+          "en": "You will use a map",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela utilizará um telemóvel",
+          "en": "She will use a mobile phone",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós utilizaremos um guia",
+          "en": "We will use a guide",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês utilizarão um dicionário",
+          "en": "You will use a dictionary",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles utilizarão um computador",
+          "en": "They will use a computer",
+          "_grammarChecked": true
+        }
       ]
     },
     "_activeTense": "future",
@@ -6226,7 +6468,90 @@
           "en": "They obtained medals"
         }
       ],
-      "future": []
+      "future": [],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou obter",
+          "en": "I will obtain",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais obter",
+          "en": "You will obtain",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele/Ela vai obter",
+          "en": "He/She will obtain",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos obter",
+          "en": "We will obtain",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão obter",
+          "en": "You will obtain",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles/Elas vão obter",
+          "en": "They will obtain",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu obterei um prémio",
+          "en": "I will obtain an award",
+          "_grammarFixes": [
+            {
+              "orig": "prêmio",
+              "best": "prémio",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu obterás um emprego",
+          "en": "You will obtain a job",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela obterá sucesso",
+          "en": "She will obtain success",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós obteremos resultados",
+          "en": "We will obtain results",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês obterão vantagens",
+          "en": "You will obtain advantages",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles obterão benefícios",
+          "en": "They will obtain benefits",
+          "_grammarChecked": true
+        }
+      ]
     },
     "_activeTense": "present",
     "_generatingTense": null
