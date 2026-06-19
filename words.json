@@ -44,45 +44,38 @@
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu quero um bolo",
-          "en": "I want a cake",
+          "pt": "Eu quero comer",
+          "en": "I want to eat",
           "_grammarChecked": true
         },
         {
           "pronoun": "tu",
-          "pt": "Tu queres um gelado",
-          "en": "You want an ice cream",
-          "_grammarFixes": [
-            {
-              "orig": "sorvete",
-              "best": "gelado",
-              "rule": "Brasileirismo: 1. palavras confundidas com as de Portugal"
-            }
-          ],
+          "pt": "Tu queres dormir",
+          "en": "You want to sleep",
           "_grammarChecked": true
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela quer um café",
-          "en": "She wants a coffee",
+          "pt": "Ela quer estudar",
+          "en": "She wants to study",
           "_grammarChecked": true
         },
         {
           "pronoun": "nós",
-          "pt": "Nós queremos comida",
-          "en": "We want food",
+          "pt": "Nós queremos jogar",
+          "en": "We want to play",
           "_grammarChecked": true
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês querem água",
-          "en": "You want water",
+          "pt": "Vocês querem ir",
+          "en": "You want to go",
           "_grammarChecked": true
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles querem jogar",
-          "en": "They want to play",
+          "pt": "Eles querem correr",
+          "en": "They want to run",
           "_grammarChecked": true
         }
       ],
@@ -95,14 +88,14 @@
         },
         {
           "pronoun": "tu",
-          "pt": "Tu quiseste um café",
-          "en": "You wanted a coffee",
+          "pt": "Tu quiseste um carro",
+          "en": "You wanted a car",
           "_grammarChecked": true
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela quis um chá",
-          "en": "She wanted a tea",
+          "pt": "Ela quis um livro",
+          "en": "She wanted a book",
           "_grammarChecked": true
         },
         {
@@ -119,8 +112,8 @@
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles quiseram dormir",
-          "en": "They wanted to sleep",
+          "pt": "Eles quiseram comer",
+          "en": "They wanted to eat",
           "_grammarChecked": true
         }
       ],
@@ -140,8 +133,8 @@
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ele vai querer",
-          "en": "He/She will want",
+          "pt": "Ela vai querer",
+          "en": "She will want",
           "_grammarChecked": true
         },
         {
