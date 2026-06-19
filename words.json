@@ -6762,8 +6762,8 @@
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela é alta",
-          "en": "She is tall",
+          "pt": "Ela é minha amiga",
+          "en": "She is my friend",
           "_grammarChecked": true
         },
         {
@@ -6774,14 +6774,14 @@
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês são bons",
-          "en": "You are good",
+          "pt": "Vocês são grandes",
+          "en": "You are big",
           "_grammarChecked": true
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles são altos",
-          "en": "They are tall",
+          "pt": "Eles são alunos",
+          "en": "They are students",
           "_grammarChecked": true
         }
       ],
@@ -6806,20 +6806,20 @@
         },
         {
           "pronoun": "nós",
-          "pt": "Nós fomos amigos",
-          "en": "We were friends",
+          "pt": "Nós fomos felizes",
+          "en": "We were happy",
           "_grammarChecked": true
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês foram legais",
-          "en": "You were cool",
+          "pt": "Vocês foram bons",
+          "en": "You were good",
           "_grammarChecked": true
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles foram simpáticos",
-          "en": "They were nice",
+          "pt": "Eles foram bons",
+          "en": "They were good",
           "_grammarChecked": true
         }
       ],
@@ -6850,14 +6850,14 @@
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês vão ser alunos",
-          "en": "You will be students",
+          "pt": "Vocês vão ser bons",
+          "en": "You will be good",
           "_grammarChecked": true
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles vão ser professores",
-          "en": "They will be teachers",
+          "pt": "Eles vão ser grandes",
+          "en": "They will be big",
           "_grammarChecked": true
         }
       ],
