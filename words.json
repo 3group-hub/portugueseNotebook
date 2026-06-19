@@ -4149,6 +4149,82 @@
           "en": "Give me an example",
           "_grammarChecked": true
         }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou dar um livro.",
+          "en": "I will give a book.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais dar um presente.",
+          "en": "You will give a gift.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai dar de comer.",
+          "en": "She will give food.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos dar ajuda.",
+          "en": "We will give help.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão dar uma mão.",
+          "en": "You will give a hand.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão dar um concerto.",
+          "en": "They will give a concert.",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu darei um livro",
+          "en": "I will give a book",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu darás um presente",
+          "en": "You will give a gift",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela dará um beijo",
+          "en": "She will give a kiss",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós daremos ajuda",
+          "en": "We will give help",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês darão um exemplo",
+          "en": "You will give an example",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles darão uma mão",
+          "en": "They will give a hand",
+          "_grammarChecked": true
+        }
       ]
     },
     "_activeTense": "future-peri",
@@ -4473,6 +4549,82 @@
           "pronoun": "você (formal)",
           "pt": "Fale por favor",
           "en": "Speak please",
+          "_grammarChecked": true
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou falar",
+          "en": "I will speak",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais falar",
+          "en": "You will speak",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele vai falar",
+          "en": "He/She will speak",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos falar",
+          "en": "We will speak",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão falar",
+          "en": "You will speak",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão falar",
+          "en": "They will speak",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu falarei",
+          "en": "I will speak",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu falarás",
+          "en": "You will speak",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela falará",
+          "en": "She will speak",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós falaremos",
+          "en": "We will speak",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês falarão",
+          "en": "You will speak",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles falarão",
+          "en": "They will speak",
           "_grammarChecked": true
         }
       ]
@@ -4967,6 +5119,89 @@
           "en": "Eat please",
           "_grammarChecked": true
         }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou comer",
+          "en": "I will eat",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais comer",
+          "en": "You will eat",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai comer",
+          "en": "She will eat",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos comer",
+          "en": "We will eat",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão comer",
+          "en": "You will eat",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão comer",
+          "en": "They will eat",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu comerei frutas",
+          "en": "I will eat fruits",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu comerás bolo",
+          "en": "You will eat cake",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela comerá salada",
+          "en": "She will eat salad",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós comeremos piza",
+          "en": "We will eat pizza",
+          "_grammarFixes": [
+            {
+              "orig": "pizza",
+              "best": "piza",
+              "rule": "Palavras de origem estrangeira evitáveis: pizza"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês comerão carne",
+          "en": "You will eat meat",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles comerão peixe",
+          "en": "They will eat fish",
+          "_grammarChecked": true
+        }
       ]
     },
     "_activeTense": "imperative",
@@ -5217,6 +5452,82 @@
           "pronoun": "eles/elas",
           "pt": "Eles vão pensar",
           "en": "They will think"
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou pensar",
+          "en": "I will think",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais pensar",
+          "en": "You will think",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai pensar",
+          "en": "She will think",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos pensar",
+          "en": "We will think",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão pensar",
+          "en": "You will think",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão pensar",
+          "en": "They will think",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu pensarei",
+          "en": "I will think",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu pensarás",
+          "en": "You will think",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela pensará",
+          "en": "She will think",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós pensaremos",
+          "en": "We will think",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês pensarão",
+          "en": "You will think",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles pensarão",
+          "en": "They will think",
+          "_grammarChecked": true
         }
       ]
     },
