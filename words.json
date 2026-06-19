@@ -12714,7 +12714,44 @@
           "_grammarChecked": true
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu pude",
+          "en": "I could",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu pudeste",
+          "en": "You could",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela pôde",
+          "en": "She could",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós pudemos",
+          "en": "We could",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês puderam",
+          "en": "You could",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles puderam",
+          "en": "They could",
+          "_grammarChecked": true
+        }
+      ],
       "future-peri": [
         {
           "pronoun": "eu",
@@ -12753,7 +12790,44 @@
           "_grammarChecked": true
         }
       ],
-      "future-simple": []
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu poderei",
+          "en": "I will be able to",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu poderás",
+          "en": "You will be able to",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela poderá",
+          "en": "She will be able to",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós poderemos",
+          "en": "We will be able to",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês poderão",
+          "en": "You will be able to",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles poderão",
+          "en": "They will be able to",
+          "_grammarChecked": true
+        }
+      ]
     },
     "_activeTense": "imperative",
     "_generatingTense": null
@@ -13101,7 +13175,44 @@
           "en": "They took water."
         }
       ],
-      "future-peri": [],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou tomar",
+          "en": "I will take",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais tomar",
+          "en": "You will take",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai tomar",
+          "en": "She will take",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos tomar",
+          "en": "We will take",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão tomar",
+          "en": "You will take",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão tomar",
+          "en": "They will take",
+          "_grammarChecked": true
+        }
+      ],
       "future-simple": [
         {
           "pronoun": "eu",
@@ -13227,7 +13338,44 @@
           "en": "They raised the cup."
         }
       ],
-      "future-peri": [],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou levantar",
+          "en": "I will raise",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais levantar",
+          "en": "You will raise",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai levantar",
+          "en": "She will raise",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos levantar",
+          "en": "We will raise",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão levantar",
+          "en": "You will raise",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão levantar",
+          "en": "They will raise",
+          "_grammarChecked": true
+        }
+      ],
       "future-simple": [
         {
           "pronoun": "eu",
@@ -13308,7 +13456,44 @@
           "en": "They wash the plates"
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu lavei o carro",
+          "en": "I washed the car",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu lavaste a louça",
+          "en": "You washed the dishes",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela lavou a roupa",
+          "en": "She washed the clothes",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós lavámos os pratos",
+          "en": "We washed the plates",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês lavaram as mãos",
+          "en": "You washed your hands",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles lavaram o chão",
+          "en": "They washed the floor",
+          "_grammarChecked": true
+        }
+      ],
       "future-peri": [
         {
           "pronoun": "eu",
@@ -13347,7 +13532,44 @@
           "_grammarChecked": true
         }
       ],
-      "future-simple": []
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu lavarei",
+          "en": "I will wash",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu lavarás",
+          "en": "You will wash",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela lavará",
+          "en": "She will wash",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós lavaremos",
+          "en": "We will wash",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês lavarão",
+          "en": "You will wash",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles lavarão",
+          "en": "They will wash",
+          "_grammarChecked": true
+        }
+      ]
     },
     "_generatingTense": null,
     "_activeTense": "future-peri"
@@ -13461,8 +13683,166 @@
           "_grammarChecked": true
         }
       ],
-      "past": [],
-      "future-peri": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu pântanos o carro.",
+          "en": "I bogged the car.",
+          "_grammarFixes": [
+            {
+              "orig": "pantanei",
+              "best": "pântanos",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu chantageaste o trator.",
+          "en": "You bogged the tractor.",
+          "_grammarFixes": [
+            {
+              "orig": "pantaneaste",
+              "best": "chantageaste",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela pântanos o barco.",
+          "en": "She bogged the boat.",
+          "_grammarFixes": [
+            {
+              "orig": "pantanou",
+              "best": "pântanos",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós pântanãos o camião.",
+          "en": "We bogged the truck.",
+          "_grammarFixes": [
+            {
+              "orig": "pantanamos",
+              "best": "pântanãos",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês chantajaram o avião.",
+          "en": "You bogged the plane.",
+          "_grammarFixes": [
+            {
+              "orig": "pantanaram",
+              "best": "chantajaram",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles chantajaram o helicóptero.",
+          "en": "They bogged the helicopter.",
+          "_grammarFixes": [
+            {
+              "orig": "pantanaram",
+              "best": "chantajaram",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou cantar",
+          "en": "I will pant",
+          "_grammarFixes": [
+            {
+              "orig": "pantar",
+              "best": "cantar",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais cantar",
+          "en": "You will pant",
+          "_grammarFixes": [
+            {
+              "orig": "pantar",
+              "best": "cantar",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai cantar",
+          "en": "She will pant",
+          "_grammarFixes": [
+            {
+              "orig": "pantar",
+              "best": "cantar",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos cantar",
+          "en": "We will pant",
+          "_grammarFixes": [
+            {
+              "orig": "pantar",
+              "best": "cantar",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão cantar",
+          "en": "You will pant",
+          "_grammarFixes": [
+            {
+              "orig": "pantar",
+              "best": "cantar",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão cantar",
+          "en": "They will pant",
+          "_grammarFixes": [
+            {
+              "orig": "pantar",
+              "best": "cantar",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        }
+      ],
       "future-simple": []
     },
     "srs": {
