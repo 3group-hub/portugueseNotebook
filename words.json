@@ -11171,7 +11171,44 @@
         }
       ],
       "past": [],
-      "future-peri": [],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou poder",
+          "en": "I will be able",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais poder",
+          "en": "You will be able",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai poder",
+          "en": "She will be able",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos poder",
+          "en": "We will be able",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão poder",
+          "en": "You will be able",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão poder",
+          "en": "They will be able",
+          "_grammarChecked": true
+        }
+      ],
       "future-simple": []
     },
     "_activeTense": "future-peri",
