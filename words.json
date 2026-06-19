@@ -88,14 +88,21 @@
         },
         {
           "pronoun": "tu",
-          "pt": "Tu quiseste um carro",
-          "en": "You wanted a car",
+          "pt": "Tu quiseste um gelado",
+          "en": "You wanted an ice cream",
+          "_grammarFixes": [
+            {
+              "orig": "sorvete",
+              "best": "gelado",
+              "rule": "Brasileirismo: 1. palavras confundidas com as de Portugal"
+            }
+          ],
           "_grammarChecked": true
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela quis um gato",
-          "en": "She wanted a cat",
+          "pt": "Ela quis um livro",
+          "en": "She wanted a book",
           "_grammarChecked": true
         },
         {
@@ -112,8 +119,8 @@
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles quiseram comer",
-          "en": "They wanted to eat",
+          "pt": "Eles quiseram dormir",
+          "en": "They wanted to sleep",
           "_grammarChecked": true
         }
       ],
@@ -9363,7 +9370,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "11/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -9517,7 +9524,7 @@
       ]
     },
     "_activeTense": "imperative",
-    "_generatingTense": "imperative"
+    "_generatingTense": null
   },
   {
     "id": 1778487793415,
