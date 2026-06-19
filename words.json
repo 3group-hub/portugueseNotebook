@@ -18623,10 +18623,158 @@
     "examples": [],
     "addedAt": "19/06/2026",
     "tenses": {
-      "present": [],
-      "past": [],
-      "future-peri": [],
-      "future-simple": []
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Estou cansado",
+          "en": "I am tired",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Estás feliz",
+          "en": "You are happy",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela está bem",
+          "en": "She is fine",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós estamos aqui",
+          "en": "We are here",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês estão certo",
+          "en": "You are right",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles estão longe",
+          "en": "They are far",
+          "_grammarChecked": true
+        }
+      ],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu estive cansado",
+          "en": "I was tired",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu estiveste doente",
+          "en": "You were sick",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela esteve feliz",
+          "en": "She was happy",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós estivemos juntos",
+          "en": "We were together",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês estiveram atrasados",
+          "en": "You were late",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles estiveram presentes",
+          "en": "They were present",
+          "_grammarChecked": true
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou estar bem",
+          "en": "I will be fine",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais estar cansado",
+          "en": "You will be tired",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai estar feliz",
+          "en": "She will be happy",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos estar juntos",
+          "en": "We will be together",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão estar prontos",
+          "en": "You will be ready",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão estar ocupados",
+          "en": "They will be busy",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu estarei cansado",
+          "en": "I will be tired",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu estarás feliz",
+          "en": "You will be happy",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela estará presente",
+          "en": "She will be present",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós estaremos juntos",
+          "en": "We will be together",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês estarão preparados",
+          "en": "You will be prepared",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles estarão prontos",
+          "en": "They will be ready",
+          "_grammarChecked": true
+        }
+      ]
     }
   },
   {
@@ -18638,10 +18786,172 @@
     "examples": [],
     "addedAt": "19/06/2026",
     "tenses": {
-      "present": [],
-      "past": [],
-      "future-peri": [],
-      "future-simple": []
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu hei dinheiro para o cinema",
+          "en": "I have money for the cinema",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu hás uma casa grande",
+          "en": "You have a big house",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela há um emprego bom",
+          "en": "She has a good job",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós havemos um problema",
+          "en": "We have a problem",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês hão de saber disso",
+          "en": "You must know that",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles hão de chegar cedo",
+          "en": "They must arrive early",
+          "_grammarChecked": true
+        }
+      ],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu houve fome",
+          "en": "I was hungry",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu houveste medo",
+          "en": "You were afraid",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela houve dificuldades",
+          "en": "She had difficulties",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós houvemos sorte",
+          "en": "We were lucky",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês houveram sucesso",
+          "en": "You had success",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles houve problemas",
+          "en": "They had problems",
+          "_grammarFixes": [
+            {
+              "orig": "houveram",
+              "best": "houve",
+              "rule": "Verbo haver no sentido de 'existir' no plural"
+            }
+          ],
+          "_grammarChecked": true
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou haver dinheiro",
+          "en": "I will have money",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais haver sorte",
+          "en": "You will have luck",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai haver sucesso",
+          "en": "She will have success",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos haver tempo",
+          "en": "We will have time",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão haver oportunidades",
+          "en": "You will have opportunities",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão haver problemas",
+          "en": "They will have problems",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu haverei dinheiro para comprar um carro.",
+          "en": "I will have money to buy a car.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu haverás oportunidades melhores.",
+          "en": "You will have better opportunities.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela haverá sucesso na carreira.",
+          "en": "She will have success in her career.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós haveremos de resolver isso.",
+          "en": "We will have to solve this.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês haverá dificuldades se não estudarem.",
+          "en": "You will have difficulties if you don't study.",
+          "_grammarFixes": [
+            {
+              "orig": "haverão",
+              "best": "haverá",
+              "rule": "Verbo haver no sentido de 'existir' no plural"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles haverão sempre uma desculpa.",
+          "en": "They will always have an excuse.",
+          "_grammarChecked": true
+        }
+      ]
     }
   },
   {
