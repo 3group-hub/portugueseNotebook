@@ -9417,7 +9417,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "11/05/2026",
-    "generatingExample": false,
+    "generatingExample": true,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -9571,7 +9571,7 @@
       ]
     },
     "_activeTense": "imperative",
-    "_generatingTense": null
+    "_generatingTense": "imperative"
   },
   {
     "id": 1778487793415,
