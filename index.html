@@ -249,6 +249,7 @@
       <button class="btn-small" id="assessAllBtn" style="color:var(--gold);border-color:rgba(181,131,10,0.3);" onclick="assessAllLevels()">⭐ Assess levels</button>
       <button class="btn-small" id="fixVerbsBtn" style="color:#c1440e;border-color:rgba(193,68,14,0.3);" onclick="fixAllVerbConjugations()" title="Fix irregular verb conjugations using built-in conjugation table">🔧 Fix verb conjugations</button>
       <button class="btn-small" id="grammarCheckAllBtn" style="color:#1a6b3c;border-color:rgba(26,107,60,0.3);" onclick="grammarCheckAll()" title="Grammar check all existing sentences using LanguageTool">📝 Check all grammar</button>
+      <button class="btn-small" style="color:#7b4ea0;border-color:rgba(123,78,160,0.3);" onclick="showBatchAddModal()" title="Paste or upload a text file full of words to add them all at once">📋 Batch Add</button>
     </div>
 
     <!-- GitHub sync panel -->
@@ -5146,6 +5147,199 @@ function renderPattern(p,userWords,q){
 }
 function togglePattern(id){expandedPattern=expandedPattern===id?null:id;renderPatterns();}
 
+// ═══ BATCH ADD ════════════════════════════════════════════════════════════
+let batchParsedWords = [];   // [{word, dup}]
+let batchResults = null;     // {word: {en, category}} after translation
+let batchAdding = false;
+
+function showBatchAddModal(){
+  batchParsedWords = [];
+  batchResults = null;
+  const modal = document.getElementById('batchAddModal');
+  renderBatchAddBody();
+  modal.style.display = 'flex';
+}
+
+function closeBatchAddModal(){
+  document.getElementById('batchAddModal').style.display = 'none';
+}
+
+function batchCleanWord(w){
+  return w.replace(/[.,!?;:«»"'()\[\]{}…—–\d]/g,'').trim();
+}
+
+function parseBatchText(){
+  const text = document.getElementById('batchTextarea').value || '';
+  const raw = text.split(/[\n,;]+/).map(batchCleanWord).filter(w=>w.length>=2);
+  const userWordSet = new Set(words.map(w=>w.word.toLowerCase()));
+  const seen = new Set();
+  batchParsedWords = [];
+  raw.forEach(w=>{
+    const key = w.toLowerCase();
+    if(seen.has(key)) return; // dedupe within pasted list
+    seen.add(key);
+    batchParsedWords.push({ word:w, dup: userWordSet.has(key) });
+  });
+  batchResults = null;
+  renderBatchAddBody();
+}
+
+function handleBatchFileUpload(event){
+  const file = event.target.files[0];
+  if(!file) return;
+  const reader = new FileReader();
+  reader.onload = e => {
+    document.getElementById('batchTextarea').value = e.target.result;
+    parseBatchText();
+  };
+  reader.readAsText(file);
+}
+
+function guessCategoryHeuristic(word){
+  const w = word.toLowerCase();
+  if(/ar$|er$|ir$/.test(w) && w.length>3) return 'Verb';
+  if(/ção$|são$|dade$|tade$|ura$|ismo$|ência$|ância$|ença$|ança$|ude$|idão$|or$|eza$/.test(w)) return 'Noun';
+  if(/mente$/.test(w)) return 'Adverb';
+  if(/oso$|osa$|ável$|ível$|ivo$|iva$|tico$|tica$|al$/.test(w)) return 'Adjective';
+  return 'Noun';
+}
+
+async function batchTranslateChunk(chunk){
+  const numbered = chunk.map((w,i)=>`${i+1}. ${w}`).join('\n');
+  const result = await claudeCall(
+    `For each European Portuguese word below, provide its English translation and grammatical category.
+Categories must be EXACTLY one of: Noun, Verb, Adjective, Adverb, Other.
+For verbs, write the translation in infinitive form like "to speak", and identify them as Verb category if they are infinitives ending in -ar/-er/-ir.
+Return ONLY valid JSON (no markdown, no preamble) mapping each exact Portuguese word to {"en":"...","category":"..."}.
+Example: {"falar":{"en":"to speak","category":"Verb"},"casa":{"en":"house","category":"Noun"}}
+
+Words:
+${numbered}`, Math.min(4000, 300 + chunk.length*45));
+  const clean = result.replace(/```json|```/g,'').trim();
+  return JSON.parse(clean);
+}
+
+async function runBatchAdd(){
+  const newWords = batchParsedWords.filter(w=>!w.dup).map(w=>w.word);
+  if(!newWords.length){ showToast('No new words to add — all are duplicates or already in your notebook!'); return; }
+
+  batchAdding = true;
+  renderBatchAddBody();
+
+  const CHUNK_SIZE = 35;
+  const chunks = [];
+  for(let i=0;i<newWords.length;i+=CHUNK_SIZE) chunks.push(newWords.slice(i,i+CHUNK_SIZE));
+
+  const allResults = {};
+  let failed = [];
+  for(let i=0;i<chunks.length;i++){
+    updateBatchProgress(10 + Math.round((i/chunks.length)*70), `Translating batch ${i+1} of ${chunks.length}…`);
+    try{
+      const res = await batchTranslateChunk(chunks[i]);
+      Object.assign(allResults, res);
+    }catch(e){
+      failed = failed.concat(chunks[i]);
+    }
+  }
+
+  updateBatchProgress(85, 'Adding words to your notebook…');
+  let added = 0, ts = Date.now();
+  newWords.forEach(w=>{
+    if(words.find(x=>x.word.toLowerCase()===w.toLowerCase())) return; // safety dedupe
+    const data = allResults[w] || allResults[w.toLowerCase()];
+    const en = data?.en || '';
+    const category = data?.category && ['Noun','Verb','Adjective','Adverb','Other'].includes(data.category)
+      ? data.category : guessCategoryHeuristic(w);
+    words.push({ id: ts++, word:w, translation:en, category, notes:'', examples:[],
+      addedAt: new Date().toLocaleDateString('pt-PT') });
+    added++;
+  });
+
+  updateBatchProgress(95, 'Saving to GitHub…');
+  await saveWords();
+  updateBatchProgress(100, 'Done!');
+
+  batchAdding = false;
+  const failMsg = failed.length ? ` (${failed.length} word${failed.length!==1?'s':''} failed to translate — added with blank translation, edit manually)` : '';
+  showToast(`✅ Added ${added} word${added!==1?'s':''}!${failMsg}`);
+
+  // Re-mark as duplicates now that they're saved, refresh view
+  const userWordSet = new Set(words.map(w=>w.word.toLowerCase()));
+  batchParsedWords = batchParsedWords.map(w=>({...w, dup: userWordSet.has(w.word.toLowerCase())}));
+  renderWords();
+  setTimeout(()=>renderBatchAddBody(), 600);
+}
+
+function updateBatchProgress(pct, msg){
+  const bar = document.getElementById('batchProgressBar');
+  const m = document.getElementById('batchProgressMsg');
+  if(bar) bar.style.width = pct+'%';
+  if(m) m.textContent = msg;
+}
+
+function renderBatchAddBody(){
+  const el = document.getElementById('batchAddBody'); if(!el) return;
+
+  if(!batchParsedWords.length){
+    el.innerHTML = `
+      <div style="margin-bottom:12px;">
+        <label style="display:block;font-size:12px;color:#888;margin-bottom:6px;font-weight:600;">📂 Upload a .txt file</label>
+        <input type="file" accept=".txt" onchange="handleBatchFileUpload(event)" style="width:100%;padding:8px;border-radius:8px;border:1px solid #e8e0d8;background:#fff;font-size:13px;font-family:inherit;" />
+      </div>
+      <div style="text-align:center;color:#bbb;font-size:12px;margin:10px 0;">— or paste below —</div>
+      <textarea id="batchTextarea" placeholder="Paste words here, one per line (or separated by commas/semicolons):
+
+casa
+falar
+bonito
+rapidamente
+..." style="width:100%;min-height:180px;padding:10px;border-radius:8px;border:1px solid #e8e0d8;font-size:13px;font-family:inherit;resize:vertical;box-sizing:border-box;"></textarea>
+      <button onclick="parseBatchText()" style="margin-top:10px;width:100%;padding:10px;border-radius:8px;border:none;background:#7b4ea0;color:#fff;cursor:pointer;font-family:inherit;font-size:13px;font-weight:600;">🔍 Parse words</button>
+    `;
+    return;
+  }
+
+  const newCount = batchParsedWords.filter(w=>!w.dup).length;
+  const dupCount = batchParsedWords.filter(w=>w.dup).length;
+
+  el.innerHTML = `
+    <div style="display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap;">
+      <div style="flex:1;min-width:100px;background:#f0faf4;border-radius:8px;padding:8px 12px;text-align:center;">
+        <div style="font-size:20px;font-weight:800;color:#1a6b3c;">${newCount}</div>
+        <div style="font-size:11px;color:#888;">new words</div>
+      </div>
+      <div style="flex:1;min-width:100px;background:#f3f0ff;border-radius:8px;padding:8px 12px;text-align:center;">
+        <div style="font-size:20px;font-weight:800;color:#7b4ea0;">${dupCount}</div>
+        <div style="font-size:11px;color:#888;">already saved</div>
+      </div>
+    </div>
+
+    ${batchAdding ? `
+      <div style="padding:12px 14px;background:#f3f0ff;border-radius:8px;margin-bottom:12px;">
+        <div id="batchProgressMsg" style="font-size:12px;color:#7b4ea0;margin-bottom:6px;">Starting…</div>
+        <div style="background:#e0d0f0;border-radius:4px;height:6px;overflow:hidden;">
+          <div id="batchProgressBar" style="height:100%;background:#7b4ea0;border-radius:4px;width:0%;transition:width 0.3s;"></div>
+        </div>
+      </div>
+    ` : `
+      <button onclick="runBatchAdd()" ${newCount===0?'disabled':''} style="width:100%;padding:11px;border-radius:8px;border:none;background:${newCount===0?'#ddd':'#1a6b3c'};color:#fff;cursor:${newCount===0?'default':'pointer'};font-family:inherit;font-size:13px;font-weight:600;margin-bottom:10px;">
+        ⚡ Translate &amp; Add ${newCount} word${newCount!==1?'s':''}
+      </button>
+      <button onclick="batchParsedWords=[];renderBatchAddBody();" style="width:100%;padding:8px;border-radius:8px;border:1px solid #ddd;background:#fff;cursor:pointer;font-family:inherit;font-size:12px;color:#aaa;margin-bottom:12px;">
+        ↩️ Start over
+      </button>
+    `}
+
+    <div style="display:flex;flex-wrap:wrap;gap:6px;max-height:280px;overflow-y:auto;padding:4px;">
+      ${batchParsedWords.map(w=>`
+        <div style="display:flex;align-items:center;gap:4px;padding:5px 10px;border-radius:20px;background:${w.dup?'#f3f0ff':'#f5f5f5'};border:1px solid ${w.dup?'#7b4ea030':'#e8e0d8'};">
+          <span style="font-size:13px;font-weight:600;color:${w.dup?'#7b4ea0':'#1a3a5c'};">${w.word}</span>
+          ${w.dup?`<span style="font-size:10px;color:#7b4ea0;font-weight:700;">📖 saved</span>`:''}
+        </div>`).join('')}
+    </div>
+  `;
+}
+
 // ═══ PATTERN EXTRACTOR ════════════════════════════════════════════════════
 
 // Known endings for each pattern (longest first so we match -ção before -ão)
@@ -6593,6 +6787,19 @@ setTimeout(()=>{ if(typeof initFlashcards==='function') initFlashcards(); }, 100
       <button onclick="closeExtractor()" style="background:rgba(255,255,255,0.15);border:none;color:#fff;border-radius:8px;padding:6px 12px;cursor:pointer;font-size:18px;line-height:1;">✕</button>
     </div>
     <div id="patternExtractBody" style="padding:16px;"></div>
+  </div>
+</div>
+<!-- ═══ BATCH ADD MODAL ═══ -->
+<div id="batchAddModal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:1000;align-items:flex-start;justify-content:center;padding:20px;overflow-y:auto;">
+  <div style="background:#f5f0eb;border-radius:16px;width:100%;max-width:640px;max-height:90vh;overflow-y:auto;box-shadow:0 8px 40px rgba(0,0,0,0.3);">
+    <div style="background:#7b4ea0;color:#fff;padding:16px 20px;border-radius:16px 16px 0 0;display:flex;align-items:center;justify-content:space-between;">
+      <div>
+        <div style="font-size:16px;font-weight:700;">📋 Batch Add Words</div>
+        <div style="font-size:11px;color:#e0d0f0;margin-top:2px;">Paste or upload a text file full of words — they'll be auto-categorized and translated</div>
+      </div>
+      <button onclick="closeBatchAddModal()" style="background:rgba(255,255,255,0.15);border:none;color:#fff;border-radius:8px;padding:6px 12px;cursor:pointer;font-size:18px;line-height:1;">✕</button>
+    </div>
+    <div id="batchAddBody" style="padding:16px;"></div>
   </div>
 </div>
 </body>
