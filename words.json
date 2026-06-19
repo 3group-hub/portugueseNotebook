@@ -2906,7 +2906,7 @@
         {
           "pronoun": "tu",
           "pt": "Tu foste ao cinema",
-          "en": "You went to the movies",
+          "en": "You went to the cinema",
           "_grammarChecked": true
         },
         {
@@ -2923,21 +2923,14 @@
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês foram ao ‘shopping’",
-          "en": "You went to the mall",
-          "_grammarFixes": [
-            {
-              "orig": "shopping",
-              "best": "‘shopping’",
-              "rule": "🇵🇹🎓 Estrangeirismos específicos pt_PT"
-            }
-          ],
+          "pt": "Vocês foram ao restaurante",
+          "en": "You went to the restaurant",
           "_grammarChecked": true
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles foram ao estádio",
-          "en": "They went to the stadium",
+          "pt": "Eles foram ao jogo",
+          "en": "They went to the game",
           "_grammarChecked": true
         }
       ],
@@ -2976,8 +2969,8 @@
       "future-peri": [
         {
           "pronoun": "eu",
-          "pt": "Eu vou ir ao cinema",
-          "en": "I'm going to the movies",
+          "pt": "Eu vou ir ao parque",
+          "en": "I'm going to the park",
           "_grammarChecked": true
         },
         {
@@ -2988,8 +2981,8 @@
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela vai ir ao parque",
-          "en": "She's going to the park",
+          "pt": "Ela vai ir ao cinema",
+          "en": "She's going to the movies",
           "_grammarChecked": true
         },
         {
@@ -3000,8 +2993,15 @@
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês vão ir ao restaurante",
-          "en": "You're going to the restaurant",
+          "pt": "Vocês vão ir ao ‘shopping’",
+          "en": "You're going to the mall",
+          "_grammarFixes": [
+            {
+              "orig": "shopping",
+              "best": "‘shopping’",
+              "rule": "🇵🇹🎓 Estrangeirismos específicos pt_PT"
+            }
+          ],
           "_grammarChecked": true
         },
         {
@@ -3014,14 +3014,14 @@
       "future-simple": [
         {
           "pronoun": "eu",
-          "pt": "Eu irei ao cinema",
-          "en": "I will go to the movies",
+          "pt": "Eu irei ao parque",
+          "en": "I will go to the park",
           "_grammarChecked": true
         },
         {
           "pronoun": "tu",
-          "pt": "Tu irás ao parque",
-          "en": "You will go to the park",
+          "pt": "Tu irás ao cinema",
+          "en": "You will go to the cinema",
           "_grammarChecked": true
         },
         {
@@ -3038,15 +3038,8 @@
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês irão ao ‘shopping’",
-          "en": "You will go to the mall",
-          "_grammarFixes": [
-            {
-              "orig": "shopping",
-              "best": "‘shopping’",
-              "rule": "🇵🇹🎓 Estrangeirismos específicos pt_PT"
-            }
-          ],
+          "pt": "Vocês irão ao restaurante",
+          "en": "You will go to the restaurant",
           "_grammarChecked": true
         },
         {
