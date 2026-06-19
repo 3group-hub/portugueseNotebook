@@ -2230,6 +2230,82 @@
           "pt": "Eles vão tornar-se muito ricos",
           "en": "They will become very rich"
         }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou tornar",
+          "en": "I will become",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais tornar",
+          "en": "You will become",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele/Ela vai tornar",
+          "en": "He/She will become",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos tornar",
+          "en": "We will become",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão tornar",
+          "en": "You will become",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles/Elas vão tornar",
+          "en": "They will become",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu tornarei um bom professor.",
+          "en": "I will become a good teacher.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu tornarás um grande músico.",
+          "en": "You will become a great musician.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela tornará uma excelente engenheira.",
+          "en": "She will become an excellent engineer.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós tornaremos uma boa equipa.",
+          "en": "We will become a good team.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês tornarão adultos responsáveis.",
+          "en": "You will become responsible adults.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles tornarão grandes cientistas.",
+          "en": "They will become great scientists.",
+          "_grammarChecked": true
+        }
       ]
     },
     "_generatingTense": null,
@@ -2613,6 +2689,82 @@
           "pt": "Eles vão irradiar alegria",
           "en": "They will radiate joy"
         }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou irradiar",
+          "en": "I will radiate",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais irradiar",
+          "en": "You will radiate",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele vai irradiar",
+          "en": "He/She will radiate",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos irradiar",
+          "en": "We will radiate",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão irradiar",
+          "en": "You will radiate",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão irradiar",
+          "en": "They will radiate",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu irradiarei calor",
+          "en": "I will radiate heat",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu irradiarás luz",
+          "en": "You will radiate light",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela irradiará energia",
+          "en": "She will radiate energy",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós irradiaremos ondas",
+          "en": "We will radiate waves",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês irradiarão radiação",
+          "en": "You will radiate radiation",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles irradiarão calor",
+          "en": "They will radiate heat",
+          "_grammarChecked": true
+        }
       ]
     },
     "_generatingTense": null,
@@ -2766,6 +2918,82 @@
           "pronoun": "eles/elas",
           "pt": "Eles/Elas vão errar",
           "en": "They will make mistakes"
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou errar",
+          "en": "I will make mistakes",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais errar",
+          "en": "You will make mistakes",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele vai errar",
+          "en": "He/She will make mistakes",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos errar",
+          "en": "We will make mistakes",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão errar",
+          "en": "You will make mistakes",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão errar",
+          "en": "They will make mistakes",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu errarei muito",
+          "en": "I will make many mistakes",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu errarás novamente",
+          "en": "You will make mistakes again",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela errará tudo",
+          "en": "She will get everything wrong",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós erraremos juntos",
+          "en": "We will make mistakes together",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês errarão mais",
+          "en": "You will make more mistakes",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles errarão sempre",
+          "en": "They will always make mistakes",
+          "_grammarChecked": true
         }
       ]
     },
@@ -3699,6 +3927,89 @@
           "pronoun": "eles/elas",
           "pt": "Eles vão dizer",
           "en": "They will say"
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou dizer",
+          "en": "I will say",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais dizer",
+          "en": "You will say",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai dizer",
+          "en": "She will say",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos dizer",
+          "en": "We will say",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão dizer",
+          "en": "You will say",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão dizer",
+          "en": "They will say",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu direi sim",
+          "en": "I will say yes",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu dirás não",
+          "en": "You will say no",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela dirá tudo",
+          "en": "She will say everything",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós diremos \"obrigado\"",
+          "en": "We will say thank you",
+          "_grammarFixes": [
+            {
+              "orig": "obrigado",
+              "best": "\"obrigado\"",
+              "rule": "Pontuação de interjeições: Olá!"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês dirão sim",
+          "en": "You will say yes",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles dirão não",
+          "en": "They will say no",
+          "_grammarChecked": true
         }
       ]
     },
