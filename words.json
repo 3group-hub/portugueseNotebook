@@ -3572,38 +3572,38 @@
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu sei nadar",
-          "en": "I know how to swim",
+          "pt": "Eu sei tudo",
+          "en": "I know everything",
           "_grammarChecked": true
         },
         {
           "pronoun": "tu",
-          "pt": "Tu sabes inglês",
-          "en": "You know English",
+          "pt": "Tu sabes isso",
+          "en": "You know this",
           "_grammarChecked": true
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela sabe cozinhar",
-          "en": "She knows how to cook",
+          "pt": "Ela sabe",
+          "en": "She knows",
           "_grammarChecked": true
         },
         {
           "pronoun": "nós",
-          "pt": "Nós sabemos ler",
-          "en": "We know how to read",
+          "pt": "Nós sabemos",
+          "en": "We know",
           "_grammarChecked": true
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês sabem português",
-          "en": "You know Portuguese",
+          "pt": "Vocês sabem",
+          "en": "You know",
           "_grammarChecked": true
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles sabem jogar",
-          "en": "They know how to play",
+          "pt": "Eles sabem",
+          "en": "They know",
           "_grammarChecked": true
         }
       ],
@@ -3692,8 +3692,8 @@
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela vai saber",
-          "en": "She will know",
+          "pt": "Ele vai saber",
+          "en": "He/She will know",
           "_grammarChecked": true
         },
         {
