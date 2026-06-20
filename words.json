@@ -21404,7 +21404,50 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu devolvo o livro",
+          "en": "I return the book",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu devolves o telemóvel",
+          "en": "You return the mobile phone",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela devolve o dinheiro",
+          "en": "She returns the money",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós devolvemos a chave",
+          "en": "We return the key",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês devolvem o carro",
+          "en": "You return the car",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles devolvem o livro",
+          "en": "They return the book",
+          "_grammarChecked": true
+        }
+      ],
+      "past": [],
+      "future-peri": [],
+      "future-simple": []
+    }
   },
   {
     "id": 1781879155641,
