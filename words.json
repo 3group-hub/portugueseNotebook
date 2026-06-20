@@ -22904,7 +22904,57 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu destruo papéis todos os dias",
+          "en": "I destroy papers every day",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu destróis documentos importantes",
+          "en": "You destroy important documents",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela destrói evidências",
+          "en": "She destroys evidence",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós destruímos o ambiente",
+          "en": "We destroy the environment",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês destruíam computadores velhos",
+          "en": "You destroy old computers",
+          "_grammarFixes": [
+            {
+              "orig": "destruíem",
+              "best": "destruíam",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles destruíram a cidade",
+          "en": "They destroyed the city",
+          "_grammarChecked": true
+        }
+      ],
+      "past": [],
+      "future-peri": [],
+      "future-simple": []
+    }
   },
   {
     "id": 1781879155709,
