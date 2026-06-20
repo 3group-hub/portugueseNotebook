@@ -23285,7 +23285,50 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu desapareci na multidão",
+          "en": "I disappeared in the crowd",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu desapareceste ontem",
+          "en": "You disappeared yesterday",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela desapareceu de repente",
+          "en": "She disappeared suddenly",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós desaparecemos na escuridão",
+          "en": "We disappeared in the darkness",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês desapareceram cedo",
+          "en": "You disappeared early",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles desapareceram todos",
+          "en": "They all disappeared",
+          "_grammarChecked": true
+        }
+      ],
+      "future-peri": [],
+      "future-simple": []
+    }
   },
   {
     "id": 1781879155726,
