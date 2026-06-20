@@ -21571,7 +21571,57 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu organizo eventos",
+          "en": "I organize events",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu organizas tudo",
+          "en": "You organize everything",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela organiza a festa",
+          "en": "She organizes the party",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós organizamos o projeto",
+          "en": "We organize the project",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês organizam a equipa",
+          "en": "You organize the team",
+          "_grammarFixes": [
+            {
+              "orig": "equipe",
+              "best": "equipa",
+              "rule": "🇵🇹🇧🇷 equipes → equipas"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles organizam o torneio",
+          "en": "They organize the tournament",
+          "_grammarChecked": true
+        }
+      ],
+      "past": [],
+      "future-peri": [],
+      "future-simple": []
+    }
   },
   {
     "id": 1781879155650,
