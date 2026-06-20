@@ -22972,7 +22972,50 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu arranjo a casa",
+          "en": "I arrange the house",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu arranjas a sala",
+          "en": "You arrange the room",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela arranja a cozinha",
+          "en": "She arranges the kitchen",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós arranjamos o quarto",
+          "en": "We arrange the bedroom",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês arranjam a mesa",
+          "en": "You arrange the table",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles arranjam o escritório",
+          "en": "They arrange the office",
+          "_grammarChecked": true
+        }
+      ],
+      "past": [],
+      "future-peri": [],
+      "future-simple": []
+    }
   },
   {
     "id": 1781879155711,
