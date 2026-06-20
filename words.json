@@ -21289,7 +21289,71 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu enviei um endereço eletrónico.",
+          "en": "I sent an email.",
+          "_grammarFixes": [
+            {
+              "orig": "email",
+              "best": "endereço eletrónico",
+              "rule": "Palavras de origem estrangeira evitáveis: email"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu enviaste um SMS.",
+          "en": "You sent a text message.",
+          "_grammarFixes": [
+            {
+              "orig": "sms",
+              "best": "SMS",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela enviou uma carta.",
+          "en": "She sent a letter.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós enviamos um pacote.",
+          "en": "We sent a package.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês enviaram um ‘fax’.",
+          "en": "You sent a fax.",
+          "_grammarFixes": [
+            {
+              "orig": "fax",
+              "best": "‘fax’",
+              "rule": "🇵🇹🎓 Estrangeirismos específicos pt_PT"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles enviaram um telegrama.",
+          "en": "They sent a telegram.",
+          "_grammarChecked": true
+        }
+      ],
+      "future-peri": [],
+      "future-simple": []
+    }
   },
   {
     "id": 1781879155636,
