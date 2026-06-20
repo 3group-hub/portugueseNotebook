@@ -21999,7 +21999,50 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [],
+      "past": [],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou divertir-me",
+          "en": "I will have fun",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais divertir-te",
+          "en": "You will have fun",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai divertir-se",
+          "en": "She will have fun",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos divertir-nos",
+          "en": "We will have fun",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão divertir-se",
+          "en": "You will have fun",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão divertir-se",
+          "en": "They will have fun",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": []
+    }
   },
   {
     "id": 1781879155668,
