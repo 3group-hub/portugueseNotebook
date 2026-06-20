@@ -21002,7 +21002,50 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu nasci em Lisboa, mas agora nascem menos crianças.",
+          "en": "I was born in Lisbon, but now fewer children are born.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu nasces com um dom especial.",
+          "en": "You are born with a special gift.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela nasce todos os dias uma nova esperança.",
+          "en": "She is born every day with new hope.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós nascemos para viver em comunidade.",
+          "en": "We are born to live in community.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês nascem para ser felizes.",
+          "en": "You are born to be happy.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles nascem com uma força interior.",
+          "en": "They are born with inner strength.",
+          "_grammarChecked": true
+        }
+      ],
+      "past": [],
+      "future-peri": [],
+      "future-simple": []
+    }
   },
   {
     "id": 1781879155624,
