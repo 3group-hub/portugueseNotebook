@@ -21919,7 +21919,51 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu pratico piano todos os dias",
+          "en": "I practice piano every day",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu praticas desporto regularmente",
+          "en": "You practice sports regularly",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela pratica ioga para relaxar",
+          "en": "She practices yoga to relax",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós praticamos futebol aos fins-de-semana",
+          "en": "We practice football on weekends",
+          "_grammarFixes": [],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês praticam ténis juntos",
+          "en": "You practice tennis together",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles praticam natação todos os dias",
+          "en": "They practice swimming every day",
+          "_grammarChecked": true
+        }
+      ],
+      "past": [],
+      "future-peri": [],
+      "future-simple": []
+    }
   },
   {
     "id": 1781879155664,
