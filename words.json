@@ -22414,7 +22414,50 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [],
+      "past": [],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou convidar",
+          "en": "I will invite",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais convidar",
+          "en": "You will invite",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele vai convidar",
+          "en": "He/She will invite",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos convidar",
+          "en": "We will invite",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão convidar",
+          "en": "You will invite",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão convidar",
+          "en": "They will invite",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": []
+    }
   },
   {
     "id": 1781879155688,
