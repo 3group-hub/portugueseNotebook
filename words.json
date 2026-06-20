@@ -22328,7 +22328,57 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu visito a cidade todos os anos",
+          "en": "I visit the city every year",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu visitas muitos museus",
+          "en": "You visit many museums",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela visita à família no fim de semana",
+          "en": "She visits her family at the weekend",
+          "_grammarFixes": [
+            {
+              "orig": "visita a",
+              "best": "visita à",
+              "rule": "Erros de crase possíveis"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós visitamos a praia todos os dias",
+          "en": "We visit the beach every day",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês visitam a exposição hoje",
+          "en": "You visit the exhibition today",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles visitam a torre mais alto da cidade",
+          "en": "They visit the tallest tower in the city",
+          "_grammarChecked": true
+        }
+      ],
+      "past": [],
+      "future-peri": [],
+      "future-simple": []
+    }
   },
   {
     "id": 1781879155684,
