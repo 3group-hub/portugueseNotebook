@@ -21081,7 +21081,50 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [],
+      "past": [],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou divorciar-me",
+          "en": "I'm going to get divorced",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais divorciar-te",
+          "en": "You're going to get divorced",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai divorciar-se",
+          "en": "She's going to get divorced",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos divorciar-nos",
+          "en": "We're going to get divorced",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão divorciar-se",
+          "en": "You're going to get divorced",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão divorciar-se",
+          "en": "They're going to get divorced",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": []
+    }
   },
   {
     "id": 1781879155628,
