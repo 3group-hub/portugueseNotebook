@@ -1,5 +1,47 @@
 [
   {
+    "id": 1782031390432,
+    "title": "Answer to question email asking about health",
+    "level": "",
+    "text": "Olá caro amiga,\nMuito obrigado pela tua preocupação e pelo teu carinho.\nEstou melhor. Já fui ao médico e estou medicado. Já não tenho dores.\n\nFica descansado! Eu estou bem!\nE tu, como estás?\n\nUm abraço,",
+    "sentencePairs": [
+      {
+        "pt": "Olá caro amiga, Muito obrigado pela tua preocupação e pelo teu carinho.",
+        "en": "Hello dear friend, thank you very much for your concern and your affection."
+      },
+      {
+        "pt": "Estou melhor.",
+        "en": "I'm better."
+      },
+      {
+        "pt": "Já fui ao médico e estou medicado.",
+        "en": "I've been to the doctor and I'm medicated."
+      },
+      {
+        "pt": "Já não tenho dores.",
+        "en": "I no longer have pain."
+      },
+      {
+        "pt": "Fica descansado!",
+        "en": "Don't worry!"
+      },
+      {
+        "pt": "Eu estou bem!",
+        "en": "I'm fine!"
+      },
+      {
+        "pt": "E tu, como estás?",
+        "en": "And you, how are you?"
+      },
+      {
+        "pt": "Um abraço,",
+        "en": "A hug,"
+      }
+    ],
+    "date": "2026-06-21",
+    "sentences": 8
+  },
+  {
     "id": 1780389897929,
     "title": "Trabalho_Projeto assíncrono",
     "level": "",
