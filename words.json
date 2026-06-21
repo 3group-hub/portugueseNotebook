@@ -23591,9 +23591,15 @@
     "translation": "concern",
     "category": "Noun",
     "notes": "",
-    "examples": [],
+    "examples": [
+      {
+        "pt": "A minha preocupação é o futuro.",
+        "en": "My concern is the future.",
+        "_grammarChecked": true
+      }
+    ],
     "addedAt": "21/06/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "common"
   },
@@ -23603,9 +23609,16 @@
     "translation": "recently",
     "category": "Adverb",
     "notes": "",
-    "examples": [],
+    "examples": [
+      {
+        "pt": "Eu recentemente fui ao cinema",
+        "en": "I recently went to the movies",
+        "_grammarChecked": true
+      }
+    ],
     "addedAt": "21/06/2026",
-    "generatingExample": true,
-    "assessingFreq": true
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common"
   }
 ]
