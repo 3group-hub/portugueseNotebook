@@ -23848,5 +23848,161 @@
     "generatingExample": true,
     "assessingFreq": false,
     "freq": "common"
+  },
+  {
+    "id": 1782029453746,
+    "word": "assadas",
+    "translation": "roasted",
+    "category": "Noun",
+    "notes": "",
+    "examples": [
+      {
+        "pt": "Gosto de batatas assadas no almoço",
+        "en": "I like roasted potatoes for lunch",
+        "_grammarChecked": true
+      }
+    ],
+    "addedAt": "21/06/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common"
+  },
+  {
+    "id": 1782029458705,
+    "word": "horas",
+    "translation": "hours",
+    "category": "Noun",
+    "notes": "",
+    "examples": [
+      {
+        "pt": "Trabalho dez horas por dia",
+        "en": "I work ten hours a day",
+        "_grammarChecked": true
+      }
+    ],
+    "addedAt": "21/06/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "essential"
+  },
+  {
+    "id": 1782029461332,
+    "word": "melhoras",
+    "translation": "improvements",
+    "category": "Noun",
+    "notes": "",
+    "examples": [
+      {
+        "pt": "A empresa fez várias melhoras nos últimos anos",
+        "en": "The company made several improvements in recent years",
+        "_grammarFixes": [
+          {
+            "orig": "nos ultimos",
+            "best": "nos últimos",
+            "rule": "Confusão: verbo no lugar do parónimo acentuado (ú)"
+          },
+          {
+            "orig": "varias",
+            "best": "várias",
+            "rule": "❓ varias/várias"
+          }
+        ],
+        "_grammarChecked": true
+      }
+    ],
+    "addedAt": "21/06/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common"
+  },
+  {
+    "id": 1782029463761,
+    "word": "compras",
+    "translation": "purchases",
+    "category": "Noun",
+    "notes": "",
+    "examples": [
+      {
+        "pt": "Faço compras todos os sábados",
+        "en": "I do shopping every Saturday",
+        "_grammarChecked": true
+      }
+    ],
+    "addedAt": "21/06/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common"
+  },
+  {
+    "id": 1782029473569,
+    "word": "recuperes",
+    "translation": "recover",
+    "category": "Noun",
+    "notes": "",
+    "examples": [
+      {
+        "pt": "Espero que recuperes depressa",
+        "en": "I hope you recover soon",
+        "_grammarChecked": true
+      }
+    ],
+    "addedAt": "21/06/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common"
+  },
+  {
+    "id": 1782029476270,
+    "word": "dores",
+    "translation": "pains",
+    "category": "Noun",
+    "notes": "",
+    "examples": [
+      {
+        "pt": "Sinto dores no pescoço após dormir",
+        "en": "I feel pains in my neck after sleeping",
+        "_grammarChecked": true
+      }
+    ],
+    "addedAt": "21/06/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common"
+  },
+  {
+    "id": 1782029478670,
+    "word": "preferes",
+    "translation": "prefer",
+    "category": "Noun",
+    "notes": "",
+    "examples": [
+      {
+        "pt": "Qual sabor preferes no teu gelado?",
+        "en": "What flavor do you prefer in your ice cream?",
+        "_grammarChecked": true
+      }
+    ],
+    "addedAt": "21/06/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common"
+  },
+  {
+    "id": 1782029486127,
+    "word": "beijinho",
+    "translation": "little kiss",
+    "category": "Noun",
+    "notes": "",
+    "examples": [
+      {
+        "pt": "Ela deu um beijinho na bochecha dele",
+        "en": "She gave him a little kiss on the cheek",
+        "_grammarChecked": true
+      }
+    ],
+    "addedAt": "21/06/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common"
   }
 ]
