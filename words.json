@@ -23584,5 +23584,28 @@
     "notes": "",
     "examples": [],
     "addedAt": "19/06/2026"
+  },
+  {
+    "id": 1782029365082,
+    "word": "preocupação",
+    "translation": "concern",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "21/06/2026",
+    "generatingExample": true,
+    "assessingFreq": false,
+    "freq": "common"
+  },
+  {
+    "id": 1782029367848,
+    "word": "recentemente",
+    "translation": "recently",
+    "category": "Adverb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "21/06/2026",
+    "generatingExample": true,
+    "assessingFreq": true
   }
 ]
