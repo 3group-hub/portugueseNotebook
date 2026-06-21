@@ -23627,6 +23627,216 @@
     "translation": "wonderful",
     "category": "Adjective",
     "notes": "",
+    "examples": [
+      {
+        "pt": "A vista era maravilhosa",
+        "en": "The view was wonderful",
+        "_grammarChecked": true
+      }
+    ],
+    "addedAt": "21/06/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common"
+  },
+  {
+    "id": 1782029395106,
+    "word": "componente",
+    "translation": "component",
+    "category": "Noun",
+    "notes": "",
+    "examples": [
+      {
+        "pt": "O componente principal é a madeira",
+        "en": "The main component is wood",
+        "_grammarChecked": true
+      }
+    ],
+    "addedAt": "21/06/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common"
+  },
+  {
+    "id": 1782029397653,
+    "word": "sente",
+    "translation": "feels",
+    "category": "Noun",
+    "notes": "",
+    "examples": [
+      {
+        "pt": "Ela sente saudades do seu país",
+        "en": "She feels homesick for her country",
+        "_grammarChecked": true
+      }
+    ],
+    "addedAt": "21/06/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common"
+  },
+  {
+    "id": 1782029403134,
+    "word": "doente",
+    "translation": "sick",
+    "category": "Noun",
+    "notes": "",
+    "examples": [
+      {
+        "pt": "A minha mãe está doente em casa",
+        "en": "My mother is sick at home",
+        "_grammarChecked": true
+      }
+    ],
+    "addedAt": "21/06/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common"
+  },
+  {
+    "id": 1782029407621,
+    "word": "bastante",
+    "translation": "enough",
+    "category": "Noun",
+    "notes": "",
+    "examples": [
+      {
+        "pt": "Tem bastante dinheiro na carteira",
+        "en": "He has enough money in his wallet",
+        "_grammarChecked": true
+      }
+    ],
+    "addedAt": "21/06/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common"
+  },
+  {
+    "id": 1782029414054,
+    "word": "durante",
+    "translation": "during",
+    "category": "Noun",
+    "notes": "",
+    "examples": [
+      {
+        "pt": "Estive doente durante uma semana",
+        "en": "I was sick during a week",
+        "_grammarChecked": true
+      }
+    ],
+    "addedAt": "21/06/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common"
+  },
+  {
+    "id": 1782029414230,
+    "word": "conte",
+    "translation": "",
+    "category": "Noun",
+    "notes": "",
+    "examples": [
+      {
+        "pt": "O meu avô sabe um excelente conte de fadas",
+        "en": "My grandfather knows an excellent fairy tale",
+        "_grammarChecked": true
+      }
+    ],
+    "addedAt": "21/06/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common"
+  },
+  {
+    "id": 1782029423861,
+    "word": "dedique",
+    "translation": "dedicate",
+    "category": "Noun",
+    "notes": "",
+    "examples": [
+      {
+        "pt": "Vou dedique mais tempo ao estudo",
+        "en": "I will dedicate more time to study",
+        "_grammarChecked": true
+      }
+    ],
+    "addedAt": "21/06/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common"
+  },
+  {
+    "id": 1782029428731,
+    "word": "fique",
+    "translation": "stay",
+    "category": "Noun",
+    "notes": "",
+    "examples": [
+      {
+        "pt": "Eu fique em casa",
+        "en": "I stay home",
+        "_grammarChecked": true
+      }
+    ],
+    "addedAt": "21/06/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "essential"
+  },
+  {
+    "id": 1782029431149,
+    "word": "indique",
+    "translation": "indicate",
+    "category": "Noun",
+    "notes": "",
+    "examples": [
+      {
+        "pt": "O mapa indique a melhor rota",
+        "en": "The map indicates the best route",
+        "_grammarChecked": true
+      }
+    ],
+    "addedAt": "21/06/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common"
+  },
+  {
+    "id": 1782029439133,
+    "word": "porque",
+    "translation": "because",
+    "category": "Noun",
+    "notes": "",
+    "examples": [
+      {
+        "pt": "Ela chorou porque está triste",
+        "en": "She cried because she's sad",
+        "_grammarChecked": true
+      }
+    ],
+    "addedAt": "21/06/2026",
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "essential"
+  },
+  {
+    "id": 1782029443625,
+    "word": "caminhadas",
+    "translation": "hikes",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "21/06/2026",
+    "generatingExample": true,
+    "assessingFreq": false,
+    "freq": "common"
+  },
+  {
+    "id": 1782029448631,
+    "word": "comidas",
+    "translation": "foods",
+    "category": "Noun",
+    "notes": "",
     "examples": [],
     "addedAt": "21/06/2026"
   }
