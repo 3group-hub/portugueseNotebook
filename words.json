@@ -23825,9 +23825,15 @@
     "translation": "hikes",
     "category": "Noun",
     "notes": "",
-    "examples": [],
+    "examples": [
+      {
+        "pt": "Gosto de fazer caminhadas na serra",
+        "en": "I like going for hikes in the mountains",
+        "_grammarChecked": true
+      }
+    ],
     "addedAt": "21/06/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "common"
   },
@@ -23838,6 +23844,9 @@
     "category": "Noun",
     "notes": "",
     "examples": [],
-    "addedAt": "21/06/2026"
+    "addedAt": "21/06/2026",
+    "generatingExample": true,
+    "assessingFreq": false,
+    "freq": "common"
   }
 ]
