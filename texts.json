@@ -1,5 +1,51 @@
 [
   {
+    "id": 1782031745058,
+    "title": "Answer to email informing about friend visit to Porto",
+    "level": "",
+    "text": "Olá caro amiga,\n\nMuito obrigado pela tua mensagem. Fico muito feliz! Vais visitar-me no Porto!\nVou adorar mostrar-te a cidade. O Porto é lindo, as pessoas são simpáticas e há muito para ver e fazer.\nPosso mostrar-te o centro histórico e a Ribeira, e podemos provar comida típica, como francesinha e bacalhau.\n\nQuando chegas? Quanto tempo vais ficar?\n\nUm abraço,",
+    "sentencePairs": [
+      {
+        "pt": "Olá caro amiga, Muito obrigado pela tua mensagem.",
+        "en": "Hello dear friend, thank you very much for your message."
+      },
+      {
+        "pt": "Fico muito feliz!",
+        "en": "I'm so happy!"
+      },
+      {
+        "pt": "Vais visitar-me no Porto!",
+        "en": "You're going to visit me in Porto!"
+      },
+      {
+        "pt": "Vou adorar mostrar-te a cidade.",
+        "en": "I'll love showing you the city."
+      },
+      {
+        "pt": "O Porto é lindo, as pessoas são simpáticas e há muito para ver e fazer.",
+        "en": "Porto is beautiful, the people are friendly and there's a lot to see and do."
+      },
+      {
+        "pt": "Posso mostrar-te o centro histórico e a Ribeira, e podemos provar comida típica, como francesinha e bacalhau.",
+        "en": "I can show you the historic center and Ribeira, and we can try typical food, like francesinha and cod."
+      },
+      {
+        "pt": "Quando chegas?",
+        "en": "When are you arriving?"
+      },
+      {
+        "pt": "Quanto tempo vais ficar?",
+        "en": "How long are you going to stay?"
+      },
+      {
+        "pt": "Um abraço,",
+        "en": "A hug,"
+      }
+    ],
+    "date": "2026-06-21",
+    "sentences": 9
+  },
+  {
     "id": 1782031390432,
     "title": "Answer to question email asking about health",
     "level": "",
