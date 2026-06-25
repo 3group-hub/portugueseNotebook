@@ -1,5 +1,51 @@
 [
   {
+    "id": 1782377288615,
+    "title": "Poema  com Adufe",
+    "level": "",
+    "text": "Aleluia, aleluia. \nAleluia Surreição. \nCristo foi sacrificado.\nPara a nossa salvação.\nJá apareceu a aleluia.\nQuem a achou, que acharia. \nAchou-a o senhor Prior.\nNo Sacrário de Maria.\nReverendo senhor Prior.",
+    "sentencePairs": [
+      {
+        "pt": "Aleluia, aleluia.",
+        "en": "Hallelujah, hallelujah."
+      },
+      {
+        "pt": "Aleluia Surreição.",
+        "en": "Hallelujah Resurrection."
+      },
+      {
+        "pt": "Cristo foi sacrificado.",
+        "en": "Christ was sacrificed."
+      },
+      {
+        "pt": "Para a nossa salvação.",
+        "en": "For our salvation."
+      },
+      {
+        "pt": "Já apareceu a aleluia.",
+        "en": "The hallelujah has already appeared."
+      },
+      {
+        "pt": "Quem a achou, que acharia.",
+        "en": "Whoever finds it, will find it."
+      },
+      {
+        "pt": "Achou-a o senhor Prior.",
+        "en": "It was found by Mr. Prior."
+      },
+      {
+        "pt": "No Sacrário de Maria.",
+        "en": "In the Tabernacle of Mary."
+      },
+      {
+        "pt": "Reverendo senhor Prior.",
+        "en": "Reverend Mr. Prior."
+      }
+    ],
+    "date": "2026-06-25",
+    "sentences": 9
+  },
+  {
     "id": 1782376977882,
     "title": "Adufe",
     "level": "",
