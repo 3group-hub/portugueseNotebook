@@ -1,5 +1,31 @@
 [
   {
+    "id": 1782376977882,
+    "title": "Adufe",
+    "level": "",
+    "text": "Seria despropositado da minha parte não lhes apresentar o adufe, que é o instrumento da nossa alma. O adufe faz parte da cultura musical de Penha Garcia e do concelho de Idanha-a-Nova. Que bonito e alegre era a tarde de domingo de Páscoa, depois do senhor prior visitar todas as casas da aldeia, com estas palavras: \"Boas festas corporais e espirituais, acompanhadas com muita alegria\"\nVindas de toda a aldeia, mulheres e crianças enriqueciam o fim da tarde com o toque do adufe e os cantares para homenagear o senhor prior. Eramos animados com amêndoas deitadas a rebetinha.",
+    "sentencePairs": [
+      {
+        "pt": "Seria despropositado da minha parte não lhes apresentar o adufe, que é o instrumento da nossa alma.",
+        "en": "It would be out of place for me not to introduce you to the adufe, which is the instrument of our soul."
+      },
+      {
+        "pt": "O adufe faz parte da cultura musical de Penha Garcia e do concelho de Idanha-a-Nova.",
+        "en": "The adufe is part of the musical culture of Penha Garcia and the municipality of Idanha-a-Nova."
+      },
+      {
+        "pt": "Que bonito e alegre era a tarde de domingo de Páscoa, depois do senhor prior visitar todas as casas da aldeia, com estas palavras: \"Boas festas corporais e espirituais, acompanhadas com muita alegria\" Vindas de toda a aldeia, mulheres e crianças enriqueciam o fim da tarde com o toque do adufe e os cantares para homenagear o senhor prior.",
+        "en": "How beautiful and cheerful was the Easter Sunday afternoon, after the prior visited all the houses in the village, with these words: 'Good physical and spiritual holidays, accompanied by great joy' Coming from all over the village, women and children enriched the end of the afternoon with the sound of the adufe and songs to honor the prior."
+      },
+      {
+        "pt": "Eramos animados com amêndoas deitadas a rebetinha.",
+        "en": "We were entertained with almonds thrown to the rhythm."
+      }
+    ],
+    "date": "2026-06-25",
+    "sentences": 4
+  },
+  {
     "id": 1782031745058,
     "title": "Answer to email informing about friend visit to Porto",
     "level": "",
