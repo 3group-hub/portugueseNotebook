@@ -33960,7 +33960,44 @@
     "examples": [],
     "addedAt": "19/06/2026",
     "tenses": {
-      "present": [],
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu recomendo um bom filme",
+          "en": "I recommend a good movie",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu recomendas um restaurante",
+          "en": "You recommend a restaurant",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela recomenda um livro",
+          "en": "She recommends a book",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós recomendamos um hotel",
+          "en": "We recommend a hotel",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês recomendam um museu",
+          "en": "You recommend a museum",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles recomendam um parque",
+          "en": "They recommend a park",
+          "_grammarChecked": true
+        }
+      ],
       "past": [
         {
           "pronoun": "eu",
