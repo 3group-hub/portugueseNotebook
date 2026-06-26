@@ -26316,8 +26316,82 @@
           "_grammarChecked": true
         }
       ],
-      "future-peri": [],
-      "future-simple": []
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou lembrar",
+          "en": "I will remember",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais lembrar",
+          "en": "You will remember",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele/Ela vai lembrar",
+          "en": "He/She will remember",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos lembrar",
+          "en": "We will remember",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão lembrar",
+          "en": "You will remember",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles/Elas vão lembrar",
+          "en": "They will remember",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu lembrarei",
+          "en": "I will remember",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu lembrarás",
+          "en": "You will remember",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela lembrará",
+          "en": "She will remember",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós lembraremos",
+          "en": "We will remember",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês lembrarão",
+          "en": "You will remember",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles lembrarão",
+          "en": "They will remember",
+          "_grammarChecked": true
+        }
+      ]
     }
   },
   {
@@ -26329,8 +26403,82 @@
     "examples": [],
     "addedAt": "19/06/2026",
     "tenses": {
-      "present": [],
-      "past": [],
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu lembro-me todos os dias",
+          "en": "I remember every day",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu lembras-te do meu nome",
+          "en": "You remember my name",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela lembra-se de tudo",
+          "en": "She remembers everything",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós lembramo-nos da festa",
+          "en": "We remember the party",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês lembram-se do filme",
+          "en": "You remember the movie",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles lembram-se do acidente",
+          "en": "They remember the accident",
+          "_grammarChecked": true
+        }
+      ],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu lembrei-me ontem",
+          "en": "I remembered yesterday",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu lembraste-te",
+          "en": "You remembered",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela lembrou-se",
+          "en": "She remembered",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós lembrámo-nos",
+          "en": "We remembered",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês lembraram-se",
+          "en": "You remembered",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles lembraram-se",
+          "en": "They remembered",
+          "_grammarChecked": true
+        }
+      ],
       "future-peri": [
         {
           "pronoun": "eu",
@@ -26369,7 +26517,44 @@
           "_grammarChecked": true
         }
       ],
-      "future-simple": []
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu lembrar-me-ei",
+          "en": "I will remember",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu lembrar-te-ás",
+          "en": "You will remember",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela lembrar-se-á",
+          "en": "She will remember",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós lembrar-nos-emos",
+          "en": "We will remember",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês lembrar-se-ão",
+          "en": "You will remember",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles lembrar-se-ão",
+          "en": "They will remember",
+          "_grammarChecked": true
+        }
+      ]
     }
   },
   {
@@ -26379,7 +26564,124 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu esqueço-me de tudo",
+          "en": "I forget everything",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu esqueces-te de mais",
+          "en": "You forget more",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela esquece-se depressa",
+          "en": "She forgets quickly",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós esquecemo-nos às vezes",
+          "en": "We forget sometimes",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês esquecem-se facilmente",
+          "en": "You forget easily",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles esquecem-se sempre",
+          "en": "They always forget",
+          "_grammarChecked": true
+        }
+      ],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu esqueci-me do livro",
+          "en": "I forgot the book",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu esqueceste-te do telemóvel",
+          "en": "You forgot your mobile phone",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela esqueceu-se da chave",
+          "en": "She forgot the key",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós esquecemo-nos do encontro",
+          "en": "We forgot the meeting",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês esqueceram-se do compromisso",
+          "en": "You forgot the appointment",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles esqueceram-se do aniversário",
+          "en": "They forgot the birthday",
+          "_grammarChecked": true
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou esquecer-me",
+          "en": "I will forget",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais esquecer-te",
+          "en": "You will forget",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele/Ela vai esquecer-se",
+          "en": "He/She will forget",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos esquecer-nos",
+          "en": "We will forget",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão esquecer-se",
+          "en": "You will forget",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles/Elas vão esquecer-se",
+          "en": "They will forget",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": []
+    }
   },
   {
     "id": 1781879155582,
