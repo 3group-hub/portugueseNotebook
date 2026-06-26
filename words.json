@@ -33196,7 +33196,50 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu publico artigos",
+          "en": "I publish articles",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu publicas um livro",
+          "en": "You publish a book",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela publica notícias",
+          "en": "She publishes news",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós publicamos relatórios",
+          "en": "We publish reports",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês publicam fotos",
+          "en": "You publish photos",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles publicam livros",
+          "en": "They publish books",
+          "_grammarChecked": true
+        }
+      ],
+      "past": [],
+      "future-peri": [],
+      "future-simple": []
+    }
   },
   {
     "id": 1781879155699,
