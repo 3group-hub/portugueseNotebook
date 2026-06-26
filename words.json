@@ -22517,7 +22517,189 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu barbeio-me todos os dias.",
+          "en": "I shave every day.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu barbeaste com frequência?",
+          "en": "Do you shave frequently?",
+          "_grammarFixes": [
+            {
+              "orig": "barbeias-te",
+              "best": "barbeaste",
+              "rule": "🇵🇹 Verbo com hífen intrusivo"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela barbeia-se antes de sair.",
+          "en": "She shaves before going out.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós barbeamo-nos juntos.",
+          "en": "We shave together.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês barbeiam-se uma vez por semana.",
+          "en": "You shave once a week.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles barbeiam-se todos os dias.",
+          "en": "They shave every day.",
+          "_grammarChecked": true
+        }
+      ],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu barbei-me ontem.",
+          "en": "I shaved yesterday.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu barbeaste-te ontem.",
+          "en": "You shaved yesterday.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela barbeou-se ontem.",
+          "en": "She shaved yesterday.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós barbeámo-nos ontem.",
+          "en": "We shaved yesterday.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês barbearam-se ontem.",
+          "en": "You shaved yesterday.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles barbearam-se ontem.",
+          "en": "They shaved yesterday.",
+          "_grammarChecked": true
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou barbear-me",
+          "en": "I will shave",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais barbear-te",
+          "en": "You will shave",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai barbear-se",
+          "en": "She will shave",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos barbear-nos",
+          "en": "We will shave",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão barbear-se",
+          "en": "You will shave",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão barbear-se",
+          "en": "They will shave",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu barbarei-me amanhã",
+          "en": "I will shave tomorrow",
+          "_grammarFixes": [
+            {
+              "orig": "barberei",
+              "best": "barbarei",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu barbear-te-ás",
+          "en": "You will shave",
+          "_grammarFixes": [
+            {
+              "orig": "barbearás-te",
+              "best": "barbear-te-ás",
+              "rule": "Formas verbais: poderiam-se → poder-se-iam"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela barbear-se-á",
+          "en": "She will shave",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós barbarei-mo-nos",
+          "en": "We will shave",
+          "_grammarFixes": [
+            {
+              "orig": "barberei",
+              "best": "barbarei",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês barbear-se-ão",
+          "en": "You will shave",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles barbear-se-ão",
+          "en": "They will shave",
+          "_grammarChecked": true
+        }
+      ]
+    }
   },
   {
     "id": 1781879155558,
@@ -22566,9 +22748,120 @@
           "_grammarChecked": true
         }
       ],
-      "past": [],
-      "future-peri": [],
-      "future-simple": []
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu maquilhei-me para a festa",
+          "en": "I put on makeup for the party",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu maquilhaste-te ontem",
+          "en": "You put on makeup yesterday",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela maquilhou-se bem",
+          "en": "She put on makeup well",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós maquilhámo-nos juntos",
+          "en": "We put on makeup together",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês maquilharam-se mal",
+          "en": "You put on makeup badly",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Elas maquilharam-se para o casamento",
+          "en": "They put on makeup for the wedding",
+          "_grammarChecked": true
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou maquilhar-me",
+          "en": "I will put on makeup",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais maquilhar-te",
+          "en": "You will put on makeup",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai maquilhar-se",
+          "en": "She will put on makeup",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos maquilhar-nos",
+          "en": "We will put on makeup",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão maquilhar-se",
+          "en": "You will put on makeup",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Elas vão maquilhar-se",
+          "en": "They will put on makeup",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu maquilharei",
+          "en": "I will put on makeup",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu maquilharás",
+          "en": "You will put on makeup",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela maquilhará",
+          "en": "She will put on makeup",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós maquilharemos",
+          "en": "We will put on makeup",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês maquilharão",
+          "en": "You will put on makeup",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Elas maquilharão",
+          "en": "They will put on makeup",
+          "_grammarChecked": true
+        }
+      ]
     }
   },
   {
@@ -22744,7 +23037,50 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu limpo o quarto",
+          "en": "I clean the room",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu limpas a casa",
+          "en": "You clean the house",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela limpa a cozinha",
+          "en": "She cleans the kitchen",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós limpamos o escritório",
+          "en": "We clean the office",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês limpam o carro",
+          "en": "You clean the car",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles limpam a rua",
+          "en": "They clean the street",
+          "_grammarChecked": true
+        }
+      ],
+      "past": [],
+      "future-peri": [],
+      "future-simple": []
+    }
   },
   {
     "id": 1781879155561,
