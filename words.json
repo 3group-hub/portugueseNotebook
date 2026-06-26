@@ -19918,9 +19918,9 @@
       ],
       "future-simple": []
     },
-    "generatingExample": false,
-    "_generatingTense": null,
-    "_activeTense": "future-peri"
+    "generatingExample": true,
+    "_generatingTense": "future-simple",
+    "_activeTense": "future-simple"
   },
   {
     "id": 1781879155560,
