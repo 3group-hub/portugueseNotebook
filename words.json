@@ -31085,7 +31085,64 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu mandei um endereço eletrónico",
+          "en": "I sent an email",
+          "_grammarFixes": [
+            {
+              "orig": "email",
+              "best": "endereço eletrónico",
+              "rule": "Palavras de origem estrangeira evitáveis: email"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu mandaste um SMS",
+          "en": "You sent a text message",
+          "_grammarFixes": [
+            {
+              "orig": "sms",
+              "best": "SMS",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela mandou um pacote",
+          "en": "She sent a package",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós mandámos um cartão",
+          "en": "We sent a card",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês mandaram um presente",
+          "en": "You sent a gift",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles mandaram uma mensagem",
+          "en": "They sent a message",
+          "_grammarChecked": true
+        }
+      ],
+      "future-peri": [],
+      "future-simple": []
+    }
   },
   {
     "id": 1781879155637,
