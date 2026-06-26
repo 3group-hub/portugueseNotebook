@@ -670,7 +670,7 @@
       ]
     },
     "_generatingTense": null,
-    "_activeTense": "present"
+    "_activeTense": "future-simple"
   },
   {
     "id": 1777373855359,
@@ -15103,7 +15103,7 @@
       ]
     },
     "_generatingTense": null,
-    "_activeTense": "past"
+    "_activeTense": "present"
   },
   {
     "id": 1778748608102,
@@ -15253,7 +15253,7 @@
       ]
     },
     "_generatingTense": null,
-    "_activeTense": "future-simple"
+    "_activeTense": "imperative"
   },
   {
     "id": 1778748951204,
@@ -21528,7 +21528,16 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [],
+      "past": [],
+      "future-peri": [],
+      "future-simple": []
+    },
+    "generatingExample": true,
+    "_generatingTense": "present",
+    "_activeTense": "present"
   },
   {
     "id": 1781879155634,
