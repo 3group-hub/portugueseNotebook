@@ -34211,7 +34211,44 @@
     "examples": [],
     "addedAt": "19/06/2026",
     "tenses": {
-      "present": [],
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu movo as cadeiras",
+          "en": "I move the chairs",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu moves o telemóvel",
+          "en": "You move the mobile phone",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela move a mesa",
+          "en": "She moves the table",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós movemos as caixas",
+          "en": "We move the boxes",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês movem os carros",
+          "en": "You move the cars",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles movem as estantes",
+          "en": "They move the shelves",
+          "_grammarChecked": true
+        }
+      ],
       "past": [],
       "future-peri": [
         {
