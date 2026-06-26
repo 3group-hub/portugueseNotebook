@@ -23077,9 +23077,120 @@
           "_grammarChecked": true
         }
       ],
-      "past": [],
-      "future-peri": [],
-      "future-simple": []
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu limpei o quarto.",
+          "en": "I cleaned the room.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu limpaste o carro.",
+          "en": "You cleaned the car.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela limpou a casa.",
+          "en": "She cleaned the house.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós limpamos a cozinha.",
+          "en": "We cleaned the kitchen.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês limparam o escritório.",
+          "en": "You cleaned the office.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles limparam a rua.",
+          "en": "They cleaned the street.",
+          "_grammarChecked": true
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou limpar",
+          "en": "I will clean",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais limpar",
+          "en": "You will clean",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele/Ela vai limpar",
+          "en": "He/She will clean",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos limpar",
+          "en": "We will clean",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão limpar",
+          "en": "You will clean",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles/Elas vão limpar",
+          "en": "They will clean",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu limparei o quarto",
+          "en": "I will clean the room",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu limparás o carro",
+          "en": "You will clean the car",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela limpará a casa",
+          "en": "She will clean the house",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós limparemos a cozinha",
+          "en": "We will clean the kitchen",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês limparão o escritório",
+          "en": "You will clean the office",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles limparão a rua",
+          "en": "They will clean the street",
+          "_grammarChecked": true
+        }
+      ]
     }
   },
   {
@@ -23089,7 +23200,161 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu arrumo o quarto",
+          "en": "I tidy up the room",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu arrumas a casa",
+          "en": "You tidy up the house",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela arruma a cozinha",
+          "en": "She tidies up the kitchen",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós arrumamos o escritório",
+          "en": "We tidy up the office",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês arrumam o quarto",
+          "en": "You tidy up the room",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles arrumam a sala",
+          "en": "They tidy up the living room",
+          "_grammarChecked": true
+        }
+      ],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu arrumei o quarto",
+          "en": "I tidied up the room",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu arrumaste a casa",
+          "en": "You tidied up the house",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela arrumou a cozinha",
+          "en": "She tidied up the kitchen",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós arrumamos o escritório",
+          "en": "We tidied up the office",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês arrumaram o sótão",
+          "en": "You tidied up the attic",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles arrumaram a garagem",
+          "en": "They tidied up the garage",
+          "_grammarChecked": true
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou arrumar",
+          "en": "I'm going to tidy up",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais arrumar",
+          "en": "You're going to tidy up",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai arrumar",
+          "en": "She's going to tidy up",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos arrumar",
+          "en": "We're going to tidy up",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão arrumar",
+          "en": "You're going to tidy up",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão arrumar",
+          "en": "They're going to tidy up",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu arrumarei o quarto",
+          "en": "I will tidy up the room",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu arrumarás o teu espaço",
+          "en": "You will tidy up your space",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela arrumará a sala",
+          "en": "She will tidy up the living room",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós arrumaremos a casa",
+          "en": "We will tidy up the house",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês arrumarão os quartos",
+          "en": "You will tidy up the rooms",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles arrumarão a cozinha",
+          "en": "They will tidy up the kitchen",
+          "_grammarChecked": true
+        }
+      ]
+    }
   },
   {
     "id": 1781879155562,
@@ -23098,7 +23363,50 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu cozinho todos os dias.",
+          "en": "I cook every day.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu cozinhas muito bem.",
+          "en": "You cook very well.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela cozinha para a família.",
+          "en": "She cooks for the family.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós cozinhamos juntos.",
+          "en": "We cook together.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês cozinham todos os fins de semana.",
+          "en": "You cook every weekend.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles cozinham para o restaurante.",
+          "en": "They cook for the restaurant.",
+          "_grammarChecked": true
+        }
+      ],
+      "past": [],
+      "future-peri": [],
+      "future-simple": []
+    }
   },
   {
     "id": 1781879155563,
