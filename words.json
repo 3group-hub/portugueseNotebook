@@ -19881,9 +19881,9 @@
       "future-peri": [],
       "future-simple": []
     },
-    "generatingExample": false,
-    "_generatingTense": null,
-    "_activeTense": "past"
+    "generatingExample": true,
+    "_generatingTense": "future-peri",
+    "_activeTense": "future-peri"
   },
   {
     "id": 1781879155560,
