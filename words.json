@@ -22345,7 +22345,10 @@
         }
       ],
       "future-simple": []
-    }
+    },
+    "generatingExample": true,
+    "_generatingTense": "present",
+    "_activeTense": "present"
   },
   {
     "id": 1781879155668,
