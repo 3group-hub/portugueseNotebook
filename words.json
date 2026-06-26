@@ -28750,8 +28750,82 @@
           "_grammarChecked": true
         }
       ],
-      "future-peri": [],
-      "future-simple": []
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou explicar",
+          "en": "I will explain",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais explicar",
+          "en": "You will explain",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele vai explicar",
+          "en": "He/She will explain",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos explicar",
+          "en": "We will explain",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão explicar",
+          "en": "You will explain",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão explicar",
+          "en": "They will explain",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu explicarei",
+          "en": "I will explain",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu explicarás",
+          "en": "You will explain",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela explicará",
+          "en": "She will explain",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós explicaremos",
+          "en": "We will explain",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês explicarão",
+          "en": "You will explain",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles explicarão",
+          "en": "They will explain",
+          "_grammarChecked": true
+        }
+      ]
     }
   },
   {
@@ -28801,9 +28875,120 @@
           "_grammarChecked": true
         }
       ],
-      "past": [],
-      "future-peri": [],
-      "future-simple": []
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu perguntei ao professor",
+          "en": "I asked the teacher",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu perguntaste ao colega",
+          "en": "You asked the colleague",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela perguntou ao guia",
+          "en": "She asked the guide",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós perguntamos ao funcionário",
+          "en": "We asked the employee",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês perguntaram ao polícia",
+          "en": "You asked the police",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles perguntaram à rececionista",
+          "en": "They asked the receptionist",
+          "_grammarChecked": true
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou perguntar",
+          "en": "I will ask",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais perguntar",
+          "en": "You will ask",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele vai perguntar",
+          "en": "He/She will ask",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos perguntar",
+          "en": "We will ask",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão perguntar",
+          "en": "You will ask",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão perguntar",
+          "en": "They will ask",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu perguntarei",
+          "en": "I will ask",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu perguntarás",
+          "en": "You will ask",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela perguntará",
+          "en": "She will ask",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós perguntaremos",
+          "en": "We will ask",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês perguntarão",
+          "en": "You will ask",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles perguntarão",
+          "en": "They will ask",
+          "_grammarChecked": true
+        }
+      ]
     }
   },
   {
@@ -28813,7 +28998,124 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu conto histórias",
+          "en": "I tell stories",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu contas tudo",
+          "en": "You tell everything",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela conta piadas",
+          "en": "She tells jokes",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós contamos notícias",
+          "en": "We tell news",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês contam mentiras",
+          "en": "You tell lies",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles contam histórias",
+          "en": "They tell stories",
+          "_grammarChecked": true
+        }
+      ],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu contei uma história",
+          "en": "I told a story",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu contaste um segredo",
+          "en": "You told a secret",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela contou uma mentira",
+          "en": "She told a lie",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós contamos tudo",
+          "en": "We told everything",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês contaram a verdade",
+          "en": "You told the truth",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles contaram histórias",
+          "en": "They told stories",
+          "_grammarChecked": true
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou contar",
+          "en": "I will tell",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais contar",
+          "en": "You will tell",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai contar",
+          "en": "She will tell",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos contar",
+          "en": "We will tell",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão contar",
+          "en": "You will tell",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão contar",
+          "en": "They will tell",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": []
+    }
   },
   {
     "id": 1781879155597,
