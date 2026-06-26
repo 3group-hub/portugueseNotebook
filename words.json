@@ -23403,9 +23403,127 @@
           "_grammarChecked": true
         }
       ],
-      "past": [],
-      "future-peri": [],
-      "future-simple": []
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu cozinhei ontem",
+          "en": "I cooked yesterday",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu cozinhas mal",
+          "en": "You cook badly",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela cozinhou bem",
+          "en": "She cooked well",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós cozinhamos juntos",
+          "en": "We cooked together",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês cozinharão hoje",
+          "en": "You will cook today",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles cozinham sempre",
+          "en": "They always cook",
+          "_grammarChecked": true
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou cozinhar",
+          "en": "I will cook",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais cozinhar",
+          "en": "You will cook",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai cozinhar",
+          "en": "She will cook",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos cozinhar",
+          "en": "We will cook",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão cozinhar",
+          "en": "You will cook",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão cozinhar",
+          "en": "They will cook",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu cozinharei bem",
+          "en": "I will cook well",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu cozinharás rápido",
+          "en": "You will cook fast",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela cozinhará tarde",
+          "en": "She will cook late",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós cozinhar aremos juntos",
+          "en": "We will cook together",
+          "_grammarFixes": [
+            {
+              "orig": "cozinhararemos",
+              "best": "cozinhar aremos",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês cozinharão melhor",
+          "en": "You will cook better",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles cozinharão cedo",
+          "en": "They will cook early",
+          "_grammarChecked": true
+        }
+      ]
     }
   },
   {
@@ -23455,9 +23573,154 @@
           "_grammarChecked": true
         }
       ],
-      "past": [],
-      "future-peri": [],
-      "future-simple": []
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu cozi o jantar",
+          "en": "I cooked dinner",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu cozeste um bolo",
+          "en": "You cooked a cake",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela cozeu um arroz",
+          "en": "She cooked rice",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós cozinhamos peixe",
+          "en": "We cooked fish",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês coseram legumes",
+          "en": "You cooked vegetables",
+          "_grammarFixes": [
+            {
+              "orig": "coziram",
+              "best": "coseram",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles casaram carne",
+          "en": "They cooked meat",
+          "_grammarFixes": [
+            {
+              "orig": "cozaram",
+              "best": "casaram",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou cozer",
+          "en": "I will cook",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais cozer",
+          "en": "You will cook",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai cozer",
+          "en": "She will cook",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos cozer",
+          "en": "We will cook",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão cozer",
+          "en": "You will cook",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão cozer",
+          "en": "They will cook",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu cozinharei",
+          "en": "I will cook",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu cozinharás",
+          "en": "You will cook",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela cozinhará",
+          "en": "She will cook",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós cozinháramos",
+          "en": "Incorrect - Nós cozinharámos is not used in European Portuguese, instead: Nós cozinhararemos",
+          "_grammarFixes": [
+            {
+              "orig": "cozinharámos",
+              "best": "cozinháramos",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós cozinhar aremos",
+          "en": "We will cook",
+          "_grammarFixes": [
+            {
+              "orig": "cozinhararemos",
+              "best": "cozinhar aremos",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês cozinharão",
+          "en": "You will cook",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles cozinharão",
+          "en": "They will cook",
+          "_grammarChecked": true
+        }
+      ]
     }
   },
   {
@@ -23467,7 +23730,87 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu frito batatas",
+          "en": "I fry potatoes",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu fritas peixe",
+          "en": "You fry fish",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela frita ovos",
+          "en": "She fries eggs",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós fritamos legumes",
+          "en": "We fry vegetables",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês fritam frango",
+          "en": "You fry chicken",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles fritam carnes",
+          "en": "They fry meats",
+          "_grammarChecked": true
+        }
+      ],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu fritei um ovo.",
+          "en": "I fried an egg.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu fritaste um peixe.",
+          "en": "You fried a fish.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela fritou batatas.",
+          "en": "She fried potatoes.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós fritámos frango.",
+          "en": "We fried chicken.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês fritaram legumes.",
+          "en": "You fried vegetables.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles fritaram peixe.",
+          "en": "They fried fish.",
+          "_grammarChecked": true
+        }
+      ],
+      "future-peri": [],
+      "future-simple": []
+    }
   },
   {
     "id": 1781879155565,
