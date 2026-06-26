@@ -24148,8 +24148,82 @@
           "_grammarChecked": true
         }
       ],
-      "future-peri": [],
-      "future-simple": []
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou cortar",
+          "en": "I will cut",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais cortar",
+          "en": "You will cut",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele/Ela vai cortar",
+          "en": "He/She will cut",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos cortar",
+          "en": "We will cut",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão cortar",
+          "en": "You will cut",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles/Elas vão cortar",
+          "en": "They will cut",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu cortarei",
+          "en": "I will cut",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu cortarás",
+          "en": "You will cut",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela cortará",
+          "en": "She will cut",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós cortaremos",
+          "en": "We will cut",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês cortarão",
+          "en": "You will cut",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles cortarão",
+          "en": "They will cut",
+          "_grammarChecked": true
+        }
+      ]
     }
   },
   {
@@ -24159,7 +24233,161 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu pico cenouras.",
+          "en": "I chop carrots.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu picas cebolas.",
+          "en": "You chop onions.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela pica alhos.",
+          "en": "She chops garlic.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós picamos ervas.",
+          "en": "We chop herbs.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês picam cebolas.",
+          "en": "You chop onions.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles picam lenha.",
+          "en": "They chop firewood.",
+          "_grammarChecked": true
+        }
+      ],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu piquei a cebola.",
+          "en": "I chopped the onion.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu picaste a cenoura.",
+          "en": "You chopped the carrot.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela picou o alho.",
+          "en": "She chopped the garlic.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós picámos a couve.",
+          "en": "We chopped the cabbage.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês picaram os legumes.",
+          "en": "You chopped the vegetables.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles picaram a beterraba.",
+          "en": "They chopped the beetroot.",
+          "_grammarChecked": true
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou picar",
+          "en": "I will chop",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais picar",
+          "en": "You will chop",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai picar",
+          "en": "She will chop",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos picar",
+          "en": "We will chop",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão picar",
+          "en": "You will chop",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão picar",
+          "en": "They will chop",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu picarei lenha",
+          "en": "I will chop wood",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu picarás cebola",
+          "en": "You will chop onion",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela picará ervas",
+          "en": "She will chop herbs",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós picaremos carne",
+          "en": "We will chop meat",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês picarão legumes",
+          "en": "You will chop vegetables",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles picarão madeira",
+          "en": "They will chop wood",
+          "_grammarChecked": true
+        }
+      ]
+    }
   },
   {
     "id": 1781879155568,
@@ -24208,8 +24436,82 @@
           "_grammarChecked": true
         }
       ],
-      "past": [],
-      "future-peri": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu misturei o bolo",
+          "en": "I mixed the cake",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu misturaste o sumo",
+          "en": "You mixed the juice",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela misturou as cores",
+          "en": "She mixed the colors",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós misturámos a massa",
+          "en": "We mixed the dough",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês misturaram o líquido",
+          "en": "You mixed the liquid",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles misturaram as especiarias",
+          "en": "They mixed the spices",
+          "_grammarChecked": true
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou misturar",
+          "en": "I will mix",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais misturar",
+          "en": "You will mix",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele/ela vai misturar",
+          "en": "He/She will mix",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos misturar",
+          "en": "We will mix",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão misturar",
+          "en": "You will mix",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles/elas vão misturar",
+          "en": "They will mix",
+          "_grammarChecked": true
+        }
+      ],
       "future-simple": []
     }
   },
