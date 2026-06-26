@@ -26680,7 +26680,44 @@
           "_grammarChecked": true
         }
       ],
-      "future-simple": []
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu esquecer-me-ei",
+          "en": "I will forget myself",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu esquecer-te-ás",
+          "en": "You will forget yourself",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela esquecer-se-á",
+          "en": "She will forget herself",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós esquecer-nos-emos",
+          "en": "We will forget ourselves",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês esquecer-se-ão",
+          "en": "You will forget yourselves",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles esquecer-se-ão",
+          "en": "They will forget themselves",
+          "_grammarChecked": true
+        }
+      ]
     }
   },
   {
@@ -26690,7 +26727,168 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu encontro soluções fáceis",
+          "en": "I find easy solutions",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu encontras um amigo",
+          "en": "You find a friend",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela encontra um emprego",
+          "en": "She finds a job",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós encontramos uma solução",
+          "en": "We find a solution",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês encontram um bom restaurante",
+          "en": "You find a good restaurant",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles encontram um problema",
+          "en": "They find a problem",
+          "_grammarChecked": true
+        }
+      ],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu encontrei um livro.",
+          "en": "I found a book.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu encontraste um amigo.",
+          "en": "You found a friend.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela encontrou um emprego.",
+          "en": "She found a job.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós encontramos um apartamento.",
+          "en": "We found an apartment.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês encontraram um carro.",
+          "en": "You found a car.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles encontraram um restaurante.",
+          "en": "They found a restaurant.",
+          "_grammarChecked": true
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou encontrar",
+          "en": "I will find",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais encontrar",
+          "en": "You will find",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele/Elas vão encontrar",
+          "en": "He/She will find",
+          "_grammarFixes": [
+            {
+              "orig": "Elas vai",
+              "best": "Elas vão",
+              "rule": "Concordância Verbal: Geral"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos encontrar",
+          "en": "We will find",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão encontrar",
+          "en": "You will find",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles/Elas vão encontrar",
+          "en": "They will find",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu encontrarei o livro",
+          "en": "I will find the book",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu encontrarás a chave",
+          "en": "You will find the key",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela encontrará o erro",
+          "en": "She will find the mistake",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós encontraremos a solução",
+          "en": "We will find the solution",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês encontrarão o caminho",
+          "en": "You will find the path",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles encontrarão o problema",
+          "en": "They will find the problem",
+          "_grammarChecked": true
+        }
+      ]
+    }
   },
   {
     "id": 1781879155583,
@@ -26699,7 +26897,131 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu procuro um emprego",
+          "en": "I look for a job",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu procuras um livro",
+          "en": "You look for a book",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela procura o telemóvel",
+          "en": "She looks for her phone",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós procuramos soluções",
+          "en": "We look for solutions",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês procuram um apartamento",
+          "en": "You look for an apartment",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles procuram emprego ‘online’",
+          "en": "They look for a job online",
+          "_grammarFixes": [
+            {
+              "orig": "online",
+              "best": "‘online’",
+              "rule": "🇵🇹🎓 Estrangeirismos específicos pt_PT"
+            }
+          ],
+          "_grammarChecked": true
+        }
+      ],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu procurei um livro.",
+          "en": "I looked for a book.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu procuraste um emprego.",
+          "en": "You looked for a job.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela procurou um apartamento.",
+          "en": "She looked for an apartment.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós procurámos um hotel.",
+          "en": "We looked for a hotel.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês procuraram um restaurante.",
+          "en": "You looked for a restaurant.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles procuraram um carro.",
+          "en": "They looked for a car.",
+          "_grammarChecked": true
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou procurar",
+          "en": "I will look for",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais procurar",
+          "en": "You will look for",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele/ela vai procurar",
+          "en": "He/She will look for",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos procurar",
+          "en": "We will look for",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão procurar",
+          "en": "You will look for",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles/elas vão procurar",
+          "en": "They will look for",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": []
+    }
   },
   {
     "id": 1781879155584,
