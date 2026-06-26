@@ -19631,13 +19631,50 @@
     "examples": [],
     "addedAt": "19/06/2026",
     "tenses": {
-      "present": [],
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu lavo-me todos os dias.",
+          "en": "I wash myself every day.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu lavas-te antes de dormir.",
+          "en": "You wash yourself before sleeping.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela lava-se com sabonete.",
+          "en": "She washes herself with soap.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós lavamo-nos juntos.",
+          "en": "We wash ourselves together.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês lavam-se rápido.",
+          "en": "You wash yourselves quickly.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles lavam-se todos os dias.",
+          "en": "They wash themselves every day.",
+          "_grammarChecked": true
+        }
+      ],
       "past": [],
       "future-peri": [],
       "future-simple": []
     },
-    "generatingExample": true,
-    "_generatingTense": "present",
+    "generatingExample": false,
+    "_generatingTense": null,
     "_activeTense": "present"
   },
   {
