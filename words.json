@@ -30590,7 +30590,44 @@
         }
       ],
       "past": [],
-      "future-peri": [],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou nascer",
+          "en": "I will be born",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais nascer",
+          "en": "You will be born",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai nascer",
+          "en": "She will be born",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos nascer",
+          "en": "We will be born",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão nascer",
+          "en": "You will be born",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão nascer",
+          "en": "They will be born",
+          "_grammarChecked": true
+        }
+      ],
       "future-simple": []
     }
   },
