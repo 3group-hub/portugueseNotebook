@@ -24892,7 +24892,161 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu cheiro bem.",
+          "en": "I smell well.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu cheiras mal.",
+          "en": "You smell bad.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela cheira bem.",
+          "en": "She smells well.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós cheiramos bem.",
+          "en": "We smell well.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês cheiram mal.",
+          "en": "You smell bad.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles cheiram bem.",
+          "en": "They smell well.",
+          "_grammarChecked": true
+        }
+      ],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu cheirei o perfume",
+          "en": "I smelled the perfume",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu cheiraste o incenso",
+          "en": "You smelled the incense",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela cheirou o jardim",
+          "en": "She smelled the garden",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós cheiramos o ar",
+          "en": "We smelled the air",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês cheiraram o peixe",
+          "en": "You smelled the fish",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles cheiraram o lixo",
+          "en": "They smelled the trash",
+          "_grammarChecked": true
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou cheirar",
+          "en": "I will smell",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais cheirar",
+          "en": "You will smell",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai cheirar",
+          "en": "She will smell",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos cheirar",
+          "en": "We will smell",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão cheirar",
+          "en": "You will smell",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão cheirar",
+          "en": "They will smell",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu cheirarei o perfume",
+          "en": "I will smell the perfume",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu cheirarás o jantar",
+          "en": "You will smell the dinner",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela cheirará o café",
+          "en": "She will smell the coffee",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós cheiraremos o ar",
+          "en": "We will smell the air",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês cheirarão o pão",
+          "en": "You will smell the bread",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles cheirarão o lixo",
+          "en": "They will smell the trash",
+          "_grammarChecked": true
+        }
+      ]
+    }
   },
   {
     "id": 1781879155572,
@@ -24901,7 +25055,161 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu compro livros",
+          "en": "I buy books",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu compras um carro",
+          "en": "You buy a car",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela compra flores",
+          "en": "She buys flowers",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós compramos comida",
+          "en": "We buy food",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês compram roupas",
+          "en": "You buy clothes",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles compram bilhetes",
+          "en": "They buy tickets",
+          "_grammarChecked": true
+        }
+      ],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu comprei um livro",
+          "en": "I bought a book",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu compraste um carro",
+          "en": "You bought a car",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela comprou um apartamento",
+          "en": "She bought an apartment",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós comprámos um computador",
+          "en": "We bought a computer",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês compraram um barco",
+          "en": "You bought a boat",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles compraram um terreno",
+          "en": "They bought a plot of land",
+          "_grammarChecked": true
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou comprar",
+          "en": "I'm going to buy",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais comprar",
+          "en": "You're going to buy",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai comprar",
+          "en": "She's going to buy",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos comprar",
+          "en": "We're going to buy",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão comprar",
+          "en": "You're going to buy",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão comprar",
+          "en": "They're going to buy",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu comprarei um carro",
+          "en": "I will buy a car",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu comprarás um livro",
+          "en": "You will buy a book",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela comprará um presente",
+          "en": "She will buy a gift",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós compraremos uma casa",
+          "en": "We will buy a house",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês comprarão um bilhete",
+          "en": "You will buy a ticket",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles comprarão um barco",
+          "en": "They will buy a boat",
+          "_grammarChecked": true
+        }
+      ]
+    }
   },
   {
     "id": 1781879155573,
