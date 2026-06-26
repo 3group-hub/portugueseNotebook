@@ -21310,7 +21310,161 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu desperto cedo.",
+          "en": "I wake up early.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu despertas tarde.",
+          "en": "You wake up late.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela desperta às 7h.",
+          "en": "She wakes up at 7am.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós despertamos juntos.",
+          "en": "We wake up together.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês despertam cedo.",
+          "en": "You wake up early.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles despertam tarde.",
+          "en": "They wake up late.",
+          "_grammarChecked": true
+        }
+      ],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu despertei cedo",
+          "en": "I woke up early",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu despertaste atrasado",
+          "en": "You woke up late",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela despertou tarde",
+          "en": "She woke up late",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós despertámos juntos",
+          "en": "We woke up together",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês despertaram cedo",
+          "en": "You woke up early",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles despertaram tarde",
+          "en": "They woke up late",
+          "_grammarChecked": true
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou despertar",
+          "en": "I will wake up",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais despertar",
+          "en": "You will wake up",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai despertar",
+          "en": "She will wake up",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos despertar",
+          "en": "We will wake up",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão despertar",
+          "en": "You will wake up",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão despertar",
+          "en": "They will wake up",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu despertarei cedo",
+          "en": "I will wake up early",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu despertarás tarde",
+          "en": "You will wake up late",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela despertará logo",
+          "en": "She will wake up soon",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós despertaremos juntos",
+          "en": "We will wake up together",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês despertarão tarde",
+          "en": "You will wake up late",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles despertarão cedo",
+          "en": "They will wake up early",
+          "_grammarChecked": true
+        }
+      ]
+    }
   },
   {
     "id": 1781879155551,
@@ -21321,7 +21475,44 @@
     "examples": [],
     "addedAt": "19/06/2026",
     "tenses": {
-      "present": [],
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu visto-me todos os dias.",
+          "en": "I get dressed every day.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vestes-te rapidamente.",
+          "en": "You get dressed quickly.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela veste-se bem.",
+          "en": "She gets dressed well.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vestimo-nos juntos.",
+          "en": "We get dressed together.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vestem-se como quiserem.",
+          "en": "You get dressed as you like.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vestem-se muito bem.",
+          "en": "They get dressed very well.",
+          "_grammarChecked": true
+        }
+      ],
       "past": [
         {
           "pronoun": "eu",
@@ -21360,8 +21551,82 @@
           "_grammarChecked": true
         }
       ],
-      "future-peri": [],
-      "future-simple": []
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou vestir-me",
+          "en": "I will get dressed",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais vestir-te",
+          "en": "You will get dressed",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai vestir-se",
+          "en": "She will get dressed",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos vestir-nos",
+          "en": "We will get dressed",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão vestir-se",
+          "en": "You will get dressed",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão vestir-se",
+          "en": "They will get dressed",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vestir-me-ei rápido.",
+          "en": "I will get dressed quickly.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vestir-te-ás depressa.",
+          "en": "You will get dressed quickly.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vestir-se-á tarde.",
+          "en": "She will get dressed late.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vestir-nos-emos juntos.",
+          "en": "We will get dressed together.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vestir-se-ão cedo.",
+          "en": "You will get dressed early.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vestir-se-ão fora.",
+          "en": "They will get dressed outside.",
+          "_grammarChecked": true
+        }
+      ]
     }
   },
   {
@@ -21371,7 +21636,64 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu despojo-me à noite.",
+          "en": "I undress at night.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu despes-te às pressas.",
+          "en": "You undress in a hurry.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela despe-se devagar.",
+          "en": "She undresses slowly.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós despimo-nos juntos.",
+          "en": "We undress together.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês desviem-se à vontade.",
+          "en": "You undress at ease.",
+          "_grammarFixes": [
+            {
+              "orig": "despiem",
+              "best": "desviem",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles despedem-se rapidamente.",
+          "en": "They undress quickly.",
+          "_grammarFixes": [
+            {
+              "orig": "despeem",
+              "best": "despedem",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        }
+      ],
+      "past": [],
+      "future-peri": [],
+      "future-simple": []
+    }
   },
   {
     "id": 1781879155553,
