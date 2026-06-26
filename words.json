@@ -21690,9 +21690,127 @@
           "_grammarChecked": true
         }
       ],
-      "past": [],
-      "future-peri": [],
-      "future-simple": []
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu despi-me ontem à noite",
+          "en": "I undressed last night",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu despiste-te rapidamente",
+          "en": "You undressed quickly",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela despiu-se em silêncio",
+          "en": "She undressed in silence",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós despiedo-nos juntos",
+          "en": "We undressed together",
+          "_grammarFixes": [
+            {
+              "orig": "despiemo",
+              "best": "despiedo",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês despiram-se depressa",
+          "en": "You undressed quickly",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles despiram-se ao mesmo tempo",
+          "en": "They undressed at the same time",
+          "_grammarChecked": true
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou despir-me",
+          "en": "I will undress",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais despir-te",
+          "en": "You will undress",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai despir-se",
+          "en": "She will undress",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos despir-nos",
+          "en": "We will undress",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão despir-se",
+          "en": "You will undress",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão despir-se",
+          "en": "They will undress",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu me despirei",
+          "en": "I will undress",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu te despirás",
+          "en": "You will undress",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela se despirá",
+          "en": "She will undress",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós nos despiremos",
+          "en": "We will undress",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês se despirão",
+          "en": "You will undress",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles se despirão",
+          "en": "They will undress",
+          "_grammarChecked": true
+        }
+      ]
     }
   },
   {
@@ -21749,9 +21867,120 @@
           "_grammarChecked": true
         }
       ],
-      "past": [],
-      "future-peri": [],
-      "future-simple": []
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu calcei os sapatos.",
+          "en": "I put on my shoes.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu calcaste os teus sapatos.",
+          "en": "You put on your shoes.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela calçou os sapatos.",
+          "en": "She put on her shoes.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós calçámos os sapatos.",
+          "en": "We put on our shoes.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês calçaram os sapatos.",
+          "en": "You put on your shoes.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles calçaram os sapatos.",
+          "en": "They put on their shoes.",
+          "_grammarChecked": true
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou calçar",
+          "en": "I will put on shoes",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais calçar",
+          "en": "You will put on shoes",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele vai calçar",
+          "en": "He/She will put on shoes",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos calçar",
+          "en": "We will put on shoes",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão calçar",
+          "en": "You will put on shoes",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão calçar",
+          "en": "They will put on shoes",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu calçarei os sapatos.",
+          "en": "I will put on my shoes.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu calçarás os teus sapatos.",
+          "en": "You will put on your shoes.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela calçará os sapatos.",
+          "en": "She will put on her shoes.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós calçaremos os sapatos.",
+          "en": "We will put on our shoes.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês calçarão os sapatos.",
+          "en": "You will put on your shoes.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles calçarão os sapatos.",
+          "en": "They will put on their shoes.",
+          "_grammarChecked": true
+        }
+      ]
     }
   },
   {
@@ -21839,8 +22068,82 @@
           "_grammarChecked": true
         }
       ],
-      "future-peri": [],
-      "future-simple": []
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou lavar-me",
+          "en": "I will wash myself",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais lavar-te",
+          "en": "You will wash yourself",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai lavar-se",
+          "en": "She will wash herself",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos lavar-nos",
+          "en": "We will wash ourselves",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão lavar-se",
+          "en": "You will wash yourselves",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão lavar-se",
+          "en": "They will wash themselves",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu lavar-me-ei",
+          "en": "I will wash myself",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu lavar-te-ás",
+          "en": "You will wash yourself",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela lavar-se-á",
+          "en": "She will wash herself",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós lavar-nos-emos",
+          "en": "We will wash ourselves",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês lavar-se-ão",
+          "en": "You will wash yourselves",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles lavar-se-ão",
+          "en": "They will wash themselves",
+          "_grammarChecked": true
+        }
+      ]
     },
     "generatingExample": false,
     "_generatingTense": null,
