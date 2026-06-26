@@ -32661,7 +32661,44 @@
           "_grammarChecked": true
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu treinei ontem",
+          "en": "I trained yesterday",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu treinaste à noite",
+          "en": "You trained at night",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela treinou bem",
+          "en": "She trained well",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós treinamos juntos",
+          "en": "We trained together",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês treinaram mal",
+          "en": "You trained badly",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles treinaram cedo",
+          "en": "They trained early",
+          "_grammarChecked": true
+        }
+      ],
       "future-peri": [],
       "future-simple": []
     }
