@@ -31650,7 +31650,44 @@
         }
       ],
       "past": [],
-      "future-peri": [],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou acreditar",
+          "en": "I will believe",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais acreditar",
+          "en": "You will believe",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai acreditar",
+          "en": "She will believe",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos acreditar",
+          "en": "We will believe",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão acreditar",
+          "en": "You will believe",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão acreditar",
+          "en": "They will believe",
+          "_grammarChecked": true
+        }
+      ],
       "future-simple": []
     }
   },
