@@ -19712,7 +19712,7 @@
     },
     "generatingExample": false,
     "_generatingTense": null,
-    "_activeTense": "past"
+    "_activeTense": "future-simple"
   },
   {
     "id": 1781879155555,
@@ -19878,11 +19878,48 @@
           "_grammarChecked": true
         }
       ],
-      "future-peri": [],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou lavar",
+          "en": "I will wash",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais lavar",
+          "en": "You will wash",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai lavar",
+          "en": "She will wash",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos lavar",
+          "en": "We will wash",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão lavar",
+          "en": "You will wash",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão lavar",
+          "en": "They will wash",
+          "_grammarChecked": true
+        }
+      ],
       "future-simple": []
     },
-    "generatingExample": true,
-    "_generatingTense": "future-peri",
+    "generatingExample": false,
+    "_generatingTense": null,
     "_activeTense": "future-peri"
   },
   {
