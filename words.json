@@ -19879,8 +19879,82 @@
           "_grammarChecked": true
         }
       ],
-      "future-peri": [],
-      "future-simple": []
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou andar",
+          "en": "I will walk",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais andar",
+          "en": "You will walk",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai andar",
+          "en": "She will walk",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos andar",
+          "en": "We will walk",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão andar",
+          "en": "You will walk",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão andar",
+          "en": "They will walk",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu andarei mais amanhã",
+          "en": "I will walk more tomorrow",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu andarás muito",
+          "en": "You will walk a lot",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela andará sozinha",
+          "en": "She will walk alone",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós andaremos juntos",
+          "en": "We will walk together",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês andarão rápido",
+          "en": "You will walk fast",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles andarão longe",
+          "en": "They will walk far",
+          "_grammarChecked": true
+        }
+      ]
     }
   },
   {
@@ -19890,7 +19964,168 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu paro o carro aqui.",
+          "en": "I stop the car here.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu paras o telemóvel agora.",
+          "en": "You stop the mobile phone now.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela para de falar.",
+          "en": "She stops talking.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós paramos de trabalhar.",
+          "en": "We stop working.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês param de rir.",
+          "en": "You stop laughing.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles param de correr.",
+          "en": "They stop running.",
+          "_grammarChecked": true
+        }
+      ],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu parei o carro.",
+          "en": "I stopped the car.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu paraste o relógio.",
+          "en": "You stopped the clock.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela parou de fumar.",
+          "en": "She stopped smoking.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós paramos de trabalhar.",
+          "en": "We stopped working.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês pararam de estudar.",
+          "en": "You stopped studying.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles pararam o projeto.",
+          "en": "They stopped the project.",
+          "_grammarFixes": [
+            {
+              "orig": "projecto",
+              "best": "projeto",
+              "rule": "Palavras alteradas pelo Acordo Ortográfico de 90"
+            }
+          ],
+          "_grammarChecked": true
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou parar",
+          "en": "I will stop",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais parar",
+          "en": "You will stop",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai parar",
+          "en": "She will stop",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos parar",
+          "en": "We will stop",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão parar",
+          "en": "You will stop",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão parar",
+          "en": "They will stop",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu pararei",
+          "en": "I will stop",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu pararás",
+          "en": "You will stop",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela parará",
+          "en": "She will stop",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós pararemos",
+          "en": "We will stop",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês pararão",
+          "en": "You will stop",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles pararão",
+          "en": "They will stop",
+          "_grammarChecked": true
+        }
+      ]
+    }
   },
   {
     "id": 1781879155543,
@@ -19899,7 +20134,87 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu caminho todos os dias.",
+          "en": "I walk every day.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu caminhas muito rápido.",
+          "en": "You walk very fast.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela caminha sozinha.",
+          "en": "She walks alone.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós caminhamos juntos.",
+          "en": "We walk together.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês caminham muito.",
+          "en": "You walk a lot.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles caminham à noite.",
+          "en": "They walk at night.",
+          "_grammarChecked": true
+        }
+      ],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu caminhei pela praia",
+          "en": "I walked on the beach",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu caminhaste comigo",
+          "en": "You walked with me",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela caminhou sozinha",
+          "en": "She walked alone",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós caminhamos juntos",
+          "en": "We walked together",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês caminharam muito",
+          "en": "You walked a lot",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles caminharam pela cidade",
+          "en": "They walked through the city",
+          "_grammarChecked": true
+        }
+      ],
+      "future-peri": [],
+      "future-simple": []
+    }
   },
   {
     "id": 1781879155544,
