@@ -22304,7 +22304,44 @@
     "examples": [],
     "addedAt": "19/06/2026",
     "tenses": {
-      "present": [],
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu divirto-me ao cinema",
+          "en": "I have fun at the movies",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu divertes-te com os amigos",
+          "en": "You have fun with friends",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela diverte-se à noite",
+          "en": "She has fun at night",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós divertimo-nos ao parque",
+          "en": "We have fun at the park",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês divertem-se na praia",
+          "en": "You have fun at the beach",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles divertem-se ao festival",
+          "en": "They have fun at the festival",
+          "_grammarChecked": true
+        }
+      ],
       "past": [],
       "future-peri": [
         {
@@ -22346,8 +22383,8 @@
       ],
       "future-simple": []
     },
-    "generatingExample": true,
-    "_generatingTense": "present",
+    "generatingExample": false,
+    "_generatingTense": null,
     "_activeTense": "present"
   },
   {
