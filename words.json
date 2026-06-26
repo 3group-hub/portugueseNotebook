@@ -19807,9 +19807,9 @@
       "future-peri": [],
       "future-simple": []
     },
-    "generatingExample": false,
-    "_generatingTense": null,
-    "_activeTense": "present"
+    "generatingExample": true,
+    "_generatingTense": "past",
+    "_activeTense": "past"
   },
   {
     "id": 1781879155560,
