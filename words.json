@@ -22156,7 +22156,161 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu banho-me todos os dias.",
+          "en": "I bathe every day.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu banhas-te rapidamente.",
+          "en": "You bathe quickly.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela banha-se antes de dormir.",
+          "en": "She bathes before sleeping.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós banhamo-nos juntos.",
+          "en": "We bathe together.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês banham-se à noite.",
+          "en": "You bathe at night.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles banham-se todos os dias.",
+          "en": "They bathe every day.",
+          "_grammarChecked": true
+        }
+      ],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu banhei-me",
+          "en": "I bathed",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu banhaste-te",
+          "en": "You bathed",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela banhou-se",
+          "en": "She bathed",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós banhamo-nos",
+          "en": "We bathed",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês banharam-se",
+          "en": "You bathed",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles banharam-se",
+          "en": "They bathed",
+          "_grammarChecked": true
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou banhar-me",
+          "en": "I will bathe myself",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais banhar-te",
+          "en": "You will bathe yourself",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai banhar-se",
+          "en": "She will bathe herself",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos banhar-nos",
+          "en": "We will bathe ourselves",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão banhar-se",
+          "en": "You will bathe yourselves",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão banhar-se",
+          "en": "They will bathe themselves",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu banhar-me-ei rapidamente.",
+          "en": "I will bathe quickly.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu banhar-te-ás amanhã.",
+          "en": "You will bathe tomorrow.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela banhar-se-á esta noite.",
+          "en": "She will bathe tonight.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós banhar-nos-emos juntos.",
+          "en": "We will bathe together.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês banhar-se-ão lá.",
+          "en": "You will bathe there.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles banhar-se-ão tarde.",
+          "en": "They will bathe late.",
+          "_grammarChecked": true
+        }
+      ]
+    }
   },
   {
     "id": 1781879155556,
@@ -22165,7 +22319,196 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu penteou-me todos os dias.",
+          "en": "I comb my hair every day.",
+          "_grammarFixes": [
+            {
+              "orig": "penteo",
+              "best": "penteou",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu penteias-te antes de sair.",
+          "en": "You comb your hair before going out.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela penteia-se com cuidado.",
+          "en": "She combs her hair with care.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós penteamo-nos juntos.",
+          "en": "We comb our hair together.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês penteiam-se rápido.",
+          "en": "You comb your hair quickly.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles penteiam-se todos os dias.",
+          "en": "They comb their hair every day.",
+          "_grammarChecked": true
+        }
+      ],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu penteei-me",
+          "en": "I combed my hair",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu pendeste-te",
+          "en": "You combed your hair",
+          "_grammarFixes": [
+            {
+              "orig": "penteste",
+              "best": "pendeste",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela pente-se",
+          "en": "She combed her hair",
+          "_grammarFixes": [
+            {
+              "orig": "penteu",
+              "best": "pente",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós penteio-nos",
+          "en": "We combed our hair",
+          "_grammarFixes": [
+            {
+              "orig": "pentemo",
+              "best": "penteio",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês sentiram-se",
+          "en": "You combed your hair",
+          "_grammarFixes": [
+            {
+              "orig": "pentiram",
+              "best": "sentiram",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles pentearam-se",
+          "en": "They combed their hair",
+          "_grammarChecked": true
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou pentear-me",
+          "en": "I will comb my hair",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais pentear-te",
+          "en": "You will comb your hair",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai pentear-se",
+          "en": "She will comb her hair",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos pentear-nos",
+          "en": "We will comb our hair",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão pentear-se",
+          "en": "You will comb your hair",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão pentear-se",
+          "en": "They will comb their hair",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu pentear-me-ei amanhã",
+          "en": "I will comb my hair tomorrow",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu pentear-te-ás depressa",
+          "en": "You will comb your hair quickly",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela pentear-se-á hoje",
+          "en": "She will comb her hair today",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós pentear-nos-emos juntos",
+          "en": "We will comb our hair together",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês pentear-se-ão tarde",
+          "en": "You will comb your hair late",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles pentear-se-ão cedo",
+          "en": "They will comb their hair early",
+          "_grammarChecked": true
+        }
+      ]
+    }
   },
   {
     "id": 1781879155557,
