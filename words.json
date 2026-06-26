@@ -27363,7 +27363,161 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu adoro o meu cão",
+          "en": "I adore my dog",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu adoras o teu gato",
+          "en": "You adore your cat",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela adora o mar",
+          "en": "She adores the sea",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós adoramos a praia",
+          "en": "We adore the beach",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês adoram o sol",
+          "en": "You adore the sun",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles adoram o futebol",
+          "en": "They adore football",
+          "_grammarChecked": true
+        }
+      ],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu adorei o filme",
+          "en": "I adored the movie",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu adoraste o teu presente",
+          "en": "You adored your gift",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela adorou a música",
+          "en": "She adored the music",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós adorámos a praia",
+          "en": "We adored the beach",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês adoraram o espetáculo",
+          "en": "You adored the show",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles adoraram o futebol",
+          "en": "They adored football",
+          "_grammarChecked": true
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou adorar",
+          "en": "I will adore",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais adorar",
+          "en": "You will adore",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele vai adorar",
+          "en": "He/She will adore",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos adorar",
+          "en": "We will adore",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão adorar",
+          "en": "You will adore",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão adorar",
+          "en": "They will adore",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu adorarei",
+          "en": "I will adore",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu adorarás",
+          "en": "You will adore",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela adorará",
+          "en": "She will adore",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós adoraremos",
+          "en": "We will adore",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês adorarão",
+          "en": "You will adore",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles adorarão",
+          "en": "They will adore",
+          "_grammarChecked": true
+        }
+      ]
+    }
   },
   {
     "id": 1781879155587,
@@ -27420,8 +27574,82 @@
         }
       ],
       "past": [],
-      "future-peri": [],
-      "future-simple": []
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou odiar",
+          "en": "I will hate",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais odiar",
+          "en": "You will hate",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai odiar",
+          "en": "She will hate",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos odiar",
+          "en": "We will hate",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão odiar",
+          "en": "You will hate",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão odiar",
+          "en": "They will hate",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu odiarei isso",
+          "en": "I will hate that",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu odiarás isso",
+          "en": "You will hate that",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela odiará isso",
+          "en": "She will hate that",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós odiaremos isso",
+          "en": "We will hate that",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês odiarão isso",
+          "en": "You will hate that",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles odiarão isso",
+          "en": "They will hate that",
+          "_grammarChecked": true
+        }
+      ]
     }
   },
   {
@@ -27431,7 +27659,64 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu detesto brócolos",
+          "en": "I detest broccoli",
+          "_grammarFixes": [
+            {
+              "orig": "brócolis",
+              "best": "brócolos",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu detestas azul",
+          "en": "You detest the color blue",
+          "_grammarFixes": [
+            {
+              "orig": "a cor azul",
+              "best": "azul",
+              "rule": "2. Expressões prolixas: a cor azul"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela detesta chuva",
+          "en": "She detests rain",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós detestamos trânsito",
+          "en": "We detest traffic",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês detestam política",
+          "en": "You detest politics",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles detestam futebol",
+          "en": "They detest soccer",
+          "_grammarChecked": true
+        }
+      ],
+      "past": [],
+      "future-peri": [],
+      "future-simple": []
+    }
   },
   {
     "id": 1781879155589,
