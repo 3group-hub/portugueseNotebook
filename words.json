@@ -35402,7 +35402,57 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu pertenci a um clube",
+          "en": "I belonged to a club",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu pertenceste ao equipa",
+          "en": "You belonged to the team",
+          "_grammarFixes": [
+            {
+              "orig": "time",
+              "best": "equipa",
+              "rule": "🇵🇹🇧🇷 time → equipa"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela pertenceu à empresa",
+          "en": "She belonged to the company",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós pertencemos ao grupo",
+          "en": "We belonged to the group",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês pertenceram à equipe",
+          "en": "You belonged to the team",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles pertenceram à comunidade",
+          "en": "They belonged to the community",
+          "_grammarChecked": true
+        }
+      ],
+      "future-peri": [],
+      "future-simple": []
+    }
   },
   {
     "id": 1781879155729,
