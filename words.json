@@ -19916,10 +19916,47 @@
           "_grammarChecked": true
         }
       ],
-      "future-simple": []
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu lavarei as mãos.",
+          "en": "I will wash my hands.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu lavarás o carro.",
+          "en": "You will wash the car.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela lavará a louça.",
+          "en": "She will wash the dishes.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós lavaremos os pratos.",
+          "en": "We will wash the plates.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês lavarão a roupa.",
+          "en": "You will wash the clothes.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles lavarão o chão.",
+          "en": "They will wash the floor.",
+          "_grammarChecked": true
+        }
+      ]
     },
-    "generatingExample": true,
-    "_generatingTense": "future-simple",
+    "generatingExample": false,
+    "_generatingTense": null,
     "_activeTense": "future-simple"
   },
   {
