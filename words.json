@@ -21530,13 +21530,50 @@
     "examples": [],
     "addedAt": "19/06/2026",
     "tenses": {
-      "present": [],
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu sirvo café",
+          "en": "I serve coffee",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu servas vinho",
+          "en": "You serve wine",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele serve chá",
+          "en": "He/She serves tea",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós servimos comida",
+          "en": "We serve food",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês servem bem",
+          "en": "You serve well",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles servem bolo",
+          "en": "They serve cake",
+          "_grammarChecked": true
+        }
+      ],
       "past": [],
       "future-peri": [],
       "future-simple": []
     },
-    "generatingExample": true,
-    "_generatingTense": "present",
+    "generatingExample": false,
+    "_generatingTense": null,
     "_activeTense": "present"
   },
   {
