@@ -29114,7 +29114,44 @@
           "_grammarChecked": true
         }
       ],
-      "future-simple": []
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu contarei tudo",
+          "en": "I will tell everything",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu contarás tudo",
+          "en": "You will tell everything",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela contará tudo",
+          "en": "She will tell everything",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós contaremos tudo",
+          "en": "We will tell everything",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês contarão tudo",
+          "en": "You will tell everything",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles contarão tudo",
+          "en": "They will tell everything",
+          "_grammarChecked": true
+        }
+      ]
     }
   },
   {
@@ -29171,9 +29208,134 @@
           "_grammarChecked": true
         }
       ],
-      "past": [],
-      "future-peri": [],
-      "future-simple": []
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu escutei música",
+          "en": "I listened to music",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu escutaste rádio",
+          "en": "You listened to the radio",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela escutou notícias",
+          "en": "She listened to news",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós escutámos um disco",
+          "en": "We listened to a record",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês escutaram um ‘podcast’",
+          "en": "You listened to a podcast",
+          "_grammarFixes": [
+            {
+              "orig": "podcast",
+              "best": "‘podcast’",
+              "rule": "🇵🇹🎓 Estrangeirismos específicos pt_PT"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles escutaram um álbum",
+          "en": "They listened to an album",
+          "_grammarChecked": true
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou escutar",
+          "en": "I will listen",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais escutar",
+          "en": "You will listen",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele vai escutar",
+          "en": "He/She will listen",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos escutar",
+          "en": "We will listen",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão escutar",
+          "en": "You will listen",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão escutar",
+          "en": "They will listen",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu escutarei música",
+          "en": "I will listen to music",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu escutarás rádio",
+          "en": "You will listen to the radio",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela escutará notícias",
+          "en": "She will listen to news",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós escutaremos um ‘podcast’",
+          "en": "We will listen to a podcast",
+          "_grammarFixes": [
+            {
+              "orig": "podcast",
+              "best": "‘podcast’",
+              "rule": "🇵🇹🎓 Estrangeirismos específicos pt_PT"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês escutarão um áudio",
+          "en": "You will listen to an audio",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles escutarão um discurso",
+          "en": "They will listen to a speech",
+          "_grammarChecked": true
+        }
+      ]
     }
   },
   {
@@ -29183,7 +29345,168 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu grito quando estou zangado",
+          "en": "I shout when I'm angry",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu gritas",
+          "en": "You shout very loud",
+          "_grammarFixes": [
+            {
+              "orig": "gritas muito alto",
+              "best": "gritas",
+              "rule": "Pleonasmo: Gritar alto"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela grita de dor",
+          "en": "She shouts in pain",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós gritamos juntos",
+          "en": "We shout together",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês gritam muito",
+          "en": "You shout a lot",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles gritam de alegria",
+          "en": "They shout with joy",
+          "_grammarChecked": true
+        }
+      ],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu gritei",
+          "en": "I shouted",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu gritaste",
+          "en": "You shouted",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela gritou",
+          "en": "She shouted",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós gritámos",
+          "en": "We shouted",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês gritaram",
+          "en": "You shouted",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles gritaram",
+          "en": "They shouted",
+          "_grammarChecked": true
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou gritar",
+          "en": "I will shout",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais gritar",
+          "en": "You will shout",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai gritar",
+          "en": "She will shout",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos gritar",
+          "en": "We will shout",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão gritar",
+          "en": "You will shout",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão gritar",
+          "en": "They will shout",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu gritarei",
+          "en": "I will shout",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu gritarás",
+          "en": "You will shout",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela gritará",
+          "en": "She will shout",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós gritaremos",
+          "en": "We will shout",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês gritarão",
+          "en": "You will shout",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles gritarão",
+          "en": "They will shout",
+          "_grammarChecked": true
+        }
+      ]
+    }
   },
   {
     "id": 1781879155599,
