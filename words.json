@@ -32054,7 +32054,57 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu treino todos os dias.",
+          "en": "I train every day.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu treinas muito bem.",
+          "en": "You train very well.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela treina para a maratona.",
+          "en": "She trains for the marathon.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós treinamos juntos.",
+          "en": "We train together.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês treinam muito.",
+          "en": "You train a lot.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles treinam em equipa.",
+          "en": "They train as a team.",
+          "_grammarFixes": [
+            {
+              "orig": "equipe",
+              "best": "equipa",
+              "rule": "🇵🇹🇧🇷 equipes → equipas"
+            }
+          ],
+          "_grammarChecked": true
+        }
+      ],
+      "past": [],
+      "future-peri": [],
+      "future-simple": []
+    }
   },
   {
     "id": 1781879155665,
