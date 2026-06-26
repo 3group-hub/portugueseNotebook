@@ -16707,9 +16707,25 @@
     "translation": "",
     "category": "Noun",
     "notes": "",
-    "examples": [],
+    "examples": [
+      {
+        "pt": "Gosto de viajar no verão",
+        "en": "I like to travel in the summer",
+        "_grammarChecked": true
+      },
+      {
+        "pt": "O verão é a minha estação favorita",
+        "en": "Summer is my favorite season",
+        "_grammarChecked": true
+      },
+      {
+        "pt": "Vou para a praia no verão",
+        "en": "I go to the beach in the summer",
+        "_grammarChecked": true
+      }
+    ],
     "addedAt": "22/05/2026",
-    "generatingExample": true
+    "generatingExample": false
   },
   {
     "id": 1779435019300,
