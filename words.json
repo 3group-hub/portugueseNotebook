@@ -34387,7 +34387,57 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu gravo vídeos todos os dias",
+          "en": "I record videos every day",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu gravas música no teu quarto",
+          "en": "You record music in your room",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela grava programas de TV",
+          "en": "She records TV shows",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós gravamos aulas ‘online’",
+          "en": "We record online lessons",
+          "_grammarFixes": [
+            {
+              "orig": "online",
+              "best": "‘online’",
+              "rule": "🇵🇹🎓 Estrangeirismos específicos pt_PT"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês gravam vídeos juntos",
+          "en": "You record videos together",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles gravam notícias na rádio",
+          "en": "They record news on the radio",
+          "_grammarChecked": true
+        }
+      ],
+      "past": [],
+      "future-peri": [],
+      "future-simple": []
+    }
   },
   {
     "id": 1781879155704,
