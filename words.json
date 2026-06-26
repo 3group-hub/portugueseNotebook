@@ -20597,7 +20597,44 @@
           "_grammarChecked": true
         }
       ],
-      "future-simple": []
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu descerei logo.",
+          "en": "I will go down soon.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu descerás mais tarde.",
+          "en": "You will go down later.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela descerá daqui a pouco.",
+          "en": "She will go down in a little while.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós descenderemos juntos.",
+          "en": "We will go down together.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês descerão primeiro.",
+          "en": "You will go down first.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles descerão amanhã.",
+          "en": "They will go down tomorrow.",
+          "_grammarChecked": true
+        }
+      ]
     }
   },
   {
@@ -20607,7 +20644,161 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu levanto-me cedo.",
+          "en": "I get up early.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu levantas-te tarde.",
+          "en": "You get up late.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela levanta-se às 7.",
+          "en": "She gets up at 7.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós levantamo-nos juntos.",
+          "en": "We get up together.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês levantam-se cedo?",
+          "en": "Do you get up early?",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles levantam-se tarde.",
+          "en": "They get up late.",
+          "_grammarChecked": true
+        }
+      ],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu levantei-me cedo.",
+          "en": "I got up early.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu levantaste-te tarde.",
+          "en": "You got up late.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela levantou-se às 7.",
+          "en": "She got up at 7.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós levantámo-nos juntos.",
+          "en": "We got up together.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês levantaram-se tarde.",
+          "en": "You got up late.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles levantaram-se cedo.",
+          "en": "They got up early.",
+          "_grammarChecked": true
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou levantar-me cedo",
+          "en": "I will get up early",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais levantar-te tarde",
+          "en": "You will get up late",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai levantar-se logo",
+          "en": "She will get up soon",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos levantar-nos juntos",
+          "en": "We will get up together",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão levantar-se agora",
+          "en": "You will get up now",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão levantar-se amanhã",
+          "en": "They will get up tomorrow",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu levantar-me-ei cedo",
+          "en": "I will get up early",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu levantar-te-ás tarde",
+          "en": "You will get up late",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela levantar-se-á às 7h",
+          "en": "She will get up at 7am",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós levantar-nos-emos juntos",
+          "en": "We will get up together",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês levantar-se-ão cedo",
+          "en": "You will get up early",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles levantar-se-ão tarde",
+          "en": "They will get up late",
+          "_grammarChecked": true
+        }
+      ]
+    }
   },
   {
     "id": 1781879155547,
@@ -20616,7 +20807,138 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu sento-me à mesa.",
+          "en": "I sit down at the table.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu sentas-te agora.",
+          "en": "You sit down now.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela senta-se sempre atrasada.",
+          "en": "She sits down always late.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós sentamos-nos juntos.",
+          "en": "We sit down together.",
+          "_grammarFixes": [
+            {
+              "orig": "Nós nos sentamos",
+              "best": "Nós sentamos-nos",
+              "rule": "🇵🇹 Colocações pronominais dois termos"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês sentam-se à frente.",
+          "en": "You sit down in the front.",
+          "_grammarFixes": [
+            {
+              "orig": "Vocês se sentam",
+              "best": "Vocês sentam-se",
+              "rule": "🇵🇹 Colocações pronominais dois termos"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles sentam-se ao lado.",
+          "en": "They sit down beside.",
+          "_grammarChecked": true
+        }
+      ],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu sentei-me à mesa",
+          "en": "I sat down at the table",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu sentaste-te no sofá",
+          "en": "You sat down on the sofa",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela sentou-se na cadeira",
+          "en": "She sat down in the chair",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós sentámo-nos no chão",
+          "en": "We sat down on the floor",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês sentaram-se à frente",
+          "en": "You sat down in the front",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles sentaram-se à mesa",
+          "en": "They sat down at the table",
+          "_grammarChecked": true
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou sentar-me",
+          "en": "I will sit down",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais sentar-te",
+          "en": "You will sit down",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai sentar-se",
+          "en": "She will sit down",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos sentar-nos",
+          "en": "We will sit down",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão sentar-se",
+          "en": "You will sit down",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão sentar-se",
+          "en": "They will sit down",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": []
+    }
   },
   {
     "id": 1781879155548,
