@@ -25218,7 +25218,161 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu pago a renda todos os meses",
+          "en": "I pay the rent every month",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu pagas as contas no fim do mês",
+          "en": "You pay the bills at the end of the month",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela paga o aluguer com o ordenado",
+          "en": "She pays the rent with her salary",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós pagamos a conta no restaurante",
+          "en": "We pay the bill at the restaurant",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês pagam as propinas na universidade",
+          "en": "You pay the fees at the university",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles pagam os impostos todos os anos",
+          "en": "They pay the taxes every year",
+          "_grammarChecked": true
+        }
+      ],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu paguei a conta.",
+          "en": "I paid the bill.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu pagaste a multa.",
+          "en": "You paid the fine.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela pagou o aluguer.",
+          "en": "She paid the rent.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós pagámos a conta.",
+          "en": "We paid the bill.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês pagaram a propina.",
+          "en": "You paid the fee.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles pagaram o imposto.",
+          "en": "They paid the tax.",
+          "_grammarChecked": true
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou pagar",
+          "en": "I will pay",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais pagar",
+          "en": "You will pay",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai pagar",
+          "en": "She will pay",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos pagar",
+          "en": "We will pay",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão pagar",
+          "en": "You will pay",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão pagar",
+          "en": "They will pay",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu pagarei",
+          "en": "I will pay",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu pagarás",
+          "en": "You will pay",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela pagará",
+          "en": "She will pay",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós pagaremos",
+          "en": "We will pay",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês pagarão",
+          "en": "You will pay",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles pagarão",
+          "en": "They will pay",
+          "_grammarChecked": true
+        }
+      ]
+    }
   },
   {
     "id": 1781879155574,
@@ -25229,7 +25383,51 @@
     "examples": [],
     "addedAt": "19/06/2026",
     "tenses": {
-      "present": [],
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu gasto muito dinheiro",
+          "en": "I spend a lot of money",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu gastas dinheiro à-toa",
+          "en": "You spend money unnecessarily",
+          "_grammarFixes": [
+            {
+              "orig": "à toa",
+              "best": "à-toa",
+              "rule": "Brasileirismo: 1. palavras confundidas com as de Portugal"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela gasta tudo em compras",
+          "en": "She spends everything on shopping",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós gastamos pouco dinheiro",
+          "en": "We spend little money",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês gastam muito em viagens",
+          "en": "You spend a lot on trips",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles gastam tudo em tecnologia",
+          "en": "They spend everything on technology",
+          "_grammarChecked": true
+        }
+      ],
       "past": [
         {
           "pronoun": "eu",
@@ -25268,8 +25466,82 @@
           "_grammarChecked": true
         }
       ],
-      "future-peri": [],
-      "future-simple": []
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou gastar",
+          "en": "I will spend",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais gastar",
+          "en": "You will spend",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele vai gastar",
+          "en": "He/She will spend",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos gastar",
+          "en": "We will spend",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão gastar",
+          "en": "You will spend",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão gastar",
+          "en": "They will spend",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu gastarei dinheiro.",
+          "en": "I will spend money.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu gastarás pouco.",
+          "en": "You will spend little.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela gastará tudo.",
+          "en": "She will spend everything.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós gastaremos mais.",
+          "en": "We will spend more.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês gastarão muito.",
+          "en": "You will spend a lot.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles gastarão tudo.",
+          "en": "They will spend everything.",
+          "_grammarChecked": true
+        }
+      ]
     }
   },
   {
@@ -25279,7 +25551,50 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu ganho sempre",
+          "en": "I always win",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu ganhas pouco",
+          "en": "You win little",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela ganha muito",
+          "en": "She wins a lot",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós ganhamos tudo",
+          "en": "We win everything",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês ganham sempre",
+          "en": "You win always",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles ganham pouco",
+          "en": "They win little",
+          "_grammarChecked": true
+        }
+      ],
+      "past": [],
+      "future-peri": [],
+      "future-simple": []
+    }
   },
   {
     "id": 1781879155576,
