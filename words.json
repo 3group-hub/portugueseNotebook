@@ -30418,7 +30418,50 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu deixei o livro em casa",
+          "en": "I left the book at home",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu deixaste a porta aberta",
+          "en": "You left the door open",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela deixou o emprego",
+          "en": "She left the job",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós deixamos o carro estacionado",
+          "en": "We left the car parked",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês deixaram a janela fechada",
+          "en": "You left the window closed",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles deixaram a cidade ontem",
+          "en": "They left the city yesterday",
+          "_grammarChecked": true
+        }
+      ],
+      "future-peri": [],
+      "future-simple": []
+    }
   },
   {
     "id": 1781879155619,
