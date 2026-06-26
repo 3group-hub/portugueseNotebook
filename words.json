@@ -33819,7 +33819,44 @@
           "_grammarChecked": true
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vesti um casaco",
+          "en": "I wore a coat",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vestiste um fato",
+          "en": "You wore a suit",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vestiu um vestido",
+          "en": "She wore a dress",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vestimos roupas quentes",
+          "en": "We wore warm clothes",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vestiram fardas",
+          "en": "You wore uniforms",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vestiram trajes típicos",
+          "en": "They wore traditional costumes",
+          "_grammarChecked": true
+        }
+      ],
       "future-peri": [],
       "future-simple": []
     }
