@@ -30156,7 +30156,44 @@
     "examples": [],
     "addedAt": "19/06/2026",
     "tenses": {
-      "present": [],
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu conduzo o carro",
+          "en": "I drive the car",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu conduzes bem",
+          "en": "You drive well",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela conduz devagar",
+          "en": "She drives slowly",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós conduzimos juntos",
+          "en": "We drive together",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês conduzem mal",
+          "en": "You drive badly",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles conduzem rápido",
+          "en": "They drive fast",
+          "_grammarChecked": true
+        }
+      ],
       "past": [],
       "future-peri": [
         {
