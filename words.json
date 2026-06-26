@@ -32302,7 +32302,44 @@
     "examples": [],
     "addedAt": "19/06/2026",
     "tenses": {
-      "present": [],
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu concordo com isso",
+          "en": "I agree with that",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu concordas comigo",
+          "en": "You agree with me",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela concorda sempre",
+          "en": "She always agrees",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós concordamos já",
+          "en": "We already agree",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês concordam comigo",
+          "en": "You agree with me",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles concordam sempre",
+          "en": "They always agree",
+          "_grammarChecked": true
+        }
+      ],
       "past": [
         {
           "pronoun": "eu",
