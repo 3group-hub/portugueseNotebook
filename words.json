@@ -19515,9 +19515,120 @@
           "_grammarChecked": true
         }
       ],
-      "past": [],
-      "future-peri": [],
-      "future-simple": []
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu entrei na sala.",
+          "en": "I entered the room.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu entraste no cinema.",
+          "en": "You entered the cinema.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela entrou em casa.",
+          "en": "She entered home.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós entrámos no parque.",
+          "en": "We entered the park.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês entraram na escola.",
+          "en": "You entered the school.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles entraram no escritório.",
+          "en": "They entered the office.",
+          "_grammarChecked": true
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou entrar",
+          "en": "I will enter",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais entrar",
+          "en": "You will enter",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai entrar",
+          "en": "She will enter",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos entrar",
+          "en": "We will enter",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão entrar",
+          "en": "You will enter",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão entrar",
+          "en": "They will enter",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu entrarei cedo.",
+          "en": "I will enter early.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu entrarás logo.",
+          "en": "You will enter soon.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela entrará primeiro.",
+          "en": "She will enter first.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós entraremos juntos.",
+          "en": "We will enter together.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês entrarão depois.",
+          "en": "You will enter later.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles entrarão hoje.",
+          "en": "They will enter today.",
+          "_grammarChecked": true
+        }
+      ]
     }
   },
   {
@@ -19527,7 +19638,161 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu regresso ao trabalho",
+          "en": "I return to work",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu regressas cedo",
+          "en": "You return early",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela regressa amanhã",
+          "en": "She returns tomorrow",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós regressamos juntos",
+          "en": "We return together",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês regressam hoje",
+          "en": "You return today",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles regressam tarde",
+          "en": "They return late",
+          "_grammarChecked": true
+        }
+      ],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu regressei a casa",
+          "en": "I returned home",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu regressaste cedo",
+          "en": "You returned early",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela regressou tarde",
+          "en": "She returned late",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós regressámos juntos",
+          "en": "We returned together",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês regressaram ontem",
+          "en": "You returned yesterday",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles regressaram cedo",
+          "en": "They returned early",
+          "_grammarChecked": true
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou regressar",
+          "en": "I will return",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais regressar",
+          "en": "You will return",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele vai regressar",
+          "en": "He/She will return",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos regressar",
+          "en": "We will return",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão regressar",
+          "en": "You will return",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão regressar",
+          "en": "They will return",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu regressarei logo.",
+          "en": "I will return soon.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu regressarás cedo.",
+          "en": "You will return early.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela regressará amanhã.",
+          "en": "She will return tomorrow.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós regressaremos juntos.",
+          "en": "We will return together.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês regressarão tarde.",
+          "en": "You will return late.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles regressarão hoje.",
+          "en": "They will return today.",
+          "_grammarChecked": true
+        }
+      ]
+    }
   },
   {
     "id": 1781879155541,
@@ -19576,7 +19841,44 @@
           "_grammarChecked": true
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu andei mais cedo.",
+          "en": "I walked earlier.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu andaste muito.",
+          "en": "You walked a lot.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela andou ontem.",
+          "en": "She walked yesterday.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós andámos juntos.",
+          "en": "We walked together.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês andaram rápido.",
+          "en": "You walked fast.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles andaram muito.",
+          "en": "They walked a lot.",
+          "_grammarChecked": true
+        }
+      ],
       "future-peri": [],
       "future-simple": []
     }
