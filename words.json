@@ -30169,7 +30169,80 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu dirijo o carro",
+          "en": "I drive the car",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu dirigias é raro",
+          "en": "You drive is rare",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu dirigirás um dia",
+          "en": "You will drive one day",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu diriges bem",
+          "en": "You drive well",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela dirige o táxi",
+          "en": "She drives the taxi",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós dirigimos o carro",
+          "en": "We drive the car",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês dirigem mal",
+          "en": "You drive badly",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles dirigem os camiões",
+          "en": "They drive the trucks",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu diriges o teu carro",
+          "en": "You drive your car",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele dirige o seu carro",
+          "en": "He drives his car",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eu",
+          "pt": "Eu dirijo com cuidado",
+          "en": "I drive with care",
+          "_grammarChecked": true
+        }
+      ],
+      "past": [],
+      "future-peri": [],
+      "future-simple": []
+    }
   },
   {
     "id": 1781879155609,
