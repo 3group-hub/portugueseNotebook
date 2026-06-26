@@ -34720,7 +34720,44 @@
         }
       ],
       "past": [],
-      "future-peri": [],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou arranjar",
+          "en": "I will arrange",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais arranjar",
+          "en": "You will arrange",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai arranjar",
+          "en": "She will arrange",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos arranjar",
+          "en": "We will arrange",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão arranjar",
+          "en": "You will arrange",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão arranjar",
+          "en": "They will arrange",
+          "_grammarChecked": true
+        }
+      ],
       "future-simple": []
     }
   },
