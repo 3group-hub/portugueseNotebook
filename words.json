@@ -33662,7 +33662,86 @@
     "addedAt": "19/06/2026",
     "tenses": {
       "present": [],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu convidei os meus amigos",
+          "en": "I invited my friends",
+          "_grammarFixes": [
+            {
+              "orig": "convidEI",
+              "best": "convidei",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu convidaste a tua irmã",
+          "en": "You invited your sister",
+          "_grammarFixes": [
+            {
+              "orig": "convidASTE",
+              "best": "convidaste",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela convidou o namorado",
+          "en": "She invited her boyfriend",
+          "_grammarFixes": [
+            {
+              "orig": "convidOU",
+              "best": "convidou",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós convidamos os colegas",
+          "en": "We invited our colleagues",
+          "_grammarFixes": [
+            {
+              "orig": "convidÁMOS",
+              "best": "convidamos",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês convidaram os pais",
+          "en": "You invited your parents",
+          "_grammarFixes": [
+            {
+              "orig": "convidARAM",
+              "best": "convidaram",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles convidaram os amigos",
+          "en": "They invited their friends",
+          "_grammarFixes": [
+            {
+              "orig": "convidARAM",
+              "best": "convidaram",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        }
+      ],
       "future-peri": [
         {
           "pronoun": "eu",
