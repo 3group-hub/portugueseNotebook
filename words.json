@@ -24512,7 +24512,44 @@
           "_grammarChecked": true
         }
       ],
-      "future-simple": []
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu misturarei tudo",
+          "en": "I will mix everything",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu misturarás bem",
+          "en": "You will mix well",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela misturará o bolo",
+          "en": "She will mix the cake",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós misturaremos tudo",
+          "en": "We will mix everything",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês misturarão mal",
+          "en": "You will mix badly",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles misturarão o concreto",
+          "en": "They will mix the concrete",
+          "_grammarChecked": true
+        }
+      ]
     }
   },
   {
@@ -24522,7 +24559,168 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu tempero o arroz",
+          "en": "I season the rice",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu temperas o peixe",
+          "en": "You season the fish",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela tempera a salada",
+          "en": "She seasons the salad",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós temperamos a sopa",
+          "en": "We season the soup",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês temperam o frango",
+          "en": "You season the chicken",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles temperam a carne",
+          "en": "They season the meat",
+          "_grammarChecked": true
+        }
+      ],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu emperrei o bolo.",
+          "en": "I seasoned the cake.",
+          "_grammarFixes": [
+            {
+              "orig": "temperrei",
+              "best": "emperrei",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu temperaste o peixe.",
+          "en": "You seasoned the fish.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela temperou a salada.",
+          "en": "She seasoned the salad.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós temperámos o estufado.",
+          "en": "We seasoned the stew.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês temperaram o arroz.",
+          "en": "You seasoned the rice.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles temperaram a sopa.",
+          "en": "They seasoned the soup.",
+          "_grammarChecked": true
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou temperar",
+          "en": "I will season",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais temperar",
+          "en": "You will season",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai temperar",
+          "en": "She will season",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos temperar",
+          "en": "We will season",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão temperar",
+          "en": "You will season",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão temperar",
+          "en": "They will season",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu temperarei o bolo",
+          "en": "I will season the cake",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu temperarás o peixe",
+          "en": "You will season the fish",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela temperará a salada",
+          "en": "She will season the salad",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós temperaremos o assado",
+          "en": "We will season the roast",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês temperarão a sopa",
+          "en": "You will season the soup",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles temperarão o arroz",
+          "en": "They will season the rice",
+          "_grammarChecked": true
+        }
+      ]
+    }
   },
   {
     "id": 1781879155570,
@@ -24571,9 +24769,120 @@
           "_grammarChecked": true
         }
       ],
-      "past": [],
-      "future-peri": [],
-      "future-simple": []
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu provei o bolo",
+          "en": "I tried the cake",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu provaste o vinho",
+          "en": "You tried the wine",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela provou o peixe",
+          "en": "She tried the fish",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós provámos o queijo",
+          "en": "We tried the cheese",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês provaram o doce",
+          "en": "You tried the dessert",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles provaram a cerveja",
+          "en": "They tried the beer",
+          "_grammarChecked": true
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou provar",
+          "en": "I will try",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais provar",
+          "en": "You will try",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai provar",
+          "en": "She will try",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos provar",
+          "en": "We will try",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão provar",
+          "en": "You will try",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão provar",
+          "en": "They will try",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu provarei",
+          "en": "I will try",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu provarás",
+          "en": "You will try",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela provará",
+          "en": "She will try",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós provaremos",
+          "en": "We will try",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês provarão",
+          "en": "You will try",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles provarão",
+          "en": "They will try",
+          "_grammarChecked": true
+        }
+      ]
     }
   },
   {
