@@ -1544,6 +1544,44 @@
           "en": "They will illuminate",
           "_grammarChecked": true
         }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu iluminarei a sala.",
+          "en": "I will illuminate the room.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu iluminarás a cozinha.",
+          "en": "You will illuminate the kitchen.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela iluminará o jardim.",
+          "en": "She will illuminate the garden.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós iluminaremos a casa.",
+          "en": "We will illuminate the house.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês iluminarão o escritório.",
+          "en": "You will illuminate the office.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles iluminarão a cidade.",
+          "en": "They will illuminate the city.",
+          "_grammarChecked": true
+        }
       ]
     },
     "_generatingTense": null,
@@ -3652,7 +3690,7 @@
           "_grammarChecked": true
         },
         {
-          "pronoun": "ela",
+          "pronoun": "ele/ela",
           "pt": "Ela fez",
           "en": "She did",
           "_grammarChecked": true
@@ -3670,7 +3708,7 @@
           "_grammarChecked": true
         },
         {
-          "pronoun": "eles",
+          "pronoun": "eles/elas",
           "pt": "Eles fizeram",
           "en": "They did",
           "_grammarChecked": true
@@ -19219,8 +19257,89 @@
           "_grammarChecked": true
         }
       ],
-      "future-peri": [],
-      "future-simple": []
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou pôr",
+          "en": "I will put",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais pôr",
+          "en": "You will put",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai pôr",
+          "en": "She will put",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos pôr",
+          "en": "We will put",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão pôr",
+          "en": "You will put",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão pôr",
+          "en": "They will put",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu porei o livro na mesa",
+          "en": "I will put the book on the table",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu porás a chave no bolso",
+          "en": "You will put the key in your pocket",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela porá a comida no forno",
+          "en": "She will put the food in the oven",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós faremos",
+          "en": "We will get our hands dirty",
+          "_grammarFixes": [
+            {
+              "orig": "poremos a mão na massa",
+              "best": "faremos",
+              "rule": "Clichê: Pôr a mão na massa"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês porão as malas no carro",
+          "en": "You will put the suitcases in the car",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles porão a casa à venda",
+          "en": "They will put the house up for sale",
+          "_grammarChecked": true
+        }
+      ]
     }
   },
   {
@@ -19230,7 +19349,124 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu durmo cedo",
+          "en": "I sleep early",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu dormes tarde",
+          "en": "You sleep late",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela dorme muito",
+          "en": "She sleeps a lot",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós dormimos juntos",
+          "en": "We sleep together",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês dormem mal",
+          "en": "You sleep badly",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles dormem sempre",
+          "en": "They always sleep",
+          "_grammarChecked": true
+        }
+      ],
+      "past": [],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou dormir",
+          "en": "I will sleep",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais dormir",
+          "en": "You will sleep",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele vai dormir",
+          "en": "He/She will sleep",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos dormir",
+          "en": "We will sleep",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão dormir",
+          "en": "You will sleep",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão dormir",
+          "en": "They will sleep",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu dormirei cedo",
+          "en": "I will sleep early",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu dormirás tarde",
+          "en": "You will sleep late",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela dormirá bem",
+          "en": "She will sleep well",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós dormiremos juntos",
+          "en": "We will sleep together",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês dormirão tarde",
+          "en": "You will sleep late",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles dormirão cedo",
+          "en": "They will sleep early",
+          "_grammarChecked": true
+        }
+      ]
+    }
   },
   {
     "id": 1781879155539,
