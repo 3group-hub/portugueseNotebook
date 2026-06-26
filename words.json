@@ -34058,7 +34058,44 @@
     "examples": [],
     "addedAt": "19/06/2026",
     "tenses": {
-      "present": [],
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu informo os meus colegas.",
+          "en": "I inform my colleagues.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu informas os teus pais.",
+          "en": "You inform your parents.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela informa os alunos.",
+          "en": "She informs the students.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós informamos os clientes.",
+          "en": "We inform the clients.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês informam os professores.",
+          "en": "You inform the teachers.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles informam os jornalistas.",
+          "en": "They inform the journalists.",
+          "_grammarChecked": true
+        }
+      ],
       "past": [
         {
           "pronoun": "eu",
