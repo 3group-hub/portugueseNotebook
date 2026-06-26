@@ -32643,7 +32643,44 @@
     "tenses": {
       "present": [],
       "past": [],
-      "future-peri": [],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou seguir o plano",
+          "en": "I will follow the plan",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais seguir o exemplo",
+          "en": "You will follow the example",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai seguir o conselho",
+          "en": "She will follow the advice",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos seguir em frente",
+          "en": "We will move forward",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão seguir as instruções",
+          "en": "You will follow the instructions",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão seguir o mesmo caminho",
+          "en": "They will follow the same path",
+          "_grammarChecked": true
+        }
+      ],
       "future-simple": []
     }
   },
