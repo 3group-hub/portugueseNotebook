@@ -19669,12 +19669,49 @@
           "_grammarChecked": true
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu lavei-me",
+          "en": "I washed myself",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu lavaste-te",
+          "en": "You washed yourself",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela lavou-se",
+          "en": "She washed herself",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós lavamo-nos",
+          "en": "We washed ourselves",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês lavaram-se",
+          "en": "You washed yourselves",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles lavaram-se",
+          "en": "They washed themselves",
+          "_grammarChecked": true
+        }
+      ],
       "future-peri": [],
       "future-simple": []
     },
-    "generatingExample": true,
-    "_generatingTense": "past",
+    "generatingExample": false,
+    "_generatingTense": null,
     "_activeTense": "past"
   },
   {
