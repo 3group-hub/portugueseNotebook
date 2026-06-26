@@ -25591,9 +25591,127 @@
           "_grammarChecked": true
         }
       ],
-      "past": [],
-      "future-peri": [],
-      "future-simple": []
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu ganhei o jogo",
+          "en": "I won the game",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu ganhaste o torneio",
+          "en": "You won the tournament",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela ganhou o prémio",
+          "en": "She won the prize",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós ganhámos o campeonato",
+          "en": "We won the championship",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês ganharam o concurso",
+          "en": "You won the contest",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles ganharam o título",
+          "en": "They won the title",
+          "_grammarChecked": true
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou ganhar",
+          "en": "I will win",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais ganhar",
+          "en": "You will win",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai ganhar",
+          "en": "She will win",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos ganhar",
+          "en": "We will win",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão ganhar",
+          "en": "You will win",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão ganhar",
+          "en": "They will win",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu ganharei o jogo",
+          "en": "I will win the game",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu ganharás o concurso",
+          "en": "You will win the contest",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela ganhará a corrida",
+          "en": "She will win the race",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós ganharemos o campeonato",
+          "en": "We will win the championship",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês ganharão o prémio",
+          "en": "You will win the prize",
+          "_grammarFixes": [
+            {
+              "orig": "prêmio",
+              "best": "prémio",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles ganharão a medalha",
+          "en": "They will win the medal",
+          "_grammarChecked": true
+        }
+      ]
     }
   },
   {
@@ -25650,9 +25768,134 @@
           "_grammarChecked": true
         }
       ],
-      "past": [],
-      "future-peri": [],
-      "future-simple": []
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu poupei dinheiro.",
+          "en": "I saved money.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu poupaste tempo.",
+          "en": "You saved time.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela poupar ou esforço.",
+          "en": "She saved effort.",
+          "_grammarFixes": [
+            {
+              "orig": "pouparou",
+              "best": "poupar ou",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós poupámos recursos.",
+          "en": "We saved resources.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês pouparam energia.",
+          "en": "You saved energy.",
+          "_grammarFixes": [
+            {
+              "orig": "Vocês poupaste",
+              "best": "Vocês pouparam",
+              "rule": "Concordância Verbal: Geral"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles pouparam dinheiro.",
+          "en": "They saved money.",
+          "_grammarChecked": true
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou poupar dinheiro",
+          "en": "I will save money",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais poupar tempo",
+          "en": "You will save time",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai poupar esforço",
+          "en": "She will save effort",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos poupar energia",
+          "en": "We will save energy",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão poupar dinheiro",
+          "en": "You will save money",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão poupar recursos",
+          "en": "They will save resources",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu pouparei dinheiro.",
+          "en": "I will save money.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu pouparás tempo.",
+          "en": "You will save time.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela poupará energia.",
+          "en": "She will save energy.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós pouparemos recursos.",
+          "en": "We will save resources.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês pouparão água.",
+          "en": "You will save water.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles pouparão ambiente.",
+          "en": "They will save the environment.",
+          "_grammarChecked": true
+        }
+      ]
     }
   },
   {
@@ -25662,7 +25905,87 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu trabalho todos os dias.",
+          "en": "I work every day.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu trabalhas muito.",
+          "en": "You work a lot.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela trabalha em Lisboa.",
+          "en": "She works in Lisbon.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós trabalhamos juntos.",
+          "en": "We work together.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês trabalham bem.",
+          "en": "You work well.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles trabalham muito.",
+          "en": "They work a lot.",
+          "_grammarChecked": true
+        }
+      ],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu trabalhei muito",
+          "en": "I worked a lot",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu trabalhaste ontem",
+          "en": "You worked yesterday",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela trabalhou aqui",
+          "en": "She worked here",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós trabalhamos juntos",
+          "en": "We worked together",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês trabalharam bem",
+          "en": "You worked well",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles trabalharam tarde",
+          "en": "They worked late",
+          "_grammarChecked": true
+        }
+      ],
+      "future-peri": [],
+      "future-simple": []
+    }
   },
   {
     "id": 1781879155578,
