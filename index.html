@@ -375,6 +375,10 @@
     <!-- Filters -->
     <div class="filters" id="filtersRow" style="display:none;">
       <input class="search-inp" id="searchInp" placeholder="🔍 Search…" oninput="renderWords()" />
+      <label style="display:flex;align-items:center;gap:4px;font-size:11px;color:#888;cursor:pointer;white-space:nowrap;padding:0 4px;" title="Exact match, searches your ENTIRE notebook regardless of category filter — use this to confirm whether a word truly already exists">
+        <input type="checkbox" id="exactSearchToggle" onchange="exactSearchMode=this.checked;renderWords()" style="cursor:pointer;" />
+        🎯 Exact
+      </label>
       <div id="filterBtns" style="display:flex;gap:6px;flex-wrap:wrap;"></div>
       <!-- Sort toggle -->
       <div style="display:flex;gap:4px;margin-left:auto;flex-shrink:0;align-items:center;flex-wrap:wrap;">
@@ -892,6 +896,7 @@ const NUM_GROUPS=[
 let words = JSON.parse(localStorage.getItem('pt-words')||'[]');
 let editId = null;
 let filterCat = 'All';
+let exactSearchMode = false;
 let sortMode = localStorage.getItem('pt-sort') || 'study'; // 'study' | 'alpha' | 'freq' | 'recent'
 let activeTab = 'vocab';
 let activeNumGroup = 0;
@@ -2287,10 +2292,12 @@ function clearForm(){
 // ═══ VERB CLASSIFICATION ══════════════════════════════════════════════════
 function verbType(word){
   const w = word.toLowerCase().trim();
-  if(w.endsWith('ar')) return 'regular-ar';
-  if(w.endsWith('er')) return 'regular-er';
-  if(w.endsWith('ir')) return 'regular-ir';
-  if(w.endsWith('or')) return 'regular-or';
+  const base = w.endsWith('-se') ? w.slice(0,-3) : w; // reflexive verbs check the base infinitive
+  if(EP_IRREGULAR_VERBS[base]) return 'irregular';
+  if(base.endsWith('ar')) return 'regular-ar';
+  if(base.endsWith('er')) return 'regular-er';
+  if(base.endsWith('ir')) return 'regular-ir';
+  if(base.endsWith('or')) return 'regular-or';
   return 'irregular';
 }
 function verbTypeLabel(t){
@@ -2390,11 +2397,24 @@ function renderGroup(key, groupWords, color, headerHTML, collapsed){
     </div>`;
 }
 
+function normalizeForSearch(s){
+  return (s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').trim();
+}
+
 function renderWords(){
-  const q = document.getElementById('searchInp').value.toLowerCase();
-  let filtered = words.filter(w =>
-    matchesFilter(w) && (w.word.toLowerCase().includes(q) || w.translation.toLowerCase().includes(q))
-  );
+  const qRaw = document.getElementById('searchInp').value;
+  const q = qRaw.toLowerCase();
+  let filtered;
+  if(exactSearchMode && qRaw.trim()){
+    // Exact mode: ignores category filter entirely, searches the WHOLE notebook,
+    // and matches accent/case-insensitively so "fazer" finds "Fazer" or "fazér" typos.
+    const qNorm = normalizeForSearch(qRaw);
+    filtered = words.filter(w => normalizeForSearch(w.word) === qNorm);
+  } else {
+    filtered = words.filter(w =>
+      matchesFilter(w) && (w.word.toLowerCase().includes(q) || w.translation.toLowerCase().includes(q))
+    );
+  }
 
   document.getElementById('filtersRow').style.display = words.length ? 'flex' : 'none';
   buildFilterBtns();
@@ -5348,13 +5368,19 @@ let genMissingCancelFlag = false;
 let genMissingDone = 0;
 let genMissingCurrentLabel = '';
 
+function hasAllPronouns(rows){
+  if(!rows || rows.length < EP_PRONOUNS.length) return false;
+  const present = new Set(rows.map(r => (r.pronoun||'').toLowerCase().trim()));
+  return EP_PRONOUNS.every(p => present.has(p.toLowerCase()));
+}
+
 function scanMissingTenses(){
   const tenses = ['present','past','future-peri','future-simple'];
   const queue = [];
   words.filter(w=>w.category==='Verb').forEach(w=>{
     tenses.forEach(t=>{
       const rows = w.tenses?.[t] || [];
-      if(rows.length < EP_PRONOUNS.length){
+      if(!hasAllPronouns(rows)){
         queue.push({ wordId:w.id, word:w.word, translation:w.translation, freq:w.freq||'common', tense:t });
       }
     });
