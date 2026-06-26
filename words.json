@@ -20212,8 +20212,82 @@
           "_grammarChecked": true
         }
       ],
-      "future-peri": [],
-      "future-simple": []
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou caminhar",
+          "en": "I will walk",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais caminhar",
+          "en": "You will walk",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele/ela vai caminhar",
+          "en": "He/She will walk",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos caminhar",
+          "en": "We will walk",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão caminhar",
+          "en": "You will walk",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles/elas vão caminhar",
+          "en": "They will walk",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu caminharei muito.",
+          "en": "I will walk a lot.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu caminharás comigo.",
+          "en": "You will walk with me.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela caminhará sozinha.",
+          "en": "She will walk alone.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós caminharemos juntos.",
+          "en": "We will walk together.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês caminharão lá.",
+          "en": "You will walk there.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles caminharão muito.",
+          "en": "They will walk a lot.",
+          "_grammarChecked": true
+        }
+      ]
     }
   },
   {
@@ -20223,7 +20297,175 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu subo as escadas.",
+          "en": "I go up the stairs.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu Alves as escadas.",
+          "en": "You go up the stairs.",
+          "_grammarFixes": [
+            {
+              "orig": "subes",
+              "best": "Alves",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela sabe as escadas.",
+          "en": "She goes up the stairs.",
+          "_grammarFixes": [
+            {
+              "orig": "sube",
+              "best": "sabe",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós subimos as escadas.",
+          "en": "We go up the stairs.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês sobem as escadas.",
+          "en": "You go up the stairs.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles sobem as escadas.",
+          "en": "They go up the stairs.",
+          "_grammarChecked": true
+        }
+      ],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu subi ao quarto.",
+          "en": "I went up to the room.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu subiste ao último andar.",
+          "en": "You went up to the top floor.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela subiu ao palco.",
+          "en": "She went up to the stage.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós subimos ao monte.",
+          "en": "We went up the mountain.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês subiram ao telhado.",
+          "en": "You went up to the roof.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles subiram ao avião.",
+          "en": "They went up to the plane.",
+          "_grammarChecked": true
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou subir",
+          "en": "I will go up",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais subir",
+          "en": "You will go up",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele/ela vai subir",
+          "en": "He/She will go up",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos subir",
+          "en": "We will go up",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão subir",
+          "en": "You will go up",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles/elas vão subir",
+          "en": "They will go up",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu subirei o monte",
+          "en": "I will go up the mountain",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu subirás o morro",
+          "en": "You will go up the hill",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela subirá as escadas",
+          "en": "She will go up the stairs",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós subiremos ao telhado",
+          "en": "We will go up to the roof",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês subirão ao último andar",
+          "en": "You will go up to the top floor",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles subirão ao topo da montanha",
+          "en": "They will go up to the top of the mountain",
+          "_grammarChecked": true
+        }
+      ]
+    }
   },
   {
     "id": 1781879155545,
@@ -20279,8 +20521,82 @@
           "_grammarChecked": true
         }
       ],
-      "past": [],
-      "future-peri": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu desci as escadas",
+          "en": "I went down the stairs",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu desceste as escadas",
+          "en": "You went down the stairs",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela desceu as escadas",
+          "en": "She went down the stairs",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós descemos as escadas",
+          "en": "We went down the stairs",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês descenderam as escadas",
+          "en": "You went down the stairs",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles descenderam as escadas",
+          "en": "They went down the stairs",
+          "_grammarChecked": true
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou descer",
+          "en": "I will go down",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais descer",
+          "en": "You will go down",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai descer",
+          "en": "She will go down",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos descer",
+          "en": "We will go down",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão descer",
+          "en": "You will go down",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão descer",
+          "en": "They will go down",
+          "_grammarChecked": true
+        }
+      ],
       "future-simple": []
     }
   },
