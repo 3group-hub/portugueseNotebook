@@ -20937,7 +20937,44 @@
           "_grammarChecked": true
         }
       ],
-      "future-simple": []
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu sentar-me-ei logo.",
+          "en": "I will sit down soon.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu sentar-te-ás primeiro.",
+          "en": "You will sit down first.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela sentar-se-á à minha esquerda.",
+          "en": "She will sit down on my left.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós sentar-nos-emos juntos.",
+          "en": "We will sit down together.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês sentar-se-ão à frente.",
+          "en": "You will sit down in the front.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles sentar-se-ão lá.",
+          "en": "They will sit down there.",
+          "_grammarChecked": true
+        }
+      ]
     }
   },
   {
@@ -20947,7 +20984,161 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu deito-me cedo.",
+          "en": "I lie down early.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu deitas-te agora.",
+          "en": "You lie down now.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela deita-se tarde.",
+          "en": "She lies down late.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós deitamo-nos cedo.",
+          "en": "We lie down early.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês deitam-se tarde.",
+          "en": "You lie down late.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles deitam-se cedo.",
+          "en": "They lie down early.",
+          "_grammarChecked": true
+        }
+      ],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu deitei-me cedo.",
+          "en": "I lay down early.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu deitaste-te tarde.",
+          "en": "You lay down late.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela deitou-se à hora certa.",
+          "en": "She lay down at the right time.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós deitámo-nos juntos.",
+          "en": "We lay down together.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês deitaram-se cedo.",
+          "en": "You lay down early.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles deitaram-se tarde.",
+          "en": "They lay down late.",
+          "_grammarChecked": true
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou deitar-me",
+          "en": "I will lie down",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais deitar-te",
+          "en": "You will lie down",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele/Ela vai deitar-se",
+          "en": "He/She will lie down",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos deitar-nos",
+          "en": "We will lie down",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão deitar-se",
+          "en": "You will lie down",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles/Elas vão deitar-se",
+          "en": "They will lie down",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu deitarei cedo",
+          "en": "I will lie down early",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu deitarás tarde",
+          "en": "You will lie down late",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela deitará cedo",
+          "en": "She will lie down early",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós deitaremos cedo",
+          "en": "We will lie down early",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês deitarão tarde",
+          "en": "You will lie down late",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles deitarão cedo",
+          "en": "They will lie down early",
+          "_grammarChecked": true
+        }
+      ]
+    }
   },
   {
     "id": 1781879155549,
@@ -20958,8 +21149,82 @@
     "examples": [],
     "addedAt": "19/06/2026",
     "tenses": {
-      "present": [],
-      "past": [],
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu acordo cedo.",
+          "en": "I wake up early.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu acordas tarde.",
+          "en": "You wake up late.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela acorda às 7.",
+          "en": "She wakes up at 7.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós acordamos juntos.",
+          "en": "We wake up together.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês acordam cedo.",
+          "en": "You wake up early.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles acordam sempre tarde.",
+          "en": "They always wake up late.",
+          "_grammarChecked": true
+        }
+      ],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu acordei cedo",
+          "en": "I woke up early",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu acordaste tarde",
+          "en": "You woke up late",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela acordou tarde",
+          "en": "She woke up late",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós acordámos cedo",
+          "en": "We woke up early",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês acordaram tarde",
+          "en": "You woke up late",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles acordaram cedo",
+          "en": "They woke up early",
+          "_grammarChecked": true
+        }
+      ],
       "future-peri": [
         {
           "pronoun": "eu",
@@ -20998,7 +21263,44 @@
           "_grammarChecked": true
         }
       ],
-      "future-simple": []
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu acordarei cedo",
+          "en": "I will wake up early",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu acordarás tarde",
+          "en": "You will wake up late",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela acordará logo",
+          "en": "She will wake up soon",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós acordaremos juntos",
+          "en": "We will wake up together",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês acordarão cedo",
+          "en": "You will wake up early",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles acordarão tarde",
+          "en": "They will wake up late",
+          "_grammarChecked": true
+        }
+      ]
     }
   },
   {
