@@ -19803,12 +19803,49 @@
           "_grammarChecked": true
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu lavei o cabelo.",
+          "en": "I washed my hair.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu lavaste o rosto.",
+          "en": "You washed your face.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela lavou as mãos.",
+          "en": "She washed her hands.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós lavamos o carro.",
+          "en": "We washed the car.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês lavaram a louça.",
+          "en": "You washed the dishes.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles lavaram a roupa.",
+          "en": "They washed the clothes.",
+          "_grammarChecked": true
+        }
+      ],
       "future-peri": [],
       "future-simple": []
     },
-    "generatingExample": true,
-    "_generatingTense": "past",
+    "generatingExample": false,
+    "_generatingTense": null,
     "_activeTense": "past"
   },
   {
