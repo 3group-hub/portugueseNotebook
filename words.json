@@ -34154,7 +34154,57 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu anuncio notícias todos os dias.",
+          "en": "I announce news every day.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu anuncias os resultados.",
+          "en": "You announce the results.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela anuncia a decisão.",
+          "en": "She announces the decision.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós anunciamos a novidade.",
+          "en": "We announce the news.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês anunciam os prémios.",
+          "en": "You announce the prizes.",
+          "_grammarFixes": [
+            {
+              "orig": "prêmios",
+              "best": "prémios",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles anunciam o concurso.",
+          "en": "They announce the contest.",
+          "_grammarChecked": true
+        }
+      ],
+      "past": [],
+      "future-peri": [],
+      "future-simple": []
+    }
   },
   {
     "id": 1781879155698,
