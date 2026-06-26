@@ -30725,7 +30725,44 @@
           "_grammarChecked": true
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu mudei de emprego",
+          "en": "I changed jobs",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu mudaste de escola",
+          "en": "You changed schools",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela mudou de casa",
+          "en": "She changed houses",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós mudámos de cidade",
+          "en": "We changed cities",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês mudaram de hotel",
+          "en": "You changed hotels",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles mudaram de país",
+          "en": "They changed countries",
+          "_grammarChecked": true
+        }
+      ],
       "future-peri": [],
       "future-simple": []
     }
