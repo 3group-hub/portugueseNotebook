@@ -33650,7 +33650,44 @@
     "examples": [],
     "addedAt": "19/06/2026",
     "tenses": {
-      "present": [],
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu caio no chão",
+          "en": "I fall to the ground",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu cais muito",
+          "en": "You fall a lot",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela cai ao escorregar",
+          "en": "She falls when slipping",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós caímos na armadilha",
+          "en": "We fall into the trap",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês caem sempre",
+          "en": "You guys always fall",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles caem no escuro",
+          "en": "They fall in the dark",
+          "_grammarChecked": true
+        }
+      ],
       "past": [
         {
           "pronoun": "eu",
