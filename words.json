@@ -14619,7 +14619,7 @@
         }
       ]
     },
-    "_activeTense": "present",
+    "_activeTense": "imperative",
     "_generatingTense": null
   },
   {
@@ -16708,7 +16708,8 @@
     "category": "Noun",
     "notes": "",
     "examples": [],
-    "addedAt": "22/05/2026"
+    "addedAt": "22/05/2026",
+    "generatingExample": true
   },
   {
     "id": 1779435019300,
@@ -19957,7 +19958,7 @@
     },
     "generatingExample": false,
     "_generatingTense": null,
-    "_activeTense": "future-simple"
+    "_activeTense": "present"
   },
   {
     "id": 1781879155560,
