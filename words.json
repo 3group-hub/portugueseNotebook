@@ -29515,7 +29515,168 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu rio muito ao cinema",
+          "en": "I laugh a lot at the movies",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu ris sempre às minhas piadas",
+          "en": "You always laugh at my jokes",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela ri com facilidade",
+          "en": "She laughs easily",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós rimos juntos",
+          "en": "We laugh together",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês riem muito",
+          "en": "You guys laugh a lot",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles riem à-toa",
+          "en": "They laugh for no reason",
+          "_grammarFixes": [
+            {
+              "orig": "à toa",
+              "best": "à-toa",
+              "rule": "Brasileirismo: 1. palavras confundidas com as de Portugal"
+            }
+          ],
+          "_grammarChecked": true
+        }
+      ],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu ri muito",
+          "en": "I laughed a lot",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu riste",
+          "en": "You laughed",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela riu",
+          "en": "She laughed",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós rimos",
+          "en": "We laughed",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês riram",
+          "en": "You laughed",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles riram",
+          "en": "They laughed",
+          "_grammarChecked": true
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou rir",
+          "en": "I will laugh",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais rir",
+          "en": "You will laugh",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele vai rir",
+          "en": "He/She will laugh",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos rir",
+          "en": "We will laugh",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão rir",
+          "en": "You will laugh",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão rir",
+          "en": "They will laugh",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu rirei muito",
+          "en": "I will laugh a lot",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu rirás contigo",
+          "en": "You will laugh with you",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela rirá sozinha",
+          "en": "She will laugh alone",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós riremos juntos",
+          "en": "We will laugh together",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês rirão também",
+          "en": "You will laugh too",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles rirão sempre",
+          "en": "They will always laugh",
+          "_grammarChecked": true
+        }
+      ]
+    }
   },
   {
     "id": 1781879155600,
@@ -29524,7 +29685,161 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu sorrio sempre.",
+          "en": "I always smile.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu sorris quando estás feliz.",
+          "en": "You smile when you're happy.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela sorri com os olhos.",
+          "en": "She smiles with her eyes.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós sorrimos juntos.",
+          "en": "We smile together.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês sorriem muito.",
+          "en": "You guys smile a lot.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles sorriem sempre.",
+          "en": "They always smile.",
+          "_grammarChecked": true
+        }
+      ],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu sorri ontem",
+          "en": "I smiled yesterday",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu sorriste ontem",
+          "en": "You smiled yesterday",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela sorriu ontem",
+          "en": "She smiled yesterday",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós sorrimos ontem",
+          "en": "We smiled yesterday",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês sorriram ontem",
+          "en": "You smiled yesterday",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles sorriram ontem",
+          "en": "They smiled yesterday",
+          "_grammarChecked": true
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou sorrir",
+          "en": "I will smile",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais sorrir",
+          "en": "You will smile",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai sorrir",
+          "en": "She will smile",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos sorrir",
+          "en": "We will smile",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão sorrir",
+          "en": "You will smile",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão sorrir",
+          "en": "They will smile",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu sorrirei",
+          "en": "I will smile",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu sorrirás",
+          "en": "You will smile",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela sorrirá",
+          "en": "She will smile",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós sorriremos",
+          "en": "We will smile",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês sorrirão",
+          "en": "You will smile",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles sorrirão",
+          "en": "They will smile",
+          "_grammarChecked": true
+        }
+      ]
+    }
   },
   {
     "id": 1781879155601,
