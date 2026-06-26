@@ -33254,7 +33254,44 @@
     "addedAt": "19/06/2026",
     "tenses": {
       "present": [],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu irritei meu irmão",
+          "en": "I irritated my brother",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu irritaste o teu pai",
+          "en": "You irritated your father",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela irritou o professor",
+          "en": "She irritated the teacher",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós irritámos os nossos pais",
+          "en": "We irritated our parents",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês irritaram o chefe",
+          "en": "You irritated the boss",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles irritaram a multidão",
+          "en": "They irritated the crowd",
+          "_grammarChecked": true
+        }
+      ],
       "future-peri": [
         {
           "pronoun": "eu",
