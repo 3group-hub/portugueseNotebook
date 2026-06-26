@@ -23808,8 +23808,82 @@
           "_grammarChecked": true
         }
       ],
-      "future-peri": [],
-      "future-simple": []
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou fritar",
+          "en": "I will fry",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais fritar",
+          "en": "You will fry",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai fritar",
+          "en": "She will fry",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos fritar",
+          "en": "We will fry",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão fritar",
+          "en": "You will fry",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão fritar",
+          "en": "They will fry",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu fritarei peixe",
+          "en": "I will fry fish",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu fritarás batatas",
+          "en": "You will fry potatoes",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela fritará ovos",
+          "en": "She will fry eggs",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós fritaremos frango",
+          "en": "We will fry chicken",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês fritarão legumes",
+          "en": "You will fry vegetables",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles fritarão carne",
+          "en": "They will fry meat",
+          "_grammarChecked": true
+        }
+      ]
     }
   },
   {
@@ -23819,7 +23893,175 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu asso legumes",
+          "en": "I roast vegetables",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu assas frango",
+          "en": "You roast chicken",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela assa batatas",
+          "en": "She roasts potatoes",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós assamos peixe",
+          "en": "We roast fish",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês assam carnes",
+          "en": "You roast meats",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles assam pão",
+          "en": "They roast bread",
+          "_grammarChecked": true
+        }
+      ],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu assei o frango.",
+          "en": "I roasted the chicken.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu assaste o peixe.",
+          "en": "You roasted the fish.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela asse a carne.",
+          "en": "She roasted the meat.",
+          "_grammarFixes": [
+            {
+              "orig": "asseu",
+              "best": "asse",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós assamos os legumes.",
+          "en": "We roasted the vegetables.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês assaram o peru.",
+          "en": "You roasted the turkey.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles assaram a batata.",
+          "en": "They roasted the potato.",
+          "_grammarChecked": true
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou assar",
+          "en": "I will roast",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais assar",
+          "en": "You will roast",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai assar",
+          "en": "She will roast",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos assar",
+          "en": "We will roast",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão assar",
+          "en": "You will roast",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão assar",
+          "en": "They will roast",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu assarei o peru",
+          "en": "I will roast the turkey",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu assarás um frango",
+          "en": "You will roast a chicken",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela assará legumes",
+          "en": "She will roast vegetables",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós assaremos um coelho",
+          "en": "We will roast a rabbit",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês assarão uma espetada",
+          "en": "You will roast a skewer",
+          "_grammarFixes": [
+            {
+              "orig": "um espetada",
+              "best": "uma espetada",
+              "rule": "Concordância: Geral"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles assarão um cabrito",
+          "en": "They will roast a kid",
+          "_grammarChecked": true
+        }
+      ]
+    }
   },
   {
     "id": 1781879155566,
@@ -23828,7 +24070,87 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu corto o cabelo",
+          "en": "I cut my hair",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu cortas as unhas",
+          "en": "You cut your nails",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela corta a fruta",
+          "en": "She cuts the fruit",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós cortamos a madeira",
+          "en": "We cut the wood",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês cortam o tecido",
+          "en": "You cut the fabric",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles cortam a grama",
+          "en": "They cut the grass",
+          "_grammarChecked": true
+        }
+      ],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu cortei o cabelo.",
+          "en": "I cut my hair.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu cortaste o papel.",
+          "en": "You cut the paper.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela cortou a fruta.",
+          "en": "She cut the fruit.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós cortamos a madeira.",
+          "en": "We cut the wood.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês cortaram a fita.",
+          "en": "You cut the ribbon.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles cortaram o tecido.",
+          "en": "They cut the fabric.",
+          "_grammarChecked": true
+        }
+      ],
+      "future-peri": [],
+      "future-simple": []
+    }
   },
   {
     "id": 1781879155567,
