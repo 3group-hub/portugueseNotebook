@@ -28410,8 +28410,82 @@
           "_grammarChecked": true
         }
       ],
-      "future-peri": [],
-      "future-simple": []
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou ajudar",
+          "en": "I will help",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais ajudar",
+          "en": "You will help",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai ajudar",
+          "en": "She will help",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos ajudar",
+          "en": "We will help",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão ajudar",
+          "en": "You will help",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão ajudar",
+          "en": "They will help",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu ajudarei",
+          "en": "I will help",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu ajudarás",
+          "en": "You will help",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela ajudará",
+          "en": "She will help",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós ajudaremos",
+          "en": "We will help",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês ajudarão",
+          "en": "You will help",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles ajudarão",
+          "en": "They will help",
+          "_grammarChecked": true
+        }
+      ]
     }
   },
   {
@@ -28421,7 +28495,168 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu mostro o caminho",
+          "en": "I show the way",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu costas um mapa",
+          "en": "You show a map",
+          "_grammarFixes": [
+            {
+              "orig": "mostas",
+              "best": "costas",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela mostra um sorriso",
+          "en": "She shows a smile",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós mostramos a casa",
+          "en": "We show the house",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês mostram a cidade",
+          "en": "You show the city",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles mostram o filme",
+          "en": "They show the movie",
+          "_grammarChecked": true
+        }
+      ],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu mostrei o filme",
+          "en": "I showed the movie",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu mostraste o livro",
+          "en": "You showed the book",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela mostrou a foto",
+          "en": "She showed the photo",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós mostrámos a casa",
+          "en": "We showed the house",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês mostraram o quadro",
+          "en": "You showed the picture",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles mostraram o projeto",
+          "en": "They showed the project",
+          "_grammarChecked": true
+        }
+      ],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou mostrar",
+          "en": "I will show",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais mostrar",
+          "en": "You will show",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela vai mostrar",
+          "en": "She will show",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos mostrar",
+          "en": "We will show",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão mostrar",
+          "en": "You will show",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão mostrar",
+          "en": "They will show",
+          "_grammarChecked": true
+        }
+      ],
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu mostrarei",
+          "en": "I will show",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu mostrarás",
+          "en": "You will show",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela mostrará",
+          "en": "She will show",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós mostraremos",
+          "en": "We will show",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês mostrarão",
+          "en": "You will show",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles mostrarão",
+          "en": "They will show",
+          "_grammarChecked": true
+        }
+      ]
+    }
   },
   {
     "id": 1781879155594,
@@ -28430,7 +28665,94 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu explico tudo",
+          "en": "I explain everything",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu explicas bem",
+          "en": "You explain well",
+          "_grammarFixes": [
+            {
+              "orig": "Tu explicais",
+              "best": "Tu explicas",
+              "rule": "🇵🇹 Erro de concordância verbal"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela explica claro",
+          "en": "She explains clearly",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós explicamos tudo",
+          "en": "We explain everything",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês explicam mal",
+          "en": "You explain badly",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles explicam melhor",
+          "en": "They explain better",
+          "_grammarChecked": true
+        }
+      ],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu expliquei tudo",
+          "en": "I explained everything",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu explicaste o problema",
+          "en": "You explained the problem",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela explicou bem",
+          "en": "She explained well",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós explicamos tudo",
+          "en": "We explained everything",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês explicaram mal",
+          "en": "You explained badly",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles explicaram tudo",
+          "en": "They explained everything",
+          "_grammarChecked": true
+        }
+      ],
+      "future-peri": [],
+      "future-simple": []
+    }
   },
   {
     "id": 1781879155595,
