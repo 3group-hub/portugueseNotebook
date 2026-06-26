@@ -33947,7 +33947,50 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu sofro muito com o calor",
+          "en": "I suffer a lot with the heat",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu sofrerás se não comes",
+          "en": "You will suffer if you don't eat",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela sofre de dores de cabeça",
+          "en": "She suffers from headaches",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós sofreremos se falharmos",
+          "en": "We will suffer if we fail",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês sofrem com o trânsito",
+          "en": "You suffer with traffic",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles sofrem de pobreza",
+          "en": "They suffer from poverty",
+          "_grammarChecked": true
+        }
+      ],
+      "past": [],
+      "future-peri": [],
+      "future-simple": []
+    }
   },
   {
     "id": 1781879155725,
