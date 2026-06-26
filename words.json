@@ -31694,7 +31694,44 @@
           "_grammarChecked": true
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu apontei o erro.",
+          "en": "I pointed out the mistake.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu apontaste o caminho.",
+          "en": "You pointed out the path.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela apontou o problema.",
+          "en": "She pointed out the problem.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós apontamos a solução.",
+          "en": "We pointed out the solution.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês apontaram o erro.",
+          "en": "You pointed out the mistake.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles apontaram a resposta.",
+          "en": "They pointed out the answer.",
+          "_grammarChecked": true
+        }
+      ],
       "future-peri": [],
       "future-simple": []
     }
