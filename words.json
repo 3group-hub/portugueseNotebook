@@ -33140,7 +33140,57 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "tenses": {
+      "present": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu kanji-me",
+          "en": "I got angry",
+          "_grammarFixes": [
+            {
+              "orig": "zangi",
+              "best": "kanji",
+              "rule": "Possível erro ortográfico"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu zangaste-te",
+          "en": "You got angry",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela zangou-se",
+          "en": "She got angry",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós zangámo-nos",
+          "en": "We got angry",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês zangaram-se",
+          "en": "You got angry",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles zangaram-se",
+          "en": "They got angry",
+          "_grammarChecked": true
+        }
+      ],
+      "future-peri": [],
+      "future-simple": []
+    }
   },
   {
     "id": 1781879155675,
