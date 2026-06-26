@@ -33008,7 +33008,44 @@
         }
       ],
       "past": [],
-      "future-peri": [],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou propor",
+          "en": "I will propose",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais propor",
+          "en": "You will propose",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele vai propor",
+          "en": "He/She will propose",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos propor",
+          "en": "We will propose",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão propor",
+          "en": "You will propose",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão propor",
+          "en": "They will propose",
+          "_grammarChecked": true
+        }
+      ],
       "future-simple": []
     }
   },
