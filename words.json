@@ -36482,7 +36482,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "27/06/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "common",
     "tenses": {
@@ -36524,11 +36524,55 @@
           "_grammarChecked": true
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu aproveitei a oportunidade",
+          "en": "I took advantage of the opportunity",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu aproveitaste o tempo",
+          "en": "You took advantage of the time",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela aproveitou a situação",
+          "en": "She took advantage of the situation",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós aproveitámos o momento",
+          "en": "We took advantage of the moment",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês aproveitaram a hipótese",
+          "en": "You took advantage of the chance",
+          "_grammarFixes": [
+            {
+              "orig": "chance",
+              "best": "hipótese",
+              "rule": "Palavras de origem estrangeira evitáveis: chance"
+            }
+          ],
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles aproveitaram a ocasião",
+          "en": "They took advantage of the occasion",
+          "_grammarChecked": true
+        }
+      ],
       "future-peri": [],
       "future-simple": []
     },
-    "_activeTense": "past",
-    "_generatingTense": "past"
+    "_activeTense": "present",
+    "_generatingTense": null
   }
 ]
