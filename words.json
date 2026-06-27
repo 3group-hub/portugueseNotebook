@@ -3623,7 +3623,7 @@
         }
       ]
     },
-    "_activeTense": "imperative",
+    "_activeTense": "future-simple",
     "_generatingTense": null
   },
   {
@@ -13610,7 +13610,7 @@
       ]
     },
     "_generatingTense": null,
-    "_activeTense": "future-peri"
+    "_activeTense": "present"
   },
   {
     "id": 1778746683237,
@@ -31477,7 +31477,10 @@
       "past": [],
       "future-peri": [],
       "future-simple": []
-    }
+    },
+    "generatingExample": true,
+    "_generatingTense": "present",
+    "_activeTense": "present"
   },
   {
     "id": 1781879155638,
