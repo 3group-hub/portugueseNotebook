@@ -31473,13 +31473,50 @@
     "examples": [],
     "addedAt": "19/06/2026",
     "tenses": {
-      "present": [],
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu peço ajuda.",
+          "en": "I ask for help.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu pedes um favor.",
+          "en": "You ask for a favor.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela pede um café.",
+          "en": "She asks for a coffee.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós pedimos desculpas.",
+          "en": "We apologize.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês pedem um tempo.",
+          "en": "You ask for time.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles pedem atenção.",
+          "en": "They ask for attention.",
+          "_grammarChecked": true
+        }
+      ],
       "past": [],
       "future-peri": [],
       "future-simple": []
     },
-    "generatingExample": true,
-    "_generatingTense": "present",
+    "generatingExample": false,
+    "_generatingTense": null,
     "_activeTense": "present"
   },
   {
