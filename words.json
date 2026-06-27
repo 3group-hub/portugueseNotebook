@@ -36673,5 +36673,50 @@
     "generatingExample": false,
     "assessingFreq": false,
     "freq": "common"
+  },
+  {
+    "id": 1782557083037,
+    "word": "habitualmente",
+    "translation": "usually",
+    "category": "Adverb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "27/06/2026"
+  },
+  {
+    "id": 1782557083038,
+    "word": "finalmente",
+    "translation": "finally",
+    "category": "Adverb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "27/06/2026"
+  },
+  {
+    "id": 1782557083039,
+    "word": "faculdade",
+    "translation": "college",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "27/06/2026"
+  },
+  {
+    "id": 1782557083040,
+    "word": "documentário",
+    "translation": "documentary",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "27/06/2026"
+  },
+  {
+    "id": 1782557083041,
+    "word": "televisão",
+    "translation": "television",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "27/06/2026"
   }
 ]
