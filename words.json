@@ -4062,7 +4062,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "02/05/2026",
-    "generatingExample": false,
+    "generatingExample": true,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
@@ -4265,8 +4265,8 @@
         }
       ]
     },
-    "_activeTense": "future-peri",
-    "_generatingTense": null
+    "_activeTense": "present",
+    "_generatingTense": "present"
   },
   {
     "id": 1777728046210,
