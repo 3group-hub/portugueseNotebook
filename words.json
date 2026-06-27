@@ -4062,45 +4062,45 @@
     "notes": "",
     "examples": [],
     "addedAt": "02/05/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "essential",
     "tenses": {
       "present": [
         {
           "pronoun": "eu",
-          "pt": "Eu dou um livro",
-          "en": "I give a book",
+          "pt": "Eu dou um livro.",
+          "en": "I give a book.",
           "_grammarChecked": true
         },
         {
           "pronoun": "tu",
-          "pt": "Tu dás um presente",
-          "en": "You give a gift",
+          "pt": "Tu dás um presente.",
+          "en": "You give a gift.",
           "_grammarChecked": true
         },
         {
           "pronoun": "ele/ela",
-          "pt": "Ela dá um beijo",
-          "en": "She gives a kiss",
+          "pt": "Ela dá um beijo.",
+          "en": "She gives a kiss.",
           "_grammarChecked": true
         },
         {
           "pronoun": "nós",
-          "pt": "Nós damos ajuda",
-          "en": "We give help",
+          "pt": "Nós damos ajuda.",
+          "en": "We give help.",
           "_grammarChecked": true
         },
         {
           "pronoun": "vocês",
-          "pt": "Vocês dão dinheiro",
-          "en": "You give money",
+          "pt": "Vocês dão dinheiro.",
+          "en": "You give money.",
           "_grammarChecked": true
         },
         {
           "pronoun": "eles/elas",
-          "pt": "Eles dão comida",
-          "en": "They give food",
+          "pt": "Eles dão comida.",
+          "en": "They give food.",
           "_grammarChecked": true
         }
       ],
@@ -4266,7 +4266,7 @@
       ]
     },
     "_activeTense": "present",
-    "_generatingTense": "present"
+    "_generatingTense": null
   },
   {
     "id": 1777728046210,
