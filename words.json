@@ -36655,5 +36655,16 @@
     },
     "_activeTense": "future-simple",
     "_generatingTense": null
+  },
+  {
+    "id": 1782556576255,
+    "word": "Vezes",
+    "translation": "Times",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "27/06/2026",
+    "generatingExample": true,
+    "assessingFreq": true
   }
 ]
