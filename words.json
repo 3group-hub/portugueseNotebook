@@ -33793,13 +33793,50 @@
     "addedAt": "19/06/2026",
     "_activeTense": "present",
     "tenses": {
-      "present": [],
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu aceito as condições",
+          "en": "I accept the conditions",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu aceitas as regras",
+          "en": "You accept the rules",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela aceita a proposta",
+          "en": "She accepts the proposal",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós aceitamos a oferta",
+          "en": "We accept the offer",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês aceitam o desafio",
+          "en": "You accept the challenge",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles aceitam a decisão",
+          "en": "They accept the decision",
+          "_grammarChecked": true
+        }
+      ],
       "past": [],
       "future-peri": [],
       "future-simple": []
     },
-    "generatingExample": true,
-    "_generatingTense": "present"
+    "generatingExample": false,
+    "_generatingTense": null
   },
   {
     "id": 1781879155689,
