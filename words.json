@@ -33790,7 +33790,16 @@
     "category": "Verb",
     "notes": "",
     "examples": [],
-    "addedAt": "19/06/2026"
+    "addedAt": "19/06/2026",
+    "_activeTense": "present",
+    "tenses": {
+      "present": [],
+      "past": [],
+      "future-peri": [],
+      "future-simple": []
+    },
+    "generatingExample": true,
+    "_generatingTense": "present"
   },
   {
     "id": 1781879155689,
