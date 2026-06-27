@@ -31550,10 +31550,47 @@
         }
       ],
       "future-peri": [],
-      "future-simple": []
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu pedirei ajuda",
+          "en": "I will ask for help",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu pedirás licença",
+          "en": "You will ask for permission",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela pedirá um favor",
+          "en": "She will ask for a favor",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós pediremos desculpas",
+          "en": "We will apologize",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês pedirão esclarecimentos",
+          "en": "You will ask for clarification",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles pedirão aumento",
+          "en": "They will ask for a raise",
+          "_grammarChecked": true
+        }
+      ]
     },
-    "generatingExample": true,
-    "_generatingTense": "future-simple",
+    "generatingExample": false,
+    "_generatingTense": null,
     "_activeTense": "future-simple"
   },
   {
