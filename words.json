@@ -36440,5 +36440,16 @@
     "notes": "",
     "examples": [],
     "addedAt": "25/06/2026"
+  },
+  {
+    "id": 1782555861800,
+    "word": "Aulas",
+    "translation": "Lessons",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "27/06/2026",
+    "generatingExample": true,
+    "assessingFreq": true
   }
 ]
