@@ -31552,9 +31552,9 @@
       "future-peri": [],
       "future-simple": []
     },
-    "generatingExample": false,
-    "_generatingTense": null,
-    "_activeTense": "past"
+    "generatingExample": true,
+    "_generatingTense": "future-simple",
+    "_activeTense": "future-simple"
   },
   {
     "id": 1781879155638,
