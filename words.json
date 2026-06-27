@@ -36607,7 +36607,51 @@
           "_grammarChecked": true
         }
       ],
-      "future-simple": []
+      "future-simple": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu aproveitarei a oportunidade",
+          "en": "I will take advantage of the opportunity",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu aproveitarás o momento",
+          "en": "You will take advantage of the moment",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela aproveitará a situação",
+          "en": "She will take advantage of the situation",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós aproveitaremos o erro",
+          "en": "We will take advantage of the mistake",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês aproveitarão a oferta",
+          "en": "You will take advantage of the offer",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles aproveitarão a hipótese",
+          "en": "They will take advantage of the chance",
+          "_grammarFixes": [
+            {
+              "orig": "chance",
+              "best": "hipótese",
+              "rule": "Palavras de origem estrangeira evitáveis: chance"
+            }
+          ],
+          "_grammarChecked": true
+        }
+      ]
     },
     "_activeTense": "future-simple",
     "_generatingTense": null
