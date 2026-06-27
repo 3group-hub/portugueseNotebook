@@ -1,5 +1,43 @@
 [
   {
+    "id": 1782560483797,
+    "title": "Ihab e Porto",
+    "level": "",
+    "text": "Chamo-me Ihab, eu sou canadiano. Eu sou engenheiro, mas agora estou reformado. Vivo no Porto há três anos. Eu adoro muito o Porto. Aqui faço muitas coisas que adoro: toco música com amigos, viajo para cidades próximas, ando de bicicleta à beira-mar e como sardinhas. Tenho muitos amigos portugueses de quem adoro.\n\nEu amo Portugal.",
+    "sentencePairs": [
+      {
+        "pt": "Chamo-me Ihab, eu sou canadiano.",
+        "en": "My name is Ihab, I am Canadian."
+      },
+      {
+        "pt": "Eu sou engenheiro, mas agora estou reformado.",
+        "en": "I am an engineer, but now I am retired."
+      },
+      {
+        "pt": "Vivo no Porto há três anos.",
+        "en": "I have been living in Porto for three years."
+      },
+      {
+        "pt": "Eu adoro muito o Porto.",
+        "en": "I really love Porto."
+      },
+      {
+        "pt": "Aqui faço muitas coisas que adoro: toco música com amigos, viajo para cidades próximas, ando de bicicleta à beira-mar e como sardinhas.",
+        "en": "Here I do many things I love: I play music with friends, travel to nearby cities, ride my bike by the sea, and eat sardines."
+      },
+      {
+        "pt": "Tenho muitos amigos portugueses de quem adoro.",
+        "en": "I have many Portuguese friends whom I adore."
+      },
+      {
+        "pt": "Eu amo Portugal.",
+        "en": "I love Portugal."
+      }
+    ],
+    "date": "2026-06-27",
+    "sentences": 7
+  },
+  {
     "id": 1782557090867,
     "title": "Ana",
     "level": "",
