@@ -36482,7 +36482,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "27/06/2026",
-    "generatingExample": false,
+    "generatingExample": true,
     "assessingFreq": false,
     "freq": "common",
     "tenses": {
@@ -36572,7 +36572,7 @@
       "future-peri": [],
       "future-simple": []
     },
-    "_activeTense": "present",
-    "_generatingTense": null
+    "_activeTense": "future-peri",
+    "_generatingTense": "future-peri"
   }
 ]
