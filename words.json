@@ -36482,7 +36482,7 @@
     "notes": "",
     "examples": [],
     "addedAt": "27/06/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "common",
     "tenses": {
@@ -36569,10 +36569,47 @@
           "_grammarChecked": true
         }
       ],
-      "future-peri": [],
+      "future-peri": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu vou aproveitar",
+          "en": "I will take advantage",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu vais aproveitar",
+          "en": "You will take advantage",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ele vai aproveitar",
+          "en": "He/She will take advantage",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós vamos aproveitar",
+          "en": "We will take advantage",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês vão aproveitar",
+          "en": "You will take advantage",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles vão aproveitar",
+          "en": "They will take advantage",
+          "_grammarChecked": true
+        }
+      ],
       "future-simple": []
     },
     "_activeTense": "future-simple",
-    "_generatingTense": "future-simple"
+    "_generatingTense": null
   }
 ]
