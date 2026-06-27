@@ -36455,7 +36455,7 @@
       }
     ],
     "addedAt": "27/06/2026",
-    "generatingExample": false,
+    "generatingExample": true,
     "assessingFreq": false,
     "freq": "common"
   }
