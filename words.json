@@ -36452,10 +36452,25 @@
         "pt": "As aulas começam às oito da manhã",
         "en": "The lessons start at eight in the morning",
         "_grammarChecked": true
+      },
+      {
+        "pt": "As aulas são às terças e quintas.",
+        "en": "The lessons are on Tuesdays and Thursdays.",
+        "_grammarChecked": true
+      },
+      {
+        "pt": "Aulas de informática são muito úteis.",
+        "en": "Computer lessons are very useful.",
+        "_grammarChecked": true
+      },
+      {
+        "pt": "As aulas de português são divertidas.",
+        "en": "The Portuguese lessons are fun.",
+        "_grammarChecked": true
       }
     ],
     "addedAt": "27/06/2026",
-    "generatingExample": true,
+    "generatingExample": false,
     "assessingFreq": false,
     "freq": "common"
   }
