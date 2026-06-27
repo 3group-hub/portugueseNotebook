@@ -31511,12 +31511,49 @@
           "_grammarChecked": true
         }
       ],
-      "past": [],
+      "past": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu pedi um café.",
+          "en": "I asked for a coffee.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu pediste um bolo.",
+          "en": "You asked for a cake.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela pediu um chá.",
+          "en": "She asked for a tea.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós pedimos ajuda.",
+          "en": "We asked for help.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês pediram um quarto.",
+          "en": "You asked for a room.",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles pediram comida.",
+          "en": "They asked for food.",
+          "_grammarChecked": true
+        }
+      ],
       "future-peri": [],
       "future-simple": []
     },
-    "generatingExample": true,
-    "_generatingTense": "past",
+    "generatingExample": false,
+    "_generatingTense": null,
     "_activeTense": "past"
   },
   {
