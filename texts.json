@@ -1,5 +1,63 @@
 [
   {
+    "id": 1782557090867,
+    "title": "Ana",
+    "level": "",
+    "text": "Chamo-me Ana, sou mexicana e trabalho como professora de Espanhol em Lisboa.\nLevanto-me sempre às 8:00 e faço um pouco de exercício físico, tomo um duche e preparo o pequeno-almoço, que normalmente é muito completo: um café, fruta e uma torrada. Saio de casa e vou de autocarro até à Faculdade de Economia, onde dou aulas até às 13:00 da tarde. Depois, almoço habitualmente num restaurante e consulto alguns livros na biblioteca. À tarde, volto de metro para casa e aproveito para responder a alguns emails. Às vezes, lancho com uma amiga ou faço compras no supermercado.\nQuando chego a casa, abraço o meu marido e\ndou algumas aulas online. Por volta das 19:00, janto com o meu marido e a seguir vemos uma série divertida ou um documentário na televisão. Antes de me deitar, preparo os materiais que vou utilizar no dia seguinte. Finalmente, lavo os dentes e a cara e vejo as redes sociais até adormecer.\n3.1. A sua rotina é parecida com a da Ana? Justifique.",
+    "sentencePairs": [
+      {
+        "pt": "Chamo-me Ana, sou mexicana e trabalho como professora de Espanhol em Lisboa.",
+        "en": "My name is Ana, I'm Mexican and I work as a Spanish teacher in Lisbon."
+      },
+      {
+        "pt": "Levanto-me sempre às 8:00 e faço um pouco de exercício físico, tomo um duche e preparo o pequeno-almoço, que normalmente é muito completo: um café, fruta e uma torrada.",
+        "en": "I wake up at 8:00 and do some exercise, take a shower and have breakfast, which is usually very complete: a coffee, fruit and toast."
+      },
+      {
+        "pt": "Saio de casa e vou de autocarro até à Faculdade de Economia, onde dou aulas até às 13:00 da tarde.",
+        "en": "I leave home and take the bus to the Faculty of Economics, where I teach classes until 1:00 pm."
+      },
+      {
+        "pt": "Depois, almoço habitualmente num restaurante e consulto alguns livros na biblioteca.",
+        "en": "Then, I usually have lunch at a restaurant and consult some books at the library."
+      },
+      {
+        "pt": "À tarde, volto de metro para casa e aproveito para responder a alguns emails.",
+        "en": "In the afternoon, I return home by metro and take the opportunity to answer some emails."
+      },
+      {
+        "pt": "Às vezes, lancho com uma amiga ou faço compras no supermercado.",
+        "en": "Sometimes, I have a snack with a friend or go shopping at the supermarket."
+      },
+      {
+        "pt": "Quando chego a casa, abraço o meu marido e dou algumas aulas online.",
+        "en": "When I arrive home, I hug my husband and give some online classes."
+      },
+      {
+        "pt": "Por volta das 19:00, janto com o meu marido e a seguir vemos uma série divertida ou um documentário na televisão.",
+        "en": "Around 7:00 pm, I have dinner with my husband and then we watch a fun series or documentary on TV."
+      },
+      {
+        "pt": "Antes de me deitar, preparo os materiais que vou utilizar no dia seguinte.",
+        "en": "Before going to bed, I prepare the materials I will use the next day."
+      },
+      {
+        "pt": "Finalmente, lavo os dentes e a cara e vejo as redes sociais até adormecer. 3.1.",
+        "en": "Finally, I brush my teeth and face and check social media until I fall asleep."
+      },
+      {
+        "pt": "A sua rotina é parecida com a da Ana?",
+        "en": "Is your routine similar to Ana's?"
+      },
+      {
+        "pt": "Justifique.",
+        "en": "Justify."
+      }
+    ],
+    "date": "2026-06-27",
+    "sentences": 12
+  },
+  {
     "id": 1782377288615,
     "title": "Poema  com Adufe",
     "level": "",
