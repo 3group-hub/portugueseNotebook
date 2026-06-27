@@ -36473,5 +36473,16 @@
     "generatingExample": false,
     "assessingFreq": false,
     "freq": "common"
+  },
+  {
+    "id": 1782556458997,
+    "word": "aproveito",
+    "translation": "I take advantage",
+    "category": "Verb",
+    "notes": "",
+    "examples": [],
+    "addedAt": "27/06/2026",
+    "generatingExample": true,
+    "assessingFreq": true
   }
 ]
