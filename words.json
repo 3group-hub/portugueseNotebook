@@ -36662,9 +36662,16 @@
     "translation": "Times",
     "category": "Noun",
     "notes": "",
-    "examples": [],
+    "examples": [
+      {
+        "pt": "Eu já fui às vezes ao cinema",
+        "en": "I've been to the movies sometimes",
+        "_grammarChecked": true
+      }
+    ],
     "addedAt": "27/06/2026",
-    "generatingExample": true,
-    "assessingFreq": true
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common"
   }
 ]
