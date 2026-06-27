@@ -36482,7 +36482,51 @@
     "notes": "",
     "examples": [],
     "addedAt": "27/06/2026",
-    "generatingExample": true,
-    "assessingFreq": true
+    "generatingExample": false,
+    "assessingFreq": false,
+    "freq": "common",
+    "tenses": {
+      "present": [
+        {
+          "pronoun": "eu",
+          "pt": "Eu aproveito o tempo livre",
+          "en": "I take advantage of free time",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "tu",
+          "pt": "Tu aproveitas o dia",
+          "en": "You take advantage of the day",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "ele/ela",
+          "pt": "Ela aproveita a oportunidade",
+          "en": "She takes advantage of the opportunity",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "nós",
+          "pt": "Nós aproveitamos o verão",
+          "en": "We take advantage of summer",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "vocês",
+          "pt": "Vocês aproveitam a vida",
+          "en": "You take advantage of life",
+          "_grammarChecked": true
+        },
+        {
+          "pronoun": "eles/elas",
+          "pt": "Eles aproveitam o momento",
+          "en": "They take advantage of the moment",
+          "_grammarChecked": true
+        }
+      ],
+      "past": [],
+      "future-peri": [],
+      "future-simple": []
+    }
   }
 ]
