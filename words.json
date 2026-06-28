@@ -36727,5 +36727,23 @@
     "notes": "",
     "examples": [],
     "addedAt": "27/06/2026"
+  },
+  {
+    "id": 1782637193396,
+    "word": "jornal",
+    "translation": "newspaper",
+    "category": "Adjective",
+    "notes": "",
+    "examples": [],
+    "addedAt": "28/06/2026"
+  },
+  {
+    "id": 1782637193397,
+    "word": "diário",
+    "translation": "diary",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "28/06/2026"
   }
 ]
