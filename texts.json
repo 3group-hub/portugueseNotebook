@@ -1,5 +1,55 @@
 [
   {
+    "id": 1782637237478,
+    "title": "pedro Lopes",
+    "level": "",
+    "text": "Chamo-me Pedro Lopes e tenho uma filha, a Teresa. Sou designer gráfico e trabalho num jornal diário. Sou alto, gosto de usar a barba curta e sou muito divertido\"\n. A Teresa tem 6\nanos, tem o cabelo encaracolado, comprido e os olhos castanho escuros. Nós moramos sozinhos. A mãe da Teresa, a Paula, vive no Luxemburgo e trabalha lá. Ela é enfermeira e tem um companheiro luxemburguês, chama-se\nBen e é o padrasto da Teresa, Somos ex-marido e ex-mulher! Sim, agora sou um pai divorciado.\nFelizmente, os meus pais - Rodrigo Lopes e Maria Lopes - moram perto de nós e são uns avós fantásticos! Eles gostam muito de ficar com' a sua neta.",
+    "sentencePairs": [
+      {
+        "pt": "Chamo-me Pedro Lopes e tenho uma filha, a Teresa.",
+        "en": "My name is Pedro Lopes and I have a daughter, Teresa."
+      },
+      {
+        "pt": "Sou designer gráfico e trabalho num jornal diário.",
+        "en": "I'm a graphic designer and I work for a daily newspaper."
+      },
+      {
+        "pt": "Sou alto, gosto de usar a barba curta e sou muito divertido\" .",
+        "en": "I'm tall, I like to wear a short beard and I'm very funny."
+      },
+      {
+        "pt": "A Teresa tem 6 anos, tem o cabelo encaracolado, comprido e os olhos castanho escuros.",
+        "en": "Teresa is 6 years old, she has curly, long hair and dark brown eyes."
+      },
+      {
+        "pt": "Nós moramos sozinhos.",
+        "en": "We live alone."
+      },
+      {
+        "pt": "A mãe da Teresa, a Paula, vive no Luxemburgo e trabalha lá.",
+        "en": "Teresa's mother, Paula, lives in Luxembourg and works there."
+      },
+      {
+        "pt": "Ela é enfermeira e tem um companheiro luxemburguês, chama-se Ben e é o padrasto da Teresa, Somos ex-marido e ex-mulher!",
+        "en": "She's a nurse and has a Luxembourgish partner, his name is Ben and he's Teresa's stepfather, We're ex-husband and ex-wife!"
+      },
+      {
+        "pt": "Sim, agora sou um pai divorciado.",
+        "en": "Yes, I'm now a divorced father."
+      },
+      {
+        "pt": "Felizmente, os meus pais - Rodrigo Lopes e Maria Lopes - moram perto de nós e são uns avós fantásticos!",
+        "en": "Fortunately, my parents - Rodrigo Lopes and Maria Lopes - live close to us and are fantastic grandparents!"
+      },
+      {
+        "pt": "Eles gostam muito de ficar com' a sua neta.",
+        "en": "They love spending time with their granddaughter."
+      }
+    ],
+    "date": "2026-06-28",
+    "sentences": 10
+  },
+  {
     "id": 1782560483797,
     "title": "Ihab e Porto",
     "level": "",
