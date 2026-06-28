@@ -1,5 +1,79 @@
 [
   {
+    "id": 1782637748193,
+    "title": "Meus irmaos",
+    "level": "",
+    "text": "Já conhecem a minha filha Teresa e os meus pais! Mas eu não sou filho único e a\nTeresa também não é neta única.  Eu tenho dois irmãos. O meu irmão chama-se David e a minha irmã chama-se Margarida. O David é casado com a Sara e têm dois filhos: o Martim e o Rúben. Ele é engenheiro informático e é muito inteligente. E magro, alto e também usa barba como eu. Tem o cabelo muito curto e os olhos castanho-escuros. A mulher dele, a Sara, é professora e usa sempre óculos na escola. E muito simpática e faladora. O meu sobrinho Martim tem 5 anos e o meu sobrinho Rúben tem 7 anos! Eles gostam muito de brincar com a prima. A minha irmã Margarida é uma jovem estudante\nde 16 anos. Tem o cabelo encaracolado, muito comprido, e usa tranças. Ela tem um gato amarelo - chama-se Ruby, A minha filha Teresa é parecida com a tia. Elas gostam muito de gatos.",
+    "sentencePairs": [
+      {
+        "pt": "Já conhecem a minha filha Teresa e os meus pais!",
+        "en": "You already know my daughter Teresa and my parents!"
+      },
+      {
+        "pt": "Mas eu não sou filho único e a Teresa também não é neta única.",
+        "en": "But I'm not an only child and Teresa isn't the only grandchild either."
+      },
+      {
+        "pt": "Eu tenho dois irmãos.",
+        "en": "I have two siblings."
+      },
+      {
+        "pt": "O meu irmão chama-se David e a minha irmã chama-se Margarida.",
+        "en": "My brother's name is David and my sister's name is Margarida."
+      },
+      {
+        "pt": "O David é casado com a Sara e têm dois filhos: o Martim e o Rúben.",
+        "en": "David is married to Sara and they have two children: Martim and Rúben."
+      },
+      {
+        "pt": "Ele é engenheiro informático e é muito inteligente.",
+        "en": "He's a computer engineer and is very intelligent."
+      },
+      {
+        "pt": "E magro, alto e também usa barba como eu.",
+        "en": "And he's thin, tall, and also has a beard like me."
+      },
+      {
+        "pt": "Tem o cabelo muito curto e os olhos castanho-escuros.",
+        "en": "He has very short hair and dark brown eyes."
+      },
+      {
+        "pt": "A mulher dele, a Sara, é professora e usa sempre óculos na escola.",
+        "en": "His wife, Sara, is a teacher and always wears glasses at school."
+      },
+      {
+        "pt": "E muito simpática e faladora.",
+        "en": "And she's very kind and talkative."
+      },
+      {
+        "pt": "O meu sobrinho Martim tem 5 anos e o meu sobrinho Rúben tem 7 anos!",
+        "en": "My nephew Martim is 5 years old and my nephew Rúben is 7 years old!"
+      },
+      {
+        "pt": "Eles gostam muito de brincar com a prima.",
+        "en": "They love playing with their cousin."
+      },
+      {
+        "pt": "A minha irmã Margarida é uma jovem estudante de 16 anos.",
+        "en": "My sister Margarida is a 16-year-old student."
+      },
+      {
+        "pt": "Tem o cabelo encaracolado, muito comprido, e usa tranças.",
+        "en": "She has curly, very long hair, and wears braids."
+      },
+      {
+        "pt": "Ela tem um gato amarelo - chama-se Ruby, A minha filha Teresa é parecida com a tia.",
+        "en": "She has a yellow cat - its name is Ruby."
+      },
+      {
+        "pt": "Elas gostam muito de gatos.",
+        "en": "My daughter Teresa looks like her aunt."
+      }
+    ],
+    "date": "2026-06-28",
+    "sentences": 16
+  },
+  {
     "id": 1782637237478,
     "title": "pedro Lopes",
     "level": "",
