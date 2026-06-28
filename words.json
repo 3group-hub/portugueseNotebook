@@ -36745,5 +36745,32 @@
     "notes": "",
     "examples": [],
     "addedAt": "28/06/2026"
+  },
+  {
+    "id": 1782637738904,
+    "word": "irmão",
+    "translation": "brother",
+    "category": "Noun",
+    "notes": "",
+    "examples": [],
+    "addedAt": "28/06/2026"
+  },
+  {
+    "id": 1782637738905,
+    "word": "informático",
+    "translation": "computer scientist",
+    "category": "Adjective",
+    "notes": "",
+    "examples": [],
+    "addedAt": "28/06/2026"
+  },
+  {
+    "id": 1782637738906,
+    "word": "simpática",
+    "translation": "kind",
+    "category": "Adjective",
+    "notes": "",
+    "examples": [],
+    "addedAt": "28/06/2026"
   }
 ]
