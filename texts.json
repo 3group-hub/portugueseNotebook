@@ -1,5 +1,51 @@
 [
   {
+    "id": 1782722321552,
+    "title": "Sofia",
+    "level": "",
+    "text": "Chamo-me Sofia e tenho 47 anos. Trabalho num banco, em Lisboa. Sou casada e tenho três filhos. A Vera tem 12 anos, a Sara tem 6 anos e o Vicente tem 3 anos. Trabalho todos os dias entre as 9 horas e as\n17 horas. Normalmente, prefiro ir de comboio para o trabalho por causa do trânsito. Aos fins de semana, os meus pais, os meus irmãos e os meus sobrinhos costumam almoçar em minha casa. Adoro passar tempo com a minha família! Sou feliz, mas acho que tenho pouco tempo para mim...",
+    "sentencePairs": [
+      {
+        "pt": "Chamo-me Sofia e tenho 47 anos.",
+        "en": "My name is Sofia and I am 47 years old."
+      },
+      {
+        "pt": "Trabalho num banco, em Lisboa.",
+        "en": "I work at a bank in Lisbon."
+      },
+      {
+        "pt": "Sou casada e tenho três filhos.",
+        "en": "I am married and have three children."
+      },
+      {
+        "pt": "A Vera tem 12 anos, a Sara tem 6 anos e o Vicente tem 3 anos.",
+        "en": "Vera is 12 years old, Sara is 6 years old, and Vicente is 3 years old."
+      },
+      {
+        "pt": "Trabalho todos os dias entre as 9 horas e as 17 horas.",
+        "en": "I work every day from 9 am to 5 pm."
+      },
+      {
+        "pt": "Normalmente, prefiro ir de comboio para o trabalho por causa do trânsito.",
+        "en": "Normally, I prefer to take the train to work because of the traffic."
+      },
+      {
+        "pt": "Aos fins de semana, os meus pais, os meus irmãos e os meus sobrinhos costumam almoçar em minha casa.",
+        "en": "On weekends, my parents, my siblings, and my nieces and nephews usually have lunch at my house."
+      },
+      {
+        "pt": "Adoro passar tempo com a minha família!",
+        "en": "I love spending time with my family!"
+      },
+      {
+        "pt": "Sou feliz, mas acho que tenho pouco tempo para mim...",
+        "en": "I am happy, but I think I have little time for myself..."
+      }
+    ],
+    "date": "2026-06-29",
+    "sentences": 9
+  },
+  {
     "id": 1782722154282,
     "title": "Erik",
     "level": "",
