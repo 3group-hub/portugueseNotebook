@@ -1,5 +1,43 @@
 [
   {
+    "id": 1782722489969,
+    "title": "Tiago",
+    "level": "",
+    "text": "Chamo-me Tiago. Tenho 36 anos e sou advogado.\nTrabalho muitas horas numa grande empresa e nunca tenho um horário fixo. Sou divorciado e tenho dois filhos: a Marta e o Vasco. Os meus filhos passam sempre uma semana comigo e uma semana com a minha ex-mulher.\nNão é muito fácil organizar tudo, porque trabalho muito.\nGostava de ter mais tempo para estar com a família e com os amigos.",
+    "sentencePairs": [
+      {
+        "pt": "Chamo-me Tiago.",
+        "en": "My name is Tiago."
+      },
+      {
+        "pt": "Tenho 36 anos e sou advogado.",
+        "en": "I am 36 years old and I'm a lawyer."
+      },
+      {
+        "pt": "Trabalho muitas horas numa grande empresa e nunca tenho um horário fixo.",
+        "en": "I work many hours in a large company and I never have a fixed schedule."
+      },
+      {
+        "pt": "Sou divorciado e tenho dois filhos: a Marta e o Vasco.",
+        "en": "I'm divorced and I have two children: Marta and Vasco."
+      },
+      {
+        "pt": "Os meus filhos passam sempre uma semana comigo e uma semana com a minha ex-mulher.",
+        "en": "My children always spend one week with me and one week with my ex-wife."
+      },
+      {
+        "pt": "Não é muito fácil organizar tudo, porque trabalho muito.",
+        "en": "It's not easy to organize everything, because I work a lot."
+      },
+      {
+        "pt": "Gostava de ter mais tempo para estar com a família e com os amigos.",
+        "en": "I would like to have more time to be with my family and friends."
+      }
+    ],
+    "date": "2026-06-29",
+    "sentences": 7
+  },
+  {
     "id": 1782722321552,
     "title": "Sofia",
     "level": "",
