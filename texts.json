@@ -1,5 +1,39 @@
 [
   {
+    "id": 1782722154282,
+    "title": "Erik",
+    "level": "",
+    "text": "Chamo-me Erik, sou sueco e tenho 75 anos. A minha área de formação é Engenharia, mas agora estou reformado e vivo em Portugal. Durante a semana, costumo acordar cedo e gosto de ler as notícias do dia no meu computador. A minha mulher é tradutora e trabalha em casa. Costumamos passar o dia juntos.\nAcho que agora tenho uma vida tranquila, mas devia fazer mais exercício físico e ter mais cuidado com a minha alimentação!",
+    "sentencePairs": [
+      {
+        "pt": "Chamo-me Erik, sou sueco e tenho 75 anos.",
+        "en": "My name is Erik, I'm Swedish and I'm 75 years old."
+      },
+      {
+        "pt": "A minha área de formação é Engenharia, mas agora estou reformado e vivo em Portugal.",
+        "en": "My field of training is Engineering, but now I'm retired and live in Portugal."
+      },
+      {
+        "pt": "Durante a semana, costumo acordar cedo e gosto de ler as notícias do dia no meu computador.",
+        "en": "During the week, I usually wake up early and like to read the day's news on my computer."
+      },
+      {
+        "pt": "A minha mulher é tradutora e trabalha em casa.",
+        "en": "My wife is a translator and works from home."
+      },
+      {
+        "pt": "Costumamos passar o dia juntos.",
+        "en": "We usually spend the day together."
+      },
+      {
+        "pt": "Acho que agora tenho uma vida tranquila, mas devia fazer mais exercício físico e ter mais cuidado com a minha alimentação!",
+        "en": "I think I now have a quiet life, but I should do more physical exercise and take better care of my diet!"
+      }
+    ],
+    "date": "2026-06-29",
+    "sentences": 6
+  },
+  {
     "id": 1782637748193,
     "title": "Meus irmaos",
     "level": "",
