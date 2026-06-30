@@ -1,5 +1,59 @@
 [
   {
+    "id": 1782846666442,
+    "title": "Atividade com um colega",
+    "level": "",
+    "text": "A: Olá O que gostas de fazer no fim de semana?\nB: Gosto de ir ao cinema. E tu?\nA: Eu gosto de caminhar.\nB: Podemos fazer as duas coisas?\nA: Sim!\nB: A que horas?\nA: Às três.\nB: Onde?\nA: No parque.\nB: Está bem Até sábado!",
+    "sentencePairs": [
+      {
+        "pt": "A: Olá O que gostas de fazer no fim de semana?",
+        "en": "A: Hi! What do you like to do on the weekend?"
+      },
+      {
+        "pt": "B: Gosto de ir ao cinema.",
+        "en": "B: I like going to the cinema."
+      },
+      {
+        "pt": "E tu?",
+        "en": "And you?"
+      },
+      {
+        "pt": "A: Eu gosto de caminhar.",
+        "en": "A: I like walking."
+      },
+      {
+        "pt": "B: Podemos fazer as duas coisas?",
+        "en": "B: Can we do both?"
+      },
+      {
+        "pt": "A: Sim!",
+        "en": "A: Yes!"
+      },
+      {
+        "pt": "B: A que horas?",
+        "en": "B: What time?"
+      },
+      {
+        "pt": "A: Às três.",
+        "en": "A: At three."
+      },
+      {
+        "pt": "B: Onde?",
+        "en": "B: Where?"
+      },
+      {
+        "pt": "A: No parque.",
+        "en": "A: At the park."
+      },
+      {
+        "pt": "B: Está bem Até sábado!",
+        "en": "B: Okay. See you on Saturday!"
+      }
+    ],
+    "date": "2026-06-30",
+    "sentences": 11
+  },
+  {
     "id": 1782846348059,
     "title": "Fim de semana com amigos",
     "level": "",
