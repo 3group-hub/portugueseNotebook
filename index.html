@@ -1442,7 +1442,7 @@ function speakText(text, lang, btn){
 
 // ═══ CLAUDE API ══════════════════════════════════════════════════════════
 // ═══ GROQ API ═══════════════════════════════════════════════════════════
-const GROQ_MODEL = 'llama-3.3-70b-versatile'; // free, fast, great at languages
+const GROQ_MODEL = 'qwen/qwen3.6-27b'; // free, fast, great at languages — replaces deprecated llama-3.3-70b-versatile (deprecated by Groq, shutdown Aug 16 2026)
 
 // Minimum gap between API calls (ms) — stays well within 30 RPM
 const API_MIN_GAP = 2500;  // ms between calls — safe under 30 RPM
@@ -1484,7 +1484,8 @@ async function claudeCall(prompt, maxTokens=500, retries=4){
             model: GROQ_MODEL,
             messages: [{ role: 'user', content: prompt }],
             max_tokens: maxTokens,
-            temperature: 0.7
+            temperature: 0.7,
+            reasoning_effort: 'none' // Qwen3.6 supports fully disabling reasoning — keeps output clean JSON/text with no leaked thinking tokens
           })
         },
         API_TIMEOUT
