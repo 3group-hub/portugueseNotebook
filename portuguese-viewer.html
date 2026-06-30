@@ -1346,7 +1346,7 @@ async function translateBatch(texts, lang){
         method:'POST',
         headers:{'Content-Type':'application/json','Authorization':`Bearer ${key}`},
         body:JSON.stringify({
-          model:'llama-3.3-70b-versatile', max_tokens:2000,
+          model:'qwen/qwen3.6-27b', max_tokens:2000, reasoning_effort:'none',
           messages:[{role:'user',content:`Translate into ${LANG_NAMES[lang]}. Same numbering. Output ONLY numbered translations.\n\n${numbered}`}]
         })
       });
